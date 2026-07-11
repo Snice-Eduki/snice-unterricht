@@ -28,4 +28,18 @@ table{border-collapse:collapse;width:100%;overflow-x:auto;display:block}
 td,th{border:1px solid var(--line);padding:.5em .7em;text-align:left}
 footer.site{border-top:1px solid var(--line);background:var(--soft);padding:1.4rem 1.2rem;color:var(--muted);font-size:.92rem;text-align:center}
 footer.site a{color:var(--accent-d)}
+.nav{max-width:760px;margin:0 auto;padding:.6rem 1.2rem;display:flex;gap:1.2rem;flex-wrap:wrap;border-bottom:1px solid var(--line);font-weight:600;font-size:.95rem}
+.nav a{color:var(--accent-d);text-decoration:none}
+.nav a:hover{text-decoration:underline}
+.fachgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin:1rem 0}
+.fachcard{border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;background:var(--soft)}
+.fachcard h3{margin:.2em 0 .5em;font-size:1.05rem}
+.fachcard ul{list-style:none;padding:0;margin:0}
+.fachcard li{padding:.2rem 0;font-size:.9rem}
+.fachcard a{text-decoration:none}.fachcard a:hover{text-decoration:underline}
+.related{margin-top:2.5rem;border-top:2px solid var(--accent);padding-top:1rem}
+.related h2{margin-top:.3em}
+.related ul{list-style:none;padding:0}
+.related li{padding:.4rem 0;border-bottom:1px solid var(--line)}
+.related a{text-decoration:none;font-weight:600}
 @media(max-width:600px){body{font-size:16px}h1{font-size:1.55rem}main{padding:1.1rem 1rem 2.5rem}}
