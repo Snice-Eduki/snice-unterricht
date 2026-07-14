@@ -8,7 +8,7 @@ Aufruf: python build.py"""
 import os, re, json, glob, html, datetime
 import markdown as md
 
-SITE = "https://snice-unterricht.de"
+SITE = "https://snice-unterricht.eu"
 SITE_NAME = "Snice Unterricht"
 TAGLINE = "Materialien, Ideen & Arbeitsblätter für den Unterricht"
 SHOP = "https://eduki.com/de/shop/400839"
