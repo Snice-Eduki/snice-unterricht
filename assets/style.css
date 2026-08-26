@@ -25,8 +25,10 @@ img{max-width:100%;display:block}
   backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
   border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
 .topnav.scrolled{border-bottom-color:var(--line)}
-.topnav .brand{font-weight:600;letter-spacing:-.02em;font-size:19px}
-.topnav .brand span{color:var(--accent)}
+.topnav .brand{display:flex;align-items:center;background:#fff;padding:5px 11px;border-radius:11px;
+  box-shadow:0 1px 4px rgba(0,0,0,.10);line-height:0;transition:transform .15s}
+.topnav .brand:hover{transform:translateY(-1px)}
+.topnav .brand img{height:28px;width:auto;display:block}
 .topnav .links{display:flex;gap:20px;margin-left:auto;font-size:14px;color:var(--muted)}
 .topnav .links a{transition:color .2s}
 .topnav .links a:hover{color:var(--text)}

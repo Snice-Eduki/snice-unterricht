@@ -119,7 +119,8 @@ def load_posts():
 
 def topnav(root=""):
     return (f'<header class="topnav" id="topnav">'
-            f'<a class="brand" href="{root}index.html">Snice<span>.</span></a>'
+            f'<a class="brand" href="{root}index.html" aria-label="{SITE_NAME} – Startseite">'
+            f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
             f'<nav class="links">'
             f'<a href="{root}index.html">Materialien</a>'
             f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
@@ -152,6 +153,8 @@ def head(title, desc, url, cover, root="", date=None, article=False):
 <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme:light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme:dark)">
 <link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{SITE}/feed.xml">
+<link rel="icon" type="image/png" href="{root}assets/logo.png">
+<link rel="apple-touch-icon" href="{root}assets/logo.png">
 <link rel="stylesheet" href="{root}assets/style.css">
 <script>document.documentElement.className+=' js';</script>
 <script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>
