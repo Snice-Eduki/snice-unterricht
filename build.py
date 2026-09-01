@@ -258,7 +258,9 @@ INDEX_JS = """<script>
    if(cnt)cnt.textContent=n+(n===1?' Material':' Materialien');
    if(nores)nores.style.display=n?'none':'block';
  }
- if(q)q.addEventListener('input',function(e){term=e.target.value.trim().toLowerCase();apply();});
+ var _t;
+ if(q)q.addEventListener('input',function(e){var v=e.target.value.trim().toLowerCase();
+   clearTimeout(_t);_t=setTimeout(function(){term=v;apply();},180);});
  [].forEach.call(document.querySelectorAll('.chip'),function(ch){
    ch.addEventListener('click',function(){
      var ty=ch.getAttribute('data-type'),val=ch.getAttribute('data-val');
