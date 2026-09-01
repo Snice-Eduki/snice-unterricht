@@ -200,17 +200,44 @@ def render_post(p):
     return url
 
 
-def card_html(m):
+EDUKI_MAT = "https://eduki.com/de/material"
+
+
+def grade_nums(grades):
+    ns = []
+    for g in grades or []:
+        m = re.match(r"(\d+)", str(g))
+        if m:
+            ns.append(int(m.group(1)))
+    return sorted(set(ns))
+
+
+def klasse_label(grades):
+    ns = grade_nums(grades)
+    if not ns:
+        return ""
+    return f"Kl. {ns[0]}" if len(ns) == 1 else f"Kl. {ns[0]}–{ns[-1]}"
+
+
+def cat_card_html(m):
+    """Karte fuer ein Katalog-Material – Direktlink zu eduki."""
     t = html.escape(m["title"])
-    meta = " · ".join(x for x in (m["fach"], m["klasse"]) if x)
-    search = html.escape(" ".join((m["title"], m["fach"], m["klasse"], m["thema"], m["labels"])).lower(), quote=True)
-    if m["cover"]:
+    fach = m.get("fach", "")
+    schul = (m.get("school_types") or [""])[0]
+    kl = klasse_label(m.get("grades"))
+    meta = " · ".join(x for x in (fach, kl) if x)
+    nums = grade_nums(m.get("grades"))
+    kdata = "," + ",".join(str(n) for n in nums) + "," if nums else ""
+    search = html.escape(" ".join([m["title"], fach, schul, kl, m.get("desc", "")]).lower(), quote=True)
+    url = f'{EDUKI_MAT}/{m["id"]}/{html.escape(m.get("slug",""), quote=True)}'
+    if m.get("cover"):
         img = f'<div class="card-img"><img loading="lazy" src="{html.escape(m["cover"])}" alt="{t}"></div>'
     else:
         img = f'<div class="card-img"><div class="ph">{t}</div></div>'
-    return (f'<a class="card reveal" href="posts/{m["slug"]}.html" '
-            f'data-fach="{html.escape(m["fach"], quote=True)}" data-klasse="{html.escape(m["klasse"], quote=True)}" '
-            f'data-s="{search}">{img}<div class="card-body"><h3>{t}</h3>'
+    badge = '<span class="badge">Gratis</span>' if m.get("is_free") else ''
+    return (f'<a class="card reveal" href="{url}" target="_blank" rel="noopener" '
+            f'data-fach="{html.escape(fach, quote=True)}" data-kl="{kdata}" data-s="{search}">'
+            f'{img}{badge}<div class="card-body"><h3>{t}</h3>'
             f'{f"<p class=card-meta>{html.escape(meta)}</p>" if meta else ""}</div></a>')
 
 
@@ -220,12 +247,12 @@ INDEX_JS = """<script>
  cnt=document.getElementById('cnt'),nores=document.getElementById('nores');
  if(!grid)return;
  var cards=[].slice.call(grid.querySelectorAll('.card'));
- var f={fach:'',klasse:''},term='';
+ var f={fach:'',kl:''},term='';
  function apply(){
    var n=0;
    for(var i=0;i<cards.length;i++){var c=cards[i];
      var ok=(!f.fach||c.getAttribute('data-fach')===f.fach)
-          &&(!f.klasse||c.getAttribute('data-klasse')===f.klasse)
+          &&(!f.kl||c.getAttribute('data-kl').indexOf(','+f.kl+',')>-1)
           &&(!term||c.getAttribute('data-s').indexOf(term)>-1);
      c.style.display=ok?'':'none';if(ok)n++;}
    if(cnt)cnt.textContent=n+(n===1?' Material':' Materialien');
@@ -235,14 +262,14 @@ INDEX_JS = """<script>
  [].forEach.call(document.querySelectorAll('.chip'),function(ch){
    ch.addEventListener('click',function(){
      var ty=ch.getAttribute('data-type'),val=ch.getAttribute('data-val');
-     f[ty]=val;
+     f[ty]=val;  // ty = 'fach' | 'kl'
      [].forEach.call(document.querySelectorAll('.chip[data-type="'+ty+'"]'),function(x){
        x.classList.toggle('on',x===ch);});
      apply();
    });
  });
- // Scroll-Reveal (gestaffelt)
- if('IntersectionObserver' in window){
+ // Scroll-Reveal nur bei ueberschaubarer Menge (Performance bei tausenden Karten)
+ if(cards.length<=400 && 'IntersectionObserver' in window){
    var io=new IntersectionObserver(function(es){es.forEach(function(e){
      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},
      {rootMargin:'0px 0px -6% 0px'});
@@ -252,49 +279,71 @@ INDEX_JS = """<script>
 </script>"""
 
 
-def render_index(posts):
-    materials = [p for p in posts if p["eduki"]]
-    # mit Cover zuerst (visueller), dann nach Fach/Titel
-    materials.sort(key=lambda x: (0 if x["cover"] else 1, x["fach"], x["title"]))
-    fach_c = collections.Counter(m["fach"] for m in materials if m["fach"])
-    klasse_c = collections.Counter(m["klasse"] for m in materials if m["klasse"])
+def load_katalog():
+    kp = os.path.join(OUT, "_katalog_live.json")
+    if not os.path.exists(kp):
+        return []
+    kat = json.load(open(kp, encoding="utf-8"))
+    return [m for m in kat if m.get("active") and m.get("slug")]
 
-    def chips(counter, typ):
-        s = f'<button class="chip on" data-type="{typ}" data-val="">Alle</button>'
+
+def render_index(posts):
+    materials = load_katalog()
+    # mit Cover zuerst, dann Fach, dann Titel
+    materials.sort(key=lambda x: (0 if x.get("cover") else 1, x.get("fach", ""), x.get("title", "")))
+    fach_c = collections.Counter(m["fach"] for m in materials if m.get("fach"))
+    # Klasse-Chips = einzelne Jahrgangsstufen (Material kann mehrere haben)
+    kl_c = collections.Counter()
+    for m in materials:
+        for n in grade_nums(m.get("grades")):
+            kl_c[n] += 1
+
+    def fach_chips(counter):
+        s = '<button class="chip on" data-type="fach" data-val="">Alle</button>'
         for val, n in sorted(counter.items(), key=lambda x: -x[1]):
-            s += (f'<button class="chip" data-type="{typ}" data-val="{html.escape(val, quote=True)}">'
+            s += (f'<button class="chip" data-type="fach" data-val="{html.escape(val, quote=True)}">'
                   f'{html.escape(val)}<span class="n">{n}</span></button>')
         return s
 
-    out = head(f"{SITE_NAME} — {TAGLINE}", TAGLINE + ". Sachthemen-Arbeitsblätter, Lückentexte und Hörverständnis mit Lösungen für Klasse 4–10.", SITE + "/", "")
+    def kl_chips(counter):
+        s = '<button class="chip on" data-type="kl" data-val="">Alle</button>'
+        for n in sorted(counter):
+            s += (f'<button class="chip" data-type="kl" data-val="{n}">'
+                  f'{n}. Kl.<span class="n">{counter[n]}</span></button>')
+        return s
+
+    nfmt = f"{len(materials):,}".replace(",", ".")
+    out = head(f"{SITE_NAME} — {TAGLINE}",
+               f"{TAGLINE}. Über {nfmt} Arbeitsblätter, Lückentexte und Hörverständnis-Übungen mit Lösungen für alle Fächer und Klassen.",
+               SITE + "/", "")
     out += f"""<section class="hero">
 <h1>Materialien, die den<br>Unterricht leichter machen.</h1>
-<p class="sub">Fertige Arbeitsblätter, Lückentexte und Hörverständnis-Übungen – mit Lösungen. Such dein Thema, filtere nach Fach und Klasse.</p>
+<p class="sub">Über {nfmt} fertige Arbeitsblätter, Lückentexte und Hörverständnis-Übungen – mit Lösungen. Such dein Thema, filtere nach Fach und Klasse.</p>
 <div class="searchwrap">
 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
-<input id="q" type="search" placeholder="Suchen: z. B. Ägypten, Vulkan, Bruchrechnen …" autocomplete="off" aria-label="Materialien durchsuchen">
+<input id="q" type="search" placeholder="Suchen: z. B. Ägypten, Vulkan, Photosynthese …" autocomplete="off" aria-label="Materialien durchsuchen">
 </div>
-<p class="count"><span id="cnt">{len(materials)} Materialien</span> · direkt auf eduki erhältlich</p>
+<p class="count"><span id="cnt">{nfmt} Materialien</span> · Klick führt direkt zu eduki</p>
 </section>
 
 <div class="filters">
-<div class="row"><span class="flabel">Fach</span>{chips(fach_c, 'fach')}</div>
-<div class="row"><span class="flabel">Klasse</span>{chips(klasse_c, 'klasse')}</div>
+<div class="row"><span class="flabel">Fach</span>{fach_chips(fach_c)}</div>
+<div class="row"><span class="flabel">Klasse</span>{kl_chips(kl_c)}</div>
 </div>
 
 <main>
 <div class="grid" id="grid">
-{chr(10).join(card_html(m) for m in materials)}
+{chr(10).join(cat_card_html(m) for m in materials)}
 </div>
 <p class="noresults" id="nores">Keine Materialien gefunden – versuch einen anderen Suchbegriff oder Filter.</p>
 </main>
 {INDEX_JS}
 """ + foot()
+    out = out.replace(",", ".") if False else out  # (Tausendertrennung bleibt wie f-string)
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(out)
-    # Such-Index als JSON (fuer spaetere Nutzung / Tools)
-    idx = [{"pid": m["pid"], "title": m["title"], "fach": m["fach"], "klasse": m["klasse"],
-            "thema": m["thema"], "cover": m["cover"], "url": f"{SITE}/posts/{m['slug']}.html",
-            "eduki": m["eduki"]} for m in materials]
+    idx = [{"id": m["id"], "title": m["title"], "fach": m.get("fach", ""),
+            "grades": m.get("grades", []), "cover": m.get("cover", ""),
+            "eduki": f'{EDUKI_MAT}/{m["id"]}/{m.get("slug","")}'} for m in materials]
     open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8").write(
         json.dumps(idx, ensure_ascii=False))
     return len(materials)
