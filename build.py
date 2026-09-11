@@ -124,6 +124,7 @@ def topnav(root=""):
             f'<nav class="links">'
             f'<a href="{root}index.html">Materialien</a>'
             f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
+            f'<a href="{root}herbst.html">Herbst</a>'
             f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
             f'<a href="{root}ueber-mich.html">Über mich</a>'
             f'<a href="{root}impressum.html">Impressum</a>'
@@ -393,6 +394,42 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html=""):
     return url
 
 
+SAISON = {
+    "herbst": {
+        "title": "Herbst-Materialien für den Unterricht",
+        "h1": "Herbst im Unterricht",
+        "desc": "Arbeitsblätter, Lesespurgeschichten und Hörverstehen rund um den Herbst: Kürbis, Kastanie, Igel, "
+                "Zugvögel, Nebel, Ernte, Kartoffel und Wald – für Grundschule und Sekundarstufe, mit Lösungen.",
+        "intro": "Der Herbst bringt die schönsten Sachthemen ins Klassenzimmer: Kastanien und Kürbisse, Igel und "
+                 "Zugvögel, Nebelmorgen und Erntezeit. Hier findest du alle passenden Materialien auf einen Blick – "
+                 "Lesespurgeschichten in drei Niveaustufen, Lückentexte mit Hörverstehen und Steckbriefe, jeweils mit "
+                 "Lösungen und direktem Link zu eduki.",
+        "kw": r"\bherbst|kürbis|kastanie|\bigel\b|\bigel[ -]|zugvögel|\bkranich|storch|\bpilz|ernte|\bnebel\b|laubbaum|laubblatt|herbstlaub|"
+              r"\bapfel\b|apfelbaum|kartoffel|\bdrachen\b|eichhörnchen|\beichel|haselnuss|walnuss|wetterstation|jahreszeiten|"
+              r"winterschlaf|erntedank|laterne|sankt martin|waldkauz|waldtiere|lebensraum wald|\bwald\b|tiere des waldes|\bwolf\b|"
+              r"\bhirsch\b|\breh\b|wildschwein|\bfuchs\b|\bhase\b|\bmais\b|weizen|\bwein(lese|bau)|trauben|zwiebel|\brübe|federweiße",
+        "block": r"kreis|stadt\b|-stadt|regierungsbezirk|buchführung|blaubär|kalifornien|kokosnuss|regenwald|worksheet",
+    },
+}
+
+
+def render_saison_pages():
+    """Saisonale Landingpages (z. B. Herbst): Keyword-Auswahl aus dem Katalog, alle Fächer/Klassen."""
+    mats = load_katalog()
+    n_total = 0
+    for slug, s in SAISON.items():
+        sel = [m for m in mats
+               if re.search(s["kw"], m["title"].lower()) and not re.search(s["block"], m["title"].lower())]
+        if not sel:
+            continue
+        n_total += len(sel)
+        links = ('<div class="filters"><div class="row">'
+                 '<a class="chip" href="lesespurgeschichten.html">Alle Lesespurgeschichten</a>'
+                 '<a class="chip" href="index.html">Alle Materialien</a></div></div>')
+        _ls_page(slug, s["title"], s["h1"], s["desc"], s["intro"], sel, links)
+    return n_total
+
+
 def render_lesespur_pages():
     """Hub + Landingpages je Fach und je Klasse fuer Lesespurgeschichten (SEO-Suchintention
     'Lesespurgeschichte Klasse 8 Physik'). Alle Karten verlinken direkt zum eduki-Material."""
@@ -472,6 +509,7 @@ def main():
         render_post(p)
     nmat = render_index(posts)
     nls = render_lesespur_pages()
+    nsa = render_saison_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>
 <p>{INHABER}<br>{ANSCHRIFT}</p>
@@ -485,7 +523,7 @@ für Lehrkräfte: Arbeitsblätter, Lückentexte und Hörverständnis-Übungen in
 gibt es direkt in meinem <a href="{SHOP}" rel="noopener">Shop auf eduki</a>.</p>""")
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Seiten, {nmat} Materialien im Finder (mit eduki-Link), "
-          f"{sum(1 for p in posts if p['cover'])} mit Cover, {nls} Lesespuren auf {len(EXTRA_URLS)} Landingpages.")
+          f"{sum(1 for p in posts if p['cover'])} mit Cover, {nls} Lesespuren, {nsa} Saison-Treffer, {len(EXTRA_URLS)} Landingpages.")
 
 
 if __name__ == "__main__":
