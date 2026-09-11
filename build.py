@@ -408,7 +408,8 @@ SAISON = {
               r"\bapfel\b|apfelbaum|kartoffel|\bdrachen\b|eichhörnchen|\beichel|haselnuss|walnuss|wetterstation|jahreszeiten|"
               r"winterschlaf|erntedank|laterne|sankt martin|waldkauz|waldtiere|lebensraum wald|\bwald\b|tiere des waldes|\bwolf\b|"
               r"\bhirsch\b|\breh\b|wildschwein|\bfuchs\b|\bhase\b|\bmais\b|weizen|\bwein(lese|bau)|trauben|zwiebel|\brübe|federweiße",
-        "block": r"kreis|stadt\b|-stadt|regierungsbezirk|buchführung|blaubär|kalifornien|kokosnuss|regenwald|worksheet",
+        "block": r"kreis|stadt\b|-stadt|regierungsbezirk|buchführung|blaubär|kalifornien|kokosnuss|regenwald|worksheet|"
+                 r"bayerischer wald|oberpfälzer|thüringer wald|teutoburger|rübezahl|dissen",
     },
 }
 
