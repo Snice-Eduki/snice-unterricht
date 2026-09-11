@@ -123,6 +123,7 @@ def topnav(root=""):
             f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
             f'<nav class="links">'
             f'<a href="{root}index.html">Materialien</a>'
+            f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
             f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
             f'<a href="{root}ueber-mich.html">Über mich</a>'
             f'<a href="{root}impressum.html">Impressum</a>'
@@ -356,6 +357,85 @@ def render_page(slug, title, inner):
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
 
 
+EXTRA_URLS = []
+LS_INTRO = ("Eine Lesespurgeschichte ist ein differenziertes Lese- und Sachmaterial: Die Klasse liest eine Geschichte "
+            "in drei Niveaustufen (leicht, mittel, schwer), folgt den Hinweisen über einen Lageplan von Station zu "
+            "Station und sammelt dabei Buchstaben für ein Lösungswort. Jedes Paket enthält Anleitung, drei "
+            "Geschichten, Lageplan, Hörverstehen mit QR-Code, Rätselseite, Ausmalbild und Lösungen – in Farbe und als "
+            "kopierfreundliche Schwarz-Weiß-Version. Die Themen orientieren sich an den Lehrplänen aller Bundesländer "
+            "und passen für alle Schularten (Grundschule, Mittel-, Haupt-, Real-, Ober-, Gesamt- und "
+            "Gemeinschaftsschule, Gymnasium).")
+
+
+def is_lesespur(m):
+    return "lesespur" in (m.get("title", "") + " " + m.get("desc", "")).lower()
+
+
+def _ls_page(slug, title, h1, desc, intro, mats, links_html=""):
+    """Landingpage mit Karten-Grid (gleiche Karten wie der Finder, ohne JS-Filter)."""
+    mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, x.get("title", "")))
+    url = f"{SITE}/{slug}.html"
+    n = len(mats)
+    out = head(title, desc, url, mats[0].get("cover", "") if mats else "")
+    out += f"""<section class="hero small">
+<h1>{html.escape(h1)}</h1>
+<p class="sub">{html.escape(intro)}</p>
+<p class="count">{n} {'Lesespurgeschichte' if n == 1 else 'Lesespurgeschichten'} · Klick führt direkt zu eduki</p>
+</section>
+{links_html}
+<main><div class="grid" id="grid">
+{chr(10).join(cat_card_html(m) for m in mats)}
+</div></main>
+<script>[].forEach.call(document.querySelectorAll('.card'),function(c){{c.classList.add('in');}});</script>
+""" + foot()
+    open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
+    EXTRA_URLS.append(url)
+    return url
+
+
+def render_lesespur_pages():
+    """Hub + Landingpages je Fach und je Klasse fuer Lesespurgeschichten (SEO-Suchintention
+    'Lesespurgeschichte Klasse 8 Physik'). Alle Karten verlinken direkt zum eduki-Material."""
+    mats = [m for m in load_katalog() if is_lesespur(m)]
+    if not mats:
+        return 0
+    by_fach = collections.defaultdict(list)
+    by_kl = collections.defaultdict(list)
+    for m in mats:
+        if m.get("fach"):
+            by_fach[m["fach"]].append(m)
+        for n in grade_nums(m.get("grades")):
+            by_kl[n].append(m)
+    fach_links = "".join(
+        f'<a class="chip" href="lesespurgeschichten-{slugify(f)}.html">{html.escape(f)}<span class="n">{len(v)}</span></a>'
+        for f, v in sorted(by_fach.items(), key=lambda x: -len(x[1])))
+    kl_links = "".join(
+        f'<a class="chip" href="lesespurgeschichten-klasse-{n}.html">{n}. Kl.<span class="n">{len(by_kl[n])}</span></a>'
+        for n in sorted(by_kl))
+    links = (f'<div class="filters"><div class="row"><span class="flabel">Fach</span>{fach_links}</div>'
+             f'<div class="row"><span class="flabel">Klasse</span>{kl_links}</div></div>')
+    hub_link = '<div class="filters"><div class="row"><a class="chip" href="lesespurgeschichten.html">← Alle Lesespurgeschichten</a></div></div>'
+    _ls_page("lesespurgeschichten", "Lesespurgeschichten für alle Fächer und Klassen",
+             "Lesespurgeschichten",
+             f"{len(mats)} Lesespurgeschichten mit drei Niveaustufen, Lageplan, Hörverstehen (QR) und Lösungswort – "
+             "für Grundschule bis Sekundarstufe, alle Fächer, alle Bundesländer.",
+             LS_INTRO, mats, links)
+    for f, v in by_fach.items():
+        _ls_page(f"lesespurgeschichten-{slugify(f)}", f"Lesespurgeschichten {f}",
+                 f"Lesespurgeschichten {f}",
+                 f"{len(v)} Lesespurgeschichten für das Fach {f}: differenziert in drei Niveaustufen, mit Lageplan, "
+                 "Hörverstehen und Lösungswort – lehrplanorientiert für alle Bundesländer und Schularten.",
+                 f"Lesespurgeschichten für den {f}-Unterricht. " + LS_INTRO, v, hub_link)
+    for n, v in by_kl.items():
+        _ls_page(f"lesespurgeschichten-klasse-{n}", f"Lesespurgeschichten Klasse {n}",
+                 f"Lesespurgeschichten Klasse {n}",
+                 f"{len(v)} Lesespurgeschichten für die {n}. Klasse: drei Niveaustufen, Lageplan, Hörverstehen mit "
+                 "QR-Code und Lösungswort – passend zu den Lehrplänen aller Bundesländer und Schularten.",
+                 f"Lesespurgeschichten für die {n}. Jahrgangsstufe, sprachlich und inhaltlich auf das Alter abgestimmt. " + LS_INTRO,
+                 v, hub_link)
+    return len(mats)
+
+
 def write_feed(posts):
     latest = sorted(posts, key=lambda x: x["date"], reverse=True)[:50]
     items = ""
@@ -374,6 +454,7 @@ def write_meta(posts):
     u = [f"<url><loc>{SITE}/</loc><priority>1.0</priority></url>",
          f"<url><loc>{SITE}/impressum.html</loc></url>",
          f"<url><loc>{SITE}/ueber-mich.html</loc></url>"]
+    u += [f"<url><loc>{x}</loc><priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
         u.append(f"<url><loc>{SITE}/posts/{p['slug']}.html</loc><lastmod>{p['date']}</lastmod></url>")
     open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
@@ -390,6 +471,7 @@ def main():
     for p in posts:
         render_post(p)
     nmat = render_index(posts)
+    nls = render_lesespur_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>
 <p>{INHABER}<br>{ANSCHRIFT}</p>
@@ -403,7 +485,7 @@ für Lehrkräfte: Arbeitsblätter, Lückentexte und Hörverständnis-Übungen in
 gibt es direkt in meinem <a href="{SHOP}" rel="noopener">Shop auf eduki</a>.</p>""")
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Seiten, {nmat} Materialien im Finder (mit eduki-Link), "
-          f"{sum(1 for p in posts if p['cover'])} mit Cover. Startseite neu (Suche+Filter+Reveal).")
+          f"{sum(1 for p in posts if p['cover'])} mit Cover, {nls} Lesespuren auf {len(EXTRA_URLS)} Landingpages.")
 
 
 if __name__ == "__main__":

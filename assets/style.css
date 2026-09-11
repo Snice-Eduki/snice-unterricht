@@ -121,3 +121,8 @@ footer.site{border-top:1px solid var(--line);margin-top:60px;padding:40px 22px;t
 footer.site a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
 footer.site a:hover{color:var(--text)}
 footer.site .big{color:var(--text);font-weight:600;font-size:16px;margin-bottom:6px}
+
+/* Lesespur-Landingpages */
+a.chip{text-decoration:none;display:inline-flex;align-items:center}
+.hero.small{padding:72px 22px 36px}
+.hero.small p.sub{font-size:clamp(16px,2vw,19px);max-width:760px;margin-bottom:18px}
