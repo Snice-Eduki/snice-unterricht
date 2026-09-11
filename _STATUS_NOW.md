@@ -1,20 +1,20 @@
-# Status snice-unterricht.eu — 01.09.2026
+# Status snice-unterricht.eu — 01.09.2026 (Homepage-Kern KOMPLETT)
 
-## LIVE / fertig
-- **Finder mit allen 5929 Materialien** (echte eduki-Cover, deine Beschreibung, Fach-/Klasse-Filter, Sofortsuche, Direktlink zu eduki). Deployed, Pages-Build grün.
-- Logo in Nav sichtbar, Favicon gesetzt.
-- Pinterest-Discovery: 1 Runner stabil. Mail-Watcher `SniceMailWatch` aktiv (alle 10 Min).
+## ✅ FERTIG & LIVE
+- **Finder mit allen 5929 Materialien**: echte eduki-Cover, deine Beschreibung, Fach-/Klasse-Filter, Sofortsuche (debounced), Direktlink zu eduki. Deployed, Pages-Build grün.
+- **Performance** (mobil gemessen): Load 1,57 s (content-visibility), Tippen ruckelfrei (Debounce 180ms).
+- **Logo** in Nav sichtbar + Favicon.
+- **Sprach-Check:** 5764 deutsch, nur 165 EN-Titel (2,8%, legitim) → keine Filterung nötig.
+- **Pinterest** 1 Runner stabil (prozess-bewusster Watchdog). **Mail-Watcher** `SniceMailWatch` alle 10 Min, klassifiziert → `_MAIL_TODO.md`.
 
-## Wartet (nicht anfassen)
-- **HTTPS-Cert** hängt bei Let's Encrypt (`authorization_created`). Ratsbeschluss: 24 h in Ruhe lassen (kein Remove/Re-Add). Auto-Task `SniceHomepageHttps` erzwingt HTTPS sobald stabil. Seite läuft über http.
+## ⏳ WARTET (kein Eingriff nötig / möglich)
+- **HTTPS-Cert** hängt bei Let's Encrypt seit ~26.08 (`authorization_created`). War 31.08 kurz issued, dann zurückgefallen. Auto-Task `SniceHomepageHttps` erzwingt es sobald stabil. **Falls dauerhaft stuck: einziger echter Fix = manueller „Enforce HTTPS"-Toggle in GitHub-Pages-Web-UI (nur via Nutzer-GitHub-Login).** Seite läuft über http. NICHT weiter per API remove/re-add (verschlimmert es).
 
-## BLOCKIERT: Lehrplan-Detailseiten-Track (getestet 01.09.)
-- `lehrplan.db` liefert saubere, themengenaue Kompetenzen NUR für Bayern (LehrplanPLUS). Andere 14 BL: lückenhaft oder Rausch. KMK-Bildungsstandards-Zeilen ebenfalls verrauscht (Prüfungsfragmente).
-- Präziser Matcher (Thema in `lb_titel`): hohe Präzision, ~0/15 BL Reichweite außer Bayern.
-- **→ „wortgetreu über alle 16 BL" NICHT lieferbar ohne sauberes Neu-Scrapen der Landescurricula (eigenes Projekt).**
-- Kein Ausspielen partieller/verrauschter Lehrplanblöcke (Qualitätswächter). Track = datenblockiert bis saubere Datenquelle.
+## ⛔ BLOCKIERT
+- **Lehrplan-Detailseiten:** `lehrplan.db` nur für Bayern sauber; andere BL lückenhaft/Rausch (getestet). „wortgetreu über alle 16 BL" nicht lieferbar ohne Neu-Scrapen der Landescurricula. Track ruht — NICHT erneut Keyword-Matching versuchen.
 
-## Nächste sinnvolle Schritte (deliverable)
-- Finder-Performance/SEO: 5,1 MB index → evtl. Lazy-Render (nur N Karten initial, Rest on-scroll) falls mobil träge.
-- Google-Sichtbarkeit: sitemap.xml steht; Indexierung läuft über robots.txt.
-- `_MAIL_TODO.md` abarbeiten sobald handlungsrelevante Mail eintrifft.
+## 🔔 EREIGNISGESTEUERT
+- `_MAIL_TODO.md` abarbeiten sobald eine handlungsrelevante Mail eintrifft (Kundenfrage / eduki-Materialcheck). Heikle Fälle (Recht/Erstattung) dem Nutzer vorlegen.
+
+## Heartbeat-Modus
+Kern fertig → Heartbeat = leichter Wächter: Live-Status (Pinterest/HTTPS/Mails) prüfen, `_MAIL_TODO.md` abarbeiten, nur bei echtem Bedarf handeln. Keine erfundene Zusatzarbeit.
