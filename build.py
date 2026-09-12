@@ -176,7 +176,7 @@ def foot(root=""):
     return f"""<footer class="site">
 <p class="big">{SITE_NAME}</p>
 <p>{TAGLINE}. Alle Materialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>.</p>
-<p><a href="{root}index.html">Materialien</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a></p>
+<p><a href="{root}index.html">Materialien</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
 </footer>
 {NAV_SCRIPT}
 </body></html>"""
@@ -491,7 +491,8 @@ def write_feed(posts):
 def write_meta(posts):
     u = [f"<url><loc>{SITE}/</loc><priority>1.0</priority></url>",
          f"<url><loc>{SITE}/impressum.html</loc></url>",
-         f"<url><loc>{SITE}/ueber-mich.html</loc></url>"]
+         f"<url><loc>{SITE}/ueber-mich.html</loc></url>",
+         f"<url><loc>{SITE}/datenschutz.html</loc></url>"]
     u += [f"<url><loc>{x}</loc><priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
         u.append(f"<url><loc>{SITE}/posts/{p['slug']}.html</loc><lastmod>{p['date']}</lastmod></url>")
@@ -522,6 +523,32 @@ def main():
 für Lehrkräfte: Arbeitsblätter, Lückentexte und Hörverständnis-Übungen inklusive Musterlösungen.</p>
 <p>Auf dieser Seite findest du alle Materialien schnell über Suche und Filter. Passende fertige Materialien
 gibt es direkt in meinem <a href="{SHOP}" rel="noopener">Shop auf eduki</a>.</p>""")
+    render_page("datenschutz", "Datenschutzerklärung", f"""<h1>Datenschutzerklärung</h1>
+<p><strong>Verantwortlicher:</strong> {INHABER}, E-Mail: {EMAIL} (Anschrift siehe <a href="impressum.html">Impressum</a>).</p>
+<h2>Hosting</h2>
+<p>Diese Website wird als statische Seite über <strong>GitHub Pages</strong> (GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA)
+ausgeliefert. Beim Aufruf verarbeitet GitHub technisch notwendige Verbindungsdaten (IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser)
+in Server-Logs, um die Seite auszuliefern und die Sicherheit des Dienstes zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO).
+Details: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.
+GitHub ist nach dem EU-US Data Privacy Framework zertifiziert.</p>
+<h2>Keine Cookies, kein Tracking</h2>
+<p>Diese Website setzt keine Cookies, verwendet keine Analyse- oder Werbedienste und bindet keine Schriftarten oder Skripte von Drittanbietern ein.
+Die Suche und die Filter laufen vollständig in deinem Browser; dabei werden keine Daten übertragen.</p>
+<h2>Externe Links und eingebundene Bilder</h2>
+<p>Die Vorschaubilder der Materialien werden direkt vom Marktplatz <strong>eduki</strong> (eduki GmbH, Berlin) geladen; dabei erhält eduki deine IP-Adresse.
+Über die Links „Material auf eduki" gelangst du auf eduki.com; dort gelten die
+<a href="https://eduki.com/de/datenschutz" rel="noopener">Datenschutzhinweise von eduki</a>.</p>
+<h2>Kontakt per E-Mail</h2>
+<p>Wenn du mir eine E-Mail schreibst, verarbeite ich deine Angaben ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO)
+und lösche sie, sobald sie nicht mehr benötigt werden.</p>
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO)
+sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Wende dich dazu an die oben genannte E-Mail-Adresse.</p>
+<p><small>Stand: September 2026</small></p>""")
+    render_page("404", "Seite nicht gefunden", f"""<h1>Seite nicht gefunden</h1>
+<p>Diese Seite gibt es nicht (mehr). Vielleicht hilft dir die Suche auf der <a href="/index.html">Startseite</a> weiter –
+dort findest du alle Materialien nach Fach und Klasse.</p>
+<p><a class="btn" href="/index.html">Zur Startseite</a> · <a href="/lesespurgeschichten.html">Lesespurgeschichten</a> · <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a></p>""")
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Seiten, {nmat} Materialien im Finder (mit eduki-Link), "
           f"{sum(1 for p in posts if p['cover'])} mit Cover, {nls} Lesespuren, {nsa} Saison-Treffer, {len(EXTRA_URLS)} Landingpages.")
