@@ -3,10 +3,10 @@
 Apple-inspirierte Startseite = Material-Finder (Sofortsuche + Fach/Klasse-Filter + Scroll-Reveal,
 alles vanilla JS, progressiv: funktioniert auch ohne JS). Dazu 1012 SEO-Artikelseiten,
 Sitemap, robots.txt, RSS, Impressum, Ueber-mich. Cover per eduki-Hotlink. Aufruf: python build.py"""
-import os, re, json, glob, html, datetime, collections
+import datetime, os, re, json, glob, html, datetime, collections
 import markdown as md
 
-SITE = "https://snice-unterricht.eu"
+SITE = "http://snice-unterricht.eu"   # 13.09.: http bis GitHub-Pages-Zertifikat steht (Search-Console-Property = http)
 SITE_NAME = "Snice Unterricht"
 TAGLINE = "Materialien, die den Unterricht leichter machen"
 SHOP = "https://eduki.com/de/shop/400839"
@@ -235,9 +235,21 @@ def render_post(p):
 EDUKI_MAT = "https://eduki.com/de/material"
 
 
+def as_list(v):
+    """Katalogfelder liegen teils als String-Repr einer Liste vor ("['3. Klasse', ...]")."""
+    if isinstance(v, str):
+        try:
+            import ast
+            x = ast.literal_eval(v)
+            return list(x) if isinstance(x, (list, tuple)) else [v]
+        except Exception:
+            return [v] if v else []
+    return list(v or [])
+
+
 def grade_nums(grades):
     ns = []
-    for g in grades or []:
+    for g in as_list(grades):
         m = re.match(r"(\d+)", str(g))
         if m:
             ns.append(int(m.group(1)))
@@ -251,23 +263,29 @@ def klasse_label(grades):
     return f"Kl. {ns[0]}" if len(ns) == 1 else f"Kl. {ns[0]}–{ns[-1]}"
 
 
-def cat_card_html(m):
-    """Karte fuer ein Katalog-Material – Direktlink zu eduki."""
+MAT_PAGES = {}   # id -> "material/<id>-<slug>.html" (Detailseiten, 13.09.)
+
+
+def cat_card_html(m, root=""):
+    """Karte fuer ein Katalog-Material – Link zur Detailseite (sonst direkt zu eduki)."""
     t = html.escape(m["title"])
     fach = m.get("fach", "")
-    schul = (m.get("school_types") or [""])[0]
+    schul = (as_list(m.get("school_types")) or [""])[0]
     kl = klasse_label(m.get("grades"))
     meta = " · ".join(x for x in (fach, kl) if x)
     nums = grade_nums(m.get("grades"))
     kdata = "," + ",".join(str(n) for n in nums) + "," if nums else ""
     search = html.escape(" ".join([m["title"], fach, schul, kl, m.get("desc", "")]).lower(), quote=True)
-    url = f'{EDUKI_MAT}/{m["id"]}/{html.escape(m.get("slug",""), quote=True)}'
+    if m["id"] in MAT_PAGES:
+        url = root + MAT_PAGES[m["id"]]; tgt = ""
+    else:
+        url = f'{EDUKI_MAT}/{m["id"]}/{html.escape(m.get("slug",""), quote=True)}'; tgt = ' target="_blank" rel="noopener"'
     if m.get("cover"):
         img = f'<div class="card-img"><img loading="lazy" src="{html.escape(m["cover"])}" alt="{t}"></div>'
     else:
         img = f'<div class="card-img"><div class="ph">{t}</div></div>'
-    badge = '<span class="badge">Gratis</span>' if m.get("is_free") else ''
-    return (f'<a class="card reveal" href="{url}" target="_blank" rel="noopener" '
+    badge = '<span class="badge">Gratis</span>' if is_free(m) else ''
+    return (f'<a class="card reveal" href="{url}"{tgt} '
             f'data-fach="{html.escape(fach, quote=True)}" data-kl="{kdata}" data-s="{search}">'
             f'{img}{badge}<div class="card-body"><h3>{t}</h3>'
             f'{f"<p class=card-meta>{html.escape(meta)}</p>" if meta else ""}</div></a>')
@@ -344,6 +362,16 @@ def load_katalog():
         return []
     kat = [m for m in json.load(open(kp, encoding="utf-8")) if m.get("active") and m.get("slug")]
     kat = [m for m in kat if not JUNK_TITLE.match(m.get("title", "").strip())]
+    # 13.09.: Volltext-Beschreibungen (v1 materials API) einmischen, wenn vorhanden (_katalog_desc_pull.py)
+    dp = os.path.join(OUT, "_katalog_desc.json")
+    if os.path.exists(dp):
+        full = json.load(open(dp, encoding="utf-8"))
+        for m in kat:
+            f = full.get(str(m["id"])) or {}
+            txt = (f.get("description") or f.get("fullDescription") or "").strip()
+            if len(txt) > len((m.get("desc") or "").strip()):
+                m["desc_short"] = m.get("desc", "")
+                m["desc"] = txt
     best = {}
     for m in kat:
         k = re.sub(r"\s+", " ", m["title"].strip().lower())
@@ -813,9 +841,14 @@ def write_meta(posts):
     u += [f"<url><loc>{x}</loc><priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
         u.append(f"<url><loc>{SITE}/posts/{p['slug']}.html</loc><lastmod>{p['date']}</lastmod></url>")
-    open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
+    open(os.path.join(OUT, "sitemap-seiten.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "\n".join(u) + "\n</urlset>")
+    mfiles, today = write_material_sitemaps()
+    open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(f"<sitemap><loc>{SITE}/{f}</loc><lastmod>{today}</lastmod></sitemap>" for f in ["sitemap-seiten.xml"] + mfiles)
+        + "\n</sitemapindex>")
     open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(
         f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
@@ -838,10 +871,155 @@ def build_foot_cols():
             f'<div><h4>Materialarten</h4><p>{a_links}</p></div></div>')
 
 
+# ---------------------------------------------------------------- Material-Detailseiten (Rat 13.09.)
+MAT_DIR = os.path.join(OUT, "material")
+MAT_MIN_DESC = 200   # Katalog liefert short_description (max 300); Volltext-Upgrade folgt
+
+
+def is_free(m):
+    return str(m.get("is_free")) in ("True", "true", "1")
+
+
+def price_label(m):
+    if is_free(m):
+        return "Gratis"
+    try:
+        p = float(m.get("price") or 0)
+    except Exception:
+        p = 0
+    return (f"{p:.2f} €".replace(".", ",")) if p > 0 else "Gratis"
+
+
+def mat_path(m):
+    return f"material/{m['id']}-{m['slug']}.html"
+
+
+def desc_paras(desc):
+    parts = [x.strip() for x in re.split(r"\n\s*\n|\n", desc or "") if x.strip()]
+    return "".join(f"<p>{html.escape(x)}</p>" for x in parts)
+
+
+def register_material_pages():
+    """Vor dem Rendern der Karten aufrufen: welche Materialien bekommen eine Detailseite."""
+    MAT_PAGES.clear()
+    for m in katalog_de():
+        if len((m.get("desc") or "").strip()) >= MAT_MIN_DESC:
+            MAT_PAGES[m["id"]] = mat_path(m)
+    return len(MAT_PAGES)
+
+
+MAT_CSS = """<style>
+.mat{max-width:1120px;margin:0 auto;padding:36px 22px 60px}
+.mat .crumbs{margin-bottom:18px}
+.mat-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:40px;align-items:start}
+.mat-cover img{width:100%;height:auto;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.12);display:block}
+.mat h1{font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-.025em;margin:0 0 10px}
+.mat .meta{color:var(--muted);font-size:15px;margin:0 0 18px}
+.mat .meta a{color:inherit}
+.mat .buy{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:18px 0 26px}
+.mat .price{font-size:30px;font-weight:700;letter-spacing:-.02em}
+.mat .desc p{font-size:17px;line-height:1.65;margin:0 0 14px}
+.mat .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:26px 0}
+.mat .facts div{background:rgba(127,127,127,.08);border-radius:14px;padding:12px 14px;font-size:14px}
+.mat .facts b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
+.mat h2{font-size:24px;letter-spacing:-.02em;margin:46px 0 16px}
+@media(max-width:820px){.mat-top{grid-template-columns:1fr}}
+</style>"""
+
+
+def render_material_page(m, related):
+    url = f"{SITE}/{mat_path(m)}"
+    title = m["title"]; fach = m.get("fach", "") or "Unterricht"
+    grades = as_list(m.get("grades")); nums = grade_nums(grades)
+    kl = klasse_label(grades); schul = ", ".join(as_list(m.get("school_types")))
+    typen = ", ".join(as_list(m.get("types"))[:4])
+    eduki = f'{EDUKI_MAT}/{m["id"]}/{m["slug"]}'
+    desc = (m.get("desc") or "").strip()
+    meta_desc = re.sub(r"\s+", " ", desc)[:155].rsplit(" ", 1)[0] + " …"
+    line_name, line_href = LINE_META.get(m.get("line"), ("Unterrichtsmaterial", "materialien.html", ""))[:2]
+    price = price_label(m)
+    try:
+        pnum = 0 if is_free(m) else float(m.get("price") or 0)
+    except Exception:
+        pnum = 0
+    product_ld = {"@context": "https://schema.org", "@type": "Product", "name": title, "description": meta_desc,
+                  "image": m.get("cover") or f"{SITE}/assets/logo.png", "url": url, "sku": str(m["id"]),
+                  "brand": {"@type": "Brand", "name": SITE_NAME},
+                  "category": f"{fach} · {kl}" if kl else fach,
+                  "offers": {"@type": "Offer", "price": f"{pnum:.2f}", "priceCurrency": "EUR", "url": eduki,
+                             "availability": "https://schema.org/InStock", "seller": ORG_LD}}
+    crumbs = [("Start", f"{SITE}/"), (fach, f"{SITE}/{fach_slug(fach)}.html"), (title, url)]
+    crumb_html = (f'<nav class="crumbs"><a href="../index.html">Start</a> › '
+                  f'<a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a> › '
+                  f'<a href="../{line_href}">{html.escape(line_name)}</a></nav>')
+    kl_links = " · ".join(f'<a href="../klasse-{n}.html">Klasse {n}</a>' for n in nums if 1 <= n <= 13)
+    cover = (f'<div class="mat-cover"><img src="{html.escape(m["cover"])}" alt="{html.escape(title)} – Vorschau" width="600" height="850"></div>'
+             if m.get("cover") else "")
+    rel_html = "".join(cat_card_html(r, root="../") for r in related)
+    facts = "".join(f"<div><b>{k}</b>{html.escape(v)}</div>" for k, v in
+                    (("Fach", fach), ("Klasse", kl or "–"), ("Schulform", schul or "–"), ("Materialart", typen or line_name))
+                    if v)
+    body = f"""{MAT_CSS}
+<main class="mat">
+{crumb_html}
+<div class="mat-top">
+{cover}
+<div>
+<h1>{html.escape(title)}</h1>
+<p class="meta">{html.escape(fach)}{(" · " + html.escape(kl)) if kl else ""}{(" · " + html.escape(schul)) if schul else ""} · {html.escape(line_name)}</p>
+<div class="buy"><span class="price">{price}</span><a class="btn" href="{eduki}" target="_blank" rel="noopener">Material auf eduki ansehen</a></div>
+<div class="desc">{desc_paras(desc)}</div>
+<div class="facts">{facts}</div>
+<p class="meta">Passende Übersichten: <a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a>{(" · " + kl_links) if kl_links else ""} · <a href="../{line_href}">{html.escape(line_name)}</a></p>
+</div>
+</div>
+{"<h2>Ähnliche Materialien</h2><div class='grid'>" + rel_html + "</div>" if related else ""}
+</main>
+"""
+    page = head(title, meta_desc, url, m.get("cover"), root="../", extra_ld=[product_ld, breadcrumb_ld(crumbs)]) + body + foot("../")
+    open(os.path.join(MAT_DIR, os.path.basename(mat_path(m))), "w", encoding="utf-8").write(page)
+
+
+def render_material_pages():
+    os.makedirs(MAT_DIR, exist_ok=True)
+    mats = [m for m in katalog_de() if m["id"] in MAT_PAGES]
+    by_fach = collections.defaultdict(list)
+    for m in mats:
+        by_fach[m.get("fach", "")].append(m)
+    for m in mats:
+        nums = set(grade_nums(as_list(m.get("grades"))))
+        cands = [x for x in by_fach[m.get("fach", "")] if x is not m]
+
+        def score(x):
+            return ((x.get("line") == m.get("line")) * 2
+                    + (bool(nums & set(grade_nums(as_list(x.get("grades")))))) * 1
+                    + (0.5 if x.get("cover") else 0))
+        cands.sort(key=lambda x: (-score(x), -int(x["id"])))
+        render_material_page(m, cands[:8])
+    return len(mats)
+
+
+def write_material_sitemaps():
+    """Sitemap-Index: sitemap.xml -> sitemap-seiten.xml + sitemap-material-N.xml (2.000 je Datei, Lesespuren zuerst)."""
+    mats = [m for m in katalog_de() if m["id"] in MAT_PAGES]
+    mats.sort(key=lambda m: (LINE_ORDER.get(m.get("line"), 9), -int(m["id"])))
+    today = datetime.date.today().isoformat()
+    files = []
+    for i in range(0, len(mats), 2000):
+        chunk = mats[i:i + 2000]; name = f"sitemap-material-{i // 2000 + 1}.xml"
+        open(os.path.join(OUT, name), "w", encoding="utf-8").write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "\n".join(f"<url><loc>{SITE}/{mat_path(m)}</loc><lastmod>{today}</lastmod></url>" for m in chunk)
+            + "\n</urlset>")
+        files.append(name)
+    return files, today
+
+
 def main():
     global FOOT_COLS
     os.makedirs(POSTS_DIR, exist_ok=True)
     FOOT_COLS = build_foot_cols()
+    register_material_pages()
     posts = load_posts()
     for p in posts:
         render_post(p)
@@ -852,6 +1030,7 @@ def main():
     n_pt, n_lt, n_gratis, n_en = render_line_pages()
     nls = render_lesespur_pages()
     nsa = render_saison_pages()
+    n_matpages = render_material_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>
 <p>{INHABER}<br>{ANSCHRIFT}</p>
@@ -892,7 +1071,7 @@ dort findest du alle Materialien nach Fach und Klasse.</p>
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Artikel, {nmat} DE-Materialien im Finder, {len(faecher)} Fach-Seiten, {len(klassen)} Klassen-Seiten, "
           f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "
-          f"{len(EXTRA_URLS)} Landingpages gesamt.")
+          f"{len(EXTRA_URLS)} Landingpages gesamt, {n_matpages} Material-Detailseiten.")
 
 
 if __name__ == "__main__":
