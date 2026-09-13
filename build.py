@@ -873,7 +873,7 @@ def build_foot_cols():
 
 # ---------------------------------------------------------------- Material-Detailseiten (Rat 13.09.)
 MAT_DIR = os.path.join(OUT, "material")
-MAT_MIN_DESC = 200   # Katalog liefert short_description (max 300); Volltext-Upgrade folgt
+MAT_MIN_DESC = 300   # Volltexte aus _katalog_desc.json (13.09.)
 
 
 def is_free(m):
