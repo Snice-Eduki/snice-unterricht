@@ -166,3 +166,20 @@ a.chip{text-decoration:none;display:inline-flex;align-items:center}
 .fcols h4{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--text)}
 .fcols p{margin:0;font-size:13px;line-height:1.9}
 @media(max-width:720px){.section{padding:40px 16px 6px}.sec-head{margin-bottom:18px}}
+
+/* redaktioneller Teil der Hub-Seiten (14.09.) */
+.editorial{max-width:820px;margin:56px auto 8px;padding:0 20px}
+.editorial h2{font-size:24px;letter-spacing:-.02em;margin:34px 0 10px}
+.editorial h2:first-child{margin-top:0}
+.editorial p{color:var(--muted);line-height:1.85;margin:0 0 12px}
+.editorial ul{color:var(--muted);line-height:1.85;margin:0 0 12px;padding-left:22px}
+.editorial li{margin:2px 0}
+.editorial details{border-top:1px solid var(--line);padding:14px 0}
+.editorial details:last-of-type{border-bottom:1px solid var(--line)}
+.editorial summary{cursor:pointer;font-weight:600;font-size:17px;letter-spacing:-.01em;list-style:none;
+  display:flex;justify-content:space-between;gap:16px;color:var(--text)}
+.editorial summary::-webkit-details-marker{display:none}
+.editorial summary::after{content:"+";color:var(--muted);font-weight:400;font-size:22px;line-height:1}
+.editorial details[open] summary::after{content:"–"}
+.editorial details p{margin:10px 0 0}
+@media(max-width:720px){.editorial{margin-top:38px;padding:0 16px}.editorial h2{font-size:21px}}
