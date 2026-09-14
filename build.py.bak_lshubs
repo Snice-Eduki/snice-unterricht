@@ -1047,104 +1047,6 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", fa
     return url
 
 
-
-LS_FACH_TEXT = {
-    "Biologie": ("Im Biologieunterricht führt die Lesespur durch einen Körper, ein Ökosystem oder einen "
-                 "Kreislauf. Die Stationen sind die Teile des Systems, und die Reihenfolge ist keine "
-                 "Erfindung: Wer die Wege vertauscht, landet in einer Sackgasse. So wird nebenbei "
-                 "geübt, was in Biologie zählt – Abläufe in der richtigen Ordnung zu erfassen."),
-    "Chemie": ("Chemische Vorgänge lassen sich schwer beobachten und gut erlesen. Die Stationen "
-               "entsprechen den Schritten eines Verfahrens oder den Stufen einer Umwandlung; das "
-               "Lösungswort ist der Fachbegriff, auf den die Stunde hinausläuft. Er taucht im "
-               "Schülertext bewusst nie auf."),
-    "Deutsch": ("Für den Deutschunterricht ist die Lesespur vor allem eine Übung im sinnentnehmenden "
-                "Lesen. Der Text gibt die Information, die Aufgabe verlangt eine Entscheidung, und "
-                "die Entscheidung ist nur richtig, wenn der Abschnitt verstanden wurde. Das macht "
-                "Lesekompetenz sichtbar, ohne dass abgefragt wird."),
-    "Erdkunde": ("Die Stationen bilden einen Raum ab – einen Flusslauf, ein Gebirge, eine Anlage. "
-                 "Die Klasse arbeitet dabei mit einem Lageplan und übt, sich in einer Darstellung zu "
-                 "orientieren und Informationen einem Ort zuzuordnen."),
-    "Geschichte": ("Geschichte wird hier als Weg erzählt: Die Stationen folgen einem Ablauf oder einem "
-                   "Ort zu einer bestimmten Zeit. Weil jede Station einen eigenen kurzen Sachtext hat, "
-                   "lässt sich eine Epoche in einer Stunde erarbeiten, ohne dass jemand den Faden verliert."),
-    "Physik": ("Physikalische Zusammenhänge werden begreifbar, wenn man sie abschreitet. Die Stationen "
-               "sind Bauteile oder Stufen eines Vorgangs, die Aufgaben verlangen Rechnen und Begründen, "
-               "und das Ergebnis entscheidet über den nächsten Schritt."),
-    "Mathematik": ("Hier trägt das Rechnen die Geschichte: Das Ergebnis einer Aufgabe bestimmt, welche "
-                   "Station als Nächstes kommt. Ein Rechenfehler führt sichtbar in die Irre, also lohnt "
-                   "sich das Nachrechnen von selbst."),
-    "Sachunterricht": ("Für die Grundschule ist die Lesespur ein Einstieg in selbstständiges Arbeiten. "
-                       "Der Lageplan gibt Halt, die Texte sind kurz, und die gesammelten Buchstaben "
-                       "zeigen am Ende, ob der Weg gestimmt hat."),
-    "Musik": ("Die Stationen führen durch ein Instrument, eine Werkstatt oder einen Klangvorgang. "
-              "Fachbegriffe werden dabei im Zusammenhang gelernt und nicht als Liste."),
-    "Informatik/ITG": ("Die Stationen bilden einen technischen Ablauf ab – Schritt für Schritt, in der "
-                       "Reihenfolge, in der er tatsächlich passiert. Das schult genau das Denken in "
-                       "Abfolgen, das der Fachunterricht braucht."),
-    "Wirtschaft": ("Die Stationen folgen einem Weg durch Betrieb, Markt oder Verwaltung. Wirtschaftliche "
-                   "Begriffe erscheinen dort, wo sie gebraucht werden, und bleiben deshalb hängen."),
-    "Hauswirtschaft": ("Die Stationen entsprechen den Arbeitsschritten, die auch in der Küche oder Werkstatt "
-                       "in dieser Reihenfolge nötig sind. Wer sie vertauscht, merkt es sofort."),
-    "Sport": ("Die Stationen führen durch Bewegungsabläufe, Regeln oder eine Sportstätte. Das Material "
-              "eignet sich für Theoriestunden und für Tage, an denen die Halle ausfällt."),
-}
-
-LS_KLASSE_TEXT = {
-    3: ("In der dritten Klasse sind die Texte kurz und die Wege übersichtlich. Der Lageplan hilft beim "
-        "Orientieren, und das Lösungswort macht die Selbstkontrolle auch für Leseanfängerinnen und "
-        "Leseanfänger möglich."),
-    4: ("Für die vierte Klasse sind die Sachtexte etwas länger und die Aufgaben verlangen schon genaues "
-        "Hinsehen. Die leichte Fassung bleibt für schwächere Leser dabei immer verfügbar."),
-    5: ("Der Übergang in die weiterführende Schule zeigt sich in der Klasse besonders deutlich. Weil "
-        "alle drei Niveaustufen denselben Weg und dasselbe Lösungswort haben, können sie nebeneinander "
-        "laufen, ohne dass jemand ausgestellt wird."),
-    6: ("In der sechsten Klasse tragen die Aufgaben mehr Fachsprache, und die Texte verlangen, "
-        "Informationen aus mehreren Sätzen zusammenzuziehen."),
-    7: ("Ab der siebten Klasse sind die Themen fachlich verankert und die Maskottchen bewusst "
-        "jugendlich gehalten. Die Aufgaben verlangen Begründen und Rechnen, nicht nur Wiedererkennen."),
-    8: ("In der achten Klasse liegt der Schwerpunkt auf Fachtexten: Die Stationen bilden technische oder "
-        "naturwissenschaftliche Abläufe ab, wie sie auch im Lehrplan stehen."),
-    9: ("Für die neunte Klasse sind die Texte dichter und die Rechenschritte anspruchsvoller. Das "
-        "Material eignet sich auch zur Wiederholung vor Leistungsnachweisen."),
-    10: ("In der zehnten Klasse dient die Lesespur vor allem der Wiederholung: Ein ganzes Lehrplanthema "
-         "wird in einer Stunde abgeschritten, mit Aufgaben im Prüfungsformat."),
-}
-
-
-def ls_beispiele(mats, grenze=8):
-    """Konkrete Themen dieser Seite als interne Links auf die Material-Detailseiten."""
-    links = []
-    for m in mats:
-        if m["id"] not in MAT_PAGES:
-            continue
-        titel = m["title"].split(" – ")[0].split(" - ")[0].strip()
-        links.append(f'<a href="{MAT_PAGES[m["id"]]}">{html.escape(titel)}</a>')
-        if len(links) >= grenze:
-            break
-    if len(links) < 3:
-        return None
-    return "Beispiele aus dieser Sammlung: " + " · ".join(links) + "."
-
-
-def ls_editorial(mats, fach=None, klasse=None):
-    if fach:
-        kopf = f"Lesespurgeschichten im Fach {fach}"
-        text = LS_FACH_TEXT.get(fach)
-    else:
-        kopf = f"Lesespurgeschichten in der {klasse}. Klasse"
-        text = LS_KLASSE_TEXT.get(klasse)
-    if not text:
-        return ""
-    abschnitte = [(kopf, [text,
-                          "Jede Geschichte liegt in drei Niveaustufen vor, die sich in Textlänge, Satzbau "
-                          "und Aufgabenanspruch unterscheiden. Weg, Stationen und Lösungswort bleiben "
-                          "gleich, sodass alle Fassungen gleichzeitig in einer Klasse laufen können."])]
-    bsp = ls_beispiele(mats)
-    if bsp:
-        abschnitte.append(("Themen auf dieser Seite", [bsp]))
-    return editorial_block(abschnitte)
-
-
 SAISON = {
     "herbst": {
         "title": "Herbst-Materialien für den Unterricht",
@@ -1215,15 +1117,14 @@ def render_lesespur_pages():
                  f"Lesespurgeschichten {f}",
                  f"{len(v)} Lesespurgeschichten für das Fach {f}: differenziert in drei Niveaustufen, mit Lageplan, "
                  "Hörverstehen und Lösungswort – lehrplanorientiert für alle Bundesländer und Schularten.",
-                 f"Lesespurgeschichten für den {f}-Unterricht. " + LS_INTRO, v, hub_link,
-                 editorial=ls_editorial(v, fach=f))
+                 f"Lesespurgeschichten für den {f}-Unterricht. " + LS_INTRO, v, hub_link)
     for n, v in by_kl.items():
         _ls_page(f"lesespurgeschichten-klasse-{n}", f"Lesespurgeschichten Klasse {n}",
                  f"Lesespurgeschichten Klasse {n}",
                  f"{len(v)} Lesespurgeschichten für die {n}. Klasse: drei Niveaustufen, Lageplan, Hörverstehen mit "
                  "QR-Code und Lösungswort – passend zu den Lehrplänen aller Bundesländer und Schularten.",
                  f"Lesespurgeschichten für die {n}. Jahrgangsstufe, sprachlich und inhaltlich auf das Alter abgestimmt. " + LS_INTRO,
-                 v, hub_link, editorial=ls_editorial(v, klasse=n))
+                 v, hub_link)
     return len(mats)
 
 
