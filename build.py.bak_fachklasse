@@ -530,62 +530,6 @@ def render_fach_pages(min_n=10):
     return sorted(faecher, key=lambda x: -len(x[1]))
 
 
-
-FK_MIN = 8        # weniger Material -> keine eigene Seite (kein Thin Content)
-FK_MAX_CARDS = 120  # Ladezeit: Rest über den Finder
-
-
-def fk_slug(fach, n):
-    return f"arbeitsblaetter-{slugify(fach)}-klasse-{n}"
-
-
-def render_fachklasse_pages():
-    """Fach × Klasse: die Kombination, nach der Lehrkräfte tatsächlich suchen."""
-    mats = katalog_de()
-    by = collections.defaultdict(list)
-    for m in mats:
-        f = m.get("fach")
-        if not f:
-            continue
-        for n in grade_nums(as_list(m.get("grades"))):
-            if 1 <= n <= 13:
-                by[(f, n)].append(m)
-    kombis = sorted([(k, v) for k, v in by.items() if len(v) >= FK_MIN], key=lambda x: (x[0][0], x[0][1]))
-    vorhanden = {k for k, _ in kombis}
-    for (f, n), v in kombis:
-        v = sort_mats(v)
-        gesamt = len(v)
-        gezeigt = v[:FK_MAX_CARDS]
-        lines = collections.Counter(m["line"] for m in v)
-        parts = []
-        def pl(k, one, many): return f"{k} {one if k == 1 else many}"
-        if lines.get("lesespur"): parts.append(pl(lines["lesespur"], "Lesespurgeschichte", "Lesespurgeschichten"))
-        if lines.get("pt"): parts.append(pl(lines["pt"], "Prüfungstraining", "Prüfungstrainings"))
-        if lines.get("lueckentext"): parts.append(pl(lines["lueckentext"], "Lückentext mit Hörverstehen", "Lückentexte mit Hörverstehen"))
-        what = ", ".join(parts) if parts else f"{gesamt} Materialien"
-        # interne Verlinkung: Nachbarklassen im selben Fach + Fachseite + Klassenseite
-        nachbarn = [f'<a href="{fk_slug(f, k)}.html">Klasse {k}</a>' for k in range(1, 14)
-                    if (f, k) in vorhanden and k != n]
-        links = (f'<p class="more"><a href="{fach_slug(f)}.html">Alle Materialien {html.escape(f)}</a> · '
-                 f'<a href="klasse-{n}.html">Alle Fächer Klasse {n}</a>'
-                 + (" · " + " · ".join(nachbarn) if nachbarn else "") + "</p>")
-        rest = ""
-        if gesamt > FK_MAX_CARDS:
-            rest = (f'<p class="more">Hier sind die {FK_MAX_CARDS} neuesten von {nfmt(gesamt)} Materialien. '
-                    f'<a href="materialien.html?q={html.escape(f)}">Alle im Material-Finder ansehen</a></p>')
-        grid_page(fk_slug(f, n),
-                  f"Arbeitsblätter {f} Klasse {n} – mit Lösungen, sofort einsetzbar",
-                  f"Arbeitsblätter {f} Klasse {n}",
-                  f"{what} für {f} in Klasse {n}: kopierfertig, differenziert und mit Musterlösungen – "
-                  f"lehrplanorientiert für alle Bundesländer und Schularten.",
-                  f"Fertige Arbeitsblätter für {f} in Klasse {n}: {what}. Jedes Material ist kopierfertig, "
-                  "enthält Lösungen und lässt sich ohne Vorbereitung einsetzen.",
-                  gezeigt, [("Alle Materialien", SITE + "/materialien.html"),
-                            (f, SITE + f"/{fach_slug(f)}.html")],
-                  with_fach=False, with_kl=False, links_html=links,
-                  itemlist_name=f"Arbeitsblätter {f} Klasse {n}", body_extra=rest)
-    return kombis
-
 def render_klasse_pages():
     mats = katalog_de()
     by = collections.defaultdict(list)
@@ -1098,7 +1042,6 @@ def main():
     render_index()
     faecher = render_fach_pages()
     klassen = render_klasse_pages()
-    fk = render_fachklasse_pages()
     n_pt, n_lt, n_gratis, n_en = render_line_pages()
     nls = render_lesespur_pages()
     nsa = render_saison_pages()
@@ -1176,7 +1119,7 @@ dort findest du alle Materialien nach Fach und Klasse.</p>
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Artikel, {nmat} DE-Materialien im Finder, {len(faecher)} Fach-Seiten, {len(klassen)} Klassen-Seiten, "
           f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "
-          f"{len(EXTRA_URLS)} Landingpages gesamt ({len(fk)} Fach×Klasse), {n_matpages} Material-Detailseiten.")
+          f"{len(EXTRA_URLS)} Landingpages gesamt, {n_matpages} Material-Detailseiten.")
 
 
 if __name__ == "__main__":
