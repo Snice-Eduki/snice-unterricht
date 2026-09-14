@@ -133,7 +133,7 @@ def topnav(root=""):
 
 
 ORG_LD = {"@type": "Organization", "name": SITE_NAME, "url": SITE + "/", "logo": SITE + "/assets/logo.png",
-          "sameAs": [SHOP]}
+          "sameAs": [SHOP, "https://www.instagram.com/snice.eduki/", "https://www.pinterest.de/sniceeduki/"]}
 
 
 def breadcrumb_ld(crumbs):
@@ -212,6 +212,21 @@ def foot(root=""):
 </body></html>"""
 
 
+
+_MAT_ID_RE = re.compile(r"/material/(\d+)")
+
+
+def post_cta(p):
+    """CTA eines Blogartikels: bevorzugt die interne Detailseite (interne Verlinkung, Nutzer bleibt auf der Seite),
+    eduki als zweiter, kleinerer Link. Ohne Detailseite wie bisher direkt zu eduki."""
+    eduki = p.get("eduki") or ""
+    m = _MAT_ID_RE.search(eduki)
+    mid = m.group(1) if m else None
+    if mid and mid in MAT_PAGES:
+        return (f'<a class="btn" href="../{MAT_PAGES[mid]}">Material ansehen →</a>'
+                f'<br><a class="more" href="{html.escape(eduki)}" rel="noopener">direkt auf eduki öffnen</a>')
+    return f'<a class="btn" href="{html.escape(eduki or SHOP)}" rel="noopener">Material auf eduki ansehen →</a>'
+
 def render_post(p):
     url = f"{SITE}/posts/{p['slug']}.html"
     body_html = md.markdown(p["body_md"], extensions=["extra", "sane_lists", "nl2br"])
@@ -226,7 +241,7 @@ def render_post(p):
     out += f"""<main class="article-wrap"><article><h1>{html.escape(p['title'])}</h1>
 {f'<p class="meta">{html.escape(meta_line)}</p>' if meta_line else ''}{cover}
 {body_html}
-<p class="cta"><a class="btn" href="{html.escape(p['eduki'] or SHOP)}" rel="noopener">Material auf eduki ansehen →</a></p>
+<p class="cta">{post_cta(p)}</p>
 </article>{rel}</main>""" + foot("../")
     open(os.path.join(POSTS_DIR, p["slug"] + ".html"), "w", encoding="utf-8").write(out)
     return url
@@ -1038,10 +1053,43 @@ def main():
 <p><strong>Verantwortlich für den Inhalt</strong> nach § 18 Abs. 2 MStV: {INHABER} (Anschrift wie oben).</p>
 <p>Dieser Blog verweist auf eigene Unterrichtsmaterialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>.</p>""")
     render_page("ueber-mich", "Über mich", f"""<h1>Über mich</h1>
-<p>Hinter <strong>{SITE_NAME}</strong> steht {INHABER} – ich erstelle praxiserprobte Unterrichtsmaterialien
-für Lehrkräfte: Arbeitsblätter, Lückentexte und Hörverständnis-Übungen inklusive Musterlösungen.</p>
-<p>Auf dieser Seite findest du alle Materialien schnell über Suche und Filter. Passende fertige Materialien
-gibt es direkt in meinem <a href="{SHOP}" rel="noopener">Shop auf eduki</a>.</p>""")
+<p class="sub">Lehrer aus Leidenschaft – mit Liebe zum Detail und motivierenden Materialien für den Unterricht.</p>
+
+<p>Hinter <strong>{SITE_NAME}</strong> steht <strong>Snice</strong>: eine Lehrkraft, die seit Jahren eigene
+Unterrichtsmaterialien entwickelt – zuerst für die eigenen Klassen, inzwischen für Kolleginnen und Kollegen
+in ganz Deutschland, Österreich und der Schweiz. Jedes Arbeitsblatt entsteht aus dem Unterricht heraus und
+wird dort auch erprobt.</p>
+
+<h2>Was mir wichtig ist</h2>
+<p><strong>Sofort einsetzbar.</strong> Kein Material, das erst noch zusammengesucht werden muss: Jede Datei
+kommt mit Lösungen, klarer Struktur und einer drucksparenden Schwarz-Weiß-Fassung.</p>
+<p><strong>Differenziert.</strong> Die Lesespurgeschichten gibt es in drei Niveaus, die Lückentexte mit
+Wortspeicher und Hörverstehen – damit in einer Klasse alle am selben Thema arbeiten können.</p>
+<p><strong>Motivierend.</strong> Lesespuren mit Lageplan und Lösungswort, Hörtexte per QR-Code, Rätselseiten
+und Ausmalbilder. Kinder merken, dass Lesen sich lohnt, wenn es zu einem Ziel führt.</p>
+<p><strong>Lehrplanorientiert.</strong> Die Themen folgen den Lehrplänen der Sekundarstufe I und der
+Grundschule – von den Wirbeltieren über die Prozentrechnung bis zu Wetter, Politik und Chemie.</p>
+
+<h2>Die drei Materiallinien</h2>
+<ul>
+<li><a href="lesespurgeschichten.html"><strong>Lesespurgeschichten</strong></a> – Lese-Abenteuer in drei
+Niveaus mit farbigem Lageplan, eingebetteten Aufträgen, Hörverstehen und geheimem Lösungswort.</li>
+<li><a href="pruefungstraining.html"><strong>Prüfungstraining</strong></a> – kompakte Pakete für Klasse 8–10:
+Zusammenfassung, Aufgaben in Prüfungsform, Musterlösungen.</li>
+<li><a href="lueckentexte.html"><strong>Lückentexte mit Hörverstehen</strong></a> – Sachtext, Wortspeicher,
+Hörtext per QR-Code und Suchsel, in Minuten einsetzbar.</li>
+</ul>
+
+<h2>Wo du mich findest</h2>
+<p>Alle Materialien liegen im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>. Neue Materialien,
+Aktionen und Einblicke in die Entstehung gibt es auf
+<a href="https://www.instagram.com/snice.eduki/" rel="noopener">Instagram</a> und
+<a href="https://www.pinterest.de/sniceeduki/" rel="noopener">Pinterest</a>.</p>
+<p>Fragen, Wünsche oder ein Fehler entdeckt? Schreib mir an <a href="mailto:{EMAIL}">{EMAIL}</a> – ich
+antworte selbst und bessere Material auch nachträglich nach.</p>
+
+<p class="btnrow"><a class="btn" href="materialien.html">Alle Materialien durchsuchen</a>
+<a class="more" href="gratis.html">Kostenlose Materialien ansehen</a></p>""")
     render_page("datenschutz", "Datenschutzerklärung", f"""<h1>Datenschutzerklärung</h1>
 <p><strong>Verantwortlicher:</strong> {INHABER}, E-Mail: {EMAIL} (Anschrift siehe <a href="impressum.html">Impressum</a>).</p>
 <h2>Hosting</h2>

@@ -7,6 +7,8 @@
 - **Volltext-Beschreibungen:** `Skripte\_katalog_desc_pull.py` (v1 materials API, 6 Threads, 429-Backoff, resumefähig) → `_katalog_desc.json` (gitignored); `load_katalog()` mischt sie ein. Danach `MAT_MIN_DESC` auf 300 zurück, Build, Push.
 - `grade_nums`/`as_list`: Katalogfelder (String-Repr-Listen) werden jetzt korrekt geparst (Klasse 10 war vorher falsch).
 
+- 22:20: Volltext-Rebuild live (0f493a1f, Nebel-Seite 2.437 Zeichen). Sitemap-Index erneut + 4 Teil-Sitemaps direkt eingereicht (sitemap-seiten, sitemap-material-1..3) → Teil-Sitemaps „Erfolgreich“ gelesen; Index-Status prüfen (Konnte-nicht-abgerufen = alter Fetch).
+
 ## ⛔ OFFEN
 - HTTPS-Zertifikat (Nutzer: Cloudflare-Konto + Nameserver bei netcup mit TAN — einzige belastbare Lösung nach 3 Re-Requests).
 - Indexierungsanträge für die restlichen Hubs (Kontingent), wöchentlicher Search-Console-Check (Seiten/Abdeckung), Backlinks: IG-Bio/Pinterest → Detailseiten.
