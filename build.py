@@ -526,6 +526,7 @@ def render_fach_pages(min_n=10):
                   f"Fertige Materialien für {f}: {what}. Filtere nach Klasse oder such ein Thema – jedes Material ist "
                   "kopierfertig und enthält Lösungen.",
                   v, [("Alle Materialien", SITE + "/materialien.html")], with_fach=False,
+                  links_html=fk_links_fuer_fach(f),
                   itemlist_name=f"Unterrichtsmaterial {f}")
     return sorted(faecher, key=lambda x: -len(x[1]))
 
@@ -539,18 +540,46 @@ def fk_slug(fach, n):
     return f"arbeitsblaetter-{slugify(fach)}-klasse-{n}"
 
 
-def render_fachklasse_pages():
-    """Fach × Klasse: die Kombination, nach der Lehrkräfte tatsächlich suchen."""
-    mats = katalog_de()
+
+_FK_CACHE = None
+
+
+def fk_kombis():
+    """{(Fach, Klasse): [Materialien]} für alle Kombinationen mit genug Material – von Fach-, Klassen-
+    und Kombiseiten gemeinsam genutzt, damit alle dieselbe Verlinkung zeigen."""
+    global _FK_CACHE
+    if _FK_CACHE is not None:
+        return _FK_CACHE
     by = collections.defaultdict(list)
-    for m in mats:
+    for m in katalog_de():
         f = m.get("fach")
         if not f:
             continue
         for n in grade_nums(as_list(m.get("grades"))):
             if 1 <= n <= 13:
                 by[(f, n)].append(m)
-    kombis = sorted([(k, v) for k, v in by.items() if len(v) >= FK_MIN], key=lambda x: (x[0][0], x[0][1]))
+    _FK_CACHE = {k: v for k, v in by.items() if len(v) >= FK_MIN}
+    return _FK_CACHE
+
+
+def fk_links_fuer_fach(f):
+    ks = sorted(n for (ff, n) in fk_kombis() if ff == f)
+    if not ks:
+        return ""
+    lk = " · ".join(f'<a href="{fk_slug(f, n)}.html">Klasse {n}</a>' for n in ks)
+    return f'<p class="more"><strong>Direkt zur Jahrgangsstufe:</strong> {lk}</p>'
+
+
+def fk_links_fuer_klasse(n):
+    fs = sorted(f for (f, nn) in fk_kombis() if nn == n)
+    if not fs:
+        return ""
+    lk = " · ".join(f'<a href="{fk_slug(f, n)}.html">{html.escape(f)}</a>' for f in fs)
+    return f'<p class="more"><strong>Direkt zum Fach in Klasse {n}:</strong> {lk}</p>'
+
+def render_fachklasse_pages():
+    """Fach × Klasse: die Kombination, nach der Lehrkräfte tatsächlich suchen."""
+    kombis = sorted(fk_kombis().items(), key=lambda x: (x[0][0], x[0][1]))
     vorhanden = {k for k, _ in kombis}
     for (f, n), v in kombis:
         v = sort_mats(v)
@@ -603,6 +632,7 @@ def render_klasse_pages():
                   f"Alles für die {n}. Jahrgangsstufe ({stufe}), sprachlich und inhaltlich auf das Alter abgestimmt. "
                   "Filtere nach Fach oder such dein Thema.",
                   v, [("Alle Materialien", SITE + "/materialien.html")], with_kl=False,
+                  links_html=fk_links_fuer_klasse(n),
                   itemlist_name=f"Unterrichtsmaterial Klasse {n}")
     return [(n, len(by[n])) for n in ks]
 

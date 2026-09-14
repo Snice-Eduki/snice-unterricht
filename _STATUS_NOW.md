@@ -1,3 +1,16 @@
+# Status snice-unterricht.eu — 14.09.2026 12:20
+
+## ✅ NEU HEUTE
+- **87 Landingpages „Arbeitsblätter <Fach> Klasse <n>"** (`arbeitsblaetter-<fach>-klasse-<n>.html`, Commit 85870d68): genau die Formulierung, nach der Lehrkräfte suchen. Regeln: nur Kombinationen mit ≥ 8 Materialien (FK_MIN, kein Thin Content), max. 120 Karten je Seite (FK_MAX_CARDS, Ladezeit) + Hinweis auf den Finder, ItemList- und BreadcrumbList-Strukturdaten, interne Verlinkung zu Fachseite, Klassenseite und allen Nachbarklassen desselben Fachs.
+- **Über-mich** komplett neu aus dem eduki-Profil (publicName „Snice", „Lehrer aus Leidenschaft"), ohne Foto (Nutzerwunsch), mit den drei Materiallinien, Instagram und Pinterest. `ORG_LD.sameAs` enthält jetzt Shop + Instagram + Pinterest (Entitätssignal).
+- **109 Blogartikel** verlinken über `post_cta()` auf die interne Material-Detailseite statt direkt zu eduki (eduki bleibt als zweiter Link) → interne Linkkraft auf die Detailseiten.
+- Search Console: `pruefungstraining.html` zur Indexierung angemeldet; `materialien.html` und `fach-biologie.html` sind bereits indexiert.
+
+## ⛔ OFFEN
+- **HTTPS/Cloudflare:** Registrierung und Login sind automatisiert nicht möglich (Turnstile, danach Bot-Interstitial). Nutzer muss sich einmal mit Google anmelden und einen API-Token (Vorlage „Edit zone DNS") in `credentials.json` als `cloudflare_api_token` ablegen; danach Zone, DNS, Nameserver (netcup-TAN via Gmail) und SSL-Modus per API. Details: [[project_cloudflare_https_20260914]].
+- **Impressum:** weiterhin Platzhalter statt ladungsfähiger Anschrift (Nutzer will keine Privatadresse → Impressumsservice mit c/o nötig).
+- Backups von build.py: `.bak_20260913`, `.bak_about`, `.bak_fachklasse`, `.bak_20260914`.
+
 # Status snice-unterricht.eu — 13.09.2026 21:20 (SEO-Offensive, Rat 20:15)
 
 ## ✅ HEUTE
