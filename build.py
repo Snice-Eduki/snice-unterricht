@@ -290,7 +290,7 @@ def cat_card_html(m, root=""):
     meta = " · ".join(x for x in (fach, kl) if x)
     nums = grade_nums(m.get("grades"))
     kdata = "," + ",".join(str(n) for n in nums) + "," if nums else ""
-    search = html.escape(" ".join([m["title"], fach, schul, kl, m.get("desc", "")]).lower(), quote=True)
+    search = html.escape(" ".join([m["title"], fach, schul, kl, (m.get("desc") or "")[:120]]).lower(), quote=True)
     if m["id"] in MAT_PAGES:
         url = root + MAT_PAGES[m["id"]]; tgt = ""
     else:
@@ -349,6 +349,70 @@ INDEX_JS = """<script>
 </script>"""
 
 
+
+FINDER_JS = """<script>
+(function(){
+ var q=document.getElementById('q'),grid=document.getElementById('grid'),
+ cnt=document.getElementById('cnt'),nores=document.getElementById('nores'),
+ more=document.getElementById('more');
+ if(!grid)return;
+ var SRC=grid.getAttribute('data-src'),PAGE=240;
+ var all=null,view=null,shown=0,f={fach:'',kl:''},term='',loading=false,jsmode=false;
+ var qm=location.search.match(/[?&]q=([^&]+)/);
+ if(qm&&q){try{q.value=decodeURIComponent(qm[1].replace(/\\+/g,' '));term=q.value.trim().toLowerCase();}catch(e){}}
+ function esc(t){return String(t).replace(/[&<>\"]/g,function(c){
+   return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c];});}
+ function card(m){
+   var t=esc(m.title),img=m.cover?'<div class="card-img"><img loading="lazy" src="'+esc(m.cover)+'" alt="'+t+'"></div>'
+        :'<div class="card-img"><div class="ph">'+t+'</div></div>';
+   var ext=m.url.indexOf('http')===0?' target="_blank" rel="noopener"':'';
+   return '<a class="card reveal in" href="'+esc(m.url)+'"'+ext+'>'+img+
+          '<div class="card-body"><h3>'+t+'</h3>'+
+          (m.meta?'<p class="card-meta">'+esc(m.meta)+'</p>':'')+'</div></a>';
+ }
+ function match(m){
+   return (!f.fach||m.fach===f.fach)
+       &&(!f.kl||(m.kl||[]).indexOf(+f.kl)>-1)
+       &&(!term||(m.s||'').indexOf(term)>-1);
+ }
+ function render(reset){
+   jsmode=true;
+   if(reset){grid.innerHTML='';shown=0;view=all.filter(match);}
+   var teil=view.slice(shown,shown+PAGE),h='';
+   for(var i=0;i<teil.length;i++)h+=card(teil[i]);
+   grid.insertAdjacentHTML('beforeend',h);shown+=teil.length;
+   if(cnt)cnt.textContent=view.length+(view.length===1?' Material':' Materialien');
+   if(nores)nores.style.display=view.length?'none':'block';
+   if(more)more.style.display=shown<view.length?'':'none';
+ }
+ function load(cb){
+   if(all){cb();return;}
+   if(loading)return;loading=true;
+   if(more)more.textContent='Wird geladen …';
+   fetch(SRC).then(function(r){return r.json();}).then(function(d){
+     all=d;loading=false;if(more)more.textContent='Mehr anzeigen';cb();
+   }).catch(function(){loading=false;if(more)more.textContent='Mehr anzeigen';});
+ }
+ function apply(){load(function(){render(true);});}
+ var _t;
+ if(q)q.addEventListener('input',function(e){var v=e.target.value.trim().toLowerCase();
+   clearTimeout(_t);_t=setTimeout(function(){term=v;apply();},200);});
+ [].forEach.call(document.querySelectorAll('.chip[data-type]'),function(ch){
+   ch.addEventListener('click',function(){
+     var ty=ch.getAttribute('data-type');f[ty]=ch.getAttribute('data-val');
+     [].forEach.call(document.querySelectorAll('.chip[data-type=\"'+ty+'\"]'),function(x){
+       x.classList.toggle('on',x===ch);});
+     apply();
+   });
+ });
+ if(more)more.addEventListener('click',function(){load(function(){
+   render(!jsmode);});});
+ if(term)apply();
+})();
+</script>"""
+
+
+FINDER_FIRST = 240
 JUNK_TITLE = re.compile(r"^(unterrichtsmaterial|deckblatt\b.*|material|arbeitsblatt)$", re.I)
 EN_RE = re.compile(r"worksheet|cloze text|listening comprehension", re.I)
 _KAT_CACHE = None
@@ -451,8 +515,28 @@ SEARCH_BOX = """<div class="searchwrap">
 </div>"""
 
 
+
+def editorial_block(sections, faq=None):
+    """Redaktioneller Seitenteil: h2-Struktur + optionaler FAQ-Bereich (Markup; LD separat)."""
+    h = '<section class="editorial">'
+    for titel, absaetze in sections:
+        h += f"<h2>{html.escape(titel)}</h2>" + "".join(
+            a if a.lstrip().startswith("<") else f"<p>{a}</p>" for a in absaetze)
+    if faq:
+        h += "<h2>Häufige Fragen</h2>"
+        h += "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>"
+                     for q, a in faq)
+    return h + "</section>"
+
+
+def faq_ld_of(faq):
+    return {"@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": q,
+                            "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
+
+
 def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_kl=True, links_html="",
-              itemlist_name=None, body_extra=""):
+              itemlist_name=None, body_extra="", editorial="", faq=None, finder=False):
     """SEO-Landingpage mit Suche + Filter-Chips + Karten-Grid (Direktlinks zu eduki)."""
     mats = sort_mats(mats)
     url = f"{SITE}/{slug}.html"
@@ -460,6 +544,11 @@ def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_k
     lds = [breadcrumb_ld([("Start", SITE + "/")] + crumbs + [(h1, url)])]
     if itemlist_name:
         lds.append(itemlist_ld(itemlist_name, mats))
+    if faq:
+        lds.append(faq_ld_of(faq))
+    grid_attr = ' data-src="search-index.json"' if finder else ""
+    more_btn = ('<p class="btnrow"><button class="btn ghost" id="more" type="button">Mehr anzeigen</button></p>'
+                if finder and n > FINDER_FIRST else "")
     out = head(title, desc, url, mats[0].get("cover", "") if mats else "", extra_ld=lds)
     out += f"""<section class="hero small">
 <nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a>{"".join(f' › <a href="{u.replace(SITE + "/", "")}">{html.escape(nm)}</a>' for nm, u in crumbs)} › <span>{html.escape(h1)}</span></nav>
@@ -472,12 +561,14 @@ def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_k
 {chips_html(mats, with_fach, with_kl)}
 <main>
 {body_extra}
-<div class="grid" id="grid">
-{chr(10).join(cat_card_html(m) for m in mats)}
+<div class="grid" id="grid"{grid_attr}>
+{chr(10).join(cat_card_html(m) for m in (mats[:FINDER_FIRST] if finder else mats))}
 </div>
+{more_btn}
 <p class="noresults" id="nores">Keine Materialien gefunden – versuch einen anderen Suchbegriff oder Filter.</p>
+{editorial}
 </main>
-{INDEX_JS}
+{FINDER_JS if finder else INDEX_JS}
 """ + foot()
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
     EXTRA_URLS.append(url)
@@ -492,10 +583,14 @@ def render_finder():
                   f"{nfmt(len(mats))} Arbeitsblätter, Lesespurgeschichten, Prüfungstrainings und Lückentexte mit Lösungen – "
                   "durchsuchbar nach Thema, Fach und Klasse. Jeder Klick führt direkt zum Material auf eduki.",
                   "Such dein Thema oder filtere nach Fach und Klasse – alle Materialien sind sofort einsetzbar und enthalten Lösungen.",
-                  mats, [])
+                  mats, [], finder=True)
     idx = [{"id": m["id"], "title": m["title"], "fach": m.get("fach", ""),
-            "grades": m.get("grades", []), "cover": m.get("cover", ""),
-            "eduki": f'{EDUKI_MAT}/{m["id"]}/{m.get("slug","")}'} for m in mats]
+            "kl": grade_nums(m.get("grades")), "cover": m.get("cover", ""),
+            "meta": " · ".join(x for x in (m.get("fach", ""), klasse_label(m.get("grades"))) if x),
+            "s": " ".join([m["title"], m.get("fach", ""), klasse_label(m.get("grades")),
+                           (m.get("desc") or "")[:120]]).lower(),
+            "url": (MAT_PAGES[m["id"]] if m["id"] in MAT_PAGES
+                    else f'{EDUKI_MAT}/{m["id"]}/{m.get("slug","")}')} for m in mats]
     open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8").write(json.dumps(idx, ensure_ascii=False))
     return n
 
@@ -637,6 +732,113 @@ def render_klasse_pages():
     return [(n, len(by[n])) for n in ks]
 
 
+
+LS_SECTIONS = [
+    ("Was ist eine Lesespurgeschichte?", [
+        "Eine Lesespurgeschichte ist ein Leseweg durch eine zusammenhängende Geschichte. Die Klasse liest einen "
+        "kurzen Abschnitt, löst dazu eine Aufgabe und entscheidet anhand des Ergebnisses, welche Station als "
+        "Nächstes an der Reihe ist. So entsteht eine Spur aus Stationen, die nur dann aufgeht, wenn wirklich "
+        "verstanden wurde, was im Text steht.",
+        "Genau das macht die Form für sinnentnehmendes Lesen so wertvoll: Wer einen Abschnitt nur überfliegt, "
+        "landet in einer Sackgasse und merkt das sofort selbst. Die Rückmeldung kommt aus dem Material und nicht "
+        "erst aus der Korrektur.",
+    ]),
+    ("So läuft eine Stunde damit ab", [
+        "Zum Einstieg bekommt jedes Kind den Lageplan und die Stationsblätter. Nach einer kurzen Orientierung "
+        "arbeiten alle selbstständig; für den Durchgang reichen erfahrungsgemäß 20 bis 30 Minuten. Die gesammelten "
+        "Buchstaben ergeben am Ende ein Lösungswort, das die Kontrolle in wenigen Sekunden erledigt.",
+        "Wer früher fertig ist, arbeitet an der Rätselseite weiter. Damit bleibt die Stunde ohne Leerlauf, auch wenn "
+        "das Lesetempo in der Klasse weit auseinandergeht.",
+    ]),
+    ("Drei Niveaustufen für dieselbe Klasse", [
+        "Jede Geschichte liegt in drei Fassungen vor. Sie unterscheiden sich in Textlänge, Satzbau und Anspruch der "
+        "Aufgaben. Handlung, Stationen und Lösungswort bleiben identisch. Deshalb können alle drei Stufen "
+        "gleichzeitig in einer Klasse laufen, ohne dass auffällt, wer welche Fassung bearbeitet.",
+        "Für die Auswertung heißt das: eine Besprechung für alle, ein Lösungsblatt für alle. Die Differenzierung "
+        "kostet keine zusätzliche Unterrichtszeit.",
+    ]),
+    ("Was in jedem Material enthalten ist", [
+        "<ul><li>Lageplan der Stationen als Übersicht</li>"
+        "<li>Stationstexte mit Aufgaben in drei Niveaustufen</li>"
+        "<li>Hörfassung des Textes über einen QR-Code</li>"
+        "<li>Rätselseite für schnelle Leserinnen und Leser</li>"
+        "<li>Lösungsblatt mit Lösungswort</li>"
+        "<li>Ausmalbild zum Thema</li>"
+        "<li>das komplette Paket zusätzlich in Schwarz-Weiß zum Kopieren</li></ul>",
+    ]),
+]
+LS_FAQ = [
+    ("Für welche Klassenstufen eignen sich Lesespurgeschichten?",
+     "Die Form funktioniert von der Grundschule bis in die Sekundarstufe. Entscheidend ist nicht das Alter, sondern "
+     "die Passung von Textlänge und Aufgabenanspruch. Dafür gibt es die drei Niveaustufen; auf dieser Seite lässt "
+     "sich zusätzlich nach Jahrgangsstufe filtern."),
+    ("Wie viel Zeit muss ich einplanen?",
+     "Für einen vollständigen Durchgang reichen in der Regel 20 bis 30 Minuten. Mit Einstieg, Besprechung und "
+     "Rätselseite füllt eine Lesespurgeschichte eine Unterrichtsstunde gut aus."),
+    ("Wie kontrollieren die Kinder ihre Ergebnisse?",
+     "An jeder Station wird ein Buchstabe gesammelt. Nur ein durchgängig richtiger Weg ergibt am Ende ein sinnvolles "
+     "Lösungswort. Ein Lösungsblatt für die Lehrkraft liegt jedem Material bei."),
+    ("Brauche ich Technik für das Hörverstehen?",
+     "Der QR-Code führt direkt zu einer Audiodatei, eine App ist nicht nötig. Die Hörfassung lässt sich ebenso gut "
+     "über die Lautsprecher im Klassenzimmer abspielen, wenn keine Geräte zur Verfügung stehen."),
+    ("Kann ich die Materialien schwarz-weiß kopieren?",
+     "Ja. Jedes Paket enthält zusätzlich eine vollständige Schwarz-Weiß-Fassung, die auf dem Kopierer sauber "
+     "herauskommt."),
+    ("Eignen sich Lesespurgeschichten für Vertretungsstunden?",
+     "Sie sind dafür besonders geeignet: Sie kommen ohne Vorbereitung aus, erklären sich selbst und die Kontrolle "
+     "läuft über das Lösungswort."),
+]
+PT_SECTIONS = [
+    ("Was ein Prüfungstraining enthält", [
+        "Jedes Paket bündelt ein Lehrplanthema in drei Teilen: eine kompakte Zusammenfassung der Inhalte, "
+        "Übungsaufgaben im Format der Abschlussprüfung und ausführliche Musterlösungen. Die Aufgabenstellungen "
+        "greifen die Operatoren auf, die in Prüfungen tatsächlich verwendet werden.",
+        "Die Zusammenfassung ist bewusst knapp gehalten. Sie ersetzt kein Schulbuch, sondern gibt der Klasse das "
+        "Gerüst, an dem sie beim Wiederholen entlanggeht.",
+    ]),
+    ("Wie du damit arbeitest", [
+        "Bewährt hat sich der Dreischritt: Zusammenfassung lesen lassen, Aufgaben in Einzelarbeit bearbeiten, "
+        "anschließend mit der Musterlösung vergleichen. Weil die Lösungen den Weg und die Begründung zeigen, können "
+        "Schülerinnen und Schüler ihre Fehler selbst einordnen.",
+        "Für die Wochen vor einer Prüfung lässt sich jedes Paket auch als Hausaufgabenpaket ausgeben.",
+    ]),
+]
+PT_FAQ = [
+    ("Für welche Jahrgangsstufen sind die Trainings gedacht?",
+     "Der Schwerpunkt liegt auf den Klassen 8 bis 10, also auf der Vorbereitung von Schulaufgaben, Klassenarbeiten "
+     "und Abschlussprüfungen."),
+    ("Sind Lösungen enthalten?",
+     "Ja, zu jeder Aufgabe gibt es eine ausführliche Musterlösung mit Lösungsweg."),
+    ("Passen die Materialien zum Lehrplan meines Bundeslandes?",
+     "Die Themen orientieren sich an Inhalten, die in allen Bundesländern zum Kernbereich gehören. Formulierungen "
+     "und Aufgabenformate sind bewusst bundeslandneutral gehalten."),
+]
+LT_SECTIONS = [
+    ("Aufbau eines Lückentextes mit Wortspeicher", [
+        "Im Zentrum steht ein kindgerechter Sachtext, aus dem die Fachbegriffe entfernt wurden. Der Wortspeicher "
+        "listet die fehlenden Wörter auf, sodass es um Verstehen geht und nicht um Raten. Ein Suchsel greift "
+        "dieselben Begriffe noch einmal auf und festigt die Schreibweise.",
+        "Über einen QR-Code lässt sich der Text zusätzlich anhören. Das hilft schwächeren Leserinnen und Lesern und "
+        "schafft nebenbei eine Übung im Hörverstehen.",
+    ]),
+    ("Einsatz im Unterricht", [
+        "Die Blätter sind für Stationenarbeit, Wochenplan und Vertretungsstunden gedacht. Weil jedes Blatt eine "
+        "Lösung mitbringt, lässt es sich auch ohne Einführung austeilen.",
+        "In Klassen mit unterschiedlichem Sprachstand hat sich bewährt, zuerst die Hörfassung anzubieten und den "
+        "Lückentext danach ausfüllen zu lassen.",
+    ]),
+]
+LT_FAQ = [
+    ("Ist der Wortspeicher immer dabei?",
+     "Ja. Alle fehlenden Wörter stehen im Wortspeicher, damit der Schwerpunkt auf dem Textverständnis liegt."),
+    ("Gibt es zu jedem Blatt eine Lösung?",
+     "Ja, jedes Material enthält eine Musterlösung."),
+    ("Wie funktioniert das Hörverstehen?",
+     "Der QR-Code auf dem Blatt führt direkt zur Audiofassung des Sachtextes. Eine zusätzliche App wird nicht "
+     "benötigt."),
+]
+
+
 def render_line_pages():
     mats = katalog_de()
     pt = [m for m in mats if m["line"] == "pt"]
@@ -649,14 +851,16 @@ def render_line_pages():
               "und Musterlösungen – Biologie, Chemie, Physik, Geschichte, Erdkunde, Politik und mehr.",
               "Jedes Paket bündelt das Wesentliche eines Lehrplanthemas: Zusammenfassung, Aufgaben in Prüfungsform, "
               "Lösungen. Ideal zur Vorbereitung auf Schulaufgaben, Klassenarbeiten und Abschlussprüfungen.",
-              pt, [], itemlist_name="Prüfungstraining")
+              pt, [], itemlist_name="Prüfungstraining",
+              editorial=editorial_block(PT_SECTIONS, PT_FAQ), faq=PT_FAQ)
     grid_page("lueckentexte", "Lückentexte mit Wortspeicher, Hörverstehen und Suchsel",
               "Lückentexte mit Hörverstehen",
               f"{nfmt(len(lt))} Lückentexte mit Wortspeicher, Hörverstehen per QR-Code und Suchsel – mit Musterlösung, "
               "für alle Fächer und Klassen. Sachtexte kindgerecht, sofort einsetzbar.",
               "Ein Sachtext als Lückentext mit Wortspeicher, dazu die Hörversion per QR-Code und ein Suchsel zur Festigung – "
               "jedes Blatt mit Lösung. Perfekt für Vertretungsstunden, Stationenarbeit und Differenzierung.",
-              lt, [], itemlist_name="Lückentexte mit Hörverstehen")
+              lt, [], finder=True, itemlist_name="Lückentexte mit Hörverstehen",
+              editorial=editorial_block(LT_SECTIONS, LT_FAQ), faq=LT_FAQ)
     grid_page("gratis", "Kostenlose Unterrichtsmaterialien zum Download",
               "Gratis-Materialien",
               f"{len(gratis)} kostenlose Arbeitsblätter und Lesespurgeschichten zum Ausprobieren – mit Lösungen, direkt bei eduki herunterladen.",
@@ -818,12 +1022,13 @@ def is_lesespur(m):
     return "lesespur" in (m.get("title", "") + " " + m.get("desc", "")).lower()
 
 
-def _ls_page(slug, title, h1, desc, intro, mats, links_html=""):
+def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", faq=None):
     """Landingpage mit Karten-Grid (gleiche Karten wie der Finder, ohne JS-Filter)."""
     mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, x.get("title", "")))
     url = f"{SITE}/{slug}.html"
     n = len(mats)
-    out = head(title, desc, url, mats[0].get("cover", "") if mats else "")
+    out = head(title, desc, url, mats[0].get("cover", "") if mats else "",
+               extra_ld=[faq_ld_of(faq)] if faq else None)
     out += f"""<section class="hero small">
 <h1>{html.escape(h1)}</h1>
 <p class="sub">{html.escape(intro)}</p>
@@ -832,7 +1037,9 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html=""):
 {links_html}
 <main><div class="grid" id="grid">
 {chr(10).join(cat_card_html(m) for m in mats)}
-</div></main>
+</div>
+{editorial}
+</main>
 <script>[].forEach.call(document.querySelectorAll('.card'),function(c){{c.classList.add('in');}});</script>
 """ + foot()
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
@@ -903,7 +1110,8 @@ def render_lesespur_pages():
              "Lesespurgeschichten",
              f"{len(mats)} Lesespurgeschichten mit drei Niveaustufen, Lageplan, Hörverstehen (QR) und Lösungswort – "
              "für Grundschule bis Sekundarstufe, alle Fächer, alle Bundesländer.",
-             LS_INTRO, mats, links)
+             LS_INTRO, mats, links,
+             editorial=editorial_block(LS_SECTIONS, LS_FAQ), faq=LS_FAQ)
     for f, v in by_fach.items():
         _ls_page(f"lesespurgeschichten-{slugify(f)}", f"Lesespurgeschichten {f}",
                  f"Lesespurgeschichten {f}",

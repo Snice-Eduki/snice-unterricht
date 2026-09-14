@@ -1,0 +1,1349 @@
+# -*- coding: utf-8 -*-
+"""build.py - Statischer Generator fuer snice-unterricht.eu.
+Apple-inspirierte Startseite = Material-Finder (Sofortsuche + Fach/Klasse-Filter + Scroll-Reveal,
+alles vanilla JS, progressiv: funktioniert auch ohne JS). Dazu 1012 SEO-Artikelseiten,
+Sitemap, robots.txt, RSS, Impressum, Ueber-mich. Cover per eduki-Hotlink. Aufruf: python build.py"""
+import datetime, os, re, json, glob, html, datetime, collections
+import markdown as md
+
+SITE = "http://snice-unterricht.eu"   # 13.09.: http bis GitHub-Pages-Zertifikat steht (Search-Console-Property = http)
+SITE_NAME = "Snice Unterricht"
+TAGLINE = "Materialien, die den Unterricht leichter machen"
+SHOP = "https://eduki.com/de/shop/400839"
+BLOG = r"C:\Claude-Arbeitsblätter\Marketing\blog"
+META = r"C:\Claude-Arbeitsblätter\Marketing\daten\blog_html"
+OUT = r"C:\Claude-Arbeitsblätter\snice-unterricht"
+POSTS_DIR = os.path.join(OUT, "posts")
+INHABER = "Matthias Ender"
+EMAIL = "snice.lehrermarktplatz@gmail.com"
+ANSCHRIFT = "[Straße & Hausnummer bitte ergänzen]<br>[PLZ Ort bitte ergänzen]"
+
+STOP = set("und der die das ein eine einen im in für mit auf von zu den dem des als auch ist sind "
+           "auch homeschooling material arbeitsblatt arbeitsblätter unterricht klasse thema mehr "
+           "sowie oder aber wie was wer wann wo bei aus nach über unter durch dass sich".split())
+
+
+def slugify(s):
+    s = s.lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss"), ("é", "e"), ("è", "e")):
+        s = s.replace(a, b)
+    return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:80] or "post"
+
+
+def clean_title(raw, fallback=""):
+    """SEO-ueberladene Titel saeubern: '(auch Homeschooling)' weg, doppelte Komma-Segmente
+    und wiederholte Woerter entfernen. 'Ägypten, Hieroglyphen Ägypten, (auch Homeschooling) Ägypten'
+    -> 'Ägypten, Hieroglyphen'."""
+    t = (raw or fallback or "").strip()
+    t = re.sub(r"\(?\s*auch\s+homeschooling\s*\)?", "", t, flags=re.I)
+    segs, seen = [], set()
+    for s in t.split(","):
+        s = s.strip()
+        if s and s.lower() not in seen:
+            seen.add(s.lower()); segs.append(s)
+    t = ", ".join(segs) if segs else t
+    words, seenw, out = t.split(), set(), []
+    for w in words:
+        lw = re.sub(r"[^a-zäöüß0-9]", "", w.lower())
+        if lw and lw in seenw:
+            continue
+        seenw.add(lw); out.append(w)
+    t = " ".join(out).strip(" ,;-")
+    return (t[:78].rstrip(" ,;-") if len(t) > 78 else t) or fallback
+
+
+def first_para(text):
+    for line in text.split("\n"):
+        t = line.strip()
+        if t and not t.startswith(("#", "!", "---")):
+            t = re.sub(r"[*_`>#\[\]]", "", t)
+            return re.sub(r"\(https?://[^)]+\)", "", t).strip()
+    return TAGLINE
+
+
+def tokens(p):
+    ws = re.findall(r"[a-zäöüß]{4,}", (p["title"] + " " + p["fach"]).lower())
+    return set(w for w in ws if w not in STOP)
+
+
+def load_posts():
+    posts = []
+    for f in sorted(glob.glob(os.path.join(BLOG, "*.md"))):
+        base = os.path.basename(f)[:-3]; pid = base.split("_", 1)[0]
+        raw = open(f, encoding="utf-8", errors="replace").read().strip()
+        if not raw:
+            continue
+        m = re.match(r"#\s+(.+)", raw)
+        if m:
+            title, body_md = m.group(1).strip(), raw[m.end():].strip()
+        else:
+            title, body_md = base.split("_", 1)[-1].replace("-", " ").title(), raw
+        meta = {}
+        mp = os.path.join(META, pid + ".json")
+        if os.path.exists(mp):
+            try:
+                meta = json.load(open(mp, encoding="utf-8"))
+            except Exception:
+                pass
+        thema = (meta.get("thema") or "").strip()
+        disp = clean_title(meta.get("titel") or title, thema or title)
+        posts.append({
+            "pid": pid, "title": disp, "raw_title": meta.get("titel") or title, "body_md": body_md,
+            "desc": first_para(body_md)[:157],
+            "slug": slugify(meta.get("permalink") or base.split("_", 1)[-1] or title),
+            "cover": meta.get("cover", ""), "eduki": meta.get("url", ""), "fach": meta.get("fach", ""),
+            "klasse": meta.get("klasse", ""), "thema": thema, "labels": meta.get("labels", ""),
+            "date": datetime.date.fromtimestamp(os.path.getmtime(f)).isoformat(),
+        })
+    seen = {}
+    for p in posts:
+        s = p["slug"]
+        if s in seen:
+            seen[s] += 1; p["slug"] = f"{s}-{p['pid']}"
+        else:
+            seen[s] = 1
+    tok = {p["pid"]: tokens(p) for p in posts}
+    for p in posts:
+        me = tok[p["pid"]]
+        scored = []
+        for q in posts:
+            if q["pid"] == p["pid"]:
+                continue
+            s = len(me & tok[q["pid"]]) + (2 if p["fach"] and p["fach"] == q["fach"] else 0)
+            if s:
+                scored.append((s, q))
+        scored.sort(key=lambda x: (-x[0], x[1]["title"]))
+        p["related"] = [q for _, q in scored[:4]]
+    return posts
+
+
+def topnav(root=""):
+    return (f'<header class="topnav" id="topnav">'
+            f'<a class="brand" href="{root}index.html" aria-label="{SITE_NAME} – Startseite">'
+            f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
+            f'<nav class="links">'
+            f'<a href="{root}materialien.html">Materialien</a>'
+            f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
+            f'<a href="{root}pruefungstraining.html">Prüfungstraining</a>'
+            f'<a href="{root}herbst.html">Herbst</a>'
+            f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
+            f'<a href="{root}ueber-mich.html">Über mich</a>'
+            f'<a href="{root}impressum.html">Impressum</a>'
+            f'</nav></header>')
+
+
+ORG_LD = {"@type": "Organization", "name": SITE_NAME, "url": SITE + "/", "logo": SITE + "/assets/logo.png",
+          "sameAs": [SHOP, "https://www.instagram.com/snice.eduki/", "https://www.pinterest.de/sniceeduki/"]}
+
+
+def breadcrumb_ld(crumbs):
+    """crumbs = [(Name, URL), ...] inkl. Startseite."""
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList",
+            "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u}
+                                for i, (n, u) in enumerate(crumbs)]}
+
+
+def itemlist_ld(name, mats, limit=50):
+    return {"@context": "https://schema.org", "@type": "ItemList", "name": name,
+            "numberOfItems": len(mats),
+            "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": m["title"],
+                                 "url": f'{EDUKI_MAT}/{m["id"]}/{m.get("slug","")}'}
+                                for i, m in enumerate(mats[:limit])]}
+
+
+def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=None, title_raw=False):
+    desc = html.escape(desc.replace("\n", " ").strip()); t = html.escape(title)
+    og_img = cover or f"{SITE}/assets/logo.png"
+    jsonld = {"@context": "https://schema.org", "@type": "BlogPosting" if article else "WebPage",
+              ("headline" if article else "name"): title, "description": desc, "url": url,
+              "author": ORG_LD, "publisher": ORG_LD, "inLanguage": "de"}
+    if article:
+        jsonld["datePublished"] = date; jsonld["dateModified"] = date
+        if cover:
+            jsonld["image"] = cover
+    lds = [jsonld] + list(extra_ld or [])
+    ld_tags = "\n".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in lds)
+    full_title = t if title_raw else f"{t} · {SITE_NAME}"
+    return f"""<!doctype html>
+<html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{full_title}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{url}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="{'article' if article else 'website'}">
+<meta property="og:title" content="{t}"><meta property="og:description" content="{desc}">
+<meta property="og:url" content="{url}"><meta property="og:image" content="{og_img}">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="{SITE_NAME}"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme:dark)">
+<link rel="preconnect" href="https://eduki.com">
+<link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{SITE}/feed.xml">
+<link rel="icon" type="image/png" href="{root}assets/logo.png">
+<link rel="apple-touch-icon" href="{root}assets/logo.png">
+<link rel="stylesheet" href="{root}assets/style.css">
+<script>document.documentElement.className+=' js';</script>
+{ld_tags}
+</head><body>
+{topnav(root)}
+"""
+
+
+NAV_SCRIPT = """<script>
+(function(){var t=document.getElementById('topnav');if(!t)return;
+var on=function(){t.classList.toggle('scrolled',window.scrollY>8)};on();
+addEventListener('scroll',on,{passive:true});})();
+</script>"""
+
+
+FOOT_COLS = ""   # wird in main() mit Fach-/Klassen-/Materialart-Links gefuellt (interne Verlinkung)
+
+
+def foot(root=""):
+    cols = FOOT_COLS.replace('href="', f'href="{root}') if root else FOOT_COLS
+    return f"""<footer class="site">
+<p class="big">{SITE_NAME}</p>
+<p>{TAGLINE}. Alle Materialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>.</p>
+{cols}
+<p><a href="{root}index.html">Start</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
+</footer>
+{NAV_SCRIPT}
+</body></html>"""
+
+
+
+_MAT_ID_RE = re.compile(r"/material/(\d+)")
+
+
+def post_cta(p):
+    """CTA eines Blogartikels: bevorzugt die interne Detailseite (interne Verlinkung, Nutzer bleibt auf der Seite),
+    eduki als zweiter, kleinerer Link. Ohne Detailseite wie bisher direkt zu eduki."""
+    eduki = p.get("eduki") or ""
+    m = _MAT_ID_RE.search(eduki)
+    mid = m.group(1) if m else None
+    if mid and mid in MAT_PAGES:
+        return (f'<a class="btn" href="../{MAT_PAGES[mid]}">Material ansehen →</a>'
+                f'<br><a class="more" href="{html.escape(eduki)}" rel="noopener">direkt auf eduki öffnen</a>')
+    return f'<a class="btn" href="{html.escape(eduki or SHOP)}" rel="noopener">Material auf eduki ansehen →</a>'
+
+def render_post(p):
+    url = f"{SITE}/posts/{p['slug']}.html"
+    body_html = md.markdown(p["body_md"], extensions=["extra", "sane_lists", "nl2br"])
+    cover = (f'<img class="cover" src="{html.escape(p["cover"])}" alt="{html.escape(p["title"])}" loading="lazy">'
+             if p["cover"] else "")
+    meta_line = " · ".join(x for x in (p["fach"], p["klasse"]) if x)
+    rel = ""
+    if p["related"]:
+        items = "".join(f'<li><a href="{q["slug"]}.html">{html.escape(q["title"])}</a></li>' for q in p["related"])
+        rel = f'<section class="related"><h2>Passende Materialien</h2><ul>{items}</ul></section>'
+    out = head(p["title"], p["desc"], url, p["cover"], "../", p["date"], True)
+    out += f"""<main class="article-wrap"><article><h1>{html.escape(p['title'])}</h1>
+{f'<p class="meta">{html.escape(meta_line)}</p>' if meta_line else ''}{cover}
+{body_html}
+<p class="cta">{post_cta(p)}</p>
+</article>{rel}</main>""" + foot("../")
+    open(os.path.join(POSTS_DIR, p["slug"] + ".html"), "w", encoding="utf-8").write(out)
+    return url
+
+
+EDUKI_MAT = "https://eduki.com/de/material"
+
+
+def as_list(v):
+    """Katalogfelder liegen teils als String-Repr einer Liste vor ("['3. Klasse', ...]")."""
+    if isinstance(v, str):
+        try:
+            import ast
+            x = ast.literal_eval(v)
+            return list(x) if isinstance(x, (list, tuple)) else [v]
+        except Exception:
+            return [v] if v else []
+    return list(v or [])
+
+
+def grade_nums(grades):
+    ns = []
+    for g in as_list(grades):
+        m = re.match(r"(\d+)", str(g))
+        if m:
+            ns.append(int(m.group(1)))
+    return sorted(set(ns))
+
+
+def klasse_label(grades):
+    ns = grade_nums(grades)
+    if not ns:
+        return ""
+    return f"Kl. {ns[0]}" if len(ns) == 1 else f"Kl. {ns[0]}–{ns[-1]}"
+
+
+MAT_PAGES = {}   # id -> "material/<id>-<slug>.html" (Detailseiten, 13.09.)
+
+
+def cat_card_html(m, root=""):
+    """Karte fuer ein Katalog-Material – Link zur Detailseite (sonst direkt zu eduki)."""
+    t = html.escape(m["title"])
+    fach = m.get("fach", "")
+    schul = (as_list(m.get("school_types")) or [""])[0]
+    kl = klasse_label(m.get("grades"))
+    meta = " · ".join(x for x in (fach, kl) if x)
+    nums = grade_nums(m.get("grades"))
+    kdata = "," + ",".join(str(n) for n in nums) + "," if nums else ""
+    search = html.escape(" ".join([m["title"], fach, schul, kl, m.get("desc", "")]).lower(), quote=True)
+    if m["id"] in MAT_PAGES:
+        url = root + MAT_PAGES[m["id"]]; tgt = ""
+    else:
+        url = f'{EDUKI_MAT}/{m["id"]}/{html.escape(m.get("slug",""), quote=True)}'; tgt = ' target="_blank" rel="noopener"'
+    if m.get("cover"):
+        img = f'<div class="card-img"><img loading="lazy" src="{html.escape(m["cover"])}" alt="{t}"></div>'
+    else:
+        img = f'<div class="card-img"><div class="ph">{t}</div></div>'
+    badge = '<span class="badge">Gratis</span>' if is_free(m) else ''
+    return (f'<a class="card reveal" href="{url}"{tgt} '
+            f'data-fach="{html.escape(fach, quote=True)}" data-kl="{kdata}" data-s="{search}">'
+            f'{img}{badge}<div class="card-body"><h3>{t}</h3>'
+            f'{f"<p class=card-meta>{html.escape(meta)}</p>" if meta else ""}</div></a>')
+
+
+INDEX_JS = """<script>
+(function(){
+ var q=document.getElementById('q'),grid=document.getElementById('grid'),
+ cnt=document.getElementById('cnt'),nores=document.getElementById('nores');
+ if(!grid)return;
+ var cards=[].slice.call(grid.querySelectorAll('.card'));
+ var f={fach:'',kl:''},term='';
+ var qm=location.search.match(/[?&]q=([^&]+)/);
+ if(qm&&q){try{q.value=decodeURIComponent(qm[1].replace(/\\+/g,' '));term=q.value.trim().toLowerCase();}catch(e){}}
+ function apply(){
+   var n=0;
+   for(var i=0;i<cards.length;i++){var c=cards[i];
+     var ok=(!f.fach||c.getAttribute('data-fach')===f.fach)
+          &&(!f.kl||c.getAttribute('data-kl').indexOf(','+f.kl+',')>-1)
+          &&(!term||c.getAttribute('data-s').indexOf(term)>-1);
+     c.style.display=ok?'':'none';if(ok)n++;}
+   if(cnt)cnt.textContent=n+(n===1?' Material':' Materialien');
+   if(nores)nores.style.display=n?'none':'block';
+ }
+ var _t;
+ if(q)q.addEventListener('input',function(e){var v=e.target.value.trim().toLowerCase();
+   clearTimeout(_t);_t=setTimeout(function(){term=v;apply();},180);});
+ [].forEach.call(document.querySelectorAll('.chip'),function(ch){
+   ch.addEventListener('click',function(){
+     var ty=ch.getAttribute('data-type'),val=ch.getAttribute('data-val');
+     f[ty]=val;  // ty = 'fach' | 'kl'
+     [].forEach.call(document.querySelectorAll('.chip[data-type="'+ty+'"]'),function(x){
+       x.classList.toggle('on',x===ch);});
+     apply();
+   });
+ });
+ // Scroll-Reveal nur bei ueberschaubarer Menge (Performance bei tausenden Karten)
+ if(cards.length<=400 && 'IntersectionObserver' in window){
+   var io=new IntersectionObserver(function(es){es.forEach(function(e){
+     if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},
+     {rootMargin:'0px 0px -6% 0px'});
+   cards.forEach(function(c,i){c.style.transitionDelay=(Math.min(i,10)*35)+'ms';io.observe(c);});
+ } else {cards.forEach(function(c){c.classList.add('in');});}
+ if(term)apply();
+})();
+</script>"""
+
+
+JUNK_TITLE = re.compile(r"^(unterrichtsmaterial|deckblatt\b.*|material|arbeitsblatt)$", re.I)
+EN_RE = re.compile(r"worksheet|cloze text|listening comprehension", re.I)
+_KAT_CACHE = None
+
+
+def line_of(m):
+    """Produktlinie: lesespur | pt | lueckentext | sonst."""
+    t = (m.get("title", "") + " " + m.get("desc", "")[:80]).lower()
+    if "lesespur" in t:
+        return "lesespur"
+    if "prüfungstraining" in t or "pruefungstraining" in t:
+        return "pt"
+    if "lückentext" in t or "lueckentext" in t or "wortspeicher" in t:
+        return "lueckentext"
+    return "sonst"
+
+
+def load_katalog():
+    """Aktive Materialien, bereinigt (12.09.): Junk-Titel raus, Titel-Dubletten -> nur neueste ID,
+    EN-Materialien markiert (m['en']) und Produktlinie (m['line'])."""
+    global _KAT_CACHE
+    if _KAT_CACHE is not None:
+        return list(_KAT_CACHE)
+    kp = os.path.join(OUT, "_katalog_live.json")
+    if not os.path.exists(kp):
+        return []
+    kat = [m for m in json.load(open(kp, encoding="utf-8")) if m.get("active") and m.get("slug")]
+    kat = [m for m in kat if not JUNK_TITLE.match(m.get("title", "").strip())]
+    # 13.09.: Volltext-Beschreibungen (v1 materials API) einmischen, wenn vorhanden (_katalog_desc_pull.py)
+    dp = os.path.join(OUT, "_katalog_desc.json")
+    if os.path.exists(dp):
+        full = json.load(open(dp, encoding="utf-8"))
+        for m in kat:
+            f = full.get(str(m["id"])) or {}
+            txt = (f.get("description") or f.get("fullDescription") or "").strip()
+            if len(txt) > len((m.get("desc") or "").strip()):
+                m["desc_short"] = m.get("desc", "")
+                m["desc"] = txt
+    best = {}
+    for m in kat:
+        k = re.sub(r"\s+", " ", m["title"].strip().lower())
+        if k not in best or int(m["id"]) > int(best[k]["id"]):
+            best[k] = m
+    kat = list(best.values())
+    for m in kat:
+        m["en"] = bool(EN_RE.search(m.get("title", "")))
+        m["line"] = line_of(m)
+    _KAT_CACHE = kat
+    return list(kat)
+
+
+def katalog_de():
+    return [m for m in load_katalog() if not m["en"]]
+
+
+LINE_ORDER = {"lesespur": 0, "pt": 1, "lueckentext": 2, "sonst": 3}
+LINE_META = {
+    "lesespur": ("Lesespurgeschichten", "lesespurgeschichten.html",
+                 "Differenzierte Lese-Abenteuer in drei Niveaustufen: Lageplan, Hörverstehen mit QR-Code, Rätselseite, Lösungswort."),
+    "pt": ("Prüfungstraining", "pruefungstraining.html",
+           "Kompakte Trainingspakete für Klasse 8–10: Zusammenfassung, Übungsaufgaben in Prüfungsform und Musterlösungen."),
+    "lueckentext": ("Lückentexte mit Hörverstehen", "lueckentexte.html",
+                    "Sachtext als Lückentext mit Wortspeicher, dazu Hörverstehen per QR-Code und Suchsel – mit Musterlösung, in Minuten einsetzbar."),
+}
+
+
+def nfmt(n):
+    return f"{n:,}".replace(",", ".")
+
+
+def sort_mats(mats):
+    """Cover zuerst, dann Produktlinie (Lesespur > PT > Lueckentext), dann neueste zuerst."""
+    return sorted(mats, key=lambda x: (0 if x.get("cover") else 1, LINE_ORDER.get(x.get("line"), 3), -int(x["id"])))
+
+
+def chips_html(mats, with_fach=True, with_kl=True):
+    fach_c = collections.Counter(m["fach"] for m in mats if m.get("fach"))
+    kl_c = collections.Counter()
+    for m in mats:
+        for n in grade_nums(m.get("grades")):
+            kl_c[n] += 1
+    rows = ""
+    if with_fach and len(fach_c) > 1:
+        s = '<button class="chip on" data-type="fach" data-val="">Alle</button>'
+        for val, n in sorted(fach_c.items(), key=lambda x: -x[1]):
+            s += (f'<button class="chip" data-type="fach" data-val="{html.escape(val, quote=True)}">'
+                  f'{html.escape(val)}<span class="n">{n}</span></button>')
+        rows += f'<div class="row"><span class="flabel">Fach</span>{s}</div>'
+    if with_kl and len(kl_c) > 1:
+        s = '<button class="chip on" data-type="kl" data-val="">Alle</button>'
+        for n in sorted(kl_c):
+            s += f'<button class="chip" data-type="kl" data-val="{n}">{n}. Kl.<span class="n">{kl_c[n]}</span></button>'
+        rows += f'<div class="row"><span class="flabel">Klasse</span>{s}</div>'
+    return f'<div class="filters">{rows}</div>' if rows else ""
+
+
+SEARCH_BOX = """<div class="searchwrap">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+<input id="q" type="search" placeholder="Suchen: z. B. Ägypten, Vulkan, Photosynthese …" autocomplete="off" aria-label="Materialien durchsuchen">
+</div>"""
+
+
+
+def editorial_block(sections, faq=None):
+    """Redaktioneller Seitenteil: h2-Struktur + optionaler FAQ-Bereich (Markup; LD separat)."""
+    h = '<section class="editorial">'
+    for titel, absaetze in sections:
+        h += f"<h2>{html.escape(titel)}</h2>" + "".join(
+            a if a.lstrip().startswith("<") else f"<p>{a}</p>" for a in absaetze)
+    if faq:
+        h += "<h2>Häufige Fragen</h2>"
+        h += "".join(f"<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>"
+                     for q, a in faq)
+    return h + "</section>"
+
+
+def faq_ld_of(faq):
+    return {"@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": q,
+                            "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
+
+
+def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_kl=True, links_html="",
+              itemlist_name=None, body_extra="", editorial="", faq=None):
+    """SEO-Landingpage mit Suche + Filter-Chips + Karten-Grid (Direktlinks zu eduki)."""
+    mats = sort_mats(mats)
+    url = f"{SITE}/{slug}.html"
+    n = len(mats)
+    lds = [breadcrumb_ld([("Start", SITE + "/")] + crumbs + [(h1, url)])]
+    if itemlist_name:
+        lds.append(itemlist_ld(itemlist_name, mats))
+    if faq:
+        lds.append(faq_ld_of(faq))
+    out = head(title, desc, url, mats[0].get("cover", "") if mats else "", extra_ld=lds)
+    out += f"""<section class="hero small">
+<nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a>{"".join(f' › <a href="{u.replace(SITE + "/", "")}">{html.escape(nm)}</a>' for nm, u in crumbs)} › <span>{html.escape(h1)}</span></nav>
+<h1>{html.escape(h1)}</h1>
+<p class="sub">{html.escape(intro)}</p>
+{SEARCH_BOX}
+<p class="count"><span id="cnt">{nfmt(n)} Materialien</span> · Klick führt direkt zu eduki</p>
+</section>
+{links_html}
+{chips_html(mats, with_fach, with_kl)}
+<main>
+{body_extra}
+<div class="grid" id="grid">
+{chr(10).join(cat_card_html(m) for m in mats)}
+</div>
+<p class="noresults" id="nores">Keine Materialien gefunden – versuch einen anderen Suchbegriff oder Filter.</p>
+{editorial}
+</main>
+{INDEX_JS}
+""" + foot()
+    open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
+    EXTRA_URLS.append(url)
+    return n
+
+
+def render_finder():
+    """Voll-Finder (alle deutschen Materialien) = materialien.html; Suche per ?q= verlinkbar."""
+    mats = katalog_de()
+    n = grid_page("materialien", "Alle Unterrichtsmaterialien durchsuchen",
+                  "Alle Materialien",
+                  f"{nfmt(len(mats))} Arbeitsblätter, Lesespurgeschichten, Prüfungstrainings und Lückentexte mit Lösungen – "
+                  "durchsuchbar nach Thema, Fach und Klasse. Jeder Klick führt direkt zum Material auf eduki.",
+                  "Such dein Thema oder filtere nach Fach und Klasse – alle Materialien sind sofort einsetzbar und enthalten Lösungen.",
+                  mats, [])
+    idx = [{"id": m["id"], "title": m["title"], "fach": m.get("fach", ""),
+            "grades": m.get("grades", []), "cover": m.get("cover", ""),
+            "eduki": f'{EDUKI_MAT}/{m["id"]}/{m.get("slug","")}'} for m in mats]
+    open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8").write(json.dumps(idx, ensure_ascii=False))
+    return n
+
+
+def fach_slug(f):
+    return "fach-" + slugify(f)
+
+
+def render_fach_pages(min_n=10):
+    mats = katalog_de()
+    by = collections.defaultdict(list)
+    for m in mats:
+        if m.get("fach"):
+            by[m["fach"]].append(m)
+    faecher = [(f, v) for f, v in by.items() if len(v) >= min_n]
+    for f, v in faecher:
+        lines = collections.Counter(m["line"] for m in v)
+        parts = []
+        def pl(n, one, many): return f"{n} {one if n == 1 else many}"
+        if lines.get("lesespur"): parts.append(pl(lines["lesespur"], "Lesespurgeschichte", "Lesespurgeschichten"))
+        if lines.get("pt"): parts.append(pl(lines["pt"], "Prüfungstraining", "Prüfungstrainings"))
+        if lines.get("lueckentext"): parts.append(pl(lines["lueckentext"], "Lückentext mit Hörverstehen", "Lückentexte mit Hörverstehen"))
+        what = ", ".join(parts) if parts else f"{len(v)} Materialien"
+        grid_page(fach_slug(f), f"Unterrichtsmaterial {f} – Arbeitsblätter mit Lösungen",
+                  f"Unterrichtsmaterial {f}",
+                  f"{what} für den {f}-Unterricht: sofort einsetzbar, differenziert, mit Musterlösungen – "
+                  "nach Klasse filterbar, lehrplanorientiert für alle Bundesländer und Schularten.",
+                  f"Fertige Materialien für {f}: {what}. Filtere nach Klasse oder such ein Thema – jedes Material ist "
+                  "kopierfertig und enthält Lösungen.",
+                  v, [("Alle Materialien", SITE + "/materialien.html")], with_fach=False,
+                  links_html=fk_links_fuer_fach(f),
+                  itemlist_name=f"Unterrichtsmaterial {f}")
+    return sorted(faecher, key=lambda x: -len(x[1]))
+
+
+
+FK_MIN = 8        # weniger Material -> keine eigene Seite (kein Thin Content)
+FK_MAX_CARDS = 120  # Ladezeit: Rest über den Finder
+
+
+def fk_slug(fach, n):
+    return f"arbeitsblaetter-{slugify(fach)}-klasse-{n}"
+
+
+
+_FK_CACHE = None
+
+
+def fk_kombis():
+    """{(Fach, Klasse): [Materialien]} für alle Kombinationen mit genug Material – von Fach-, Klassen-
+    und Kombiseiten gemeinsam genutzt, damit alle dieselbe Verlinkung zeigen."""
+    global _FK_CACHE
+    if _FK_CACHE is not None:
+        return _FK_CACHE
+    by = collections.defaultdict(list)
+    for m in katalog_de():
+        f = m.get("fach")
+        if not f:
+            continue
+        for n in grade_nums(as_list(m.get("grades"))):
+            if 1 <= n <= 13:
+                by[(f, n)].append(m)
+    _FK_CACHE = {k: v for k, v in by.items() if len(v) >= FK_MIN}
+    return _FK_CACHE
+
+
+def fk_links_fuer_fach(f):
+    ks = sorted(n for (ff, n) in fk_kombis() if ff == f)
+    if not ks:
+        return ""
+    lk = " · ".join(f'<a href="{fk_slug(f, n)}.html">Klasse {n}</a>' for n in ks)
+    return f'<p class="more"><strong>Direkt zur Jahrgangsstufe:</strong> {lk}</p>'
+
+
+def fk_links_fuer_klasse(n):
+    fs = sorted(f for (f, nn) in fk_kombis() if nn == n)
+    if not fs:
+        return ""
+    lk = " · ".join(f'<a href="{fk_slug(f, n)}.html">{html.escape(f)}</a>' for f in fs)
+    return f'<p class="more"><strong>Direkt zum Fach in Klasse {n}:</strong> {lk}</p>'
+
+def render_fachklasse_pages():
+    """Fach × Klasse: die Kombination, nach der Lehrkräfte tatsächlich suchen."""
+    kombis = sorted(fk_kombis().items(), key=lambda x: (x[0][0], x[0][1]))
+    vorhanden = {k for k, _ in kombis}
+    for (f, n), v in kombis:
+        v = sort_mats(v)
+        gesamt = len(v)
+        gezeigt = v[:FK_MAX_CARDS]
+        lines = collections.Counter(m["line"] for m in v)
+        parts = []
+        def pl(k, one, many): return f"{k} {one if k == 1 else many}"
+        if lines.get("lesespur"): parts.append(pl(lines["lesespur"], "Lesespurgeschichte", "Lesespurgeschichten"))
+        if lines.get("pt"): parts.append(pl(lines["pt"], "Prüfungstraining", "Prüfungstrainings"))
+        if lines.get("lueckentext"): parts.append(pl(lines["lueckentext"], "Lückentext mit Hörverstehen", "Lückentexte mit Hörverstehen"))
+        what = ", ".join(parts) if parts else f"{gesamt} Materialien"
+        # interne Verlinkung: Nachbarklassen im selben Fach + Fachseite + Klassenseite
+        nachbarn = [f'<a href="{fk_slug(f, k)}.html">Klasse {k}</a>' for k in range(1, 14)
+                    if (f, k) in vorhanden and k != n]
+        links = (f'<p class="more"><a href="{fach_slug(f)}.html">Alle Materialien {html.escape(f)}</a> · '
+                 f'<a href="klasse-{n}.html">Alle Fächer Klasse {n}</a>'
+                 + (" · " + " · ".join(nachbarn) if nachbarn else "") + "</p>")
+        rest = ""
+        if gesamt > FK_MAX_CARDS:
+            rest = (f'<p class="more">Hier sind die {FK_MAX_CARDS} neuesten von {nfmt(gesamt)} Materialien. '
+                    f'<a href="materialien.html?q={html.escape(f)}">Alle im Material-Finder ansehen</a></p>')
+        grid_page(fk_slug(f, n),
+                  f"Arbeitsblätter {f} Klasse {n} – mit Lösungen, sofort einsetzbar",
+                  f"Arbeitsblätter {f} Klasse {n}",
+                  f"{what} für {f} in Klasse {n}: kopierfertig, differenziert und mit Musterlösungen – "
+                  f"lehrplanorientiert für alle Bundesländer und Schularten.",
+                  f"Fertige Arbeitsblätter für {f} in Klasse {n}: {what}. Jedes Material ist kopierfertig, "
+                  "enthält Lösungen und lässt sich ohne Vorbereitung einsetzen.",
+                  gezeigt, [("Alle Materialien", SITE + "/materialien.html"),
+                            (f, SITE + f"/{fach_slug(f)}.html")],
+                  with_fach=False, with_kl=False, links_html=links,
+                  itemlist_name=f"Arbeitsblätter {f} Klasse {n}", body_extra=rest)
+    return kombis
+
+def render_klasse_pages():
+    mats = katalog_de()
+    by = collections.defaultdict(list)
+    for m in mats:
+        for n in grade_nums(m.get("grades")):
+            by[n].append(m)
+    ks = sorted(n for n in by if len(by[n]) >= 10)
+    for n in ks:
+        v = by[n]
+        stufe = "Grundschule" if n <= 4 else ("Sekundarstufe I" if n <= 10 else "Sekundarstufe II")
+        grid_page(f"klasse-{n}", f"Arbeitsblätter Klasse {n} – Unterrichtsmaterial mit Lösungen",
+                  f"Unterrichtsmaterial Klasse {n}",
+                  f"{nfmt(len(v))} Materialien für die {n}. Klasse ({stufe}): Arbeitsblätter, Lesespurgeschichten, "
+                  "Lückentexte mit Hörverstehen und Prüfungstraining – alle Fächer, mit Lösungen, sofort einsetzbar.",
+                  f"Alles für die {n}. Jahrgangsstufe ({stufe}), sprachlich und inhaltlich auf das Alter abgestimmt. "
+                  "Filtere nach Fach oder such dein Thema.",
+                  v, [("Alle Materialien", SITE + "/materialien.html")], with_kl=False,
+                  links_html=fk_links_fuer_klasse(n),
+                  itemlist_name=f"Unterrichtsmaterial Klasse {n}")
+    return [(n, len(by[n])) for n in ks]
+
+
+
+LS_SECTIONS = [
+    ("Was ist eine Lesespurgeschichte?", [
+        "Eine Lesespurgeschichte ist ein Leseweg durch eine zusammenhängende Geschichte. Die Klasse liest einen "
+        "kurzen Abschnitt, löst dazu eine Aufgabe und entscheidet anhand des Ergebnisses, welche Station als "
+        "Nächstes an der Reihe ist. So entsteht eine Spur aus Stationen, die nur dann aufgeht, wenn wirklich "
+        "verstanden wurde, was im Text steht.",
+        "Genau das macht die Form für sinnentnehmendes Lesen so wertvoll: Wer einen Abschnitt nur überfliegt, "
+        "landet in einer Sackgasse und merkt das sofort selbst. Die Rückmeldung kommt aus dem Material und nicht "
+        "erst aus der Korrektur.",
+    ]),
+    ("So läuft eine Stunde damit ab", [
+        "Zum Einstieg bekommt jedes Kind den Lageplan und die Stationsblätter. Nach einer kurzen Orientierung "
+        "arbeiten alle selbstständig; für den Durchgang reichen erfahrungsgemäß 20 bis 30 Minuten. Die gesammelten "
+        "Buchstaben ergeben am Ende ein Lösungswort, das die Kontrolle in wenigen Sekunden erledigt.",
+        "Wer früher fertig ist, arbeitet an der Rätselseite weiter. Damit bleibt die Stunde ohne Leerlauf, auch wenn "
+        "das Lesetempo in der Klasse weit auseinandergeht.",
+    ]),
+    ("Drei Niveaustufen für dieselbe Klasse", [
+        "Jede Geschichte liegt in drei Fassungen vor. Sie unterscheiden sich in Textlänge, Satzbau und Anspruch der "
+        "Aufgaben. Handlung, Stationen und Lösungswort bleiben identisch. Deshalb können alle drei Stufen "
+        "gleichzeitig in einer Klasse laufen, ohne dass auffällt, wer welche Fassung bearbeitet.",
+        "Für die Auswertung heißt das: eine Besprechung für alle, ein Lösungsblatt für alle. Die Differenzierung "
+        "kostet keine zusätzliche Unterrichtszeit.",
+    ]),
+    ("Was in jedem Material enthalten ist", [
+        "<ul><li>Lageplan der Stationen als Übersicht</li>"
+        "<li>Stationstexte mit Aufgaben in drei Niveaustufen</li>"
+        "<li>Hörfassung des Textes über einen QR-Code</li>"
+        "<li>Rätselseite für schnelle Leserinnen und Leser</li>"
+        "<li>Lösungsblatt mit Lösungswort</li>"
+        "<li>Ausmalbild zum Thema</li>"
+        "<li>das komplette Paket zusätzlich in Schwarz-Weiß zum Kopieren</li></ul>",
+    ]),
+]
+LS_FAQ = [
+    ("Für welche Klassenstufen eignen sich Lesespurgeschichten?",
+     "Die Form funktioniert von der Grundschule bis in die Sekundarstufe. Entscheidend ist nicht das Alter, sondern "
+     "die Passung von Textlänge und Aufgabenanspruch. Dafür gibt es die drei Niveaustufen; auf dieser Seite lässt "
+     "sich zusätzlich nach Jahrgangsstufe filtern."),
+    ("Wie viel Zeit muss ich einplanen?",
+     "Für einen vollständigen Durchgang reichen in der Regel 20 bis 30 Minuten. Mit Einstieg, Besprechung und "
+     "Rätselseite füllt eine Lesespurgeschichte eine Unterrichtsstunde gut aus."),
+    ("Wie kontrollieren die Kinder ihre Ergebnisse?",
+     "An jeder Station wird ein Buchstabe gesammelt. Nur ein durchgängig richtiger Weg ergibt am Ende ein sinnvolles "
+     "Lösungswort. Ein Lösungsblatt für die Lehrkraft liegt jedem Material bei."),
+    ("Brauche ich Technik für das Hörverstehen?",
+     "Der QR-Code führt direkt zu einer Audiodatei, eine App ist nicht nötig. Die Hörfassung lässt sich ebenso gut "
+     "über die Lautsprecher im Klassenzimmer abspielen, wenn keine Geräte zur Verfügung stehen."),
+    ("Kann ich die Materialien schwarz-weiß kopieren?",
+     "Ja. Jedes Paket enthält zusätzlich eine vollständige Schwarz-Weiß-Fassung, die auf dem Kopierer sauber "
+     "herauskommt."),
+    ("Eignen sich Lesespurgeschichten für Vertretungsstunden?",
+     "Sie sind dafür besonders geeignet: Sie kommen ohne Vorbereitung aus, erklären sich selbst und die Kontrolle "
+     "läuft über das Lösungswort."),
+]
+PT_SECTIONS = [
+    ("Was ein Prüfungstraining enthält", [
+        "Jedes Paket bündelt ein Lehrplanthema in drei Teilen: eine kompakte Zusammenfassung der Inhalte, "
+        "Übungsaufgaben im Format der Abschlussprüfung und ausführliche Musterlösungen. Die Aufgabenstellungen "
+        "greifen die Operatoren auf, die in Prüfungen tatsächlich verwendet werden.",
+        "Die Zusammenfassung ist bewusst knapp gehalten. Sie ersetzt kein Schulbuch, sondern gibt der Klasse das "
+        "Gerüst, an dem sie beim Wiederholen entlanggeht.",
+    ]),
+    ("Wie du damit arbeitest", [
+        "Bewährt hat sich der Dreischritt: Zusammenfassung lesen lassen, Aufgaben in Einzelarbeit bearbeiten, "
+        "anschließend mit der Musterlösung vergleichen. Weil die Lösungen den Weg und die Begründung zeigen, können "
+        "Schülerinnen und Schüler ihre Fehler selbst einordnen.",
+        "Für die Wochen vor einer Prüfung lässt sich jedes Paket auch als Hausaufgabenpaket ausgeben.",
+    ]),
+]
+PT_FAQ = [
+    ("Für welche Jahrgangsstufen sind die Trainings gedacht?",
+     "Der Schwerpunkt liegt auf den Klassen 8 bis 10, also auf der Vorbereitung von Schulaufgaben, Klassenarbeiten "
+     "und Abschlussprüfungen."),
+    ("Sind Lösungen enthalten?",
+     "Ja, zu jeder Aufgabe gibt es eine ausführliche Musterlösung mit Lösungsweg."),
+    ("Passen die Materialien zum Lehrplan meines Bundeslandes?",
+     "Die Themen orientieren sich an Inhalten, die in allen Bundesländern zum Kernbereich gehören. Formulierungen "
+     "und Aufgabenformate sind bewusst bundeslandneutral gehalten."),
+]
+LT_SECTIONS = [
+    ("Aufbau eines Lückentextes mit Wortspeicher", [
+        "Im Zentrum steht ein kindgerechter Sachtext, aus dem die Fachbegriffe entfernt wurden. Der Wortspeicher "
+        "listet die fehlenden Wörter auf, sodass es um Verstehen geht und nicht um Raten. Ein Suchsel greift "
+        "dieselben Begriffe noch einmal auf und festigt die Schreibweise.",
+        "Über einen QR-Code lässt sich der Text zusätzlich anhören. Das hilft schwächeren Leserinnen und Lesern und "
+        "schafft nebenbei eine Übung im Hörverstehen.",
+    ]),
+    ("Einsatz im Unterricht", [
+        "Die Blätter sind für Stationenarbeit, Wochenplan und Vertretungsstunden gedacht. Weil jedes Blatt eine "
+        "Lösung mitbringt, lässt es sich auch ohne Einführung austeilen.",
+        "In Klassen mit unterschiedlichem Sprachstand hat sich bewährt, zuerst die Hörfassung anzubieten und den "
+        "Lückentext danach ausfüllen zu lassen.",
+    ]),
+]
+LT_FAQ = [
+    ("Ist der Wortspeicher immer dabei?",
+     "Ja. Alle fehlenden Wörter stehen im Wortspeicher, damit der Schwerpunkt auf dem Textverständnis liegt."),
+    ("Gibt es zu jedem Blatt eine Lösung?",
+     "Ja, jedes Material enthält eine Musterlösung."),
+    ("Wie funktioniert das Hörverstehen?",
+     "Der QR-Code auf dem Blatt führt direkt zur Audiofassung des Sachtextes. Eine zusätzliche App wird nicht "
+     "benötigt."),
+]
+
+
+def render_line_pages():
+    mats = katalog_de()
+    pt = [m for m in mats if m["line"] == "pt"]
+    lt = [m for m in mats if m["line"] == "lueckentext"]
+    gratis = [m for m in load_katalog() if m.get("is_free")]
+    en = [m for m in load_katalog() if m["en"]]
+    grid_page("pruefungstraining", "Prüfungstraining Klasse 8–10 – Zusammenfassung, Aufgaben, Lösungen",
+              "Prüfungstraining",
+              f"{len(pt)} Prüfungstrainings für Klasse 8 bis 10: kompakte Zusammenfassung, Übungsaufgaben in Prüfungsform "
+              "und Musterlösungen – Biologie, Chemie, Physik, Geschichte, Erdkunde, Politik und mehr.",
+              "Jedes Paket bündelt das Wesentliche eines Lehrplanthemas: Zusammenfassung, Aufgaben in Prüfungsform, "
+              "Lösungen. Ideal zur Vorbereitung auf Schulaufgaben, Klassenarbeiten und Abschlussprüfungen.",
+              pt, [], itemlist_name="Prüfungstraining",
+              editorial=editorial_block(PT_SECTIONS, PT_FAQ), faq=PT_FAQ)
+    grid_page("lueckentexte", "Lückentexte mit Wortspeicher, Hörverstehen und Suchsel",
+              "Lückentexte mit Hörverstehen",
+              f"{nfmt(len(lt))} Lückentexte mit Wortspeicher, Hörverstehen per QR-Code und Suchsel – mit Musterlösung, "
+              "für alle Fächer und Klassen. Sachtexte kindgerecht, sofort einsetzbar.",
+              "Ein Sachtext als Lückentext mit Wortspeicher, dazu die Hörversion per QR-Code und ein Suchsel zur Festigung – "
+              "jedes Blatt mit Lösung. Perfekt für Vertretungsstunden, Stationenarbeit und Differenzierung.",
+              lt, [], itemlist_name="Lückentexte mit Hörverstehen",
+              editorial=editorial_block(LT_SECTIONS, LT_FAQ), faq=LT_FAQ)
+    grid_page("gratis", "Kostenlose Unterrichtsmaterialien zum Download",
+              "Gratis-Materialien",
+              f"{len(gratis)} kostenlose Arbeitsblätter und Lesespurgeschichten zum Ausprobieren – mit Lösungen, direkt bei eduki herunterladen.",
+              "Zum Kennenlernen: Diese Materialien sind kostenlos. Einfach anklicken und bei eduki herunterladen.",
+              gratis, [], itemlist_name="Gratis-Materialien")
+    if en:
+        grid_page("english-worksheets", "English Worksheets – cloze text, listening comprehension, word search",
+                  "English Worksheets",
+                  f"{len(en)} English worksheets: cloze text with word bank, listening comprehension via QR code and word "
+                  "search – with answer key. Ready to use for English lessons and CLIL.",
+                  "Ready-to-use worksheets for English lessons: cloze text, listening comprehension and word search, each with answer key.",
+                  en, [], with_fach=False, itemlist_name="English Worksheets")
+    return len(pt), len(lt), len(gratis), len(en)
+
+
+FAQ = [
+    ("Für welche Klassen und Schularten sind die Materialien geeignet?",
+     "Von der Grundschule bis zur 10. Klasse, für alle Schularten: Grundschule, Mittel-, Haupt-, Real-, Ober-, Gesamt- und "
+     "Gemeinschaftsschule sowie Gymnasium. Auf den Materialien steht keine Klassenstufe – so passen sie zu jeder Lerngruppe."),
+    ("Sind Lösungen enthalten?",
+     "Ja. Jedes Material enthält eine Musterlösung bzw. ein Lösungsblatt. Lesespurgeschichten haben zusätzlich ein Lösungswort zur Selbstkontrolle."),
+    ("Was ist eine Lesespurgeschichte?",
+     "Ein differenziertes Lese- und Sachmaterial: Die Klasse liest eine Geschichte in drei Niveaustufen, folgt Hinweisen über einen "
+     "Lageplan von Station zu Station und sammelt Buchstaben für ein Lösungswort. Dazu gehören Hörverstehen per QR-Code, Rätselseite, "
+     "Ausmalbild und Lösungen – in Farbe und als Schwarz-Weiß-Kopiervorlage."),
+    ("Wie funktioniert das Hörverstehen mit QR-Code?",
+     "Auf dem Arbeitsblatt ist ein QR-Code aufgedruckt. Die Lernenden scannen ihn mit Tablet oder Handy und hören den Text – "
+     "ohne App, ohne Anmeldung. So üben sie Zuhören und Lesen zugleich."),
+    ("In welchem Format kommen die Materialien?",
+     "Als PDF zum Ausdrucken, in Farbe und kopierfreundlich in Schwarz-Weiß. Nach dem Kauf bei eduki stehen die Dateien sofort zum Download bereit."),
+    ("Passen die Materialien zu meinem Lehrplan?",
+     "Die Themen orientieren sich an den Lehrplänen aller Bundesländer (z. B. LehrplanPLUS, Bildungspläne, Rahmenlehrpläne) und decken die "
+     "gängigen Kernthemen der Fächer ab. In der Beschreibung jedes Materials sind die Lehrplanbezüge genannt."),
+]
+
+
+def render_index():
+    """Kuratierte Startseite (Apple-Stil): Hero, Nutzen, Materialarten, Faecher, Klassen, Saison, Gratis, FAQ."""
+    mats = katalog_de()
+    allm = load_katalog()
+    n_all = len(mats)
+    by_line = collections.defaultdict(list)
+    for m in mats:
+        by_line[m["line"]].append(m)
+    fach_c = collections.Counter(m["fach"] for m in mats if m.get("fach"))
+    kl_c = collections.Counter()
+    for m in mats:
+        for n in grade_nums(m.get("grades")):
+            kl_c[n] += 1
+    gratis = [m for m in allm if m.get("is_free")]
+    herbst = [m for m in mats if re.search(SAISON["herbst"]["kw"], m["title"].lower())
+              and not re.search(SAISON["herbst"]["block"], m["title"].lower())]
+
+    def cards(ms, k=8):
+        ms = [m for m in sort_mats(ms) if m.get("cover")][:k] or sort_mats(ms)[:k]
+        return "\n".join(cat_card_html(m) for m in ms)
+
+    def line_section(key, ms):
+        name, href, blurb = LINE_META[key]
+        return f"""<section class="section">
+<div class="sec-head"><div><h2>{name}</h2><p class="lead">{blurb}</p></div>
+<a class="more" href="{href}">Alle {nfmt(len(ms))} ansehen →</a></div>
+<div class="grid grid-home">{cards(ms)}</div>
+</section>"""
+
+    fach_tiles = "".join(
+        f'<a class="fach-tile" href="{fach_slug(f)}.html"><span class="fname">{html.escape(f)}</span>'
+        f'<span class="fn">{nfmt(n)} Materialien</span></a>'
+        for f, n in sorted(fach_c.items(), key=lambda x: -x[1]) if n >= 10)
+    kl_chips = "".join(f'<a class="chip big" href="klasse-{n}.html">{n}. Klasse<span class="n">{nfmt(kl_c[n])}</span></a>'
+                       for n in sorted(kl_c) if kl_c[n] >= 10)
+    faq_html = "".join(f'<details><summary>{html.escape(q)}</summary><p>{html.escape(a)}</p></details>' for q, a in FAQ)
+    faq_ld = {"@context": "https://schema.org", "@type": "FAQPage",
+              "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
+    site_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "url": SITE + "/",
+               "inLanguage": "de", "publisher": ORG_LD,
+               "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint",
+                                   "urlTemplate": SITE + "/materialien.html?q={search_term_string}"},
+                                   "query-input": "required name=search_term_string"}}
+    org_ld = dict(ORG_LD); org_ld["@context"] = "https://schema.org"
+    title = f"{SITE_NAME} – Unterrichtsmaterial mit Lösungen für alle Fächer und Klassen"
+    desc = (f"Über {nfmt(n_all)} fertige Arbeitsblätter, Lesespurgeschichten, Prüfungstrainings und Lückentexte mit Hörverstehen – "
+            "differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte. Grundschule bis Klasse 10.")
+    out = head(title, desc, SITE + "/", "", extra_ld=[site_ld, org_ld, faq_ld], title_raw=True)
+    out += f"""<section class="hero">
+<h1>Unterrichtsmaterial,<br>das sofort funktioniert.</h1>
+<p class="sub">Über {nfmt(n_all)} fertige Arbeitsblätter, Lesespurgeschichten und Prüfungstrainings – differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte.</p>
+<form class="searchwrap" action="materialien.html" method="get" role="search">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+<input name="q" type="search" placeholder="Thema suchen: z. B. Vulkan, Photosynthese, Ägypten …" autocomplete="off" aria-label="Materialien durchsuchen">
+</form>
+<p class="btnrow"><a class="btn" href="materialien.html">Alle Materialien</a><a class="btn ghost" href="lesespurgeschichten.html">Lesespurgeschichten</a></p>
+<p class="count">Grundschule bis Klasse 10 · alle Fächer · Klick führt direkt zu eduki</p>
+</section>
+
+<section class="section tiles">
+<div class="tile"><h3>Sofort einsetzbar</h3><p>PDF zum Ausdrucken, in Farbe und als Schwarz-Weiß-Kopiervorlage. Jedes Material mit Musterlösung – keine Vorbereitung nötig.</p></div>
+<div class="tile"><h3>Differenziert</h3><p>Drei Niveaustufen bei Lesespurgeschichten, Wortspeicher bei Lückentexten, Hörverstehen per QR-Code: Jedes Kind arbeitet auf seinem Niveau.</p></div>
+<div class="tile"><h3>Lehrplanorientiert</h3><p>Kernthemen aller Fächer, abgestimmt auf die Lehrpläne der Bundesländer und alle Schularten – ohne Klassenstufe auf dem Blatt.</p></div>
+</section>
+
+{line_section("lesespur", by_line["lesespur"])}
+{line_section("pt", by_line["pt"])}
+{line_section("lueckentext", by_line["lueckentext"])}
+
+<section class="section">
+<div class="sec-head"><div><h2>Nach Fach</h2><p class="lead">Alle Materialien eines Fachs auf einer Seite – nach Klasse filterbar.</p></div></div>
+<div class="fachgrid">{fach_tiles}</div>
+</section>
+
+<section class="section">
+<div class="sec-head"><div><h2>Nach Klasse</h2><p class="lead">Sprachlich und inhaltlich auf die Jahrgangsstufe abgestimmt.</p></div></div>
+<div class="klassen">{kl_chips}</div>
+</section>
+
+<section class="section">
+<div class="sec-head"><div><h2>Herbst im Unterricht</h2><p class="lead">Kastanie, Kürbis, Igel, Zugvögel, Nebel und Erntezeit – die Saisonthemen auf einen Blick.</p></div>
+<a class="more" href="herbst.html">Alle Herbst-Materialien →</a></div>
+<div class="grid grid-home">{cards(herbst, 4)}</div>
+</section>
+
+<section class="section">
+<div class="sec-head"><div><h2>Gratis ausprobieren</h2><p class="lead">Kostenlose Materialien zum Kennenlernen – einfach herunterladen.</p></div>
+<a class="more" href="gratis.html">Alle {len(gratis)} Gratis-Materialien →</a></div>
+<div class="grid grid-home">{cards(gratis, 4)}</div>
+</section>
+
+<section class="section faq">
+<h2>Häufige Fragen</h2>
+{faq_html}
+</section>
+
+<section class="section about">
+<h2>Von einer Lehrkraft für Lehrkräfte</h2>
+<p class="lead">Hinter {SITE_NAME} steht {INHABER}. Alle Materialien entstehen aus der Unterrichtspraxis, werden inhaltlich geprüft und laufend erweitert – damit du weniger vorbereitest und mehr unterrichtest. <a href="ueber-mich.html">Mehr über mich →</a></p>
+</section>
+<script>[].forEach.call(document.querySelectorAll('.card'),function(c){{c.classList.add('in');}});</script>
+""" + foot()
+    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(out)
+    return n_all
+
+
+def render_page(slug, title, inner):
+    out = head(title, title, f"{SITE}/{slug}.html", "") + '<main class="article-wrap">' + inner + "</main>" + foot()
+    open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
+
+
+EXTRA_URLS = []
+LS_INTRO = ("Eine Lesespurgeschichte ist ein differenziertes Lese- und Sachmaterial: Die Klasse liest eine Geschichte "
+            "in drei Niveaustufen (leicht, mittel, schwer), folgt den Hinweisen über einen Lageplan von Station zu "
+            "Station und sammelt dabei Buchstaben für ein Lösungswort. Jedes Paket enthält Anleitung, drei "
+            "Geschichten, Lageplan, Hörverstehen mit QR-Code, Rätselseite, Ausmalbild und Lösungen – in Farbe und als "
+            "kopierfreundliche Schwarz-Weiß-Version. Die Themen orientieren sich an den Lehrplänen aller Bundesländer "
+            "und passen für alle Schularten (Grundschule, Mittel-, Haupt-, Real-, Ober-, Gesamt- und "
+            "Gemeinschaftsschule, Gymnasium).")
+
+
+def is_lesespur(m):
+    return "lesespur" in (m.get("title", "") + " " + m.get("desc", "")).lower()
+
+
+def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", faq=None):
+    """Landingpage mit Karten-Grid (gleiche Karten wie der Finder, ohne JS-Filter)."""
+    mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, x.get("title", "")))
+    url = f"{SITE}/{slug}.html"
+    n = len(mats)
+    out = head(title, desc, url, mats[0].get("cover", "") if mats else "",
+               extra_ld=[faq_ld_of(faq)] if faq else None)
+    out += f"""<section class="hero small">
+<h1>{html.escape(h1)}</h1>
+<p class="sub">{html.escape(intro)}</p>
+<p class="count">{n} {'Lesespurgeschichte' if n == 1 else 'Lesespurgeschichten'} · Klick führt direkt zu eduki</p>
+</section>
+{links_html}
+<main><div class="grid" id="grid">
+{chr(10).join(cat_card_html(m) for m in mats)}
+</div>
+{editorial}
+</main>
+<script>[].forEach.call(document.querySelectorAll('.card'),function(c){{c.classList.add('in');}});</script>
+""" + foot()
+    open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
+    EXTRA_URLS.append(url)
+    return url
+
+
+SAISON = {
+    "herbst": {
+        "title": "Herbst-Materialien für den Unterricht",
+        "h1": "Herbst im Unterricht",
+        "desc": "Arbeitsblätter, Lesespurgeschichten und Hörverstehen rund um den Herbst: Kürbis, Kastanie, Igel, "
+                "Zugvögel, Nebel, Ernte, Kartoffel und Wald – für Grundschule und Sekundarstufe, mit Lösungen.",
+        "intro": "Der Herbst bringt die schönsten Sachthemen ins Klassenzimmer: Kastanien und Kürbisse, Igel und "
+                 "Zugvögel, Nebelmorgen und Erntezeit. Hier findest du alle passenden Materialien auf einen Blick – "
+                 "Lesespurgeschichten in drei Niveaustufen, Lückentexte mit Hörverstehen und Steckbriefe, jeweils mit "
+                 "Lösungen und direktem Link zu eduki.",
+        "kw": r"\bherbst|kürbis|kastanie|\bigel\b|\bigel[ -]|zugvögel|\bkranich|storch|\bpilz|ernte|\bnebel\b|laubbaum|laubblatt|herbstlaub|"
+              r"\bapfel\b|apfelbaum|kartoffel|\bdrachen\b|eichhörnchen|\beichel|haselnuss|walnuss|wetterstation|jahreszeiten|"
+              r"winterschlaf|erntedank|laterne|sankt martin|waldkauz|waldtiere|lebensraum wald|\bwald\b|tiere des waldes|\bwolf\b|"
+              r"\bhirsch\b|\breh\b|wildschwein|\bfuchs\b|\bhase\b|\bmais\b|weizen|\bwein(lese|bau)|trauben|zwiebel|\brübe|federweiße",
+        "block": r"kreis|stadt\b|-stadt|regierungsbezirk|buchführung|blaubär|kalifornien|kokosnuss|regenwald|worksheet|"
+                 r"bayerischer wald|oberpfälzer|thüringer wald|teutoburger|rübezahl|dissen",
+    },
+}
+
+
+def render_saison_pages():
+    """Saisonale Landingpages (z. B. Herbst): Keyword-Auswahl aus dem Katalog, alle Fächer/Klassen."""
+    mats = load_katalog()
+    n_total = 0
+    for slug, s in SAISON.items():
+        sel = [m for m in mats
+               if re.search(s["kw"], m["title"].lower()) and not re.search(s["block"], m["title"].lower())]
+        if not sel:
+            continue
+        n_total += len(sel)
+        links = ('<div class="filters"><div class="row">'
+                 '<a class="chip" href="lesespurgeschichten.html">Alle Lesespurgeschichten</a>'
+                 '<a class="chip" href="index.html">Alle Materialien</a></div></div>')
+        _ls_page(slug, s["title"], s["h1"], s["desc"], s["intro"], sel, links)
+    return n_total
+
+
+def render_lesespur_pages():
+    """Hub + Landingpages je Fach und je Klasse fuer Lesespurgeschichten (SEO-Suchintention
+    'Lesespurgeschichte Klasse 8 Physik'). Alle Karten verlinken direkt zum eduki-Material."""
+    mats = [m for m in load_katalog() if is_lesespur(m)]
+    if not mats:
+        return 0
+    by_fach = collections.defaultdict(list)
+    by_kl = collections.defaultdict(list)
+    for m in mats:
+        if m.get("fach"):
+            by_fach[m["fach"]].append(m)
+        for n in grade_nums(m.get("grades")):
+            by_kl[n].append(m)
+    fach_links = "".join(
+        f'<a class="chip" href="lesespurgeschichten-{slugify(f)}.html">{html.escape(f)}<span class="n">{len(v)}</span></a>'
+        for f, v in sorted(by_fach.items(), key=lambda x: -len(x[1])))
+    kl_links = "".join(
+        f'<a class="chip" href="lesespurgeschichten-klasse-{n}.html">{n}. Kl.<span class="n">{len(by_kl[n])}</span></a>'
+        for n in sorted(by_kl))
+    links = (f'<div class="filters"><div class="row"><span class="flabel">Fach</span>{fach_links}</div>'
+             f'<div class="row"><span class="flabel">Klasse</span>{kl_links}</div></div>')
+    hub_link = '<div class="filters"><div class="row"><a class="chip" href="lesespurgeschichten.html">← Alle Lesespurgeschichten</a></div></div>'
+    _ls_page("lesespurgeschichten", "Lesespurgeschichten für alle Fächer und Klassen",
+             "Lesespurgeschichten",
+             f"{len(mats)} Lesespurgeschichten mit drei Niveaustufen, Lageplan, Hörverstehen (QR) und Lösungswort – "
+             "für Grundschule bis Sekundarstufe, alle Fächer, alle Bundesländer.",
+             LS_INTRO, mats, links,
+             editorial=editorial_block(LS_SECTIONS, LS_FAQ), faq=LS_FAQ)
+    for f, v in by_fach.items():
+        _ls_page(f"lesespurgeschichten-{slugify(f)}", f"Lesespurgeschichten {f}",
+                 f"Lesespurgeschichten {f}",
+                 f"{len(v)} Lesespurgeschichten für das Fach {f}: differenziert in drei Niveaustufen, mit Lageplan, "
+                 "Hörverstehen und Lösungswort – lehrplanorientiert für alle Bundesländer und Schularten.",
+                 f"Lesespurgeschichten für den {f}-Unterricht. " + LS_INTRO, v, hub_link)
+    for n, v in by_kl.items():
+        _ls_page(f"lesespurgeschichten-klasse-{n}", f"Lesespurgeschichten Klasse {n}",
+                 f"Lesespurgeschichten Klasse {n}",
+                 f"{len(v)} Lesespurgeschichten für die {n}. Klasse: drei Niveaustufen, Lageplan, Hörverstehen mit "
+                 "QR-Code und Lösungswort – passend zu den Lehrplänen aller Bundesländer und Schularten.",
+                 f"Lesespurgeschichten für die {n}. Jahrgangsstufe, sprachlich und inhaltlich auf das Alter abgestimmt. " + LS_INTRO,
+                 v, hub_link)
+    return len(mats)
+
+
+def write_feed(posts):
+    latest = sorted(posts, key=lambda x: x["date"], reverse=True)[:50]
+    items = ""
+    for p in latest:
+        items += (f"<item><title>{html.escape(p['title'])}</title>"
+                  f"<link>{SITE}/posts/{p['slug']}.html</link>"
+                  f"<guid>{SITE}/posts/{p['slug']}.html</guid>"
+                  f"<description>{html.escape(p['desc'])}</description></item>\n")
+    feed = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+            f'<title>{SITE_NAME}</title><link>{SITE}/</link>'
+            f'<description>{TAGLINE}</description><language>de</language>\n{items}</channel></rss>')
+    open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8").write(feed)
+
+
+def write_meta(posts):
+    u = [f"<url><loc>{SITE}/</loc><priority>1.0</priority></url>",
+         f"<url><loc>{SITE}/impressum.html</loc></url>",
+         f"<url><loc>{SITE}/ueber-mich.html</loc></url>",
+         f"<url><loc>{SITE}/datenschutz.html</loc></url>"]
+    u += [f"<url><loc>{x}</loc><priority>0.8</priority></url>" for x in EXTRA_URLS]
+    for p in posts:
+        u.append(f"<url><loc>{SITE}/posts/{p['slug']}.html</loc><lastmod>{p['date']}</lastmod></url>")
+    open(os.path.join(OUT, "sitemap-seiten.xml"), "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(u) + "\n</urlset>")
+    mfiles, today = write_material_sitemaps()
+    open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(f"<sitemap><loc>{SITE}/{f}</loc><lastmod>{today}</lastmod></sitemap>" for f in ["sitemap-seiten.xml"] + mfiles)
+        + "\n</sitemapindex>")
+    open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(
+        f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
+    open(os.path.join(OUT, ".nojekyll"), "w").write("")
+
+
+def build_foot_cols():
+    mats = katalog_de()
+    fach_c = collections.Counter(m["fach"] for m in mats if m.get("fach"))
+    kl_c = collections.Counter()
+    for m in mats:
+        for n in grade_nums(m.get("grades")):
+            kl_c[n] += 1
+    f_links = " · ".join(f'<a href="{fach_slug(f)}.html">{html.escape(f)}</a>'
+                         for f, n in sorted(fach_c.items(), key=lambda x: -x[1]) if n >= 10)
+    k_links = " · ".join(f'<a href="klasse-{n}.html">Klasse {n}</a>' for n in sorted(kl_c) if kl_c[n] >= 10)
+    a_links = (' · '.join(f'<a href="{href}">{name}</a>' for name, href, _ in LINE_META.values())
+               + ' · <a href="herbst.html">Herbst</a> · <a href="gratis.html">Gratis</a> · <a href="english-worksheets.html">English</a>')
+    return (f'<div class="fcols"><div><h4>Nach Fach</h4><p>{f_links}</p></div>'
+            f'<div><h4>Nach Klasse</h4><p>{k_links}</p></div>'
+            f'<div><h4>Materialarten</h4><p>{a_links}</p></div></div>')
+
+
+# ---------------------------------------------------------------- Material-Detailseiten (Rat 13.09.)
+MAT_DIR = os.path.join(OUT, "material")
+MAT_MIN_DESC = 300   # Volltexte aus _katalog_desc.json (13.09.)
+
+
+def is_free(m):
+    return str(m.get("is_free")) in ("True", "true", "1")
+
+
+def price_label(m):
+    if is_free(m):
+        return "Gratis"
+    try:
+        p = float(m.get("price") or 0)
+    except Exception:
+        p = 0
+    return (f"{p:.2f} €".replace(".", ",")) if p > 0 else "Gratis"
+
+
+def mat_path(m):
+    return f"material/{m['id']}-{m['slug']}.html"
+
+
+def desc_paras(desc):
+    parts = [x.strip() for x in re.split(r"\n\s*\n|\n", desc or "") if x.strip()]
+    return "".join(f"<p>{html.escape(x)}</p>" for x in parts)
+
+
+def register_material_pages():
+    """Vor dem Rendern der Karten aufrufen: welche Materialien bekommen eine Detailseite."""
+    MAT_PAGES.clear()
+    for m in katalog_de():
+        if len((m.get("desc") or "").strip()) >= MAT_MIN_DESC:
+            MAT_PAGES[m["id"]] = mat_path(m)
+    return len(MAT_PAGES)
+
+
+MAT_CSS = """<style>
+.mat{max-width:1120px;margin:0 auto;padding:36px 22px 60px}
+.mat .crumbs{margin-bottom:18px}
+.mat-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:40px;align-items:start}
+.mat-cover img{width:100%;height:auto;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.12);display:block}
+.mat h1{font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-.025em;margin:0 0 10px}
+.mat .meta{color:var(--muted);font-size:15px;margin:0 0 18px}
+.mat .meta a{color:inherit}
+.mat .buy{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:18px 0 26px}
+.mat .price{font-size:30px;font-weight:700;letter-spacing:-.02em}
+.mat .desc p{font-size:17px;line-height:1.65;margin:0 0 14px}
+.mat .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:26px 0}
+.mat .facts div{background:rgba(127,127,127,.08);border-radius:14px;padding:12px 14px;font-size:14px}
+.mat .facts b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
+.mat h2{font-size:24px;letter-spacing:-.02em;margin:46px 0 16px}
+@media(max-width:820px){.mat-top{grid-template-columns:1fr}}
+</style>"""
+
+
+def render_material_page(m, related):
+    url = f"{SITE}/{mat_path(m)}"
+    title = m["title"]; fach = m.get("fach", "") or "Unterricht"
+    grades = as_list(m.get("grades")); nums = grade_nums(grades)
+    kl = klasse_label(grades); schul = ", ".join(as_list(m.get("school_types")))
+    typen = ", ".join(as_list(m.get("types"))[:4])
+    eduki = f'{EDUKI_MAT}/{m["id"]}/{m["slug"]}'
+    desc = (m.get("desc") or "").strip()
+    meta_desc = re.sub(r"\s+", " ", desc)[:155].rsplit(" ", 1)[0] + " …"
+    line_name, line_href = LINE_META.get(m.get("line"), ("Unterrichtsmaterial", "materialien.html", ""))[:2]
+    price = price_label(m)
+    try:
+        pnum = 0 if is_free(m) else float(m.get("price") or 0)
+    except Exception:
+        pnum = 0
+    product_ld = {"@context": "https://schema.org", "@type": "Product", "name": title, "description": meta_desc,
+                  "image": m.get("cover") or f"{SITE}/assets/logo.png", "url": url, "sku": str(m["id"]),
+                  "brand": {"@type": "Brand", "name": SITE_NAME},
+                  "category": f"{fach} · {kl}" if kl else fach,
+                  "offers": {"@type": "Offer", "price": f"{pnum:.2f}", "priceCurrency": "EUR", "url": eduki,
+                             "availability": "https://schema.org/InStock", "seller": ORG_LD}}
+    crumbs = [("Start", f"{SITE}/"), (fach, f"{SITE}/{fach_slug(fach)}.html"), (title, url)]
+    crumb_html = (f'<nav class="crumbs"><a href="../index.html">Start</a> › '
+                  f'<a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a> › '
+                  f'<a href="../{line_href}">{html.escape(line_name)}</a></nav>')
+    kl_links = " · ".join(f'<a href="../klasse-{n}.html">Klasse {n}</a>' for n in nums if 1 <= n <= 13)
+    cover = (f'<div class="mat-cover"><img src="{html.escape(m["cover"])}" alt="{html.escape(title)} – Vorschau" width="600" height="850"></div>'
+             if m.get("cover") else "")
+    rel_html = "".join(cat_card_html(r, root="../") for r in related)
+    facts = "".join(f"<div><b>{k}</b>{html.escape(v)}</div>" for k, v in
+                    (("Fach", fach), ("Klasse", kl or "–"), ("Schulform", schul or "–"), ("Materialart", typen or line_name))
+                    if v)
+    body = f"""{MAT_CSS}
+<main class="mat">
+{crumb_html}
+<div class="mat-top">
+{cover}
+<div>
+<h1>{html.escape(title)}</h1>
+<p class="meta">{html.escape(fach)}{(" · " + html.escape(kl)) if kl else ""}{(" · " + html.escape(schul)) if schul else ""} · {html.escape(line_name)}</p>
+<div class="buy"><span class="price">{price}</span><a class="btn" href="{eduki}" target="_blank" rel="noopener">Material auf eduki ansehen</a></div>
+<div class="desc">{desc_paras(desc)}</div>
+<div class="facts">{facts}</div>
+<p class="meta">Passende Übersichten: <a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a>{(" · " + kl_links) if kl_links else ""} · <a href="../{line_href}">{html.escape(line_name)}</a></p>
+</div>
+</div>
+{"<h2>Ähnliche Materialien</h2><div class='grid'>" + rel_html + "</div>" if related else ""}
+</main>
+"""
+    page = head(title, meta_desc, url, m.get("cover"), root="../", extra_ld=[product_ld, breadcrumb_ld(crumbs)]) + body + foot("../")
+    open(os.path.join(MAT_DIR, os.path.basename(mat_path(m))), "w", encoding="utf-8").write(page)
+
+
+def render_material_pages():
+    os.makedirs(MAT_DIR, exist_ok=True)
+    mats = [m for m in katalog_de() if m["id"] in MAT_PAGES]
+    by_fach = collections.defaultdict(list)
+    for m in mats:
+        by_fach[m.get("fach", "")].append(m)
+    for m in mats:
+        nums = set(grade_nums(as_list(m.get("grades"))))
+        cands = [x for x in by_fach[m.get("fach", "")] if x is not m]
+
+        def score(x):
+            return ((x.get("line") == m.get("line")) * 2
+                    + (bool(nums & set(grade_nums(as_list(x.get("grades")))))) * 1
+                    + (0.5 if x.get("cover") else 0))
+        cands.sort(key=lambda x: (-score(x), -int(x["id"])))
+        render_material_page(m, cands[:8])
+    return len(mats)
+
+
+def write_material_sitemaps():
+    """Sitemap-Index: sitemap.xml -> sitemap-seiten.xml + sitemap-material-N.xml (2.000 je Datei, Lesespuren zuerst)."""
+    mats = [m for m in katalog_de() if m["id"] in MAT_PAGES]
+    mats.sort(key=lambda m: (LINE_ORDER.get(m.get("line"), 9), -int(m["id"])))
+    today = datetime.date.today().isoformat()
+    files = []
+    for i in range(0, len(mats), 2000):
+        chunk = mats[i:i + 2000]; name = f"sitemap-material-{i // 2000 + 1}.xml"
+        open(os.path.join(OUT, name), "w", encoding="utf-8").write(
+            '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "\n".join(f"<url><loc>{SITE}/{mat_path(m)}</loc><lastmod>{today}</lastmod></url>" for m in chunk)
+            + "\n</urlset>")
+        files.append(name)
+    return files, today
+
+
+def main():
+    global FOOT_COLS
+    os.makedirs(POSTS_DIR, exist_ok=True)
+    FOOT_COLS = build_foot_cols()
+    register_material_pages()
+    posts = load_posts()
+    for p in posts:
+        render_post(p)
+    nmat = render_finder()
+    render_index()
+    faecher = render_fach_pages()
+    klassen = render_klasse_pages()
+    fk = render_fachklasse_pages()
+    n_pt, n_lt, n_gratis, n_en = render_line_pages()
+    nls = render_lesespur_pages()
+    nsa = render_saison_pages()
+    n_matpages = render_material_pages()
+    render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
+<p>Angaben gemäß § 5 DDG:</p>
+<p>{INHABER}<br>{ANSCHRIFT}</p>
+<p><strong>Kontakt:</strong><br>E-Mail: {EMAIL}</p>
+<p><strong>Verantwortlich für den Inhalt</strong> nach § 18 Abs. 2 MStV: {INHABER} (Anschrift wie oben).</p>
+<p>Dieser Blog verweist auf eigene Unterrichtsmaterialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>.</p>""")
+    render_page("ueber-mich", "Über mich", f"""<h1>Über mich</h1>
+<p class="sub">Lehrer aus Leidenschaft – mit Liebe zum Detail und motivierenden Materialien für den Unterricht.</p>
+
+<p>Hinter <strong>{SITE_NAME}</strong> steht <strong>Snice</strong>: eine Lehrkraft, die seit Jahren eigene
+Unterrichtsmaterialien entwickelt – zuerst für die eigenen Klassen, inzwischen für Kolleginnen und Kollegen
+in ganz Deutschland, Österreich und der Schweiz. Jedes Arbeitsblatt entsteht aus dem Unterricht heraus und
+wird dort auch erprobt.</p>
+
+<h2>Was mir wichtig ist</h2>
+<p><strong>Sofort einsetzbar.</strong> Kein Material, das erst noch zusammengesucht werden muss: Jede Datei
+kommt mit Lösungen, klarer Struktur und einer drucksparenden Schwarz-Weiß-Fassung.</p>
+<p><strong>Differenziert.</strong> Die Lesespurgeschichten gibt es in drei Niveaus, die Lückentexte mit
+Wortspeicher und Hörverstehen – damit in einer Klasse alle am selben Thema arbeiten können.</p>
+<p><strong>Motivierend.</strong> Lesespuren mit Lageplan und Lösungswort, Hörtexte per QR-Code, Rätselseiten
+und Ausmalbilder. Kinder merken, dass Lesen sich lohnt, wenn es zu einem Ziel führt.</p>
+<p><strong>Lehrplanorientiert.</strong> Die Themen folgen den Lehrplänen der Sekundarstufe I und der
+Grundschule – von den Wirbeltieren über die Prozentrechnung bis zu Wetter, Politik und Chemie.</p>
+
+<h2>Die drei Materiallinien</h2>
+<ul>
+<li><a href="lesespurgeschichten.html"><strong>Lesespurgeschichten</strong></a> – Lese-Abenteuer in drei
+Niveaus mit farbigem Lageplan, eingebetteten Aufträgen, Hörverstehen und geheimem Lösungswort.</li>
+<li><a href="pruefungstraining.html"><strong>Prüfungstraining</strong></a> – kompakte Pakete für Klasse 8–10:
+Zusammenfassung, Aufgaben in Prüfungsform, Musterlösungen.</li>
+<li><a href="lueckentexte.html"><strong>Lückentexte mit Hörverstehen</strong></a> – Sachtext, Wortspeicher,
+Hörtext per QR-Code und Suchsel, in Minuten einsetzbar.</li>
+</ul>
+
+<h2>Wo du mich findest</h2>
+<p>Alle Materialien liegen im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>. Neue Materialien,
+Aktionen und Einblicke in die Entstehung gibt es auf
+<a href="https://www.instagram.com/snice.eduki/" rel="noopener">Instagram</a> und
+<a href="https://www.pinterest.de/sniceeduki/" rel="noopener">Pinterest</a>.</p>
+<p>Fragen, Wünsche oder ein Fehler entdeckt? Schreib mir an <a href="mailto:{EMAIL}">{EMAIL}</a> – ich
+antworte selbst und bessere Material auch nachträglich nach.</p>
+
+<p class="btnrow"><a class="btn" href="materialien.html">Alle Materialien durchsuchen</a>
+<a class="more" href="gratis.html">Kostenlose Materialien ansehen</a></p>""")
+    render_page("datenschutz", "Datenschutzerklärung", f"""<h1>Datenschutzerklärung</h1>
+<p><strong>Verantwortlicher:</strong> {INHABER}, E-Mail: {EMAIL} (Anschrift siehe <a href="impressum.html">Impressum</a>).</p>
+<h2>Hosting</h2>
+<p>Diese Website wird als statische Seite über <strong>GitHub Pages</strong> (GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA)
+ausgeliefert. Beim Aufruf verarbeitet GitHub technisch notwendige Verbindungsdaten (IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser)
+in Server-Logs, um die Seite auszuliefern und die Sicherheit des Dienstes zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO).
+Details: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.
+GitHub ist nach dem EU-US Data Privacy Framework zertifiziert.</p>
+<h2>Keine Cookies, kein Tracking</h2>
+<p>Diese Website setzt keine Cookies, verwendet keine Analyse- oder Werbedienste und bindet keine Schriftarten oder Skripte von Drittanbietern ein.
+Die Suche und die Filter laufen vollständig in deinem Browser; dabei werden keine Daten übertragen.</p>
+<h2>Externe Links und eingebundene Bilder</h2>
+<p>Die Vorschaubilder der Materialien werden direkt vom Marktplatz <strong>eduki</strong> (eduki GmbH, Berlin) geladen; dabei erhält eduki deine IP-Adresse.
+Über die Links „Material auf eduki" gelangst du auf eduki.com; dort gelten die
+<a href="https://eduki.com/de/datenschutz" rel="noopener">Datenschutzhinweise von eduki</a>.</p>
+<h2>Kontakt per E-Mail</h2>
+<p>Wenn du mir eine E-Mail schreibst, verarbeite ich deine Angaben ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO)
+und lösche sie, sobald sie nicht mehr benötigt werden.</p>
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO)
+sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Wende dich dazu an die oben genannte E-Mail-Adresse.</p>
+<p><small>Stand: September 2026</small></p>""")
+    render_page("404", "Seite nicht gefunden", f"""<h1>Seite nicht gefunden</h1>
+<p>Diese Seite gibt es nicht (mehr). Vielleicht hilft dir die Suche auf der <a href="/index.html">Startseite</a> weiter –
+dort findest du alle Materialien nach Fach und Klasse.</p>
+<p><a class="btn" href="/index.html">Zur Startseite</a> · <a href="/lesespurgeschichten.html">Lesespurgeschichten</a> · <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a></p>""")
+    write_feed(posts); write_meta(posts)
+    print(f"OK: {len(posts)} Artikel, {nmat} DE-Materialien im Finder, {len(faecher)} Fach-Seiten, {len(klassen)} Klassen-Seiten, "
+          f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "
+          f"{len(EXTRA_URLS)} Landingpages gesamt ({len(fk)} Fach×Klasse), {n_matpages} Material-Detailseiten.")
+
+
+if __name__ == "__main__":
+    main()
