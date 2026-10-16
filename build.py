@@ -6,7 +6,7 @@ Sitemap, robots.txt, RSS, Impressum, Ueber-mich. Cover per eduki-Hotlink. Aufruf
 import datetime, os, re, json, glob, html, datetime, collections
 import markdown as md
 
-SITE = "http://snice-unterricht.eu"   # 13.09.: http bis GitHub-Pages-Zertifikat steht (Search-Console-Property = http)
+SITE = "https://snice-unterricht.eu"   # 16.10.: https via Cloudflare-Proxy aktiv
 SITE_NAME = "Snice Unterricht"
 TAGLINE = "Materialien, die den Unterricht leichter machen"
 SHOP = "https://eduki.com/de/shop/400839"
@@ -413,7 +413,7 @@ FINDER_JS = """<script>
 
 
 FINDER_FIRST = 240
-JUNK_TITLE = re.compile(r"^(unterrichtsmaterial|deckblatt\b.*|material|arbeitsblatt)$", re.I)
+JUNK_TITLE = re.compile(r"^(unterrichtsmaterial|deckblatt\b.*|cover\b.*|material|arbeitsblatt)$", re.I)
 EN_RE = re.compile(r"worksheet|cloze text|listening comprehension", re.I)
 _KAT_CACHE = None
 
@@ -1027,10 +1027,17 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", fa
     mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, x.get("title", "")))
     url = f"{SITE}/{slug}.html"
     n = len(mats)
-    out = head(title, desc, url, mats[0].get("cover", "") if mats else "",
-               extra_ld=[faq_ld_of(faq)] if faq else None)
+    ld = [faq_ld_of(faq)] if faq else []
+    crumb_nav = ""
+    if slug.startswith("lesespurgeschichten-"):   # 16.10.: Breadcrumb (sichtbar + JSON-LD) im Build statt Nachpatch vom 16.09.
+        label = h1.replace("Lesespurgeschichten ", "", 1)
+        ld.append(breadcrumb_ld([("Start", f"{SITE}/"), ("Lesespurgeschichten", f"{SITE}/lesespurgeschichten.html"),
+                                 (label, url)]))
+        crumb_nav = ('<nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a> › '
+                     f'<a href="lesespurgeschichten.html">Lesespurgeschichten</a> › <span>{html.escape(label)}</span></nav>\n')
+    out = head(title, desc, url, mats[0].get("cover", "") if mats else "", extra_ld=ld or None)
     out += f"""<section class="hero small">
-<h1>{html.escape(h1)}</h1>
+{crumb_nav}<h1>{html.escape(h1)}</h1>
 <p class="sub">{html.escape(intro)}</p>
 <p class="count">{n} {'Lesespurgeschichte' if n == 1 else 'Lesespurgeschichten'} · Klick führt direkt zu eduki</p>
 </section>
@@ -1404,6 +1411,11 @@ def render_material_pages():
                     + (0.5 if x.get("cover") else 0))
         cands.sort(key=lambda x: (-score(x), -int(x["id"])))
         render_material_page(m, cands[:8])
+    # 16.10.: Detailseiten offline gegangener/umbenannter Materialien entfernen (generierte Artefakte)
+    keep = {os.path.basename(mat_path(m)) for m in mats}
+    for f in glob.glob(os.path.join(MAT_DIR, "*.html")):
+        if os.path.basename(f) not in keep:
+            os.remove(f)
     return len(mats)
 
 
@@ -1420,6 +1432,9 @@ def write_material_sitemaps():
             + "\n".join(f"<url><loc>{SITE}/{mat_path(m)}</loc><lastmod>{today}</lastmod></url>" for m in chunk)
             + "\n</urlset>")
         files.append(name)
+    for f in glob.glob(os.path.join(OUT, "sitemap-material-*.xml")):
+        if os.path.basename(f) not in files:
+            os.remove(f)
     return files, today
 
 

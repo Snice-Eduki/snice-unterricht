@@ -1,3 +1,15 @@
+# Status snice-unterricht.eu — 15.09.2026 ~02:20 (QA-Prüfung, Rat)
+
+## ✅ HEUTE
+- **Vollprüfung der Website (Playwright, lokaler Build serviert):** index, materialien (Finder), material/<id>-Detailseite, Mobil 390px — **0 Konsolenfehler, kein horizontales Scrollen**. Index: Titel/Meta/Canonical/H1/Suche/Nav ok, 4 JSON-LD, alle Bilder mit Alt. Finder: Suche filtert korrekt (vulkan→5), DOM gedeckelt (performant), Direktlink eduki. Detailseite: JSON-LD WebPage+Product+BreadcrumbList, Canonical, eduki-CTA, Alt-Texte.
+- **Rebuild identisch zum Live-Stand (git clean)** → nichts zu pushen; Live-Seite hat bereits diese Qualität. Build: 1012 Artikel, 6003 Materialien, 148 Landingpages (87 Fach×Klasse), 5416 Detailseiten, 495 Lesespuren.
+- Rat VOR+NACH protokolliert (Lesespurgeschichten\_RAT_LOG.md, 02:10 + 02:20).
+
+## ⛔ OFFEN (Nutzer)
+- **HTTPS/Cloudflare:** braucht 1× Google-Login + API-Token (`cloudflare_api_token` in credentials.json). Danach Zone/DNS/NS/SSL per API.
+- **Impressum:** weiterhin Platzhalter (kein Privatadresse-Zwang → c/o-Impressumsdienst nötig).
+- **Politur (niedrige Prio, kein Fehler):** sichtbarer Breadcrumb-Pfad auf Detailseiten (Strukturdaten sind bereits vorhanden).
+
 # Status snice-unterricht.eu — 14.09.2026 12:20
 
 ## ✅ NEU HEUTE
