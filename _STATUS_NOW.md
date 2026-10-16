@@ -1,3 +1,10 @@
+# Status snice-unterricht.eu — 16.10.2026 ~17:00
+
+## ✅ 16.10. HTTPS + Katalog
+- https läuft (Cloudflare-Proxy Apex+www, www → 301 Apex). `SITE` = https (Canonicals, Sitemap, JSON-LD, robots).
+- Katalog frisch: 6466 aktiv, 6323 DE-Kacheln, 5802 Detailseiten; 68 offline + „Cover …“-Junk raus. Linkcheck https: 0 tot / 0 offline; 10 eduki-Links im Browser = richtiges Material.
+- Täglich 04:40 Task `SniceHomepageDaily` (`Skripte\_homepage_daily.py`): Pull → Build → Push → Pages → Linkcheck; Fehler → `Skripte\_homepage_daily.log` + Zeile hier unten.
+
 # Status snice-unterricht.eu — 15.09.2026 ~02:20 (QA-Prüfung, Rat)
 
 ## ✅ HEUTE
