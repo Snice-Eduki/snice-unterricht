@@ -117,19 +117,37 @@ def load_posts():
     return posts
 
 
+def saison_aktuell(heute=None):
+    """20.10.: datumsabhaengige Saison fuer Startseite/Navigation.
+    Sep/Okt = Herbst (Halloween, St. Martin), 1.-11.11. Advent & Winter + Herbst, ab 12.11. bis Feb Advent & Winter."""
+    d = heute or datetime.date.today()
+    if d.month in (9, 10):
+        return ["herbst"]
+    if d.month == 11 and d.day <= 11:
+        return ["advent-winter", "herbst"]
+    if d.month in (11, 12, 1, 2):
+        return ["advent-winter"]
+    return []
+
+
+SAISON_NAV = {"herbst": "Herbst", "advent-winter": "Advent &amp; Winter"}
+
+
 def topnav(root=""):
+    saison = "".join(f'<a href="{root}{s}.html">{SAISON_NAV[s]}</a>' for s in saison_aktuell()[:1])
     return (f'<header class="topnav" id="topnav">'
             f'<a class="brand" href="{root}index.html" aria-label="{SITE_NAME} – Startseite">'
             f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
             f'<nav class="links">'
             f'<a href="{root}materialien.html">Materialien</a>'
             f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
+            f'<a href="{root}rechenwelten.html">Rechenwelten</a>'
+            f'<a href="{root}lesespaziergaenge.html">Lesespaziergänge</a>'
             f'<a href="{root}pruefungstraining.html">Prüfungstraining</a>'
-            f'<a href="{root}herbst.html">Herbst</a>'
-            f'<a href="{root}advent-winter.html">Advent &amp; Winter</a>'
+            f'{saison}'
+            f'<a href="{root}blog.html">Blog</a>'
             f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
             f'<a href="{root}ueber-mich.html">Über mich</a>'
-            f'<a href="{root}impressum.html">Impressum</a>'
             f'</nav></header>')
 
 
@@ -300,7 +318,7 @@ def cat_card_html(m, root=""):
         img = f'<div class="card-img"><img loading="lazy" src="{html.escape(m["cover"])}" alt="{t}"></div>'
     else:
         img = f'<div class="card-img"><div class="ph">{t}</div></div>'
-    badge = '<span class="badge">Gratis</span>' if is_free(m) else ''
+    badge = ''   # 20.10.: keine Gratis-Werbung mehr (keine Freebies)
     return (f'<a class="card reveal" href="{url}"{tgt} '
             f'data-fach="{html.escape(fach, quote=True)}" data-kl="{kdata}" data-s="{search}">'
             f'{img}{badge}<div class="card-body"><h3>{t}</h3>'
@@ -419,8 +437,18 @@ EN_RE = re.compile(r"worksheet|cloze text|listening comprehension", re.I)
 _KAT_CACHE = None
 
 
+# 20.10.: neue Reihen. Rechenwelten = analoge Mathe-Rollenspiele Kl. 1-4 (Titel "<Welt> - Rollenspiel <Kompetenz>,
+# 3-fach differenziert (Klasse N)"), Lesespaziergaenge Kl. 2-4 (Titel "Lesespaziergang: ...").
+RW_RE = re.compile(r"(rechenwelt|rollenspiel\b(?!.*l(ü|ue)ckentext).*3-fach differenziert)", re.I)
+
+
 def line_of(m):
-    """Produktlinie: lesespur | pt | lueckentext | sonst."""
+    """Produktlinie: rechenwelt | lesespaziergang | lesespur | pt | lueckentext | sonst."""
+    tt = m.get("title", "").lower()
+    if "lesespaziergang" in tt:
+        return "lesespaziergang"
+    if RW_RE.search(m.get("title", "")):
+        return "rechenwelt"
     t = (m.get("title", "") + " " + m.get("desc", "")[:80]).lower()
     if "lesespur" in t:
         return "lesespur"
@@ -469,8 +497,12 @@ def katalog_de():
     return [m for m in load_katalog() if not m["en"]]
 
 
-LINE_ORDER = {"lesespur": 0, "pt": 1, "lueckentext": 2, "sonst": 3}
+LINE_ORDER = {"rechenwelt": 0, "lesespaziergang": 0, "lesespur": 0, "pt": 1, "lueckentext": 2, "sonst": 3}
 LINE_META = {
+    "rechenwelt": ("Rechenwelten", "rechenwelten.html",
+                   "Analoge Mathe-Rollenspiele für Klasse 1–4: Die Klasse spielt eine Welt nach und rechnet dabei – 3-fach differenziert, mit Lösungen."),
+    "lesespaziergang": ("Lesespaziergänge", "lesespaziergaenge.html",
+                        "Lesen in Bewegung für Klasse 2–4: zehn Bildkarten im Rundlauf, drei Lesestufen und ein Lösungswort zur Selbstkontrolle."),
     "lesespur": ("Lesespurgeschichten", "lesespurgeschichten.html",
                  "Differenzierte Lese-Abenteuer in drei Niveaustufen: Lageplan, Hörverstehen mit QR-Code, Rätselseite, Lösungswort."),
     "pt": ("Prüfungstraining", "pruefungstraining.html",
@@ -840,6 +872,18 @@ LT_FAQ = [
 ]
 
 
+def write_redirect(slug, ziel):
+    """Ehemalige Seite ersetzen, ohne 404: noindex + canonical + Sofort-Weiterleitung."""
+    out = (f'<!doctype html>\n<html lang="de"><head><meta charset="utf-8">'
+           f'<meta name="viewport" content="width=device-width, initial-scale=1">'
+           f'<title>Weiterleitung · {SITE_NAME}</title><meta name="robots" content="noindex,follow">'
+           f'<link rel="canonical" href="{SITE}/{ziel}"><meta http-equiv="refresh" content="0; url={ziel}">'
+           f'<style>body{{font:16px/1.5 system-ui,sans-serif;background:#fbfbfd;color:#1d1d1f;padding:40px 16px}}</style>'
+           f'</head><body><p>Diese Seite wurde verschoben. Weiter zu <a href="{ziel}">allen Materialien</a>.</p>'
+           f'<script>location.replace("{ziel}");</script></body></html>')
+    open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
+
+
 def render_line_pages():
     mats = katalog_de()
     pt = [m for m in mats if m["line"] == "pt"]
@@ -862,11 +906,7 @@ def render_line_pages():
               "jedes Blatt mit Lösung. Perfekt für Vertretungsstunden, Stationenarbeit und Differenzierung.",
               lt, [], finder=True, itemlist_name="Lückentexte mit Hörverstehen",
               editorial=editorial_block(LT_SECTIONS, LT_FAQ), faq=LT_FAQ)
-    grid_page("gratis", "Kostenlose Unterrichtsmaterialien zum Download",
-              "Gratis-Materialien",
-              f"{len(gratis)} kostenlose Arbeitsblätter und Lesespurgeschichten zum Ausprobieren – mit Lösungen, direkt bei eduki herunterladen.",
-              "Zum Kennenlernen: Diese Materialien sind kostenlos. Einfach anklicken und bei eduki herunterladen.",
-              gratis, [], itemlist_name="Gratis-Materialien")
+    write_redirect("gratis", "materialien.html")   # 20.10.: keine Freebies mehr -> neutrale Weiterleitung, nicht in Sitemap
     if en:
         grid_page("english-worksheets", "English Worksheets – cloze text, listening comprehension, word search",
                   "English Worksheets",
@@ -887,6 +927,10 @@ FAQ = [
      "Ein differenziertes Lese- und Sachmaterial: Die Klasse liest eine Geschichte in drei Niveaustufen, folgt Hinweisen über einen "
      "Lageplan von Station zu Station und sammelt Buchstaben für ein Lösungswort. Dazu gehören Hörverstehen per QR-Code, Rätselseite, "
      "Ausmalbild und Lösungen – in Farbe und als Schwarz-Weiß-Kopiervorlage."),
+    ("Was sind Rechenwelten und Lesespaziergänge?",
+     "Zwei neue Reihen für die Grundschule. Rechenwelten sind analoge Mathe-Rollenspiele für Klasse 1–4: Die Klasse spielt "
+     "zum Beispiel einen Marktstand nach und rechnet dabei. Lesespaziergänge sind für Klasse 2–4: Zehn Bildkarten hängen im "
+     "Raum, die Kinder lesen kurze Abschnitte, suchen die passende Karte und sammeln Buchstaben für ein Lösungswort. Beide gibt es genau 3-fach differenziert (★/★★/★★★)."),
     ("Wie funktioniert das Hörverstehen mit QR-Code?",
      "Auf dem Arbeitsblatt ist ein QR-Code aufgedruckt. Die Lernenden scannen ihn mit Tablet oder Handy und hören den Text – "
      "ohne App, ohne Anmeldung. So üben sie Zuhören und Lesen zugleich."),
@@ -898,7 +942,244 @@ FAQ = [
 ]
 
 
-def render_index():
+
+# ---------------------------------------------------------------- 20.10.: Neue Reihen (Rechenwelten, Lesespaziergaenge)
+REIHEN = {
+    "rechenwelt": {
+        "slug": "rechenwelten", "name": "Rechenwelten",
+        "title": "Rechenwelten – analoge Mathe-Rollenspiele für Klasse 1–4",
+        "h1": "Rechenwelten: Mathe-Rollenspiele für die Grundschule",
+        "desc": "Rechenwelten sind analoge Mathe-Rollenspiele für Klasse 1–4: Die Klasse spielt einen Kürbisstand, eine "
+                "Bäckerei oder ein Café nach und rechnet dabei – 3-fach differenziert (★/★★/★★★), mit Lösungen und Urkunde.",
+        "intro": "In einer Rechenwelt spielt die Klasse einen Ort nach – einen Marktstand, eine Backstube, ein Café – und "
+                 "rechnet dabei mit echten Aufgaben aus dem Mathematikunterricht. Ganz analog: mit Rollenkarten, Spielgeld "
+                 "oder Messkarten, ohne Tablet und ohne PC.",
+        "tiles": [("Analog und handelnd", "Die Kinder kaufen ein, wiegen ab, verteilen und bezahlen. Rechnen bekommt einen "
+                                          "Anlass, und die Ergebnisse haben im Spiel eine Folge."),
+                  ("3-fach differenziert", "Jede Rechenwelt gibt es in den Stufen ★, ★★ und ★★★: dieselben Bilder, andere Zahlen. "
+                                           "So spielen alle am selben Tisch, jedes Kind auf seinem Niveau."),
+                  ("Lehrplanorientiert", "Die Rechenwelten orientieren sich am LehrplanPLUS Grundschule Bayern. Für welche "
+                                         "Klasse eine Welt gedacht ist, steht im Titel.")],
+        "sections": [
+            ("Was ist eine Rechenwelt?", [
+                "Eine Rechenwelt ist ein Rollenspiel für den Mathematikunterricht. Die Klasse verwandelt sich in einen Ort, an "
+                "dem gerechnet werden muss: Am Marktstand wird bezahlt und Wechselgeld herausgegeben, in der Backstube wird "
+                "verdoppelt und halbiert, im Obstgarten wird gewogen. Die Aufgaben entstehen aus dem Spiel und nicht aus "
+                "einer Liste.",
+                "Weil jede Rolle etwas zu tun hat, rechnen alle Kinder mit. Wer verkauft, kontrolliert die Rechnung der Kundschaft, "
+                "und wer einkauft, prüft das Wechselgeld. Fehler fallen im Spiel auf, und die Kinder besprechen sie miteinander.",
+            ]),
+            ("Was in jeder Rechenwelt enthalten ist", [
+                "<ul><li>Hinweise für Lehrkräfte mit Stundenablauf, Kopierplan und ausgefülltem Beispiel</li>"
+                "<li>Spielmaterial der Welt in den Stufen ★, ★★ und ★★★</li>"
+                "<li>Rollenkarten und Satzstreifen, die auch Kindern mit Deutsch als Zweitsprache helfen</li>"
+                "<li>Knobelseite, Ausmalbild und Malen nach Ergebnis für schnelle Kinder</li>"
+                "<li>Lösungen zu allen Aufgaben</li>"
+                "<li>Urkunde in Farbe und zum Ausmalen</li></ul>",
+            ]),
+            ("So setzt du eine Rechenwelt ein", [
+                "Zu Beginn werden die Rollen verteilt und die Regeln geklärt. In der Spielphase arbeiten die Kinder in kleinen "
+                "Gruppen, die Lehrkraft beobachtet und hilft dort, wo es hakt. Zum Abschluss werden Rechenwege verglichen. "
+                "Der genaue Ablauf mit Zeitangaben steht in den Hinweisen für Lehrkräfte jeder Rechenwelt.",
+            ]),
+        ],
+        "faq": [
+            ("Für welche Klassen sind die Rechenwelten gedacht?",
+             "Für die Grundschule, Klasse 1 bis 4. Jede Rechenwelt nennt im Titel die Klasse, für die sie gedacht ist."),
+            ("Brauche ich Tablets oder einen PC?",
+             "Nein. Rechenwelten sind komplett analog: Du druckst Karten, Spielgeld oder Messkarten aus, und die Klasse spielt."),
+            ("Wie funktioniert die Differenzierung?",
+             "Es gibt genau drei Stufen: ★, ★★ und ★★★. Sie nutzen dieselben Bilder und dieselben Spielregeln, nur die Zahlen "
+             "und Aufgaben sind unterschiedlich anspruchsvoll. Deshalb können alle Stufen gleichzeitig an einem Tisch laufen."),
+            ("Sind Lösungen enthalten?",
+             "Ja, zu allen Aufgaben gibt es Lösungen, beim Malen nach Ergebnis zusätzlich farbige Lösungsbilder."),
+        ],
+        "soon": "Die ersten Rechenwelten werden gerade fertiggestellt und geprüft. Sobald sie auf eduki erhältlich sind, "
+                "erscheinen sie hier automatisch.",
+    },
+    "lesespaziergang": {
+        "slug": "lesespaziergaenge", "name": "Lesespaziergänge",
+        "title": "Lesespaziergänge – Lesen in Bewegung für Klasse 2–4",
+        "h1": "Lesespaziergänge: Lesen in Bewegung",
+        "desc": "Lesespaziergänge für Klasse 2–4: zehn Bildkarten im Raum, drei Lesestufen (★/★★/★★★), Hörtext per QR-Code "
+                "und ein Lösungswort zur Selbstkontrolle – mit Wortkarten, Zusatzmaterial, Lösungen und Urkunde.",
+        "intro": "Bei einem Lesespaziergang hängen zehn Bildkarten im Klassenzimmer oder im Flur. Die Kinder lesen auf "
+                 "ihrem Arbeitsblatt einen kurzen Abschnitt in ihrer Lesestufe, suchen die passende Bildkarte im Raum und "
+                 "notieren deren Buchstaben. Aus allen zehn Buchstaben entsteht ein Lösungswort.",
+        "tiles": [("Lesen und Bewegung", "Statt still am Platz zu sitzen, sind die Kinder unterwegs: Wer den Abschnitt "
+                                         "verstanden hat, findet die richtige Karte. Das Abhaken zeigt den Fortschritt."),
+                  ("Drei Lesestufen", "★ ist ein kurzer Satz, ★★ sind zwei einfache Sätze, ★★★ ist ein Rätseltext „Wer bin ich?“. "
+                                      "Alle Stufen führen zum selben Lösungswort."),
+                  ("Selbstkontrolle", "Die gesammelten Buchstaben ergeben am Ende ein Lösungswort. Ob alles stimmt, sehen die "
+                                      "Kinder selbst, jede Stufe hat ein eigenes Lösungsblatt.")],
+        "sections": [
+            ("So funktioniert der Rundlauf", [
+                "Fünf Startgruppen A bis E beginnen bei unterschiedlichen Abschnitten. Danach geht es immer mit dem nächsten "
+                "Abschnitt weiter, nach Abschnitt 10 folgt Abschnitt 1. Fertig ist ein Kind, wenn alle zehn Abschnitte "
+                "abgehakt sind. So verteilen sich die Kinder im Raum, und vor keiner Karte bildet sich eine Schlange.",
+                "Das Lösungswort wird am Ende immer in der Reihenfolge der Abschnitte 1 bis 10 gelesen. Die Startgruppen sind "
+                "keine Niveaugruppen: Welche Lesestufe ein Kind bearbeitet, entscheidest du unabhängig davon.",
+            ]),
+            ("Was in jedem Lesespaziergang enthalten ist", [
+                "<ul><li>zehn Bildkarten im A4-Format</li>"
+                "<li>Lehrerinformation mit Ablauf, Startgruppen, Sachinformation, Lehrplanbezug und Stundenverlauf</li>"
+                "<li>Arbeitsblatt in den Lesestufen ★, ★★ und ★★★ mit Startabschnitt, Abhak-Kästchen und „Ich kann …“-Leiste</li>"
+                "<li>Hörtext per QR-Code für die Stufen ★ und ★★</li>"
+                "<li>Wortkarten in drei Fassungen: mit farbigem Artikel, mit Silbenbögen und ohne Artikel</li>"
+                "<li>Regelplakat, Startgruppen-Kärtchen und Lernpass</li>"
+                "<li>Zusatzmaterial in drei Stufen mit eigenen Lösungsblättern und ein Ausmalbild</li>"
+                "<li>Lösungsblätter zu jeder Stufe und eine Urkunde in Farbe und zum Ausmalen</li></ul>",
+            ]),
+        ],
+        "faq": [
+            ("Für welche Klassen eignen sich Lesespaziergänge?",
+             "Für Klasse 2 bis 4. Über die drei Lesestufen passt derselbe Lesespaziergang zu Kindern, die noch Satz für Satz "
+             "lesen, und zu Kindern, die schon längere Rätseltexte schaffen."),
+            ("Wie viel Platz brauche ich?",
+             "Es reicht, die zehn Bildkarten im Klassenzimmer an Wänden, Fenstern oder Tischen zu verteilen. Wer mehr Platz "
+             "hat, nutzt zusätzlich den Flur."),
+            ("Funktioniert der Lesespaziergang auch ohne Geräte?",
+             "Ja. Alle Texte stehen gedruckt auf dem Arbeitsblatt. Der Hörtext per QR-Code ist ein zusätzliches Angebot "
+             "für die Stufen ★ und ★★."),
+            ("Sind Lösungen enthalten?",
+             "Ja, jede Lesestufe und jede Stufe des Zusatzmaterials hat ein eigenes Lösungsblatt."),
+        ],
+        "soon": "Die ersten Lesespaziergänge werden gerade fertiggestellt und geprüft. Sobald sie auf eduki erhältlich sind, "
+                "erscheinen sie hier automatisch.",
+    },
+}
+
+
+def reihe_mats(key):
+    """Live-Materialien einer Reihe (nur aktiv im Katalog), sortiert nach Klasse, dann neueste zuerst."""
+    ms = [m for m in katalog_de() if m.get("line") == key]
+    return sorted(ms, key=lambda m: ((grade_nums(m.get("grades")) or [99])[0], -int(m["id"])))
+
+
+def saison_match(slug, m):
+    sd = SAISON[slug]
+    t = m["title"].lower()
+    return bool(re.search(sd["kw"], t)) and not re.search(sd["block"], t)
+
+
+def render_reihe_pages():
+    """Landingpages der neuen Reihen. Ohne Live-Treffer: ehrliches 'erscheint in Kürze', fuellt sich automatisch."""
+    res = {}
+    for key, r in REIHEN.items():
+        mats = reihe_mats(key)
+        url = f"{SITE}/{r['slug']}.html"
+        lds = [breadcrumb_ld([("Start", SITE + "/"), (r["name"], url)]), faq_ld_of(r["faq"])]
+        if mats:
+            lds.append(itemlist_ld(r["name"], mats))
+        out = head(r["title"], r["desc"], url, mats[0].get("cover", "") if mats else "", extra_ld=lds)
+        tiles = "".join(f'<div class="tile"><h3>{html.escape(h)}</h3><p>{html.escape(t)}</p></div>' for h, t in r["tiles"])
+        n = len(mats)
+        if mats:
+            count = f'<p class="count"><span id="cnt">{n} {"Material" if n == 1 else "Materialien"}</span> · auf eduki erhältlich</p>'
+            body = (chips_html(mats, with_fach=False, with_kl=True)
+                    + '<div class="grid" id="grid">\n' + "\n".join(cat_card_html(m) for m in mats) + "\n</div>"
+                    + '<p class="noresults" id="nores">Für diese Auswahl gibt es noch kein Material.</p>')
+            js = INDEX_JS
+        else:
+            count = '<p class="count">Erscheint in Kürze</p>'
+            body = (f'<div class="soon"><h2>Erscheint in Kürze</h2><p>{html.escape(r["soon"])}</p>'
+                    f'<p class="btnrow"><a class="btn" href="{SHOP}" rel="noopener">Zum Snice-Shop auf eduki</a></p></div>')
+            js = ""
+        out += f"""<section class="hero small">
+<nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a> › <span>{html.escape(r["name"])}</span></nav>
+<h1>{html.escape(r["h1"])}</h1>
+<p class="sub">{html.escape(r["intro"])}</p>
+{count}
+</section>
+<section class="section tiles">{tiles}</section>
+<main>
+{body}
+{editorial_block(r["sections"], r["faq"])}
+</main>
+{js}
+""" + foot()
+        open(os.path.join(OUT, r["slug"] + ".html"), "w", encoding="utf-8").write(out)
+        EXTRA_URLS.append(url)
+        res[key] = n
+    return res
+
+
+def render_blog_index(posts, k=60):
+    """Blog-Uebersicht: neueste Beitraege zuerst (veroeffentlichte Praxis-Beitraege aus _blog_takt.py erscheinen oben)."""
+    latest = sorted(posts, key=lambda x: (x["date"], x["pid"]), reverse=True)[:k]
+    url = f"{SITE}/blog.html"
+    items = "".join(
+        f'<a class="tile link" href="posts/{p["slug"]}.html"><p class="card-meta">{datetime.date.fromisoformat(p["date"]).strftime("%d.%m.%Y")}'
+        f'{(" · " + html.escape(p["fach"])) if p.get("fach") else ""}</p><h3>{html.escape(p["title"])}</h3>'
+        f'<p>{html.escape(p["desc"])}</p></a>' for p in latest)
+    out = head("Blog: Praxis-Tipps für den Unterricht", "Praxis-Tipps für Lehrkräfte: Lesespuren, Rechenwelten, "
+               "Lesespaziergänge, saisonale Themen und Ideen für differenzierten Unterricht.", url, "",
+               extra_ld=[breadcrumb_ld([("Start", SITE + "/"), ("Blog", url)])])
+    out += f"""<section class="hero small">
+<nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a> › <span>Blog</span></nav>
+<h1>Blog: Praxis-Tipps für den Unterricht</h1>
+<p class="sub">Ideen und Erfahrungen aus meinem Unterricht – zu Lesespuren, Rechenwelten, Lesespaziergängen und den Themen der Saison.</p>
+</section>
+<main><section class="section tiles bloglist">{items}</section></main>
+""" + foot()
+    open(os.path.join(OUT, "blog.html"), "w", encoding="utf-8").write(out)
+    EXTRA_URLS.append(url)
+    return len(latest)
+
+
+SAISON_HOME = {
+    "herbst": ("Herbst, Halloween & St. Martin",
+               "Kürbis, Igel, Laterne, Zugvögel und Erntezeit – dazu Materialien für Halloween und St. Martin."),
+    "advent-winter": ("Advent & Winter",
+                      "Barbarazweige, Nikolaus, Weihnachtsmarkt, Schnee und Tiere im Winter – alles für die dunkle Jahreszeit."),
+}
+
+
+def home_reihen():
+    aktuell = saison_aktuell()
+    h = ""
+    for key in ("rechenwelt", "lesespaziergang"):
+        name, href, blurb = LINE_META[key]
+        ms = reihe_mats(key)
+        ms = sorted(ms, key=lambda m: (0 if any(saison_match(sl, m) for sl in aktuell) else 1, -int(m["id"])))
+        if ms:
+            body = '<div class="grid grid-home">' + "\n".join(cat_card_html(m) for m in ms[:4]) + "</div>"
+            more = f'<a class="more" href="{href}">{"Alle " + str(len(ms)) + " ansehen" if len(ms) > 1 else "Mehr erfahren"} →</a>'
+        else:
+            body = f'<p class="soon">Erscheint in Kürze – die ersten {name} werden gerade fertiggestellt.</p>'
+            more = f'<a class="more" href="{href}">Mehr erfahren →</a>'
+        h += (f'<section class="section">\n<div class="sec-head"><div><p class="tag-neu">Neu</p><h2>{name}</h2>'
+              f'<p class="lead">{blurb}</p></div>\n{more}</div>\n{body}\n</section>\n')
+    return h
+
+
+def home_saison(mats):
+    h = ""
+    for i, sl in enumerate(saison_aktuell()):
+        sel = [m for m in mats if saison_match(sl, m)]
+        if not sel:
+            continue
+        name, blurb = SAISON_HOME[sl]
+        k = 8 if i == 0 else 4
+        ms = [m for m in sort_mats(sel) if m.get("cover")][:k] or sort_mats(sel)[:k]
+        h += (f'<section class="section">\n<div class="sec-head"><div><h2>{html.escape(name)}</h2><p class="lead">{html.escape(blurb)}</p></div>\n'
+              f'<a class="more" href="{sl}.html">Alle {nfmt(len(sel))} ansehen →</a></div>\n'
+              f'<div class="grid grid-home">{"".join(cat_card_html(m) for m in ms)}</div>\n</section>\n')
+    return h
+
+
+def home_blog(posts, k=3):
+    if not posts:
+        return ""
+    latest = sorted(posts, key=lambda x: (x["date"], x["pid"]), reverse=True)[:k]
+    items = "".join(f'<a class="tile link" href="posts/{p["slug"]}.html"><h3>{html.escape(p["title"])}</h3>'
+                    f'<p>{html.escape(p["desc"])}</p></a>' for p in latest)
+    return (f'<section class="section">\n<div class="sec-head"><div><h2>Aus dem Blog</h2>'
+            f'<p class="lead">Praxis-Tipps aus meinem Unterricht.</p></div>\n<a class="more" href="blog.html">Alle Beiträge →</a></div>\n'
+            f'<div class="tiles">{items}</div>\n</section>\n')
+
+
+def render_index(posts=None):
     """Kuratierte Startseite (Apple-Stil): Hero, Nutzen, Materialarten, Faecher, Klassen, Saison, Gratis, FAQ."""
     mats = katalog_de()
     allm = load_katalog()
@@ -911,9 +1192,9 @@ def render_index():
     for m in mats:
         for n in grade_nums(m.get("grades")):
             kl_c[n] += 1
-    gratis = [m for m in allm if m.get("is_free")]
-    herbst = [m for m in mats if re.search(SAISON["herbst"]["kw"], m["title"].lower())
-              and not re.search(SAISON["herbst"]["block"], m["title"].lower())]
+    reihen_html = home_reihen()
+    saison_html = home_saison(allm)
+    blog_html = home_blog(posts or [])
 
     def cards(ms, k=8):
         ms = [m for m in sort_mats(ms) if m.get("cover")][:k] or sort_mats(ms)[:k]
@@ -948,7 +1229,7 @@ def render_index():
     out = head(title, desc, SITE + "/", "", extra_ld=[site_ld, org_ld, faq_ld], title_raw=True)
     out += f"""<section class="hero">
 <h1>Unterrichtsmaterial,<br>das sofort funktioniert.</h1>
-<p class="sub">Über {nfmt(n_all)} fertige Arbeitsblätter, Lesespurgeschichten und Prüfungstrainings – differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte.</p>
+<p class="sub">Über {nfmt(n_all)} fertige Arbeitsblätter, Lesespurgeschichten, Rechenwelten und Prüfungstrainings – differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte.</p>
 <form class="searchwrap" action="materialien.html" method="get" role="search">
 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
 <input name="q" type="search" placeholder="Thema suchen: z. B. Vulkan, Photosynthese, Ägypten …" autocomplete="off" aria-label="Materialien durchsuchen">
@@ -963,6 +1244,8 @@ def render_index():
 <div class="tile"><h3>Lehrplanorientiert</h3><p>Kernthemen aller Fächer, abgestimmt auf die Lehrpläne der Bundesländer und alle Schularten – ohne Klassenstufe auf dem Blatt.</p></div>
 </section>
 
+{saison_html}
+{reihen_html}
 {line_section("lesespur", by_line["lesespur"])}
 {line_section("pt", by_line["pt"])}
 {line_section("lueckentext", by_line["lueckentext"])}
@@ -977,18 +1260,7 @@ def render_index():
 <div class="klassen">{kl_chips}</div>
 </section>
 
-<section class="section">
-<div class="sec-head"><div><h2>Herbst im Unterricht</h2><p class="lead">Kastanie, Kürbis, Igel, Zugvögel, Nebel und Erntezeit – die Saisonthemen auf einen Blick.</p></div>
-<a class="more" href="herbst.html">Alle Herbst-Materialien →</a></div>
-<div class="grid grid-home">{cards(herbst, 4)}</div>
-</section>
-
-<section class="section">
-<div class="sec-head"><div><h2>Gratis ausprobieren</h2><p class="lead">Kostenlose Materialien zum Kennenlernen – einfach herunterladen.</p></div>
-<a class="more" href="gratis.html">Alle {len(gratis)} Gratis-Materialien →</a></div>
-<div class="grid grid-home">{cards(gratis, 4)}</div>
-</section>
-
+{blog_html}
 <section class="section faq">
 <h2>Häufige Fragen</h2>
 {faq_html}
@@ -1020,6 +1292,8 @@ LS_INTRO = ("Eine Lesespurgeschichte ist ein differenziertes Lese- und Sachmater
 
 
 def is_lesespur(m):
+    if m.get("line") in ("rechenwelt", "lesespaziergang"):
+        return False
     return "lesespur" in (m.get("title", "") + " " + m.get("desc", "")).lower()
 
 
@@ -1040,7 +1314,7 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", fa
     out += f"""<section class="hero small">
 {crumb_nav}<h1>{html.escape(h1)}</h1>
 <p class="sub">{html.escape(intro)}</p>
-<p class="count">{n} {'Lesespurgeschichte' if n == 1 else 'Lesespurgeschichten'} · Klick führt direkt zu eduki</p>
+<p class="count">{n} {('Lesespurgeschichte' if n == 1 else 'Lesespurgeschichten') if slug.startswith('lesespur') else ('Material' if n == 1 else 'Materialien')} · Klick führt direkt zu eduki</p>
 </section>
 {links_html}
 <main><div class="grid" id="grid">
@@ -1162,10 +1436,10 @@ SAISON = {
         "intro": "Von den Barbarazweigen über den Weihnachtsmarkt bis zur Wintersonnenwende: Hier findest du alle Materialien "
                  "für die dunkle Jahreszeit auf einen Blick – Lesespurgeschichten in drei Niveaustufen, Lückentexte mit "
                  "Hörverstehen und Steckbriefe, jeweils mit Lösungen und direktem Link zu eduki.",
-        "kw": r"winter|advent|weihnacht|nikolaus|barbarazweig|santa lucia|lucia|krippe|schnee|glatteis|frost|"
-              r"silvester|neujahr|sternsinger|plätzchen|kerze|christbaum|christrose|weihnachtsstern|glocken|oratorium|"
+        "kw": r"\bwinter|advent|weihnacht|nikolaus|barbarazweig|santa lucia|lucia|krippe|\bschnee|glatteis|\bfrost|"
+              r"silvester|neujahr|sternsinger|plätzchen|\bkerze|christbaum|christrose|weihnachtsstern|glocken|oratorium|"
               r"saturnalien|sonnenwende|schlitten|schlittschuh|eisbär|pinguin|winterschlaf|wintervögel|streusalz|kältehilfe",
-        "block": r"kreis|regierungsbezirk|buchführung|worksheet|kalifornien|regenwald|knaller|zeitstrahl|glockenspiel|röhrenglocken",
+        "block": r"kreis|regierungsbezirk|buchführung|worksheet|adventure|kalifornien|regenwald|knaller|zeitstrahl|glockenspiel|röhrenglocken",
     },
     "herbst": {
         "title": "Herbst-Materialien für den Unterricht",
@@ -1173,10 +1447,10 @@ SAISON = {
         "desc": "Arbeitsblätter, Lesespurgeschichten und Hörverstehen rund um den Herbst: Kürbis, Kastanie, Igel, "
                 "Zugvögel, Nebel, Ernte, Kartoffel und Wald – für Grundschule und Sekundarstufe, mit Lösungen.",
         "intro": "Der Herbst bringt die schönsten Sachthemen ins Klassenzimmer: Kastanien und Kürbisse, Igel und "
-                 "Zugvögel, Nebelmorgen und Erntezeit. Hier findest du alle passenden Materialien auf einen Blick – "
-                 "Lesespurgeschichten in drei Niveaustufen, Lückentexte mit Hörverstehen und Steckbriefe, jeweils mit "
-                 "Lösungen und direktem Link zu eduki.",
-        "kw": r"\bherbst|kürbis|kastanie|\bigel\b|\bigel[ -]|zugvögel|\bkranich|storch|\bpilz|ernte|\bnebel\b|laubbaum|laubblatt|herbstlaub|"
+                 "Zugvögel, Nebelmorgen und Erntezeit, dazu Halloween und St. Martin. Hier findest du alle passenden "
+                 "Materialien auf einen Blick – Lesespurgeschichten, Lesespaziergänge, Rechenwelten, Lückentexte mit "
+                 "Hörverstehen und Steckbriefe, jeweils mit Lösungen und direktem Link zu eduki.",
+        "kw": r"\bherbst|halloween|gruselparty|martinstag|st\. martin|laternenumzug|kürbis|kastanie|\bigel\b|\bigel[ -]|zugvögel|\bkranich|storch|\bpilz|ernte|\bnebel\b|laubbaum|laubblatt|herbstlaub|"
               r"\bapfel\b|apfelbaum|kartoffel|\bdrachen\b|eichhörnchen|\beichel|haselnuss|walnuss|wetterstation|jahreszeiten|"
               r"winterschlaf|erntedank|laterne|sankt martin|waldkauz|waldtiere|lebensraum wald|\bwald\b|tiere des waldes|\bwolf\b|"
               r"\bhirsch\b|\breh\b|wildschwein|\bfuchs\b|\bhase\b|\bmais\b|weizen|\bwein(lese|bau)|trauben|zwiebel|\brübe|federweiße",
@@ -1294,7 +1568,7 @@ def build_foot_cols():
                          for f, n in sorted(fach_c.items(), key=lambda x: -x[1]) if n >= 10)
     k_links = " · ".join(f'<a href="klasse-{n}.html">Klasse {n}</a>' for n in sorted(kl_c) if kl_c[n] >= 10)
     a_links = (' · '.join(f'<a href="{href}">{name}</a>' for name, href, _ in LINE_META.values())
-               + ' · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="gratis.html">Gratis</a> · <a href="english-worksheets.html">English</a>')
+               + ' · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a>')
     return (f'<div class="fcols"><div><h4>Nach Fach</h4><p>{f_links}</p></div>'
             f'<div><h4>Nach Klasse</h4><p>{k_links}</p></div>'
             f'<div><h4>Materialarten</h4><p>{a_links}</p></div></div>')
@@ -1311,12 +1585,12 @@ def is_free(m):
 
 def price_label(m):
     if is_free(m):
-        return "Gratis"
+        return "0,00 €"   # 20.10.: neutraler Preis statt Gratis-Werbung
     try:
         p = float(m.get("price") or 0)
     except Exception:
         p = 0
-    return (f"{p:.2f} €".replace(".", ",")) if p > 0 else "Gratis"
+    return (f"{p:.2f} €".replace(".", ",")) if p > 0 else "0,00 €"
 
 
 def mat_path(m):
@@ -1461,7 +1735,9 @@ def main():
     for p in posts:
         render_post(p)
     nmat = render_finder()
-    render_index()
+    render_index(posts)
+    n_reihen = render_reihe_pages()
+    n_blog = render_blog_index(posts)
     faecher = render_fach_pages()
     klassen = render_klasse_pages()
     fk = render_fachklasse_pages()
@@ -1493,7 +1769,7 @@ und Ausmalbilder. Kinder merken, dass Lesen sich lohnt, wenn es zu einem Ziel f�
 <p><strong>Lehrplanorientiert.</strong> Die Themen folgen den Lehrplänen der Sekundarstufe I und der
 Grundschule – von den Wirbeltieren über die Prozentrechnung bis zu Wetter, Politik und Chemie.</p>
 
-<h2>Die drei Materiallinien</h2>
+<h2>Meine Materiallinien</h2>
 <ul>
 <li><a href="lesespurgeschichten.html"><strong>Lesespurgeschichten</strong></a> – Lese-Abenteuer in drei
 Niveaus mit farbigem Lageplan, eingebetteten Aufträgen, Hörverstehen und geheimem Lösungswort.</li>
@@ -1501,6 +1777,10 @@ Niveaus mit farbigem Lageplan, eingebetteten Aufträgen, Hörverstehen und gehei
 Zusammenfassung, Aufgaben in Prüfungsform, Musterlösungen.</li>
 <li><a href="lueckentexte.html"><strong>Lückentexte mit Hörverstehen</strong></a> – Sachtext, Wortspeicher,
 Hörtext per QR-Code und Suchsel, in Minuten einsetzbar.</li>
+<li><a href="rechenwelten.html"><strong>Rechenwelten</strong></a> – analoge Mathe-Rollenspiele für Klasse 1–4:
+Die Klasse spielt eine Welt nach und rechnet dabei, 3-fach differenziert (★/★★/★★★).</li>
+<li><a href="lesespaziergaenge.html"><strong>Lesespaziergänge</strong></a> – Lesen in Bewegung für Klasse 2–4:
+zehn Bildkarten im Rundlauf, drei Lesestufen und ein Lösungswort.</li>
 </ul>
 
 <h2>Wo du mich findest</h2>
@@ -1512,7 +1792,7 @@ Aktionen und Einblicke in die Entstehung gibt es auf
 antworte selbst und bessere Material auch nachträglich nach.</p>
 
 <p class="btnrow"><a class="btn" href="materialien.html">Alle Materialien durchsuchen</a>
-<a class="more" href="gratis.html">Kostenlose Materialien ansehen</a></p>""")
+<a class="more" href="rechenwelten.html">Rechenwelten ansehen</a></p>""")
     render_page("datenschutz", "Datenschutzerklärung", f"""<h1>Datenschutzerklärung</h1>
 <p><strong>Verantwortlicher:</strong> {INHABER}, E-Mail: {EMAIL} (Anschrift siehe <a href="impressum.html">Impressum</a>).</p>
 <h2>Hosting</h2>
@@ -1542,7 +1822,8 @@ dort findest du alle Materialien nach Fach und Klasse.</p>
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Artikel, {nmat} DE-Materialien im Finder, {len(faecher)} Fach-Seiten, {len(klassen)} Klassen-Seiten, "
           f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "
-          f"{len(EXTRA_URLS)} Landingpages gesamt ({len(fk)} Fach×Klasse), {n_matpages} Material-Detailseiten.")
+          f"{len(EXTRA_URLS)} Landingpages gesamt ({len(fk)} Fach×Klasse), {n_matpages} Material-Detailseiten, "
+          f"Rechenwelten {n_reihen.get('rechenwelt', 0)} / Lesespaziergänge {n_reihen.get('lesespaziergang', 0)}, Blog-Index {n_blog}.")
 
 
 if __name__ == "__main__":
