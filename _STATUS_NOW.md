@@ -1,3 +1,13 @@
+# Status snice-unterricht.eu — 20.10.2026 ~23:45
+
+## ✅ 20.10. Neue Linien, Gratis raus, Blog-Takt (Commit afd90b69)
+- Neu: `rechenwelten.html` (5 live) + `lesespaziergaenge.html` (2 live), füllen sich je Build aus dem Katalog (sonst „Erscheint in Kürze“); Kachel/Abschnitte Startseite, Nav, Footer, Über-mich. Erkennung `line_of()` per Titelmuster (Rechenwelten-Titel enthalten „Rollenspiel … 3-fach differenziert“).
+- Saison auf Startseite datumsabhängig (`saison_aktuell()`): Sep/Okt Herbst/Halloween/St. Martin, 1.–11.11. beides, danach Advent bis Feb.
+- Gratis/kostenlos aus Startseite/Nav/FAQ/Hero/Footer entfernt; `gratis.html` = noindex-Weiterleitung → materialien.html, nicht in Sitemap. Fix: Backspace-Zeichen in Advent-Regex → `\b` (Advent-Seite größer).
+- Blog-Takt `Skripte\_blog_takt.py`: Entwürfe via ask.js → `Marketing\blog\_queue\` (zu_pruefen), Gates, Freigabe nur manuell. `_homepage_daily.py` (04:40) veröffentlicht 1 freigegebenen Beitrag/Tag vor dem Build, Nachschub bei < 5 freigegeben → Log + Zeile hier „BLOG_PRUEFEN n“. Stand: 1 veröffentlicht, 12 freigegeben. `blog.html` neu.
+- Live geprüft: neue Seiten 200, Linkcheck 6364 Kacheln / 7046 Seiten 0 tot/offline.
+- Offen: „Deckblatt Lesespaziergang …“-Materialien aktiv auf eduki (gefiltert), 47 Materialien laut API noch gratis, keine TpT-Links für die neuen Linien, Impressum weiter Platzhalter.
+
 # Status snice-unterricht.eu — 16.10.2026 ~17:00
 
 ## ✅ 16.10. HTTPS + Katalog
@@ -33,7 +43,7 @@
 # Status snice-unterricht.eu — 13.09.2026 21:20 (SEO-Offensive, Rat 20:15)
 
 ## ✅ HEUTE
-- **Search Console:** Property `http://snice-unterricht.eu/` VERIFIZIERT (HTML-Datei `google4340d9074c6c83c3.html` im Repo — NIE löschen). `sitemap.xml` (Index) eingereicht. Befund vorher: Domain war Google KOMPLETT unbekannt („URL ist Google nicht bekannt“, keine Sitemaps). Indexierung beantragt: Startseite, klasse-8.html (Rest per Tageskontingent nachholen: lesespurgeschichten, pruefungstraining, lueckentexte, materialien, fach-biologie, gratis). Zugang: Google-Session im ChatGPT-Profil `chatgpt-botrowser-profile` (Skripte im Session-Scratchpad `_gsc_*.py`; Suchfeld aria-label „Jede URL…“, Button-Text „Indexierung beantragen“ via `:text-matches`).
+- **Search Console:** Property `http://snice-unterricht.eu/` VERIFIZIERT (HTML-Datei `google4340d9074c6c83c3.html` im Repo — NIE löschen). `sitemap.xml` (Index) eingereicht. Befund vorher: Domain war Google KOMPLETT unbekannt („URL ist Google nicht bekannt“, keine Sitemaps). Indexierung beantragt: Startseite, klasse-8.html (Rest per Tageskontingent nachholen: lesespurgeschichten, pruefungstraining, lueckentexte, materialien, fach-biologie, gratis). Zugang: Google-Session im ChatGPT-Profil `chatgpt-bot\browser-profile` (Skripte im Session-Scratchpad `_gsc_*.py`; Suchfeld aria-label „Jede URL…“, Button-Text „Indexierung beantragen“ via `:text-matches`).
 - **Material-Detailseiten:** `material/<id>-<slug>.html` für alle DE-Materialien mit Beschreibung ≥ 200 Zeichen (5.489, Commit bc0dbe70): Title/Meta/Canonical/OG, Product-JSON-LD (Preis EUR, eduki-URL), BreadcrumbList, Facts (Fach/Klasse/Schulform/Materialart), 8 ähnliche Materialien (Fach+Linie+Klasse), Links zu Fach-/Klassen-/Linien-Seite. Finder-/Landingpage-Karten verlinken jetzt auf die Detailseite (eduki-CTA dort). Sitemap-Index: `sitemap.xml` → `sitemap-seiten.xml` + `sitemap-material-1..3.xml` (Lesespuren zuerst, `lastmod`).
 - **Site-URL vorübergehend http** (`SITE` in build.py), weil das GitHub-Pages-Zertifikat weiter in `authorization_created` hängt → Canonicals/Sitemap = http = Property. Nach Cert-Ausstellung: SITE zurück auf https, https-Property anlegen (gleiche HTML-Datei), Sitemap dort neu einreichen.
 - **Volltext-Beschreibungen:** `Skripte\_katalog_desc_pull.py` (v1 materials API, 6 Threads, 429-Backoff, resumefähig) → `_katalog_desc.json` (gitignored); `load_katalog()` mischt sie ein. Danach `MAT_MIN_DESC` auf 300 zurück, Build, Push.
