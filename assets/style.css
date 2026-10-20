@@ -183,3 +183,14 @@ a.chip{text-decoration:none;display:inline-flex;align-items:center}
 .editorial details[open] summary::after{content:"–"}
 .editorial details p{margin:10px 0 0}
 @media(max-width:720px){.editorial{margin-top:38px;padding:0 16px}.editorial h2{font-size:21px}}
+/* 20.10.: neue Reihen, Blog-Kacheln, Erscheint-in-Kuerze */
+.topnav .links{white-space:nowrap}
+@media(max-width:1180px){.topnav .links{gap:14px;font-size:13px}}
+a.tile.link{display:block;color:inherit;text-decoration:none;transition:transform .2s,box-shadow .2s}
+a.tile.link:hover{transform:translateY(-2px)}
+a.tile.link h3{font-size:19px}
+.bloglist{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.tag-neu{display:inline-block;margin:0 0 6px;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.04em;background:var(--text);color:var(--bg)}
+.soon{max-width:720px;margin:10px auto 0;padding:28px 26px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);text-align:center}
+.soon h2{margin:0 0 8px}
+p.soon{color:var(--muted);text-align:left;margin:0}
