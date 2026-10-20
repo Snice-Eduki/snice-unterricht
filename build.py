@@ -1165,7 +1165,7 @@ SAISON = {
         "kw": r"winter|advent|weihnacht|nikolaus|barbarazweig|santa lucia|lucia|krippe|schnee|glatteis|frost|"
               r"silvester|neujahr|sternsinger|plätzchen|kerze|christbaum|christrose|weihnachtsstern|glocken|oratorium|"
               r"saturnalien|sonnenwende|schlitten|schlittschuh|eisbär|pinguin|winterschlaf|wintervögel|streusalz|kältehilfe",
-        "block": r"kreis|regierungsbezirk|buchführung|worksheet|kalifornien|regenwald",
+        "block": r"kreis|regierungsbezirk|buchführung|worksheet|kalifornien|regenwald|knaller|zeitstrahl|glockenspiel|röhrenglocken",
     },
     "herbst": {
         "title": "Herbst-Materialien für den Unterricht",
