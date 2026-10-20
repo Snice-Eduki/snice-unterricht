@@ -126,6 +126,7 @@ def topnav(root=""):
             f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
             f'<a href="{root}pruefungstraining.html">Prüfungstraining</a>'
             f'<a href="{root}herbst.html">Herbst</a>'
+            f'<a href="{root}advent-winter.html">Advent &amp; Winter</a>'
             f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
             f'<a href="{root}ueber-mich.html">Über mich</a>'
             f'<a href="{root}impressum.html">Impressum</a>'
@@ -1153,6 +1154,19 @@ def ls_editorial(mats, fach=None, klasse=None):
 
 
 SAISON = {
+    "advent-winter": {
+        "title": "Advent- und Winter-Materialien für den Unterricht",
+        "h1": "Advent & Winter im Unterricht",
+        "desc": "Arbeitsblätter, Lesespurgeschichten und Hörverstehen für Advent, Weihnachten und Winter: Weihnachtsmarkt, "
+                "Barbarazweige, Wintersonnenwende, Schnee, Eis und Tiere im Winter – mit Lösungen, Grundschule und Sek I.",
+        "intro": "Von den Barbarazweigen über den Weihnachtsmarkt bis zur Wintersonnenwende: Hier findest du alle Materialien "
+                 "für die dunkle Jahreszeit auf einen Blick – Lesespurgeschichten in drei Niveaustufen, Lückentexte mit "
+                 "Hörverstehen und Steckbriefe, jeweils mit Lösungen und direktem Link zu eduki.",
+        "kw": r"winter|advent|weihnacht|nikolaus|barbarazweig|santa lucia|lucia|krippe|schnee|glatteis|frost|"
+              r"silvester|neujahr|sternsinger|plätzchen|kerze|christbaum|christrose|weihnachtsstern|glocken|oratorium|"
+              r"saturnalien|sonnenwende|schlitten|schlittschuh|eisbär|pinguin|winterschlaf|wintervögel|streusalz|kältehilfe",
+        "block": r"kreis|regierungsbezirk|buchführung|worksheet|kalifornien|regenwald",
+    },
     "herbst": {
         "title": "Herbst-Materialien für den Unterricht",
         "h1": "Herbst im Unterricht",
@@ -1280,7 +1294,7 @@ def build_foot_cols():
                          for f, n in sorted(fach_c.items(), key=lambda x: -x[1]) if n >= 10)
     k_links = " · ".join(f'<a href="klasse-{n}.html">Klasse {n}</a>' for n in sorted(kl_c) if kl_c[n] >= 10)
     a_links = (' · '.join(f'<a href="{href}">{name}</a>' for name, href, _ in LINE_META.values())
-               + ' · <a href="herbst.html">Herbst</a> · <a href="gratis.html">Gratis</a> · <a href="english-worksheets.html">English</a>')
+               + ' · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="gratis.html">Gratis</a> · <a href="english-worksheets.html">English</a>')
     return (f'<div class="fcols"><div><h4>Nach Fach</h4><p>{f_links}</p></div>'
             f'<div><h4>Nach Klasse</h4><p>{k_links}</p></div>'
             f'<div><h4>Materialarten</h4><p>{a_links}</p></div></div>')
