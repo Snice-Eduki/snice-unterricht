@@ -1244,14 +1244,6 @@ def render_index(posts=None):
 <div class="tile"><h3>Lehrplanorientiert</h3><p>Kernthemen aller Fächer, abgestimmt auf die Lehrpläne der Bundesländer und alle Schularten – ohne Klassenstufe auf dem Blatt.</p></div>
 </section>
 
-<section class="section reel">
-<div class="sec-head"><div><h2>Im Video</h2><p class="lead">Ein Blick in mein Unterrichtsmaterial.</p></div>
-<a class="more" href="https://www.instagram.com/reel/DetKrMTjeHb/" rel="noopener" target="_blank">Auf Instagram ansehen →</a></div>
-<div class="reelbox" style="max-width:380px;margin:0 auto">
-<button type="button" class="btn" onclick="this.parentNode.innerHTML='&lt;iframe src=&quot;https://www.instagram.com/reel/DetKrMTjeHb/embed&quot; width=&quot;380&quot; height=&quot;680&quot; style=&quot;border:0;max-width:100%;border-radius:12px&quot; loading=&quot;lazy&quot; allowfullscreen title=&quot;Instagram-Reel&quot;&gt;&lt;/iframe&gt;'">Video laden (lädt von Instagram)</button>
-</div>
-</section>
-
 {saison_html}
 {reihen_html}
 {line_section("lesespur", by_line["lesespur"])}
