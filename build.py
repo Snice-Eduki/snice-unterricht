@@ -119,8 +119,11 @@ def load_posts():
 
 def saison_aktuell(heute=None):
     """20.10.: datumsabhaengige Saison fuer Startseite/Navigation.
-    Sep/Okt = Herbst (Halloween, St. Martin), 1.-11.11. Advent & Winter + Herbst, ab 12.11. bis Feb Advent & Winter."""
+    Sep/Okt = Herbst (Halloween, St. Martin), ab 15.10. Advent & Winter als Vorschau (Lehrkraefte planen vor),
+    1.-11.11. Advent & Winter + Herbst, ab 12.11. bis Feb Advent & Winter."""
     d = heute or datetime.date.today()
+    if d.month == 10 and d.day >= 15:
+        return ["herbst", "advent-winter"]
     if d.month in (9, 10):
         return ["herbst"]
     if d.month == 11 and d.day <= 11:
@@ -143,6 +146,7 @@ def topnav(root=""):
             f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
             f'<a href="{root}rechenwelten.html">Rechenwelten</a>'
             f'<a href="{root}lesespaziergaenge.html">Lesespaziergänge</a>'
+            f'<a href="{root}bastelvorlagen.html">Basteln</a>'
             f'<a href="{root}pruefungstraining.html">Prüfungstraining</a>'
             f'{saison}'
             f'<a href="{root}blog.html">Blog</a>'
@@ -170,7 +174,11 @@ def itemlist_ld(name, mats, limit=50):
                                 for i, m in enumerate(mats[:limit])]}
 
 
-def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=None, title_raw=False):
+HTTPS_JS = ("<script>if(location.protocol==='http:'&&/(^|\\.)snice-unterricht\\.eu$/.test(location.hostname))"
+            "location.replace('https://snice-unterricht.eu'+location.pathname+location.search+location.hash);</script>")
+
+
+def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=None, title_raw=False, robots="index,follow,max-image-preview:large"):
     desc = html.escape(desc.replace("\n", " ").strip()); t = html.escape(title)
     og_img = cover or f"{SITE}/assets/logo.png"
     jsonld = {"@context": "https://schema.org", "@type": "BlogPosting" if article else "WebPage",
@@ -186,10 +194,11 @@ def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=No
     return f"""<!doctype html>
 <html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+{HTTPS_JS}
 <title>{full_title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{url}">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="robots" content="{robots}">
 <meta property="og:type" content="{'article' if article else 'website'}">
 <meta property="og:title" content="{t}"><meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}"><meta property="og:image" content="{og_img}">
@@ -440,6 +449,9 @@ _KAT_CACHE = None
 # 20.10.: neue Reihen. Rechenwelten = analoge Mathe-Rollenspiele Kl. 1-4 (Titel "<Welt> - Rollenspiel <Kompetenz>,
 # 3-fach differenziert (Klasse N)"), Lesespaziergaenge Kl. 2-4 (Titel "Lesespaziergang: ...").
 RW_RE = re.compile(r"(rechenwelt|rollenspiel\b(?!.*l(ü|ue)ckentext).*3-fach differenziert)", re.I)
+# 26.10.: Bastelvorlagen mit Sachtext (Snice-Stil, Kl. 1-4), nur neue Reihe mit "3-fach differenziert"
+BASTEL_RE = re.compile(r"bastel|klappkarte|faltkarte|pop-up-karte|ziehkarte|drehkarte|falten und schneiden|"
+                       r"aus einem blatt|wackelbild", re.I)
 
 
 def line_of(m):
@@ -449,6 +461,8 @@ def line_of(m):
         return "lesespaziergang"
     if RW_RE.search(m.get("title", "")):
         return "rechenwelt"
+    if BASTEL_RE.search(tt) and "3-fach differenziert" in tt:
+        return "basteln"
     t = (m.get("title", "") + " " + m.get("desc", "")[:80]).lower()
     if "lesespur" in t:
         return "lesespur"
@@ -497,8 +511,10 @@ def katalog_de():
     return [m for m in load_katalog() if not m["en"]]
 
 
-LINE_ORDER = {"rechenwelt": 0, "lesespaziergang": 0, "lesespur": 0, "pt": 1, "lueckentext": 2, "sonst": 3}
+LINE_ORDER = {"rechenwelt": 0, "lesespaziergang": 0, "basteln": 0, "lesespur": 0, "pt": 1, "lueckentext": 2, "sonst": 3}
 LINE_META = {
+    "basteln": ("Bastelvorlagen mit Sachtext", "bastelvorlagen.html",
+                "Basteln und Lernen für Klasse 1–4: Bastelbogen mit Bauanleitung, dazu ein kurzer Sachtext mit Aufgaben – 3-fach differenziert, mit Lösungen."),
     "rechenwelt": ("Rechenwelten", "rechenwelten.html",
                    "Analoge Mathe-Rollenspiele für Klasse 1–4: Die Klasse spielt eine Welt nach und rechnet dabei – 3-fach differenziert, mit Lösungen."),
     "lesespaziergang": ("Lesespaziergänge", "lesespaziergaenge.html",
@@ -569,9 +585,9 @@ def faq_ld_of(faq):
 
 
 def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_kl=True, links_html="",
-              itemlist_name=None, body_extra="", editorial="", faq=None, finder=False):
+              itemlist_name=None, body_extra="", editorial="", faq=None, finder=False, sort=True):
     """SEO-Landingpage mit Suche + Filter-Chips + Karten-Grid (Direktlinks zu eduki)."""
-    mats = sort_mats(mats)
+    mats = sort_mats(mats) if sort else list(mats)
     url = f"{SITE}/{slug}.html"
     n = len(mats)
     lds = [breadcrumb_ld([("Start", SITE + "/")] + crumbs + [(h1, url)])]
@@ -1047,6 +1063,59 @@ REIHEN = {
         "soon": "Die ersten Lesespaziergänge werden gerade fertiggestellt und geprüft. Sobald sie auf eduki erhältlich sind, "
                 "erscheinen sie hier automatisch.",
     },
+    "basteln": {
+        "slug": "bastelvorlagen", "name": "Bastelvorlagen mit Sachtext",
+        "title": "Bastelvorlagen mit Sachtext – Basteln und Lernen in Klasse 1–4",
+        "h1": "Bastelvorlagen mit Sachtext: Basteln und Lernen",
+        "desc": "Bastelvorlagen für die Grundschule: Klappkarten, bewegliche Figuren, Laternen und Pop-up-Karten mit "
+                "Bauanleitung, Bastelbogen in Farbe und zum Ausmalen und einem Sachtext mit Aufgaben – 3-fach differenziert, mit Lösungen.",
+        "intro": "Bei meinen Bastelvorlagen entsteht nicht nur etwas Schönes für das Fenster oder die Pinnwand: Zu jedem "
+                 "Modell gehört ein kurzer Sachtext mit Aufgaben in drei Stufen. So wird aus der Bastelstunde eine Stunde, "
+                 "in der gelesen, geschrieben, gerechnet oder geforscht wird – passend zur Jahreszeit.",
+        "tiles": [("Basteln mit Inhalt", "Ob Igel im Laubnest, Wackel-Skelett oder Martinslaterne: Das Modell führt zu einem "
+                                         "Sachthema, und der Sachtext liefert das Wissen dazu."),
+                  ("3-fach differenziert", "Die Aufgaben gibt es in den Stufen ★, ★★ und ★★★ – zum Beispiel Richtig oder falsch, "
+                                           "Lückentext mit Wortspeicher und offene Fragen mit Schreibauftrag."),
+                  ("Sofort einsetzbar", "Bauanleitung mit Skizze, Bastelbogen in Farbe und zum Ausmalen sowie Hinweise für "
+                                        "Lehrkräfte mit Ablauf und Kopierplan – ausdrucken und loslegen.")],
+        "sections": [
+            ("Was steckt in einer Bastelvorlage?", [
+                "Jede Bastelvorlage verbindet ein Modell mit einem Lerninhalt. Der Kürbis wird zum Klapp-Kürbis, an dem die "
+                "Kinder die Teile beschriften, das Skelett wird beweglich und zeigt die wichtigsten Knochen, die Armbanduhr "
+                "aus Papier übt das Ablesen der Uhrzeit. Das Basteln ist der Anlass, der Sachtext und die Aufgaben sichern das Wissen.",
+                "Welche Fächer eine Vorlage abdeckt, steht im Titel: Viele gehören zu Deutsch, Kunst oder Sachunterricht, "
+                "einige zu Mathematik.",
+            ]),
+            ("Was in der Regel enthalten ist", [
+                "<ul><li>Hinweise für Lehrkräfte mit Ablauf, Kopierplan, Lösungen und Lehrplanbezug</li>"
+                "<li>Überblick mit Musterfoto des fertigen Modells</li>"
+                "<li>Bauanleitung mit Skizze</li>"
+                "<li>Bastelbogen in Farbe und zum Ausmalen</li>"
+                "<li>Sachtext und Übungsblätter in den Stufen ★, ★★ und ★★★</li></ul>"
+                "<p>Den genauen Umfang nennt die Beschreibung des jeweiligen Materials auf eduki.</p>",
+            ]),
+            ("So setzt du eine Bastelvorlage ein", [
+                "Zum Einstieg zeigst du das fertige Modell oder das Musterfoto. Danach basteln die Kinder nach der "
+                "Bauanleitung. Wer fertig ist, liest den Sachtext und bearbeitet die Aufgaben in seiner Stufe. Am Ende "
+                "werden die Modelle ausgestellt, und die Kinder erklären, was sie über das Thema gelernt haben.",
+            ]),
+        ],
+        "faq": [
+            ("Für welche Klassen sind die Bastelvorlagen gedacht?",
+             "Für die Grundschule. Jede Bastelvorlage nennt im Titel die Klassen, für die sie gedacht ist, meist zwei "
+             "benachbarte Jahrgangsstufen."),
+            ("Welches Material brauche ich?",
+             "Meist reichen Drucker, Papier, Schere, Kleber und Stifte. Was ein Modell zusätzlich braucht, steht in den "
+             "Hinweisen für Lehrkräfte."),
+            ("Wie funktioniert die Differenzierung?",
+             "Es gibt genau drei Stufen: ★, ★★ und ★★★. Alle Kinder basteln dasselbe Modell, die Aufgaben zum Sachtext "
+             "sind unterschiedlich anspruchsvoll."),
+            ("Sind Lösungen enthalten?",
+             "Ja, die Lösungen zu den Aufgaben stehen in den Hinweisen für Lehrkräfte."),
+        ],
+        "soon": "Die ersten Bastelvorlagen werden gerade fertiggestellt und geprüft. Sobald sie auf eduki erhältlich sind, "
+                "erscheinen sie hier automatisch.",
+    },
 }
 
 
@@ -1138,7 +1207,7 @@ SAISON_HOME = {
 def home_reihen():
     aktuell = saison_aktuell()
     h = ""
-    for key in ("rechenwelt", "lesespaziergang"):
+    for key in ("rechenwelt", "lesespaziergang", "basteln"):
         name, href, blurb = LINE_META[key]
         ms = reihe_mats(key)
         ms = sorted(ms, key=lambda m: (0 if any(saison_match(sl, m) for sl in aktuell) else 1, -int(m["id"])))
@@ -1168,6 +1237,37 @@ def home_saison(mats):
     return h
 
 
+NEU_N = 48
+
+
+def neueste(k=NEU_N):
+    """26.10.: neueste deutsche Materialien (hoechste eduki-ID zuerst) fuer Startseite + neu.html."""
+    return sorted(katalog_de(), key=lambda m: -int(m["id"]))[:k]
+
+
+def home_neu(k=8):
+    ms = [m for m in neueste() if m.get("cover")][:k]
+    if not ms:
+        return ""
+    return (f'<section class="section">\n<div class="sec-head"><div><p class="tag-neu">Neu</p><h2>Neu erschienen</h2>'
+            f'<p class="lead">Die neuesten Materialien aus meinem Shop – frisch geprüft und auf eduki erhältlich.</p></div>\n'
+            f'<a class="more" href="neu.html">Alle Neuheiten ansehen →</a></div>\n'
+            f'<div class="grid grid-home">{"".join(cat_card_html(m) for m in ms)}</div>\n</section>\n')
+
+
+def render_neu_page():
+    mats = neueste()
+    if not mats:
+        return 0
+    return grid_page("neu", "Neu erschienen: die neuesten Unterrichtsmaterialien",
+                     "Neu erschienen",
+                     f"Die {len(mats)} neuesten Unterrichtsmaterialien von {SITE_NAME}: Lesespuren, Rechenwelten, "
+                     "Lesespaziergänge, Bastelvorlagen und Arbeitsblätter mit Lösungen – neueste zuerst.",
+                     "Hier erscheinen meine neuesten Materialien zuerst – von Bastelvorlagen und Rechenwelten bis zu "
+                     "Lesespurgeschichten und Prüfungstrainings. Die Liste aktualisiert sich automatisch.",
+                     mats, [], itemlist_name="Neu erschienen", sort=False)
+
+
 def home_blog(posts, k=3):
     if not posts:
         return ""
@@ -1194,6 +1294,7 @@ def render_index(posts=None):
             kl_c[n] += 1
     reihen_html = home_reihen()
     saison_html = home_saison(allm)
+    neu_html = home_neu()
     blog_html = home_blog(posts or [])
 
     def cards(ms, k=8):
@@ -1245,6 +1346,7 @@ def render_index(posts=None):
 </section>
 
 {saison_html}
+{neu_html}
 {reihen_html}
 {line_section("lesespur", by_line["lesespur"])}
 {line_section("pt", by_line["pt"])}
@@ -1276,8 +1378,19 @@ def render_index(posts=None):
     return n_all
 
 
+PAGE_DESC = {
+    "impressum": f"Impressum von {SITE_NAME}: Anbieterkennzeichnung und Kontakt.",
+    "ueber-mich": f"Über mich: Wer hinter {SITE_NAME} steht, wie meine Unterrichtsmaterialien entstehen und welche "
+                  "Materiallinien es gibt – Lesespuren, Rechenwelten, Lesespaziergänge, Bastelvorlagen und mehr.",
+    "datenschutz": f"Datenschutzerklärung von {SITE_NAME}: keine Cookies, kein Tracking, Hosting und eingebundene Vorschaubilder.",
+    "404": "Diese Seite gibt es nicht (mehr). Zur Startseite und zur Materialsuche.",
+}
+
+
 def render_page(slug, title, inner):
-    out = head(title, title, f"{SITE}/{slug}.html", "") + '<main class="article-wrap">' + inner + "</main>" + foot()
+    out = (head(title, PAGE_DESC.get(slug, title), f"{SITE}/{slug}.html", "",
+                robots="noindex,follow" if slug == "404" else "index,follow,max-image-preview:large")
+           + '<main class="article-wrap">' + inner + "</main>" + foot())
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
 
 
@@ -1292,14 +1405,18 @@ LS_INTRO = ("Eine Lesespurgeschichte ist ein differenziertes Lese- und Sachmater
 
 
 def is_lesespur(m):
-    if m.get("line") in ("rechenwelt", "lesespaziergang"):
+    if m.get("line") in ("rechenwelt", "lesespaziergang", "basteln"):
         return False
     return "lesespur" in (m.get("title", "") + " " + m.get("desc", "")).lower()
 
 
-def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", faq=None):
-    """Landingpage mit Karten-Grid (gleiche Karten wie der Finder, ohne JS-Filter)."""
-    mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, x.get("title", "")))
+def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", faq=None, newest=False, crumbs=None):
+    """Landingpage mit Karten-Grid (gleiche Karten wie der Finder, ohne JS-Filter).
+    26.10.: newest=True -> neueste zuerst (Saisonseiten), crumbs=Name -> Breadcrumb Start > Name."""
+    if newest:
+        mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, -int(x["id"])))
+    else:
+        mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, x.get("title", "")))
     url = f"{SITE}/{slug}.html"
     n = len(mats)
     ld = [faq_ld_of(faq)] if faq else []
@@ -1310,6 +1427,10 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", fa
                                  (label, url)]))
         crumb_nav = ('<nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a> › '
                      f'<a href="lesespurgeschichten.html">Lesespurgeschichten</a> › <span>{html.escape(label)}</span></nav>\n')
+    elif crumbs:
+        ld.append(breadcrumb_ld([("Start", f"{SITE}/"), (crumbs, url)]))
+        crumb_nav = ('<nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a> › '
+                     f'<span>{html.escape(crumbs)}</span></nav>\n')
     out = head(title, desc, url, mats[0].get("cover", "") if mats else "", extra_ld=ld or None)
     out += f"""<section class="hero small">
 {crumb_nav}<h1>{html.escape(h1)}</h1>
@@ -1470,10 +1591,15 @@ def render_saison_pages():
         if not sel:
             continue
         n_total += len(sel)
+        andere = [o for o in SAISON if o != slug]
         links = ('<div class="filters"><div class="row">'
+                 + "".join(f'<a class="chip" href="{o}.html">{SAISON_NAV[o]}</a>' for o in andere)
+                 + '<a class="chip" href="neu.html">Neu erschienen</a>'
+                 '<a class="chip" href="bastelvorlagen.html">Bastelvorlagen</a>'
                  '<a class="chip" href="lesespurgeschichten.html">Alle Lesespurgeschichten</a>'
-                 '<a class="chip" href="index.html">Alle Materialien</a></div></div>')
-        _ls_page(slug, s["title"], s["h1"], s["desc"], s["intro"], sel, links)
+                 '<a class="chip" href="materialien.html">Alle Materialien</a></div></div>')
+        _ls_page(slug, s["title"], s["h1"], s["desc"], s["intro"], sel, links, newest=True,
+                 crumbs=SAISON_NAV[slug].replace("&amp;", "&"))
     return n_total
 
 
@@ -1568,7 +1694,7 @@ def build_foot_cols():
                          for f, n in sorted(fach_c.items(), key=lambda x: -x[1]) if n >= 10)
     k_links = " · ".join(f'<a href="klasse-{n}.html">Klasse {n}</a>' for n in sorted(kl_c) if kl_c[n] >= 10)
     a_links = (' · '.join(f'<a href="{href}">{name}</a>' for name, href, _ in LINE_META.values())
-               + ' · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a>')
+               + ' · <a href="neu.html">Neu erschienen</a> · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a>')
     return (f'<div class="fcols"><div><h4>Nach Fach</h4><p>{f_links}</p></div>'
             f'<div><h4>Nach Klasse</h4><p>{k_links}</p></div>'
             f'<div><h4>Materialarten</h4><p>{a_links}</p></div></div>')
@@ -1737,6 +1863,7 @@ def main():
     nmat = render_finder()
     render_index(posts)
     n_reihen = render_reihe_pages()
+    n_neu = render_neu_page()
     n_blog = render_blog_index(posts)
     faecher = render_fach_pages()
     klassen = render_klasse_pages()
@@ -1781,6 +1908,8 @@ Hörtext per QR-Code und Suchsel, in Minuten einsetzbar.</li>
 Die Klasse spielt eine Welt nach und rechnet dabei, 3-fach differenziert (★/★★/★★★).</li>
 <li><a href="lesespaziergaenge.html"><strong>Lesespaziergänge</strong></a> – Lesen in Bewegung für Klasse 2–4:
 zehn Bildkarten im Rundlauf, drei Lesestufen und ein Lösungswort.</li>
+<li><a href="bastelvorlagen.html"><strong>Bastelvorlagen mit Sachtext</strong></a> – Basteln und Lernen für Klasse 1–4:
+Bastelbogen mit Bauanleitung und ein Sachtext mit Aufgaben in drei Stufen.</li>
 </ul>
 
 <h2>Wo du mich findest</h2>
@@ -1823,7 +1952,8 @@ dort findest du alle Materialien nach Fach und Klasse.</p>
     print(f"OK: {len(posts)} Artikel, {nmat} DE-Materialien im Finder, {len(faecher)} Fach-Seiten, {len(klassen)} Klassen-Seiten, "
           f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "
           f"{len(EXTRA_URLS)} Landingpages gesamt ({len(fk)} Fach×Klasse), {n_matpages} Material-Detailseiten, "
-          f"Rechenwelten {n_reihen.get('rechenwelt', 0)} / Lesespaziergänge {n_reihen.get('lesespaziergang', 0)}, Blog-Index {n_blog}.")
+          f"Rechenwelten {n_reihen.get('rechenwelt', 0)} / Lesespaziergänge {n_reihen.get('lesespaziergang', 0)} / "
+          f"Bastelvorlagen {n_reihen.get('basteln', 0)}, Neu {n_neu}, Blog-Index {n_blog}.")
 
 
 if __name__ == "__main__":
