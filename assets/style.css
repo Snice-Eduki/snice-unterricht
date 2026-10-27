@@ -227,5 +227,5 @@ p.soon{color:var(--muted);text-align:left;margin:0}
 .collage .c3{left:10%;bottom:0;transform:rotate(-3deg);z-index:1;width:36%}
 .collage .c4{right:8%;bottom:2%;transform:rotate(4deg);z-index:1;width:36%}
 @media(max-width:860px){.hero2{grid-template-columns:1fr;padding-top:28px;gap:26px}.collage{height:300px;max-width:420px;width:100%;margin:0 auto}
-  .hero2 h1{font-size:38px}.hero2 .sub{font-size:17px}}
+  .hero2 h1{font-size:38px}.hero2 .sub{font-size:17px}.collage .c3,.collage .c4{display:none}}
 .hero2.noimg{grid-template-columns:1fr;max-width:760px}.hero2.noimg .collage{display:none}
