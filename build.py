@@ -1305,6 +1305,59 @@ def home_blog(posts, k=3):
             f'<div class="tiles">{items}</div>\n</section>\n')
 
 
+# 27.10. (Nutzer-OK): Hero mit Cover-Collage. Bilder = Original-Deckblaetter ohne eduki-Wasserzeichen
+# (assets/hero/<id>.webp, 560 px). Bis 11.11. St. Martin + Winter, danach Advent + Winter. Nur Materialien, die live sind.
+HERO_SETS = [((10, 1), (11, 11), ["2348548", "2341186", "2324381", "2341189", "2324533"]),
+             ((11, 12), (2, 28), ["2324800", "2324483", "2324381", "2341189", "2324533"])]
+
+
+def hero_ids(heute=None):
+    d = heute or datetime.date.today()
+    md = (d.month, d.day)
+    for von, bis, ids in HERO_SETS:
+        if (von <= md <= bis) if von <= bis else (md >= von or md <= bis):
+            return ids
+    return []   # ausserhalb der Saison-Sets: Hero ohne Collage (neue Sets bis Maerz anlegen)
+
+
+def hero_cta(heute=None):
+    d = heute or datetime.date.today()
+    if d.month == 10 or (d.month == 11 and d.day <= 11):
+        return "Neu für November &amp; Advent", "advent-winter.html"
+    if d.month in (11, 12, 1, 2):
+        return "Advent &amp; Winter entdecken", "advent-winter.html"
+    return "Neu erschienen", "neu.html"
+
+
+def hero_html(mats):
+    by_id = {m["id"]: m for m in mats}
+    n_all = len(mats)
+    n_ls = sum(1 for m in mats if is_lesespur(m))
+    imgs = ""
+    for k, i in enumerate([i for i in hero_ids() if i in by_id and os.path.exists(os.path.join(OUT, "assets", "hero", i + ".webp"))][:5]):
+        m = by_id[i]
+        href = MAT_PAGES.get(i) or f'{EDUKI_MAT}/{i}/{m.get("slug", "")}'
+        load = 'fetchpriority="high"' if k == 0 else 'loading="lazy"'
+        imgs += (f'<a class="c{k}" href="{href}"><img src="assets/hero/{i}.webp" alt="{html.escape(m["title"])}" '
+                 f'width="560" height="792" {load} decoding="async"></a>')
+    cta, cta_href = hero_cta()
+    return f"""<section class="hero2{'' if imgs else ' noimg'}">
+<div class="h2text">
+<p class="eyebrow">Von einer Lehrkraft für Lehrkräfte</p>
+<h1>Unterricht vorbereitet.<br><span>In fünf Minuten.</span></h1>
+<p class="sub">Über {nfmt(n_all // 100 * 100)} fertige Unterrichtsmaterialien mit Lösungen – Lesespurgeschichten, Rechenwelten, Lesespaziergänge und Bastelvorlagen, 3-fach differenziert (★/★★/★★★).</p>
+<form class="searchwrap" action="materialien.html" method="get" role="search">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+<input name="q" type="search" placeholder="Thema suchen: z. B. St. Martin, Igel, Bruchrechnung …" autocomplete="off" aria-label="Materialien durchsuchen">
+</form>
+<p class="btnrow"><a class="btn" href="{cta_href}">{cta}</a><a class="btn ghost" href="materialien.html">Alle Materialien</a></p>
+<ul class="trust"><li><b>{nfmt(n_all // 100 * 100)}+</b> Materialien</li><li><b>{nfmt(n_ls // 10 * 10)}+</b> Lesespurgeschichten</li><li><b>Lösungen</b> inklusive</li><li><b>Kl. 1–10</b> alle Fächer</li></ul>
+</div>
+<div class="collage">{imgs}</div>
+</section>
+"""
+
+
 def render_index(posts=None):
     """Kuratierte Startseite (Apple-Stil): Hero, Nutzen, Materialarten, Faecher, Klassen, Saison, Gratis, FAQ."""
     mats = katalog_de()
@@ -1354,16 +1407,8 @@ def render_index(posts=None):
     desc = (f"Über {nfmt(n_all // 100 * 100)} fertige Arbeitsblätter, Lesespurgeschichten, Prüfungstrainings und Lückentexte mit Hörverstehen – "
             "differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte. Grundschule bis Klasse 10.")
     out = head(title, desc, SITE + "/", "", extra_ld=[site_ld, org_ld, faq_ld], title_raw=True)
-    out += f"""<section class="hero">
-<h1>Unterrichtsmaterial,<br>das sofort funktioniert.</h1>
-<p class="sub">Über {nfmt(n_all // 100 * 100)} fertige Arbeitsblätter, Lesespurgeschichten, Rechenwelten und Prüfungstrainings – differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte.</p>
-<form class="searchwrap" action="materialien.html" method="get" role="search">
-<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
-<input name="q" type="search" placeholder="Thema suchen: z. B. Vulkan, Photosynthese, Ägypten …" autocomplete="off" aria-label="Materialien durchsuchen">
-</form>
-<p class="btnrow"><a class="btn" href="materialien.html">Alle Materialien</a><a class="btn ghost" href="lesespurgeschichten.html">Lesespurgeschichten</a></p>
-<p class="count">Grundschule bis Klasse 10 · alle Fächer · Klick führt direkt zu eduki</p>
-</section>
+    out += hero_html(mats)
+    out += f"""
 
 <section class="section tiles">
 <div class="tile"><h3>Sofort einsetzbar</h3><p>PDF zum Ausdrucken, in Farbe und als Schwarz-Weiß-Kopiervorlage. Jedes Material mit Musterlösung – keine Vorbereitung nötig.</p></div>
