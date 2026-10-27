@@ -12,9 +12,14 @@ TAGLINE = "Materialien, die den Unterricht leichter machen"
 SHOP = "https://eduki.com/de/shop/400839"
 BLOG = r"C:\Claude-Arbeitsblätter\Marketing\blog"
 META = r"C:\Claude-Arbeitsblätter\Marketing\daten\blog_html"
-OUT = r"C:\Claude-Arbeitsblätter\snice-unterricht"
+OUT = os.environ.get("SNICE_OUT") or r"C:\Claude-Arbeitsblätter\snice-unterricht"   # 27.10.: Test-Build per SNICE_OUT
 POSTS_DIR = os.path.join(OUT, "posts")
-INHABER = "Snice Unterricht"   # 27.10. Nutzer: Klarname NIE veröffentlichen
+INHABER = "Snice Unterricht"
+# 27.10.: Sprachversionen (i18n_build.py setzt diese Hooks in prepare())
+I18N_HEAD = lambda url: ""
+I18N_SWITCH = lambda url, root: ""
+I18N_SITEMAP_ALT = lambda url: ""
+I18N_FREE_HOME = lambda: ""   # 27.10. Nutzer: Klarname NIE veröffentlichen
 EMAIL = "snice.lehrermarktplatz@gmail.com"
 ANSCHRIFT = "[Straße & Hausnummer bitte ergänzen]<br>[PLZ Ort bitte ergänzen]"
 
@@ -133,16 +138,17 @@ def saison_aktuell(heute=None):
     return []
 
 
-SAISON_NAV = {"herbst": "Herbst", "advent-winter": "Advent &amp; Winter"}
+SAISON_NAV = {"herbst": "Herbst", "advent-winter": "Advent &amp; Winter", "st-martin": "St. Martin"}   # P2-STMARTIN
 
 
-def topnav(root=""):
+def topnav(root="", url=""):
     saison = "".join(f'<a href="{root}{s}.html">{SAISON_NAV[s]}</a>' for s in saison_aktuell()[:1])
     return (f'<header class="topnav" id="topnav">'
             f'<a class="brand" href="{root}index.html" aria-label="{SITE_NAME} – Startseite">'
             f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
             f'<nav class="links">'
             f'<a href="{root}materialien.html">Materialien</a>'
+            f'<a href="{root}kostenlos.html">Kostenlos</a>'
             f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
             f'<a href="{root}rechenwelten.html">Rechenwelten</a>'
             f'<a href="{root}lesespaziergaenge.html">Lesespaziergänge</a>'
@@ -151,8 +157,9 @@ def topnav(root=""):
             f'{saison}'
             f'<a href="{root}blog.html">Blog</a>'
             f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
+            f'<a href="{root}material-in-anderen-sprachen.html">Andere Sprachen</a>'
             f'<a href="{root}ueber-mich.html">Über mich</a>'
-            f'</nav></header>')
+            f'</nav>{I18N_SWITCH(url, root)}</header>')
 
 
 ORG_LD = {"@type": "Organization", "name": SITE_NAME, "url": SITE + "/", "logo": SITE + "/assets/logo.png",
@@ -199,6 +206,7 @@ def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=No
 <title>{full_title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{url}">
+{I18N_HEAD(url)}
 <meta name="robots" content="{robots}">
 <meta property="og:type" content="{'article' if article else 'website'}">
 <meta property="og:title" content="{t}"><meta property="og:description" content="{desc}">
@@ -215,7 +223,7 @@ def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=No
 <script>document.documentElement.className+=' js';</script>
 {ld_tags}
 </head><body>
-{topnav(root)}
+{topnav(root, url)}
 """
 
 
@@ -235,7 +243,8 @@ def foot(root=""):
 <p class="big">{SITE_NAME}</p>
 <p>{TAGLINE}. Alle Materialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a> · English materials on <a href="https://www.teacherspayteachers.com/store/snice" rel="noopener">Teachers Pay Teachers</a>.</p>
 {cols}
-<p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
+<p>Andere Sprachen: <a href="{root}en/" hreflang="en" lang="en">English</a> · <a href="{root}es/" hreflang="es" lang="es">Español</a> · <a href="{root}fr/" hreflang="fr" lang="fr">Français</a> · <a href="{root}it/" hreflang="it" lang="it">Italiano</a> · <a href="{root}material-in-anderen-sprachen.html">Übersicht</a></p>
+<p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}kostenlos.html">Kostenloses Unterrichtsmaterial</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
 </footer>
 {NAV_SCRIPT}
 </body></html>"""
@@ -512,6 +521,10 @@ def load_katalog():
             if len(txt) > len((m.get("desc") or "").strip()):
                 m["desc_short"] = m.get("desc", "")
                 m["desc"] = txt
+    for m in kat:   # P1-UNESCAPE 27.10.: eduki liefert teils HTML-escaped Texte (&amp;) -> sonst &amp;amp; auf ~4.500 Seiten
+        for _k in ("title", "desc", "desc_short"):
+            if m.get(_k) and "&" in m[_k]:
+                m[_k] = html.unescape(m[_k])
     best = {}
     for m in kat:
         k = re.sub(r"\s+", " ", m["title"].strip().lower())
@@ -940,7 +953,7 @@ def render_line_pages():
               "jedes Blatt mit Lösung. Perfekt für Vertretungsstunden, Stationenarbeit und Differenzierung.",
               lt, [], finder=True, itemlist_name="Lückentexte mit Hörverstehen",
               editorial=editorial_block(LT_SECTIONS, LT_FAQ), faq=LT_FAQ)
-    write_redirect("gratis", "materialien.html")   # 20.10.: keine Freebies mehr -> neutrale Weiterleitung, nicht in Sitemap
+    write_redirect("gratis", "kostenlos.html")   # 20.10.: keine Freebies mehr -> neutrale Weiterleitung, nicht in Sitemap
     if en:
         grid_page("english-worksheets", "English Worksheets – cloze text, listening comprehension, word search",
                   "English Worksheets",
@@ -1418,6 +1431,7 @@ def render_index(posts=None):
 
 {saison_html}
 {neu_html}
+{I18N_FREE_HOME()}
 {reihen_html}
 {line_section("lesespur", by_line["lesespur"])}
 {line_section("pt", by_line["pt"])}
@@ -1620,6 +1634,18 @@ def ls_editorial(mats, fach=None, klasse=None):
 
 
 SAISON = {
+    "st-martin": {   # P2-STMARTIN-SEITE 27.10. Suchintention „st martin arbeitsblatt grundschule“ (Google-Suggest)
+        "title": "St. Martin Arbeitsblätter für die Grundschule",
+        "h1": "St. Martin im Unterricht",
+        "desc": "Material zu St. Martin und zum Laternenfest: Lesespurgeschichten, Lesekartei, Lesespaziergang DaZ, "
+                "Laternen-Bastelvorlagen und Lückentexte mit Hörverstehen – 3-fach differenziert, mit Lösungen.",
+        "intro": "Vom Teilen und Helfen bis zum Laternenumzug: Hier findest du alle Materialien rund um St. Martin auf "
+                 "einen Blick – Lesespurgeschichten mit Rätselaufgaben, eine Lesekartei mit Kinderfragen, einen "
+                 "Lesespaziergang für DaZ-Kinder, Laternen zum Basteln und Lückentexte mit Hörverstehen für die "
+                 "Klassen 5 und 6, jeweils mit Lösungen und direktem Link zu eduki.",
+        "kw": r"st\. martin|st\.-martin|sankt martin|martinstag|martinsfeuer|martin von tours|laternenfest|laternenumzug|laterne\b",
+        "block": r"luther|king|opitz|worksheet",
+    },
     "advent-winter": {
         "title": "Advent- und Winter-Materialien für den Unterricht",
         "h1": "Advent & Winter im Unterricht",
@@ -1733,21 +1759,24 @@ def write_feed(posts):
     open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8").write(feed)
 
 
+I18N_FILES = []
+
+
 def write_meta(posts):
-    u = [f"<url><loc>{SITE}/</loc><priority>1.0</priority></url>",
+    u = [f"<url><loc>{SITE}/</loc>{I18N_SITEMAP_ALT(SITE + '/')}<priority>1.0</priority></url>",
          f"<url><loc>{SITE}/impressum.html</loc></url>",
          f"<url><loc>{SITE}/ueber-mich.html</loc></url>",
          f"<url><loc>{SITE}/datenschutz.html</loc></url>"]
-    u += [f"<url><loc>{x}</loc><priority>0.8</priority></url>" for x in EXTRA_URLS]
+    u += [f"<url><loc>{x}</loc>{I18N_SITEMAP_ALT(x)}<priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
         u.append(f"<url><loc>{SITE}/posts/{p['slug']}.html</loc><lastmod>{p['date']}</lastmod></url>")
     open(os.path.join(OUT, "sitemap-seiten.xml"), "w", encoding="utf-8").write(
-        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
         + "\n".join(u) + "\n</urlset>")
     mfiles, today = write_material_sitemaps()
     open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "\n".join(f"<sitemap><loc>{SITE}/{f}</loc><lastmod>{today}</lastmod></sitemap>" for f in ["sitemap-seiten.xml"] + mfiles)
+        + "\n".join(f"<sitemap><loc>{SITE}/{f}</loc><lastmod>{today}</lastmod></sitemap>" for f in ["sitemap-seiten.xml"] + mfiles + I18N_FILES)
         + "\n</sitemapindex>")
     open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(
         f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
@@ -1936,6 +1965,29 @@ def render_material_pages():
     return len(mats)
 
 
+_LM = None
+
+
+def _mat_lastmod(m, today):
+    """P3-LASTMOD 27.10.: echtes Aenderungsdatum je Material (Hash aus Titel/Text/Preis/Cover), gespeichert in _lastmod.json.
+    Taeglich 'heute' fuer 6.000 URLs ist ungenau -> Google ignoriert lastmod dann ganz."""
+    global _LM
+    p = os.path.join(OUT, "_lastmod.json")
+    if _LM is None:
+        try: _LM = json.load(open(p, encoding="utf-8"))
+        except Exception: _LM = {}
+    h = hashlib.md5("|".join(str(m.get(k, "")) for k in ("title", "desc", "price", "cover")).encode("utf-8")).hexdigest()[:12]
+    e = _LM.get(str(m["id"]))
+    if not e or e[0] != h:
+        _LM[str(m["id"])] = e = [h, today]
+    return e[1]
+
+
+def _lastmod_speichern():
+    if _LM is not None:
+        json.dump(_LM, open(os.path.join(OUT, "_lastmod.json"), "w", encoding="utf-8"), separators=(",", ":"))
+
+
 def write_material_sitemaps():
     """Sitemap-Index: sitemap.xml -> sitemap-seiten.xml + sitemap-material-N.xml (2.000 je Datei, Lesespuren zuerst)."""
     mats = [m for m in katalog_de() if m["id"] in MAT_PAGES]
@@ -1946,9 +1998,10 @@ def write_material_sitemaps():
         chunk = mats[i:i + 2000]; name = f"sitemap-material-{i // 2000 + 1}.xml"
         open(os.path.join(OUT, name), "w", encoding="utf-8").write(
             '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            + "\n".join(f"<url><loc>{SITE}/{mat_path(m)}</loc><lastmod>{today}</lastmod></url>" for m in chunk)
+            + "\n".join(f"<url><loc>{SITE}/{mat_path(m)}</loc><lastmod>{_mat_lastmod(m, today)}</lastmod></url>" for m in chunk)
             + "\n</urlset>")
         files.append(name)
+    _lastmod_speichern()   # P3-LASTMOD-SAVE
     for f in glob.glob(os.path.join(OUT, "sitemap-material-*.xml")):
         if os.path.basename(f) not in files:
             os.remove(f)
@@ -1959,6 +2012,8 @@ def main():
     global FOOT_COLS
     os.makedirs(POSTS_DIR, exist_ok=True)
     FOOT_COLS = build_foot_cols()
+    import sys, i18n_build   # 27.10.: Sprachversionen /en/ /es/ /fr/ /it/
+    n_i18n = i18n_build.prepare(sys.modules[__name__])
     register_material_pages()
     posts = load_posts()
     for p in posts:
@@ -2041,17 +2096,29 @@ Die Suche und die Filter laufen vollständig in deinem Browser; dabei werden kei
 <p>Die Vorschaubilder der Materialien werden direkt vom Marktplatz <strong>eduki</strong> (eduki GmbH, Berlin) geladen; dabei erhält eduki deine IP-Adresse.
 Über die Links „Material auf eduki" gelangst du auf eduki.com; dort gelten die
 <a href="https://eduki.com/de/datenschutz" rel="noopener">Datenschutzhinweise von eduki</a>.</p>
+<h2>Sprachversionen und Sprachwahl</h2>
+<p>Die Website gibt es auf Deutsch, Englisch, Spanisch, Französisch und Italienisch. Beim ersten Aufruf der Startseite schlägt sie anhand der
+Spracheinstellung deines Browsers und des Landes, das Cloudflare für deine Verbindung ermittelt (Abruf von <code>/cdn-cgi/trace</code> auf dieser Domain),
+die passende Sprachversion vor. Wählst du eine Sprache über den Umschalter, wird nur dieses Sprachkürzel im lokalen Speicher deines Browsers
+(localStorage) abgelegt, damit die Wahl beim nächsten Besuch erhalten bleibt. Es wird kein Cookie gesetzt und nichts an mich übertragen; du kannst
+den Eintrag jederzeit über die Browser-Einstellungen löschen (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
+<p>Die Vorschaubilder der englischen, spanischen, französischen und italienischen Seiten liefert diese Website selbst aus.
+Über die Schaltflächen „View on TpT“ bzw. „Ver en TpT“ gelangst du auf teacherspayteachers.com (Teachers Pay Teachers Inc., USA),
+über „Voir sur eduki“ bzw. „Vedi su eduki“ auf eduki.com; dort gelten die Datenschutzhinweise des jeweiligen Marktplatzes.</p>
 <h2>Kontakt per E-Mail</h2>
 <p>Wenn du mir eine E-Mail schreibst, verarbeite ich deine Angaben ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO)
 und lösche sie, sobald sie nicht mehr benötigt werden.</p>
 <h2>Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO)
 sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Wende dich dazu an die oben genannte E-Mail-Adresse.</p>
-<p><small>Stand: September 2026</small></p>""")
+<p><small>Stand: Oktober 2026</small></p>""")
     render_page("404", "Seite nicht gefunden", f"""<h1>Seite nicht gefunden</h1>
 <p>Diese Seite gibt es nicht (mehr). Vielleicht hilft dir die Suche auf der <a href="/index.html">Startseite</a> weiter –
 dort findest du alle Materialien nach Fach und Klasse.</p>
 <p><a class="btn" href="/index.html">Zur Startseite</a> · <a href="/lesespurgeschichten.html">Lesespurgeschichten</a> · <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a></p>""")
+    global I18N_FILES
+    I18N_FILES, _ = i18n_build.render()
+    print("i18n:", n_i18n, i18n_build.STATS.get("render"))
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Artikel, {nmat} DE-Materialien im Finder, {len(faecher)} Fach-Seiten, {len(klassen)} Klassen-Seiten, "
           f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "
