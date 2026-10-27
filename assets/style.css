@@ -63,7 +63,7 @@ img{max-width:100%;display:block}
   transition:background .2s,color .2s,transform .12s,border-color .2s}
 .chip:hover{transform:translateY(-1px)}
 .chip.on{background:var(--chip-on);color:var(--bg);border-color:var(--chip-on)}
-.chip .n{opacity:.55;font-variant-numeric:tabular-nums;margin-left:5px}
+.chip .n{opacity:.8;font-variant-numeric:tabular-nums;margin-left:5px}
 .flabel{flex:0 0 auto;align-self:center;font-size:12px;text-transform:uppercase;letter-spacing:.06em;
   color:var(--muted);padding-right:4px}
 
@@ -203,3 +203,6 @@ p.soon{color:var(--muted);text-align:left;margin:0}
     -webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
   .topnav .links::-webkit-scrollbar{display:none}
 }
+
+/* 27.10. Beschreibung-Listen */
+.mat .desc ul{margin:0 0 14px;padding-left:22px}.mat .desc li{font-size:17px;line-height:1.6;margin:0 0 4px}

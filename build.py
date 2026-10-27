@@ -3,7 +3,7 @@
 Apple-inspirierte Startseite = Material-Finder (Sofortsuche + Fach/Klasse-Filter + Scroll-Reveal,
 alles vanilla JS, progressiv: funktioniert auch ohne JS). Dazu 1012 SEO-Artikelseiten,
 Sitemap, robots.txt, RSS, Impressum, Ueber-mich. Cover per eduki-Hotlink. Aufruf: python build.py"""
-import datetime, os, re, json, glob, html, datetime, collections
+import datetime, os, re, json, glob, html, datetime, collections, hashlib
 import markdown as md
 
 SITE = "https://snice-unterricht.eu"   # 16.10.: https via Cloudflare-Proxy aktiv
@@ -156,7 +156,8 @@ def topnav(root=""):
 
 
 ORG_LD = {"@type": "Organization", "name": SITE_NAME, "url": SITE + "/", "logo": SITE + "/assets/logo.png",
-          "sameAs": [SHOP, "https://www.instagram.com/snice.eduki/", "https://www.pinterest.de/sniceeduki/"]}
+          "sameAs": [SHOP, "https://www.instagram.com/snice.eduki/", "https://www.pinterest.de/sniceeduki/",
+                     "https://www.teacherspayteachers.com/store/snice"]}
 
 
 def breadcrumb_ld(crumbs):
@@ -232,9 +233,9 @@ def foot(root=""):
     cols = FOOT_COLS.replace('href="', f'href="{root}') if root else FOOT_COLS
     return f"""<footer class="site">
 <p class="big">{SITE_NAME}</p>
-<p>{TAGLINE}. Alle Materialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>.</p>
+<p>{TAGLINE}. Alle Materialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a> · English materials on <a href="https://www.teacherspayteachers.com/store/snice" rel="noopener">Teachers Pay Teachers</a>.</p>
 {cols}
-<p><a href="{root}index.html">Start</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
+<p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
 </footer>
 {NAV_SCRIPT}
 </body></html>"""
@@ -307,6 +308,22 @@ def klasse_label(grades):
 
 
 MAT_PAGES = {}   # id -> "material/<id>-<slug>.html" (Detailseiten, 13.09.)
+THUMB_DIR = os.path.join(OUT, "thumbs")   # 27.10.: WebP-Vorschauen (Skripte/_homepage_thumbs.py)
+_THUMBS = None
+
+
+def thumb_name(m):
+    return f'{m["id"]}-{hashlib.sha1(m["cover"].encode("utf-8")).hexdigest()[:8]}.webp'
+
+
+def img_src(m, root=""):
+    """27.10.: eigene WebP-Vorschau (~40 KB) statt eduki-PNG (2-4 MB), sonst Fallback auf eduki."""
+    global _THUMBS
+    if _THUMBS is None:
+        _THUMBS = set(os.listdir(THUMB_DIR)) if os.path.isdir(THUMB_DIR) else set()
+    if m.get("cover") and thumb_name(m) in _THUMBS:
+        return f"{root}thumbs/{thumb_name(m)}"
+    return m.get("cover", "")
 
 
 def cat_card_html(m, root=""):
@@ -324,7 +341,8 @@ def cat_card_html(m, root=""):
     else:
         url = f'{EDUKI_MAT}/{m["id"]}/{html.escape(m.get("slug",""), quote=True)}'; tgt = ' target="_blank" rel="noopener"'
     if m.get("cover"):
-        img = f'<div class="card-img"><img loading="lazy" src="{html.escape(m["cover"])}" alt="{t}"></div>'
+        img = (f'<div class="card-img"><img loading="lazy" decoding="async" src="{html.escape(img_src(m, root))}" '
+               f'alt="{t}" width="400" height="524"></div>')
     else:
         img = f'<div class="card-img"><div class="ph">{t}</div></div>'
     badge = ''   # 20.10.: keine Gratis-Werbung mehr (keine Freebies)
@@ -634,7 +652,7 @@ def render_finder():
                   "Such dein Thema oder filtere nach Fach und Klasse – alle Materialien sind sofort einsetzbar und enthalten Lösungen.",
                   mats, [], finder=True)
     idx = [{"id": m["id"], "title": m["title"], "fach": m.get("fach", ""),
-            "kl": grade_nums(m.get("grades")), "cover": m.get("cover", ""),
+            "kl": grade_nums(m.get("grades")), "cover": img_src(m),
             "meta": " · ".join(x for x in (m.get("fach", ""), klasse_label(m.get("grades"))) if x),
             "s": " ".join([m["title"], m.get("fach", ""), klasse_label(m.get("grades")),
                            (m.get("desc") or "")[:120]]).lower(),
@@ -1222,13 +1240,21 @@ def home_reihen():
     return h
 
 
+def saison_home_text(sl, heute=None):
+    """27.10.: ab 1.11. ohne Halloween (Saison vorbei)."""
+    d = heute or datetime.date.today()
+    if sl == "herbst" and d.month == 11:
+        return ("Herbst & St. Martin", "Laterne, Igel, Zugvögel und Novemberwetter – Materialien rund um St. Martin und den späten Herbst.")
+    return SAISON_HOME[sl]
+
+
 def home_saison(mats):
     h = ""
     for i, sl in enumerate(saison_aktuell()):
         sel = [m for m in mats if saison_match(sl, m)]
         if not sel:
             continue
-        name, blurb = SAISON_HOME[sl]
+        name, blurb = saison_home_text(sl)
         k = 8 if i == 0 else 4
         ms = [m for m in sort_mats(sel) if m.get("cover")][:k] or sort_mats(sel)[:k]
         h += (f'<section class="section">\n<div class="sec-head"><div><h2>{html.escape(name)}</h2><p class="lead">{html.escape(blurb)}</p></div>\n'
@@ -1324,13 +1350,13 @@ def render_index(posts=None):
                                    "urlTemplate": SITE + "/materialien.html?q={search_term_string}"},
                                    "query-input": "required name=search_term_string"}}
     org_ld = dict(ORG_LD); org_ld["@context"] = "https://schema.org"
-    title = f"{SITE_NAME} – Unterrichtsmaterial mit Lösungen für alle Fächer und Klassen"
-    desc = (f"Über {nfmt(n_all)} fertige Arbeitsblätter, Lesespurgeschichten, Prüfungstrainings und Lückentexte mit Hörverstehen – "
+    title = f"Unterrichtsmaterial & Lesespurgeschichten mit Lösungen | Snice"   # 27.10.: <= 62 Zeichen
+    desc = (f"Über {nfmt(n_all // 100 * 100)} fertige Arbeitsblätter, Lesespurgeschichten, Prüfungstrainings und Lückentexte mit Hörverstehen – "
             "differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte. Grundschule bis Klasse 10.")
     out = head(title, desc, SITE + "/", "", extra_ld=[site_ld, org_ld, faq_ld], title_raw=True)
     out += f"""<section class="hero">
 <h1>Unterrichtsmaterial,<br>das sofort funktioniert.</h1>
-<p class="sub">Über {nfmt(n_all)} fertige Arbeitsblätter, Lesespurgeschichten, Rechenwelten und Prüfungstrainings – differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte.</p>
+<p class="sub">Über {nfmt(n_all // 100 * 100)} fertige Arbeitsblätter, Lesespurgeschichten, Rechenwelten und Prüfungstrainings – differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte.</p>
 <form class="searchwrap" action="materialien.html" method="get" role="search">
 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
 <input name="q" type="search" placeholder="Thema suchen: z. B. Vulkan, Photosynthese, Ägypten …" autocomplete="off" aria-label="Materialien durchsuchen">
@@ -1723,9 +1749,41 @@ def mat_path(m):
     return f"material/{m['id']}-{m['slug']}.html"
 
 
+_CAMEL_OK = ("PowerPoint", "WhatsApp", "YouTube", "LearningApps", "TikTok", "OneNote", "GeoGebra", "BookCreator",
+             "LehrplanPLUS", "iPad", "OneDrive", "GoodNotes")
+
+
+def desc_norm(desc):
+    """27.10.: eduki-Texte kommen oft ohne Zeilenumbrueche (Aufzaehlungen/Saetze zusammengeklebt).
+    Umbrueche vor Aufzaehlungszeichen, Sterne-Stufen und nach Satzenden ohne Leerzeichen einfuegen."""
+    t = (desc or "").replace("\r", "")
+    keep = {}
+    for i, w in enumerate(_CAMEL_OK):
+        if w in t:
+            keep[f"\x00{i}\x00"] = w; t = t.replace(w, f"\x00{i}\x00")
+    for j, w in enumerate(sorted(set(re.findall(r"#\w+", t)), key=len, reverse=True)):
+        keep[f"\x01{j}\x01"] = w; t = t.replace(w, f"\x01{j}\x01")
+    t = re.sub(r"\s*•\s*", "\n• ", t)
+    t = re.sub(r"(?<=[^\s★(/\n])(★{1,3})(?=\s)", r"\n\1", t)
+    t = re.sub(r"(?<=[a-zäöüß)]{2}[.!?:])(?=[A-ZÄÖÜ][a-zäöüß])", "\n", t)
+    t = re.sub(r"(?<=[a-zäöüß]{3})(?=[A-ZÄÖÜ][a-zäöüß]{2,})", "\n", t)
+    for k, w in keep.items():
+        t = t.replace(k, w)
+    t = re.sub(r"(?:[ \t]*#\w+){3,}[ \t]*", " ", t)   # Hashtag-Bloecke (eduki-SEO) nicht als Fliesstext zeigen
+    return re.sub(r"[ \t]+\n", "\n", t).strip()
+
+
 def desc_paras(desc):
-    parts = [x.strip() for x in re.split(r"\n\s*\n|\n", desc or "") if x.strip()]
-    return "".join(f"<p>{html.escape(x)}</p>" for x in parts)
+    parts = [x.strip() for x in re.split(r"\n\s*\n|\n", desc_norm(desc)) if x.strip()]
+    out, ul = "", []
+    for x in parts + [""]:
+        if x.startswith(("• ", "★")):
+            ul.append(x.lstrip("• ").strip()); continue
+        if ul:
+            out += "<ul>" + "".join(f"<li>{html.escape(li)}</li>" for li in ul) + "</ul>"; ul = []
+        if x:
+            out += f"<p>{html.escape(x)}</p>"
+    return out
 
 
 def register_material_pages():
@@ -1764,7 +1822,7 @@ def render_material_page(m, related):
     typen = ", ".join(as_list(m.get("types"))[:4])
     eduki = f'{EDUKI_MAT}/{m["id"]}/{m["slug"]}'
     desc = (m.get("desc") or "").strip()
-    meta_desc = re.sub(r"\s+", " ", desc)[:155].rsplit(" ", 1)[0] + " …"
+    meta_desc = re.sub(r"\s+", " ", desc_norm(desc).replace("\n• ", "; ").replace("\n", " "))[:155].rsplit(" ", 1)[0] + " …"
     line_name, line_href = LINE_META.get(m.get("line"), ("Unterrichtsmaterial", "materialien.html", ""))[:2]
     price = price_label(m)
     try:
@@ -1916,7 +1974,8 @@ Bastelbogen mit Bauanleitung und ein Sachtext mit Aufgaben in drei Stufen.</li>
 <p>Alle Materialien liegen im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>. Neue Materialien,
 Aktionen und Einblicke in die Entstehung gibt es auf
 <a href="https://www.instagram.com/snice.eduki/" rel="noopener">Instagram</a> und
-<a href="https://www.pinterest.de/sniceeduki/" rel="noopener">Pinterest</a>.</p>
+<a href="https://www.pinterest.de/sniceeduki/" rel="noopener">Pinterest</a>. Englische Materialien findest du in meinem
+<a href="https://www.teacherspayteachers.com/store/snice" rel="noopener">Shop auf Teachers Pay Teachers</a>.</p>
 <p>Fragen, Wünsche oder ein Fehler entdeckt? Schreib mir an <a href="mailto:{EMAIL}">{EMAIL}</a> – ich
 antworte selbst und bessere Material auch nachträglich nach.</p>
 
