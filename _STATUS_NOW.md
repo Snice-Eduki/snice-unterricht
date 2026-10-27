@@ -68,3 +68,15 @@
 - **HTTPS-Zertifikat** (GitHub/Let's Encrypt) seit 26.08. „authorization_created"; 12.09. 17:00 sauber neu angefordert, Task `SniceHomepageHttps` erzwingt automatisch. Bitdefender warnt Kunden bei https:// (Cert = *.github.io). DNS ist sauber (kein AAAA/CAA/DS; Health-API: alles valid). **netcup-DNS-Änderungen nicht mehr autonom möglich** (TAN kommt per Gmail, Outlook-OAuth tot). Plan B: Cloudflare (Universal SSL sofort) → braucht Cloudflare-Konto + Nameserver-Wechsel bei netcup (TAN vom Nutzer).
 - eduki-Shop-Cleanup: 23 EN-Dubletten (alt+neu beide live) + 18× „Unterrichtsmaterial" + 10× „Deckblatt St" → nach Login ältere pausieren/prüfen (Datenbankmanager-Auftrag).
 - Impressum-Anschrift = Platzhalter (Nutzer-Entscheidung, keine Privatadresse).
+
+- ⛔ 27.10. 19:19 Homepage-Tageslauf: commit:  tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to a (Log `Skripte\_homepage_daily.log`)
