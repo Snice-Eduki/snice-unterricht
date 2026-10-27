@@ -2089,8 +2089,16 @@ ausgeliefert. Beim Aufruf verarbeitet GitHub technisch notwendige Verbindungsdat
 in Server-Logs, um die Seite auszuliefern und die Sicherheit des Dienstes zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO).
 Details: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.
 GitHub ist nach dem EU-US Data Privacy Framework zertifiziert.</p>
-<h2>Keine Cookies, kein Tracking</h2>
-<p>Diese Website setzt keine Cookies, verwendet keine Analyse- oder Werbedienste und bindet keine Schriftarten oder Skripte von Drittanbietern ein.
+<h2>Cloudflare (Auslieferung und Reichweitenmessung)</h2>
+<p>Die Website wird über das Netzwerk von <strong>Cloudflare</strong> (Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA) ausgeliefert,
+das die Verbindung absichert und Angriffe abwehrt; dabei verarbeitet Cloudflare technisch notwendige Verbindungsdaten wie die IP-Adresse (Art. 6 Abs. 1 lit. f DSGVO).
+Zur Reichweitenmessung nutze ich <strong>Cloudflare Web Analytics</strong>: Ein kleines Skript von static.cloudflareinsights.com erfasst anonymisiert, welche Seiten
+aufgerufen werden, Ladezeit, Herkunftsseite, Land sowie Browser- und Gerätetyp. Es setzt <strong>keine Cookies</strong>, nutzt keinen lokalen Speicher,
+erstellt keine Profile und verfolgt dich nicht über andere Websites; ich erhalte nur zusammengefasste Zahlen (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse
+an einer datensparsamen Reichweitenmessung). Cloudflare ist nach dem EU-US Data Privacy Framework zertifiziert. Details:
+<a href="https://www.cloudflare.com/de-de/privacypolicy/" rel="noopener">Datenschutzerklärung von Cloudflare</a>.</p>
+<h2>Keine Cookies, keine Werbung</h2>
+<p>Diese Website setzt keine Cookies, verwendet keine Werbedienste und bindet keine Schriftarten von Drittanbietern ein.
 Die Suche und die Filter laufen vollständig in deinem Browser; dabei werden keine Daten übertragen.</p>
 <h2>Externe Links und eingebundene Bilder</h2>
 <p>Die Vorschaubilder der Materialien werden direkt vom Marktplatz <strong>eduki</strong> (eduki GmbH, Berlin) geladen; dabei erhält eduki deine IP-Adresse.

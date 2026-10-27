@@ -80,3 +80,5 @@ to set your account's default identity.
 Omit --global to set the identity only in this repository.
 
 fatal: unable to a (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 27.10. 23:41 Homepage-Tageslauf: build.py fehlgeschlagen:  (Log `Skripte\_homepage_daily.log`)
