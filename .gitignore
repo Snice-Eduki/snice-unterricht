@@ -1,2 +1,7 @@
 _katalog_live.json
 _katalog_desc.json
+
+# 27.10.2026 Klarname-Schutz: Backups nie veroeffentlichen
+*.bak*
+_bak_*
+__pycache__/
