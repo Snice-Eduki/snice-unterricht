@@ -14,7 +14,7 @@ BLOG = r"C:\Claude-Arbeitsblätter\Marketing\blog"
 META = r"C:\Claude-Arbeitsblätter\Marketing\daten\blog_html"
 OUT = r"C:\Claude-Arbeitsblätter\snice-unterricht"
 POSTS_DIR = os.path.join(OUT, "posts")
-INHABER = "Snice Unterricht"
+INHABER = "Snice Unterricht"   # 27.10. Nutzer: Klarname NIE veröffentlichen
 EMAIL = "snice.lehrermarktplatz@gmail.com"
 ANSCHRIFT = "[Straße & Hausnummer bitte ergänzen]<br>[PLZ Ort bitte ergänzen]"
 
@@ -1441,7 +1441,7 @@ def render_index(posts=None):
 
 <section class="section about">
 <h2>Von einer Lehrkraft für Lehrkräfte</h2>
-<p class="lead">Hinter {SITE_NAME} steht {INHABER}. Alle Materialien entstehen aus der Unterrichtspraxis, werden inhaltlich geprüft und laufend erweitert – damit du weniger vorbereitest und mehr unterrichtest. <a href="ueber-mich.html">Mehr über mich →</a></p>
+<p class="lead">Hinter {SITE_NAME} steht eine Lehrkraft aus der Praxis. Alle Materialien entstehen aus der Unterrichtspraxis, werden inhaltlich geprüft und laufend erweitert – damit du weniger vorbereitest und mehr unterrichtest. <a href="ueber-mich.html">Mehr über mich →</a></p>
 </section>
 <script>[].forEach.call(document.querySelectorAll('.card'),function(c){{c.classList.add('in');}});</script>
 """ + foot()
