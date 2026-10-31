@@ -82,3 +82,9 @@ Omit --global to set the identity only in this repository.
 fatal: unable to a (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 27.10. 23:41 Homepage-Tageslauf: build.py fehlgeschlagen:  (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 31.10. 20:46 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen:                         context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 1324, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen erro (Log `Skripte\_homepage_daily.log`)
