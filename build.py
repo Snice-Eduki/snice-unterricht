@@ -10,6 +10,13 @@ SITE = "https://snice-unterricht.eu"   # 16.10.: https via Cloudflare-Proxy akti
 SITE_NAME = "Snice Unterricht"
 TAGLINE = "Materialien, die den Unterricht leichter machen"
 SHOP = "https://eduki.com/de/shop/400839"
+# SEO 01.11.2026: Webmaster-Verifizierung. Google ist per Datei google4340d9074c6c83c3.html verifiziert (13.09.).
+# Bing: Code aus Bing Webmaster Tools (Methode "Meta-Tag", nur der content-Wert) hier eintragen -> Meta-Tag auf allen Seiten
+# + BingSiteAuth.xml. Leer = nichts wird ausgegeben. Einfacher: in Bing "Import aus Google Search Console" (kein Code noetig).
+BING_VERIFY = ""
+SEO_REV = "|seo20261101"      # Template-Revision der Detailseiten: aendern -> lastmod aller Detailseiten einmalig = heute
+SEO_REV_DATE = "2026-11-02"   # Blog-Fix (Code-Zaun) live ab dem naechsten Lauf
+GOOGLE_VERIFY = ""   # optional zusaetzlich Meta-Methode (content-Wert)
 BLOG = r"C:\Claude-Arbeitsblätter\Marketing\blog"
 META = r"C:\Claude-Arbeitsblätter\Marketing\daten\blog_html"
 OUT = os.environ.get("SNICE_OUT") or r"C:\Claude-Arbeitsblätter\snice-unterricht"   # 27.10.: Test-Build per SNICE_OUT
@@ -58,12 +65,36 @@ def clean_title(raw, fallback=""):
 
 
 def first_para(text):
+    """SEO 01.11.: erster echter Absatz (keine Code-Zaeune, keine Zwischenueberschriften wie '**Einleitung**'),
+    auf <=155 Zeichen an Wortgrenze gekuerzt. Vorher lieferten 851 Posts die Description 'markdown'."""
     for line in text.split("\n"):
         t = line.strip()
-        if t and not t.startswith(("#", "!", "---")):
-            t = re.sub(r"[*_`>#\[\]]", "", t)
-            return re.sub(r"\(https?://[^)]+\)", "", t).strip()
+        if not t or t.startswith(("#", "!", "---", "```", "|")):
+            continue
+        t = re.sub(r"\(https?://[^)]+\)", "", re.sub(r"[*_`>#\[\]]", "", t)).strip()
+        if len(t) < 60 or not re.search(r"[.!?:]", t):
+            continue
+        return t if len(t) <= 157 else t[:155].rsplit(" ", 1)[0].rstrip(" ,;:–-") + " …"
     return TAGLINE
+
+
+def strip_fence(raw):
+    """756 Blog-Markdowns stecken komplett in ```markdown ... ``` -> wurden als <pre><code> gerendert."""
+    raw = re.sub(r"^```[A-Za-z]*[ \t]*\r?\n", "", raw.strip())
+    return re.sub(r"\r?\n```[ \t]*$", "", raw).strip()
+
+
+_H1_TAIL = {"für", "die", "der", "das", "und", "mit", "in", "im", "den", "dem", "zum", "zur", "von", "klassen", "klasse", "ab", "bis", "&"}
+
+
+def h1_title(t, maxlen=72):
+    t = re.sub(r"[*_`#]", "", t).strip()
+    if len(t) <= maxlen:
+        return t
+    w = t[:maxlen].rsplit(" ", 1)[0].rstrip(" ,;:–-").split()
+    while len(w) > 3 and w[-1].lower().strip(",;:") in _H1_TAIL:
+        w.pop()
+    return " ".join(w).rstrip(" ,;:–-")
 
 
 def tokens(p):
@@ -75,7 +106,9 @@ def load_posts():
     posts = []
     for f in sorted(glob.glob(os.path.join(BLOG, "*.md"))):
         base = os.path.basename(f)[:-3]; pid = base.split("_", 1)[0]
-        raw = open(f, encoding="utf-8", errors="replace").read().strip()
+        raw0 = open(f, encoding="utf-8", errors="replace").read()
+        raw = strip_fence(raw0)
+        gefixt = raw0.lstrip().startswith("```")   # SEO 01.11.: Seite aendert sich sichtbar -> lastmod einmalig auf den Fix-Tag
         if not raw:
             continue
         m = re.match(r"#\s+(.+)", raw)
@@ -92,13 +125,21 @@ def load_posts():
                 pass
         thema = (meta.get("thema") or "").strip()
         disp = clean_title(meta.get("titel") or title, thema or title)
+        h1 = disp
+        if m and len(h1_title(title)) >= 25:   # SEO 01.11.: Artikel-H1 ("Apartheid im Unterricht: Materialien …") statt Kurzthema
+            h1 = re.sub(r"[*_`#]", "", title).strip()
+            mu = re.match(r"(.{3,45}?) im Unterricht\b", h1)
+            # 1.011 Posts heissen "<Thema> im Unterricht: Materialien, Ideen und Arbeitsblätter für die Klassen …" -> Title kurz,
+            # mit dem Suchbegriff "<Thema> Arbeitsblatt" (jeder Post stellt ein Arbeitsblatt vor und verlinkt es)
+            disp = f"{mu.group(1)} im Unterricht – Arbeitsblatt & Materialien" if mu else h1_title(title)
         posts.append({
-            "pid": pid, "title": disp, "raw_title": meta.get("titel") or title, "body_md": body_md,
+            "pid": pid, "title": disp, "h1": h1, "raw_title": meta.get("titel") or title, "body_md": body_md,
             "desc": first_para(body_md)[:157],
             "slug": slugify(meta.get("permalink") or base.split("_", 1)[-1] or title),
             "cover": meta.get("cover", ""), "eduki": meta.get("url", ""), "fach": meta.get("fach", ""),
             "klasse": meta.get("klasse", ""), "thema": thema, "labels": meta.get("labels", ""),
             "date": datetime.date.fromtimestamp(os.path.getmtime(f)).isoformat(),
+            "lastmod": max(datetime.date.fromtimestamp(os.path.getmtime(f)).isoformat(), SEO_REV_DATE) if gefixt else None,
         })
     seen = {}
     for p in posts:
@@ -182,6 +223,11 @@ def itemlist_ld(name, mats, limit=50):
                                 for i, m in enumerate(mats[:limit])]}
 
 
+def VERIFY_META():
+    return ((f'<meta name="msvalidate.01" content="{BING_VERIFY}">' if BING_VERIFY else "")
+            + (f'<meta name="google-site-verification" content="{GOOGLE_VERIFY}">' if GOOGLE_VERIFY else ""))
+
+
 HTTPS_JS = ("<script>if(location.protocol==='http:'&&/(^|\\.)snice-unterricht\\.eu$/.test(location.hostname))"
             "location.replace('https://snice-unterricht.eu'+location.pathname+location.search+location.hash);</script>")
 
@@ -206,7 +252,7 @@ def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=No
 <title>{full_title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{url}">
-{I18N_HEAD(url)}
+{I18N_HEAD(url)}{VERIFY_META()}
 <meta name="robots" content="{robots}">
 <meta property="og:type" content="{'article' if article else 'website'}">
 <meta property="og:title" content="{t}"><meta property="og:description" content="{desc}">
@@ -276,7 +322,7 @@ def render_post(p):
         items = "".join(f'<li><a href="{q["slug"]}.html">{html.escape(q["title"])}</a></li>' for q in p["related"])
         rel = f'<section class="related"><h2>Passende Materialien</h2><ul>{items}</ul></section>'
     out = head(p["title"], p["desc"], url, p["cover"], "../", p["date"], True)
-    out += f"""<main class="article-wrap"><article><h1>{html.escape(p['title'])}</h1>
+    out += f"""<main class="article-wrap"><article><h1>{html.escape(p.get('h1') or p['title'])}</h1>
 {f'<p class="meta">{html.escape(meta_line)}</p>' if meta_line else ''}{cover}
 {body_html}
 <p class="cta">{post_cta(p)}</p>
@@ -412,7 +458,8 @@ FINDER_JS = """<script>
  more=document.getElementById('more');
  if(!grid)return;
  var SRC=grid.getAttribute('data-src'),PAGE=240;
- var all=null,view=null,shown=0,f={fach:'',kl:''},term='',loading=false,jsmode=false;
+ var all=null,view=null,shown=0,f={fach:'',kl:''},term='',loading=false,jsmode=false,
+ BF=grid.getAttribute('data-bf')||'',BK=grid.getAttribute('data-bk')||'';
  var qm=location.search.match(/[?&]q=([^&]+)/);
  if(qm&&q){try{q.value=decodeURIComponent(qm[1].replace(/\\+/g,' '));term=q.value.trim().toLowerCase();}catch(e){}}
  function esc(t){return String(t).replace(/[&<>\"]/g,function(c){
@@ -426,7 +473,8 @@ FINDER_JS = """<script>
           (m.meta?'<p class="card-meta">'+esc(m.meta)+'</p>':'')+'</div></a>';
  }
  function match(m){
-   return (!f.fach||m.fach===f.fach)
+   return (!BF||m.fach===BF)&&(!BK||(m.kl||[]).indexOf(+BK)>-1)
+       &&(!f.fach||m.fach===f.fach)
        &&(!f.kl||(m.kl||[]).indexOf(+f.kl)>-1)
        &&(!term||(m.s||'').indexOf(term)>-1);
  }
@@ -616,17 +664,23 @@ def faq_ld_of(faq):
 
 
 def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_kl=True, links_html="",
-              itemlist_name=None, body_extra="", editorial="", faq=None, finder=False, sort=True):
+              itemlist_name=None, body_extra="", editorial="", faq=None, finder=False, sort=True, base_fach="", base_kl=""):
     """SEO-Landingpage mit Suche + Filter-Chips + Karten-Grid (Direktlinks zu eduki)."""
     mats = sort_mats(mats) if sort else list(mats)
     url = f"{SITE}/{slug}.html"
     n = len(mats)
+    # SEO 01.11.: klasse-6.html war 3,7 MB (alle Karten statisch); Googlebot liest nur die ersten 2 MB HTML.
+    # Ab 400 Karten: erste 240 statisch, Rest per Finder-JS aus search-index.json (vorgefiltert auf Fach/Klasse).
+    base_attr = ""
+    if not finder and n > 400 and (base_fach or base_kl):
+        finder = True
+        base_attr = f' data-bf="{html.escape(base_fach)}" data-bk="{base_kl}"'
     lds = [breadcrumb_ld([("Start", SITE + "/")] + crumbs + [(h1, url)])]
     if itemlist_name:
         lds.append(itemlist_ld(itemlist_name, mats))
     if faq:
         lds.append(faq_ld_of(faq))
-    grid_attr = ' data-src="search-index.json"' if finder else ""
+    grid_attr = (' data-src="search-index.json"' + base_attr) if finder else ""
     more_btn = ('<p class="btnrow"><button class="btn ghost" id="more" type="button">Mehr anzeigen</button></p>'
                 if finder and n > FINDER_FIRST else "")
     out = head(title, desc, url, mats[0].get("cover", "") if mats else "", extra_ld=lds)
@@ -702,7 +756,7 @@ def render_fach_pages(min_n=10):
                   "kopierfertig und enthält Lösungen.",
                   v, [("Alle Materialien", SITE + "/materialien.html")], with_fach=False,
                   links_html=fk_links_fuer_fach(f),
-                  itemlist_name=f"Unterrichtsmaterial {f}")
+                  itemlist_name=f"Unterrichtsmaterial {f}", base_fach=f)
     return sorted(faecher, key=lambda x: -len(x[1]))
 
 
@@ -808,7 +862,7 @@ def render_klasse_pages():
                   "Filtere nach Fach oder such dein Thema.",
                   v, [("Alle Materialien", SITE + "/materialien.html")], with_kl=False,
                   links_html=fk_links_fuer_klasse(n),
-                  itemlist_name=f"Unterrichtsmaterial Klasse {n}")
+                  itemlist_name=f"Unterrichtsmaterial Klasse {n}", base_kl=n)
     return [(n, len(by[n])) for n in ks]
 
 
@@ -1769,7 +1823,7 @@ def write_meta(posts):
          f"<url><loc>{SITE}/datenschutz.html</loc></url>"]
     u += [f"<url><loc>{x}</loc>{I18N_SITEMAP_ALT(x)}<priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
-        u.append(f"<url><loc>{SITE}/posts/{p['slug']}.html</loc><lastmod>{p['date']}</lastmod></url>")
+        u.append(f"<url><loc>{SITE}/posts/{p['slug']}.html</loc><lastmod>{p.get('lastmod') or p['date']}</lastmod></url>")
     open(os.path.join(OUT, "sitemap-seiten.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
         + "\n".join(u) + "\n</urlset>")
@@ -1778,8 +1832,13 @@ def write_meta(posts):
         '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "\n".join(f"<sitemap><loc>{SITE}/{f}</loc><lastmod>{today}</lastmod></sitemap>" for f in ["sitemap-seiten.xml"] + mfiles + I18N_FILES)
         + "\n</sitemapindex>")
+    # SEO 01.11.: Sitemap-Index + Sprach-Sitemaps einzeln (Bing/Yandex lesen robots.txt-Sitemaps direkt)
     open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8").write(
-        f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
+        "User-agent: *\nAllow: /\n"
+        + "".join(f"Sitemap: {SITE}/{f}\n" for f in ["sitemap.xml"] + list(I18N_FILES)))
+    if BING_VERIFY:   # Bing Webmaster Tools: XML-Datei-Methode (Inhalt = Code aus Bing, siehe Bericht)
+        open(os.path.join(OUT, "BingSiteAuth.xml"), "w", encoding="utf-8").write(
+            f'<?xml version="1.0"?>\n<users>\n\t<user>{BING_VERIFY}</user>\n</users>')
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
 
 
@@ -1888,6 +1947,68 @@ MAT_CSS = """<style>
 </style>"""
 
 
+# SEO 01.11.2026 (_seo_bericht_20261101.md): Suchmuster der Lehrkraefte laut Google-Autocomplete =
+# "<Thema> Arbeitsblatt", "... Klasse N", "... PDF", "... kostenlos". Title: Originaltitel vorn, dann nur so viele
+# Zusaetze, wie in ~68 Zeichen passen (Google schneidet sonst ab). H1 bleibt der Originaltitel.
+SEO_TITLE_MAX = 68
+_SEO_TYP_RE = re.compile(r"arbeitsbl|lesespur|rechenwelt|lesespaziergang|bastel|pr(ü|ue)fung|w(ö|oe)rterheft|test\b", re.I)
+
+
+SEO_LINE_DE = {"lueckentext": "Lückentext-Arbeitsblatt", "lesespur": "Lesespurgeschichte", "pt": "Prüfungstraining",
+               "rechenwelt": "Rechenwelt (Mathe-Rollenspiel)", "lesespaziergang": "Lesespaziergang", "basteln": "Bastelvorlage mit Sachtext"}
+
+
+def seo_title_de(m, nums):
+    t = re.sub(r"\s+", " ", m["title"]).strip()
+    kl = (f"Klasse {nums[0]}" if len(nums) == 1 else f"Klasse {nums[0]}–{nums[-1]}") if nums else ""
+    if m.get("line") == "lueckentext" and " Lückentext" in t:   # 4.500 Seiten "<Thema> Lückentext mit Wortspeicher ..."
+        base = t.split(" Lückentext")[0].strip(" –-") + " – Lückentext-Arbeitsblatt"
+        for z in ((" " + kl) if kl else "", " mit Hörverstehen", " (PDF)", " | Snice"):
+            if z and len(base) + len(z) <= SEO_TITLE_MAX:
+                base += z
+        return base
+    typ = "" if _SEO_TYP_RE.search(t) else ("Kostenloses Arbeitsblatt" if is_free(m) else "Arbeitsblatt")
+    zus = []
+    if typ or (kl and "klasse" not in t.lower()):
+        zus.append(" – " + " ".join(x for x in (typ, kl if "klasse" not in t.lower() else "") if x))
+    zus += [" – PDF" if t.endswith(")") else " (PDF)", " | Snice"]
+    for z in zus:
+        if len(t) + len(z) <= SEO_TITLE_MAX:
+            t += z
+    return t
+
+
+def seo_desc_de(m, fach, nums, desc):
+    kl = (f"Klasse {nums[0]}" if len(nums) == 1 else f"Klasse {nums[0]}–{nums[-1]}") if nums else ""
+    los = " mit Lösungen" if re.search(r"l(ö|oe)sung", desc, re.I) else ""
+    art = SEO_LINE_DE.get(m.get("line")) or f"Arbeitsblatt {fach}"
+    tl0 = re.sub(r"\s+", " ", m["title"]).strip()
+    teile = [x.strip(" –-:") for x in re.split(r" Lückentext| – |: | \(", tl0) if x.strip(" –-:")] or [tl0]
+    thema = teile[0]
+    if len(teile) > 1 and re.match(r"(?i)(lesespaziergang|rechenwelt|bastel|lesespur|prüfungstraining|quali|msa)\b", thema):
+        thema = teile[1]   # "Lesespaziergang: Blätter und Bäume ..." -> Thema = 2. Teil
+    pre = (f"{'Kostenlos: ' if is_free(m) else ''}{(thema + ' – ') if thema and len(thema) <= 50 else ''}"
+           f"{art}{(' ' + kl) if kl else ''} als PDF{los}: ")
+    body = re.sub(r"\s+", " ", desc_norm(desc).replace("\n• ", "; ").replace("\n", " ")).strip()
+    body = re.sub(r"^.{0,170}?\|\s*mit L(ö|oe)sungen\s*", "", body)   # eduki-Kopfzeile "Thema – ... | Klasse 4–7 | mit Lösungen"
+    tl = re.sub(r"\s+", " ", m["title"]).strip()
+    if body.lower().startswith(tl.lower()):   # eduki-Texte beginnen oft mit dem Titel -> nicht doppeln
+        body = body[len(tl):].lstrip(" –-|:;,.")
+    s = pre + body
+    return s if len(s) <= 158 else s[:155].rsplit(" ", 1)[0].rstrip(" ,;:–-") + " …"
+
+
+def learning_ld_fields(lang, nums, typ, free, about=None):
+    """schema.org LearningResource-Felder (Mehrfachtyp Product+LearningResource)."""
+    d = {"learningResourceType": typ, "inLanguage": lang, "isAccessibleForFree": bool(free),
+         "encodingFormat": "application/pdf"}
+    if nums:
+        d["educationalLevel"] = [f"Klasse {n}" if lang == "de" else f"Grade {n}" for n in nums]
+    if about:
+        d["about"] = {"@type": "Thing", "name": about}
+    return d
+
+
 def render_material_page(m, related):
     url = f"{SITE}/{mat_path(m)}"
     title = m["title"]; fach = m.get("fach", "") or "Unterricht"
@@ -1896,24 +2017,32 @@ def render_material_page(m, related):
     typen = ", ".join(as_list(m.get("types"))[:4])
     eduki = f'{EDUKI_MAT}/{m["id"]}/{m["slug"]}'
     desc = (m.get("desc") or "").strip()
-    meta_desc = re.sub(r"\s+", " ", desc_norm(desc).replace("\n• ", "; ").replace("\n", " "))[:155].rsplit(" ", 1)[0] + " …"
+    meta_desc = seo_desc_de(m, fach, nums, desc)
     line_name, line_href = LINE_META.get(m.get("line"), ("Unterrichtsmaterial", "materialien.html", ""))[:2]
     price = price_label(m)
     try:
         pnum = 0 if is_free(m) else float(m.get("price") or 0)
     except Exception:
         pnum = 0
-    product_ld = {"@context": "https://schema.org", "@type": "Product", "name": title, "description": meta_desc,
+    product_ld = {"@context": "https://schema.org", "@type": ["Product", "LearningResource"], "name": title, "description": meta_desc,
                   "image": m.get("cover") or f"{SITE}/assets/logo.png", "url": url, "sku": str(m["id"]),
                   "brand": {"@type": "Brand", "name": SITE_NAME},
                   "category": f"{fach} · {kl}" if kl else fach,
+                  **learning_ld_fields("de", [n for n in nums if 1 <= n <= 13], "Arbeitsblatt", pnum == 0, fach),
                   "offers": {"@type": "Offer", "price": f"{pnum:.2f}", "priceCurrency": "EUR", "url": eduki,
                              "availability": "https://schema.org/InStock", "seller": ORG_LD}}
-    crumbs = [("Start", f"{SITE}/"), (fach, f"{SITE}/{fach_slug(fach)}.html"), (title, url)]
+    # SEO 01.11.: Breadcrumb + Links auf die Fach×Klasse-Hubs ("Arbeitsblätter Erdkunde Klasse 5"), sonst Klassen-Seite
+    fk = [n for n in nums if (m.get("fach"), n) in fk_kombis()]
+    crumbs = [("Start", f"{SITE}/"), (fach, f"{SITE}/{fach_slug(fach)}.html")]
+    if fk:
+        crumbs.append((f"{fach} Klasse {fk[0]}", f"{SITE}/{fk_slug(fach, fk[0])}.html"))
+    crumbs.append((title, url))
     crumb_html = (f'<nav class="crumbs"><a href="../index.html">Start</a> › '
                   f'<a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a> › '
-                  f'<a href="../{line_href}">{html.escape(line_name)}</a></nav>')
-    kl_links = " · ".join(f'<a href="../klasse-{n}.html">Klasse {n}</a>' for n in nums if 1 <= n <= 13)
+                  + (f'<a href="../{fk_slug(fach, fk[0])}.html">Klasse {fk[0]}</a> › ' if fk else "")
+                  + f'<a href="../{line_href}">{html.escape(line_name)}</a></nav>')
+    kl_links = " · ".join((f'<a href="../{fk_slug(fach, n)}.html">{html.escape(fach)} Klasse {n}</a>' if n in fk
+                           else f'<a href="../klasse-{n}.html">Klasse {n}</a>') for n in nums if 1 <= n <= 13)
     cover = (f'<div class="mat-cover"><img src="{html.escape(m["cover"])}" alt="{html.escape(title)} – Vorschau" width="600" height="850"></div>'
              if m.get("cover") else "")
     rel_html = "".join(cat_card_html(r, root="../") for r in related)
@@ -1937,7 +2066,8 @@ def render_material_page(m, related):
 {"<h2>Ähnliche Materialien</h2><div class='grid'>" + rel_html + "</div>" if related else ""}
 </main>
 """
-    page = head(title, meta_desc, url, m.get("cover"), root="../", extra_ld=[product_ld, breadcrumb_ld(crumbs)]) + body + foot("../")
+    page = head(seo_title_de(m, [n for n in nums if 1 <= n <= 13]), meta_desc, url, m.get("cover"), root="../",
+                extra_ld=[product_ld, breadcrumb_ld(crumbs)], title_raw=True) + body + foot("../")
     open(os.path.join(MAT_DIR, os.path.basename(mat_path(m))), "w", encoding="utf-8").write(page)
 
 
@@ -1976,7 +2106,7 @@ def _mat_lastmod(m, today):
     if _LM is None:
         try: _LM = json.load(open(p, encoding="utf-8"))
         except Exception: _LM = {}
-    h = hashlib.md5("|".join(str(m.get(k, "")) for k in ("title", "desc", "price", "cover")).encode("utf-8")).hexdigest()[:12]
+    h = hashlib.md5(("|".join(str(m.get(k, "")) for k in ("title", "desc", "price", "cover")) + SEO_REV).encode("utf-8")).hexdigest()[:12]
     e = _LM.get(str(m["id"]))
     if not e or e[0] != h:
         _LM[str(m["id"])] = e = [h, today]

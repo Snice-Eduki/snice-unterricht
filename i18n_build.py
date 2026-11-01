@@ -24,10 +24,10 @@ STATS = {}
 # ------------------------------------------------------------------ Texte (von Hand geschrieben, Gegenpruefung per LLM)
 T = {
  "en": {
-  "free": "Free resources", "free_nav": "Free", "free_title": "Free Reading Comprehension Resources – No Prep",
+  "free": "Free resources", "free_nav": "Free", "free_title": "Free Printable Reading Comprehension Worksheets (PDF)",
   "free_desc": "Free printable resources from my TpT store: no-prep reading comprehension with answer keys. The list updates automatically.",
   "free_intro": "These resources are currently free in my TpT store. The list updates automatically every day.",
-  "home_title": "No-Prep Reading Comprehension & Math Centers | Snice",
+  "home_title": "No-Prep Reading Comprehension Worksheets & Math Centers | Snice",
   "home_desc": "{n}+ printable, no-prep resources with answer keys: reading comprehension passages, escape-style reading trails, and math centers for grades {g}. Available in my TpT store.",
   "eyebrow": "By a teacher, for teachers",
   "h1a": "Classroom-ready.", "h1b": "In five minutes.",
@@ -76,7 +76,7 @@ T = {
                  "de": "More than {n} German teaching materials with answer keys – available on eduki.",
                  "en": "English reading passages, reading trails and math centers – available on TpT."},
   "to_lang": "Go to the {l} page →", "de_home": "Go to the German homepage →",
-  "all_title": "All Resources – Reading Comprehension, Reading Trails & Math Centers",
+  "all_title": "All Worksheets – Reading Comprehension, Reading Trails & Math Centers",
   "all_desc": "Search all {n} Snice resources by topic, subject and grade: reading comprehension worksheets, reading trails, math role plays and bundles with answer keys.",
   "all_intro": "Search for a topic or filter by subject and grade. Each resource page links straight to the product in my TpT store.",
   "new_title": "New Resources", "new_desc": "The newest Snice resources: reading trails, math centers and reading comprehension worksheets – newest first.",
@@ -86,8 +86,8 @@ T = {
                   "winter": "No-prep winter resources: Christmas, gingerbread, snow, winter sports and New Year – reading comprehension, reading trails and math centers with answer keys."},
   "fam_title": {"trails": "Reading Trails – Escape-Style Reading Scavenger Hunts", "rw": "Math Role Plays – Hands-On Math Centers",
                 "ws": "Reading Comprehension Worksheets with Cloze, Listening & Word Search", "bundle": "Bundles – Save with Resource Sets"},
-  "subj_title": "{s} Resources", "subj_desc": "{n} no-prep {s} resources with answer keys: reading comprehension, reading trails, and more – filter by grade.",
-  "grade_title": "Grade {g} Resources", "grade_desc": "{n} no-prep resources for grade {g} with answer keys: reading comprehension passages, reading trails, and math centers.",
+  "subj_title": "{s} Worksheets – Printable PDF, No Prep", "subj_h1": "{s} Worksheets", "subj_desc": "{n} printable {s} worksheets (PDF) with answer keys: reading comprehension passages, reading trails and more – no prep, filter by grade.",
+  "grade_title": "{g} Worksheets – Printable Reading & Math PDFs", "grade_h1": "{g} Worksheets", "grade_desc": "{n} printable {g} worksheets (PDF) with answer keys: reading comprehension passages, reading trails and math centers – no prep, print and go.",
   "crumb_home": "Home", "nav_label": "Main navigation", "lang_label": "Language",
   "foot_tag": "Resources that make teaching easier.",
   "foot_sold": "All resources on this page are sold in my <a href=\"{store}\" rel=\"noopener\">Teachers Pay Teachers store</a>.",
@@ -97,10 +97,10 @@ T = {
   "meta_ws": "Reading comprehension worksheet", "meta_trail": "Reading trail", "meta_rw": "Math role play", "meta_bundle": "Bundle", "meta_other": "Resource",
  },
  "es": {
-  "free": "Recursos gratis", "free_nav": "Gratis", "free_title": "Recursos gratis en español",
+  "free": "Recursos gratis", "free_nav": "Gratis", "free_title": "Fichas gratis en español para imprimir (PDF)",
   "free_desc": "Recursos gratis de mi tienda de TpT, sin preparación y con solucionario. La lista se actualiza automáticamente.",
   "free_intro": "Estos recursos son gratis en este momento en mi tienda de TpT. La lista se actualiza cada día.",
-  "home_title": "Lecturas en español y búsquedas del tesoro, sin preparación | Snice",
+  "home_title": "Fichas de comprensión lectora en español para imprimir | Snice",
   "home_desc": "Más de {n} recursos imprimibles en español con solucionario: fichas de comprensión lectora y búsquedas del tesoro de lectura para los grados {g}. Disponibles en mi tienda de TpT.",
   "eyebrow": "De un docente para docentes",
   "h1a": "Listo para la clase.", "h1b": "En cinco minutos.",
@@ -149,7 +149,7 @@ T = {
                  "de": "Más de {n} materiales en alemán con solucionario, disponibles en eduki.",
                  "es": ""},
   "to_lang": "Ir a la página en {l} →", "de_home": "Ir a la página en alemán →",
-  "all_title": "Todos los recursos en español: fichas de lectura y búsquedas del tesoro",
+  "all_title": "Todas las fichas en español: comprensión lectora y búsquedas del tesoro",
   "all_desc": "Busca entre los {n} recursos de Snice en español por tema, materia y grado: fichas de comprensión lectora, búsquedas del tesoro y paquetes con solucionario.",
   "all_intro": "Busca un tema o filtra por materia y grado. Cada página de recurso lleva directamente al producto en mi tienda de TpT.",
   "new_title": "Recursos nuevos en español", "new_desc": "Los recursos más nuevos de Snice en español: búsquedas del tesoro y fichas de lectura, los más recientes primero.",
@@ -159,8 +159,8 @@ T = {
                   "winter": "Recursos de invierno en español, sin preparación: Navidad, pan de jengibre, nieve y Año Nuevo, con solucionario."},
   "fam_title": {"trails": "Búsquedas del tesoro de lectura en español (estilo escape room)", "rw": "Juegos de rol de matemáticas",
                 "ws": "Fichas de lectura en español: texto con huecos, comprensión auditiva y sopa de letras", "bundle": "Paquetes de recursos en español"},
-  "subj_title": "Recursos de {s} en español", "subj_desc": "{n} recursos de {s} en español, sin preparación y con solucionario: fichas de lectura, búsquedas del tesoro y más, filtrables por grado.",
-  "grade_title": "Recursos en español para el grado {g}", "grade_desc": "{n} recursos en español para el grado {g}, sin preparación y con solucionario.",
+  "subj_title": "Fichas de {s} para imprimir (PDF) en español", "subj_h1": "Fichas de {s}", "subj_desc": "{n} fichas de {s} en español para imprimir (PDF), sin preparación y con solucionario: comprensión lectora, búsquedas del tesoro y más, filtrables por grado.",
+  "grade_title": "Fichas para {g} – PDF para imprimir", "grade_h1": "Fichas para {g}", "grade_desc": "{n} fichas en español para {g}: PDF para imprimir, sin preparación y con solucionario – comprensión lectora y búsquedas del tesoro.",
   "crumb_home": "Inicio", "nav_label": "Navegación principal", "lang_label": "Idioma",
   "foot_tag": "Recursos que facilitan la enseñanza.",
   "foot_sold": "Todos los recursos de esta página se venden en mi <a href=\"{store}\" rel=\"noopener\">tienda de Teachers Pay Teachers</a>.",
@@ -169,10 +169,10 @@ T = {
   "meta_ws": "Ficha de lectura", "meta_trail": "Búsqueda del tesoro", "meta_rw": "Juego de rol de matemáticas", "meta_bundle": "Paquete", "meta_other": "Recurso",
  },
  "fr": {
-  "free": "Ressources gratuites", "free_nav": "Gratuit", "free_title": "Fiches gratuites en français",
+  "free": "Ressources gratuites", "free_nav": "Gratuit", "free_title": "Fiches gratuites à imprimer en français (PDF)",
   "free_desc": "Fiches gratuites en français, prêtes à imprimer et avec corrigé. La liste se met à jour automatiquement.",
   "free_intro": "Ces fiches sont actuellement gratuites dans ma boutique. La liste se met à jour chaque jour.",
-  "home_title": "Fiches de lecture en français, prêtes à imprimer | Snice",
+  "home_title": "Fiches CM1-CM2 à imprimer : lecture, texte à trous (PDF) | Snice",
   "home_desc": "Plus de {n} fiches en français avec corrigé : texte à trous avec banque de mots, compréhension orale par QR code et mots mêlés. Disponibles sur eduki.",
   "eyebrow": "D'un enseignant pour les enseignants",
   "h1a": "Prêt pour la classe.", "h1b": "En cinq minutes.",
@@ -221,7 +221,7 @@ T = {
                  "de": "Plus de {n} ressources en allemand avec corrigé, disponibles sur eduki.",
                  "fr": ""},
   "to_lang": "Aller à la page en {l} →", "de_home": "Aller à la page en allemand →",
-  "all_title": "Toutes les fiches en français : lecture, écoute et mots mêlés",
+  "all_title": "Toutes les fiches à imprimer : lecture, texte à trous et mots mêlés",
   "all_desc": "Cherche parmi les {n} fiches Snice en français par thème et par niveau : texte à trous, compréhension orale et mots mêlés, avec corrigé.",
   "all_intro": "Cherche un thème ou filtre par domaine et par niveau. Chaque page de ressource mène directement au produit.",
   "new_title": "Nouvelles fiches en français", "new_desc": "Les fiches Snice les plus récentes en français, les plus récentes d'abord.",
@@ -231,8 +231,8 @@ T = {
                   "winter": "Fiches de Noël et d'hiver en français, prêtes à imprimer : Noël, neige et Nouvel An, avec corrigé."},
   "fam_title": {"trails": "Rallyes-lecture en français", "rw": "Jeux de rôle en maths",
                 "ws": "Fiches de lecture : texte à trous, compréhension orale et mots mêlés", "bundle": "Lots de ressources"},
-  "subj_title": "Fiches « {s} » en français", "subj_desc": "{n} fiches en français sur le thème « {s} », prêtes à imprimer et avec corrigé.",
-  "grade_title": "Fiches en français – {g}", "grade_desc": "{n} fiches en français pour le niveau {g}, prêtes à imprimer et avec corrigé.",
+  "subj_title": "Fiches {s} à imprimer (PDF) – CM1, CM2, cycle 3", "subj_h1": "Fiches {s}", "subj_desc": "{n} fiches d'exercices en français sur le thème « {s} » : texte à trous, compréhension orale et mots mêlés, à imprimer (PDF) avec corrigé.",
+  "grade_title": "Fiches {g} à imprimer (PDF) – lecture et compréhension", "grade_h1": "Fiches {g}", "grade_desc": "{n} fiches d'exercices {g} en français : lecture, texte à trous et compréhension orale, à imprimer (PDF) avec corrigé.",
   "crumb_home": "Accueil", "nav_label": "Navigation principale", "lang_label": "Langue",
   "foot_tag": "Des ressources qui facilitent l'enseignement.",
   "foot_sold": "Les fiches en français sont vendues dans ma <a href=\"{store}\" rel=\"noopener\">boutique sur eduki</a>.",
@@ -241,10 +241,10 @@ T = {
   "meta_ws": "Fiche de lecture", "meta_trail": "Rallye-lecture", "meta_rw": "Jeu de rôle en maths", "meta_bundle": "Lot", "meta_other": "Ressource",
  },
  "it": {
-  "free": "Materiali gratuiti", "free_nav": "Gratis", "free_title": "Schede gratuite in italiano",
+  "free": "Materiali gratuiti", "free_nav": "Gratis", "free_title": "Schede didattiche gratuite da stampare (PDF)",
   "free_desc": "Schede gratuite in italiano, pronte da stampare e con soluzioni. L'elenco si aggiorna automaticamente.",
   "free_intro": "Queste schede sono attualmente gratuite nel mio negozio. L'elenco si aggiorna ogni giorno.",
-  "home_title": "Schede di lettura in italiano, pronte da stampare | Snice",
+  "home_title": "Schede didattiche scuola primaria da stampare (PDF) | Snice",
   "home_desc": "Oltre {n} schede in italiano con soluzioni: testo con spazi vuoti e banca delle parole, comprensione all'ascolto con codice QR e crucipuzzle. Disponibili su eduki.",
   "eyebrow": "Da un insegnante per gli insegnanti",
   "h1a": "Pronto per la classe.", "h1b": "In cinque minuti.",
@@ -293,7 +293,7 @@ T = {
                  "de": "Oltre {n} materiali in tedesco con soluzioni, disponibili su eduki.",
                  "it": ""},
   "to_lang": "Vai alla pagina in {l} →", "de_home": "Vai alla pagina in tedesco →",
-  "all_title": "Tutte le schede in italiano: lettura, ascolto e crucipuzzle",
+  "all_title": "Tutte le schede didattiche: lettura, ascolto e crucipuzzle",
   "all_desc": "Cerca tra le {n} schede Snice in italiano per tema e classe: testo con spazi vuoti, comprensione all'ascolto e crucipuzzle, con soluzioni.",
   "all_intro": "Cerca un tema o filtra per area e classe. Ogni pagina del materiale porta direttamente al prodotto.",
   "new_title": "Nuove schede in italiano", "new_desc": "Le schede Snice più recenti in italiano, dalle più nuove.",
@@ -303,8 +303,8 @@ T = {
                   "winter": "Schede di Natale e d'inverno in italiano, pronte da stampare: Natale, neve e Capodanno, con soluzioni."},
   "fam_title": {"trails": "Cacce al tesoro di lettura", "rw": "Giochi di ruolo di matematica",
                 "ws": "Schede di lettura: testo con spazi vuoti, ascolto e crucipuzzle", "bundle": "Pacchetti di materiali"},
-  "subj_title": "Schede «{s}» in italiano", "subj_desc": "{n} schede in italiano sul tema «{s}», pronte da stampare e con soluzioni.",
-  "grade_title": "Schede in italiano – {g}", "grade_desc": "{n} schede in italiano per la {g}, pronte da stampare e con soluzioni.",
+  "subj_title": "Schede didattiche {s} da stampare (PDF) – primaria", "subj_h1": "Schede didattiche {s}", "subj_desc": "{n} schede didattiche in italiano sul tema «{s}»: testo con spazi vuoti, comprensione all'ascolto e crucipuzzle, da stampare (PDF) con soluzioni.",
+  "grade_title": "Schede didattiche {g} da stampare (PDF)", "grade_h1": "Schede didattiche {g}", "grade_desc": "{n} schede didattiche per la {g}: comprensione del testo, ascolto e lessico, da stampare (PDF) con soluzioni.",
   "crumb_home": "Home", "nav_label": "Navigazione principale", "lang_label": "Lingua",
   "foot_tag": "Materiali che rendono l'insegnamento più facile.",
   "foot_sold": "Le schede in italiano sono in vendita nel mio <a href=\"{store}\" rel=\"noopener\">negozio su eduki</a>.",
@@ -516,6 +516,114 @@ def grade_label(lang, nums):
     return f"Grade {a}" if a == b else f"Grades {a}–{b}"
 
 
+# ------------------------------------------------------------------ SEO 01.11.2026 (_seo_bericht_20261101.md)
+# Suchmuster laut Google-Autocomplete: "<topic> worksheet pdf / 3rd grade", "ficha <tema> 3 primaria", "fiche <thème> CM1 / cycle 3",
+# "scheda <tema> classe terza / quarta elementare". Title = Thema vorn + Materialart + Stufe, max ~68 Zeichen; H1 bleibt Originaltitel.
+LR_TYPE = {"en": "Worksheet", "es": "Ficha de trabajo", "fr": "Fiche d'exercices", "it": "Scheda didattica"}
+SEO_MAX = 68
+_ORD = {1: "1st", 2: "2nd", 3: "3rd"}
+_ES_ORD = {1: "1.er", 2: "2.º", 3: "3.er", 4: "4.º", 5: "5.º", 6: "6.º", 7: "7.º", 8: "8.º", 9: "9.º", 10: "10.º", 11: "11.º", 12: "12.º"}
+_ES_SP = {1: "1.º de primaria", 2: "2.º de primaria", 3: "3.º de primaria", 4: "4.º de primaria", 5: "5.º de primaria", 6: "6.º de primaria",
+          7: "1.º de ESO", 8: "2.º de ESO", 9: "3.º de ESO", 10: "4.º de ESO"}
+_IT_NUM = {"i": "prima", "ii": "seconda", "iii": "terza", "iv": "quarta", "v": "quinta"}
+
+
+def grade_seo(lang, g, nm):
+    """Klassenstufe so, wie Lehrkraefte im jeweiligen Land suchen."""
+    if g.isdigit():
+        n = int(g)
+        if lang == "en":
+            return f"{_ORD.get(n, str(n) + 'th')} Grade"
+        if lang == "es":
+            return f"{_ES_ORD.get(n, str(n))} grado" + (f" ({_ES_SP[n]})" if n in _ES_SP else "")
+        if lang == "fr":
+            return f"{n}e année"
+        if lang == "it":
+            return f"grade {n}"
+    if lang == "it":
+        m = re.match(r"^(i{1,3}|iv|v)\s+primaria$", nm.strip(), re.I)
+        if m:
+            return f"classe {_IT_NUM[m.group(1).lower()]} primaria"
+    return nm
+
+
+def _glabel_seo(lang, it):
+    if it["src"] == "tpt":
+        ns = [int(x) for x in it["gkeys"] if x.isdigit()]
+        if not ns:
+            return ""
+        a, b = ns[0], ns[-1]
+        if lang == "en":
+            return f"Grade {a}" if a == b else f"Grades {a}-{b}"
+        if lang == "es":
+            return f"grado {a}" if a == b else f"grados {a}-{b}"
+        if lang == "fr":
+            return f"{a}e année" if a == b else f"{a}e-{b}e année"
+        return f"grade {a}-{b}"
+    gl = [g for g in it["gnames"].values()]
+    if lang == "fr" and gl:
+        return "-".join(gl[:2])                          # "CM1-CM2"
+    if lang == "it" and gl:
+        r = [re.match(r"^(i{1,3}|iv|v)\b", g.strip(), re.I) for g in gl[:2]]
+        if all(r):
+            return "classe " + " e ".join(_IT_NUM[x.group(1).lower()] for x in r)   # "classe quarta e quinta"
+        return ", ".join(gl[:2])
+    return ", ".join(gl[:2])
+
+
+_TYPE_HIT = {"en": r"worksheet|printable", "es": r"ficha", "fr": r"\bfiche", "it": r"\bscheda"}
+_TYPE_WORD = {"en": {"ws": "Reading Comprehension Worksheet", "trails": "Reading Trail Activity", "rw": "Math Center",
+                     "bundle": "Worksheet Bundle", "other": "Worksheet"},
+              "es": {"ws": "Ficha de comprensión lectora", "trails": "Búsqueda del tesoro de lectura", "rw": "Ficha de matemáticas",
+                     "bundle": "Paquete de fichas", "other": "Ficha"},
+              "fr": {"ws": "Fiche texte à trous", "trails": "Rallye lecture", "rw": "Fiche de maths", "bundle": "Lot de fiches", "other": "Fiche"},
+              "it": {"ws": "Scheda didattica", "trails": "Caccia al tesoro di lettura", "rw": "Scheda di matematica",
+                     "bundle": "Pacchetto di schede", "other": "Scheda didattica"}}
+
+
+def seo_title_i18n(lang, it):
+    topic = re.sub(r"\s+", " ", (it["topic"] if it["fam"] in ("ws", "other") and it["topic"] else it["title"])).strip()
+    typ = _TYPE_WORD[lang].get(it["fam"], _TYPE_WORD[lang]["other"])
+    sp = re.search(r"\b(Spanish|French|Italian|German)\b", it.get("name") or "") if lang == "en" else None
+    if sp and it["fam"] == "ws":
+        typ = f"{sp.group(1)} Reading Worksheet"   # Fremdsprachen-Lesetexte im EN-Store: Sprache im Title behalten
+    gl = _glabel_seo(lang, it)
+    if it["src"] == "tpt" and it["fam"] not in ("ws",):
+        base = re.sub(r"\s+", " ", it["title"]).strip()
+        if not re.search(_TYPE_HIT[lang], base, re.I) and len(base) + len(typ) + 3 <= SEO_MAX:
+            base += " – " + typ
+    else:
+        base = f"{topic} – {typ}"
+    if len(base) > SEO_MAX:
+        base = base[:SEO_MAX - 1].rsplit(" ", 1)[0].rstrip(" –-:,") + "…"
+    for z in ((" " + gl) if gl else "", " (PDF)", " | Snice"):
+        if z and len(base) + len(z) <= SEO_MAX:
+            base += z
+    return base
+
+
+_FREE = {"en": "FREE", "es": "GRATIS", "fr": "GRATUIT", "it": "GRATIS"}
+_PRE = {"en": "Printable {typ} (PDF){gl}: ", "es": "{typ} para imprimir (PDF){gl}: ", "fr": "{typ} à imprimer (PDF){gl} : ",
+        "it": "{typ} da stampare (PDF){gl}: "}
+
+
+# TpT-Seitentext enthaelt teils UI-Reste ("Q&A Thumbnail 1 ... View Preview Share Description") -> nicht in Snippets
+TPT_UI_LINES = re.compile(r"^(Q&A|Thumbnail|\d{1,2}|View Preview|Share|Description)$", re.I)
+TPT_JUNK_RE = re.compile(r"^.*?\bShare Description\b|\bQ&A\b|\bThumbnail \d+\b|\bView Preview\b", re.I)
+
+
+def seo_desc_i18n(lang, it, md):
+    typ = _TYPE_WORD[lang].get(it["fam"], _TYPE_WORD[lang]["other"])
+    gl = _glabel_seo(lang, it)
+    pre = _PRE[lang].format(typ=typ if lang != "en" else typ.lower(), gl=(", " + gl) if gl else "")
+    if it["pnum"] == 0:
+        pre = _FREE[lang] + " – " + pre
+    body = re.sub(r"\s+", " ", it.get("meta_src") or md or it["title"]).strip()
+    body = TPT_JUNK_RE.sub(" ", body).strip()
+    s = pre + body
+    return s if len(s) <= 158 else s[:155].rsplit(" ", 1)[0].rstrip(" ,;:–-") + " …"
+
+
 # ------------------------------------------------------------------ Items
 def tpt_lang(d):
     """Materialsprache: zuerst Upload-Familie, sonst Titelmuster der Reihen (NICHT nur 'Spanish'/'French' im Titel:
@@ -562,6 +670,8 @@ def tpt_desc_html(desc):
     out, ul = "", []
     lines = [x.strip() for x in (desc or "").split("\n") if x.strip()]
     lines = [x for x in lines if not re.match(r"(Terms of use|Thank you|Follow me|Please leave|Reviews?\b)", x, re.I)]
+    while lines and TPT_UI_LINES.match(lines[0]):   # SEO 01.11.: TpT-Oberflaechenreste ("Q&A", "Thumbnail", "1", "Share") am Anfang weg
+        lines.pop(0)
     for x in lines + [""]:
         if re.match(r"^[-•●▪]\s*", x):
             ul.append(re.sub(r"^[-•●▪]\s*", "", x)); continue
@@ -1368,9 +1478,13 @@ def render_detail(lang, it, related):
     offer = {"@type": "Offer", "url": it["url"], "availability": "https://schema.org/InStock"}
     if it["pnum"] is not None:
         offer.update({"price": f"{it['pnum']:.2f}", "priceCurrency": it["cur"]})
-    prod = {"@context": "https://schema.org", "@type": "Product", "name": it["title"], "description": md, "image": abs_img,
+    prod = {"@context": "https://schema.org", "@type": ["Product", "LearningResource"], "name": it["title"], "description": md, "image": abs_img,
             "url": url, "sku": it["pid"], "brand": {"@type": "Brand", "name": "Snice"}, "inLanguage": lang,
-            "category": CAT_NAME[lang][it["cat"]], "offers": offer}
+            "category": CAT_NAME[lang][it["cat"]], "learningResourceType": LR_TYPE[lang], "encodingFormat": "application/pdf",
+            "isAccessibleForFree": it["pnum"] == 0, "about": {"@type": "Thing", "name": it["topic"] or CAT_NAME[lang][it["cat"]]},
+            "offers": offer}
+    if it["glabel"]:
+        prod["educationalLevel"] = it["glabel"]
     typ = t.get("meta_" + ("trail" if it["fam"] == "trails" else it["fam"]), t["meta_other"])
     facts = [(t["subject"], CAT_NAME[lang][it["cat"]]), (t["grades"], it["glabel"]), (t["type"], typ)]
     if it.get("pages"):
@@ -1404,7 +1518,7 @@ def render_detail(lang, it, related):
 {f'<h2>{esc(t["related"])}</h2><div class="grid">' + "".join(card(r, lang, 1) for r in related) + "</div>" if related else ""}
 </main>
 """
-    out = head_i18n(lang, f'{it["title"][:70]} | Snice', md or it["title"], url, None, 1, [prod, breadcrumb_ld(crumbs)], og_img=abs_img)
+    out = head_i18n(lang, seo_title_i18n(lang, it), seo_desc_i18n(lang, it, md), url, None, 1, [prod, breadcrumb_ld(crumbs)], og_img=abs_img)
     write(lang, it["path"], out + body + foot_i18n(lang, 1))
     SITEMAP_URLS[lang].append((url, None))
 
@@ -1591,14 +1705,14 @@ def render():
         for c in CATS:
             if P.get("cat:" + c):
                 sel = sort_items([it for it in items if it["cat"] == c]); nm = CAT_NAME[lang][c]
-                grid_page(lang, "cat:" + c, P["cat:" + c], t["subj_title"].format(s=nm), nm,
+                grid_page(lang, "cat:" + c, P["cat:" + c], t["subj_title"].format(s=nm), t["subj_h1"].format(s=nm),
                           t["subj_desc"].format(s=nm if lang != "en" else nm, n=len(sel)), t["subj_desc"].format(s=nm, n=len(sel)), sel,
                           filt=f"c:{c}", chip_kinds=("g",))
         for key, (slug, nm, o) in STATS["grade_pages"][lang].items():
             g = key.split(":", 1)[1]
             sel = sort_items([it for it in items if g in it["gkeys"]])
-            gl = nm.replace("Grade ", "").replace("Grado ", "") if lang in ("en", "es") else nm
-            grid_page(lang, key, slug, t["grade_title"].format(g=gl), nm, t["grade_desc"].format(g=gl, n=len(sel)),
+            gl = grade_seo(lang, g, nm)   # SEO 01.11.: "3rd Grade", "3.er grado (3.º de primaria)", "6e année", "classe quarta primaria"
+            grid_page(lang, key, slug, t["grade_title"].format(g=gl), t["grade_h1"].format(g=gl), t["grade_desc"].format(g=gl, n=len(sel)),
                       t["grade_desc"].format(g=gl, n=len(sel)), sel, filt=f"g:{g}", chip_kinds=("c",))
         render_other(lang)
         render_details(lang)
