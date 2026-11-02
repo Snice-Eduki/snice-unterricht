@@ -291,7 +291,8 @@
  more=document.getElementById('more');
  if(!grid)return;
  var SRC=grid.getAttribute('data-src'),PAGE=240;
- var all=null,view=null,shown=0,f={fach:'',kl:''},term='',loading=false,jsmode=false;
+ var all=null,view=null,shown=0,f={fach:'',kl:''},term='',loading=false,jsmode=false,
+ BF=grid.getAttribute('data-bf')||'',BK=grid.getAttribute('data-bk')||'';
  var qm=location.search.match(/[?&]q=([^&]+)/);
  if(qm&&q){try{q.value=decodeURIComponent(qm[1].replace(/\+/g,' '));term=q.value.trim().toLowerCase();}catch(e){}}
  function esc(t){return String(t).replace(/[&<>"]/g,function(c){
@@ -305,7 +306,8 @@
           (m.meta?'<p class="card-meta">'+esc(m.meta)+'</p>':'')+'</div></a>';
  }
  function match(m){
-   return (!f.fach||m.fach===f.fach)
+   return (!BF||m.fach===BF)&&(!BK||(m.kl||[]).indexOf(+BK)>-1)
+       &&(!f.fach||m.fach===f.fach)
        &&(!f.kl||(m.kl||[]).indexOf(+f.kl)>-1)
        &&(!term||(m.s||'').indexOf(term)>-1);
  }

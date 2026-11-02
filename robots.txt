@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://snice-unterricht.eu/sitemap.xml
+Sitemap: https://snice-unterricht.eu/en/sitemap.xml
+Sitemap: https://snice-unterricht.eu/es/sitemap.xml
+Sitemap: https://snice-unterricht.eu/fr/sitemap.xml
+Sitemap: https://snice-unterricht.eu/it/sitemap.xml

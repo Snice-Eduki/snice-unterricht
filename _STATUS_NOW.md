@@ -88,3 +88,5 @@ fatal: unable to a (Log `Skripte\_homepage_daily.log`)
   File "C:\Python314\Lib\urllib\request.py", line 1324, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen erro (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 02.11. 00:51 Homepage-Tageslauf: Katalog-Pull unplausibel (4475 aktiv statt ~7056) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
