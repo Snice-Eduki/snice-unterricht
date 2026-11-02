@@ -70,7 +70,7 @@ T = {
   "other_title": "Resources in other languages", "other_h1": "Other languages",
   "other_intro": "This page only shows resources in English. Here you'll find my materials in Spanish, French, Italian and German.",
   "other_desc": "Snice resources in other languages: Spanish reading passages and reading trails, French and Italian worksheets and German teaching materials.",
-  "lang_blurb": {"es": "Spanish reading passages, cloze worksheets and reading trails – available on TpT.",
+  "lang_blurb": {"es": "Spanish reading passages, cloze worksheets and reading trails – available on eduki and TpT.",
                  "fr": "French cloze worksheets with listening task and word search – available on eduki.",
                  "it": "Italian cloze worksheets with listening task and word search – available on eduki.",
                  "de": "More than {n} German teaching materials with answer keys – available on eduki.",
@@ -98,15 +98,15 @@ T = {
  },
  "es": {
   "free": "Recursos gratis", "free_nav": "Gratis", "free_title": "Fichas gratis en español para imprimir (PDF)",
-  "free_desc": "Recursos gratis de mi tienda de TpT, sin preparación y con solucionario. La lista se actualiza automáticamente.",
-  "free_intro": "Estos recursos son gratis en este momento en mi tienda de TpT. La lista se actualiza cada día.",
+  "free_desc": "Fichas gratis en español para imprimir, sin preparación y con solucionario. La lista se actualiza automáticamente.",
+  "free_intro": "Estos recursos son gratis en este momento. La lista se actualiza cada día.",
   "home_title": "Fichas de comprensión lectora en español para imprimir | Snice",
-  "home_desc": "Más de {n} recursos imprimibles en español con solucionario: fichas de comprensión lectora y búsquedas del tesoro de lectura para los grados {g}. Disponibles en mi tienda de TpT.",
+  "home_desc": "Más de {n} recursos imprimibles en español con solucionario: fichas de comprensión lectora y búsquedas del tesoro de lectura para {g}. Disponibles en eduki y, en parte, en TpT.",
   "eyebrow": "De un docente para docentes",
   "h1a": "Listo para la clase.", "h1b": "En cinco minutos.",
   "hero_sub": "Más de {n} recursos imprimibles en español, sin preparación y con solucionario: fichas de comprensión lectora y búsquedas del tesoro de lectura al estilo escape room.",
   "search_ph": "Buscar: otoño, volcán, Roma …", "search_label": "Buscar recursos",
-  "btn_store": "Ir a mi tienda en TpT", "btn_all": "Ver todos los recursos",
+  "btn_store": "Ir a mi tienda en eduki", "btn_all": "Ver todos los recursos",
   "trust": ["<b>{n}+</b> recursos", "<b>Solucionario</b> incluido", "<b>Sin preparación</b>: imprimir y usar", "<b>Grados {g}</b>"],
   "trust_trails": "<b>{n}+</b> búsquedas del tesoro",
   "tiles": [("Sin preparación", "PDF para imprimir y usar de inmediato. Cada recurso incluye el solucionario: ideal para suplencias, estaciones o trabajo autónomo."),
@@ -114,7 +114,7 @@ T = {
             ("Todo en español", "Los textos y las tareas para el alumno están en español neutro, adecuados para clases de español, programas bilingües y ELE.")],
   "all": "Todos los recursos", "new": "Novedades", "new_long": "Recursos nuevos", "fall": "Otoño", "winter": "Navidad e invierno",
   "trails": "Búsquedas del tesoro", "rw": "Juegos de rol de matemáticas", "ws": "Fichas de lectura", "bundle": "Paquetes",
-  "other": "Otros idiomas", "store": "Tienda TpT", "about_link": "Sobre mí",
+  "other": "Otros idiomas", "store": "Tienda eduki", "about_link": "Sobre mí",
   "fam_blurb": {
     "trails": "Búsquedas del tesoro de lectura al estilo escape room: el alumnado lee una estación, sigue la pista hasta el siguiente lugar, reúne letras y descifra la palabra secreta. Los callejones sin salida permiten la autocorrección.",
     "rw": "Estaciones de matemáticas: la clase representa una escena de la vida real y practica matemáticas, con solucionario.",
@@ -131,10 +131,10 @@ T = {
   "subject": "Materia", "pages": "Páginas", "format": "Formato", "type": "Tipo de recurso", "answer_key": "Solucionario", "included": "Incluido",
   "price": "Precio", "free": "GRATIS",
   "btn_buy": "Ver en TpT", "btn_buy_eduki": "Ver en eduki", "related": "Recursos similares", "overview": "Páginas relacionadas",
-  "click_note": "Cada tarjeta abre la página del recurso; desde allí el botón lleva a TpT.",
+  "click_note": "Cada tarjeta abre la página del recurso; desde allí el botón lleva a eduki (y, si existe, a TpT).",
   "faq_h": "Preguntas frecuentes",
-  "faq": [("¿Dónde puedo comprar los recursos?", "Todos los recursos de esta página se venden en mi tienda “Snice” de Teachers Pay Teachers (TpT). Cada página de recurso tiene un botón que lleva directamente al producto."),
-          ("¿Para qué grados son?", "El grado exacto aparece en cada página de recurso y en la ficha de TpT. Las fichas de lectura en español están pensadas sobre todo para los grados 7–12."),
+  "faq": [("¿Dónde puedo comprar los recursos?", "Los recursos se venden en mi tienda “Snice” de eduki; muchos también en Teachers Pay Teachers (TpT, en dólares). Cada página de recurso tiene un botón que lleva directamente al producto."),
+          ("¿Para qué grados son?", "El nivel exacto aparece en cada página de recurso y en la ficha del marketplace. Las fichas de lectura en español están pensadas sobre todo para los grados 7–12."),
           ("¿Incluyen solucionario?", "Sí. Las fichas de lectura y las búsquedas del tesoro incluyen solucionario, así que también sirven para suplencias o trabajo autónomo."),
           ("¿En qué formato están?", "Archivos PDF para imprimir, sin preparación: imprimir y usar."),
           ("¿Hay recursos en otros idiomas?", "Sí: en la sección “Otros idiomas” encontrarás mis recursos en inglés, francés, italiano y alemán.")],
@@ -151,7 +151,7 @@ T = {
   "to_lang": "Ir a la página en {l} →", "de_home": "Ir a la página en alemán →",
   "all_title": "Todas las fichas en español: comprensión lectora y búsquedas del tesoro",
   "all_desc": "Busca entre los {n} recursos de Snice en español por tema, materia y grado: fichas de comprensión lectora, búsquedas del tesoro y paquetes con solucionario.",
-  "all_intro": "Busca un tema o filtra por materia y grado. Cada página de recurso lleva directamente al producto en mi tienda de TpT.",
+  "all_intro": "Busca un tema o filtra por materia y grado. Cada página de recurso lleva directamente al producto en eduki (o en TpT).",
   "new_title": "Recursos nuevos en español", "new_desc": "Los recursos más nuevos de Snice en español: búsquedas del tesoro y fichas de lectura, los más recientes primero.",
   "new_intro": "Aquí aparecen primero mis recursos más nuevos. La lista se actualiza automáticamente.",
   "season_title": {"fall": "Recursos de otoño en español", "winter": "Recursos de Navidad e invierno en español"},
@@ -163,7 +163,7 @@ T = {
   "grade_title": "Fichas para {g} – PDF para imprimir", "grade_h1": "Fichas para {g}", "grade_desc": "{n} fichas en español para {g}: PDF para imprimir, sin preparación y con solucionario – comprensión lectora y búsquedas del tesoro.",
   "crumb_home": "Inicio", "nav_label": "Navegación principal", "lang_label": "Idioma",
   "foot_tag": "Recursos que facilitan la enseñanza.",
-  "foot_sold": "Todos los recursos de esta página se venden en mi <a href=\"{store}\" rel=\"noopener\">tienda de Teachers Pay Teachers</a>.",
+  "foot_sold": "Los recursos en español se venden en mi <a href=\"{store}\" rel=\"noopener\">tienda de eduki</a> y, en parte, en Teachers Pay Teachers.",
   "legal": "Aviso legal (en alemán)", "privacy": "Privacidad (en alemán)",
   "home": "Inicio", "skip": "Saltar al contenido",
   "meta_ws": "Ficha de lectura", "meta_trail": "Búsqueda del tesoro", "meta_rw": "Juego de rol de matemáticas", "meta_bundle": "Paquete", "meta_other": "Recurso",
@@ -216,7 +216,7 @@ T = {
   "other_intro": "Cette page ne montre que des ressources en français. Tu trouveras ici mes ressources en anglais, en espagnol, en italien et en allemand.",
   "other_desc": "Ressources Snice dans d'autres langues : lectures et rallyes-lecture en anglais et en espagnol, fiches en italien et matériel en allemand.",
   "lang_blurb": {"en": "Lectures, rallyes-lecture et ateliers de maths en anglais, disponibles sur TpT.",
-                 "es": "Lectures et rallyes-lecture en espagnol, disponibles sur TpT.",
+                 "es": "Lectures et rallyes-lecture en espagnol, disponibles sur eduki et TpT.",
                  "it": "Fiches en italien avec texte à trous, compréhension orale et mots mêlés, disponibles sur eduki.",
                  "de": "Plus de {n} ressources en allemand avec corrigé, disponibles sur eduki.",
                  "fr": ""},
@@ -288,7 +288,7 @@ T = {
   "other_intro": "Questa pagina mostra solo materiali in italiano. Qui trovi i miei materiali in inglese, spagnolo, francese e tedesco.",
   "other_desc": "Materiali Snice in altre lingue: letture e cacce al tesoro in inglese e spagnolo, schede in francese e materiali in tedesco.",
   "lang_blurb": {"en": "Letture, cacce al tesoro di lettura e laboratori di matematica in inglese, disponibili su TpT.",
-                 "es": "Letture e cacce al tesoro di lettura in spagnolo, disponibili su TpT.",
+                 "es": "Letture e cacce al tesoro di lettura in spagnolo, disponibili su eduki e TpT.",
                  "fr": "Schede in francese con testo con spazi vuoti, ascolto e crucipuzzle, disponibili su eduki.",
                  "de": "Oltre {n} materiali in tedesco con soluzioni, disponibili su eduki.",
                  "it": ""},
@@ -318,7 +318,7 @@ DE_T = {"other": "Andere Sprachen", "other_long": "Material in anderen Sprachen"
         "other_desc": "Snice-Materialien in anderen Sprachen: englische und spanische Lesetexte und Lesespuren auf TpT, französische und italienische Arbeitsblätter auf eduki.",
         "other_intro": "Auf den deutschen Seiten stehen nur deutschsprachige Materialien. Hier findest du meine Materialien in Englisch, Spanisch, Französisch und Italienisch – jede Sprache hat eine eigene Seite.",
         "lang_blurb": {"en": "Englische Lesetexte, Lesespuren (Reading Trails) und Rechenwelten – erhältlich auf Teachers Pay Teachers.",
-                       "es": "Spanische Lesetexte, Arbeitsblätter und Lesespuren (Búsquedas del tesoro) – erhältlich auf Teachers Pay Teachers.",
+                       "es": "Spanische Lesetexte, Arbeitsblätter und Lesespuren (Búsquedas del tesoro) – erhältlich auf eduki und Teachers Pay Teachers.",
                        "fr": "Französische Arbeitsblätter mit Lückentext, Hörverstehen und Suchsel – erhältlich auf eduki.",
                        "it": "Italienische Arbeitsblätter mit Lückentext, Hörverstehen und Suchsel – erhältlich auf eduki."},
         "to_lang": "Zur Seite auf {l} →", "n_items": "{n} Materialien",
@@ -733,7 +733,7 @@ def render_combos(lang):
 
 # Sachtext-Auszuege (Skripte/_homepage_excerpts.py -> _excerpts.json): eigene Saetze je FR/IT-Arbeitsblatt
 _EXC = None
-EXC_H = {"fr": ("Extrait du texte", "Source"), "it": ("Estratto dal testo", "Fonte")}
+EXC_H = {"fr": ("Extrait du texte", "Source"), "it": ("Estratto dal testo", "Fonte"), "es": ("Extracto del texto", "Fuente")}
 
 
 def excerpt_of(lang, topic):
@@ -899,23 +899,79 @@ def eduki_item(m, lang):
     if not title or JUNK_RE.search(title):
         return None
     desc = (m.get("desc") or "").strip()
-    if blocked(title, desc[:600]):
+    topic = re.split(r"\s+[–-]\s+(?:Fiche|Scheda|Ficha)\b", title)[0].strip()
+    if blocked(topic, desc[:600]):   # 02.11.: Sperrliste auf das Thema; der Formatzusatz "comprensión auditiva" traf das Marken-Muster "audi"
         return None
-    topic = re.split(r"\s+[–-]\s+(?:Fiche|Scheda)\b", title)[0].strip()
     cat = cat_of(topic, desc[:400])
     gl = [g for g in (m.get("grades") or []) if g]
+    if lang == "es":   # 02.11.: eduki-ES-Stufen "5. PRIM"/"1. ESO" -> Landesschreibweise, kurze Slugs
+        gl = [re.sub(r"^(\d+)\.\s*PRIM$", r"\1.º de primaria", re.sub(r"^(\d+)\.\s*ESO$", r"\1.º de ESO", g.strip())) for g in gl]
     try:
         pnum = 0.0 if m.get("is_free") else float(m.get("price") or 0)
     except Exception:
         pnum = None
-    fam = "ws" if re.search(r"fiche|scheda|texte à trous|spazi vuoti", title, re.I) else "other"
+    fam = "ws" if re.search(r"fiche|scheda|ficha|texte à trous|spazi vuoti|texto con huecos", title, re.I) else "other"
+    gkeys = [slugify(g.replace(".º de ", "-").replace("º", "")) for g in gl]
+    glab = ", ".join(gl[:3])
+    if lang == "es":
+        ns = [int(x) for x in re.findall(r"(\d+)\.º de primaria", " ".join(gl))]
+        if len(ns) >= 2:
+            glab = f"{min(ns)}.º–{max(ns)}.º de primaria"
     return {"id": "e" + m["id"], "pid": m["id"], "lang": lang, "src": "eduki", "url": f"https://eduki.com/{lang}/{'materiale' if lang == 'it' else 'material'}/{m['id']}/{m.get('slug', '')}", "title": title, "name": title,
-            "topic": topic, "fam": fam, "cat": cat, "grades": [], "glabel": ", ".join(gl[:3]),
-            "gkeys": [slugify(g) for g in gl], "gnames": {slugify(g): g for g in gl},
+            "topic": topic, "fam": fam, "cat": cat, "grades": [], "glabel": glab,
+            "gkeys": gkeys, "gnames": dict(zip(gkeys, gl)),
             "season": seasons_of(topic), "date": (m.get("created") or "")[:10], "pnum": pnum, "cur": "EUR",
             "img": "", "eduki_cover": m.get("cover", ""), "desc_html": "".join(f"<p>{esc(x.strip())}</p>" for x in desc.split("\n") if x.strip()),
-            "meta_src": desc[:400], "pages": None, "subjects": [], "answer": bool(re.search(r"corrig|soluzion", title + " " + desc, re.I)),
+            "meta_src": desc[:400], "pages": None, "subjects": [], "answer": bool(re.search(r"corrig|soluzion|soluci", title + " " + desc, re.I)),
             "slug": slugify(topic)}
+
+
+# ------------------------------------------------------------------ 02.11.: Marktplaetze je Sprache
+ALT_BTN = {"en": "View on TpT", "es": "Ver en TpT (USD)", "fr": "Voir sur TpT (USD)", "it": "Vedi su TpT (USD)"}
+
+
+def _mk_norm(s):
+    import unicodedata
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+def merge_markets(out):
+    """/es/ /fr/ /it/: eduki ist Hauptmarktplatz. Gibt es dasselbe Thema als TpT-Listing (gleiche Sprache), wird es als
+    zweiter Button/Offer an das eduki-Material gehaengt und erscheint nicht mehr als eigene Seite. ES behaelt bei
+    Zusammenfuehrung die bisherige URL (TpT-ID im Pfad) und den reichhaltigeren TpT-Text. Italienische TpT-Listings stehen
+    im englischen Store (EN-Seiten bleiben), werden aber als Zweitbutton auf /it/ verlinkt."""
+    for lang in ("es", "fr", "it"):
+        ed = [it for it in out[lang] if it["src"] == "eduki"]
+        if not ed:
+            continue
+        if lang == "it":
+            pool = [it for it in out["en"] if re.search(r"\bItalian\b", it.get("name") or "")]
+        else:
+            pool = [it for it in out[lang] if it["src"] == "tpt"]
+        idx = {}
+        for t in pool:
+            if t["fam"] in ("ws", "other"):
+                idx.setdefault(_mk_norm(t["topic"]), t)
+        used = set()
+        for e in ed:
+            t = idx.get(_mk_norm(e["topic"]))
+            if not t or t["id"] in used:
+                continue
+            used.add(t["id"])
+            e["alt"] = {"url": t["url"], "pnum": t["pnum"], "cur": t["cur"], "pid": t["pid"]}
+            e["alt_ids"] = [t["pid"]]
+            if lang == "es":
+                e["path_pid"] = t["pid"]
+                if t.get("desc_html"):
+                    e["desc_html"], e["meta_src"] = t["desc_html"], t["meta_src"]
+                if t.get("pages"):
+                    e["pages"] = t["pages"]
+        if lang != "it":
+            out[lang] = ed + [t for t in pool if t["id"] not in used] + \
+                        [it for it in out[lang] if it["src"] not in ("eduki", "tpt")]
+        STATS.setdefault("markets", {})[lang] = {"eduki": len(ed), "mit_tpt": len(used),
+                                                 "nur_tpt": len([t for t in pool if t["id"] not in used]) if lang != "it" else 0}
 
 
 def load_items():
@@ -932,11 +988,12 @@ def load_items():
     ep = os.path.join(B.OUT, "_eduki_welten.json")
     if os.path.exists(ep):
         ew = json.load(open(ep, encoding="utf-8"))
-        for lang in ("fr", "it"):
+        for lang in ("fr", "it", "es"):
             for m in ew.get(lang) or []:
                 it = eduki_item(m, lang)
                 if it:
                     out[lang].append(it)
+    merge_markets(out)   # 02.11.: eduki Hauptbutton, TpT Zweitbutton; je Sprache keine eduki/TpT-Doppelseiten
     for lang, items in out.items():
         seen, uniq = set(), []
         for it in sorted(items, key=lambda x: (x["date"], x["pid"]), reverse=True):
@@ -948,7 +1005,11 @@ def load_items():
             sub = "tpt" if it["src"] == "tpt" else lang   # 27.10.: alle Vorschauen lokal (kein Drittanbieter-Cookie)
             img_local = os.path.join(B.OUT, "thumbs-i18n", sub, it["pid"] + ".webp")
             it["img"] = f"thumbs-i18n/{sub}/{it['pid']}.webp" if os.path.exists(img_local) else ""
-            it["path"] = f"p/{it['pid']}-{it['slug']}.html"
+            if not it["img"] and it.get("alt"):   # Vorschau des TpT-Listings, falls kein eigenes eduki-Thumb
+                alt_local = os.path.join(B.OUT, "thumbs-i18n", "tpt", it["alt"]["pid"] + ".webp")
+                if os.path.exists(alt_local):
+                    it["img"] = f"thumbs-i18n/tpt/{it['alt']['pid']}.webp"
+            it["path"] = f"p/{it.get('path_pid') or it['pid']}-{it['slug']}.html"
         out[lang] = uniq
     return out
 
@@ -1090,7 +1151,7 @@ def topnav_i18n(lang, key, depth):
         links.append((P["new"], t["new"]))
     links.append((P.get("other"), t["other"]))
     nav = "".join(f'<a href="{pre}{s}.html">{esc(n)}</a>' for s, n in links if s)
-    store = TPT_STORE if lang in ("en", "es") else B.SHOP.replace("/de/", f"/{lang}/")
+    store = TPT_STORE if lang == "en" else B.SHOP.replace("/de/", f"/{lang}/")
     return (f'<header class="topnav" id="topnav"><a class="brand" href="{pre}./" aria-label="Snice – {esc(t["home"])}">'
             f'<img src="{site_root(depth)}assets/logo-h.png" alt="Snice" width="303" height="97"></a>'
             f'<nav class="links" aria-label="{esc(t["nav_label"])}">{nav}<a href="{store}" target="_blank" rel="noopener">{esc(t["store"])}</a></nav>'
@@ -1099,7 +1160,7 @@ def topnav_i18n(lang, key, depth):
 
 def foot_i18n(lang, depth):
     t = T[lang]; pre = lang_root(lang, depth); root = site_root(depth); P = PAGES.get(lang, {})
-    store = TPT_STORE if lang in ("en", "es") else B.SHOP.replace("/de/", f"/{lang}/")
+    store = TPT_STORE if lang == "en" else B.SHOP.replace("/de/", f"/{lang}/")
     cats = " · ".join(f'<a href="{pre}{P["cat:" + c]}.html">{esc(CAT_NAME[lang][c])}</a>' for c in CATS if P.get("cat:" + c))
     grades = " · ".join(f'<a href="{pre}{s}.html">{esc(n)}</a>' for k, (s, n, _o) in sorted(STATS.get("grade_pages", {}).get(lang, {}).items(), key=lambda kv: kv[1][2]))
     kinds = " · ".join(f'<a href="{pre}{P[k]}.html">{esc(t[k])}</a>' for k in ("all", "free", "trails", "rw", "ws", "bundle", "new", "fall", "winter", "other") if P.get(k))
@@ -1336,7 +1397,7 @@ def hero(lang, items):
     ntr = sum(1 for it in items if it["fam"] == "trails")
     if t.get("trust_trails") and ntr >= 20:
         trust.insert(1, t["trust_trails"].format(n=ntr // 10 * 10))
-    store = TPT_STORE if lang in ("en", "es") else B.SHOP.replace("/de/", f"/{lang}/")
+    store = TPT_STORE if lang == "en" else B.SHOP.replace("/de/", f"/{lang}/")
     STATS.setdefault("grange", {})[lang] = g
     return f"""<section class="hero2{'' if imgs else ' noimg'}">
 <div class="h2text">
@@ -1585,6 +1646,7 @@ def price_html(it, lang):
 def render_detail(lang, it, related):
     t = T[lang]; P = PAGES[lang]; url = f"{SITE}/{lang}/{it['path']}"
     btn = t["btn_buy"] if it["src"] == "tpt" else t["btn_buy_eduki"]
+    alt = it.get("alt")   # 02.11.: zweiter Marktplatz (TpT, USD)
     md = re.sub(r"\s+", " ", it["meta_src"]).strip()
     md = (md[:155].rsplit(" ", 1)[0] + " …") if len(md) > 158 else md
     cat_slug = P.get("cat:" + it["cat"])
@@ -1599,9 +1661,16 @@ def render_detail(lang, it, related):
     crumbs.append((it["title"], url)); crumb_html += "</nav>"
     img = img_of(it, 1)
     abs_img = it["img"] if it["img"].startswith("http") else (f"{SITE}/{it['img']}" if it["img"] else f"{SITE}/assets/logo.png")
-    offer = {"@type": "Offer", "url": it["url"], "availability": "https://schema.org/InStock"}
+    offer = {"@type": "Offer", "url": it["url"], "availability": "https://schema.org/InStock",
+             "seller": {"@type": "Organization", "name": "eduki" if it["src"] == "eduki" else "Teachers Pay Teachers"}}
     if it["pnum"] is not None:
         offer.update({"price": f"{it['pnum']:.2f}", "priceCurrency": it["cur"]})
+    if alt:
+        o2 = {"@type": "Offer", "url": alt["url"], "availability": "https://schema.org/InStock",
+              "seller": {"@type": "Organization", "name": "Teachers Pay Teachers"}}
+        if alt.get("pnum") is not None:
+            o2.update({"price": f"{alt['pnum']:.2f}", "priceCurrency": alt.get("cur") or "USD"})
+        offer = [offer, o2]
     prod = {"@context": "https://schema.org", "@type": ["Product", "LearningResource"], "name": it["title"], "description": md, "image": abs_img,
             "url": url, "sku": it["pid"], "brand": {"@type": "Brand", "name": "Snice"}, "inLanguage": lang,
             "category": CAT_NAME[lang][it["cat"]], "learningResourceType": LR_TYPE[lang], "encodingFormat": "application/pdf",
@@ -1637,7 +1706,7 @@ def render_detail(lang, it, related):
 <div>
 <h1>{esc(it["title"])}</h1>
 <p class="meta">{esc(" · ".join(x for x in (CAT_NAME[lang][it["cat"]], it["glabel"], typ) if x))}</p>
-<div class="buy"><span class="price">{esc(price_html(it, lang))}</span><a class="btn" href="{esc(it["url"])}" target="_blank" rel="noopener">{esc(btn)}</a></div>
+<div class="buy"><span class="price">{esc(price_html(it, lang))}</span><a class="btn" href="{esc(it["url"])}" target="_blank" rel="noopener">{esc(btn)}</a>{f'<a class="btn ghost" href="{esc(alt["url"])}" target="_blank" rel="noopener">{esc(ALT_BTN[lang])}</a>' if alt else ""}</div>
 <div class="desc">{it["desc_html"]}</div>
 {exc_html}
 <div class="facts">{facts_html}</div>
@@ -1676,9 +1745,13 @@ def write_link_index():
     db = {"de": {}}
     for m in B.katalog_de():
         if m["id"] in B.MAT_PAGES:
-            db["de"][str(m["id"])] = [f"{SITE}/{B.MAT_PAGES[m['id']]}", m["title"], "eduki"]
-    for lang in FOREIGN:
-        db[lang] = {str(it["pid"]): [f"{SITE}/{lang}/{it['path']}", it["title"], it["src"]] for it in ITEMS.get(lang, [])}
+            db["de"][str(m["id"])] = [f"{SITE}/{B.MAT_PAGES[m['id']]}", m["title"], "eduki", f"{B.EDUKI_MAT}/{m['id']}/{m.get('slug', '')}", ""]
+    for lang in FOREIGN:   # [Homepage-URL, Titel, Hauptmarktplatz, Marktplatz-URL, TpT-Zweit-URL]; eduki- und TpT-ID zeigen auf dieselbe Seite
+        db[lang] = {}
+        for it in ITEMS.get(lang, []):
+            row = [f"{SITE}/{lang}/{it['path']}", it["title"], it["src"], it["url"], (it.get("alt") or {}).get("url", "")]
+            for k in [it["pid"]] + list(it.get("alt_ids") or []):
+                db[lang].setdefault(str(k), row)
     with open(os.path.join(B.OUT, "_homepage_links.json"), "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, separators=(",", ":"))
 

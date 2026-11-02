@@ -2410,8 +2410,8 @@ die passende Sprachversion vor. Wählst du eine Sprache über den Umschalter, wi
 (localStorage) abgelegt, damit die Wahl beim nächsten Besuch erhalten bleibt. Es wird kein Cookie gesetzt und nichts an mich übertragen; du kannst
 den Eintrag jederzeit über die Browser-Einstellungen löschen (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
 <p>Die Vorschaubilder der englischen, spanischen, französischen und italienischen Seiten liefert diese Website selbst aus.
-Über die Schaltflächen „View on TpT“ bzw. „Ver en TpT“ gelangst du auf teacherspayteachers.com (Teachers Pay Teachers Inc., USA),
-über „Voir sur eduki“ bzw. „Vedi su eduki“ auf eduki.com; dort gelten die Datenschutzhinweise des jeweiligen Marktplatzes.</p>
+Über die Schaltflächen „View on TpT“, „Ver en TpT“, „Voir sur TpT“ bzw. „Vedi su TpT“ gelangst du auf teacherspayteachers.com (Teachers Pay Teachers Inc., USA),
+über „Ver en eduki“, „Voir sur eduki“ bzw. „Vedi su eduki“ auf eduki.com; beide öffnen sich in einem neuen Tab. Dort gelten die Datenschutzhinweise des jeweiligen Marktplatzes.</p>
 <h2>Kontakt per E-Mail</h2>
 <p>Wenn du mir eine E-Mail schreibst, verarbeite ich deine Angaben ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO)
 und lösche sie, sobald sie nicht mehr benötigt werden.</p>
