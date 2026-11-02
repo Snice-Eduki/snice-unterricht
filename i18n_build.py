@@ -624,6 +624,128 @@ def seo_desc_i18n(lang, it, md):
     return s if len(s) <= 158 else s[:155].rsplit(" ", 1)[0].rstrip(" ,;:–-") + " …"
 
 
+# ------------------------------------------------------------------ SEO 02.11.: Fach×Klasse / Linie×Klasse je Sprache
+CG_MIN = 8            # Mindestzahl Materialien je Kombiseite
+CG_MAX_SHARE = 0.85   # Kombi deckt >= 85 % der Fachseite ab -> keine eigene Seite (waere Duplikat der Fachseite)
+CG_T = {
+ "en": {"cat_t": "{s} Worksheets for {g} – Printable PDF", "cat_h": "{g} {s} Worksheets",
+        "fam_t": "{s} for {g} – Printable PDF", "fam_h": "{s} – {g}",
+        "desc": "{n} printable {s} resources for {g} (PDF) with answer keys – no prep. Topics include {ex}.",
+        "intro": "{n} {s} resources for {g}, ready to print: {ex} and more. Each resource page shows the grade range, page count and a preview and links straight to the product on {store}.",
+        "by_grade": "By grade", "by_subject": "By subject"},
+ "es": {"cat_t": "Fichas de {s} para {g} – PDF para imprimir", "cat_h": "Fichas de {s} – {g}",
+        "fam_t": "{s} para {g} – PDF para imprimir", "fam_h": "{s} – {g}",
+        "desc": "{n} recursos de {s} para {g} en español (PDF) con solucionario, sin preparación. Temas: {ex}.",
+        "intro": "{n} recursos de {s} para {g}, listos para imprimir: {ex} y más. Cada ficha muestra el nivel, el número de páginas y una vista previa, y enlaza directamente al producto en {store}.",
+        "by_grade": "Por grado", "by_subject": "Por tema"},
+ "fr": {"cat_t": "Fiches {s} {g} à imprimer (PDF)", "cat_h": "Fiches {s} – {g}",
+        "fam_t": "{s} {g} à imprimer (PDF)", "fam_h": "{s} – {g}",
+        "desc": "{n} fiches {s} pour le niveau {g} (PDF) avec corrigé, prêtes à imprimer. Thèmes : {ex}.",
+        "intro": "{n} fiches {s} pour le niveau {g}, prêtes à imprimer : {ex} et bien d'autres. Chaque fiche indique le niveau, le nombre de pages et un aperçu, avec un lien direct vers {store}.",
+        "by_grade": "Par niveau", "by_subject": "Par thème"},
+ "it": {"cat_t": "Schede didattiche {s} {g} da stampare (PDF)", "cat_h": "Schede didattiche {s} – {g}",
+        "fam_t": "{s} {g} da stampare (PDF)", "fam_h": "{s} – {g}",
+        "desc": "{n} schede di {s} per {g} (PDF) con soluzioni, pronte da stampare. Temi: {ex}.",
+        "intro": "{n} schede di {s} per {g}, pronte da stampare: {ex} e molte altre. Ogni scheda mostra il livello, il numero di pagine e un'anteprima, con link diretto a {store}.",
+        "by_grade": "Per classe", "by_subject": "Per tema"},
+}
+
+
+def plan_combos(lang, P, items, gp):
+    """Fach×Klasse ('cg:<cat>:<g>') und Linie×Klasse ('fg:<fam>:<g>', z. B. Reading Trails je Klasse).
+    Schutz vor Duplikaten: keine Kombi, die fast die ganze Fach-/Linienseite ist oder einer anderen Kombi gleicht."""
+    combos = {}
+    gl = sorted(gp.items(), key=lambda kv: kv[1][2])
+    for kind, groups in (("cg", [(c, [it for it in items if it["cat"] == c]) for c in CATS if P.get("cat:" + c)]),
+                         ("fg", [(f, [it for it in items if it["fam"] == f]) for f in ("trails", "rw", "ws") if P.get(f)])):
+        for grp, base in groups:
+            seen = []
+            for key, (gslug, nm, o) in gl:
+                g = key.split(":", 1)[1]
+                sel = [it for it in base if g in it["gkeys"]]
+                if len(sel) < CG_MIN:
+                    continue
+                ids = frozenset(it["id"] for it in sel)
+                if len(ids) >= CG_MAX_SHARE * len(base):
+                    continue
+                if any(len(ids & x) >= CG_MAX_SHARE * min(len(ids), len(x)) for x in seen):
+                    continue
+                seen.append(ids)
+                k = f"{kind}:{grp}:{g}"
+                P[k] = (P["cat:" + grp] if kind == "cg" else P[grp]) + "-" + gslug
+                combos[k] = (kind, grp, g, nm)
+    STATS.setdefault("combos", {})[lang] = combos
+
+
+def combo_name(lang, kind, grp):
+    return CAT_NAME[lang][grp] if kind == "cg" else T[lang][grp]
+
+
+def combo_links(lang, depth, grp=None, g=None, it=None):
+    """Linkzeile: auf Fach-/Linienseiten die Klassen, auf Klassenseiten die Faecher, auf Detailseiten passende Kombis."""
+    P = PAGES[lang]; pre = "../" * depth; out = []
+    for k, (kind, gg, gk, nm) in STATS.get("combos", {}).get(lang, {}).items():
+        if it is not None:
+            if not ((kind == "cg" and gg == it["cat"]) or (kind == "fg" and gg == it["fam"])) or gk not in it["gkeys"]:
+                continue
+            lab = f"{combo_name(lang, kind, gg)} – {grade_seo(lang, gk, nm)}"
+        elif grp is not None:
+            if gg != grp:
+                continue
+            lab = grade_seo(lang, gk, nm)
+        elif g is not None:
+            if gk != g:
+                continue
+            lab = combo_name(lang, kind, gg)
+        else:
+            continue
+        out.append(f'<a href="{pre}{P[k]}.html">{esc(lab)}</a>')
+    return out
+
+
+def combo_links_html(lang, grp=None, g=None):
+    l = combo_links(lang, 0, grp=grp, g=g)
+    if not l:
+        return ""
+    lab = CG_T[lang]["by_grade"] if grp is not None else CG_T[lang]["by_subject"]
+    return f'<p class="more"><strong>{esc(lab)}:</strong> {" · ".join(l)}</p>'
+
+
+def render_combos(lang):
+    t = T[lang]; P = PAGES[lang]; C = CG_T[lang]
+    for k, (kind, grp, g, nm) in STATS.get("combos", {}).get(lang, {}).items():
+        sel = sort_items([it for it in ITEMS[lang] if (it["cat"] == grp if kind == "cg" else it["fam"] == grp) and g in it["gkeys"]])
+        sname = combo_name(lang, kind, grp); gname = grade_seo(lang, g, nm)
+        ex = []
+        for it in newest(sel, 40):
+            tp = (it["topic"] or it["title"]).strip()
+            if tp and tp not in ex and len(tp) <= 40:
+                ex.append(tp)
+            if len(ex) >= 4:
+                break
+        store = "TpT" if sum(1 for it in sel if it["src"] == "tpt") * 2 >= len(sel) else "eduki"
+        f = dict(s=sname, g=gname, n=len(sel), ex=", ".join(ex), store=store)
+        title = (C["cat_t"] if kind == "cg" else C["fam_t"]).format(**f)
+        h1 = (C["cat_h"] if kind == "cg" else C["fam_h"]).format(**f)
+        filt = (f"c:{grp}" if kind == "cg" else f"t:{grp}") + f" g:{g}"
+        grid_page(lang, k, P[k], title, h1, C["desc"].format(**f), C["intro"].format(**f), sel, filt=filt, chip_kinds=())
+
+
+# Sachtext-Auszuege (Skripte/_homepage_excerpts.py -> _excerpts.json): eigene Saetze je FR/IT-Arbeitsblatt
+_EXC = None
+EXC_H = {"fr": ("Extrait du texte", "Source"), "it": ("Estratto dal testo", "Fonte")}
+
+
+def excerpt_of(lang, topic):
+    global _EXC
+    if _EXC is None:
+        try:
+            _EXC = json.load(open(os.path.join(B.OUT, "_excerpts.json"), encoding="utf-8"))
+        except Exception:
+            _EXC = {}
+    return (_EXC.get(lang) or {}).get(topic)
+
+
 # ------------------------------------------------------------------ Items
 def tpt_lang(d):
     """Materialsprache: zuerst Upload-Familie, sonst Titelmuster der Reihen (NICHT nur 'Spanish'/'French' im Titel:
@@ -971,7 +1093,7 @@ def topnav_i18n(lang, key, depth):
     store = TPT_STORE if lang in ("en", "es") else B.SHOP.replace("/de/", f"/{lang}/")
     return (f'<header class="topnav" id="topnav"><a class="brand" href="{pre}./" aria-label="Snice – {esc(t["home"])}">'
             f'<img src="{site_root(depth)}assets/logo-h.png" alt="Snice" width="303" height="97"></a>'
-            f'<nav class="links" aria-label="{esc(t["nav_label"])}">{nav}<a href="{store}" rel="noopener">{esc(t["store"])}</a></nav>'
+            f'<nav class="links" aria-label="{esc(t["nav_label"])}">{nav}<a href="{store}" target="_blank" rel="noopener">{esc(t["store"])}</a></nav>'
             f'{switcher(key, lang, site_root(depth))}</header>')
 
 
@@ -1043,7 +1165,8 @@ GRID_JS = """<script>
   var img=src?'<div class="card-img"><img loading="lazy" decoding="async" src="'+esc(src)+'" alt="'+t+'" width="247" height="350"></div>'
    :'<div class="card-img"><div class="ph">'+esc(m[5])+'</div></div>';
   return '<a class="card" href="'+esc(PRE+m[1])+'">'+img+'<div class="card-body"><h3>'+t+'</h3>'+(m[3]?'<p class="card-meta">'+esc(m[3])+'</p>':'')+'</div></a>';}
- function ok(m){return (!F||m[4].indexOf(' '+F+' ')>-1)&&(!chip||m[4].indexOf(' '+chip+' ')>-1)&&(!term||m[6].indexOf(term)>-1);}
+ function okF(m){if(!F)return true;var fs=F.split(' ');for(var i=0;i<fs.length;i++)if(m[4].indexOf(' '+fs[i]+' ')<0)return false;return true;}
+ function ok(m){return okF(m)&&(!chip||m[4].indexOf(' '+chip+' ')>-1)&&(!term||m[6].indexOf(term)>-1);}
  function show(reset){js=true;if(reset){g.innerHTML='';shown=0;view=all.filter(ok);}
   var h='',part=view.slice(shown,shown+PAGE);for(var i=0;i<part.length;i++)h+=card(part[i]);
   g.insertAdjacentHTML('beforeend',h);shown+=part.length;
@@ -1185,6 +1308,7 @@ def plan(lang):
             P[key] = slug
             gp[key] = (slug, names[g][0], names[g][1])
     STATS.setdefault("grade_pages", {})[lang] = gp
+    plan_combos(lang, P, items, gp)   # SEO 02.11.
     PAGES[lang] = P
 
 
@@ -1220,7 +1344,7 @@ def hero(lang, items):
 <h1>{esc(t["h1a"])}<br><span>{esc(t["h1b"])}</span></h1>
 <p class="sub">{esc(t["hero_sub"].format(n=f"{nr:,}" if lang == "en" else f"{nr:,}".replace(",", "."), g=g))}</p>
 {search_box(lang, form=True)}
-<p class="btnrow"><a class="btn" href="{store}" rel="noopener">{esc(t["btn_store"])}</a><a class="btn ghost" href="{PAGES[lang]["all"]}.html">{esc(t["btn_all"])}</a></p>
+<p class="btnrow"><a class="btn" href="{store}" target="_blank" rel="noopener">{esc(t["btn_store"])}</a><a class="btn ghost" href="{PAGES[lang]["all"]}.html">{esc(t["btn_all"])}</a></p>
 <ul class="trust">{"".join(f"<li>{x}</li>" for x in trust)}</ul>
 </div>
 <div class="collage">{imgs}</div>
@@ -1501,6 +1625,10 @@ def render_detail(lang, it, related):
             links.append(f'<a href="../{s}.html">{esc(nm)}</a>')
     if fam_slug:
         links.append(f'<a href="../{fam_slug}.html">{esc(t[it["fam"]])}</a>')
+    links += combo_links(lang, 1, it=it)   # SEO 02.11.: Fach×Klasse / Linie×Klasse
+    exc = excerpt_of(lang, it["topic"]) if it["src"] == "eduki" and lang in EXC_H else None
+    exc_html = (f'<h2>{esc(EXC_H[lang][0])}</h2><blockquote class="excerpt"><p>{esc(exc["x"])} […]</p></blockquote>'
+                + (f'<p class="meta">{esc(exc["src"])}</p>' if exc.get("src") else "")) if exc else ""
     body = f"""{B.MAT_CSS}
 <main class="mat" id="main">
 {crumb_html}
@@ -1509,8 +1637,9 @@ def render_detail(lang, it, related):
 <div>
 <h1>{esc(it["title"])}</h1>
 <p class="meta">{esc(" · ".join(x for x in (CAT_NAME[lang][it["cat"]], it["glabel"], typ) if x))}</p>
-<div class="buy"><span class="price">{esc(price_html(it, lang))}</span><a class="btn" href="{esc(it["url"])}" rel="noopener">{esc(btn)}</a></div>
+<div class="buy"><span class="price">{esc(price_html(it, lang))}</span><a class="btn" href="{esc(it["url"])}" target="_blank" rel="noopener">{esc(btn)}</a></div>
 <div class="desc">{it["desc_html"]}</div>
+{exc_html}
 <div class="facts">{facts_html}</div>
 <p class="meta">{esc(t["overview"])}: {" · ".join(links)}</p>
 </div>
@@ -1518,7 +1647,8 @@ def render_detail(lang, it, related):
 {f'<h2>{esc(t["related"])}</h2><div class="grid">' + "".join(card(r, lang, 1) for r in related) + "</div>" if related else ""}
 </main>
 """
-    out = head_i18n(lang, seo_title_i18n(lang, it), seo_desc_i18n(lang, it, md), url, None, 1, [prod, breadcrumb_ld(crumbs)], og_img=abs_img)
+    out = head_i18n(lang, seo_title_i18n(lang, it), seo_desc_i18n(lang, dict(it, meta_src=exc["x"]) if exc else it, md), url, None, 1,
+                    [prod, breadcrumb_ld(crumbs)], og_img=abs_img)
     write(lang, it["path"], out + body + foot_i18n(lang, 1))
     SITEMAP_URLS[lang].append((url, None))
 
@@ -1538,6 +1668,19 @@ def render_details(lang):
     for f in glob.glob(os.path.join(B.OUT, lang, "p", "*.html")):
         if os.path.normcase(f) not in keep:
             os.remove(f)
+
+
+def write_link_index():
+    """_homepage_links.json (Repo-Wurzel, .gitignore): {lang: {"<marktplatz-id>": [url, titel, quelle]}} fuer
+    Skripte/_homepage_link.py -> homepage_link_fuer(produkt_id|titel, sprache). DE = eduki-ID, EN/ES = TpT-ID, FR/IT = eduki-ID."""
+    db = {"de": {}}
+    for m in B.katalog_de():
+        if m["id"] in B.MAT_PAGES:
+            db["de"][str(m["id"])] = [f"{SITE}/{B.MAT_PAGES[m['id']]}", m["title"], "eduki"]
+    for lang in FOREIGN:
+        db[lang] = {str(it["pid"]): [f"{SITE}/{lang}/{it['path']}", it["title"], it["src"]] for it in ITEMS.get(lang, [])}
+    with open(os.path.join(B.OUT, "_homepage_links.json"), "w", encoding="utf-8") as f:
+        json.dump(db, f, ensure_ascii=False, separators=(",", ":"))
 
 
 def write_index(lang):
@@ -1701,19 +1844,21 @@ def render():
         for f in ("trails", "rw", "ws", "bundle"):
             if P.get(f):
                 sel = sort_items([it for it in items if it["fam"] == f])
-                grid_page(lang, f, P[f], t["fam_title"][f], t[f], t["fam_blurb"][f], t["fam_blurb"][f], sel, filt=f"t:{f}")
+                grid_page(lang, f, P[f], t["fam_title"][f], t[f], t["fam_blurb"][f], t["fam_blurb"][f], sel, filt=f"t:{f}",
+                          extra_html=combo_links_html(lang, grp=f))
         for c in CATS:
             if P.get("cat:" + c):
                 sel = sort_items([it for it in items if it["cat"] == c]); nm = CAT_NAME[lang][c]
                 grid_page(lang, "cat:" + c, P["cat:" + c], t["subj_title"].format(s=nm), t["subj_h1"].format(s=nm),
                           t["subj_desc"].format(s=nm if lang != "en" else nm, n=len(sel)), t["subj_desc"].format(s=nm, n=len(sel)), sel,
-                          filt=f"c:{c}", chip_kinds=("g",))
+                          filt=f"c:{c}", chip_kinds=("g",), extra_html=combo_links_html(lang, grp=c))
         for key, (slug, nm, o) in STATS["grade_pages"][lang].items():
             g = key.split(":", 1)[1]
             sel = sort_items([it for it in items if g in it["gkeys"]])
             gl = grade_seo(lang, g, nm)   # SEO 01.11.: "3rd Grade", "3.er grado (3.º de primaria)", "6e année", "classe quarta primaria"
             grid_page(lang, key, slug, t["grade_title"].format(g=gl), t["grade_h1"].format(g=gl), t["grade_desc"].format(g=gl, n=len(sel)),
-                      t["grade_desc"].format(g=gl, n=len(sel)), sel, filt=f"g:{g}", chip_kinds=("c",))
+                      t["grade_desc"].format(g=gl, n=len(sel)), sel, filt=f"g:{g}", chip_kinds=("c",), extra_html=combo_links_html(lang, g=g))
+        render_combos(lang)   # SEO 02.11.
         render_other(lang)
         render_details(lang)
         write_index(lang)
@@ -1723,6 +1868,7 @@ def render():
         stats[lang] = {"items": len(items), "pages": len(SITEMAP_URLS[lang])}
     render_other_de()
     render_free_de()
+    write_link_index()   # 02.11.: Produkt-ID/Titel -> Homepage-Detailseite je Sprache (Skripte/_homepage_link.py)
     files, today = write_sitemaps()
     STATS["render"] = stats
     return files, today

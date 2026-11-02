@@ -197,7 +197,7 @@ def topnav(root="", url=""):
             f'<a href="{root}pruefungstraining.html">Prüfungstraining</a>'
             f'{saison}'
             f'<a href="{root}blog.html">Blog</a>'
-            f'<a href="{SHOP}" rel="noopener">eduki-Shop</a>'
+            f'<a href="{SHOP}" target="_blank" rel="noopener">eduki-Shop</a>'
             f'<a href="{root}material-in-anderen-sprachen.html">Andere Sprachen</a>'
             f'<a href="{root}ueber-mich.html">Über mich</a>'
             f'</nav>{I18N_SWITCH(url, root)}</header>')
@@ -997,8 +997,9 @@ def render_line_pages():
               "und Musterlösungen – Biologie, Chemie, Physik, Geschichte, Erdkunde, Politik und mehr.",
               "Jedes Paket bündelt das Wesentliche eines Lehrplanthemas: Zusammenfassung, Aufgaben in Prüfungsform, "
               "Lösungen. Ideal zur Vorbereitung auf Schulaufgaben, Klassenarbeiten und Abschlussprüfungen.",
-              pt, [], itemlist_name="Prüfungstraining",
+              pt, [], itemlist_name="Prüfungstraining", links_html=pt_sub_links(pt),
               editorial=editorial_block(PT_SECTIONS, PT_FAQ), faq=PT_FAQ)
+    render_pt_sub_pages(pt)   # SEO 02.11.: Prüfungsvorbereitung je Klasse/Fach
     grid_page("lueckentexte", "Lückentexte mit Wortspeicher, Hörverstehen und Suchsel",
               "Lückentexte mit Hörverstehen",
               f"{nfmt(len(lt))} Lückentexte mit Wortspeicher, Hörverstehen per QR-Code und Suchsel – mit Musterlösung, "
@@ -1016,6 +1017,171 @@ def render_line_pages():
                   "Ready-to-use worksheets for English lessons: cloze text, listening comprehension and word search, each with answer key.",
                   en, [], with_fach=False, itemlist_name="English Worksheets")
     return len(pt), len(lt), len(gratis), len(en)
+
+
+# ---------------------------------------------------------------- SEO 02.11.: neue Linien-Hubs
+PT_SUB_MIN = 8
+
+
+def pt_sub_pages(pt):
+    """Pruefungstraining je Klasse (>= 8) und je Fach (>= 10): 'Prüfungsvorbereitung Biologie', 'Prüfungstraining Klasse 9'."""
+    by_kl = collections.defaultdict(list); by_f = collections.defaultdict(list)
+    for m in pt:
+        for n in grade_nums(as_list(m.get("grades"))):
+            by_kl[n].append(m)
+        if m.get("fach"):
+            by_f[m["fach"]].append(m)
+    kl = sorted(n for n, v in by_kl.items() if len(v) >= PT_SUB_MIN)
+    fa = sorted((f for f, v in by_f.items() if len(v) >= 10), key=lambda f: -len(by_f[f]))
+    return kl, fa, by_kl, by_f
+
+
+def render_pt_sub_pages(pt):
+    kl, fa, by_kl, by_f = pt_sub_pages(pt)
+    crumbs = [("Prüfungstraining", SITE + "/pruefungstraining.html")]
+    for n in kl:
+        v = by_kl[n]; fs = sorted({m.get("fach") for m in v if m.get("fach")})
+        grid_page(f"pruefungstraining-klasse-{n}", f"Prüfungstraining Klasse {n} – Prüfungsvorbereitung mit Lösungen (PDF)",
+                  f"Prüfungstraining Klasse {n}",
+                  f"{len(v)} Prüfungstrainings für Klasse {n}: Zusammenfassung, Übungsaufgaben in Prüfungsform und Musterlösungen – "
+                  f"{', '.join(fs[:6])}.",
+                  f"Gezielte Prüfungsvorbereitung für die {n}. Klasse: Jedes Paket fasst ein Lehrplanthema kompakt zusammen, "
+                  f"übt es mit Aufgaben im Stil von Schulaufgabe, Klassenarbeit und Abschlussprüfung und liefert die Lösungen mit. "
+                  f"Fächer: {', '.join(fs)}.",
+                  v, crumbs, with_kl=False, itemlist_name=f"Prüfungstraining Klasse {n}")
+    for f in fa:
+        v = by_f[f]; ns = sorted({n for m in v for n in grade_nums(as_list(m.get("grades")))})
+        kls = f"Klasse {ns[0]}–{ns[-1]}" if len(ns) > 1 else (f"Klasse {ns[0]}" if ns else "")
+        beisp = ", ".join(re.split(r" – ", m["title"])[0] for m in sort_mats(v)[:4])
+        grid_page(f"pruefungsvorbereitung-{slugify(f)}", f"Prüfungsvorbereitung {f} {kls} – Prüfungstraining mit Lösungen",
+                  f"Prüfungsvorbereitung {f}",
+                  f"{len(v)} Prüfungstrainings {f} ({kls}): Zusammenfassung, Aufgaben in Prüfungsform, Musterlösungen – z. B. {beisp}.",
+                  f"Alle Prüfungstrainings für {f} an einem Ort – {kls}. Themen u. a.: {beisp}. Jedes Paket ist kopierfertig "
+                  "und enthält ausführliche Lösungen zur Selbstkontrolle.",
+                  v, crumbs, with_fach=False, itemlist_name=f"Prüfungsvorbereitung {f}")
+    return kl, fa
+
+
+def pt_sub_links(pt):
+    kl, fa, _, _ = pt_sub_pages(pt)
+    if not kl and not fa:
+        return ""
+    a = " · ".join(f'<a href="pruefungstraining-klasse-{n}.html">Klasse {n}</a>' for n in kl)
+    b = " · ".join(f'<a href="pruefungsvorbereitung-{slugify(f)}.html">{html.escape(f)}</a>' for f in fa)
+    return (f'<p class="more"><strong>Nach Klasse:</strong> {a}</p>' if a else "") + \
+           (f'<p class="more"><strong>Nach Fach:</strong> {b}</p>' if b else "")
+
+
+# Berufsschule (Lernpakete aus Skripte/_berufsschule_serie.py) + Lernvideos (YouTube, yt.json)
+BS_ROOT = r"C:\Claude-Arbeitsblätter\Berufsschule"
+BS_MIN_HUB = 3       # erst ab 3 live gegangenen Lernpaketen eine Berufsschul-Seite (kein Thin Content)
+LV_MIN_HUB = 3       # erst ab 3 veroeffentlichten Lernvideos eine Lernvideo-Seite
+_LP = None
+
+
+def lernpakete():
+    """Live-Lernpakete: spec.json + (eduki_meta.json mit eduki_id und/oder yt.json mit url)."""
+    global _LP
+    if _LP is not None:
+        return _LP
+    _LP = []
+    for sp in glob.glob(os.path.join(BS_ROOT, "*", "*", "spec.json")):
+        d = os.path.dirname(sp)
+        try:
+            S = json.load(open(sp, encoding="utf-8"))
+        except Exception:
+            continue
+        def _j(n):
+            try:
+                return json.load(open(os.path.join(d, n), encoding="utf-8"))
+            except Exception:
+                return {}
+        em, yt, ym = _j("eduki_meta.json"), _j("yt.json"), _j("yt_meta.json")
+        eid = str(em.get("eduki_id") or "")
+        if not eid and not yt.get("url"):
+            continue
+        _LP.append({"spec": S, "eduki_id": eid, "eduki_url": f"{EDUKI_MAT}/{eid}" if eid else "",
+                    "yt_id": yt.get("id") or "", "yt_url": yt.get("url") or "",
+                    "yt_titel": ym.get("titel") or yt.get("titel") or S.get("thema", ""),
+                    "yt_desc": ym.get("beschreibung") or "", "datum": datetime.date.fromtimestamp(
+                        os.path.getmtime(os.path.join(d, "yt.json" if yt else "eduki_meta.json"))).isoformat()})
+    return _LP
+
+
+def _lp_card(e):
+    S = e["spec"]
+    lf = f'Lernfeld {S.get("lernfeld_nr")}: {S.get("lernfeld_titel", "")}' if S.get("lernfeld_nr") else ""
+    links = []
+    if e["eduki_url"]:
+        links.append(f'<a class="btn" href="{html.escape(e["eduki_url"])}" target="_blank" rel="noopener">Lernpaket auf eduki</a>')
+    if e["yt_url"]:
+        links.append(f'<a class="more" href="{html.escape(e["yt_url"])}" target="_blank" rel="noopener">Erklärvideo ansehen</a>')
+    return (f'<article class="tile"><h3>{html.escape(S.get("thema", ""))}</h3>'
+            f'<p class="card-meta">{html.escape(S.get("beruf_kurz") or S.get("beruf", ""))}{" · " + html.escape(lf) if lf else ""}'
+            f'{" · " + html.escape(S.get("jahrgang", "")) if S.get("jahrgang") else ""}</p>'
+            f'<p class="btnrow">{" ".join(links)}</p></article>')
+
+
+def render_berufsschule_lernvideos():
+    lp = lernpakete(); urls = []
+    if len(lp) >= BS_MIN_HUB:
+        by_b = collections.defaultdict(list)
+        for e in lp:
+            by_b[e["spec"].get("beruf_kurz") or e["spec"].get("beruf") or "Weitere Berufe"].append(e)
+        blinks = []
+        for b, v in sorted(by_b.items()):
+            sl = "berufsschule-" + slugify(b)
+            if len(v) >= BS_MIN_HUB:
+                blinks.append(f'<a href="{sl}.html">{html.escape(b)}</a>')
+                lfs = collections.defaultdict(list)
+                for e in v:
+                    lfs[(str(e["spec"].get("lernfeld_nr") or ""), e["spec"].get("lernfeld_titel") or "")].append(e)
+                sec = "".join(f'<h2>{html.escape(("Lernfeld " + nr + ": " if nr else "") + tit)}</h2><div class="tiles">'
+                              + "".join(_lp_card(e) for e in es) + "</div>"
+                              for (nr, tit), es in sorted(lfs.items(), key=lambda x: (len(x[0][0]), x[0][0])))
+                url = f"{SITE}/{sl}.html"; h1 = f"Berufsschule {b}: Lernfelder mit Unterrichtsmaterial"
+                out = head(f"{b} Berufsschule – Lernfeld-Material & Erklärvideos (PDF)",
+                           f"Unterrichtsmaterial für {b} nach Lernfeldern: {len(v)} Lernpakete mit Lernsituation, Arbeitsblättern, "
+                           "Lösungen und Erklärvideo – handlungsorientiert für die Berufsschule.", url, "",
+                           extra_ld=[breadcrumb_ld([("Start", SITE + "/"), ("Berufsschule", SITE + "/berufsschule.html"), (b, url)])])
+                out += (f'<main class="article-wrap"><nav class="crumbs"><a href="index.html">Start</a> › <a href="berufsschule.html">Berufsschule</a> › '
+                        f'<span>{html.escape(b)}</span></nav><h1>{html.escape(h1)}</h1>'
+                        f'<p class="sub">Handlungsorientierte Lernpakete für {html.escape(b)}: jede Einheit folgt einer Lernsituation aus dem '
+                        'Berufsalltag (informieren, planen, durchführen, bewerten), mit Arbeitsblättern, Lösungen und Erklärvideo.</p>'
+                        f'{sec}</main>') + foot()
+                open(os.path.join(OUT, sl + ".html"), "w", encoding="utf-8").write(out); urls.append(url)
+        url = f"{SITE}/berufsschule.html"
+        out = head("Berufsschule Unterrichtsmaterial nach Beruf & Lernfeld – Lernpakete mit Erklärvideo",
+                   f"{len(lp)} Lernpakete für die Berufsschule nach Ausbildungsberuf und Lernfeld: Lernsituation, Arbeitsblätter, "
+                   "Lösungen und Erklärvideo.", url, "", extra_ld=[breadcrumb_ld([("Start", SITE + "/"), ("Berufsschule", url)])])
+        out += (f'<main class="article-wrap"><nav class="crumbs"><a href="index.html">Start</a> › <span>Berufsschule</span></nav>'
+                f'<h1>Berufsschule: Unterrichtsmaterial nach Beruf und Lernfeld</h1>'
+                f'<p class="sub">Lernpakete für die duale Ausbildung, sortiert nach Ausbildungsberuf und Lernfeld.</p>'
+                + (f'<p class="more"><strong>Berufe:</strong> {" · ".join(blinks)}</p>' if blinks else "")
+                + '<div class="tiles">' + "".join(_lp_card(e) for e in lp) + "</div></main>") + foot()
+        open(os.path.join(OUT, "berufsschule.html"), "w", encoding="utf-8").write(out); urls.append(url)
+    vids = [e for e in lp if e["yt_id"]]
+    if len(vids) >= LV_MIN_HUB:
+        url = f"{SITE}/lernvideos.html"
+        vld = [{"@context": "https://schema.org", "@type": "VideoObject", "name": e["yt_titel"],
+                "description": (e["yt_desc"] or e["spec"].get("thema", ""))[:300],
+                "thumbnailUrl": f"https://i.ytimg.com/vi/{e['yt_id']}/hqdefault.jpg", "uploadDate": e["datum"],
+                "contentUrl": f"https://www.youtube.com/watch?v={e['yt_id']}",
+                "embedUrl": f"https://www.youtube-nocookie.com/embed/{e['yt_id']}", "inLanguage": "de",
+                "publisher": ORG_LD} for e in vids]
+        cards = "".join(f'<article class="tile"><a href="{html.escape(e["yt_url"])}" target="_blank" rel="noopener">'
+                        f'<img loading="lazy" src="https://i.ytimg.com/vi/{html.escape(e["yt_id"])}/hqdefault.jpg" '
+                        f'alt="{html.escape(e["yt_titel"])}" width="480" height="360"></a><h3>{html.escape(e["yt_titel"])}</h3>'
+                        f'{_lp_card(e)}</article>' for e in vids)
+        out = head("Lernvideos & Erklärvideos für den Unterricht – mit passendem Arbeitsblatt",
+                   f"{len(vids)} Erklärvideos für Schule und Berufsschule, jeweils mit passendem Lernpaket (Arbeitsblätter, Lösungen).",
+                   url, "", extra_ld=[breadcrumb_ld([("Start", SITE + "/"), ("Lernvideos", url)])] + vld)
+        out += (f'<main class="article-wrap"><nav class="crumbs"><a href="index.html">Start</a> › <span>Lernvideos</span></nav>'
+                f'<h1>Lernvideos mit passendem Arbeitsblatt</h1><p class="sub">Kurze Erklärvideos zu jedem Lernpaket – im Unterricht, '
+                f'zur Wiederholung oder im Distanzlernen.</p><div class="tiles">{cards}</div></main>') + foot()
+        open(os.path.join(OUT, "lernvideos.html"), "w", encoding="utf-8").write(out); urls.append(url)
+    EXTRA_URLS.extend(urls)
+    return len(lp), len(vids)
 
 
 FAQ = [
@@ -1853,6 +2019,8 @@ def build_foot_cols():
                          for f, n in sorted(fach_c.items(), key=lambda x: -x[1]) if n >= 10)
     k_links = " · ".join(f'<a href="klasse-{n}.html">Klasse {n}</a>' for n in sorted(kl_c) if kl_c[n] >= 10)
     a_links = (' · '.join(f'<a href="{href}">{name}</a>' for name, href, _ in LINE_META.values())
+               + (' · <a href="berufsschule.html">Berufsschule</a>' if len(lernpakete()) >= BS_MIN_HUB else "")
+               + (' · <a href="lernvideos.html">Lernvideos</a>' if sum(1 for e in lernpakete() if e["yt_id"]) >= LV_MIN_HUB else "")
                + ' · <a href="neu.html">Neu erschienen</a> · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a>')
     return (f'<div class="fcols"><div><h4>Nach Fach</h4><p>{f_links}</p></div>'
             f'<div><h4>Nach Klasse</h4><p>{k_links}</p></div>'
@@ -2159,6 +2327,7 @@ def main():
     n_pt, n_lt, n_gratis, n_en = render_line_pages()
     nls = render_lesespur_pages()
     nsa = render_saison_pages()
+    n_bs, n_lv = render_berufsschule_lernvideos()   # SEO 02.11.: Berufsschule/Lernvideos (erst ab Mindestmenge)
     n_matpages = render_material_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>
@@ -2262,7 +2431,7 @@ dort findest du alle Materialien nach Fach und Klasse.</p>
           f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "
           f"{len(EXTRA_URLS)} Landingpages gesamt ({len(fk)} Fach×Klasse), {n_matpages} Material-Detailseiten, "
           f"Rechenwelten {n_reihen.get('rechenwelt', 0)} / Lesespaziergänge {n_reihen.get('lesespaziergang', 0)} / "
-          f"Bastelvorlagen {n_reihen.get('basteln', 0)}, Neu {n_neu}, Blog-Index {n_blog}.")
+          f"Bastelvorlagen {n_reihen.get('basteln', 0)}, Neu {n_neu}, Blog-Index {n_blog}, Berufsschule-Lernpakete live {n_bs}, Lernvideos {n_lv}.")
 
 
 if __name__ == "__main__":

@@ -11,3 +11,8 @@ _tpt_live.json
 _eduki_welten.json
 _lastmod.json
 _lastmod_i18n.json
+
+# 02.11.2026 SEO: Sachtext-Auszuege FR/IT (Skripte/_homepage_excerpts.py), nur Build-Eingabe
+_excerpts.json
+_excerpts.json.tmp
+_homepage_links.json
