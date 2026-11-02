@@ -90,3 +90,5 @@ fatal: unable to a (Log `Skripte\_homepage_daily.log`)
 urllib.error.URLError: <urlopen erro (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 02.11. 00:51 Homepage-Tageslauf: Katalog-Pull unplausibel (4475 aktiv statt ~7056) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 02.11. 05:33 Homepage-Tageslauf: push: fatal: unable to access 'https://github.com/Snice-Eduki/snice-unterricht.git/': Recv failure: Connection was reset (Log `Skripte\_homepage_daily.log`)
