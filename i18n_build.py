@@ -456,7 +456,12 @@ def load_block():
 BLOCK_T, BLOCK_D, BLOCK_X = None, None, None
 
 
+PRIV_RE = re.compile(r"unterasbach|gunzenhausen|haundorf|91710", re.I)   # 02.11.: wie _homepage_i18n_check.py (Privatadresse)
+
+
 def blocked(title, text):
+    if PRIV_RE.search(title) or PRIV_RE.search(text or ""):
+        return True
     for r in (BLOCK_T, BLOCK_X):
         if r is not None and r.search(title):
             return True
@@ -994,6 +999,8 @@ def load_items():
                 if it:
                     out[lang].append(it)
     merge_markets(out)   # 02.11.: eduki Hauptbutton, TpT Zweitbutton; je Sprache keine eduki/TpT-Doppelseiten
+    for _l in out:   # 02.11.: nichts mit Privatadresse (Check-Regel) – Titel, Text und TpT-Zweittext
+        out[_l] = [it for it in out[_l] if not PRIV_RE.search(" ".join([it["title"], it.get("desc_html", ""), it.get("meta_src", "")]))]
     for lang, items in out.items():
         seen, uniq = set(), []
         for it in sorted(items, key=lambda x: (x["date"], x["pid"]), reverse=True):
@@ -1696,6 +1703,8 @@ def render_detail(lang, it, related):
         links.append(f'<a href="../{fam_slug}.html">{esc(t[it["fam"]])}</a>')
     links += combo_links(lang, 1, it=it)   # SEO 02.11.: Fach×Klasse / Linie×Klasse
     exc = excerpt_of(lang, it["topic"]) if it["src"] == "eduki" and lang in EXC_H else None
+    if exc and PRIV_RE.search(exc.get("x", "") + exc.get("src", "")):
+        exc = None
     exc_html = (f'<h2>{esc(EXC_H[lang][0])}</h2><blockquote class="excerpt"><p>{esc(exc["x"])} […]</p></blockquote>'
                 + (f'<p class="meta">{esc(exc["src"])}</p>' if exc.get("src") else "")) if exc else ""
     body = f"""{B.MAT_CSS}
