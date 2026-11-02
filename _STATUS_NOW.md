@@ -92,3 +92,12 @@ urllib.error.URLError: <urlopen erro (Log `Skripte\_homepage_daily.log`)
 - ⛔ 02.11. 00:51 Homepage-Tageslauf: Katalog-Pull unplausibel (4475 aktiv statt ~7056) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 02.11. 05:33 Homepage-Tageslauf: push: fatal: unable to access 'https://github.com/Snice-Eduki/snice-unterricht.git/': Recv failure: Connection was reset (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 02.11. 13:40 Homepage-Tageslauf: push: error: RPC failed; curl 55 Send failure: Connection was aborted
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 02.11. 19:42 Homepage-Tageslauf: i18n-Check fehlgeschlagen -> kein Push: itemap it: 2560 URLs, 101 Alternates
+Seiten 13732, interne Links 1104753, Ziele 20385
+FEHLER: {'privatadresse': 3}
+  privatadresse ['https://snice-unterricht.eu/es/p/2088338-distrito-de-danubio-ries.html: Gunze (Log `Skripte\_homepage_daily.log`)
