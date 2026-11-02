@@ -2257,9 +2257,17 @@ def render_material_pages():
         render_material_page(m, cands[:8])
     # 16.10.: Detailseiten offline gegangener/umbenannter Materialien entfernen (generierte Artefakte)
     keep = {os.path.basename(mat_path(m)) for m in mats}
+    import i18n_build as _I   # 02.11.: Weiterleitungs-Stub statt 404 (Ziel: Fachseite des inaktiven Materials, sonst materialien.html)
+    _I.moved_load()
+    alle = {str(m.get("id")): m for m in load_katalog()}
     for f in glob.glob(os.path.join(MAT_DIR, "*.html")):
-        if os.path.basename(f) not in keep:
+        if os.path.basename(f) in keep or _I.is_stub(f):
+            continue
+        mid = os.path.basename(f).split("-", 1)[0]; m0 = alle.get(mid, {})
+        tgt = f"{fach_slug(m0['fach'])}.html" if m0.get("fach") and os.path.exists(os.path.join(OUT, f"{fach_slug(m0['fach'])}.html")) else "materialien.html"
+        if not _I.retire("de", "material/" + os.path.basename(f), tgt, m0.get("fach") or "Materialien"):
             os.remove(f)
+    _I.moved_save()
     return len(mats)
 
 

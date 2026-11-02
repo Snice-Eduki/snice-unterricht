@@ -979,6 +979,101 @@ def merge_markets(out):
                                                  "nur_tpt": len([t for t in pool if t["id"] not in used]) if lang != "it" else 0}
 
 
+# ------------------------------------------------------------------ 02.11.: Umzuege -> Weiterleitungs-Stubs statt 404
+MOVED = {}          # lang -> {alt_rel: [neu_rel, titel]}   (site-relative Pfade), Datei _moved.json
+STUB_MARK = "<!-- snice-redirect -->"
+STUB_T = {"de": ("Diese Seite ist umgezogen.", "Weiter zu"), "en": ("This page has moved.", "Continue to"),
+          "es": ("Esta página se ha trasladado.", "Ir a"), "fr": ("Cette page a été déplacée.", "Continuer vers"),
+          "it": ("Questa pagina è stata spostata.", "Vai a")}
+
+
+def moved_load():
+    global MOVED
+    try:
+        MOVED = json.load(open(os.path.join(B.OUT, "_moved.json"), encoding="utf-8"))
+    except Exception:
+        MOVED = {}
+    return MOVED
+
+
+def moved_save():
+    json.dump(MOVED, open(os.path.join(B.OUT, "_moved.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
+
+
+def is_stub(path):
+    try:
+        with open(path, encoding="utf-8") as f:
+            return STUB_MARK in f.read(600)
+    except OSError:
+        return False
+
+
+def stub_html(lang, new_rel, title):
+    new_url = f"{SITE}/{new_rel}"; t = STUB_T.get(lang, STUB_T["en"]); tt = esc(title or new_rel)
+    return (f'<!doctype html>\n<html lang="{lang}"><head><meta charset="utf-8">{STUB_MARK}\n'
+            f'<meta name="robots" content="noindex,follow">\n<meta http-equiv="refresh" content="0; url={esc(new_url)}">\n'
+            f'<link rel="canonical" href="{esc(new_url)}">\n<title>{tt}</title>\n'
+            f'<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="{"../" * new_rel.count("/")}assets/style.css">\n'
+            f'</head><body><main class="article-wrap" style="padding:60px 22px;text-align:center">'
+            f'<p>{esc(t[0])}</p><p><a class="btn" href="{esc(new_url)}">{esc(t[1])}: {tt}</a></p></main></body></html>\n')
+
+
+def retire(lang, old_rel, new_rel, title=""):
+    """Alte URL (site-relativ) auf neue URL umleiten: Stub schreiben + registrieren. Ziel muss existieren."""
+    if old_rel == new_rel or not os.path.exists(os.path.join(B.OUT, new_rel.replace("/", os.sep))):
+        return False
+    old = os.path.join(B.OUT, old_rel.replace("/", os.sep))
+    os.makedirs(os.path.dirname(old), exist_ok=True)
+    open(old, "w", encoding="utf-8").write(stub_html(lang, new_rel, title))
+    MOVED.setdefault(lang, {})[old_rel] = [new_rel, title]
+    return True
+
+
+def _hub_target(lang, name):
+    """Verschwundene Hub-Seite: naechste bestehende Oberseite (z. B. 'geographie-niveau-6' -> 'geographie'), sonst Alle-Seite."""
+    P = PAGES.get(lang, {}); parts = name.split("-")
+    while len(parts) > 1:
+        parts.pop()
+        cand = "-".join(parts)
+        if os.path.exists(os.path.join(B.OUT, lang, cand + ".html")) and cand != name:
+            return f"{lang}/{cand}.html", cand
+    return f"{lang}/{P.get('all', 'index')}.html", T[lang]["all"]
+
+
+def retire_detail(lang, old_abs, pid_map):
+    """Alte Detailseite: Ziel = Seite desselben Produkts (auch ueber TpT-/eduki-Zweit-ID), sonst Registry, sonst Suche nach dem Thema."""
+    old_rel = os.path.relpath(old_abs, B.OUT).replace(os.sep, "/")
+    base = os.path.basename(old_abs)[:-5]; pid = base.split("-", 1)[0]; slug_words = base.split("-", 1)[1] if "-" in base else ""
+    if pid in pid_map:
+        it = pid_map[pid]; return retire(lang, old_rel, f"{lang}/{it['path']}", it["title"])
+    reg = MOVED.get(lang, {}).get(old_rel)
+    if reg and retire(lang, old_rel, reg[0], reg[1]):
+        return True
+    P = PAGES.get(lang, {})
+    return retire(lang, old_rel, f"{lang}/{P.get('all', 'index')}.html", T[lang]["all"])
+
+
+def retire_registry():
+    """Alle registrierten Umzuege: Stub erneut schreiben, solange die alte URL nicht wieder echt existiert und das Ziel da ist."""
+    n = 0
+    for lang, d in list(MOVED.items()):
+        for old_rel, (new_rel, title) in list(d.items()):
+            old = os.path.join(B.OUT, old_rel.replace("/", os.sep))
+            if os.path.exists(old) and not is_stub(old):
+                del d[old_rel]; continue          # Seite lebt wieder
+            tgt = new_rel.split("?")[0]
+            if not os.path.exists(os.path.join(B.OUT, tgt.replace("/", os.sep))):
+                if lang in PAGES:                 # Ziel selbst weg -> auf Alle-Seite umbiegen
+                    new_rel = f"{lang}/{PAGES[lang].get('all', 'index')}.html"; d[old_rel] = [new_rel, title]
+                elif lang == "de":
+                    new_rel = "materialien.html"; d[old_rel] = [new_rel, title]
+                else:
+                    del d[old_rel]; continue
+            open(old, "w", encoding="utf-8").write(stub_html(lang, new_rel, title)); n += 1
+    STATS["stubs"] = n
+    return n
+
+
 def load_items():
     global BLOCK_T, BLOCK_D, BLOCK_X
     BLOCK_T, BLOCK_D, BLOCK_X = load_block()
@@ -1743,8 +1838,12 @@ def render_details(lang):
         rel = [x for x in cands if x.get("img")][:8] or cands[:8]
         render_detail(lang, it, rel)
     keep = {os.path.normcase(os.path.join(B.OUT, lang, it["path"].replace("/", os.sep))) for it in items}
+    pid_map = {}
+    for it in items:
+        for k in [it["pid"]] + list(it.get("alt_ids") or []):
+            pid_map.setdefault(str(k), it)
     for f in glob.glob(os.path.join(B.OUT, lang, "p", "*.html")):
-        if os.path.normcase(f) not in keep:
+        if os.path.normcase(f) not in keep and not retire_detail(lang, f, pid_map):   # 02.11.: Weiterleitungs-Stub statt 404
             os.remove(f)
 
 
@@ -1907,6 +2006,7 @@ def prepare(build_module):
 def render():
     """Nach den deutschen Seiten: alle Sprachseiten + DE-Seite 'Material in anderen Sprachen'. Liefert Sitemap-Dateien."""
     stats = {}
+    moved_load()
     for lang in FOREIGN:
         items = ITEMS[lang]
         if not items:
@@ -1944,12 +2044,16 @@ def render():
         render_other(lang)
         render_details(lang)
         write_index(lang)
-        for f in glob.glob(os.path.join(B.OUT, lang, "*.html")):   # Hub-Seiten, die es nicht mehr gibt, entfernen
-            if os.path.normcase(f) not in WRITTEN:
-                os.remove(f)
+        for f in glob.glob(os.path.join(B.OUT, lang, "*.html")):   # Hub-Seiten, die es nicht mehr gibt: Stub auf die Oberseite (02.11.)
+            if os.path.normcase(f) not in WRITTEN and not is_stub(f):
+                nm = os.path.basename(f)[:-5]; tgt, tt = _hub_target(lang, nm)
+                reg = MOVED.get(lang, {}).get(f"{lang}/{nm}.html")
+                if not (reg and retire(lang, f"{lang}/{nm}.html", reg[0], reg[1])) and not retire(lang, f"{lang}/{nm}.html", tgt, tt):
+                    os.remove(f)
         stats[lang] = {"items": len(items), "pages": len(SITEMAP_URLS[lang])}
     render_other_de()
     render_free_de()
+    retire_registry(); moved_save()   # 02.11.: Stubs fuer alle registrierten Umzuege
     write_link_index()   # 02.11.: Produkt-ID/Titel -> Homepage-Detailseite je Sprache (Skripte/_homepage_link.py)
     files, today = write_sitemaps()
     STATS["render"] = stats
