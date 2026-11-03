@@ -101,3 +101,5 @@ fatal: the remote end hung up unexpectedly (Log `Skripte\_homepage_daily.log`)
 Seiten 13732, interne Links 1104753, Ziele 20385
 FEHLER: {'privatadresse': 3}
   privatadresse ['https://snice-unterricht.eu/es/p/2088338-distrito-de-danubio-ries.html: Gunze (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 03.11. 16:02 Homepage-Tageslauf: Linkcheck: 800 tot, 0 offline, 0 Junk  (Log `Skripte\_homepage_daily.log`)
