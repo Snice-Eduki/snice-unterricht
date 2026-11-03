@@ -3,25 +3,13 @@
 "material/1530457-bundesministerin-fuer-gesundheit---nina-warken.html": [
 "fach-politik-sozialkunde.html",
 "Politik/Sozialkunde"
-],
-"material/2065780-zagreb-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2065781-salzsee-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2300359-die-uhr-wird-umgestellt-uhrzeiten-lesen-und-zeitspannen-rechnen-lesespurgeschichte-mit-raetselaufgaben-klasse-3.html": [
-"materialien.html",
-"Materialien"
-],
-"material/319953-materialpaket-parteien-im-bundestag---politik---demokratie-deutschland--bundestagswahl-2025-demokratiestaerken.html": [
-"materialien.html",
-"Materialien"
 ]
 },
 "es": {
+"es/arte-y-cultura-grado-1-primaria.html": [
+"es/arte-y-cultura.html",
+"arte-y-cultura"
+],
 "es/p/17913861-marmol.html": [
 "es/recursos.html",
 "Todos los recursos"
@@ -2297,8 +2285,8 @@
 "Français – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135771-frein.html": [
-"fr/p/2380687-frein.html",
-"Frein – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105489-frein.html",
+"Frein – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135822-frida-kahlo.html": [
 "fr/p/2106535-frida-kahlo.html",
@@ -4517,8 +4505,8 @@
 "Magie - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158589-magnesium.html": [
-"fr/p/2379170-magnesium.html",
-"Magnésium – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104871-magnesium.html",
+"Magnésium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158609-mahomet.html": [
 "fr/p/2106421-mahomet.html",
@@ -4806,331 +4794,7 @@
 ]
 },
 "it": {
-"it/p/2082534-albert-schweitzer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082576-andorra-la-vella.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087288-eritema-solare.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087300-energia-solare.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087399-golfo-persico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087447-elezione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087469-glis-glis.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087580-efelidi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087803-circondario-di-rostock.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087841-circondario-della-pomerania-anteriore-rugen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088083-dollaro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088095-elezioni-federali-in-germania-del-2021.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088101-enns.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088133-esperimento.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088202-febbre.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088233-libera-chiesa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088242-evoluzione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088265-circondario-della-frisia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088281-circondario-di-germersheim.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088305-esslingen-am-neckar.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088341-circondario-di-dahme-spreewald.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088427-circondario-di-lipsia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088443-circondario-di-bad-kreuznach.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088506-contrabbando.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088518-circondario-di-warendorf.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088552-curio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088591-dolore.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088595-circondario-di-oldenburg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088684-greiz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088748-erftstadt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088829-herzberg-am-harz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088937-malaria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089035-dittatura.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089043-computer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089143-die-flippers.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089356-lingua-greca.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089421-confederazione-germanica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089500-genova.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089549-generatore-elettrico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089578-giovanni-battista.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089582-gekkonidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089598-eta-del-ferro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089656-geesthacht.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089743-dioscorea.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089745-lepisma-saccharina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089766-fungi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089792-cygnus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089802-giuseppe-verdi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089816-fridays-for-future.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089820-gregor-mendel.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089822-creativita.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089849-jules-verne.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089868-colonia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089872-cimitero.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089926-eisenberg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089937-golf.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089943-funk.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089972-circondario-del-lago-di-costanza.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089983-lunedi-delle-rose.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089986-gemunden-am-main.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090000-erbio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090005-cloro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090047-jurij-gagarin.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090070-copenaghen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090074-friedrich-schiller.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090083-dama-dama.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096070-bismuto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096147-barone-di-munchhausen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096252-bile.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096306-cenerentola.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096690-musica-tradizionale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097153-allium-sativum.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097227-numero-primo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097379-antonio-vivaldi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097389-aztechi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097635-atlas.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097886-azzorre.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098002-bermuda.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098197-calw.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098290-chiosco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375542-seul.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375634-sostenibilita.html": [
+"it/p/2096123-antonio-vivaldi.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
