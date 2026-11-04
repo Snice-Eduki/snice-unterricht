@@ -476,9 +476,41 @@
 ]
 },
 "es": {
+"es/animales-y-naturaleza-grado-5-primaria.html": [
+"es/animales-y-naturaleza.html",
+"animales-y-naturaleza"
+],
 "es/arte-y-cultura-grado-1-primaria.html": [
 "es/arte-y-cultura.html",
 "arte-y-cultura"
+],
+"es/arte-y-cultura-grado-5-primaria.html": [
+"es/arte-y-cultura.html",
+"arte-y-cultura"
+],
+"es/ciencias-y-salud-grado-5-primaria.html": [
+"es/ciencias-y-salud-grado-5.html",
+"ciencias-y-salud-grado-5"
+],
+"es/deportes-grado-5-primaria.html": [
+"es/deportes.html",
+"deportes"
+],
+"es/fiestas-y-tradiciones-grado-5-primaria.html": [
+"es/fiestas-y-tradiciones.html",
+"fiestas-y-tradiciones"
+],
+"es/geografia-grado-5-primaria.html": [
+"es/geografia.html",
+"geografia"
+],
+"es/lengua-grado-5-primaria.html": [
+"es/lengua.html",
+"lengua"
+],
+"es/musica-grado-5-primaria.html": [
+"es/musica.html",
+"musica"
 ],
 "es/p/17899305-automovil.html": [
 "es/recursos.html",
@@ -879,6 +911,10 @@
 "es/p/2380103-pensamiento.html": [
 "es/p/18170212-pensamiento.html",
 "Pensamiento – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/tecnologia-grado-5-primaria.html": [
+"es/tecnologia.html",
+"tecnologia"
 ]
 },
 "fr": {
@@ -5605,6 +5641,22 @@
 "fr/p/18170896-glande-thyroide.html": [
 "fr/p/2380130-glande-thyroide.html",
 "Glande thyroïde – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+],
+"fr/p/18183707-maisons-alfort.html": [
+"fr/p/2388367-maisons-alfort.html",
+"Maisons-Alfort – Fiche : texte à trous, compréhension orale et mots mêlés"
+],
+"fr/p/18185184-hyeres.html": [
+"fr/p/2388384-hyeres.html",
+"Hyères – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
+],
+"fr/p/18187871-beauvais.html": [
+"fr/p/2388405-beauvais.html",
+"Beauvais – Fiche : texte à trous, compréhension orale et mots mêlés"
+],
+"fr/p/18191075-chelles.html": [
+"fr/p/2388429-chelles.html",
+"Chelles – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/sciences-et-sante-niveau-6.html": [
 "fr/sciences-et-sante.html",
