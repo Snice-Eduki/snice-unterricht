@@ -1562,6 +1562,18 @@ def hero_cta(heute=None):
     return "Neu erschienen", "neu.html"
 
 
+def hero_sale(heute=None):
+    """Cyber-Sale-Hinweis (eduki rechnet 20 % selbst ab) nur 12.-17.11.2026; keine Preise."""
+    d = heute or datetime.date.today()
+    if datetime.date(2026, 11, 12) <= d < datetime.date(2026, 11, 15):
+        t = "Ab 15.11.: eduki Cyber Sale – 20 % auf alle Materialien. Jetzt Favoriten merken."
+    elif datetime.date(2026, 11, 15) <= d <= datetime.date(2026, 11, 17):
+        t = "Nur bis 17.11.: eduki Cyber Sale – 20 % auf alle aktiven Materialien."
+    else:
+        return ""
+    return f'<p class="sub" style="font-weight:600;color:#c2410c">{t}</p>\n'
+
+
 def hero_html(mats):
     by_id = {m["id"]: m for m in mats}
     n_all = len(mats)
@@ -1583,7 +1595,7 @@ def hero_html(mats):
 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
 <input name="q" type="search" placeholder="Thema suchen: z. B. St. Martin, Igel, Bruchrechnung …" autocomplete="off" aria-label="Materialien durchsuchen">
 </form>
-<p class="btnrow"><a class="btn" href="{cta_href}">{cta}</a><a class="btn ghost" href="materialien.html">Alle Materialien</a></p>
+{hero_sale()}<p class="btnrow"><a class="btn" href="{cta_href}">{cta}</a><a class="btn ghost" href="materialien.html">Alle Materialien</a></p>
 <ul class="trust"><li><b>{nfmt(n_all // 100 * 100)}+</b> Materialien</li><li><b>{nfmt(n_ls // 10 * 10)}+</b> Lesespurgeschichten</li><li><b>Lösungen</b> inklusive</li><li><b>Kl. 1–10</b> alle Fächer</li></ul>
 </div>
 <div class="collage">{imgs}</div>
