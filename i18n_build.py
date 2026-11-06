@@ -758,8 +758,8 @@ def tpt_lang(d):
     f, n = d.get("fam", ""), d.get("name", "")
     if f.startswith(("es", "lesespur_es")):
         return "es"
-    if f == "fr":
-        return "fr"
+    if f in ("fr", "de", "it"):   # 06.11.: de = deutsches TpT-Material, gehoert nicht auf /en/
+        return f
     if f in ("en", "inst_en") or f.startswith("lesespur_en"):
         return "en"
     if re.search(r"^Spanish\b.*(Passages|Comprehension|Scavenger|BUNDLE)|Spanish Reading|\(Ficha\)|Búsqueda del tesoro|Juego de rol", n):
