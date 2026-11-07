@@ -15,34 +15,6 @@
 "material/1530457-bundesministerin-fuer-gesundheit---nina-warken.html": [
 "fach-politik-sozialkunde.html",
 "Politik/Sozialkunde"
-],
-"material/2065398-pennsylvania-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2065942-schmuggel-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2066090-schaedlinge-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2066188-seltene-erden-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2066572-spechte-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2068682-3d-druck-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2069768-kreis-coesfeld-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
 ]
 },
 "en": {
@@ -532,7 +504,7 @@
 "es/animales-y-naturaleza.html",
 "animales-y-naturaleza"
 ],
-"es/arte-y-cultura-grado-3-primaria.html": [
+"es/arte-y-cultura-grado-1-primaria.html": [
 "es/arte-y-cultura.html",
 "arte-y-cultura"
 ],
@@ -1022,15 +994,27 @@
 "fr/culture-generale.html",
 "culture-generale"
 ],
+"fr/culture-generale-niveau-cp.html": [
+"fr/culture-generale.html",
+"culture-generale"
+],
 "fr/fetes-et-traditions-niveau-cm1.html": [
 "fr/fetes-et-traditions.html",
 "fetes-et-traditions"
+],
+"fr/fiches-de-lecture-niveau-ce1.html": [
+"fr/fiches-de-lecture.html",
+"fiches-de-lecture"
 ],
 "fr/fiches-de-lecture-niveau-cm1.html": [
 "fr/fiches-de-lecture.html",
 "fiches-de-lecture"
 ],
 "fr/geographie-niveau-6.html": [
+"fr/geographie.html",
+"geographie"
+],
+"fr/geographie-niveau-ce1.html": [
 "fr/geographie.html",
 "geographie"
 ],
@@ -5760,6 +5744,10 @@
 ]
 },
 "it": {
+"it/animali-e-natura-classe-i-primaria.html": [
+"it/animali-e-natura.html",
+"animali-e-natura"
+],
 "it/animali-e-natura-classe-v-primaria.html": [
 "it/animali-e-natura.html",
 "animali-e-natura"
@@ -5768,7 +5756,7 @@
 "it/feste-e-tradizioni.html",
 "feste-e-tradizioni"
 ],
-"it/geografia-classe-iii-primaria.html": [
+"it/geografia-classe-ii-primaria.html": [
 "it/geografia.html",
 "geografia"
 ],
@@ -5787,6 +5775,10 @@
 "it/p/2400878-laboratorio-di-carte-gli-animali-domestici-plus-carte-con-mollette-fra.html": [
 "it/risorse.html",
 "Tutti i materiali"
+],
+"it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-fra.html": [
+"it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-con.html",
+"Laboratorio di carte: Gli animali domestici – carte immagine e parola con frasi modello (GRATIS)"
 ]
 }
 }
