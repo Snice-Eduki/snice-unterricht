@@ -540,10 +540,6 @@
 "es/musica.html",
 "musica"
 ],
-"es/p/17899305-automovil.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
 "es/p/17899786-bamberg.html": [
 "es/recursos.html",
 "Todos los recursos"
@@ -608,15 +604,7 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
-"es/p/17913861-marmol.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
 "es/p/17914305-nordlingen.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
-"es/p/17915815-ortoedro.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -644,10 +632,6 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
-"es/p/17922497-tecnecio.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
 "es/p/17922922-spree.html": [
 "es/recursos.html",
 "Todos los recursos"
@@ -657,6 +641,10 @@
 "Todos los recursos"
 ],
 "es/p/17926622-zugspitze.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/18232673-taller-de-personajes-marie-curie.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -671,10 +659,6 @@
 "es/p/2095292-tormenta-electrica.html": [
 "es/p/18178763-tormenta-electrica.html",
 "Tormenta eléctrica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2095796-somalia.html": [
-"es/p/17922828-somalia.html",
-"Somalia – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2096367-vasco-da-gama.html": [
 "es/p/18183395-vasco-da-gama.html",
@@ -720,10 +704,6 @@
 "es/p/18177150-spiel-des-jahres.html",
 "Spiel des Jahres – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2101242-psicologia.html": [
-"es/p/17917323-psicologia.html",
-"Psicología – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
 "es/p/2101942-ventana.html": [
 "es/p/18183511-ventana.html",
 "Ventana – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
@@ -735,10 +715,6 @@
 "es/p/2104013-horno-de-microondas.html": [
 "es/p/18129967-horno-de-microondas.html",
 "Horno de microondas – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2105087-juglans.html": [
-"es/p/17912444-juglans.html",
-"Juglans – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2366217-sodio.html": [
 "es/p/18177106-sodio.html",
@@ -900,6 +876,30 @@
 "es/p/18175343-eco.html",
 "Eco – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2375730-marmol.html": [
+"es/p/17913861-marmol.html",
+"Mármol – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2375739-ortoedro.html": [
+"es/p/17915815-ortoedro.html",
+"Ortoedro – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2375749-tecnecio.html": [
+"es/p/17922497-tecnecio.html",
+"Tecnecio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2375761-automovil.html": [
+"es/p/17899305-automovil.html",
+"Automóvil – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2376074-juglans.html": [
+"es/p/17912444-juglans.html",
+"Juglans – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2376080-somalia.html": [
+"es/p/17922828-somalia.html",
+"Somalia – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
 "es/p/2378962-gremio.html": [
 "es/p/18175366-gremio.html",
 "Gremio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
@@ -955,6 +955,10 @@
 "es/p/2380103-pensamiento.html": [
 "es/p/18170212-pensamiento.html",
 "Pensamiento – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392544-psicologia.html": [
+"es/p/17917323-psicologia.html",
+"Psicología – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2400833-taller-de-tarjetas-las-emociones-plus-tarjetas-de-pinza-frases-con-hue.html": [
 "es/recursos.html",
@@ -1035,8 +1039,8 @@
 "Toutes les ressources"
 ],
 "fr/p/17974549-bowling.html": [
-"fr/p/2106866-bowling.html",
-"Bowling – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100668-bowling.html",
+"Bowling - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/17980062-castor.html": [
 "fr/p/2359815-castor.html",
@@ -1147,8 +1151,8 @@
 "Agence spatiale européenne – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18113250-agriculteur.html": [
-"fr/p/2095922-agriculteur.html",
-"Agriculteur - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2103630-agriculteur.html",
+"Agriculteur – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18113587-agriculture.html": [
 "fr/p/2082603-agriculture.html",
@@ -1363,8 +1367,8 @@
 "Apôtre – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18116178-aquarium.html": [
-"fr/p/2106865-aquarium.html",
-"Aquarium – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100666-aquarium.html",
+"Aquarium - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18116218-arabe.html": [
 "fr/p/2101052-arabe.html",
@@ -1423,8 +1427,8 @@
 "Argentine – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18116925-arthropodes.html": [
-"fr/p/2106885-arthropodes.html",
-"Arthropodes – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100822-arthropodes.html",
+"Arthropodes - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18117095-argent.html": [
 "fr/p/2103382-argent.html",
@@ -1951,8 +1955,8 @@
 "Canal de Panama – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122270-canal-de-suez.html": [
-"fr/p/2100012-canal-de-suez.html",
-"Canal de Suez - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105632-canal-de-suez.html",
+"Canal de Suez – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122304-canberra.html": [
 "fr/p/2106283-canberra.html",
@@ -2023,16 +2027,16 @@
 "Carnaval – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126231-carotte.html": [
-"fr/p/2392204-carotte.html",
-"Carotte – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101424-carotte.html",
+"Carotte – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126250-carpe-commune.html": [
 "fr/p/2099829-carpe-commune.html",
 "Carpe commune – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126264-carrousel.html": [
-"fr/p/2105417-carrousel.html",
-"Carrousel – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099537-carrousel.html",
+"Carrousel - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126276-carthage.html": [
 "fr/p/2102216-carthage.html",
@@ -2199,8 +2203,8 @@
 "Chewing-gum – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126949-chihuahua.html": [
-"fr/p/2105617-chihuahua.html",
-"Chihuahua – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099972-chihuahua.html",
+"Chihuahua - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126963-chili.html": [
 "fr/p/2100723-chili.html",
@@ -2343,16 +2347,16 @@
 "Coche de plaisance – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127737-coco-chanel.html": [
-"fr/p/2100755-coco-chanel.html",
-"Coco Chanel - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106877-coco-chanel.html",
+"Coco Chanel – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127767-cocotier.html": [
 "fr/p/2359991-cocotier.html",
 "Cocotier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127795-coiffeur.html": [
-"fr/p/2100468-coiffeur.html",
-"Coiffeur - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106843-coiffeur.html",
+"Coiffeur – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127814-cola.html": [
 "fr/p/2100760-cola.html",
@@ -2519,8 +2523,8 @@
 "Courgette – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129751-courrier.html": [
-"fr/p/2105603-courrier.html",
-"Courrier – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099932-courrier.html",
+"Courrier - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129786-courrier-electronique.html": [
 "fr/p/2106632-courrier-electronique.html",
@@ -2663,8 +2667,8 @@
 "Danemark – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18131364-cygne.html": [
-"fr/p/2096246-cygne.html",
-"Cygne - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104413-cygne.html",
+"Cygne – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18131403-cur.html": [
 "fr/p/2106594-cur.html",
@@ -2755,8 +2759,8 @@
 "Discothèque – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18132470-disque-blu-ray.html": [
-"fr/p/2100562-disque-blu-ray.html",
-"Disque Blu-ray - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106852-disque-blu-ray.html",
+"Disque Blu-ray – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18132508-disque-celeste-de-nebra.html": [
 "fr/p/2106542-disque-celeste-de-nebra.html",
@@ -2855,8 +2859,8 @@
 "Eau – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18133406-eau-potable.html": [
-"fr/p/2101233-eau-potable.html",
-"Eau potable - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106140-eau-potable.html",
+"Eau potable – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18133435-eaux-usees.html": [
 "fr/p/2097885-eaux-usees.html",
@@ -2935,12 +2939,12 @@
 "Equus – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134071-equus-quagga-quagga.html": [
-"fr/p/2379489-equus-quagga-quagga.html",
-"Equus quagga quagga – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2098620-equus-quagga-quagga.html",
+"Equus quagga quagga – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134119-esperanto.html": [
-"fr/p/2392547-esperanto.html",
-"Espéranto – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2098796-esperanto.html",
+"Espéranto – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134144-estomac.html": [
 "fr/p/2101902-estomac.html",
@@ -2955,8 +2959,8 @@
 "Eswatini – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134206-euro.html": [
-"fr/p/2098426-euro.html",
-"Euro - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104516-euro.html",
+"Euro – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134232-europe.html": [
 "fr/p/2104647-europe.html",
@@ -2967,8 +2971,8 @@
 "Everest – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134299-expression-faciale.html": [
-"fr/p/2100775-expression-faciale.html",
-"Expression faciale - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106880-expression-faciale.html",
+"Expression faciale – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134317-extremisme.html": [
 "fr/p/2363165-extremisme.html",
@@ -2991,8 +2995,8 @@
 "Debrecen – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134446-falco.html": [
-"fr/p/2096391-falco.html",
-"Falco - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106786-falco.html",
+"Falco – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134467-farine.html": [
 "fr/p/2101514-farine.html",
@@ -3107,8 +3111,8 @@
 "Nice – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135119-flechettes.html": [
-"fr/p/2099738-flechettes.html",
-"Fléchettes - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105524-flechettes.html",
+"Fléchettes – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135148-flute.html": [
 "fr/p/2102315-flute.html",
@@ -3199,8 +3203,8 @@
 "Français – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135771-frein.html": [
-"fr/p/2380687-frein.html",
-"Frein – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105489-frein.html",
+"Frein – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135822-frida-kahlo.html": [
 "fr/p/2106535-frida-kahlo.html",
@@ -3331,8 +3335,8 @@
 "Glis glis – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18136966-gengis-khan.html": [
-"fr/p/2096440-gengis-khan.html",
-"Gengis Khan - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104469-gengis-khan.html",
+"Gengis Khan – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137015-gibraltar.html": [
 "fr/p/2105710-gibraltar.html",
@@ -3407,8 +3411,8 @@
 "Grue – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137680-grue-cendree.html": [
-"fr/p/2100323-grue-cendree.html",
-"Grue cendrée - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105806-grue-cendree.html",
+"Grue cendrée – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137723-grece.html": [
 "fr/p/2098147-grece.html",
@@ -3535,8 +3539,8 @@
 "Le Mans – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18141246-hallig.html": [
-"fr/p/2100111-hallig.html",
-"Hallig - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105699-hallig.html",
+"Hallig – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18141260-limoges.html": [
 "fr/p/2368221-limoges.html",
@@ -3827,8 +3831,8 @@
 "Calcium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18143591-canton-d-uri.html": [
-"fr/p/2103658-canton-d-uri.html",
-"Canton d'Uri – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2095938-canton-d-uri.html",
+"Canton d'Uri - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18143609-capra.html": [
 "fr/p/2098869-capra.html",
@@ -3911,8 +3915,8 @@
 "Cheloniidae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18144148-cheval-de-troie.html": [
-"fr/p/2380678-cheval-de-troie.html",
-"Cheval de Troie – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2096111-cheval-de-troie.html",
+"Cheval de Troie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18144174-chisinau.html": [
 "fr/p/2369636-chisinau.html",
@@ -4167,16 +4171,16 @@
 "Démocratie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145859-democratie-chretienne.html": [
-"fr/p/2099985-democratie-chretienne.html",
-"Démocratie chrétienne - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105624-democratie-chretienne.html",
+"Démocratie chrétienne – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145883-pau.html": [
 "fr/p/2370238-pau.html",
 "Pau – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145886-demeter.html": [
-"fr/p/2101311-demeter.html",
-"Déméter - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106176-demeter.html",
+"Déméter – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145933-effets-speciaux.html": [
 "fr/p/2369892-effets-speciaux.html",
@@ -4195,8 +4199,8 @@
 "Empire byzantin – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146119-encre.html": [
-"fr/p/2106126-encre.html",
-"Encre – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101204-encre.html",
+"Encre - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146142-enfance.html": [
 "fr/p/2101858-enfance.html",
@@ -4295,8 +4299,8 @@
 "Forestier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146671-foret.html": [
-"fr/p/2105650-foret.html",
-"Forêt – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100029-foret.html",
+"Forêt - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146681-foret-humide.html": [
 "fr/p/2105668-foret-humide.html",
@@ -4567,8 +4571,8 @@
 "Hockey sur gazon – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148262-hockey-sur-glace.html": [
-"fr/p/2100528-hockey-sur-glace.html",
-"Hockey sur glace - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106849-hockey-sur-glace.html",
+"Hockey sur glace – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148282-hollywood.html": [
 "fr/p/2106622-hollywood.html",
@@ -4739,8 +4743,8 @@
 "Johanna Spyri – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18153454-johannesbourg.html": [
-"fr/p/2105409-johannesbourg.html",
-"Johannesbourg – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099521-johannesbourg.html",
+"Johannesbourg - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18153494-jordanie.html": [
 "fr/p/2098747-jordanie.html",
@@ -5095,8 +5099,8 @@
 "Larinae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156277-larix.html": [
-"fr/p/2379517-larix.html",
-"Larix – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2098811-larix.html",
+"Larix – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156305-larve.html": [
 "fr/p/2363761-larve.html",
@@ -5151,8 +5155,8 @@
 "Le Petit Chaperon rouge – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156793-lecture.html": [
-"fr/p/2392220-lecture.html",
-"Lecture – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106911-lecture.html",
+"Lecture – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156821-lemuriformes.html": [
 "fr/p/2103638-lemuriformes.html",
@@ -5171,8 +5175,8 @@
 "Les Trois Mousquetaires – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156942-joseph-beuys.html": [
-"fr/p/2096151-joseph-beuys.html",
-"Joseph Beuys - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2098000-joseph-beuys.html",
+"Joseph Beuys – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156960-les-verts.html": [
 "fr/p/2104720-les-verts.html",
@@ -5227,8 +5231,8 @@
 "Liechtenstein – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18157326-lime.html": [
-"fr/p/2100309-lime.html",
-"Lime - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105794-lime.html",
+"Lime – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18157349-limes.html": [
 "fr/p/2100845-limes.html",
@@ -5415,12 +5419,12 @@
 "Madrid – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158567-magie.html": [
-"fr/p/2101467-magie.html",
-"Magie - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106257-magie.html",
+"Magie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158589-magnesium.html": [
-"fr/p/2379170-magnesium.html",
-"Magnésium – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104871-magnesium.html",
+"Magnésium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158609-mahomet.html": [
 "fr/p/2106421-mahomet.html",
@@ -5459,8 +5463,8 @@
 "Malaisie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158830-maldives.html": [
-"fr/p/2101495-maldives.html",
-"Maldives - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106271-maldives.html",
+"Maldives – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158868-mali.html": [
 "fr/p/2106084-mali.html",
@@ -5483,16 +5487,16 @@
 "Manchester – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159656-manchester-city-football-club.html": [
-"fr/p/2100929-manchester-city-football-club.html",
-"Manchester City Football Club - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106898-manchester-city-football-club.html",
+"Manchester City Football Club – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159680-manchester-united-football-club.html": [
 "fr/p/2364010-manchester-united-football-club.html",
 "Manchester United Football Club – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159705-mandarin-standard.html": [
-"fr/p/2105707-mandarin-standard.html",
-"Mandarin standard – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100129-mandarin-standard.html",
+"Mandarin standard - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159730-manganese.html": [
 "fr/p/2371029-manganese.html",
