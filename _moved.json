@@ -540,6 +540,10 @@
 "es/musica.html",
 "musica"
 ],
+"es/p/17899305-automovil.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/17899786-bamberg.html": [
 "es/recursos.html",
 "Todos los recursos"
@@ -604,7 +608,15 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
+"es/p/17913861-marmol.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/17914305-nordlingen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/17915815-ortoedro.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -629,6 +641,10 @@
 "Todos los recursos"
 ],
 "es/p/17921165-rothenburg-ob-der-tauber.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/17922497-tecnecio.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -659,6 +675,10 @@
 "es/p/2095292-tormenta-electrica.html": [
 "es/p/18178763-tormenta-electrica.html",
 "Tormenta eléctrica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095796-somalia.html": [
+"es/p/17922828-somalia.html",
+"Somalia – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2096367-vasco-da-gama.html": [
 "es/p/18183395-vasco-da-gama.html",
@@ -712,9 +732,9 @@
 "es/p/18175451-poesia-lirica.html",
 "Poesía lírica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2104013-horno-de-microondas.html": [
-"es/p/18129967-horno-de-microondas.html",
-"Horno de microondas – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+"es/p/2105087-juglans.html": [
+"es/p/17912444-juglans.html",
+"Juglans – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2366217-sodio.html": [
 "es/p/18177106-sodio.html",
@@ -876,30 +896,6 @@
 "es/p/18175343-eco.html",
 "Eco – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2375730-marmol.html": [
-"es/p/17913861-marmol.html",
-"Mármol – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375739-ortoedro.html": [
-"es/p/17915815-ortoedro.html",
-"Ortoedro – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375749-tecnecio.html": [
-"es/p/17922497-tecnecio.html",
-"Tecnecio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375761-automovil.html": [
-"es/p/17899305-automovil.html",
-"Automóvil – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2376074-juglans.html": [
-"es/p/17912444-juglans.html",
-"Juglans – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2376080-somalia.html": [
-"es/p/17922828-somalia.html",
-"Somalia – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
 "es/p/2378962-gremio.html": [
 "es/p/18175366-gremio.html",
 "Gremio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
@@ -956,9 +952,41 @@
 "es/p/18170212-pensamiento.html",
 "Pensamiento – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
+"es/p/2392540-horno-de-microondas.html": [
+"es/p/18129967-horno-de-microondas.html",
+"Horno de microondas – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
 "es/p/2392544-psicologia.html": [
 "es/p/17917323-psicologia.html",
 "Psicología – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392578-alaska.html": [
+"es/p/17897739-alaska.html",
+"Alaska – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392591-comercio.html": [
+"es/p/17903016-comercio.html",
+"Comercio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392599-henri-rousseau.html": [
+"es/p/17909776-henri-rousseau.html",
+"Henri Rousseau – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392605-imperio-otomano.html": [
+"es/p/17910589-imperio-otomano.html",
+"Imperio otomano – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392612-menstruacion.html": [
+"es/p/18147789-menstruacion.html",
+"Menstruación – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392621-muerte.html": [
+"es/p/17913811-muerte.html",
+"Muerte – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392645-periodico.html": [
+"es/p/17915453-periodico.html",
+"Periódico – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2400833-taller-de-tarjetas-las-emociones-plus-tarjetas-de-pinza-frases-con-hue.html": [
 "es/recursos.html",
@@ -2523,8 +2551,8 @@
 "Courgette – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129751-courrier.html": [
-"fr/p/2099932-courrier.html",
-"Courrier - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105603-courrier.html",
+"Courrier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129786-courrier-electronique.html": [
 "fr/p/2106632-courrier-electronique.html",
@@ -2995,8 +3023,8 @@
 "Debrecen – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134446-falco.html": [
-"fr/p/2106786-falco.html",
-"Falco – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2096391-falco.html",
+"Falco - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134467-farine.html": [
 "fr/p/2101514-farine.html",
@@ -3111,8 +3139,8 @@
 "Nice – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135119-flechettes.html": [
-"fr/p/2105524-flechettes.html",
-"Fléchettes – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099738-flechettes.html",
+"Fléchettes - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135148-flute.html": [
 "fr/p/2102315-flute.html",
@@ -4299,8 +4327,8 @@
 "Forestier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146671-foret.html": [
-"fr/p/2100029-foret.html",
-"Forêt - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105650-foret.html",
+"Forêt – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146681-foret-humide.html": [
 "fr/p/2105668-foret-humide.html",
@@ -5503,16 +5531,16 @@
 "Manganèse - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159754-manifestation.html": [
-"fr/p/2392569-manifestation.html",
-"Manifestation – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106466-manifestation.html",
+"Manifestation – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159779-manioc.html": [
 "fr/p/2101750-manioc.html",
 "Manioc – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159801-mannequinat.html": [
-"fr/p/2104539-mannequinat.html",
-"Mannequinat – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2098524-mannequinat.html",
+"Mannequinat - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159827-manuscrit-de-voynich.html": [
 "fr/p/2105639-manuscrit-de-voynich.html",
