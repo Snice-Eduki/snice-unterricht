@@ -1,0 +1,48 @@
+# Veröffentlicht die Website. Ersetzt den automatischen Lauf "pages build and deployment":
+# Das Bereitstellen hängt bei GitHub gelegentlich; deshalb bis zu drei Versuche, ein Hänger erzeugt keine Fehlermail.
+# Ob die Seite wirklich live ist, prüft Skripte/_homepage_daily.py über _build.txt.
+name: Website veroeffentlichen
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "$GITHUB_SHA" > _build.txt
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://snice-unterricht.eu/
+    steps:
+      - id: v1
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          timeout: 900000
+      - id: v2
+        if: steps.v1.outcome != 'success'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          timeout: 900000
+      - id: v3
+        if: steps.v1.outcome != 'success' && steps.v2.outcome != 'success'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        with:
+          timeout: 900000
