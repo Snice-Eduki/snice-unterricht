@@ -504,7 +504,7 @@
 "es/animales-y-naturaleza.html",
 "animales-y-naturaleza"
 ],
-"es/arte-y-cultura-grado-1-primaria.html": [
+"es/arte-y-cultura-grado-3-primaria.html": [
 "es/arte-y-cultura.html",
 "arte-y-cultura"
 ],
@@ -516,9 +516,21 @@
 "es/ciencias-y-salud.html",
 "ciencias-y-salud"
 ],
+"es/cultura-general-grado-3-primaria.html": [
+"es/cultura-general-grado-3.html",
+"cultura-general-grado-3"
+],
+"es/cultura-general-grado-3.html": [
+"es/cultura-general.html",
+"cultura-general"
+],
 "es/deportes-grado-6-primaria.html": [
 "es/deportes.html",
 "deportes"
+],
+"es/fichas-de-lectura-grado-4.html": [
+"es/fichas-de-lectura.html",
+"fichas-de-lectura"
 ],
 "es/fiestas-y-tradiciones-grado-6-primaria.html": [
 "es/fiestas-y-tradiciones.html",
@@ -661,6 +673,10 @@
 "Todos los recursos"
 ],
 "es/p/18232673-taller-de-personajes-marie-curie.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/18236853-taller-de-personajes-picasso.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -5754,6 +5770,10 @@
 "fr/p/2388429-chelles.html",
 "Chelles – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
+"fr/p/18234697-atelier-des-personnages-zeus.html": [
+"fr/p/2403379-atelier-des-personnages-zeus.html",
+"Atelier des personnages : Zeus – Fiche à lire et à compléter, CE2–CM1 (gratuit)"
+],
 "fr/sciences-et-sante-niveau-6.html": [
 "fr/sciences-et-sante.html",
 "sciences-et-sante"
@@ -5776,7 +5796,7 @@
 ]
 },
 "it": {
-"it/animali-e-natura-classe-i-primaria.html": [
+"it/animali-e-natura-classe-iii-primaria.html": [
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
@@ -5784,11 +5804,19 @@
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
+"it/cultura-generale-classe-3.html": [
+"it/cultura-generale.html",
+"cultura-generale"
+],
+"it/cultura-generale-classe-iii-primaria.html": [
+"it/cultura-generale.html",
+"cultura-generale"
+],
 "it/feste-e-tradizioni-classe-v-primaria.html": [
 "it/feste-e-tradizioni.html",
 "feste-e-tradizioni"
 ],
-"it/geografia-classe-ii-primaria.html": [
+"it/geografia-classe-iii-primaria.html": [
 "it/geografia.html",
 "geografia"
 ],
