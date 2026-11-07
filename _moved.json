@@ -1038,11 +1038,11 @@
 "fr/ressources.html",
 "Toutes les ressources"
 ],
-"fr/culture-generale-niveau-cm1.html": [
+"fr/culture-generale-niveau-ce2.html": [
 "fr/culture-generale.html",
 "culture-generale"
 ],
-"fr/culture-generale-niveau-cp.html": [
+"fr/culture-generale-niveau-cm1.html": [
 "fr/culture-generale.html",
 "culture-generale"
 ],
@@ -1050,7 +1050,7 @@
 "fr/fetes-et-traditions.html",
 "fetes-et-traditions"
 ],
-"fr/fiches-de-lecture-niveau-ce1.html": [
+"fr/fiches-de-lecture-niveau-ce2.html": [
 "fr/fiches-de-lecture.html",
 "fiches-de-lecture"
 ],
@@ -1062,7 +1062,7 @@
 "fr/geographie.html",
 "geographie"
 ],
-"fr/geographie-niveau-ce1.html": [
+"fr/geographie-niveau-ce2.html": [
 "fr/geographie.html",
 "geographie"
 ],
@@ -5809,6 +5809,10 @@
 "cultura-generale"
 ],
 "it/cultura-generale-classe-iii-primaria.html": [
+"it/cultura-generale.html",
+"cultura-generale"
+],
+"it/cultura-generale-classe-iv-primaria.html": [
 "it/cultura-generale.html",
 "cultura-generale"
 ],
