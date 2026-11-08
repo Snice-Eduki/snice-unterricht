@@ -80,6 +80,8 @@
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-digitale-bildung-klasse-6.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-digitale-bildung-klasse-7.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-digitale-bildung-klasse-8.html</loc><priority>0.8</priority></url>
+<url><loc>https://snice-unterricht.eu/arbeitsblaetter-englisch-klasse-3.html</loc><priority>0.8</priority></url>
+<url><loc>https://snice-unterricht.eu/arbeitsblaetter-englisch-klasse-4.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-englisch-klasse-5.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-englisch-klasse-6.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-englisch-klasse-7.html</loc><priority>0.8</priority></url>
@@ -99,6 +101,7 @@
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-ethik-werte-und-normen-klasse-6.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-ethik-werte-und-normen-klasse-7.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-ethik-werte-und-normen-klasse-8.html</loc><priority>0.8</priority></url>
+<url><loc>https://snice-unterricht.eu/arbeitsblaetter-fachuebergreifendes-klasse-1.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-fachuebergreifendes-klasse-2.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-fachuebergreifendes-klasse-3.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/arbeitsblaetter-fachuebergreifendes-klasse-4.html</loc><priority>0.8</priority></url>
@@ -205,7 +208,7 @@
 <url><loc>https://snice-unterricht.eu/lesespurgeschichten-klasse-10.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/st-martin.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/advent-winter.html</loc><xhtml:link rel="alternate" hreflang="de" href="https://snice-unterricht.eu/advent-winter.html"/><xhtml:link rel="alternate" hreflang="en" href="https://snice-unterricht.eu/en/christmas-winter.html"/><xhtml:link rel="alternate" hreflang="es" href="https://snice-unterricht.eu/es/navidad-invierno.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://snice-unterricht.eu/fr/noel-hiver.html"/><xhtml:link rel="alternate" hreflang="it" href="https://snice-unterricht.eu/it/natale-inverno.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://snice-unterricht.eu/en/christmas-winter.html"/><priority>0.8</priority></url>
-<url><loc>https://snice-unterricht.eu/herbst.html</loc><xhtml:link rel="alternate" hreflang="de" href="https://snice-unterricht.eu/herbst.html"/><xhtml:link rel="alternate" hreflang="en" href="https://snice-unterricht.eu/en/fall-thanksgiving.html"/><xhtml:link rel="alternate" hreflang="es" href="https://snice-unterricht.eu/es/otono.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://snice-unterricht.eu/en/fall-thanksgiving.html"/><priority>0.8</priority></url>
+<url><loc>https://snice-unterricht.eu/herbst.html</loc><xhtml:link rel="alternate" hreflang="de" href="https://snice-unterricht.eu/herbst.html"/><xhtml:link rel="alternate" hreflang="en" href="https://snice-unterricht.eu/en/fall-thanksgiving.html"/><xhtml:link rel="alternate" hreflang="es" href="https://snice-unterricht.eu/es/otono.html"/><xhtml:link rel="alternate" hreflang="fr" href="https://snice-unterricht.eu/fr/automne.html"/><xhtml:link rel="alternate" hreflang="x-default" href="https://snice-unterricht.eu/en/fall-thanksgiving.html"/><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/berufsschule-elektroniker-in.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/berufsschule-kaufleute-fuer-bueromanagement.html</loc><priority>0.8</priority></url>
 <url><loc>https://snice-unterricht.eu/berufsschule-kaufleute-im-einzelhandel.html</loc><priority>0.8</priority></url>

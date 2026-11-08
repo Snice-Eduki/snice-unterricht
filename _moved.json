@@ -478,6 +478,14 @@
 "en/resources.html",
 "All resources"
 ],
+"en/p/18136647-eintracht-frankfurt.html": [
+"en/resources.html",
+"All resources"
+],
+"en/p/18136796-elbsandsteingebirge.html": [
+"en/resources.html",
+"All resources"
+],
 "en/p/18222552-adventskalender-vorlage-fur-die-klasse-24-turchen-kl-14.html": [
 "en/resources.html",
 "All resources"
@@ -497,6 +505,10 @@
 "en/p/18223357-wichtelkartchen-24-wichtelauftrage-und-wichtelpost-kl-14.html": [
 "en/resources.html",
 "All resources"
+],
+"en/reading-comprehension-worksheets-grade-4.html": [
+"en/reading-comprehension-worksheets.html",
+"reading-comprehension-worksheets"
 ]
 },
 "es": {
@@ -669,6 +681,10 @@
 "Todos los recursos"
 ],
 "es/p/17926622-zugspitze.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/18129111-heligoland.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -1034,15 +1050,11 @@
 "fr/arts-et-culture.html",
 "arts-et-culture"
 ],
-"fr/automne.html": [
-"fr/ressources.html",
-"Toutes les ressources"
-],
-"fr/culture-generale-niveau-ce2.html": [
+"fr/culture-generale-niveau-cm1.html": [
 "fr/culture-generale.html",
 "culture-generale"
 ],
-"fr/culture-generale-niveau-cm1.html": [
+"fr/culture-generale-niveau-cp.html": [
 "fr/culture-generale.html",
 "culture-generale"
 ],
@@ -1050,7 +1062,11 @@
 "fr/fetes-et-traditions.html",
 "fetes-et-traditions"
 ],
-"fr/fiches-de-lecture-niveau-ce2.html": [
+"fr/fiches-de-lecture-niveau-4.html": [
+"fr/fiches-de-lecture.html",
+"fiches-de-lecture"
+],
+"fr/fiches-de-lecture-niveau-ce1.html": [
 "fr/fiches-de-lecture.html",
 "fiches-de-lecture"
 ],
@@ -1062,7 +1078,7 @@
 "fr/geographie.html",
 "geographie"
 ],
-"fr/geographie-niveau-ce2.html": [
+"fr/geographie-niveau-ce1.html": [
 "fr/geographie.html",
 "geographie"
 ],
@@ -1074,7 +1090,7 @@
 "fr/histoire-et-societe.html",
 "histoire-et-societe"
 ],
-"fr/histoire-et-societe-niveau-cm1.html": [
+"fr/histoire-et-societe-niveau-cm2.html": [
 "fr/histoire-et-societe.html",
 "histoire-et-societe"
 ],
@@ -2245,6 +2261,10 @@
 "fr/p/18126912-chewing-gum.html": [
 "fr/p/2106481-chewing-gum.html",
 "Chewing-gum – Fiche : texte à trous, compréhension orale et mots mêlés"
+],
+"fr/p/18126929-chiemsee.html": [
+"fr/ressources.html",
+"Toutes les ressources"
 ],
 "fr/p/18126949-chihuahua.html": [
 "fr/p/2099972-chihuahua.html",
@@ -3637,6 +3657,10 @@
 "fr/p/18141653-hautbois.html": [
 "fr/p/2098622-hautbois.html",
 "Hautbois – Fiche : texte à trous, compréhension orale et mots mêlés"
+],
+"fr/p/18141686-havel.html": [
+"fr/ressources.html",
+"Toutes les ressources"
 ],
 "fr/p/18141774-hibou-grand-duc.html": [
 "fr/p/2097478-hibou-grand-duc.html",
@@ -5194,10 +5218,6 @@
 "fr/p/2363806-le-livre-de-la-jungle.html",
 "Le Livre de la jungle – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18156766-le-petit-chaperon-rouge.html": [
-"fr/p/2104522-le-petit-chaperon-rouge.html",
-"Le Petit Chaperon rouge – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18156793-lecture.html": [
 "fr/p/2106911-lecture.html",
 "Lecture – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5770,9 +5790,97 @@
 "fr/p/2388429-chelles.html",
 "Chelles – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18234697-atelier-des-personnages-zeus.html": [
-"fr/p/2403379-atelier-des-personnages-zeus.html",
-"Atelier des personnages : Zeus – Fiche à lire et à compléter, CE2–CM1 (gratuit)"
+"fr/p/2097091-photosynthese.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101872-indonesie.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103335-tour-de-londres.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104522-le-petit-chaperon-rouge.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364869-robert-schumann.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365041-systeme-de-retraite-en-allemagne.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402476-atelier-des-personnages-marie-curie-pack-plus-avec-textes-a-3-niveaux.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402493-atelier-des-personnages-marie-curie.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402498-atelier-des-personnages-mozart-pack-plus-avec-textes-a-3-niveaux-quiz.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402507-atelier-des-personnages-mozart.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402578-atelier-des-personnages-zeus-pack-plus-avec-textes-a-3-niveaux-quiz-et.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402579-atelier-des-personnages-rosa-parks-pack-plus-avec-textes-a-3-niveaux-q.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402585-atelier-des-personnages-helen-keller-pack-plus.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402599-atelier-des-personnages-rosa-parks.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2402645-atelier-des-personnages-helen-keller.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2403307-atelier-des-personnages-picasso-pack-plus-avec-textes-a-3-niveaux-quiz.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2403359-atelier-des-personnages-picasso.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2403379-atelier-des-personnages-zeus.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2404171-atelier-des-contes-chaperon-rouge-pack-plus-avec-domino-lire-et-coller.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2404248-atelier-des-contes-hansel-et-gretel-pack-plus-avec-domino-lire-et-coll.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2404323-atelier-des-contes-blanche-neige-pack-plus-avec-domino-lire-et-coller.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2404397-atelier-des-contes-cendrillon-pack-plus-avec-domino-lire-et-coller-tex.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2404439-atelier-des-contes-la-belle-au-bois-dormant-pack-plus-avec-domino-lire.html": [
+"fr/ressources.html",
+"Toutes les ressources"
 ],
 "fr/sciences-et-sante-niveau-6.html": [
 "fr/sciences-et-sante.html",
@@ -5791,6 +5899,10 @@
 "technologie"
 ],
 "fr/technologie-niveau-cm1.html": [
+"fr/technologie.html",
+"technologie"
+],
+"fr/technologie-niveau-cm2.html": [
 "fr/technologie.html",
 "technologie"
 ]
