@@ -117,3 +117,9 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 08.11. 14:01 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 09.11. 02:16 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 09.11. 04:34 Homepage-Tageslauf: BLOG_PRUEFEN 6 – Entwuerfe in Marketing\blog\_queue pruefen/freigeben (_blog_takt.py) (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 09.11. 07:52 Homepage-Tageslauf: i18n-Check fehlgeschlagen -> kein Push: ', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../reading-comprehension-worksheets.html', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../bundles.html' (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 09.11. 08:27 Homepage-Tageslauf: i18n-Check fehlgeschlagen -> kein Push: ', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../reading-comprehension-worksheets.html', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../bundles.html' (Log `Skripte\_homepage_daily.log`)

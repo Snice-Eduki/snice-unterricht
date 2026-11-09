@@ -62,13 +62,13 @@ def render_i18n(g):
         os.makedirs(os.path.join(B.OUT, "downloads"), exist_ok=True); shutil.copy(c["pdf"], os.path.join(B.OUT, "downloads", c["dl"]))
         url = f"{I.SITE}/{lang}/{c['slug']}.html"
         ld = [I.breadcrumb_ld([(c["home"], f"{I.SITE}/{lang}/"), (c["h1"], url)])]
-        out = I.head_i18n(lang, c["title"], c["desc"], url, None, 1, extra_ld=ld)
+        out = I.head_i18n(lang, c["title"], c["desc"], url, None, 0, extra_ld=ld)
         lis = "".join(f"<li>{E(x)}</li>" for x in c["li"])
         tpt = f' · <a href="{c["shopurl"]}" rel="noopener">{E(c["shop"])}</a>' if lang == "en" else f' · <a href="{c["shopurl"]}" rel="noopener">{E(c["shop"])}</a>'
         out += (f'<main class="article-wrap"><nav class="crumbs"><a href="./">{E(c["home"])}</a> › <span>{E(c["h1"])}</span></nav>'
                 f'<h1>{E(c["h1"])}</h1><p class="sub">{E(c["sub"])}</p>'
                 f'<p class="dl"><a class="btn" href="../downloads/{c["dl"]}" download>{E(c["btn"])}</a></p>'
                 f'<h2>{E(c["inh"])}</h2><ul>{lis}</ul>'
-                f'<p>{E(c["more"])} <a href="{c["eduki"]}" rel="noopener">eduki</a>{tpt}</p></main>') + I.foot_i18n(lang, 1)
+                f'<p>{E(c["more"])} <a href="{c["eduki"]}" rel="noopener">eduki</a>{tpt}</p></main>') + I.foot_i18n(lang, 0)
         I.write(lang, c["slug"], out); I.SITEMAP_URLS[lang].append((url, None)); n += 1
     return n
