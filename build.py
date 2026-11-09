@@ -2446,6 +2446,7 @@ sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Wende di
 dort findest du alle Materialien nach Fach und Klasse.</p>
 <p><a class="btn" href="/index.html">Zur Startseite</a> · <a href="/lesespurgeschichten.html">Lesespurgeschichten</a> · <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a></p>""")
     global I18N_FILES
+    import escape_seiten; escape_seiten.render_i18n(globals())   # 09.11.: Escape-Room Winter Landesseiten
     I18N_FILES, _ = i18n_build.render()
     print("i18n:", n_i18n, i18n_build.STATS.get("render"))
     write_feed(posts); write_meta(posts)
