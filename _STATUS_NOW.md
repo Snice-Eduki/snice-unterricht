@@ -123,3 +123,5 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 09.11. 07:52 Homepage-Tageslauf: i18n-Check fehlgeschlagen -> kein Push: ', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../reading-comprehension-worksheets.html', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../bundles.html' (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 09.11. 08:27 Homepage-Tageslauf: i18n-Check fehlgeschlagen -> kein Push: ', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../reading-comprehension-worksheets.html', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../bundles.html' (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 09.11. 20:35 Homepage-Tageslauf: Pages nach 45 Min nicht live (Log `Skripte\_homepage_daily.log`)
