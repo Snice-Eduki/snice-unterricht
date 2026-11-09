@@ -548,7 +548,7 @@ def line_of(m):
     return "sonst"
 
 
-_FREE_TITLE_RE = re.compile(r"(?:[–\-]\s*(?:kostenlos|gratis)|\((?:gratis|kostenlos)\)|GRATIS-)", re.I)
+_FREE_TITLE_RE = re.compile(r"(?:[–\-]\s*(?:kostenlos|gratis)\b|\((?:gratis|kostenlos)\)|\bGRATIS-)", re.I)
 _KL_RANGE_RE = re.compile(r"Klasse\s+(\d{1,2})\s*[–\-]\s*(\d{1,2})")
 
 
