@@ -16,15 +16,15 @@
 "fach-politik-sozialkunde.html",
 "Politik/Sozialkunde"
 ],
-"material/2064225-venezuela-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
 "material/2413536-rechenheft-zahlenraum-20-uebungsheft-mit-selbstkontrolle.html": [
 "materialien.html",
 "Materialien"
 ],
 "material/2413876-rechenheft-zahlenraum-1000-hunderter-zehner-einer.html": [
+"materialien.html",
+"Materialien"
+],
+"material/2414854-wortspiele-sag-es-nicht-hobbys-klasse-2-4.html": [
 "materialien.html",
 "Materialien"
 ],
@@ -5932,7 +5932,7 @@
 ]
 },
 "it": {
-"it/animali-e-natura-classe-i-primaria.html": [
+"it/animali-e-natura-classe-ii-primaria.html": [
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
@@ -5948,10 +5948,6 @@
 "it/cultura-generale.html",
 "cultura-generale"
 ],
-"it/cultura-generale-classe-i-primaria.html": [
-"it/cultura-generale.html",
-"cultura-generale"
-],
 "it/cultura-generale-classe-ii-primaria.html": [
 "it/cultura-generale.html",
 "cultura-generale"
@@ -5960,19 +5956,23 @@
 "it/cultura-generale.html",
 "cultura-generale"
 ],
+"it/cultura-generale-classe-iv-primaria.html": [
+"it/cultura-generale.html",
+"cultura-generale"
+],
 "it/feste-e-tradizioni-classe-iv-primaria.html": [
 "it/feste-e-tradizioni.html",
 "feste-e-tradizioni"
 ],
-"it/geografia-classe-ii-primaria.html": [
+"it/geografia-classe-iii-primaria.html": [
 "it/geografia.html",
 "geografia"
 ],
-"it/musica-classe-i-primaria.html": [
+"it/musica-classe-ii-primaria.html": [
 "it/musica.html",
 "musica"
 ],
-"it/musica-classe-ii-primaria.html": [
+"it/musica-classe-iii-primaria.html": [
 "it/musica.html",
 "musica"
 ],
@@ -5996,11 +5996,15 @@
 "it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-con.html",
 "Laboratorio di carte: Gli animali domestici – carte immagine e parola con frasi modello (GRATIS)"
 ],
-"it/storia-e-societa-classe-i-primaria.html": [
+"it/scienze-e-salute-classe-iv-primaria.html": [
+"it/scienze-e-salute.html",
+"scienze-e-salute"
+],
+"it/storia-e-societa-classe-ii-primaria.html": [
 "it/storia-e-societa.html",
 "storia-e-societa"
 ],
-"it/storia-e-societa-classe-ii-primaria.html": [
+"it/storia-e-societa-classe-iii-primaria.html": [
 "it/storia-e-societa.html",
 "storia-e-societa"
 ]
