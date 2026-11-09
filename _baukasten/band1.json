@@ -1,0 +1,3006 @@
+{
+ "band": 1,
+ "titel": "Band 1: Elternabend Klasse 1–10",
+ "untertitel": "Planen, einladen, durchführen und nachbereiten – mit Bausteinen für jede Stufe",
+ "einleitung": "Dieser Band begleitet Sie durch alle Phasen eines Elternabends: von der Terminplanung über Einladung und Ablauf bis zur Nachbereitung. Wählen Sie die Module Ihrer Stufe, kopieren Sie die Textbausteine in Sie- oder Du-Form und ergänzen Sie die eckigen Klammern. Alle Vorlagen sind editierbar und für alle Schularten gedacht.",
+ "abschnitte": [
+  {
+   "id": "A",
+   "titel": "Planung und Einladung",
+   "module": [
+    {
+     "id": "1.01",
+     "titel": "Elternabende im Schuljahr planen",
+     "typ": "Tabelle",
+     "zweck": "Jahresüberblick, damit Elternabende, Sprechtage und Wahlen rechtzeitig und ohne Terminstau liegen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Ein Elternabend gelingt, wenn er früh im Jahr feststeht. Tragen Sie die Termine vor den Sommerferien in den Jahreskalender ein und stimmen Sie sie mit Schulleitung, Fachkonferenzen und Elternbeirat ab."
+      },
+      {
+       "t": "h",
+       "x": "Empfohlene Terminlage"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Zeitpunkt",
+        "Anlass",
+        "Vorlauf Einladung"
+       ],
+       "zeilen": [
+        [
+         "Wochen 3–6 nach Schuljahresbeginn",
+         "Erster Elternabend mit Elternvertretungswahl",
+         "14 Tage"
+        ],
+        [
+         "Oktober bis November",
+         "Lernentwicklungs- oder Elternsprechtag",
+         "3 Wochen"
+        ],
+        [
+         "Januar bis Februar",
+         "Themenabend (Übertritt, Fächerwahl, Berufsorientierung)",
+         "3 Wochen"
+        ],
+        [
+         "Mai bis Juni",
+         "Klassenfahrt, Abschluss, Schuljahresende",
+         "14 Tage"
+        ],
+        [
+         "Nach Bedarf",
+         "Anlassbezogener Abend (Konflikt, Klassenzusammenlegung)",
+         "7 Tage"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Regeln für gute Terminlagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wochentag Dienstag bis Donnerstag wählen, Beginn 18:00 oder 19:00 Uhr, Ende spätestens nach 90 Minuten.",
+        "Keine Termine in Ferienübergängen, an Brückentagen oder bei Abschlussprüfungen.",
+        "Termine der Parallelklassen abstimmen, wenn Eltern mehrere Kinder an der Schule haben.",
+        "Raumbelegung früh beim Sekretariat buchen."
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin mit Schulleitung abgestimmt",
+        "Raum gebucht",
+        "Hausmeister informiert",
+        "Eintrag im Schulkalender und auf der Schulwebseite",
+        "Einladung terminiert"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wer im Sommer bereits die Termine des ganzen Schuljahrs bekanntgibt, erhält höhere Teilnahmequoten, weil Berufstätige und Schichtarbeitende planen können."
+      }
+     ]
+    },
+    {
+     "id": "1.02",
+     "titel": "Terminumfrage unter den Eltern",
+     "typ": "Textbaustein",
+     "zweck": "Kurze Umfrage, wenn der Termin mit den Eltern abgestimmt werden soll.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Bei kleinen Klassen oder besonderen Anlässen lohnt sich eine Terminumfrage. Sie zeigt Wertschätzung und erhöht die Teilnahme. Begrenzen Sie die Auswahl auf zwei bis drei Termine."
+      },
+      {
+       "t": "h",
+       "x": "Text der Umfrage (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nfür unseren Elternabend der Klasse [Klasse] möchte ich einen Termin finden, an dem möglichst viele von Ihnen teilnehmen können. Bitte kreuzen Sie auf dem Abschnitt unten alle Termine an, die für Sie passen, und geben Sie ihn bis [Datum] Ihrem Kind wieder mit.\n\nIch entscheide anschließend nach der größten Zustimmung und informiere Sie rechtzeitig.\n\nHerzliche Grüße\n[Name]"
+      },
+      {
+       "t": "h",
+       "x": "Text der Umfrage (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nfür unseren Elternabend der Klasse [Klasse] suche ich einen Termin, an dem möglichst viele von Euch Zeit haben. Kreuzt bitte auf dem Abschnitt unten alle passenden Termine an und gebt ihn bis [Datum] Eurem Kind wieder mit.\n\nIch entscheide nach der größten Zustimmung und melde mich rechtzeitig.\n\nHerzliche Grüße\n[Name]"
+      },
+      {
+       "t": "h",
+       "x": "Abschnitt zum Abtrennen"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Termin 1: [Datum, Uhrzeit] passt",
+        "Termin 2: [Datum, Uhrzeit] passt",
+        "Termin 3: [Datum, Uhrzeit] passt",
+        "Ich benötige Kinderbetreuung (Anzahl Kinder)"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Teilen Sie das Ergebnis mit (\"12 von 20 Familien können am Dienstag\"). Das schafft Transparenz. Bieten Sie in jedem Fall einen Ersatzweg für Verhinderte an (Gespräch, Protokoll)."
+      },
+      {
+       "t": "hinweis",
+       "x": "Abstimmungen nur über das von der Schule freigegebene Werkzeug, nicht über private Messenger-Gruppen ohne Einwilligung."
+      }
+     ]
+    },
+    {
+     "id": "1.03",
+     "titel": "Einladung zum Elternabend – Klasse 1",
+     "typ": "Brief",
+     "zweck": "Fertige Einladung in Sie- und Du-Form, sofort anpassbar.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Einladung nennt Termin, Ort, Thema, Dauer und Rückmeldefrist. Sie ist freundlich, kurz und sagt, warum es sich lohnt zu kommen."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlich lade ich Sie zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Kennenlernen, Schulalltag, Material, Wahl der Elternvertretung\n\nEs ist Ihr erster Schulelternabend. Fragen sind ausdrücklich erwünscht.\n\nBitte geben Sie den Rückmeldeabschnitt bis [Datum] ab. Wenn Sie Betreuung für Geschwister oder Unterstützung bei der Verständigung benötigen, sagen Sie mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Sie.\n\nMit freundlichen Grüßen\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlich lade ich Euch zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Kennenlernen, Schulalltag, Material, Wahl der Elternvertretung\n\nEs ist Euer erster Schulelternabend. Fragen sind ausdrücklich erwünscht.\n\nBitte gebt den Rückmeldeabschnitt bis [Datum] ab. Wenn Ihr Betreuung für Geschwister oder Unterstützung bei der Verständigung braucht, sagt mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Euch.\n\nHerzliche Grüße\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Ergänzende Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Hinweis auf Schuleingangsphase und Rituale",
+        "Betreuungsmöglichkeit für jüngere Geschwister nennen",
+        "Einladung auch für Großeltern oder weitere Bezugspersonen öffnen, wenn gewünscht"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Ich komme: ja / nein",
+        "Name des Kindes",
+        "Anzahl Personen",
+        "Betreuungsbedarf"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin, Raum und Uhrzeit geprüft",
+        "Tagesordnung beigefügt",
+        "Rückmeldefrist genannt",
+        "Hinweis auf Betreuung und Sprachhilfe",
+        "Schulleitung hat gegengelesen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Versenden Sie die Einladung auf Schulbriefpapier mit Rückmeldeabschnitt, zusätzlich digital, wenn die Schule einen freigegebenen Kanal hat."
+      }
+     ]
+    },
+    {
+     "id": "1.04",
+     "titel": "Einladung zum Elternabend – Klasse 2 bis 4",
+     "typ": "Brief",
+     "zweck": "Fertige Einladung in Sie- und Du-Form, sofort anpassbar.",
+     "stufe": "Kl. 2–4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Einladung nennt Termin, Ort, Thema, Dauer und Rückmeldefrist. Sie ist freundlich, kurz und sagt, warum es sich lohnt zu kommen."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlich lade ich Sie zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Rückblick, Lernstand, Hausaufgaben, Klassenregeln, Wahl der Elternvertretung\n\nWenn Sie ein Thema besprechen möchten, schreiben Sie es auf den Rückmeldeabschnitt.\n\nBitte geben Sie den Rückmeldeabschnitt bis [Datum] ab. Wenn Sie Betreuung für Geschwister oder Unterstützung bei der Verständigung benötigen, sagen Sie mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Sie.\n\nMit freundlichen Grüßen\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlich lade ich Euch zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Rückblick, Lernstand, Hausaufgaben, Klassenregeln, Wahl der Elternvertretung\n\nWenn Ihr ein Thema besprechen möchtet, schreibt es auf den Rückmeldeabschnitt.\n\nBitte gebt den Rückmeldeabschnitt bis [Datum] ab. Wenn Ihr Betreuung für Geschwister oder Unterstützung bei der Verständigung braucht, sagt mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Euch.\n\nHerzliche Grüße\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Ergänzende Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "In Klasse 4 zusätzlich auf Übertrittsinformationen hinweisen",
+        "Elternwünsche als Themenbox ankündigen",
+        "Kurzer Ausblick auf Klassenfahrten und Projekte"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Ich komme: ja / nein",
+        "Name des Kindes",
+        "Anzahl Personen",
+        "Betreuungsbedarf"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin, Raum und Uhrzeit geprüft",
+        "Tagesordnung beigefügt",
+        "Rückmeldefrist genannt",
+        "Hinweis auf Betreuung und Sprachhilfe",
+        "Schulleitung hat gegengelesen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Versenden Sie die Einladung auf Schulbriefpapier mit Rückmeldeabschnitt, zusätzlich digital, wenn die Schule einen freigegebenen Kanal hat."
+      }
+     ]
+    },
+    {
+     "id": "1.05",
+     "titel": "Einladung zum Elternabend – Klasse 5 und 6",
+     "typ": "Brief",
+     "zweck": "Fertige Einladung in Sie- und Du-Form, sofort anpassbar.",
+     "stufe": "Kl. 5–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Einladung nennt Termin, Ort, Thema, Dauer und Rückmeldefrist. Sie ist freundlich, kurz und sagt, warum es sich lohnt zu kommen."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlich lade ich Sie zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Ankommen an der weiterführenden Schule, Fachlehrkräfte, Lernorganisation, Medien\n\nAuch die Fachlehrkräfte stellen sich kurz vor.\n\nBitte geben Sie den Rückmeldeabschnitt bis [Datum] ab. Wenn Sie Betreuung für Geschwister oder Unterstützung bei der Verständigung benötigen, sagen Sie mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Sie.\n\nMit freundlichen Grüßen\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlich lade ich Euch zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Ankommen an der weiterführenden Schule, Fachlehrkräfte, Lernorganisation, Medien\n\nAuch die Fachlehrkräfte stellen sich kurz vor.\n\nBitte gebt den Rückmeldeabschnitt bis [Datum] ab. Wenn Ihr Betreuung für Geschwister oder Unterstützung bei der Verständigung braucht, sagt mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Euch.\n\nHerzliche Grüße\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Ergänzende Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ansprechpartner nennen: Klassenleitung, Beratung, Schulsozialarbeit",
+        "Schultagesablauf und Lernzeiten kurz erläutern",
+        "Planer oder Lernbüro vorstellen"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Ich komme: ja / nein",
+        "Name des Kindes",
+        "Anzahl Personen",
+        "Betreuungsbedarf"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin, Raum und Uhrzeit geprüft",
+        "Tagesordnung beigefügt",
+        "Rückmeldefrist genannt",
+        "Hinweis auf Betreuung und Sprachhilfe",
+        "Schulleitung hat gegengelesen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Versenden Sie die Einladung auf Schulbriefpapier mit Rückmeldeabschnitt, zusätzlich digital, wenn die Schule einen freigegebenen Kanal hat."
+      }
+     ]
+    },
+    {
+     "id": "1.06",
+     "titel": "Einladung zum Elternabend – Klasse 7 und 8",
+     "typ": "Brief",
+     "zweck": "Fertige Einladung in Sie- und Du-Form, sofort anpassbar.",
+     "stufe": "Kl. 7–8",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Einladung nennt Termin, Ort, Thema, Dauer und Rückmeldefrist. Sie ist freundlich, kurz und sagt, warum es sich lohnt zu kommen."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlich lade ich Sie zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Pubertät, Leistung, Medien, Berufsorientierung, Wahlentscheidungen\n\nGemeinsam sprechen wir über Motivation, Leistungsdruck und Medienzeiten.\n\nBitte geben Sie den Rückmeldeabschnitt bis [Datum] ab. Wenn Sie Betreuung für Geschwister oder Unterstützung bei der Verständigung benötigen, sagen Sie mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Sie.\n\nMit freundlichen Grüßen\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlich lade ich Euch zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Pubertät, Leistung, Medien, Berufsorientierung, Wahlentscheidungen\n\nGemeinsam sprechen wir über Motivation, Leistungsdruck und Medienzeiten.\n\nBitte gebt den Rückmeldeabschnitt bis [Datum] ab. Wenn Ihr Betreuung für Geschwister oder Unterstützung bei der Verständigung braucht, sagt mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Euch.\n\nHerzliche Grüße\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Ergänzende Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Hinweis auf Wahlpflichtfächer oder Profilwahl, falls im Schuljahr anstehend",
+        "Hinweis auf Praktikumsvorbereitung",
+        "Option: Schülervertretung berichtet kurz"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Ich komme: ja / nein",
+        "Name des Kindes",
+        "Anzahl Personen",
+        "Betreuungsbedarf"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin, Raum und Uhrzeit geprüft",
+        "Tagesordnung beigefügt",
+        "Rückmeldefrist genannt",
+        "Hinweis auf Betreuung und Sprachhilfe",
+        "Schulleitung hat gegengelesen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Versenden Sie die Einladung auf Schulbriefpapier mit Rückmeldeabschnitt, zusätzlich digital, wenn die Schule einen freigegebenen Kanal hat."
+      }
+     ]
+    },
+    {
+     "id": "1.07",
+     "titel": "Einladung zum Elternabend – Klasse 9 und 10",
+     "typ": "Brief",
+     "zweck": "Fertige Einladung in Sie- und Du-Form, sofort anpassbar.",
+     "stufe": "Kl. 9–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Einladung nennt Termin, Ort, Thema, Dauer und Rückmeldefrist. Sie ist freundlich, kurz und sagt, warum es sich lohnt zu kommen."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlich lade ich Sie zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Abschluss, Prüfungen, Berufsorientierung, Bewerbung, Oberstufe\n\nWir klären die Wege nach dem Abschluss und die nächsten Fristen.\n\nBitte geben Sie den Rückmeldeabschnitt bis [Datum] ab. Wenn Sie Betreuung für Geschwister oder Unterstützung bei der Verständigung benötigen, sagen Sie mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Sie.\n\nMit freundlichen Grüßen\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlich lade ich Euch zum Elternabend der Klasse [Klasse] ein.\n\nTermin: [Wochentag, Datum], [Uhrzeit] Uhr\nOrt: Raum [Nummer]\nDauer: etwa 90 Minuten\n\nSchwerpunkte des Abends: Abschluss, Prüfungen, Berufsorientierung, Bewerbung, Oberstufe\n\nWir klären die Wege nach dem Abschluss und die nächsten Fristen.\n\nBitte gebt den Rückmeldeabschnitt bis [Datum] ab. Wenn Ihr Betreuung für Geschwister oder Unterstützung bei der Verständigung braucht, sagt mir bitte Bescheid, wir finden eine Lösung.\n\nIch freue mich auf Euch.\n\nHerzliche Grüße\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Ergänzende Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Termine zu Prüfungen und Anmeldefristen nennen",
+        "Ansprechpartner der Berufsberatung und der Praktikumsbetreuung",
+        "Jugendliche zur Teilnahme einladen, wenn die Schule das vorsieht"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Ich komme: ja / nein",
+        "Name des Kindes",
+        "Anzahl Personen",
+        "Betreuungsbedarf"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin, Raum und Uhrzeit geprüft",
+        "Tagesordnung beigefügt",
+        "Rückmeldefrist genannt",
+        "Hinweis auf Betreuung und Sprachhilfe",
+        "Schulleitung hat gegengelesen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Versenden Sie die Einladung auf Schulbriefpapier mit Rückmeldeabschnitt, zusätzlich digital, wenn die Schule einen freigegebenen Kanal hat."
+      }
+     ]
+    },
+    {
+     "id": "1.08",
+     "titel": "Tagesordnung: Muster für 90 Minuten",
+     "typ": "Tabelle",
+     "zweck": "Bewährte Zeitstruktur mit Puffer für Fragen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eine klare Tagesordnung gibt Sicherheit. Hängen Sie sie sichtbar auf und halten Sie die Zeiten ein: Pünktlicher Schluss ist eine Form von Respekt."
+      },
+      {
+       "t": "h",
+       "x": "Muster"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Zeit",
+        "Programmpunkt",
+        "Verantwortlich"
+       ],
+       "zeilen": [
+        [
+         "0–10 Min.",
+         "Ankommen, Begrüßung, Ablauf",
+         "Klassenleitung"
+        ],
+        [
+         "10–25 Min.",
+         "Rückblick und Klassenlage",
+         "Klassenleitung"
+        ],
+        [
+         "25–50 Min.",
+         "Themenblock (z. B. Hausaufgaben, Medien)",
+         "Lehrkraft / Gäste"
+        ],
+        [
+         "50–60 Min.",
+         "Pause, Austausch",
+         "alle"
+        ],
+        [
+         "60–75 Min.",
+         "Elternvertretung, Termine, Organisation",
+         "Klassenleitung / Eltern"
+        ],
+        [
+         "75–90 Min.",
+         "Fragen, Wünsche, Abschluss",
+         "alle"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Anpassungen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mit Wahl der Elternvertretung: Themenblock auf 15 Minuten kürzen.",
+        "Bei vielen Fragen: Fragenspeicher auf Flipchart und \"Parkplatz\" für Einzelthemen.",
+        "Zeitwächter aus der Elternschaft benennen."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Ablaufvorschlag zum Vorlesen: \"Wir haben heute etwa neunzig Minuten. Zuerst berichte ich aus dem Klassenalltag, dann sprechen wir über [Thema], danach wählen wir die Elternvertretung. Einzelfragen zu Ihrem Kind besprechen wir bitte in einem Gespräch unter vier Augen. Ich biete dafür Termine an.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Individuelle Fragen zu einem einzelnen Kind gehören nicht in den Elternabend. Vereinbaren Sie sofort einen Gesprächstermin."
+      }
+     ]
+    },
+    {
+     "id": "1.09",
+     "titel": "Checkliste Raum und Material",
+     "typ": "Checkliste",
+     "zweck": "Alles, was vor dem Elternabend bereitliegen muss.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Gute Vorbereitung verhindert Hektik. Gehen Sie die Liste am Vortag und 30 Minuten vor Beginn durch."
+      },
+      {
+       "t": "h",
+       "x": "Raum"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Stühle im Halbkreis oder an Gruppentischen",
+        "Erwachsenengerechte Sitzmöbel (in Klasse 1 Stühle aus anderen Räumen holen)",
+        "Lüften, Temperatur prüfen",
+        "Namensschilder für Eltern",
+        "Wegweiser vom Eingang zum Raum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Technik und Material"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Beamer oder Tafel funktioniert",
+        "Folien oder Plakate",
+        "Flipchart und Stifte",
+        "Anwesenheitsliste",
+        "Protokollvorlage",
+        "Hefte und Arbeiten der Kinder zum Ansehen",
+        "Informationsblätter in der richtigen Stückzahl"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Atmosphäre"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Getränke und kleine Snacks",
+        "Zeitplan sichtbar",
+        "Kinderecke für Geschwister",
+        "Kinderarbeiten ohne erkennbare Namen aufhängen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Stellen Sie am Eingang eine Kiste für Fragezettel bereit. So kommen auch stille Eltern zu Wort."
+      }
+     ]
+    },
+    {
+     "id": "1.10",
+     "titel": "Digitaler und hybrider Elternabend",
+     "typ": "Leitfaden",
+     "zweck": "Ablauf, Technik und Datenschutz für Online- oder Hybridformate.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Digitale Formate erleichtern die Teilnahme, bergen aber Datenschutzfragen. Nutzen Sie nur die von Ihrer Schule freigegebene Videoplattform und klären Sie die Regeln im Vorfeld."
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Freigegebene Plattform nutzen",
+        "Zugangslink rechtzeitig verschicken",
+        "Technischen Test anbieten",
+        "Kurzanleitung beilegen",
+        "Vorgaben der Schule zu Datenschutz und Einwilligung beachten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Durchführung"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Fünf Minuten vor Beginn den Raum öffnen und Eltern begrüßen.",
+        "Regeln nennen: Kamera nach Wunsch, Mikrofon stumm, Fragen im Chat oder per Handzeichen.",
+        "Aufzeichnung und Mitschnitt ausdrücklich ausschließen.",
+        "Themen in kurzen Blöcken, nach jedem Block Fragen.",
+        "Gruppenräume für den Austausch nutzen.",
+        "Abschluss mit kurzer Blitzumfrage."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Datenschutz und Regeln"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Keine Namen einzelner Kinder nennen.",
+        "Keine Bildschirmfotos der Teilnehmenden.",
+        "Keine Weitergabe des Einwahllinks."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Regelansage zu Beginn: \"Herzlich willkommen. Fragen zu Ihrem eigenen Kind klären wir bitte im persönlichen Gespräch. Aufnahmen und Screenshots sind nicht erlaubt. Ihre Fragen stellen Sie gern im Chat, ich greife sie nach jedem Abschnitt auf.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Hybridabend: Eine zweite Person moderiert die Online-Gruppe, sonst gehen die Zugeschalteten unter."
+      }
+     ]
+    },
+    {
+     "id": "1.11",
+     "titel": "Erinnerung und Rückmeldung nachhalten",
+     "typ": "Textbaustein",
+     "zweck": "Freundliche Erinnerung und Umgang mit fehlenden Rückmeldungen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Etwa drei Tage vor dem Termin erinnern Sie kurz. Das erhöht die Teilnahme spürbar."
+      },
+      {
+       "t": "h",
+       "x": "Erinnerung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nzur Erinnerung: Unser Elternabend findet am [Datum] um [Uhrzeit] Uhr in Raum [Nummer] statt. Falls Sie noch nicht geantwortet haben, geben Sie mir bitte kurz Bescheid.\n\nBis bald\n[Name]"
+      },
+      {
+       "t": "h",
+       "x": "Erinnerung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nnur zur Erinnerung: Unser Elternabend ist am [Datum] um [Uhrzeit] Uhr in Raum [Nummer]. Gebt mir bitte kurz Bescheid, ob Ihr kommt.\n\nBis bald\n[Name]"
+      },
+      {
+       "t": "h",
+       "x": "Wenn Rückmeldungen fehlen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Individuell nachfragen, nicht öffentlich nennen.",
+        "Gründe erfragen: Zeit, Sprache, Betreuung, Unsicherheit.",
+        "Alternativen anbieten: Telefonat, Kurzgespräch, Protokoll."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht erscheinende Eltern sind meist nicht desinteressiert, sondern verhindert. Bleiben Sie freundlich."
+      }
+     ]
+    },
+    {
+     "id": "1.12",
+     "titel": "Teilhabe sichern: Betreuung, Sprache, Barrierefreiheit",
+     "typ": "Checkliste",
+     "zweck": "So werden alle Familien erreicht.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Viele Familien fehlen wegen Betreuung, Sprache oder Barrieren. Prüfen Sie diese Punkte vor jeder Einladung."
+      },
+      {
+       "t": "h",
+       "x": "Sprache"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Einladung in einfacher Sprache formulieren",
+        "Sprachmittlung über Schulleitung oder Schulträger anfragen",
+        "Dolmetschen durch Eltern nur freiwillig, nie durch Kinder"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Betreuung und Organisation"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Kinderbetreuung durch Hort oder Schülerpaten klären",
+        "Zeit mit Schichtdiensten abstimmen",
+        "Online-Zuschaltung ermöglichen",
+        "Mitfahrbörse anbieten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Barrierefreiheit"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Raum ebenerdig oder mit Aufzug",
+        "Platz für Rollstuhl und Kinderwagen",
+        "Gut lesbare Folien mit ausreichendem Kontrast",
+        "Bei Bedarf Gebärdensprach- oder Schriftdolmetschung anfragen"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Satz für die Einladung: \"Wenn Sie Hilfe bei der Verständigung, der Kinderbetreuung oder dem Zugang zum Raum benötigen, sprechen Sie mich bitte an. Wir finden gemeinsam eine Lösung.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Offizielle Sprachmittler laufen meist über Schulleitung oder Schulträger; fragen Sie früh an."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "titel": "Ablauf und Ansprache je Stufe",
+   "module": [
+    {
+     "id": "1.13",
+     "titel": "Ablauf Elternabend Klasse 1",
+     "typ": "Leitfaden",
+     "zweck": "Roter Faden für den Elternabend dieser Stufe mit Zeitplan und typischen Elternfragen.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Klasse 1 geht es um Vertrauen. Eltern lernen Schulalltag, Rituale und Ansprechpartner kennen und erfahren, wie sie ihr Kind am Anfang gut begleiten."
+      },
+      {
+       "t": "h",
+       "x": "Schwerpunkte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Tagesablauf, Rituale und Pausenregeln",
+        "Schulweg, Ranzen, Material, Frühstück",
+        "Lesen- und Schreibenlernen: Methode, Geduld, Vorlesen",
+        "Kontakt: Mitteilungsheft, Sprechzeiten",
+        "Elternvertretung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zeitplan"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Minuten",
+        "Inhalt"
+       ],
+       "zeilen": [
+        [
+         "10",
+         "Begrüßung, Kennenlernen der Eltern"
+        ],
+        [
+         "15",
+         "Schulalltag und Unterricht"
+        ],
+        [
+         "20",
+         "Lernen begleiten: Hausaufgaben, Üben, Lesen"
+        ],
+        [
+         "10",
+         "Pause"
+        ],
+        [
+         "20",
+         "Organisation und Elternvertretung"
+        ],
+        [
+         "15",
+         "Fragen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie viel soll mein Kind üben?",
+        "Was tun, wenn es nicht in die Schule will?",
+        "Wie funktioniert das Lesenlernen?",
+        "Wie erreiche ich Sie?"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ansprache vorbereitet",
+        "Beispiele und Hefte bereitgelegt",
+        "Wahl der Elternvertretung eingeplant",
+        "Protokollführung geklärt",
+        "Informationsblatt zum Mitnehmen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sprechen Sie in der Ich-Form über die Klasse, nicht über einzelne Kinder. Gute Beispiele wirken stärker als Appelle."
+      }
+     ]
+    },
+    {
+     "id": "1.14",
+     "titel": "Ansprache Elternabend Klasse 1",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Begrüßung und Einführung in Sie- und Du-Form.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Ansprache dauert höchstens fünf Minuten. Passen Sie die Beispiele an Ihre Klasse an."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nschön, dass Sie da sind. Vor wenigen Wochen haben Ihre Kinder ihren ersten Schultag gefeiert, und ich habe in dieser kurzen Zeit viel Mut, Neugier und Freude erlebt. Heute möchte ich Ihnen zeigen, wie ein Schultag bei uns abläuft und wie Sie Ihr Kind gut begleiten können.\n\nSie müssen nichts perfekt machen. Wichtig sind Zeit, Zuhören und Verlässlichkeit. Fragen sind jederzeit willkommen."
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nschön, dass Ihr da seid. Vor wenigen Wochen haben Eure Kinder ihren ersten Schultag gefeiert, und ich habe in dieser kurzen Zeit viel Mut, Neugier und Freude erlebt. Heute möchte ich Euch zeigen, wie ein Schultag bei uns abläuft und wie Ihr Euer Kind gut begleiten könnt.\n\nIhr müsst nichts perfekt machen. Wichtig sind Zeit, Zuhören und Verlässlichkeit. Fragen sind jederzeit willkommen."
+      },
+      {
+       "t": "h",
+       "x": "Tipps zum Vortrag"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eltern namentlich und mit Blickkontakt begrüßen.",
+        "Positive Beobachtungen zuerst nennen.",
+        "Zwei bis drei konkrete Beispiele aus dem Klassenalltag erzählen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Kurze Pausen nach Kernaussagen geben den Eltern Zeit zum Mitdenken."
+      }
+     ]
+    },
+    {
+     "id": "1.15",
+     "titel": "Ablauf Elternabend Klasse 2 bis 4",
+     "typ": "Leitfaden",
+     "zweck": "Roter Faden für den Elternabend dieser Stufe mit Zeitplan und typischen Elternfragen.",
+     "stufe": "Kl. 2–4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In den Klassen 2 bis 4 festigen sich Arbeitshaltung und Selbstständigkeit. Der Abend stärkt die Zusammenarbeit und klärt Erwartungen an Hausaufgaben und Leistung."
+      },
+      {
+       "t": "h",
+       "x": "Schwerpunkte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Rückblick und Lernstand der Klasse",
+        "Hausaufgaben und Lernzeiten",
+        "Leistungsnachweise und Zeugnisse",
+        "Soziales Miteinander",
+        "In Klasse 4: Übertritt in die weiterführende Schule"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zeitplan"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Minuten",
+        "Inhalt"
+       ],
+       "zeilen": [
+        [
+         "10",
+         "Begrüßung, Rückblick"
+        ],
+        [
+         "20",
+         "Lernstand, Leistungen, Bewertung"
+        ],
+        [
+         "20",
+         "Themenblock: Hausaufgaben, Üben, Medien"
+        ],
+        [
+         "10",
+         "Pause"
+        ],
+        [
+         "15",
+         "Elternvertretung und Organisation"
+        ],
+        [
+         "15",
+         "Fragen und Wünsche"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie lange soll mein Kind Hausaufgaben machen?",
+        "Wann braucht es Nachhilfe?",
+        "Was tue ich bei Streit unter Kindern?",
+        "Ab wann Handy und Computer?"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ansprache vorbereitet",
+        "Beispiele und Hefte bereitgelegt",
+        "Wahl der Elternvertretung eingeplant",
+        "Protokollführung geklärt",
+        "Informationsblatt zum Mitnehmen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sprechen Sie in der Ich-Form über die Klasse, nicht über einzelne Kinder. Gute Beispiele wirken stärker als Appelle."
+      }
+     ]
+    },
+    {
+     "id": "1.16",
+     "titel": "Ansprache Elternabend Klasse 2 bis 4",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Begrüßung und Einführung in Sie- und Du-Form.",
+     "stufe": "Kl. 2–4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Ansprache dauert höchstens fünf Minuten. Passen Sie die Beispiele an Ihre Klasse an."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlich willkommen zum Elternabend. Die Klasse hat sich gut entwickelt: Die Kinder arbeiten selbstständiger, unterstützen einander und übernehmen Verantwortung. Gleichzeitig gibt es Themen, die uns beschäftigen, etwa Hausaufgaben, Leistungsdruck und Medien.\n\nIch möchte heute offen mit Ihnen darüber sprechen und höre Ihre Erfahrungen gern."
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlich willkommen zum Elternabend. Die Klasse hat sich gut entwickelt: Die Kinder arbeiten selbstständiger, unterstützen einander und übernehmen Verantwortung. Gleichzeitig gibt es Themen, die uns beschäftigen, etwa Hausaufgaben, Leistungsdruck und Medien.\n\nIch möchte heute offen mit Euch darüber sprechen und höre Eure Erfahrungen gern."
+      },
+      {
+       "t": "h",
+       "x": "Tipps zum Vortrag"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eltern namentlich und mit Blickkontakt begrüßen.",
+        "Positive Beobachtungen zuerst nennen.",
+        "Zwei bis drei konkrete Beispiele aus dem Klassenalltag erzählen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Kurze Pausen nach Kernaussagen geben den Eltern Zeit zum Mitdenken."
+      }
+     ]
+    },
+    {
+     "id": "1.17",
+     "titel": "Ablauf Elternabend Klasse 5 und 6 (Übergang weiterführende Schule)",
+     "typ": "Leitfaden",
+     "zweck": "Roter Faden für den Elternabend dieser Stufe mit Zeitplan und typischen Elternfragen.",
+     "stufe": "Kl. 5–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Wechsel in die weiterführende Schule ist für Kinder und Eltern ein Einschnitt. Der Abend sorgt für Orientierung und zeigt, wer wofür zuständig ist."
+      },
+      {
+       "t": "h",
+       "x": "Schwerpunkte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ankommen: Klassengemeinschaft, Tagesstruktur, Pausen",
+        "Mehrere Lehrkräfte, Fachunterricht, Materialorganisation",
+        "Selbstständiges Lernen, Planer, Hausaufgaben",
+        "Wahl der Elternvertretung",
+        "Medien und digitale Lernplattformen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zeitplan"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Minuten",
+        "Inhalt"
+       ],
+       "zeilen": [
+        [
+         "10",
+         "Begrüßung, Vorstellung Team"
+        ],
+        [
+         "15",
+         "Schulalltag und Ansprechpartner"
+        ],
+        [
+         "20",
+         "Lernen organisieren, Selbstständigkeit"
+        ],
+        [
+         "10",
+         "Pause"
+        ],
+        [
+         "20",
+         "Elternvertretung, Termine"
+        ],
+        [
+         "15",
+         "Fragen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie erfahre ich von Hausaufgaben und Terminen?",
+        "Wer ist bei Problemen mein Ansprechpartner?",
+        "Wie viel Hilfe ist richtig?",
+        "Wie kommen die Kinder mit den vielen Fachlehrkräften zurecht?"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ansprache vorbereitet",
+        "Beispiele und Hefte bereitgelegt",
+        "Wahl der Elternvertretung eingeplant",
+        "Protokollführung geklärt",
+        "Informationsblatt zum Mitnehmen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sprechen Sie in der Ich-Form über die Klasse, nicht über einzelne Kinder. Gute Beispiele wirken stärker als Appelle."
+      }
+     ]
+    },
+    {
+     "id": "1.18",
+     "titel": "Ansprache Elternabend Klasse 5 und 6",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Begrüßung und Einführung in Sie- und Du-Form.",
+     "stufe": "Kl. 5–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Ansprache dauert höchstens fünf Minuten. Passen Sie die Beispiele an Ihre Klasse an."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nIhre Kinder haben einen großen Schritt getan: neue Schule, neue Gesichter, neue Wege. Die meisten haben sich erstaunlich schnell eingelebt. Heute möchte ich Ihnen zeigen, wie wir den Übergang begleiten, wer Ihre Ansprechpartner sind und wie Sie Ihr Kind unterstützen können, ohne ihm Selbstständigkeit abzunehmen."
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nEure Kinder haben einen großen Schritt getan: neue Schule, neue Gesichter, neue Wege. Die meisten haben sich erstaunlich schnell eingelebt. Heute möchte ich Euch zeigen, wie wir den Übergang begleiten, wer Eure Ansprechpartner sind und wie Ihr Euer Kind unterstützen könnt, ohne ihm Selbstständigkeit abzunehmen."
+      },
+      {
+       "t": "h",
+       "x": "Tipps zum Vortrag"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eltern namentlich und mit Blickkontakt begrüßen.",
+        "Positive Beobachtungen zuerst nennen.",
+        "Zwei bis drei konkrete Beispiele aus dem Klassenalltag erzählen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Kurze Pausen nach Kernaussagen geben den Eltern Zeit zum Mitdenken."
+      }
+     ]
+    },
+    {
+     "id": "1.19",
+     "titel": "Ablauf Elternabend Klasse 7 und 8",
+     "typ": "Leitfaden",
+     "zweck": "Roter Faden für den Elternabend dieser Stufe mit Zeitplan und typischen Elternfragen.",
+     "stufe": "Kl. 7–8",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In der Pubertät ändern sich Motivation, Freundeskreis und Verhältnis zu Eltern. Der Abend unterstützt Eltern darin, Orientierung zu geben und Freiräume zu gewähren."
+      },
+      {
+       "t": "h",
+       "x": "Schwerpunkte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Motivation, Leistung und Lernstrategien",
+        "Medienkonsum, soziale Netzwerke",
+        "Freundschaften, Gruppendruck, Konflikte",
+        "Wahlentscheidungen und Berufsorientierung",
+        "Gesundheit, Schlaf, Pausen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zeitplan"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Minuten",
+        "Inhalt"
+       ],
+       "zeilen": [
+        [
+         "10",
+         "Begrüßung, Klassenlage"
+        ],
+        [
+         "20",
+         "Lernen, Leistung, Motivation"
+        ],
+        [
+         "20",
+         "Themenblock Medien/Pubertät"
+        ],
+        [
+         "10",
+         "Pause"
+        ],
+        [
+         "15",
+         "Berufsorientierung, Termine"
+        ],
+        [
+         "15",
+         "Fragen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mein Kind will nicht mehr lernen. Was tun?",
+        "Wie viel Handy ist angemessen?",
+        "Wann kommt die Berufsorientierung?",
+        "Wie spreche ich über schwierige Themen?"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ansprache vorbereitet",
+        "Beispiele und Hefte bereitgelegt",
+        "Wahl der Elternvertretung eingeplant",
+        "Protokollführung geklärt",
+        "Informationsblatt zum Mitnehmen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sprechen Sie in der Ich-Form über die Klasse, nicht über einzelne Kinder. Gute Beispiele wirken stärker als Appelle."
+      }
+     ]
+    },
+    {
+     "id": "1.20",
+     "titel": "Ansprache Elternabend Klasse 7 und 8",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Begrüßung und Einführung in Sie- und Du-Form.",
+     "stufe": "Kl. 7–8",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Ansprache dauert höchstens fünf Minuten. Passen Sie die Beispiele an Ihre Klasse an."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\ndie Klasse 7 und 8 ist eine spannende, manchmal anstrengende Zeit. Ihre Kinder suchen ihren eigenen Weg, testen Grenzen und brauchen gleichzeitig Halt. Mein Eindruck ist, dass die Klasse im Kern stabil und hilfsbereit ist.\n\nHeute geht es um Motivation, Medien und Orientierung. Ich freue mich auf den Austausch."
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\ndie Klasse 7 und 8 ist eine spannende, manchmal anstrengende Zeit. Eure Kinder suchen ihren eigenen Weg, testen Grenzen und brauchen gleichzeitig Halt. Mein Eindruck ist, dass die Klasse im Kern stabil und hilfsbereit ist.\n\nHeute geht es um Motivation, Medien und Orientierung. Ich freue mich auf den Austausch."
+      },
+      {
+       "t": "h",
+       "x": "Tipps zum Vortrag"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eltern namentlich und mit Blickkontakt begrüßen.",
+        "Positive Beobachtungen zuerst nennen.",
+        "Zwei bis drei konkrete Beispiele aus dem Klassenalltag erzählen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Kurze Pausen nach Kernaussagen geben den Eltern Zeit zum Mitdenken."
+      }
+     ]
+    },
+    {
+     "id": "1.21",
+     "titel": "Ablauf Elternabend Klasse 9 und 10 (Abschluss und Berufsorientierung)",
+     "typ": "Leitfaden",
+     "zweck": "Roter Faden für den Elternabend dieser Stufe mit Zeitplan und typischen Elternfragen.",
+     "stufe": "Kl. 9–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Im Abschlussjahr zählen Verbindlichkeit und Planung. Der Abend klärt Anforderungen, Fristen und Perspektiven und beteiligt Eltern als Begleiter, nicht als Entscheider."
+      },
+      {
+       "t": "h",
+       "x": "Schwerpunkte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Abschlüsse und Prüfungen: Voraussetzungen, Termine",
+        "Bewerbungsphase, Praktika, Berufsberatung",
+        "Weiterführende Schulen und Oberstufe",
+        "Lernplanung und Prüfungsvorbereitung",
+        "Abschlussfahrt, Abschlussfeier"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zeitplan"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Minuten",
+        "Inhalt"
+       ],
+       "zeilen": [
+        [
+         "10",
+         "Begrüßung, Stand der Klasse"
+        ],
+        [
+         "25",
+         "Prüfungen, Abschlüsse, Fristen"
+        ],
+        [
+         "20",
+         "Berufsorientierung und Bewerbung"
+        ],
+        [
+         "10",
+         "Pause"
+        ],
+        [
+         "10",
+         "Organisation, Abschlussfeier"
+        ],
+        [
+         "15",
+         "Fragen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Reicht der Notendurchschnitt für den gewünschten Weg?",
+        "Wie läuft die Bewerbung ab?",
+        "Wie finden wir einen Ausbildungsplatz?",
+        "Wie gehen wir mit Prüfungsangst um?"
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ansprache vorbereitet",
+        "Beispiele und Hefte bereitgelegt",
+        "Wahl der Elternvertretung eingeplant",
+        "Protokollführung geklärt",
+        "Informationsblatt zum Mitnehmen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sprechen Sie in der Ich-Form über die Klasse, nicht über einzelne Kinder. Gute Beispiele wirken stärker als Appelle."
+      }
+     ]
+    },
+    {
+     "id": "1.22",
+     "titel": "Ansprache Elternabend Klasse 9 und 10",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Begrüßung und Einführung in Sie- und Du-Form.",
+     "stufe": "Kl. 9–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Ansprache dauert höchstens fünf Minuten. Passen Sie die Beispiele an Ihre Klasse an."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nnun geht es auf die Zielgerade. Ihre Kinder stehen vor Prüfungen und wichtigen Entscheidungen. Ich möchte Sie heute informieren, wo wir stehen, welche Termine wichtig sind und wie Sie Ihr Kind begleiten, ohne zu schieben oder zu bremsen.\n\nFragen zu Wegen nach dem Abschluss sind ausdrücklich erwünscht."
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nnun geht es auf die Zielgerade. Eure Kinder stehen vor Prüfungen und wichtigen Entscheidungen. Ich möchte Euch heute informieren, wo wir stehen, welche Termine wichtig sind und wie Ihr Euer Kind begleitet, ohne zu schieben oder zu bremsen.\n\nFragen zu Wegen nach dem Abschluss sind ausdrücklich erwünscht."
+      },
+      {
+       "t": "h",
+       "x": "Tipps zum Vortrag"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eltern namentlich und mit Blickkontakt begrüßen.",
+        "Positive Beobachtungen zuerst nennen.",
+        "Zwei bis drei konkrete Beispiele aus dem Klassenalltag erzählen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Kurze Pausen nach Kernaussagen geben den Eltern Zeit zum Mitdenken."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "titel": "Elternvertretung und Themenbausteine",
+   "module": [
+    {
+     "id": "1.23",
+     "titel": "Wahl der Elternvertretung: Ablauf",
+     "typ": "Leitfaden",
+     "zweck": "Schritt für Schritt von der Einladung bis zum Wahlergebnis.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Wahl der Klassenelternvertretung findet meist am ersten Elternabend statt. Das Verfahren (Anzahl der Vertreter, Stellvertretung, Amtszeit, Wahlberechtigung) richtet sich nach dem Schulgesetz und der Wahlordnung Ihres Landes."
+      },
+      {
+       "t": "h",
+       "x": "Ablauf"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Wahlleitung bestimmen (Lehrkraft eröffnet, dann Wahlleiter aus den Eltern).",
+        "Regeln erklären: Wer ist wahlberechtigt und wählbar, wie viele Stimmen, geheim oder offen.",
+        "Kandidaten sammeln, auch Selbstvorschläge, Bereitschaft abfragen.",
+        "Kurz vorstellen lassen, was die Kandidaten bewegt.",
+        "Wahlgang durchführen (Stimmzettel oder Handzeichen, je nach Regel).",
+        "Auszählen, Ergebnis verkünden, Annahme der Wahl abfragen.",
+        "Ergebnis protokollieren und ans Sekretariat melden."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Wahlbereitschaft fördern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Aufgaben vorab klar benennen, damit der Aufwand überschaubar wirkt.",
+        "Teams oder Stellvertretung betonen: Niemand steht allein.",
+        "Keine Wahl durch Schweigen oder Druck."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Formulierung: \"Die Elternvertretung ist die Stimme der Eltern in unserer Klasse. Sie vermittelt zwischen Ihnen und mir, informiert, plant Aktionen mit und vertritt die Klasse in der Schulgemeinschaft. Der Aufwand liegt bei wenigen Terminen im Jahr. Wer kann sich vorstellen, das zu übernehmen?\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Regelungen zur Elternvertretung sind in den Schulgesetzen der Länder verschieden (Bezeichnung, Wahlverfahren, Amtszeit). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Wahlberechtigte Eltern geprüft",
+        "Stimmzettel/Urne bereit",
+        "Wahlleitung benannt",
+        "Protokoll und Anwesenheitsliste",
+        "Meldung an Schulleitung"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "1.24",
+     "titel": "Wahlprotokoll und Stimmzettel",
+     "typ": "Vorlage",
+     "zweck": "Dokumentation der Wahl der Elternvertretung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Das Wahlprotokoll muss Wahlverfahren, Ergebnis und Annahme nachvollziehbar festhalten. Bewahren Sie es gemäß Vorgabe der Schule auf."
+      },
+      {
+       "t": "h",
+       "x": "Protokollkopf"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Klasse",
+        "Schuljahr",
+        "Datum, Ort",
+        "Wahlleitung",
+        "Anwesende wahlberechtigte Eltern",
+        "Protokollführung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ergebnis"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Name",
+        "Funktion (Vertretung/Stellvertretung)",
+        "Stimmen",
+        "Wahl angenommen"
+       ],
+       "zeilen": [
+        [
+         "[Name]",
+         "Elternvertretung",
+         "____",
+         "ja / nein"
+        ],
+        [
+         "[Name]",
+         "Stellvertretung",
+         "____",
+         "ja / nein"
+        ],
+        [
+         "[Name]",
+         "Stellvertretung",
+         "____",
+         "ja / nein"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Feststellungen"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Einladung fristgerecht erfolgt",
+        "Wahlberechtigung geprüft",
+        "Stimmzahl entspricht Anwesenden",
+        "Gültige und ungültige Stimmen gezählt",
+        "Enthaltungen festgehalten"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Gültige Stimmen",
+        "Ungültige Stimmen",
+        "Enthaltungen"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Besondere Vorkommnisse"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Unterschrift Wahlleitung",
+        "Unterschrift Klassenleitung"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Regelungen zur Elternvertretung sind in den Schulgesetzen der Länder verschieden (Bezeichnung, Wahlverfahren, Amtszeit). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "1.25",
+     "titel": "Rollen der Elternvertretung",
+     "typ": "Übersicht",
+     "zweck": "Klärt Aufgaben, Rechte und Grenzen für Eltern und Lehrkraft.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eine klare Rollenbeschreibung entlastet beide Seiten. Die Elternvertretung ist kein Beschwerdebüro und keine Hilfslehrkraft, sondern Bindeglied und Mitgestalterin."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Bereich",
+        "Aufgabe der Elternvertretung",
+        "Aufgabe der Lehrkraft"
+       ],
+       "zeilen": [
+        [
+         "Information",
+         "Anliegen der Eltern sammeln und weitergeben",
+         "Zeitnah und transparent antworten"
+        ],
+        [
+         "Veranstaltungen",
+         "Klassenfeste, Elterncafé mitorganisieren",
+         "Rahmen und Aufsicht klären"
+        ],
+        [
+         "Konflikte",
+         "Gesprächsangebot machen, vermitteln",
+         "Gespräch führen, Lösung suchen"
+        ],
+        [
+         "Schulgremien",
+         "Klasse in Elternbeirat/Schulkonferenz vertreten",
+         "Gremien informieren, Termine nennen"
+        ],
+        [
+         "Datenschutz",
+         "Kontaktlisten nur mit Einwilligung nutzen",
+         "Einwilligungen einholen, Hinweise geben"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Grenzen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Keine Einsicht in Noten oder Beurteilungen einzelner Kinder.",
+        "Keine Weitergabe vertraulicher Informationen.",
+        "Keine Einzelbeschwerden \"im Namen aller\" ohne Rückkopplung."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Vereinbarung: \"Wir halten fest: Anliegen werden zuerst mit der betroffenen Lehrkraft besprochen, bei Bedarf mit der Klassenleitung, danach mit der Schulleitung. Die Elternvertretung unterstützt dabei, ersetzt aber nicht das direkte Gespräch.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Bedanken Sie sich öffentlich bei der Elternvertretung. Ehrenamt braucht Anerkennung."
+      }
+     ]
+    },
+    {
+     "id": "1.26",
+     "titel": "Klassenelternbrief",
+     "typ": "Brief",
+     "zweck": "Vorlage für den ersten Brief der gewählten Elternvertretung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der erste Brief der Elternvertretung stellt die Personen vor, nennt Kontaktwege und schafft Vertrauen. Er wird idealerweise von der Lehrkraft gegengelesen."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern der Klasse [Klasse],\n\nbei unserem Elternabend am [Datum] wurden wir zur Elternvertretung gewählt. Wir danken für Ihr Vertrauen.\n\nSie erreichen uns unter [E-Mail/Telefon]. Gern nehmen wir Anregungen, Fragen und Ideen entgegen. Persönliche Anliegen zu Ihrem Kind bespricht bitte jeder zuerst mit der Lehrkraft.\n\nGeplant sind: [Aktion/Termin]. Wir freuen uns über Mithilfe.\n\nHerzliche Grüße\n[Name], [Name]"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern der Klasse [Klasse],\n\nbei unserem Elternabend am [Datum] wurden wir zur Elternvertretung gewählt. Danke für Euer Vertrauen!\n\nIhr erreicht uns unter [E-Mail/Telefon]. Wir freuen uns über Anregungen, Fragen und Ideen. Persönliche Anliegen zu Eurem Kind besprecht bitte zuerst mit der Lehrkraft.\n\nGeplant sind: [Aktion/Termin]. Wir freuen uns über Eure Mithilfe.\n\nHerzliche Grüße\n[Name], [Name]"
+      },
+      {
+       "t": "h",
+       "x": "Weitere Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kontaktdaten nur mit Einwilligung der Eltern weitergeben.",
+        "Verteiler über Schulplattform oder E-Mail-BCC, nicht über offene Messenger-Gruppen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine Einwilligungsliste für die Kontaktdaten erleichtert die Arbeit der Vertretung erheblich."
+      }
+     ]
+    },
+    {
+     "id": "1.27",
+     "titel": "Zusammenarbeit Lehrkraft und Elternvertretung",
+     "typ": "Leitfaden",
+     "zweck": "Vereinbarungen für ein Schuljahr guter Zusammenarbeit.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Gute Zusammenarbeit lebt von verlässlichen Absprachen. Treffen Sie früh im Schuljahr eine kurze Vereinbarung."
+      },
+      {
+       "t": "h",
+       "x": "Absprachen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Zwei feste Gesprächstermine im Schuljahr (Herbst und Frühjahr).",
+        "Reaktionszeit auf Nachrichten, z. B. innerhalb von drei Werktagen.",
+        "Kommunikationsweg: E-Mail oder Schulplattform.",
+        "Aufgabenverteilung bei Klassenfesten und Ausflügen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsleitfaden für das Treffen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Stimmung in der Klasse und der Elternschaft.",
+        "Offene Anliegen der Eltern.",
+        "Termine und geplante Aktionen.",
+        "Konflikte oder Beschwerden, ohne Namen."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Einladung: \"Liebe Elternvertretung, ich möchte mich gern mit Ihnen kurz austauschen. Vorschlag: [Datum], [Uhrzeit], 30 Minuten. Bitte bringen Sie Anliegen aus der Elternschaft mit. Ich freue mich auf die Zusammenarbeit.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Offene Kommunikation vermeidet Gerüchte. Lieber einmal zu früh informieren als zu spät."
+      }
+     ]
+    },
+    {
+     "id": "1.28",
+     "titel": "Themenbaustein: Hausaufgaben",
+     "typ": "Textbaustein",
+     "zweck": "Klärt Zweck, Umfang und Rolle der Eltern bei Hausaufgaben.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Hausaufgaben üben und festigen, was im Unterricht gelernt wurde. Eltern sollen unterstützen, nicht ersetzen."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Richtwert: Klasse 1–2 etwa 20 Minuten, Klasse 3–4 etwa 30–45 Minuten, später nach Schulordnung.",
+        "Eltern sorgen für Ruhe, Ort und Zeit, kontrollieren aber nicht jede Aufgabe.",
+        "Fehler gehören zum Lernen und werden nicht von Eltern korrigiert.",
+        "Bei Überlastung schreiben Eltern einen Vermerk, anstatt stundenlang zu üben."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Hausaufgaben dienen dazu, Gelerntes zu üben. Bitte schaffen Sie einen ruhigen Platz und eine feste Zeit. Helfen Sie, wenn Ihr Kind nicht weiterkommt, aber lassen Sie es die Aufgabe selbst lösen. Dauert eine Aufgabe deutlich länger als besprochen, brechen Sie ab und schreiben Sie mir einen kurzen Vermerk. So sehe ich, wo Ihr Kind Unterstützung braucht."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Hausaufgaben dienen dazu, Gelerntes zu üben. Bitte schafft einen ruhigen Platz und eine feste Zeit. Helft, wenn Euer Kind nicht weiterkommt, aber lasst es die Aufgabe selbst lösen. Dauert eine Aufgabe deutlich länger als besprochen, brecht ab und schreibt mir einen kurzen Vermerk. So sehe ich, wo Euer Kind Unterstützung braucht."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Soll ich Hausaufgaben kontrollieren?",
+        "Was, wenn mein Kind sie vergisst?",
+        "Wie gehe ich mit Streit um Hausaufgaben um?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Beginnen Sie mit dem, was bereits gut läuft, bevor Sie Erwartungen formulieren."
+      }
+     ]
+    },
+    {
+     "id": "1.29",
+     "titel": "Themenbaustein: Medien und Handy",
+     "typ": "Textbaustein",
+     "zweck": "Gemeinsame Linie zu Mediennutzung, Handy und sozialen Netzwerken.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Medienkompetenz entsteht durch Begleitung. Verbote allein reichen nicht, klare Regeln und Gespräche sind wirksamer."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Altersgerechte Zeitvorgaben und Inhalte festlegen.",
+        "Handyfreie Zonen: Esstisch, Schlafzimmer, Hausaufgabenzeit.",
+        "Messenger-Klassengruppen: Regeln zu Tonfall, Bildern und Kettenbriefen.",
+        "Altersgrenzen von Diensten beachten, Datenschutz und Privatsphäre erklären.",
+        "Bei Cybermobbing: Beweise sichern, Schule informieren."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Medien gehören zum Alltag Ihrer Kinder. Bitte vereinbaren Sie mit Ihrem Kind klare Regeln: feste Zeiten, handyfreie Orte und der Verzicht auf Bildschirme vor dem Schlafen. Interessieren Sie sich für das, was Ihr Kind nutzt, und sprechen Sie über Erlebtes. Bei Problemen im Netz wenden Sie sich bitte früh an mich."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Medien gehören zum Alltag Eurer Kinder. Bitte vereinbart mit Eurem Kind klare Regeln: feste Zeiten, handyfreie Orte und den Verzicht auf Bildschirme vor dem Schlafen. Interessiert Euch für das, was Euer Kind nutzt, und sprecht über Erlebtes. Bei Problemen im Netz wendet Euch bitte früh an mich."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ab wann ist ein Smartphone sinnvoll?",
+        "Dürfen Kinder in Klassengruppen schreiben?",
+        "Was tun bei Cybermobbing?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine kurze Klassenvereinbarung zu Chatgruppen (Tonfall, Bilder, Ruhezeiten) verhindert viele Konflikte."
+      }
+     ]
+    },
+    {
+     "id": "1.30",
+     "titel": "Themenbaustein: Leistungsbewertung",
+     "typ": "Textbaustein",
+     "zweck": "Transparenz über Noten, Berichte und Bewertungsmaßstäbe.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eltern akzeptieren Bewertungen leichter, wenn sie Maßstäbe und Wege der Rückmeldung kennen."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Grundlage: Lehrplan, Leistungsbewertungsverordnung und Schulordnung des Landes.",
+        "Schriftliche, mündliche und praktische Leistungen werden unterschiedlich gewichtet.",
+        "Rückmeldung erfolgt nicht nur über Noten, auch über Gespräche und Kompetenzraster.",
+        "Bei Fragen zur Note: erst Gespräch mit der Fachlehrkraft."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Ihr Kind wird nach den im Land geltenden Vorgaben bewertet. Dazu zählen schriftliche Arbeiten, mündliche Mitarbeit und praktische Leistungen. Ich erläutere Ihnen gern, wie sich eine Note zusammensetzt. Bitte sprechen Sie mich an, wenn eine Bewertung für Sie nicht nachvollziehbar ist."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Euer Kind wird nach den im Land geltenden Vorgaben bewertet. Dazu zählen schriftliche Arbeiten, mündliche Mitarbeit und praktische Leistungen. Ich erläutere Euch gern, wie sich eine Note zusammensetzt. Sprecht mich bitte an, wenn eine Bewertung für Euch nicht nachvollziehbar ist."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie viel zählt die mündliche Note?",
+        "Wie werden Arbeiten zurückgegeben?",
+        "Wann gibt es Förderhinweise?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Verweisen Sie auf die geltende Bewertungsordnung des Landes und der Schule, ohne konkrete Paragrafen zu nennen, wenn Sie sie nicht vorliegen haben."
+      }
+     ]
+    },
+    {
+     "id": "1.31",
+     "titel": "Themenbaustein: Klassenregeln",
+     "typ": "Textbaustein",
+     "zweck": "Gemeinsame Regeln transparent machen und Eltern einbeziehen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Regeln wirken, wenn Kinder an ihrer Entstehung beteiligt sind und Eltern sie kennen und mittragen."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wenige, positive formulierte Regeln (3–7).",
+        "Konsequenzen sind vorab bekannt und angemessen.",
+        "Regeln gelten für Kinder und Erwachsene.",
+        "Elternrolle: Regeln zu Hause aufgreifen, nicht untergraben."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "In unserer Klasse gelten Regeln, die wir mit den Kindern erarbeitet haben. Sie stehen auf dem beigefügten Blatt. Bitte sprechen Sie mit Ihrem Kind darüber und unterstützen Sie diese. Wenn Ihnen etwas unklar ist oder Sie Verbesserungen sehen, sagen Sie es mir bitte."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "In unserer Klasse gelten Regeln, die wir mit den Kindern erarbeitet haben. Sie stehen auf dem beigefügten Blatt. Bitte sprecht mit Eurem Kind darüber und unterstützt sie. Wenn Euch etwas unklar ist oder Ihr Verbesserungen seht, sagt es mir bitte."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Was passiert bei Regelverstößen?",
+        "Wer entscheidet über Konsequenzen?",
+        "Wie erfahre ich von Vorfällen?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Beginnen Sie mit dem, was bereits gut läuft, bevor Sie Erwartungen formulieren."
+      }
+     ]
+    },
+    {
+     "id": "1.32",
+     "titel": "Themenbaustein: Mobbing und Konflikte",
+     "typ": "Textbaustein",
+     "zweck": "Klare Haltung zu Mobbing, Unterschied zu Streit, Vorgehen bei Vorfällen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Streit gehört zum Miteinander, Mobbing nicht. Eltern sollen wissen, woran sie Mobbing erkennen und wie die Schule reagiert."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mobbing: wiederholt, absichtlich, ungleiches Kräfteverhältnis.",
+        "Schule hat ein Konzept: Klassenrat, Streitschlichtung, Beratung.",
+        "Eltern wenden sich zuerst an die Klassenleitung, nicht an andere Eltern oder Kinder.",
+        "Keine Schuldzuweisungen in Elterngruppen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Mobbing duldet unsere Schule nicht. Wenn Ihr Kind betroffen ist oder Sie Hinweise haben, melden Sie sich bitte umgehend bei mir. Wir klären den Fall gemeinsam, schützen die Betroffenen und arbeiten mit allen Beteiligten. Bitte sprechen Sie nicht direkt mit den Kindern oder Eltern der anderen Seite."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Mobbing dulden wir an unserer Schule nicht. Wenn Euer Kind betroffen ist oder Ihr Hinweise habt, meldet Euch bitte umgehend bei mir. Wir klären den Fall gemeinsam, schützen die Betroffenen und arbeiten mit allen Beteiligten. Bitte sprecht nicht direkt mit den Kindern oder Eltern der anderen Seite."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie unterscheide ich Streit und Mobbing?",
+        "Was unternimmt die Schule?",
+        "Darf ich mit dem anderen Kind sprechen?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bieten Sie Eltern den Hinweis auf Schulsozialarbeit und Beratungslehrkraft an."
+      }
+     ]
+    },
+    {
+     "id": "1.33",
+     "titel": "Themenbaustein: Klassenfahrt",
+     "typ": "Textbaustein",
+     "zweck": "Informationen zu Planung, Kosten, Aufsicht und Fürsorge vor Klassenfahrten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Rechtzeitige Information und Transparenz schaffen Vertrauen. Kosten und Förderangebote offen ansprechen."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ziel, Dauer, Programm und Unterkunft vorstellen.",
+        "Kosten und Zahlungswege nennen, Hinweis auf Unterstützungsmöglichkeiten (Bildungs- und Teilhabeleistungen, Schulfonds).",
+        "Aufsicht, Begleitpersonen, Versicherung.",
+        "Medikamente, Allergien und Heimweh frühzeitig klären.",
+        "Gepäck- und Handyregeln."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich möchte Sie über die geplante Klassenfahrt informieren. Das Ziel ist [Ort], die Fahrt dauert [Zeitraum]. Die Kosten betragen voraussichtlich [Betrag]. Wenn Ihnen die Finanzierung Schwierigkeiten bereitet, sprechen Sie mich bitte vertraulich an, es gibt Unterstützungsmöglichkeiten. Bitte teilen Sie mir Allergien, Medikamente und Besonderheiten Ihres Kindes rechtzeitig mit."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich möchte Euch über die geplante Klassenfahrt informieren. Das Ziel ist [Ort], die Fahrt dauert [Zeitraum]. Die Kosten betragen voraussichtlich [Betrag]. Wenn Euch die Finanzierung Schwierigkeiten bereitet, sprecht mich bitte vertraulich an, es gibt Unterstützungsmöglichkeiten. Bitte teilt mir Allergien, Medikamente und Besonderheiten Eures Kindes rechtzeitig mit."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie werden Allergien berücksichtigt?",
+        "Was passiert bei Krankheit oder Heimweh?",
+        "Wer begleitet die Klasse?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Verweisen Sie bei Rechtsfragen (Aufsicht, Versicherung, Kosten) auf die Schulleitung und die schulrechtlichen Vorgaben des Landes."
+      }
+     ]
+    },
+    {
+     "id": "1.34",
+     "titel": "Themenbaustein: Elternmitarbeit",
+     "typ": "Textbaustein",
+     "zweck": "Wege, wie Eltern sich einbringen können.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Mitarbeit stärkt die Gemeinschaft. Sie sollte freiwillig, klar umrissen und wertgeschätzt sein."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mitarbeit im Unterricht (Lesen, Werken) nach Absprache mit Schulleitung.",
+        "Unterstützung bei Festen und Ausflügen.",
+        "Berufsvorstellung im Unterricht.",
+        "Hospitation und Schulhofaktionen.",
+        "Datenschutz und Schweigepflicht beachten."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Wir freuen uns über Ihre Unterstützung. Bitte tragen Sie in die Liste ein, wo Sie sich vorstellen können mitzuhelfen. Jeder Beitrag zählt, auch kleine. Was nicht klappt, ist kein Problem, Sie können jederzeit absagen."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Wir freuen uns über Eure Unterstützung. Bitte tragt in die Liste ein, wo Ihr Euch vorstellen könnt mitzuhelfen. Jeder Beitrag zählt, auch kleine. Was nicht klappt, ist kein Problem, Ihr könnt jederzeit absagen."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Muss ich helfen?",
+        "Kann ich im Unterricht hospitieren?",
+        "Wer haftet bei Ausflügen?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Führen Sie eine Mitmachliste mit Wünschen statt Pflichten. Wer gefragt wird, sagt eher zu als bei offenen Aufrufen."
+      }
+     ]
+    },
+    {
+     "id": "1.35",
+     "titel": "Themenbaustein: Förderung und Nachteilsausgleich",
+     "typ": "Textbaustein",
+     "zweck": "Informationen zu Fördermöglichkeiten und Nachteilsausgleich, ohne einzelne Kinder zu nennen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eltern sollen wissen, dass Unterstützung möglich ist und wie man sie beantragt."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Förderangebote: Differenzierung, Förderunterricht, Lerngruppen, Beratung.",
+        "Nachteilsausgleich bei Lese-Rechtschreib-Schwäche, Behinderung, chronischer Erkrankung: Antrag über Klassenleitung und Schulleitung.",
+        "Notenschutz ist an strenge Voraussetzungen gebunden.",
+        "Gutachten und Atteste bleiben vertraulich."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Alle Kinder sollen ihre Möglichkeiten entfalten können. Wenn Ihr Kind besondere Unterstützung braucht, etwa bei Lesen, Schreiben, Rechnen oder durch eine Erkrankung, sprechen Sie mich bitte an. Wir klären gemeinsam Fördermöglichkeiten und, wenn nötig, einen Nachteilsausgleich. Alle Informationen behandle ich vertraulich."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Alle Kinder sollen ihre Möglichkeiten entfalten können. Wenn Euer Kind besondere Unterstützung braucht, etwa bei Lesen, Schreiben, Rechnen oder durch eine Erkrankung, sprecht mich bitte an. Wir klären gemeinsam Fördermöglichkeiten und, wenn nötig, einen Nachteilsausgleich. Alle Informationen behandle ich vertraulich."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie beantrage ich Nachteilsausgleich?",
+        "Wer entscheidet darüber?",
+        "Steht es im Zeugnis?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Voraussetzungen für Nachteilsausgleich und Notenschutz unterscheiden sich je Land. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "1.36",
+     "titel": "Themenbaustein: Datenschutz und Fotoerlaubnis",
+     "typ": "Textbaustein",
+     "zweck": "Einwilligungen zu Fotos, Kontaktlisten und digitalen Diensten verständlich erklären.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Fotos und Daten von Kindern sind sensibel. Einwilligungen müssen freiwillig, informiert und widerrufbar sein."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Fotos nur mit schriftlicher Einwilligung beider Sorgeberechtigten.",
+        "Einwilligung je Zweck (Schulwebseite, Presse, Klassenfoto).",
+        "Kontaktlisten nur mit Einwilligung weitergeben.",
+        "Keine Veröffentlichung von Kinderfotos in sozialen Netzwerken ohne Einwilligung.",
+        "Widerruf jederzeit möglich."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Zum Schutz Ihrer Kinder fotografieren und veröffentlichen wir nur mit Ihrer Einwilligung. Sie können für jeden Zweck einzeln entscheiden und die Einwilligung jederzeit widerrufen. Ohne Einwilligung entstehen Ihrem Kind keine Nachteile. Bitte geben Sie das ausgefüllte Formular bis [Datum] zurück."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Zum Schutz Eurer Kinder fotografieren und veröffentlichen wir nur mit Eurer Einwilligung. Ihr könnt für jeden Zweck einzeln entscheiden und die Einwilligung jederzeit widerrufen. Ohne Einwilligung entstehen Eurem Kind keine Nachteile. Bitte gebt das ausgefüllte Formular bis [Datum] zurück."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Dürfen Eltern bei Feiern fotografieren?",
+        "Was passiert mit den Fotos?",
+        "Wie widerrufe ich?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Formulare und Rechtsgrundlagen gibt die Schulleitung bzw. die schulische Datenschutzbeauftragte vor. Bitte aktuelle Regelung dort prüfen."
+      }
+     ]
+    },
+    {
+     "id": "1.37",
+     "titel": "Themenbaustein: Gesundheit, Schlaf und Frühstück",
+     "typ": "Textbaustein",
+     "zweck": "Gesunde Rahmenbedingungen für Lernen: Schlaf, Ernährung, Bewegung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Gesunde Kinder lernen besser. Eltern erhalten praktische Anhaltspunkte, ohne belehrt zu werden."
+      },
+      {
+       "t": "h",
+       "x": "Kernaussagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schlafbedarf: Grundschule etwa 9–11 Stunden, Jugendliche etwa 8–10 Stunden.",
+        "Frühstück und gesunde Pausenverpflegung, ausreichend trinken.",
+        "Bewegung im Alltag, Bildschirmzeiten reduzieren.",
+        "Krankheit: Meldepflichten, Infektionsschutz, Atteste nach Schulordnung.",
+        "Medikamente nur nach Absprache mit der Schulleitung."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Ausgeschlafene, satte und bewegte Kinder lernen leichter. Bitte achten Sie auf ausreichend Schlaf, ein Frühstück und ein Getränk in der Tasche. Bei Krankheit informieren Sie uns bitte am selben Morgen. Gesundheitliche Besonderheiten teilen Sie mir bitte vertraulich mit."
+      },
+      {
+       "t": "h",
+       "x": "Formulierung (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Ausgeschlafene, satte und bewegte Kinder lernen leichter. Bitte achtet auf ausreichend Schlaf, ein Frühstück und ein Getränk in der Tasche. Bei Krankheit informiert uns bitte am selben Morgen. Gesundheitliche Besonderheiten teilt mir bitte vertraulich mit."
+      },
+      {
+       "t": "h",
+       "x": "Typische Elternfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie viel Schlaf braucht mein Kind?",
+        "Was gehört in die Brotdose?",
+        "Wann bleibt mein Kind zu Hause?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Schlafempfehlungen sind Richtwerte. Verweisen Sie bei gesundheitlichen Fragen auf Kinder- und Jugendärzte."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "titel": "Fragebögen, Protokolle, schwierige Situationen und Nachbereitung",
+   "module": [
+    {
+     "id": "1.38",
+     "titel": "Fragebogen für Eltern (Du-Form)",
+     "typ": "Fragebogen",
+     "zweck": "Rückmeldung der Eltern zum Klassenleben und zu Wünschen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Fragebogen ist anonym oder mit Namen einsetzbar. Er dauert etwa fünf Minuten. Eine Zusammenfassung der Ergebnisse sollte beim nächsten Elternabend vorgestellt werden."
+      },
+      {
+       "t": "h",
+       "x": "Rückmeldung zur Klasse"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Mein Kind geht gern zur Schule.",
+        "Ich fühle mich gut informiert.",
+        "Ich weiß, an wen ich mich bei Fragen wenden kann.",
+        "Die Hausaufgaben sind für mein Kind gut zu bewältigen.",
+        "Das Miteinander in der Klasse ist gut.",
+        "Ich fühle mich als Elternteil ernst genommen."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Eure Wünsche"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Welche Themen sollen wir beim Elternabend besprechen?"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was läuft in der Klasse besonders gut?"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was sollte sich verändern?"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Datum",
+        "Klasse (freiwillig)",
+        "Name (freiwillig)"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Fragen zu Einzelfällen gehören in ein Gespräch. Weisen Sie darauf auf dem Bogen hin."
+      }
+     ]
+    },
+    {
+     "id": "1.39",
+     "titel": "Fragebogen für Eltern (Sie-Form)",
+     "typ": "Fragebogen",
+     "zweck": "Wie 1.38, in der Sie-Form für Sekundarstufe.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Fragebogen eignet sich für Klassen 5 bis 10. Er wird anonym ausgewertet; Rückmeldungen zu einzelnen Lehrkräften werden gesondert behandelt."
+      },
+      {
+       "t": "h",
+       "x": "Rückmeldung zur Klasse und Schule"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Mein Kind geht gern zur Schule.",
+        "Ich bin über Termine und Anforderungen gut informiert.",
+        "Ich weiß, wen ich bei Fragen ansprechen kann.",
+        "Das Lernpensum ist angemessen.",
+        "Das Klassenklima ist gut.",
+        "Ich werde von der Schule als Partner wahrgenommen."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ihre Anliegen"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Welche Themen sollen beim Elternabend vorkommen?"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was funktioniert besonders gut?"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was wünschen Sie sich für das nächste Halbjahr?"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Datum",
+        "Klasse (freiwillig)",
+        "Name (freiwillig)"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Kritik ist ein Angebot. Bedanken Sie sich bei den Eltern und antworten Sie zeitnah mit konkreten Schritten."
+      }
+     ]
+    },
+    {
+     "id": "1.40",
+     "titel": "Protokollvorlage Elternabend",
+     "typ": "Vorlage",
+     "zweck": "Strukturiertes Protokoll mit Beschlüssen und Verantwortlichkeiten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Ein Protokoll dokumentiert Ergebnisse, nicht Wortbeiträge. Schreiben Sie knapp, neutral und ohne Namen einzelner Kinder."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Klasse",
+        "Datum, Uhrzeit, Ort",
+        "Protokollführung",
+        "Leitung",
+        "Anzahl Anwesende",
+        "Entschuldigt"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Tagesordnung und Ergebnisse"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "TOP",
+        "Thema",
+        "Ergebnis / Beschluss",
+        "Verantwortlich"
+       ],
+       "zeilen": [
+        [
+         "1",
+         "Begrüßung, Ablauf",
+         "",
+         ""
+        ],
+        [
+         "2",
+         "Rückblick, Klassenlage",
+         "",
+         ""
+        ],
+        [
+         "3",
+         "Themenblock",
+         "",
+         ""
+        ],
+        [
+         "4",
+         "Elternvertretung / Wahl",
+         "",
+         ""
+        ],
+        [
+         "5",
+         "Termine, Organisation",
+         "",
+         ""
+        ],
+        [
+         "6",
+         "Verschiedenes",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Offene Punkte und nächste Schritte"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Nächster Termin",
+        "Verteiler"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Unterschrift Protokoll",
+        "Unterschrift Klassenleitung"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Protokoll innerhalb einer Woche an die Eltern verteilen. Es dient als Gedächtnisstütze und schafft Verbindlichkeit."
+      }
+     ]
+    },
+    {
+     "id": "1.41",
+     "titel": "Anwesenheitsliste",
+     "typ": "Vorlage",
+     "zweck": "Dokumentiert die Teilnahme am Elternabend.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Anwesenheitsliste ist Grundlage für Beschlüsse und Wahlen. Bewahren Sie sie gemäß den Vorgaben Ihrer Schule auf."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Klasse",
+        "Datum",
+        "Anlass"
+       ]
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Nr.",
+        "Name Kind",
+        "Name Eltern",
+        "Unterschrift"
+       ],
+       "zeilen": [
+        [
+         "1",
+         "",
+         "",
+         ""
+        ],
+        [
+         "2",
+         "",
+         "",
+         ""
+        ],
+        [
+         "3",
+         "",
+         "",
+         ""
+        ],
+        [
+         "4",
+         "",
+         "",
+         ""
+        ],
+        [
+         "5",
+         "",
+         "",
+         ""
+        ],
+        [
+         "6",
+         "",
+         "",
+         ""
+        ],
+        [
+         "7",
+         "",
+         "",
+         ""
+        ],
+        [
+         "8",
+         "",
+         "",
+         ""
+        ],
+        [
+         "9",
+         "",
+         "",
+         ""
+        ],
+        [
+         "10",
+         "",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Pro Familie eine Unterschrift; bei Wahlen zählt die Stimmberechtigung nach Landesrecht.",
+        "Liste nach Vorlage vervielfältigen für 25–30 Familien."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Liste nur zur Dokumentation nutzen. Nach Ablauf der Aufbewahrungsfrist gemäß Schulvorgabe vernichten."
+      }
+     ]
+    },
+    {
+     "id": "1.42",
+     "titel": "Rückmeldebogen nach dem Elternabend",
+     "typ": "Fragebogen",
+     "zweck": "Kurze Auswertung des Abends durch die Eltern.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Ein Blitz-Feedback am Ausgang zeigt, was gut ankam. Auswerten und beim nächsten Mal berücksichtigen."
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Der Abend war gut strukturiert.",
+        "Ich habe wichtige Informationen erhalten.",
+        "Meine Fragen wurden beantwortet.",
+        "Die Dauer war angemessen.",
+        "Ich fühle mich in der Schule willkommen."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Freitext"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das hat mir gefallen:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das wünsche ich mir anders:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Themen für den nächsten Abend:"
+      },
+      {
+       "t": "hinweis",
+       "x": "Bogen anonym in eine Box werfen lassen."
+      }
+     ]
+    },
+    {
+     "id": "1.43",
+     "titel": "Umgang mit Beschwerden",
+     "typ": "Leitfaden",
+     "zweck": "Professionelles Vorgehen bei Kritik und Beschwerden von Eltern.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eine Beschwerde ist ein Hinweis, dass etwas nicht stimmt. Wer sie ernst nimmt, entschärft die Lage."
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsschritte"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Zuhören, ausreden lassen, Notizen machen.",
+        "Gefühle würdigen, ohne Fehler einzuräumen oder abzuwehren.",
+        "Nachfragen: Was genau, wann, mit welchen Folgen?",
+        "Sichtweise der Schule erläutern, falls bekannt.",
+        "Gemeinsam Lösungsschritte festlegen.",
+        "Folgetermin vereinbaren und Ergebnis notieren."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierungen"
+      },
+      {
+       "t": "baustein",
+       "x": "\"Danke, dass Sie mir das sagen. Ich nehme Ihr Anliegen ernst. Ich möchte sicher verstehen, was passiert ist: Können Sie mir schildern, wie sich die Situation aus Ihrer Sicht darstellt?\"\n\n\"Ich kann nachvollziehen, dass Sie sich Sorgen machen. Ich überprüfe das und melde mich bis [Datum] bei Ihnen.\""
+      },
+      {
+       "t": "h",
+       "x": "Zu vermeiden"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Rechtfertigen oder Gegenangriff.",
+        "Vorschnelle Zusagen.",
+        "Gespräche zwischen Tür und Angel."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Beschwerden an Dritte (Schulleitung, Behörde) sind legitim. Bleiben Sie sachlich und dokumentieren Sie das Gespräch."
+      }
+     ]
+    },
+    {
+     "id": "1.44",
+     "titel": "Konfliktgespräch mit Eltern",
+     "typ": "Leitfaden",
+     "zweck": "Strukturierter Ablauf für ein schwieriges Gespräch.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Konfliktgespräche brauchen einen geschützten Rahmen, Zeit und eine klare Struktur."
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ort und Zeit ohne Störung",
+        "Sachverhalt mit Beobachtungen notiert",
+        "Ziel des Gesprächs formuliert",
+        "Ggf. Schulleitung oder Beratungslehrkraft einbeziehen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ablauf"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Begrüßung und Ziel nennen.",
+        "Elternsicht erfragen.",
+        "Eigene Beobachtungen konkret und wertfrei schildern.",
+        "Gemeinsame Anliegen herausarbeiten.",
+        "Lösungsschritte und Zuständigkeiten festlegen.",
+        "Termin für Rückblick vereinbaren."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Einstieg: \"Danke, dass Sie gekommen sind. Mir liegt das Wohl von [Name] am Herzen. Ich möchte schildern, was ich beobachtet habe, und höre dann gern, wie Sie die Lage sehen. Dann überlegen wir gemeinsam, was hilft.\""
+      },
+      {
+       "t": "h",
+       "x": "Sprachhilfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ich-Botschaften: \"Ich habe beobachtet, dass ...\"",
+        "Offene Fragen: \"Was vermuten Sie als Ursache?\"",
+        "Brücken: \"Uns beiden geht es um [Name].\""
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Machen Sie am Ende eine schriftliche Zusammenfassung und geben Sie sie den Eltern mit."
+      }
+     ]
+    },
+    {
+     "id": "1.45",
+     "titel": "Eskalation und Gesprächsabbruch",
+     "typ": "Leitfaden",
+     "zweck": "Wie man bei verbaler Aggression reagiert und Unterstützung holt.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Selten werden Gespräche laut oder bedrohlich. Dann zählen Ruhe, Grenzen und Unterstützung."
+      },
+      {
+       "t": "h",
+       "x": "Stufen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ruhig bleiben, Tempo senken, Stimme nicht erhöhen.",
+        "Grenze setzen: \"Ich möchte in ruhigem Ton weitersprechen.\"",
+        "Angebot zur Unterbrechung: \"Wir machen eine Pause und treffen uns morgen.\"",
+        "Bei anhaltender Eskalation Gespräch beenden und Raum verlassen.",
+        "Schulleitung informieren und Vorfall schriftlich festhalten."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Klare Formulierung: \"Ich merke, dass das Gespräch gerade nicht mehr sachlich verläuft. Ich beende es jetzt. Gern setzen wir es in Anwesenheit der Schulleitung fort.\""
+      },
+      {
+       "t": "h",
+       "x": "Absicherung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Bei Terminen Zeugen/Beistand einplanen",
+        "Gesprächsnotizen mit Datum",
+        "Meldung an Schulleitung",
+        "Bei Bedrohung: Polizei einschalten, Schulleitung informieren"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eltern sind meist in Sorge oder überfordert. Bleiben Sie professionell, aber ziehen Sie klare Grenzen."
+      }
+     ]
+    },
+    {
+     "id": "1.46",
+     "titel": "Nachbereitung des Elternabends",
+     "typ": "Checkliste",
+     "zweck": "Aufgaben nach dem Abend, damit Beschlüsse umgesetzt werden.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Nachbereitung entscheidet, ob der Abend Wirkung zeigt. Planen Sie sie am selben Abend."
+      },
+      {
+       "t": "h",
+       "x": "Am selben Abend"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Raum aufräumen",
+        "Notizen und Flipcharts fotografieren/sichern",
+        "Fragen für Einzelgespräche notieren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Innerhalb einer Woche"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Protokoll an alle Eltern",
+        "Dank an Elternvertretung und Helfer",
+        "Ergebnisse der Umfrage auswerten",
+        "Einzelgespräche anbieten",
+        "Beschlüsse im Klassenbuch festhalten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Nach vier Wochen"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Stand der Beschlüsse prüfen",
+        "Rückmeldung an Eltern",
+        "Schulleitung informieren, falls nötig"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Ein kurzer Zwischenbericht nach einem Monat zeigt, dass Beschlüsse ernst genommen werden."
+      }
+     ]
+    },
+    {
+     "id": "1.47",
+     "titel": "Elternbrief nach dem Elternabend",
+     "typ": "Brief",
+     "zweck": "Dank, Zusammenfassung und nächste Schritte.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Brief fasst Ergebnisse zusammen und erreicht auch abwesende Eltern."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlichen Dank für den konstruktiven Elternabend am [Datum]. Die wichtigsten Ergebnisse:\n\n- [Ergebnis 1]\n- [Ergebnis 2]\n- [Ergebnis 3]\n\nAls Elternvertretung wurden [Namen] gewählt. Die nächsten Termine: [Termine].\n\nWenn Sie nicht teilnehmen konnten und Fragen haben, melden Sie sich bitte gern bei mir.\n\nMit freundlichen Grüßen\n[Name]"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlichen Dank für den konstruktiven Elternabend am [Datum]. Die wichtigsten Ergebnisse:\n\n- [Ergebnis 1]\n- [Ergebnis 2]\n- [Ergebnis 3]\n\nAls Elternvertretung wurden [Namen] gewählt. Die nächsten Termine: [Termine].\n\nWenn Ihr nicht dabei sein konntet und Fragen habt, meldet Euch gern bei mir.\n\nHerzliche Grüße\n[Name]"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Datum und Protokoll beilegen.",
+        "Hinweis auf Rückmeldebogen und Gesprächsangebote."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Versenden Sie den Brief spätestens eine Woche nach dem Abend."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

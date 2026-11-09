@@ -290,7 +290,7 @@ def foot(root=""):
 <p>{TAGLINE}. Alle Materialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a> · English materials on <a href="https://www.teacherspayteachers.com/store/snice" rel="noopener">Teachers Pay Teachers</a>.</p>
 {cols}
 <p>Andere Sprachen: <a href="{root}en/" hreflang="en" lang="en">English</a> · <a href="{root}es/" hreflang="es" lang="es">Español</a> · <a href="{root}fr/" hreflang="fr" lang="fr">Français</a> · <a href="{root}it/" hreflang="it" lang="it">Italiano</a> · <a href="{root}material-in-anderen-sprachen.html">Übersicht</a></p>
-<p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}kostenlos.html">Kostenloses Unterrichtsmaterial</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
+<p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}kostenlos.html">Kostenloses Unterrichtsmaterial</a> · <a href="{root}baukasten.html">Baukasten für Lehrkräfte</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
 </footer>
 {NAV_SCRIPT}
 </body></html>"""
@@ -2348,6 +2348,8 @@ def main():
     nls = render_lesespur_pages()
     nsa = render_saison_pages()
     n_bs, n_lv = render_berufsschule_lernvideos()   # SEO 02.11.: Berufsschule/Lernvideos (erst ab Mindestmenge)
+    import baukasten_seiten; baukasten_seiten.render(globals())   # 09.11.: Gratis-Baukasten
+    import escape_seiten; escape_seiten.render(globals())   # 09.11.: Escape-Room Winter gratis
     n_matpages = render_material_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>

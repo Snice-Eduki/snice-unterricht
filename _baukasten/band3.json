@@ -1,0 +1,4448 @@
+{
+ "band": 3,
+ "titel": "Band 3: Lernentwicklungsgespräche und Elternsprechtag Klasse 1–10",
+ "untertitel": "Gesprächsleitfäden, Fragebögen, Beobachtungsbögen, Vereinbarungen und über 250 Formulierungshilfen für alle Schularten",
+ "einleitung": "Dieser Band begleitet Sie von der Vorbereitung bis zur Nachbereitung eines Lernentwicklungsgesprächs oder Elternsprechtags. Alle Vorlagen sind editierbar und in Du- oder Sie-Form einsetzbar. Wählen Sie die Module, die zu Ihrer Klassenstufe und Ihrer Situation passen, und ersetzen Sie die Einsetzfelder in eckigen Klammern. Landesspezifische Regelungen bitte immer beim zuständigen Ministerium prüfen.",
+ "abschnitte": [
+  {
+   "id": "A",
+   "titel": "Grundlagen",
+   "module": [
+    {
+     "id": "3.01",
+     "titel": "Ziele und Haltung des Lernentwicklungsgesprächs",
+     "typ": "Leitfaden",
+     "zweck": "Klärt, wofür das Gespräch da ist und welche Haltung es trägt.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Wozu dieses Gespräch?"
+      },
+      {
+       "t": "p",
+       "x": "Das Lernentwicklungsgespräch (je nach Land auch Schüler-Eltern-Lehrer-Gespräch, Kind-Eltern-Lehrer-Gespräch oder Lernstandsgespräch genannt) ist kein Notengespräch im Nachhinein. Es schaut auf den Weg des Kindes: Was gelingt schon, woran wird gearbeitet, wer tut dafür was bis wann."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Ziele"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Gemeinsames Bild vom Lernstand: Sichtweisen von Kind, Eltern und Lehrkraft nebeneinanderlegen.",
+        "Stärken sichtbar machen, bevor über Entwicklungsfelder gesprochen wird.",
+        "Konkrete, überprüfbare Vereinbarungen treffen (wenige, kleine Schritte).",
+        "Vertrauen und Zusammenarbeit zwischen Elternhaus und Schule stärken.",
+        "Das Kind als Mitverantwortlichen für das eigene Lernen ernst nehmen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Haltung der Lehrkraft"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Neugierig statt wissend: Eltern kennen ihr Kind in anderen Situationen als ich.",
+        "Ressourcenorientiert: Zuerst das, was trägt.",
+        "Beschreiben statt bewerten: Beobachtungen nennen, keine Etiketten (nicht 'faul', sondern 'beginnt Aufgaben oft erst nach Aufforderung').",
+        "Verbindlich und ehrlich: Probleme werden klar, aber wertschätzend benannt.",
+        "Auf Augenhöhe: Eltern sind Experten für ihr Kind, die Lehrkraft für das Lernen in der Schule."
+       ]
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Typisches Missverständnis",
+        "Besser"
+       ],
+       "zeilen": [
+        [
+         "Es geht um die Noten.",
+         "Es geht um Lernwege; Noten sind ein Teil davon."
+        ],
+        [
+         "Die Lehrkraft redet, die Eltern hören zu.",
+         "Mindestens die Hälfte der Zeit sprechen Kind und Eltern."
+        ],
+        [
+         "Es müssen viele Probleme gelöst werden.",
+         "Zwei bis drei Vereinbarungen reichen."
+        ],
+        [
+         "Das Kind sitzt nur dabei.",
+         "Das Kind stellt seine Sicht selbst vor."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Formulieren Sie vorab einen Satz, der das Gespräch in einem Atemzug beschreibt, z. B.: 'Wir schauen gemeinsam, was Ihr Kind schon gut kann und welche Schritte als Nächstes dran sind.' Er hilft beim Einstieg und bei Einladungen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Rechtlicher Rahmen und Form (Pflicht oder Angebot, Zeitpunkt, Dokumentation) sind je Bundesland unterschiedlich geregelt. Bitte aktuelle Regelung beim zuständigen Ministerium bzw. in der Schulordnung prüfen."
+      }
+     ]
+    },
+    {
+     "id": "3.02",
+     "titel": "Die sechs Gesprächsphasen",
+     "typ": "Leitfaden",
+     "zweck": "Gibt dem Gespräch eine klare, zeitlich planbare Struktur.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Phasenmodell (Richtwert 20 bis 30 Minuten)"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Phase",
+        "Inhalt",
+        "Zeit"
+       ],
+       "zeilen": [
+        [
+         "1 Ankommen",
+         "Begrüßung, Rahmen, Zeit, Ziel, Vertraulichkeit",
+         "2 min"
+        ],
+        [
+         "2 Sicht des Kindes",
+         "Kind stellt Lernstand/Selbsteinschätzung vor",
+         "5 min"
+        ],
+        [
+         "3 Sicht der Eltern",
+         "Beobachtungen zu Hause, Fragen, Anliegen",
+         "4 min"
+        ],
+        [
+         "4 Sicht der Lehrkraft",
+         "Stärken zuerst, dann Entwicklungsfelder mit Beispielen",
+         "6 min"
+        ],
+        [
+         "5 Vereinbarungen",
+         "Ziele, Schritte, Verantwortliche, Termin",
+         "7 min"
+        ],
+        [
+         "6 Abschluss",
+         "Zusammenfassung, Dank, nächster Kontakt",
+         "2 min"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Phase 1: Ankommen"
+      },
+      {
+       "t": "p",
+       "x": "Begrüßen Sie alle namentlich, bieten Sie Plätze auf gleicher Höhe an (Kinder nicht am Tischende), und nennen Sie Zeitrahmen und Ablauf. Ein Satz zur Vertraulichkeit schafft Sicherheit."
+      },
+      {
+       "t": "baustein",
+       "x": "Schön, dass Sie da sind. Wir haben etwa 25 Minuten. Zuerst erzählt [Name des Kindes], wie das Lernen aus ihrer/seiner Sicht läuft, dann höre ich Ihre Sicht, danach ergänze ich meine Beobachtungen. Am Ende halten wir gemeinsam ein bis zwei Vereinbarungen fest. Alles, was wir hier besprechen, bleibt in diesem Kreis."
+      },
+      {
+       "t": "h",
+       "x": "Phase 4: Sicht der Lehrkraft"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mit einer konkreten Stärke beginnen (Beispiel aus dem Unterricht).",
+        "Entwicklungsfelder als nächste Lernschritte formulieren.",
+        "Immer Beobachtung, Wirkung, Wunsch: 'Ich sehe..., das führt zu..., ich wünsche mir...'.",
+        "Maximal zwei Entwicklungsfelder, damit Vereinbarungen realistisch bleiben."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Phase 5: Vereinbarungen"
+      },
+      {
+       "t": "p",
+       "x": "Vereinbarungen müssen klein, konkret, sichtbar und terminiert sein. Das Kind formuliert sein Ziel möglichst selbst; die Lehrkraft schreibt mit. Alle erhalten eine Kopie."
+      },
+      {
+       "t": "hinweis",
+       "x": "Planen Sie zwischen den Gesprächen fünf Minuten Puffer ein. Wer ständig im Verzug ist, verkürzt Phase 5 – und genau dort entsteht der Nutzen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Sprachbarrieren oder besonders sensiblen Themen die Zeit auf 40 Minuten verlängern (siehe Module in Abschnitt E)."
+      }
+     ]
+    },
+    {
+     "id": "3.03",
+     "titel": "Gesprächsführung: Fragen, Zuhören, Zusammenfassen",
+     "typ": "Leitfaden",
+     "zweck": "Methodenkoffer für offene, wertschätzende Gesprächsführung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Aktives Zuhören in drei Schritten"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Aufnehmen: Blickkontakt, Pause lassen, nicht unterbrechen.",
+        "Spiegeln: 'Wenn ich Sie richtig verstehe, macht Ihnen vor allem die Hausaufgabenzeit Sorge.'",
+        "Nachfragen: offen und neugierig ('Wie sieht das zu Hause aus?')."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fragearten"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Art",
+        "Beispiel",
+        "Wirkung"
+       ],
+       "zeilen": [
+        [
+         "Offen",
+         "Was fällt Ihrem Kind leicht?",
+         "öffnet, lädt zum Erzählen ein"
+        ],
+        [
+         "Skalierend",
+         "Auf einer Skala von 1 bis 10: Wie sicher fühlst du dich im Rechnen?",
+         "macht Einschätzungen greifbar"
+        ],
+        [
+         "Zirkulär",
+         "Was würde deine Freundin sagen, wo du dich verbessert hast?",
+         "wechselt die Perspektive"
+        ],
+        [
+         "Lösungsorientiert",
+         "Wann klappt es schon mal ein bisschen besser?",
+         "lenkt zu Ressourcen"
+        ],
+        [
+         "Geschlossen",
+         "Hat er die Hausaufgaben dabei?",
+         "nur für Fakten, sparsam einsetzen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zusammenfassen und Absichern"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich fasse kurz zusammen, was ich gehört habe: [Name des Kindes] lernt gern in Gruppen, tut sich beim Schreiben längerer Texte schwer und möchte bis zu den Weihnachtsferien jede Woche einen Text selbstständig überarbeiten. Habe ich das richtig verstanden? Möchten Sie etwas ergänzen?"
+      },
+      {
+       "t": "h",
+       "x": "Was man vermeiden sollte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Fachsprache ohne Erklärung (Kompetenzraster, Lernstandsdiagnostik...).",
+        "Vergleiche mit Geschwistern oder anderen Kindern.",
+        "Ratschläge, bevor die Familie gefragt wurde ('Sie sollten einfach...').",
+        "Warum-Fragen, die wie Vorwürfe klingen; besser 'Was steckt Ihrer Meinung nach dahinter?'"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Zählen Sie innerlich bis drei, bevor Sie auf eine Antwort reagieren. Pausen sind Gesprächszeit, keine Lücken."
+      }
+     ]
+    },
+    {
+     "id": "3.04",
+     "titel": "Ich-Botschaften und konstruktive Rückmeldung",
+     "typ": "Textbaustein",
+     "zweck": "Hilft, Kritik als Beobachtung und Wunsch zu formulieren.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Das Vier-Schritte-Muster"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Beobachtung (konkret, ohne Wertung): 'In den letzten drei Wochen fehlten in Mathematik viermal die Hausaufgaben.'",
+        "Wirkung (auf das Lernen, nicht auf mich): 'So fehlt ihm die Übung, und im Unterricht kommt er dann ins Stocken.'",
+        "Gefühl/Anliegen (ich-bezogen): 'Das macht mir Sorge, weil ich sehe, dass er es eigentlich könnte.'",
+        "Wunsch/Frage: 'Was könnte helfen, damit es leichter wird?'"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Umformulieren"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Du-/Sie-Botschaft",
+        "Ich-Botschaft"
+       ],
+       "zeilen": [
+        [
+         "Sie kümmern sich nicht um die Hausaufgaben.",
+         "Mir fällt auf, dass die Hausaufgaben oft fehlen. Mich interessiert, wie die Nachmittage bei Ihnen verlaufen."
+        ],
+        [
+         "Du bist ständig unkonzentriert.",
+         "Ich habe beobachtet, dass du nach etwa zehn Minuten aus der Aufgabe aussteigst. Ich wünsche mir, dass wir einen Weg finden, der dir hilft."
+        ],
+        [
+         "Er stört dauernd.",
+         "Wenn er in die Klasse hineinruft, verlieren die anderen den Faden. Ich möchte mit ihm üben, sich zu melden."
+        ],
+        [
+         "Das Kind ist faul.",
+         "Das Kind beginnt Aufgaben meist erst nach mehrfacher Aufforderung."
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sandwich ist nicht genug"
+      },
+      {
+       "t": "p",
+       "x": "Das beliebte 'Lob-Kritik-Lob' wirkt künstlich, wenn das Lob nur Verpackung ist. Besser: eine echte Stärke mit Beispiel, dann ein Entwicklungsfeld als nächster Schritt, dann die Frage nach der Sicht der Familie."
+      },
+      {
+       "t": "baustein",
+       "x": "Ich bin beeindruckt, wie genau [Name] beim Experimentieren beobachtet. Dieses genaue Hinsehen möchte ich auch beim Aufschreiben nutzen. Aktuell bleiben die Versuchsprotokolle oft unvollständig. Ich wünsche mir, dass sie/er dafür eine Checkliste nutzt. Was meinen Sie, würde das helfen?"
+      },
+      {
+       "t": "hinweis",
+       "x": "Prüfen Sie jede Rückmeldung mit der Frage: 'Könnte ein Video das belegen?' Wenn nein, ist es noch eine Bewertung und keine Beobachtung."
+      }
+     ]
+    },
+    {
+     "id": "3.05",
+     "titel": "Umgang mit starken Emotionen im Gespräch",
+     "typ": "Leitfaden",
+     "zweck": "Anleitung, wie Sie bei Tränen, Wut oder Rückzug professionell bleiben.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Erst Beziehung, dann Sache"
+      },
+      {
+       "t": "p",
+       "x": "Starke Gefühle sind selten ein Angriff auf Sie, sondern Ausdruck von Sorge, Scham oder Überforderung. Wer sich gehört fühlt, wird ruhiger."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Situation",
+        "Erste Reaktion",
+        "Nächster Schritt"
+       ],
+       "zeilen": [
+        [
+         "Eltern weinen",
+         "Pause, Taschentücher, 'Nehmen Sie sich Zeit.'",
+         "Gefühl benennen: 'Das beschäftigt Sie sehr.'"
+        ],
+        [
+         "Eltern werden laut",
+         "Ruhig bleiben, Tempo und Stimme senken",
+         "'Ich möchte Ihnen zuhören, dafür brauche ich, dass wir in normaler Lautstärke sprechen.'"
+        ],
+        [
+         "Eltern schweigen",
+         "Nicht füllen, Frage vereinfachen",
+         "'Möchten Sie lieber etwas aufschreiben?'"
+        ],
+        [
+         "Kind weint",
+         "Kind nicht bloßstellen, Pause anbieten",
+         "Mit dem Kind kurz allein sprechen, wenn es möchte"
+        ],
+        [
+         "Kind verweigert",
+         "Kein Zwang, Alternativen anbieten",
+         "Zeichnung/Kärtchen statt Sprechen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Selbstregulation der Lehrkraft"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Zwei Atemzüge, bevor Sie antworten.",
+        "Füße spüren, Hände entspannt auf dem Tisch.",
+        "Innerer Satz: 'Es geht um das Kind, nicht um mich.'",
+        "Persönliche Grenze kennen und freundlich setzen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Abbruch als professionelle Entscheidung"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich merke, dass wir gerade nicht weiterkommen. Ich schlage vor, dass wir das Gespräch hier beenden und in der nächsten Woche mit [Schulleitung/Beratungslehrkraft] fortsetzen. Ich rufe Sie morgen an, um einen Termin zu vereinbaren."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Drohungen oder Beschimpfungen: Gespräch sofort beenden, Schulleitung informieren, Gedächtnisprotokoll anfertigen."
+      }
+     ]
+    },
+    {
+     "id": "3.06",
+     "titel": "Datenschutz im Elterngespräch",
+     "typ": "Checkliste",
+     "zweck": "Fasst die wichtigsten Datenschutzregeln für Gespräche und Notizen zusammen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Gespräche über Kinder berühren besonders schützenswerte Daten. Die folgenden Regeln sind eine praktische Orientierung, ersetzen aber keine Vorgaben der Schule oder des Landes (Schuldatenschutz, Datenschutzbeauftragte)."
+      },
+      {
+       "t": "h",
+       "x": "Vor dem Gespräch"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Nur die für das Gespräch nötigen Unterlagen mitnehmen.",
+        "Raum so wählen, dass Wartende nichts hören.",
+        "Keine Unterlagen anderer Kinder offen auf dem Tisch."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Im Gespräch"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Über andere Kinder nur anonym sprechen (keine Namen).",
+        "Notizen sparsam, sachlich und beobachtungsbezogen.",
+        "Diagnosen und Gutachten nur mit Einverständnis der Sorgeberechtigten ansprechen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Nach dem Gespräch"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Protokoll in der Schülerakte oder im vorgesehenen System ablegen.",
+        "Handschriftliche Notizen sicher aufbewahren oder vernichten, wenn nicht mehr benötigt.",
+        "Keine Übermittlung vertraulicher Inhalte über private Messenger oder private E-Mail-Adressen.",
+        "Dienstliche Kommunikationswege nutzen (Schulportal, dienstliche E-Mail)."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Besondere Konstellationen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Getrennt lebende Eltern: Auskunftsrechte beider Sorgeberechtigter beachten; bei Unklarheit Schulleitung fragen.",
+        "Dolmetschende und Begleitpersonen: nur mit Zustimmung und Verschwiegenheitsverpflichtung.",
+        "Gespräch per Video: nur über von der Schule freigegebene Dienste."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Fragen zum Sorgerecht niemals aus dem Bauch heraus beantworten. Auskünfte nur nach Rücksprache mit Schulleitung/Sekretariat."
+      },
+      {
+       "t": "hinweis",
+       "x": "Landesspezifische Vorgaben sind verbindlich. Bitte aktuelle Regelung beim zuständigen Ministerium bzw. der Datenschutzbeauftragten Ihres Landes prüfen."
+      }
+     ]
+    },
+    {
+     "id": "3.07",
+     "titel": "Gespräch mit Kind: kindgerecht sprechen",
+     "typ": "Leitfaden",
+     "zweck": "Zeigt, wie das Kind aktiv und geschützt am Gespräch beteiligt wird.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Grundsätze"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind spricht zuerst und am meisten über sich.",
+        "Es darf Unangenehmes ablehnen, ohne dass dies Folgen hat.",
+        "Die Lehrkraft spricht zum Kind, nicht über das Kind hinweg.",
+        "Sprache und Material passen zur Altersstufe."
+       ]
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Hilfsmittel",
+        "Einstiegsfrage"
+       ],
+       "zeilen": [
+        [
+         "Kl. 1–2",
+         "Smiley-Karten, Zeichnung, Lieblingsding",
+         "Was machst du in der Schule am liebsten?"
+        ],
+        [
+         "Kl. 3–4",
+         "Selbsteinschätzungsbogen, Lernordner",
+         "Worauf bist du stolz?"
+        ],
+        [
+         "Kl. 5–6",
+         "Kompetenzbogen, Stärkenkarten",
+         "Was ist seit dem Schuljahresbeginn besser geworden?"
+        ],
+        [
+         "Kl. 7–8",
+         "Skalenfragen, Zielkarte",
+         "In welchem Fach fühlst du dich sicher, in welchem nicht?"
+        ],
+        [
+         "Kl. 9–10",
+         "Eigener Ablaufplan, Berufsziel",
+         "Was brauchst du, um deinen Abschluss zu erreichen?"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Wenn das Kind nicht sprechen mag"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Fragebogen vorher gemeinsam ausfüllen und daraus vorstellen lassen.",
+        "Das Kind darf eine Vertrauensperson mitbringen.",
+        "Mit Gesten arbeiten: Daumen hoch/seitwärts/runter.",
+        "Den Stuhl wechseln: 'Wie würde dein Lieblingslehrer das sehen?'"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "[Name], du bist heute die wichtigste Person im Raum. Ich möchte hören, wie du dein Lernen siehst. Du musst nichts sagen, was du nicht sagen möchtest. Wenn dir etwas zu viel wird, hebe die Hand, dann machen wir eine Pause."
+      },
+      {
+       "t": "hinweis",
+       "x": "Das Kind sollte nie mit Fehlern konfrontiert werden, von denen es nicht vorher wusste, dass sie besprochen werden. Die Inhalte vorher gemeinsam durchgehen."
+      }
+     ]
+    },
+    {
+     "id": "3.08",
+     "titel": "Elternsprechtag organisieren: Ablauf und Rollen",
+     "typ": "Leitfaden",
+     "zweck": "Vom Zeitplan bis zum Warteraum: so läuft ein Sprechtag ruhig ab.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Organisationsformen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Form",
+        "Vorteil",
+        "Achtung"
+       ],
+       "zeilen": [
+        [
+         "Feste Zeitfenster (10 bis 15 min)",
+         "Planbar, gerecht",
+         "Bei Bedarf zweites Gespräch anbieten"
+        ],
+        [
+         "Lernentwicklungsgespräch (20 bis 30 min)",
+         "Zeit für Kind und Ziele",
+         "Terminvergabe früh starten"
+        ],
+        [
+         "Offene Sprechstunde",
+         "Flexibel",
+         "Wartezeiten, geringere Vertraulichkeit"
+        ],
+        [
+         "Digital/telefonisch",
+         "Erreicht Berufstätige",
+         "Datenschutz beachten"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ablauf im Überblick"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Vier Wochen vorher: Termin im Schuljahreskalender festlegen.",
+        "Drei Wochen vorher: Einladung mit Terminwahl verschicken.",
+        "Zwei Wochen vorher: Kinder füllen Selbsteinschätzung aus; Beobachtungsbögen sichten.",
+        "Eine Woche vorher: Gesprächsmappen je Kind packen.",
+        "Am Tag: Raum, Zeitplan an der Tür, Warteraum mit Getränken und Infomaterial.",
+        "Nach dem Gespräch: Protokoll, Vereinbarungen, ggf. Elternnachricht."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Rollen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Klassenlehrkraft: Leitung des Gesprächs.",
+        "Fachlehrkräfte: kurze Statements vorab oder bei Bedarf zuschalten.",
+        "Elternvertretung: Unterstützung bei Wartezone, Getränken, Terminplanung.",
+        "Schulleitung: Ansprechperson bei Eskalation."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Hängen Sie einen Zeitplan mit Pufferspalte an die Tür. Eine 5-Minuten-Pause pro Stunde verhindert Verspätungsketten."
+      },
+      {
+       "t": "hinweis",
+       "x": "Digital oder hybrid: Prüfen Sie, welche Dienste Ihre Schule freigegeben hat."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "titel": "Vorbereitung",
+   "module": [
+    {
+     "id": "3.09",
+     "titel": "Terminplanung und Zeitplan",
+     "typ": "Tabelle",
+     "zweck": "Vorlage für Zeitplan und Terminvergabe über mehrere Tage.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Mit dieser Vorlage verteilen Sie Gespräche fair und planbar. Kalkulieren Sie pro Gespräch Dauer plus 5 Minuten Puffer."
+      },
+      {
+       "t": "h",
+       "x": "Zeitplan für einen Gesprächstag"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Uhrzeit",
+        "Familie / Kind",
+        "Dolmetschung nötig?",
+        "Bemerkung"
+       ],
+       "zeilen": [
+        [
+         "14:00 – 14:25",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "14:30 – 14:55",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "15:00 – 15:25",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "15:30 – 15:55",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "16:00 – 16:25",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "16:30 – 16:55",
+         "____",
+         "____",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Hinweise zur Vergabe"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ein Zeitfenster am frühen Morgen und eines am Abend anbieten, damit auch Berufstätige teilnehmen können.",
+        "Geschwisterkinder zeitlich bündeln.",
+        "Familien mit erwartbar längerem Gesprächsbedarf auf das letzte Fenster legen.",
+        "Ersatztermine festhalten und Eltern in der Einladung frühzeitig nennen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Rückmeldeabschnitt für die Elternschaft"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Wunschtermin 1",
+        "Wunschtermin 2",
+        "Telefon/E-Mail für Rückfragen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Terminwahl digital über ein von der Schule freigegebenes Tool erspart Rückfragen. Ohne Tool: Zettel mit zwei Wunschterminen und festem Rückgabedatum."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Raum reserviert",
+        "Zeitplan an der Tür aufgehängt",
+        "Dolmetschende angefragt",
+        "Erinnerung zwei Tage vorher verschickt"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "3.10",
+     "titel": "Einladung zum Lernentwicklungsgespräch (Du-Form)",
+     "typ": "Brief",
+     "zweck": "Einladung an Eltern, die sich mit der Lehrkraft duzen, in drei Varianten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Variante Grundschule"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern von [Name des Kindes],\n\nin den nächsten Wochen möchte ich euch und [Name] zu einem Lernentwicklungsgespräch einladen. Wir schauen gemeinsam, was [Name] schon gut kann, woran [er/sie] gerade arbeitet und welche Ziele wir uns als Nächstes setzen.\n\nDas Gespräch dauert etwa 25 Minuten. [Name] ist dabei und stellt vorher seine/ihre Arbeitsmappe vor.\n\nBitte tragt zwei Wunschtermine auf dem Abschnitt unten ein und gebt ihn bis zum [Datum] zurück.\n\nIch freue mich auf euch.\n\nHerzliche Grüße\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Variante weiterführende Schule"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, liebe/r [Name],\n\nzum Halbjahr lade ich euch zu einem Gespräch ein, in dem wir über deine Lernentwicklung, deine Stärken und eure Fragen sprechen. Bitte [Name] bringt seine/ihre ausgefüllte Selbsteinschätzung mit; ihr findet sie im Anhang.\n\nTermin: [Datum, Uhrzeit], Raum [____]. Falls der Termin nicht passt, meldet euch bitte bis [Datum], wir finden einen anderen.\n\nBis bald\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Variante Erinnerung"
+      },
+      {
+       "t": "baustein",
+       "x": "Hallo [Vorname der Eltern],\n\nich erinnere an unser Gespräch am [Datum] um [Uhrzeit]. Bitte bringt die Selbsteinschätzung mit und überlegt vorab, welche Fragen euch wichtig sind. Wenn etwas dazwischenkommt, gebt mir bitte kurz Bescheid.\n\nBis dann\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "hinweis",
+       "x": "Schicken Sie Einladung und Fragebogen gemeinsam, damit Eltern sich vorbereiten können. Frist nicht kürzer als eine Woche."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei nicht erreichten Familien zweimal auf unterschiedlichen Wegen nachfragen (Mitteilungsheft, Anruf), dann dokumentieren."
+      }
+     ]
+    },
+    {
+     "id": "3.11",
+     "titel": "Einladung zum Lernentwicklungsgespräch (Sie-Form)",
+     "typ": "Brief",
+     "zweck": "Einladung in Sie-Form für Grundschule, Sekundarstufe und Abschlussklassen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Variante Grundschule"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Familie [Nachname],\n\nich lade Sie und [Name des Kindes] herzlich zu einem Lernentwicklungsgespräch ein. Wir besprechen gemeinsam, wie sich [Name] in der Schule entwickelt hat, welche Stärken sichtbar sind und welche Schritte als Nächstes anstehen.\n\nDas Gespräch dauert etwa 25 Minuten. Bitte nennen Sie mir auf dem Abschnitt unten zwei Wunschtermine bis zum [Datum].\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Variante Sekundarstufe I"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern von [Name des Kindes],\n\nzum Halbjahr lade ich Sie gemeinsam mit [Name] zu einem Gespräch über die Lernentwicklung ein. [Name] hat zur Vorbereitung eine Selbsteinschätzung ausgefüllt; Sie finden diese im Anhang sowie einen kurzen Fragebogen für Sie.\n\nTermin: [Datum, Uhrzeit], Raum [____]. Bei Verhinderung bitte ich um Rückmeldung bis [Datum], damit wir einen Ersatztermin vereinbaren können.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Variante Abschlussklassen (Kl. 9–10)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern, liebe/r [Name],\n\nim Hinblick auf den bevorstehenden Abschluss möchte ich Sie zu einem Beratungsgespräch einladen. Wir sprechen über den aktuellen Leistungsstand, Voraussetzungen für den angestrebten Abschluss und die nächsten Schritte der Berufs- oder Schulwahl.\n\nBitte bringen Sie die Berufsorientierungsunterlagen von [Name] mit.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Wunschtermin 1",
+        "Wunschtermin 2",
+        "Unterschrift Erziehungsberechtigte"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bitten Sie ausdrücklich darum, eine Dolmetschung oder Übersetzung rechtzeitig anzumelden. Das signalisiert Offenheit."
+      }
+     ]
+    },
+    {
+     "id": "3.12",
+     "titel": "Selbsteinschätzung Kl. 1–2 (mit Smileys)",
+     "typ": "Fragebogen",
+     "zweck": "Einfacher Bogen, den Kinder mit Hilfe ausfüllen und im Gespräch vorstellen.",
+     "stufe": "Kl. 1–2",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Bogen wird vor dem Gespräch von dem Kind selbst ausgefüllt (bei jüngeren Kindern mit Unterstützung) und im Gespräch vorgestellt. Es gibt keine richtigen oder falschen Antworten."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name",
+        "Klasse",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ich schätze mich selbst ein"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich gehe gern in die Schule.",
+        "Ich kann gut zuhören.",
+        "Ich kann gut lesen und schreiben (Wörter, kleine Sätze).",
+        "Ich kann gut rechnen.",
+        "Ich spiele gern mit anderen Kindern.",
+        "Ich halte mich an unsere Klassenregeln.",
+        "Ich bin mit meiner Mappe ordentlich.",
+        "Ich traue mich, im Unterricht etwas zu sagen."
+       ],
+       "stufen": [
+        "ja, sehr (lachender Smiley)",
+        "ja, ein bisschen",
+        "noch nicht so (neutraler Smiley)",
+        "noch nicht (trauriger Smiley)"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Meine Gedanken dazu"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Das kann ich besonders gut: ____________________"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Das möchte ich noch lernen: ____________________"
+      },
+      {
+       "t": "hinweis",
+       "x": "Lehrkraft: Vergleichen Sie die Selbsteinschätzung mit Ihrer Beobachtung. Abweichungen sind kein Fehler, sondern Gesprächsanlass."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Bedarf können Aussagen vorgelesen oder in einfacher Sprache erklärt werden."
+      }
+     ]
+    },
+    {
+     "id": "3.13",
+     "titel": "Selbsteinschätzung Kl. 3–4",
+     "typ": "Fragebogen",
+     "zweck": "Bogen für Kinder der dritten und vierten Klasse mit Fokus auf Arbeitsverhalten und Selbstständigkeit.",
+     "stufe": "Kl. 3–4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Bogen wird vor dem Gespräch von dem Kind selbst ausgefüllt (bei jüngeren Kindern mit Unterstützung) und im Gespräch vorgestellt. Es gibt keine richtigen oder falschen Antworten."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name",
+        "Klasse",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ich schätze mich selbst ein"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich arbeite im Unterricht aufmerksam mit.",
+        "Ich erledige meine Hausaufgaben vollständig.",
+        "Ich kann Texte flüssig lesen und verstehen.",
+        "Ich schreibe Texte mit Anfang, Mitte und Schluss.",
+        "Ich rechne Aufgaben sicher und prüfe meine Ergebnisse.",
+        "Ich arbeite gut in Partner- und Gruppenarbeit.",
+        "Ich helfe anderen, wenn sie Hilfe brauchen.",
+        "Ich kann Streit friedlich lösen.",
+        "Ich halte meine Arbeitsmaterialien in Ordnung.",
+        "Ich traue mir neue Aufgaben zu."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Meine Gedanken dazu"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Darauf bin ich stolz: ____________________"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Dabei wünsche ich mir Unterstützung: ____________________"
+      },
+      {
+       "t": "hinweis",
+       "x": "Lehrkraft: Vergleichen Sie die Selbsteinschätzung mit Ihrer Beobachtung. Abweichungen sind kein Fehler, sondern Gesprächsanlass."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Bedarf können Aussagen vorgelesen oder in einfacher Sprache erklärt werden."
+      }
+     ]
+    },
+    {
+     "id": "3.14",
+     "titel": "Selbsteinschätzung Kl. 5–6",
+     "typ": "Fragebogen",
+     "zweck": "Bogen für den Übergang in die weiterführende Schule mit Fokus auf Orientierung und Lernorganisation.",
+     "stufe": "Kl. 5–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Bogen wird vor dem Gespräch von dem Kind selbst ausgefüllt (bei jüngeren Kindern mit Unterstützung) und im Gespräch vorgestellt. Es gibt keine richtigen oder falschen Antworten."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name",
+        "Klasse",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ich schätze mich selbst ein"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich fühle mich in meiner Klasse wohl.",
+        "Ich komme mit dem Stoff in den meisten Fächern gut zurecht.",
+        "Ich plane meine Hausaufgaben selbst.",
+        "Ich lerne rechtzeitig für Tests und Arbeiten.",
+        "Ich weiß, wie ich mir Hilfe hole, wenn ich etwas nicht verstehe.",
+        "Ich beteilige mich im Unterricht.",
+        "Ich komme gut mit meinen Mitschülern aus.",
+        "Ich kenne meine Stärken.",
+        "Ich weiß, welche Methoden mir beim Lernen helfen.",
+        "Ich nutze mein Hausaufgabenheft zuverlässig."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Meine Gedanken dazu"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Mein Lieblingsfach und warum: ____________________"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Mein Ziel für die nächsten Monate: ____________________"
+      },
+      {
+       "t": "hinweis",
+       "x": "Lehrkraft: Vergleichen Sie die Selbsteinschätzung mit Ihrer Beobachtung. Abweichungen sind kein Fehler, sondern Gesprächsanlass."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Bedarf können Aussagen vorgelesen oder in einfacher Sprache erklärt werden."
+      }
+     ]
+    },
+    {
+     "id": "3.15",
+     "titel": "Selbsteinschätzung Kl. 7–8",
+     "typ": "Fragebogen",
+     "zweck": "Bogen für die Pubertät: Selbstständigkeit, Medien, Wahlentscheidungen.",
+     "stufe": "Kl. 7–8",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Bogen wird vor dem Gespräch von dem Kind selbst ausgefüllt (bei jüngeren Kindern mit Unterstützung) und im Gespräch vorgestellt. Es gibt keine richtigen oder falschen Antworten."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name",
+        "Klasse",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ich schätze mich selbst ein"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich weiß, was ich in jedem Fach leisten kann.",
+        "Ich lerne regelmäßig und nicht erst kurz vor der Arbeit.",
+        "Ich kann mich beim Lernen gut konzentrieren.",
+        "Ich gehe sorgsam mit Handy und Medien um.",
+        "Ich kann Konflikte sachlich klären.",
+        "Ich übernehme Verantwortung in der Klasse.",
+        "Ich kann meine Meinung begründet äußern.",
+        "Ich weiß, welche Fächer mir liegen.",
+        "Ich kenne meine nächsten Ziele.",
+        "Ich nehme Rückmeldungen an und setze sie um."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Meine Gedanken dazu"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was mich in der Schule gerade am meisten beschäftigt: ____________________"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Meine drei wichtigsten Ziele bis zum Halbjahr: ____________________"
+      },
+      {
+       "t": "hinweis",
+       "x": "Lehrkraft: Vergleichen Sie die Selbsteinschätzung mit Ihrer Beobachtung. Abweichungen sind kein Fehler, sondern Gesprächsanlass."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Bedarf können Aussagen vorgelesen oder in einfacher Sprache erklärt werden."
+      }
+     ]
+    },
+    {
+     "id": "3.16",
+     "titel": "Selbsteinschätzung Kl. 9–10",
+     "typ": "Fragebogen",
+     "zweck": "Bogen für Abschlussklassen mit Blick auf Abschluss und Berufsorientierung.",
+     "stufe": "Kl. 9–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Bogen wird vor dem Gespräch von dem Kind selbst ausgefüllt (bei jüngeren Kindern mit Unterstützung) und im Gespräch vorgestellt. Es gibt keine richtigen oder falschen Antworten."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name",
+        "Klasse",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ich schätze mich selbst ein"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich kenne meine Noten und weiß, wo ich stehe.",
+        "Ich weiß, welchen Abschluss ich anstrebe.",
+        "Ich plane meine Lernzeit realistisch.",
+        "Ich kann unter Druck konzentriert arbeiten.",
+        "Ich habe Berufswünsche und kenne mögliche Wege.",
+        "Ich habe Praktika oder Informationsveranstaltungen genutzt.",
+        "Ich bin zuverlässig bei Terminen und Abgaben.",
+        "Ich kann mich gut präsentieren (Bewerbung, Vorstellungsgespräch).",
+        "Ich hole mir Beratung, wenn ich unsicher bin.",
+        "Ich bin mit meiner Arbeitshaltung zufrieden."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Meine Gedanken dazu"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Mein Plan nach dem Abschluss: ____________________"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Dafür brauche ich noch: ____________________"
+      },
+      {
+       "t": "hinweis",
+       "x": "Lehrkraft: Vergleichen Sie die Selbsteinschätzung mit Ihrer Beobachtung. Abweichungen sind kein Fehler, sondern Gesprächsanlass."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Bedarf können Aussagen vorgelesen oder in einfacher Sprache erklärt werden."
+      }
+     ]
+    },
+    {
+     "id": "3.17",
+     "titel": "Elternfragebogen vor dem Gespräch (Du-Form)",
+     "typ": "Fragebogen",
+     "zweck": "Bogen, mit dem Eltern (Du-Anrede) das Gespräch vorbereiten und Anliegen mitteilen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Liebe Eltern, damit das Gespräch möglichst hilfreich wird, bitten wir euch um eure Sicht. Alle Angaben sind freiwillig und werden vertraulich behandelt."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Ausgefüllt von",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Eure Beobachtungen zu Hause"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Unser Kind geht gern in die Schule.",
+        "Es erzählt zu Hause von der Schule.",
+        "Es erledigt Hausaufgaben weitgehend selbstständig.",
+        "Es hat Freunde in der Klasse.",
+        "Es kann sich nach der Schule gut erholen.",
+        "Es geht ausgeschlafen und gesund in den Schultag.",
+        "Wir sind mit dem Lernstand zufrieden."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Was uns wichtig ist"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Das läuft bei unserem Kind besonders gut:"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Dazu haben wir Fragen oder Sorgen:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das wünschen wir uns von der Schule:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das können wir als Eltern beitragen:"
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Antworten ersetzen nicht das Gespräch, sie strukturieren es. Lesen Sie die Bögen vorher und markieren Sie Übereinstimmungen und Unterschiede."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Familien mit Sprachbarrieren hilft eine bebilderte oder übersetzte Fassung; Dolmetschung siehe Modul 3.52."
+      }
+     ]
+    },
+    {
+     "id": "3.18",
+     "titel": "Elternfragebogen vor dem Gespräch (Sie-Form)",
+     "typ": "Fragebogen",
+     "zweck": "Bogen, mit dem Eltern (Sie-Anrede) das Gespräch vorbereiten und Anliegen mitteilen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Sehr geehrte Eltern, damit das Gespräch möglichst hilfreich wird, bitten wir Sie um Ihre Sicht. Alle Angaben sind freiwillig und werden vertraulich behandelt."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Ausgefüllt von",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ihre Beobachtungen zu Hause"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ihr Kind geht gern in die Schule.",
+        "Es erzählt zu Hause von der Schule.",
+        "Es erledigt Hausaufgaben weitgehend selbstständig.",
+        "Es hat Freunde in der Klasse.",
+        "Es kann sich nach der Schule gut erholen.",
+        "Es geht ausgeschlafen und gesund in den Schultag.",
+        "Sie sind mit dem Lernstand zufrieden."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Was Ihnen wichtig ist"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Das läuft bei Ihrem Kind besonders gut:"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Dazu haben Sie Fragen oder Sorgen:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das wünschen Sie sich von der Schule:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das können Sie als Eltern beitragen:"
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Antworten ersetzen nicht das Gespräch, sie strukturieren es. Lesen Sie die Bögen vorher und markieren Sie Übereinstimmungen und Unterschiede."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Familien mit Sprachbarrieren hilft eine bebilderte oder übersetzte Fassung; Dolmetschung siehe Modul 3.52."
+      }
+     ]
+    },
+    {
+     "id": "3.19",
+     "titel": "Beobachtungsbogen Lernen",
+     "typ": "Tabelle",
+     "zweck": "Hilft, Lernverhalten und Lernstrategien systematisch zu erfassen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Beobachtungsbogen für die Lehrkraft. Tragen Sie Beobachtungen aus mehreren Situationen und über mindestens vier Wochen ein. Notieren Sie Beispiele statt Urteile. Skala: 1 = selten, 2 = manchmal, 3 = oft, 4 = fast immer."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Beobachtungszeitraum",
+        "Beobachtende Lehrkraft"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Lernverhalten"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Beobachtungsmerkmal",
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "zeilen": [
+        [
+         "Zeigt Neugier und stellt Fragen",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Hört zu und folgt Arbeitsaufträgen",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Übernimmt Rückmeldungen und verbessert Arbeiten",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Setzt Lernstrategien ein (Markieren, Gliedern, Wiederholen)",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Hält Aufmerksamkeit über längere Zeit",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Überträgt Gelerntes auf neue Aufgaben",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Arbeitet auch bei Schwierigkeiten weiter",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Erkennt eigene Fehler und korrigiert sie",
+         "□",
+         "□",
+         "□",
+         "□"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Beispiele aus dem Unterricht"
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Konkrete Situationen (Datum, Fach, was ich gesehen habe)"
+      },
+      {
+       "t": "h",
+       "x": "Auswertung"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Stärken, die ich im Gespräch hervorheben will: ____",
+        "Mögliche Entwicklungsfelder: ____",
+        "Offene Fragen an die Eltern: ____"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Drei Beobachtungen pro Merkmal sind aussagekräftiger als ein Gesamteindruck. Wer täglich in einer Spalte Stichworte notiert, hat vor dem Gespräch alles beisammen."
+      }
+     ]
+    },
+    {
+     "id": "3.20",
+     "titel": "Beobachtungsbogen Sozialverhalten",
+     "typ": "Tabelle",
+     "zweck": "Hilft, Zusammenarbeit, Konfliktverhalten und Klassenrolle zu erfassen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Beobachtungsbogen für die Lehrkraft. Tragen Sie Beobachtungen aus mehreren Situationen und über mindestens vier Wochen ein. Notieren Sie Beispiele statt Urteile. Skala: 1 = selten, 2 = manchmal, 3 = oft, 4 = fast immer."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Beobachtungszeitraum",
+        "Beobachtende Lehrkraft"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sozialverhalten"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Beobachtungsmerkmal",
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "zeilen": [
+        [
+         "Geht respektvoll mit anderen um",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Hält Regeln ein",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Arbeitet kooperativ in Gruppen",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Löst Konflikte ohne Gewalt",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Hilft anderen und nimmt Hilfe an",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Bringt sich in der Klassengemeinschaft ein",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Kann Kritik annehmen",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Erkennt Gefühle anderer und reagiert angemessen",
+         "□",
+         "□",
+         "□",
+         "□"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Beispiele aus dem Unterricht"
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Konkrete Situationen (Datum, Fach, was ich gesehen habe)"
+      },
+      {
+       "t": "h",
+       "x": "Auswertung"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Stärken, die ich im Gespräch hervorheben will: ____",
+        "Mögliche Entwicklungsfelder: ____",
+        "Offene Fragen an die Eltern: ____"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Drei Beobachtungen pro Merkmal sind aussagekräftiger als ein Gesamteindruck. Wer täglich in einer Spalte Stichworte notiert, hat vor dem Gespräch alles beisammen."
+      }
+     ]
+    },
+    {
+     "id": "3.21",
+     "titel": "Beobachtungsbogen Arbeitsverhalten",
+     "typ": "Tabelle",
+     "zweck": "Hilft, Arbeitsorganisation, Ausdauer und Zuverlässigkeit zu erfassen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Beobachtungsbogen für die Lehrkraft. Tragen Sie Beobachtungen aus mehreren Situationen und über mindestens vier Wochen ein. Notieren Sie Beispiele statt Urteile. Skala: 1 = selten, 2 = manchmal, 3 = oft, 4 = fast immer."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Beobachtungszeitraum",
+        "Beobachtende Lehrkraft"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Arbeitsverhalten"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Beobachtungsmerkmal",
+        "1",
+        "2",
+        "3",
+        "4"
+       ],
+       "zeilen": [
+        [
+         "Beginnt Aufgaben zügig",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Arbeitet selbstständig",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Arbeitet sorgfältig und ordentlich",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Hat Material vollständig dabei",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Erledigt Hausaufgaben zuverlässig",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Hält Termine und Fristen ein",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Teilt sich Arbeitszeit sinnvoll ein",
+         "□",
+         "□",
+         "□",
+         "□"
+        ],
+        [
+         "Führt Hefte und Mappen vollständig",
+         "□",
+         "□",
+         "□",
+         "□"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Beispiele aus dem Unterricht"
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Konkrete Situationen (Datum, Fach, was ich gesehen habe)"
+      },
+      {
+       "t": "h",
+       "x": "Auswertung"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Stärken, die ich im Gespräch hervorheben will: ____",
+        "Mögliche Entwicklungsfelder: ____",
+        "Offene Fragen an die Eltern: ____"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Drei Beobachtungen pro Merkmal sind aussagekräftiger als ein Gesamteindruck. Wer täglich in einer Spalte Stichworte notiert, hat vor dem Gespräch alles beisammen."
+      }
+     ]
+    },
+    {
+     "id": "3.22",
+     "titel": "Checkliste: Vorbereitung der Gesprächsmappe",
+     "typ": "Checkliste",
+     "zweck": "Was pro Kind in die Mappe gehört, damit das Gespräch fundiert verläuft.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Inhalt der Mappe"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ausgefüllter Selbsteinschätzungsbogen des Kindes",
+        "Elternfragebogen (falls zurückgegeben)",
+        "Beobachtungsbögen Lernen, Sozial, Arbeit",
+        "Zwei bis drei Arbeitsproben, die Entwicklung zeigen",
+        "Notenübersicht oder Kompetenzraster",
+        "Gesprächsbogen mit Stichworten",
+        "Vorlage Vereinbarung / Zielvereinbarung",
+        "Protokollbogen",
+        "Infozettel zu Förder- und Beratungsangeboten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Auswahl der Arbeitsproben"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eine gelungene Arbeit (Stärke sichtbar).",
+        "Eine Arbeit mit Entwicklung (vorher/nachher).",
+        "Optional eine Arbeit, die ein Entwicklungsfeld zeigt (mit Lösungshinweis)."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Letzter Check am Gesprächstag"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Zeitplan und Namen stimmen",
+        "Taschentücher, Wasser, Stifte",
+        "Dolmetschung bestätigt",
+        "Handy auf lautlos",
+        "Raum belüftet und aufgeräumt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine Mappe pro Kind verhindert, dass Sie im Gespräch Papiere suchen. Sortieren Sie nach Gesprächsreihenfolge."
+      },
+      {
+       "t": "hinweis",
+       "x": "Persönliche Daten nur in der Schule bearbeiten oder sicher verwahren."
+      }
+     ]
+    },
+    {
+     "id": "3.23",
+     "titel": "Vorbereitung mit der Klasse: Kinder auf das Gespräch einstimmen",
+     "typ": "Leitfaden",
+     "zweck": "Stunde zur Vorbereitung der Kinder auf das Lernentwicklungsgespräch.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziel"
+      },
+      {
+       "t": "p",
+       "x": "Kinder wissen, was im Gespräch passiert, und haben ihre Selbsteinschätzung vorbereitet."
+      },
+      {
+       "t": "h",
+       "x": "Stundenverlauf (45 Minuten)"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Phase",
+        "Inhalt",
+        "Zeit"
+       ],
+       "zeilen": [
+        [
+         "Einstieg",
+         "Gespräch: Wer redet mit wem worüber? Ablauf an der Tafel",
+         "5 min"
+        ],
+        [
+         "Erarbeitung",
+         "Selbsteinschätzungsbogen allein ausfüllen",
+         "15 min"
+        ],
+        [
+         "Austausch",
+         "Mit einem Partner eine Stärke und ein Ziel besprechen",
+         "10 min"
+        ],
+        [
+         "Vorbereitung",
+         "Mappe mit Arbeitsproben auswählen und kommentieren",
+         "10 min"
+        ],
+        [
+         "Abschluss",
+         "Rollenspiel: Vorstellungssatz üben",
+         "5 min"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vorstellungssätze für Kinder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ich kann besonders gut...",
+        "Das fällt mir noch schwer...",
+        "Ich wünsche mir von meiner Lehrkraft...",
+        "Ich nehme mir vor..."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Wir haben bald Gespräche mit euren Eltern. Dabei geht es um euch: was ihr schon gut könnt, was ihr noch üben wollt und wie wir euch unterstützen können. Ihr stellt eure Mappe selbst vor. Niemand bekommt Ärger, wir schauen gemeinsam nach vorn."
+      },
+      {
+       "t": "hinweis",
+       "x": "Wer die Selbsteinschätzung vor dem Gespräch übt, wirkt im Gespräch ruhiger und konkreter."
+      },
+      {
+       "t": "hinweis",
+       "x": "Kinder, die nicht sprechen mögen, dürfen die Mappe zeigen und Kärtchen legen."
+      }
+     ]
+    },
+    {
+     "id": "3.24",
+     "titel": "Schriftliche Vorinformation an Fachlehrkräfte",
+     "typ": "Vorlage",
+     "zweck": "Kurze Abfrage, damit Rückmeldungen aus allen Fächern ins Gespräch einfließen.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Bei mehreren Lehrkräften pro Klasse sammelt die Klassenlehrkraft vorab Einschätzungen. Diese Vorlage hält Aufwand und Umfang klein."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Fach",
+        "Lehrkraft",
+        "Name des Kindes",
+        "Klasse",
+        "Stand (Datum)"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Rückmeldung in vier Sätzen"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das gelingt dem Kind im Fach besonders gut:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Entwicklungsfeld (konkret, mit Beispiel):"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das hilft bereits:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Empfehlung / nächster Schritt:"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Merkmal",
+        "Eindruck (1 bis 4)"
+       ],
+       "zeilen": [
+        [
+         "Mitarbeit",
+         "____"
+        ],
+        [
+         "Selbstständigkeit",
+         "____"
+        ],
+        [
+         "Leistung aktuell",
+         "____"
+        ],
+        [
+         "Hausaufgaben",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Kolleginnen und Kollegen,\n\nfür die Lernentwicklungsgespräche am [Datum] bitte ich um eine kurze Rückmeldung zu den Kindern der Klasse [____] bis zum [Datum]. Bitte nennen Sie eine Stärke, ein Entwicklungsfeld und einen konkreten Förderhinweis. Die Rückmeldungen fasse ich anonym zusammen.\n\nVielen Dank\n[Name]"
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine Seite pro Fach reicht. Bitten Sie ausdrücklich um Beobachtungen statt Noten."
+      },
+      {
+       "t": "hinweis",
+       "x": "Lehrkräfte, die selten Rückmeldung geben, kurz direkt ansprechen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "titel": "Das Gespräch",
+   "module": [
+    {
+     "id": "3.25",
+     "titel": "Gesprächsleitfaden Klasse 1–2",
+     "typ": "Leitfaden",
+     "zweck": "Gesprächsleitfaden mit Zeitplan, Fragen und Bausteinen für Kl. 1–2.",
+     "stufe": "Kl. 1–2",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Leitfaden führt Sie durch ein Gespräch von etwa 25 Minuten. Fokus: Ankommen in der Schule, Lernfreude, erste Basiskompetenzen."
+      },
+      {
+       "t": "h",
+       "x": "Einstieg"
+      },
+      {
+       "t": "baustein",
+       "x": "Herzlich willkommen, [Name des Kindes]. Ich freue mich, dass du uns zeigst, was du schon alles in der Schule gelernt hast. Zuerst erzählst du, was dir gefällt, dann sprechen wir drei darüber, was als Nächstes dran ist."
+      },
+      {
+       "t": "h",
+       "x": "Fragen an das Kind"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Was machst du am liebsten in der Schule?",
+        "Welches Blatt oder Heft zeigst du uns besonders gern?",
+        "Was fällt dir leicht, was ist noch ein bisschen schwer?",
+        "Wen magst du in der Klasse besonders?",
+        "Was wünschst du dir von mir?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fragen an die Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie erzählt Ihr Kind von der Schule?",
+        "Was macht ihm zu Hause besonders Freude?",
+        "Wie läuft der Morgen vor der Schule?",
+        "Gibt es Dinge, die Ihr Kind beschäftigen?",
+        "Welche Fragen haben Sie zu Lesen, Schreiben, Rechnen?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Themen dieser Stufe"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schulfreude und Selbstvertrauen",
+        "Stifthaltung, Feinmotorik, Konzentration",
+        "Buchstaben, Laute, Zahlen bis 20 oder 100",
+        "Regeln und Rituale in der Gruppe",
+        "Schultasche, Ordnung, Selbstständigkeit"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ein Ziel des Kindes in Ich-Form formulieren lassen.",
+        "Ein Beitrag der Eltern (klein und machbar).",
+        "Ein Beitrag der Lehrkraft.",
+        "Termin für die Zwischenbilanz festlegen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Abschluss"
+      },
+      {
+       "t": "baustein",
+       "x": "Wir haben heute gesehen, wie viel [Name] schon kann. Wir probieren jetzt gemeinsam bis zu den [Ferien] Folgendes aus: [____]. Dann schauen wir wieder, wie es geklappt hat. Vielen Dank, dass ihr da wart."
+      },
+      {
+       "t": "hinweis",
+       "x": "Gespräche mit Erstklässlern funktionieren über Anschauung: Arbeitsmappe, Lieblingsbild, Plüschtier. Fragen kurz halten und mit Smiley- oder Farbkarten beantworten lassen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Zeitangaben sind Richtwerte. Wenn das Kind gerade erzählt, geben Sie ihm Raum und kürzen lieber Ihren eigenen Teil."
+      }
+     ]
+    },
+    {
+     "id": "3.26",
+     "titel": "Gesprächsleitfaden Klasse 3–4",
+     "typ": "Leitfaden",
+     "zweck": "Gesprächsleitfaden mit Zeitplan, Fragen und Bausteinen für Kl. 3–4.",
+     "stufe": "Kl. 3–4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Leitfaden führt Sie durch ein Gespräch von etwa 25 Minuten. Fokus: Selbstständigkeit, Arbeitshaltung, Vorbereitung auf die weiterführende Schule."
+      },
+      {
+       "t": "h",
+       "x": "Einstieg"
+      },
+      {
+       "t": "baustein",
+       "x": "Schön, dass ihr da seid. [Name], du hast deinen Selbsteinschätzungsbogen mitgebracht. Du erzählst gleich, was dir besonders gut gelingt und was du noch üben möchtest. Danach ergänze ich meine Beobachtungen und wir legen gemeinsam Ziele fest."
+      },
+      {
+       "t": "h",
+       "x": "Fragen an das Kind"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Worauf bist du in diesem Halbjahr stolz?",
+        "In welchem Fach fühlst du dich am sichersten?",
+        "Wobei brauchst du noch Hilfe?",
+        "Wie klappen die Hausaufgaben?",
+        "Was ist dein Ziel bis zum Halbjahr?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fragen an die Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie schätzen Sie die Selbstständigkeit Ihres Kindes ein?",
+        "Wie läuft das Lernen zu Hause?",
+        "Welche Rolle spielen Medien im Alltag?",
+        "Wie erleben Sie die Schulzeit insgesamt?",
+        "Wie sehen Sie den Übergang nach Klasse 4?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Themen dieser Stufe"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Lesekompetenz, Textverständnis",
+        "Rechtschreibstrategien, Textproduktion",
+        "Sicherheit im Zahlenraum bis 1 Million, Sachaufgaben",
+        "Arbeitsorganisation, Zeitplanung",
+        "Ab Klasse 3/4: Information zum Übertrittsverfahren je Bundesland"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ein Ziel des Kindes in Ich-Form formulieren lassen.",
+        "Ein Beitrag der Eltern (klein und machbar).",
+        "Ein Beitrag der Lehrkraft.",
+        "Termin für die Zwischenbilanz festlegen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Abschluss"
+      },
+      {
+       "t": "baustein",
+       "x": "Mein Eindruck: [Name] hat sich in [____] deutlich verbessert. Das nächste Ziel ist [____]. Dafür schlage ich vor, dass wir [____]. Bis wann schauen wir nach? Ich schlage [Datum] vor."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Fragen zur weiterführenden Schule nicht vorgreifen: Das Beratungsgespräch zum Übertritt hat eigene Termine und Regeln, siehe Band 4."
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Zeitangaben sind Richtwerte. Wenn das Kind gerade erzählt, geben Sie ihm Raum und kürzen lieber Ihren eigenen Teil."
+      }
+     ]
+    },
+    {
+     "id": "3.27",
+     "titel": "Gesprächsleitfaden Klasse 5–6",
+     "typ": "Leitfaden",
+     "zweck": "Gesprächsleitfaden mit Zeitplan, Fragen und Bausteinen für Kl. 5–6.",
+     "stufe": "Kl. 5–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Leitfaden führt Sie durch ein Gespräch von etwa 25 Minuten. Fokus: Ankommen in der neuen Schule, Fachlehrerprinzip, Lernorganisation."
+      },
+      {
+       "t": "h",
+       "x": "Einstieg"
+      },
+      {
+       "t": "baustein",
+       "x": "Willkommen. Wir sprechen heute darüber, wie es dir an der neuen Schule geht, wie du mit den vielen Fächern zurechtkommst und was ihr als Familie braucht. Du beginnst."
+      },
+      {
+       "t": "h",
+       "x": "Fragen an das Kind"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie fühlst du dich in der Klasse?",
+        "Welche Fächer machen dir Freude, welche weniger?",
+        "Wie planst du deine Woche?",
+        "Wen fragst du, wenn du etwas nicht verstehst?",
+        "Was möchtest du bis zu den Ferien erreichen?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fragen an die Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie erlebt Ihr Kind den Wechsel an die neue Schule?",
+        "Wie läuft die Hausaufgabenorganisation?",
+        "Wie viel Unterstützung geben Sie zu Hause?",
+        "Gibt es Freundschaften oder Konflikte?",
+        "Wo wünschen Sie sich mehr Information?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Themen dieser Stufe"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Lernorganisation: Hefte, Mappen, Planer",
+        "Fachwechsel, unterschiedliche Anforderungen",
+        "Lesen, Schreiben und Rechnen als Grundlage",
+        "Klassengemeinschaft, Konfliktkultur",
+        "Mediennutzung und Erreichbarkeit"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ein Ziel des Kindes in Ich-Form formulieren lassen.",
+        "Ein Beitrag der Eltern (klein und machbar).",
+        "Ein Beitrag der Lehrkraft.",
+        "Termin für die Zwischenbilanz festlegen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Abschluss"
+      },
+      {
+       "t": "baustein",
+       "x": "Wir halten fest: [Name] kommt in [____] gut zurecht. Wir arbeiten an [____]. Ich unterstütze mit [____], ihr zu Hause mit [____], und [Name] übernimmt [____]. Nächster Austausch: [Datum]."
+      },
+      {
+       "t": "hinweis",
+       "x": "In den ersten beiden Jahren nach dem Wechsel verbessern viele Kinder ihre Organisation deutlich. Betonen Sie diese Lernkurve, um Druck zu nehmen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Zeitangaben sind Richtwerte. Wenn das Kind gerade erzählt, geben Sie ihm Raum und kürzen lieber Ihren eigenen Teil."
+      }
+     ]
+    },
+    {
+     "id": "3.28",
+     "titel": "Gesprächsleitfaden Klasse 7–8",
+     "typ": "Leitfaden",
+     "zweck": "Gesprächsleitfaden mit Zeitplan, Fragen und Bausteinen für Kl. 7–8.",
+     "stufe": "Kl. 7–8",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Leitfaden führt Sie durch ein Gespräch von etwa 25 Minuten. Fokus: Pubertät, Selbstständigkeit, Motivation, Wahlentscheidungen."
+      },
+      {
+       "t": "h",
+       "x": "Einstieg"
+      },
+      {
+       "t": "baustein",
+       "x": "Danke, dass ihr euch Zeit nehmt. Ich möchte mit [Name] und euch klären, wo [er/sie] steht, wohin es gehen soll und wie wir das gemeinsam unterstützen. [Name], du bist Expertin/Experte für deine eigene Situation, ich bin gespannt auf deine Sicht."
+      },
+      {
+       "t": "h",
+       "x": "Fragen an das Kind"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie läuft es in der Schule aus deiner Sicht?",
+        "Welche Fächer interessieren dich, welche nicht?",
+        "Was könnte dir helfen, konzentrierter zu lernen?",
+        "Wie geht es dir mit Freundinnen und Freunden?",
+        "Was ist dir für die nächsten Monate wichtig?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fragen an die Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Was fällt Ihnen an der Entwicklung Ihres Kindes positiv auf?",
+        "Wo erleben Sie Spannungen?",
+        "Wie gehen Sie mit Medienzeit um?",
+        "Welche Ziele hat Ihr Kind?",
+        "Wie kann die Schule unterstützen?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Themen dieser Stufe"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Leistungsabfall und Motivation",
+        "Mediennutzung, Handy, Schlaf",
+        "Gruppendruck und Konflikte",
+        "Wahlpflichtfächer, Profile, Berufsorientierung beginnen",
+        "Selbstvertrauen und Schulfrust"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ein Ziel des Kindes in Ich-Form formulieren lassen.",
+        "Ein Beitrag der Eltern (klein und machbar).",
+        "Ein Beitrag der Lehrkraft.",
+        "Termin für die Zwischenbilanz festlegen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Abschluss"
+      },
+      {
+       "t": "baustein",
+       "x": "Das war ein offenes Gespräch. Wir haben vereinbart: [Ziel des Jugendlichen]. Wir prüfen in sechs Wochen, wie es läuft. Wenn zwischendurch etwas ist, melden Sie sich bitte; auch [Name] kann jederzeit zu mir kommen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Jugendliche reagieren empfindlich auf Gespräche über sie. Sprechen Sie sie direkt an, fragen Sie vor heiklen Themen: 'Darf ich das ansprechen?'"
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Zeitangaben sind Richtwerte. Wenn das Kind gerade erzählt, geben Sie ihm Raum und kürzen lieber Ihren eigenen Teil."
+      }
+     ]
+    },
+    {
+     "id": "3.29",
+     "titel": "Gesprächsleitfaden Klasse 9–10",
+     "typ": "Leitfaden",
+     "zweck": "Gesprächsleitfaden mit Zeitplan, Fragen und Bausteinen für Kl. 9–10.",
+     "stufe": "Kl. 9–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Dieser Leitfaden führt Sie durch ein Gespräch von etwa 25 Minuten. Fokus: Abschluss, Berufs- und Schulwahl, Verantwortung."
+      },
+      {
+       "t": "h",
+       "x": "Einstieg"
+      },
+      {
+       "t": "baustein",
+       "x": "Guten Tag, schön, dass wir uns heute Zeit nehmen. Wir sprechen über den aktuellen Stand, die Anforderungen für den Abschluss und die nächsten Schritte danach. [Name], was möchtest du von uns klären?"
+      },
+      {
+       "t": "h",
+       "x": "Fragen an das Kind"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welchen Abschluss strebst du an?",
+        "Was weißt du über Ausbildung oder weiterführende Schule?",
+        "Welche Praktika hast du gemacht, was hast du daraus mitgenommen?",
+        "Wo siehst du dich in einem Jahr?",
+        "Wobei brauchst du Unterstützung?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fragen an die Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Pläne bespricht Ihr Kind mit Ihnen?",
+        "Wie schätzen Sie die Leistungsbereitschaft ein?",
+        "Welche Fragen haben Sie zu Abschlüssen und Anschlussmöglichkeiten?",
+        "Wie können Sie Ihr Kind unterstützen?",
+        "Wo wünschen Sie Beratung?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Typische Themen dieser Stufe"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Notenstand, Abschlussvoraussetzungen (Landesregelung beachten)",
+        "Bewerbungen, Ausbildungsplatz, Schulwahl",
+        "Zuverlässigkeit, Pünktlichkeit, Arbeitshaltung",
+        "Beratungsangebote: Berufsberatung der Agentur für Arbeit, Schulsozialarbeit",
+        "Prüfungsangst und Stressbewältigung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ein Ziel des Kindes in Ich-Form formulieren lassen.",
+        "Ein Beitrag der Eltern (klein und machbar).",
+        "Ein Beitrag der Lehrkraft.",
+        "Termin für die Zwischenbilanz festlegen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Abschluss"
+      },
+      {
+       "t": "baustein",
+       "x": "Wir haben besprochen: Ziel [____], Termine [____], Beratung [____]. Ich schicke Ihnen die Zusammenfassung bis [Datum]. Wenn sich die Lage ändert, bitte ich um kurze Nachricht."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Fragen zu Abschlussregelungen immer auf die geltende Prüfungsordnung des Landes verweisen und nichts zusagen, was nicht sicher ist."
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Zeitangaben sind Richtwerte. Wenn das Kind gerade erzählt, geben Sie ihm Raum und kürzen lieber Ihren eigenen Teil."
+      }
+     ]
+    },
+    {
+     "id": "3.30",
+     "titel": "Gesprächsbogen der Lehrkraft",
+     "typ": "Vorlage",
+     "zweck": "Stichwortbogen für die Vorbereitung und Mitschrift während des Gesprächs.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum, Uhrzeit",
+        "Teilnehmende"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Stärken (mit Beispiel):"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Entwicklungsfelder (maximal zwei, mit Beispiel):"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Fragen an Kind und Eltern:"
+      },
+      {
+       "t": "h",
+       "x": "Sicht des Kindes"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Das sagt das Kind:"
+      },
+      {
+       "t": "h",
+       "x": "Sicht der Eltern"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Das sagen die Eltern:"
+      },
+      {
+       "t": "h",
+       "x": "Ergänzungen der Lehrkraft"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Beobachtungen, Einordnung:"
+      },
+      {
+       "t": "h",
+       "x": "Einigung"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Das haben wir vereinbart:"
+      },
+      {
+       "t": "hinweis",
+       "x": "Schreiben Sie während des Gesprächs nur Schlüsselwörter. Das Protokoll (Modul 3.34) fertigen Sie unmittelbar danach."
+      },
+      {
+       "t": "hinweis",
+       "x": "Notieren Sie wörtliche Zitate des Kindes, sie sind kraftvolle Gesprächsanker für die nächste Runde."
+      }
+     ]
+    },
+    {
+     "id": "3.31",
+     "titel": "Übersicht: Stärken, Entwicklungsfelder, Vereinbarungen",
+     "typ": "Übersicht",
+     "zweck": "Eine Seite, die das Gespräch auf einen Blick sichtbar macht.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Diese Übersicht wird im Gespräch gemeinsam ausgefüllt und dient als Kern des Protokolls. Sie passt auf eine A4-Seite und geht in Kopie an die Eltern."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum"
+       ]
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Bereich",
+        "Stärken",
+        "Entwicklungsfelder",
+        "Vereinbarung"
+       ],
+       "zeilen": [
+        [
+         "Lernen / Leistung",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Arbeitsverhalten",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Sozialverhalten",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Selbstständigkeit",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Fächer im Blick",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Wohlbefinden",
+         "____",
+         "____",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Wenn weniger mehr ist"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Pro Zeile höchstens ein Stichwort.",
+        "Mindestens genauso viele Stärken wie Entwicklungsfelder.",
+        "Vereinbarungen nur dort, wo es einen Entwicklungsbedarf gibt."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ergebnis in einem Satz"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das ist uns gemeinsam wichtig:"
+      },
+      {
+       "t": "hinweis",
+       "x": "Beginnen Sie das Ausfüllen in der Spalte 'Stärken'. Das lenkt den Blick und die Stimmung."
+      },
+      {
+       "t": "hinweis",
+       "x": "Eltern wie Kinder dürfen Einträge ergänzen oder streichen."
+      }
+     ]
+    },
+    {
+     "id": "3.32",
+     "titel": "Zielvereinbarung",
+     "typ": "Vorlage",
+     "zweck": "Formular für ein bis drei konkrete, überprüfbare Ziele.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Zeitraum bis"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Mein Ziel"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Ich möchte..."
+      },
+      {
+       "t": "h",
+       "x": "So erreiche ich mein Ziel (SMART)"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Was genau will ich erreichen? (spezifisch)",
+         "____"
+        ],
+        [
+         "Woran erkenne ich es? (messbar)",
+         "____"
+        ],
+        [
+         "Ist es machbar? (attraktiv/realistisch)",
+         "____"
+        ],
+        [
+         "Bis wann? (terminiert)",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Wer hilft wie?"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Wer",
+        "Beitrag"
+       ],
+       "zeilen": [
+        [
+         "Ich",
+         "____"
+        ],
+        [
+         "Eltern",
+         "____"
+        ],
+        [
+         "Lehrkraft",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zwischenbilanz"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Datum",
+        "Ziel erreicht: ja / teilweise / nein",
+        "Neue Schritte"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Beispiel Kl. 3–4: Ich möchte bis zu den Winterferien meine Hausaufgaben vollständig haben. Ich erkenne das an meinem Hausaufgabenheft: jeden Tag ein Haken. Meine Eltern erinnern mich nach dem Mittagessen, meine Lehrerin kontrolliert freitags."
+      },
+      {
+       "t": "hinweis",
+       "x": "Ziele, die das Kind selbst formuliert, werden eher erreicht. Formulieren Sie positiv ('Ich melde mich dreimal pro Stunde') statt negativ ('Ich rufe nicht mehr herein')."
+      },
+      {
+       "t": "hinweis",
+       "x": "Lieber ein erreichtes Ziel als drei vergessene."
+      }
+     ]
+    },
+    {
+     "id": "3.33",
+     "titel": "Lernvertrag",
+     "typ": "Vorlage",
+     "zweck": "Verbindliche Absprache zwischen Kind, Eltern und Lehrkraft.",
+     "stufe": "Kl. 3–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Lernvertrag macht Unterstützung verbindlich, ohne Druck aufzubauen. Er gilt für einen klar begrenzten Zeitraum und wird gemeinsam überprüft."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Von",
+        "Bis"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Das ist mein Ziel"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Ziel in Ich-Form:"
+      },
+      {
+       "t": "h",
+       "x": "Das tue ich dafür"
+      },
+      {
+       "t": "check",
+       "x": [
+        "____________________________",
+        "____________________________",
+        "____________________________"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Das tun meine Eltern"
+      },
+      {
+       "t": "check",
+       "x": [
+        "____________________________",
+        "____________________________"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Das tut die Lehrkraft"
+      },
+      {
+       "t": "check",
+       "x": [
+        "____________________________",
+        "____________________________"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Wenn es nicht klappt"
+      },
+      {
+       "t": "baustein",
+       "x": "Wir sprechen darüber, was gehindert hat, und passen den Vertrag an. Niemand wird bestraft. Wir suchen gemeinsam eine bessere Lösung."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Unterschrift Kind",
+        "Unterschrift Eltern",
+        "Unterschrift Lehrkraft",
+        "Datum der Überprüfung"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Ein Lernvertrag ersetzt keine pädagogischen Maßnahmen oder Förderpläne, er ergänzt sie."
+      },
+      {
+       "t": "hinweis",
+       "x": "Keine Sanktionen im Vertrag: Er ist eine Vereinbarung, kein Strafkatalog."
+      }
+     ]
+    },
+    {
+     "id": "3.34",
+     "titel": "Gesprächsprotokoll",
+     "typ": "Vorlage",
+     "zweck": "Kurzprotokoll, das Eltern und Schule gegenzeichnen.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum, Uhrzeit",
+        "Teilnehmende",
+        "Protokollführung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Anlass und Themen"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Anlass:"
+      },
+      {
+       "t": "h",
+       "x": "Inhalte des Gesprächs"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Thema",
+        "Wesentliche Aussagen"
+       ],
+       "zeilen": [
+        [
+         "Sicht des Kindes",
+         "____"
+        ],
+        [
+         "Sicht der Eltern",
+         "____"
+        ],
+        [
+         "Sicht der Lehrkraft",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Was",
+        "Wer",
+        "Bis wann"
+       ],
+       "zeilen": [
+        [
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "____",
+         "____",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Weiteres Vorgehen"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Nächster Kontakt / Termin:"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Unterschrift Lehrkraft",
+        "Unterschrift Erziehungsberechtigte",
+        "Kenntnisnahme Kind"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Ein Protokoll ist sachlich und enthält nur, was für die Vereinbarungen nötig ist. Keine Mutmaßungen, keine Diagnosen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine Kopie geht an die Eltern, das Original in die Schülerakte oder in das von der Schule vorgesehene System."
+      }
+     ]
+    },
+    {
+     "id": "3.35",
+     "titel": "Nachbereitung des Gesprächs",
+     "typ": "Checkliste",
+     "zweck": "Was nach dem Gespräch zu tun ist, damit Vereinbarungen wirken.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Am selben Tag"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Protokoll fertigstellen",
+        "Zielvereinbarung kopieren",
+        "Besonderheiten in der Akte vermerken",
+        "Weitere Beteiligte (Fachlehrkräfte, Schulsozialarbeit) informieren, soweit abgesprochen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Innerhalb einer Woche"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Elternnachricht verschicken (Modul 3.36/3.37)",
+        "Eigene Verpflichtungen im Kalender eintragen",
+        "Fördermaßnahmen einleiten",
+        "Rückmeldung an das Kind im Unterricht geben"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Zwischenbilanz"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin zur Überprüfung der Ziele festlegen",
+        "Kurzes Feedback von Kind und Eltern einholen",
+        "Erfolge benennen und würdigen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Eigene Reflexion"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Was hat im Gespräch gut funktioniert?",
+        "Welche Frage hätte ich anders stellen sollen?",
+        "Was nehme ich für das nächste Gespräch mit?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine knappe Rückmeldung nach vier Wochen ('Es läuft besser') erhält die Zusammenarbeit lebendig."
+      },
+      {
+       "t": "hinweis",
+       "x": "Dokumentieren Sie Zusagen der Schule, die Sie gegeben haben, und halten Sie sie ein."
+      }
+     ]
+    },
+    {
+     "id": "3.36",
+     "titel": "Elternnachricht nach dem Gespräch (Du-Form)",
+     "typ": "Brief",
+     "zweck": "Nachrichten für Eltern in Du-Anrede: Dank, Zusammenfassung und Zwischenbilanz.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Dank und Zusammenfassung"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern von [Name],\n\nvielen Dank für das offene Gespräch gestern. Wir haben festgehalten, dass [Name] sich in [____] sehr gut entwickelt hat und wir als Nächstes an [____] arbeiten. Ich unterstütze mit [____], ihr mit [____], und [Name] übernimmt [____].\n\nAm [Datum] schaue ich noch einmal, wie es läuft, und melde mich bei euch.\n\nHerzliche Grüße\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Zwischenbilanz positiv"
+      },
+      {
+       "t": "baustein",
+       "x": "Hallo [Vorname],\n\nich wollte euch kurz sagen, dass [Name] seit unserem Gespräch merklich [____] schafft. Das habe ich in dieser Woche mehrmals gesehen. Ich lobe ihn/sie natürlich auch in der Klasse. Bitte gebt die Freude zu Hause weiter.\n\nHerzliche Grüße\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Zwischenbilanz mit Nachsteuerung"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nich möchte mich nach vier Wochen mit euch austauschen. [Name] hat [____] gut umgesetzt, bei [____] merke ich, dass die Unterstützung noch nicht ausreicht. Habt ihr Zeit für ein kurzes Telefonat am [Tag]?\n\nGrüße\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Falls ein Termin versäumt wurde"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nleider hat es mit dem Gesprächstermin am [Datum] nicht geklappt. Ich biete euch folgende Ersatztermine an: [____]. Bitte meldet euch bis [Datum]. Falls ihr einen anderen Weg bevorzugt, etwa ein Telefonat, bin ich dafür offen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Nachrichten kurz halten und immer mit etwas Positivem beginnen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Nur dienstliche Kommunikationswege der Schule nutzen."
+      }
+     ]
+    },
+    {
+     "id": "3.37",
+     "titel": "Elternnachricht nach dem Gespräch (Sie-Form)",
+     "typ": "Brief",
+     "zweck": "Nachrichten für Eltern in Sie-Anrede: Dank, Zusammenfassung und Zwischenbilanz.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Dank und Zusammenfassung"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Familie [Nachname],\n\nvielen Dank für das offene Gespräch am [Datum]. Wir haben festgehalten, dass sich [Name] in [____] sehr gut entwickelt hat und wir als Nächstes an [____] arbeiten. Ich unterstütze durch [____], Sie zu Hause durch [____], und [Name] übernimmt [____].\n\nAm [Datum] schaue ich, wie es läuft, und melde mich bei Ihnen.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Zwischenbilanz positiv"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Frau/Herr [Nachname],\n\nich möchte Ihnen eine gute Nachricht überbringen: [Name] gelingt seit unserem Gespräch [____] deutlich besser. Ich habe das in den vergangenen Wochen mehrfach beobachtet und habe [ihn/sie] dafür gelobt.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Zwischenbilanz mit Nachsteuerung"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Familie [Nachname],\n\nnach vier Wochen möchte ich mich mit Ihnen kurz austauschen. [Name] hat [____] gut umgesetzt; bei [____] reicht die bisherige Unterstützung noch nicht aus. Hätten Sie am [Tag] Zeit für ein kurzes Telefonat?\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Falls ein Termin versäumt wurde"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Familie [Nachname],\n\nleider konnte der Gesprächstermin am [Datum] nicht stattfinden. Ich biete Ihnen folgende Ersatztermine an: [____]. Bitte geben Sie mir bis [Datum] Bescheid. Gern spreche ich auch telefonisch mit Ihnen.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "hinweis",
+       "x": "Nennen Sie in schriftlichen Nachrichten niemals mehr, als im Gespräch vereinbart wurde."
+      },
+      {
+       "t": "hinweis",
+       "x": "Sorgen um das Kind zuerst persönlich besprechen, dann schriftlich zusammenfassen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "titel": "Formulierungshilfen",
+   "module": [
+    {
+     "id": "3.38",
+     "titel": "Formulierungshilfen: Lernen",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Lernen und Lernkompetenz.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] arbeitet im Unterricht aufmerksam mit und folgt Erklärungen konzentriert.",
+        "[Name] stellt weiterführende Fragen und zeigt echtes Interesse.",
+        "[Name] erfasst neue Inhalte schnell und kann sie in eigenen Worten wiedergeben.",
+        "[Name] überträgt Gelerntes auf neue Aufgaben.",
+        "[Name] nutzt Lernstrategien wie Markieren, Gliedern oder Lernkarten.",
+        "[Name] kann Lernschritte gut erklären.",
+        "[Name] hält auch bei schwierigen Aufgaben durch.",
+        "[Name] erkennt Fehler und nutzt sie als Lernchance.",
+        "[Name] arbeitet sorgfältig und überprüft Ergebnisse.",
+        "[Name] zeigt eine wachsende Lernfreude.",
+        "[Name] merkt sich Inhalte zuverlässig.",
+        "[Name] bringt Vorwissen aus dem Alltag in den Unterricht ein.",
+        "[Name] kann Lernziele für sich formulieren.",
+        "[Name] nimmt Rückmeldungen auf und verbessert die Arbeit gezielt."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] kann sich noch besser auf Aufgaben konzentrieren, wenn die Umgebung ruhig ist; dafür üben wir kleine Arbeitsetappen.",
+        "[Name] wiederholt Inhalte noch zu spät; ein fester Wiederholungsplan kann helfen.",
+        "[Name] traut sich bei neuen Aufgaben oft wenig zu; wir üben, den ersten Schritt mutig zu gehen.",
+        "[Name] lernt am besten mit Bildern oder Handlungen; wir ergänzen Texte durch Skizzen.",
+        "[Name] verliert bei längeren Aufgaben den Faden; Teilschritte helfen.",
+        "[Name] überspringt manchmal die Kontrolle der Ergebnisse; eine Checkliste kann unterstützen.",
+        "[Name] nutzt vorhandene Hilfsmittel noch selten; ich zeige gern, wo sie sind.",
+        "[Name] braucht noch Unterstützung, Fehler als Lernchance zu sehen.",
+        "[Name] lernt oft auswendig statt zu verstehen; gemeinsam üben wir, in eigenen Worten zu erklären.",
+        "[Name] formuliert Lernziele noch ungenau; wir üben konkrete Ziele.",
+        "[Name] fragt bei Unklarheiten nicht nach; wir üben den Satz 'Ich habe eine Frage'.",
+        "[Name] gibt bei Schwierigkeiten schnell auf; kleine Erfolgserlebnisse sollen Ausdauer aufbauen.",
+        "[Name] könnte seine Lernzeit besser einteilen; ein Wochenplan hilft.",
+        "[Name] lässt sich schnell ablenken; ein fester Arbeitsplatz zu Hause unterstützt."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eltern fragen oft 'Wie kann ich helfen?'. Halten Sie zwei konkrete Alltagstipps bereit (Vorlesen, Lernspiele, ruhiger Platz)."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.39",
+     "titel": "Formulierungshilfen: Arbeitsverhalten",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Arbeitsverhalten und Arbeitsorganisation.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] beginnt Aufgaben zügig und ohne Aufforderung.",
+        "[Name] arbeitet selbstständig und zuverlässig.",
+        "[Name] hält Ordnung in Heften und Mappen.",
+        "[Name] hat Material meist vollständig dabei.",
+        "[Name] erledigt Hausaufgaben regelmäßig und sorgfältig.",
+        "[Name] teilt sich Arbeitszeit sinnvoll ein.",
+        "[Name] arbeitet ausdauernd, auch bei längeren Aufgaben.",
+        "[Name] kann Arbeitsaufträge selbstständig umsetzen.",
+        "[Name] arbeitet sauber und gründlich.",
+        "[Name] geht mit Arbeitsmaterial verantwortungsvoll um.",
+        "[Name] hält Absprachen und Fristen zuverlässig ein.",
+        "[Name] übernimmt Verantwortung für das eigene Lernen.",
+        "[Name] arbeitet auch unter Zeitdruck konzentriert.",
+        "[Name] organisiert den Arbeitsplatz zweckmäßig."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] benötigt häufig Erinnerungen, um mit Aufgaben zu starten; ein Startsignal kann helfen.",
+        "[Name] verliert Material gelegentlich; eine feste Packliste unterstützt.",
+        "[Name] verteilt Aufgaben über die Woche noch ungleichmäßig; ein Wochenplan hilft.",
+        "[Name] gibt Arbeiten gelegentlich zu spät ab; wir vereinbaren Zwischentermine.",
+        "[Name] schreibt Hausaufgaben nicht immer ins Heft; wir üben die feste Routine.",
+        "[Name] arbeitet manchmal flüchtig; einmaliges Durchlesen vor Abgabe kann entlasten.",
+        "[Name] könnte Hefte und Mappen ordentlicher führen; ich zeige gern eine Struktur.",
+        "[Name] bricht Aufgaben vorzeitig ab; Pausen und Belohnungsrituale können unterstützen.",
+        "[Name] hat Mühe, sich bei Gruppenarbeit auf die eigene Rolle zu konzentrieren.",
+        "[Name] unterschätzt den Zeitbedarf; Schätzen und Prüfen übt Planung.",
+        "[Name] braucht Hilfe beim Priorisieren; wir üben Prioritätenlisten.",
+        "[Name] verwechselt Abgabetermine; ein Kalender im Heft kann helfen.",
+        "[Name] arbeitet unter Druck hektisch; kurze Atemübungen können beruhigen.",
+        "[Name] lässt sich leicht ablenken; Material auf dem Tisch reduzieren."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Achtung: Arbeitsverhalten wird häufig mit Lernstand verwechselt. Trennen Sie Fähigkeit und Organisation klar."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.40",
+     "titel": "Formulierungshilfen: Sozialverhalten",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Sozialverhalten und Zusammenarbeit.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] geht respektvoll mit anderen um.",
+        "[Name] hilft Mitschülern ohne Aufforderung.",
+        "[Name] ist in der Klassengemeinschaft beliebt.",
+        "[Name] hört anderen aufmerksam zu.",
+        "[Name] arbeitet gern und konstruktiv in Gruppen.",
+        "[Name] löst Konflikte meist friedlich.",
+        "[Name] hält vereinbarte Klassenregeln ein.",
+        "[Name] ist ehrlich und zuverlässig.",
+        "[Name] ergreift Partei für schwächere Kinder.",
+        "[Name] zeigt Mitgefühl und nimmt Rücksicht.",
+        "[Name] übernimmt Verantwortung in Klassenämtern.",
+        "[Name] kann Kritik annehmen und umsetzen.",
+        "[Name] integriert neue Kinder offen in die Gruppe.",
+        "[Name] bringt Humor ein, ohne andere zu verletzen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] sucht manchmal schnell den Streit; wir üben Gesprächsregeln und Pausen.",
+        "[Name] unterbricht andere häufig; das Meldezeichen soll helfen.",
+        "[Name] zieht sich in Gruppen zurück; kleine Aufgaben mit Verantwortung stärken die Teilnahme.",
+        "[Name] reagiert auf Kritik sensibel; wir üben ruhige Rückmeldungen.",
+        "[Name] ist manchmal laut; Lautstärke-Ampel kann Orientierung geben.",
+        "[Name] möchte oft bestimmen; wir üben, Vorschläge zu teilen.",
+        "[Name] hat Schwierigkeiten, Niederlagen auszuhalten; Spielsituationen bieten Übungsfelder.",
+        "[Name] stört gelegentlich den Unterricht; wir vereinbaren ein klares Signal.",
+        "[Name] lässt sich leicht von anderen mitreißen; Selbstbehauptung wird geübt.",
+        "[Name] braucht Unterstützung, Gefühle in Worte zu fassen.",
+        "[Name] ist in der Klasse noch wenig vernetzt; Patenschaften können helfen.",
+        "[Name] nimmt Absprachen nicht immer ernst; wir erinnern an Vereinbarungen.",
+        "[Name] reagiert schnell mit Worten; wir üben, erst zu atmen und dann zu antworten.",
+        "[Name] vergleicht sich stark mit anderen; Stärkenrunden fördern die Eigenwahrnehmung."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sozialverhalten nie anhand einer einzigen Situation bewerten. Fragen Sie auch die Schulsozialarbeit oder Pausenaufsichten nach Beobachtungen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.41",
+     "titel": "Formulierungshilfen: Deutsch",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Deutsch (Lesen, Schreiben, Sprechen).",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] liest flüssig und betont sinngemäß.",
+        "[Name] versteht Texte und kann sie zusammenfassen.",
+        "[Name] schreibt abwechslungsreiche, gut gegliederte Texte.",
+        "[Name] verfügt über einen großen Wortschatz.",
+        "[Name] erzählt anschaulich und mit Spannung.",
+        "[Name] beherrscht die Rechtschreibregeln sicher.",
+        "[Name] nutzt Wörterbuch und Rechtschreibhilfen selbstständig.",
+        "[Name] argumentiert nachvollziehbar und höflich.",
+        "[Name] trägt Gedichte ausdrucksstark vor.",
+        "[Name] erfasst Aufgabenstellungen schnell.",
+        "[Name] überarbeitet eigene Texte sorgfältig.",
+        "[Name] liest freiwillig und gern.",
+        "[Name] bildet komplexe Sätze korrekt.",
+        "[Name] präsentiert Ergebnisse klar und frei."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] liest noch stockend; tägliches Lautlesen für 10 Minuten kann helfen.",
+        "[Name] überliest Satzzeichen; wir üben mit farbigen Markierungen.",
+        "[Name] schreibt Texte noch ohne klare Gliederung; ein Planungsraster kann helfen.",
+        "[Name] macht in der Rechtschreibung häufig gleiche Fehler; wir üben gezielt die Fehlerschwerpunkte.",
+        "[Name] formuliert kurze Sätze; Satzanfänge und Konjunktionen helfen beim Ausbauen.",
+        "[Name] verwendet Fachwörter selten; ein Wortspeicher unterstützt.",
+        "[Name] erfasst längere Texte nur teilweise; wir üben Leseschritte.",
+        "[Name] spricht im Unterricht wenig frei; kleine Beiträge in Partnerarbeit bauen Sicherheit auf.",
+        "[Name] schreibt Handschrift schwer lesbar; wir üben Schreibrhythmus.",
+        "[Name] überarbeitet Texte nicht gern; Textlupen-Methode kann helfen.",
+        "[Name] verwechselt Groß- und Kleinschreibung; Regeln visualisieren.",
+        "[Name] liest selten freiwillig; passende Bücher und Hörbücher wecken Interesse.",
+        "[Name] benötigt beim Aufsatz Unterstützung im Einstieg; Satzanfänge als Hilfe.",
+        "[Name] verwendet Umgangssprache im Schriftlichen; Register-Übungen helfen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Ergänzen Sie bei Mehrsprachigkeit unbedingt die Stärken in der Herkunftssprache und beschreiben Sie Deutsch nicht als Defizit."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.42",
+     "titel": "Formulierungshilfen: Mathematik",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Mathematik.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] erfasst mathematische Zusammenhänge schnell.",
+        "[Name] rechnet sicher und flexibel.",
+        "[Name] findet eigene Lösungswege und erklärt sie.",
+        "[Name] kann Sachaufgaben strukturiert lösen.",
+        "[Name] geht Aufgaben logisch Schritt für Schritt an.",
+        "[Name] arbeitet sorgfältig mit Zeichengeräten.",
+        "[Name] kontrolliert Ergebnisse durch Überschlag.",
+        "[Name] erkennt Muster und Gesetzmäßigkeiten.",
+        "[Name] hat ein gutes Zahlenverständnis.",
+        "[Name] zeigt Freude am Knobeln.",
+        "[Name] begründet Lösungen nachvollziehbar.",
+        "[Name] sicher im Umgang mit Maßeinheiten.",
+        "[Name] hilft anderen beim Rechnen.",
+        "[Name] überträgt Rechenstrategien auf neue Aufgaben."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] zählt noch häufig an den Fingern; Materialien wie Zehnerstreifen helfen beim Ablösen.",
+        "[Name] verwechselt Rechenzeichen; farbige Markierungen unterstützen.",
+        "[Name] hat Mühe mit dem Einmaleins; tägliche kurze Übungen können Sicherheit schaffen.",
+        "[Name] erfasst Textaufgaben noch ungenau; Skizzen und Unterstreichen helfen.",
+        "[Name] macht Flüchtigkeitsfehler; Ergebniskontrolle üben.",
+        "[Name] rechnet schematisch; wir üben das Erklären eigener Wege.",
+        "[Name] zeigt Unsicherheit bei Brüchen/Dezimalzahlen; Anschauungsmaterial nutzen.",
+        "[Name] schreibt Rechenschritte nicht auf; Rechenwege strukturieren.",
+        "[Name] hat Schwierigkeiten mit der Raumvorstellung; Handlungsorientierung hilft.",
+        "[Name] hat bei Prüfungen Angst vor Fehlern; Entspannung und kleine Etappen.",
+        "[Name] braucht Zeit zum Verstehen; Hilfskarten bereitstellen.",
+        "[Name] benötigt Wiederholung der Grundlagen; Lernstandsdiagnose nutzen.",
+        "[Name] verwendet Fachbegriffe noch unsicher; Begriffskarten helfen.",
+        "[Name] überspringt Zwischenschritte; Lösungsweg schriftlich festhalten."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Rechenschwäche (Dyskalkulie) siehe Modul 3.53; keine Diagnosen im Gespräch, sondern Beobachtungen und Förderempfehlung."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.43",
+     "titel": "Formulierungshilfen: Fremdsprache",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Fremdsprachen (Englisch, Französisch, Spanisch, Latein).",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] spricht mit guter Aussprache und Freude.",
+        "[Name] verfügt über einen soliden Wortschatz.",
+        "[Name] versteht gesprochene Anweisungen sicher.",
+        "[Name] beteiligt sich gern an Dialogen und Rollenspielen.",
+        "[Name] wendet grammatische Strukturen korrekt an.",
+        "[Name] liest altersgerechte Texte verständig.",
+        "[Name] schreibt kurze Texte weitgehend fehlerfrei.",
+        "[Name] erkennt Ähnlichkeiten zur Muttersprache und nutzt sie.",
+        "[Name] traut sich zu sprechen, auch wenn Fehler passieren.",
+        "[Name] nutzt Wörterbuch und Online-Hilfen sinnvoll.",
+        "[Name] zeigt Interesse an Kultur und Alltag der Zielsprache.",
+        "[Name] lernt Vokabeln regelmäßig.",
+        "[Name] erschließt unbekannte Wörter aus dem Zusammenhang.",
+        "[Name] präsentiert Kurzvorträge sicher."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] spricht im Unterricht zögerlich; Partner- und Gruppenarbeit bauen Hemmungen ab.",
+        "[Name] lernt Vokabeln eher kurzfristig; Karteikarten und Wiederholungsplan helfen.",
+        "[Name] hat Schwierigkeiten mit der Aussprache; Hörübungen und Nachsprechen unterstützen.",
+        "[Name] verwechselt Zeitformen; Tabellen und Beispiele helfen.",
+        "[Name] unterscheidet Schreibweise und Aussprache noch unsicher; Wörter laut lesen.",
+        "[Name] liest ungern fremdsprachliche Texte; leichte Lektüre und Hörbücher können motivieren.",
+        "[Name] formuliert Sätze häufig nach deutschem Muster; Satzbaupläne üben.",
+        "[Name] bildet Sätze noch einfach; Satzbausteine erweitern.",
+        "[Name] hat Mühe mit dem Hörverstehen; kurze Hörübungen im Alltag.",
+        "[Name] nutzt die Fremdsprache außerhalb des Unterrichts selten; Filme und Lieder im Original.",
+        "[Name] hat Angst vor Fehlern; Fehlerfreundlichkeit betonen.",
+        "[Name] trifft bei Texten oft Vermutungen; Lesetechniken üben.",
+        "[Name] braucht Unterstützung bei freier Textproduktion; Satzanfänge geben.",
+        "[Name] lernt Grammatikregeln auswendig, wendet sie aber noch nicht an; Transferübungen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Fremdsprachenerwerb braucht Mut zum Fehler. Betonen Sie im Gespräch Kommunikationserfolge, nicht nur Fehlerzahlen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.44",
+     "titel": "Formulierungshilfen: Naturwissenschaften",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Naturwissenschaften (Sachunterricht, Biologie, Chemie, Physik, Natur und Technik).",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] beobachtet genau und beschreibt Phänomene präzise.",
+        "[Name] stellt kluge Fragen zu Naturvorgängen.",
+        "[Name] experimentiert sorgfältig und beachtet Sicherheitsregeln.",
+        "[Name] kann Versuche planen und auswerten.",
+        "[Name] erklärt Zusammenhänge verständlich.",
+        "[Name] nutzt Fachbegriffe richtig.",
+        "[Name] liest Diagramme und Tabellen sicher.",
+        "[Name] dokumentiert Versuche vollständig.",
+        "[Name] arbeitet im Team an Experimenten zuverlässig.",
+        "[Name] zeigt Interesse an aktuellen Naturthemen.",
+        "[Name] stellt Vermutungen auf und prüft sie.",
+        "[Name] verknüpft Alltagswissen mit Unterrichtsinhalten.",
+        "[Name] zeigt Verantwortungsbewusstsein im Umgang mit Natur.",
+        "[Name] präsentiert Forschungsergebnisse anschaulich."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] schreibt Versuchsprotokolle noch unvollständig; eine Vorlage kann helfen.",
+        "[Name] verwechselt Beobachtung und Deutung; wir trennen beides in zwei Spalten.",
+        "[Name] hat Mühe mit Fachbegriffen; ein Wortspeicher hilft.",
+        "[Name] arbeitet bei Experimenten hastig; Sicherheits-Check vor Beginn.",
+        "[Name] überträgt Wissen schwer auf neue Beispiele; Alltagsbezüge herstellen.",
+        "[Name] liest Diagramme noch unsicher; gemeinsame Lesehilfen üben.",
+        "[Name] bringt sich in Gruppenversuchen wenig ein; feste Rollen helfen.",
+        "[Name] hat Schwierigkeiten mit Formeln und Einheiten; schrittweise Übung.",
+        "[Name] lernt Fachtexte nur oberflächlich; Lesestrategien anwenden.",
+        "[Name] stellt kaum eigene Fragen; Neugierde durch Impulse wecken.",
+        "[Name] verwechselt Größen und Einheiten; Merkkarten nutzen.",
+        "[Name] plant Versuche ungenau; Planungsschema verwenden.",
+        "[Name] dokumentiert Beobachtungen spät; Zeit während des Versuchs einplanen.",
+        "[Name] benötigt mehr Sicherheit beim Zeichnen von Skizzen; Zeichnen üben."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Kinder lieben Experimente. Bringen Sie einen kleinen Versuch aus Haushaltsmaterialien als Gesprächsanker mit, wenn das Kind sich hier besonders ausdrückt."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.45",
+     "titel": "Formulierungshilfen: Gesellschaft",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Gesellschaftswissenschaften (Sachunterricht, Geschichte, Geographie, Politik/Gemeinschaftskunde, Wirtschaft).",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] interessiert sich für gesellschaftliche Zusammenhänge.",
+        "[Name] kann historische Ereignisse einordnen.",
+        "[Name] arbeitet sicher mit Karten und Atlanten.",
+        "[Name] begründet Meinungen sachlich.",
+        "[Name] erkennt unterschiedliche Perspektiven.",
+        "[Name] recherchiert selbstständig und nennt Quellen.",
+        "[Name] bringt aktuelle Themen in den Unterricht ein.",
+        "[Name] diskutiert respektvoll.",
+        "[Name] verfasst strukturierte Darstellungen.",
+        "[Name] versteht demokratische Abläufe.",
+        "[Name] verknüpft Wissen aus verschiedenen Fächern.",
+        "[Name] zeigt Verantwortungsbewusstsein für Umwelt und Mitmenschen.",
+        "[Name] kann Quellen kritisch hinterfragen.",
+        "[Name] präsentiert Ergebnisse überzeugend."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] lernt Jahreszahlen schwer; Zeitleisten mit Bildern helfen.",
+        "[Name] verwechselt Ursache und Wirkung; wir üben Wenn-dann-Ketten.",
+        "[Name] liest Karten noch ungenau; Kartenarbeit regelmäßig üben.",
+        "[Name] argumentiert meist mit Behauptungen; Begründungen mit 'weil' üben.",
+        "[Name] übernimmt Informationen ungeprüft; Quellenkritik üben.",
+        "[Name] beteiligt sich ungern an Diskussionen; geschützte Gesprächsformen nutzen.",
+        "[Name] schreibt Antworten knapp; Fragewörter nutzen, um auszuführen.",
+        "[Name] verwendet Fachbegriffe nicht sicher; Begriffsnetze anlegen.",
+        "[Name] findet wenig Bezug zu historischen Themen; Gegenwartsbezug herstellen.",
+        "[Name] fasst Texte unvollständig zusammen; Schlüsselwörter markieren.",
+        "[Name] präsentiert unstrukturiert; Gliederungsraster verwenden.",
+        "[Name] vergleicht Perspektiven selten; Rollenspiele können helfen.",
+        "[Name] bearbeitet Arbeitsblätter flüchtig; Kontrollfragen einsetzen.",
+        "[Name] benötigt Hilfe beim Anlegen von Lerntexten; Methodentraining."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Politische Themen und Weltanschauung mit Zurückhaltung ansprechen. Im Gespräch geht es um Kompetenzen, nicht um Haltungen der Familie."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    },
+    {
+     "id": "3.46",
+     "titel": "Formulierungshilfen: Sport, Musik, Kunst",
+     "typ": "Textbaustein",
+     "zweck": "Positive, ressourcenorientierte Formulierungen für den Bereich Sport, Musik und Kunst.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Formulierungen sind so gestaltet, dass sie beobachtbar, konkret und wertschätzend sind. Ersetzen Sie [Name] und ergänzen Sie ein Beispiel aus Ihrem Unterricht. Wählen Sie zwei bis drei Stärken und höchstens zwei Entwicklungsfelder aus."
+      },
+      {
+       "t": "h",
+       "x": "Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] ist im Sport engagiert und motiviert.",
+        "[Name] verfügt über gute Koordination und Ausdauer.",
+        "[Name] hält Spielregeln fair ein.",
+        "[Name] unterstützt andere im Team.",
+        "[Name] singt/musiziert mit Freude.",
+        "[Name] hat ein gutes Rhythmusgefühl.",
+        "[Name] bringt eigene Ideen in musikalische Projekte ein.",
+        "[Name] gestaltet Bilder mit Fantasie und Sorgfalt.",
+        "[Name] probiert verschiedene Techniken aus.",
+        "[Name] beschreibt eigene Werke nachvollziehbar.",
+        "[Name] arbeitet sauber mit Werkzeugen und Materialien.",
+        "[Name] präsentiert kreative Ergebnisse stolz.",
+        "[Name] reflektiert Kunstwerke sensibel.",
+        "[Name] zeigt Freude an Bewegung und Spiel."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder als nächste Schritte"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "[Name] hat Hemmungen, sich im Sport zu zeigen; kleine Erfolgserlebnisse im Team.",
+        "[Name] verliert beim Spiel schnell die Fassung; Fair-Play-Rituale üben.",
+        "[Name] benötigt Unterstützung bei komplexen Bewegungsabläufen; Zwischenschritte.",
+        "[Name] ist beim Singen/Musizieren zurückhaltend; Gruppen bieten Schutz.",
+        "[Name] hat Schwierigkeiten mit dem Takt; Klatsch- und Bewegungsspiele.",
+        "[Name] arbeitet im Kunstunterricht schnell fertig; Differenzierung und Erweiterungsaufgaben.",
+        "[Name] bleibt bei Vorgaben; wir ermutigen zu eigenen Ideen.",
+        "[Name] geht mit Material unachtsam um; Ordnungsrituale.",
+        "[Name] vergisst Sportkleidung; Packliste und Erinnerung.",
+        "[Name] hat Angst vor Bewertung kreativer Arbeiten; Prozess statt Ergebnis würdigen.",
+        "[Name] zeigt wenig Ausdauer bei Ausdauerläufen; kleine Ziele setzen.",
+        "[Name] tut sich schwer mit Notenlesen; Merkhilfen und Spiele.",
+        "[Name] stört bei Gruppenaufgaben; Rollen vergeben.",
+        "[Name] bearbeitet Projekte ungleichmäßig; Zwischentermine."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "In Fächern ohne klassische Prüfungen zählt der Prozess. Würdigen Sie Ausdauer, Mut und Zusammenarbeit ausdrücklich."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Steigerungsfloskeln wie 'sehr gut', wenn Sie kein Beispiel nennen können. Besser: 'In der Stunde zu [Thema] hat [Name] ... erklärt.'"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "titel": "Spezialsituationen",
+   "module": [
+    {
+     "id": "3.47",
+     "titel": "Gespräche mit dem Kind dabei",
+     "typ": "Leitfaden",
+     "zweck": "Wie das Kind als gleichberechtigter Partner am Gespräch teilnimmt.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Vorteile"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind erlebt sich als Mitgestalter, nicht als Gesprächsgegenstand.",
+        "Missverständnisse zwischen Elternhaus, Kind und Schule werden sofort geklärt.",
+        "Vereinbarungen werden verbindlicher, weil das Kind sie selbst mitträgt."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung des Kindes"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Selbsteinschätzung ausfüllen (Module 3.12 bis 3.16).",
+        "Arbeitsproben auswählen.",
+        "Im Unterricht üben, wie man sich vorstellt.",
+        "Mit dem Kind absprechen, welche Themen angesprochen werden."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Struktur mit Kind"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Phase",
+        "Wer",
+        "Hilfreiche Impulse"
+       ],
+       "zeilen": [
+        [
+         "Einstieg",
+         "Kind",
+         "Darauf bin ich stolz..., das fällt mir schwer..."
+        ],
+        [
+         "Ergänzung",
+         "Eltern",
+         "Zu Hause sehe ich..."
+        ],
+        [
+         "Rückmeldung",
+         "Lehrkraft",
+         "Ich beobachte..., besonders gelungen ist..."
+        ],
+        [
+         "Ziele",
+         "Kind zuerst",
+         "Mein Ziel bis zum nächsten Gespräch ist..."
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Schwierige Themen"
+      },
+      {
+       "t": "p",
+       "x": "Wenn Entwicklungsfelder sensibel sind, führen Sie vorab ein kurzes Vorgespräch mit dem Kind: 'Ich möchte im Gespräch darüber sprechen, dass dir das Aufpassen manchmal schwerfällt. Wie sollen wir das sagen, damit es sich für dich okay anfühlt?'"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich möchte, dass du dich im Gespräch wohlfühlst. Wenn ich etwas sage, das dich ärgert, sag bitte Stopp. Dann ändere ich meine Worte oder wir machen eine Pause."
+      },
+      {
+       "t": "hinweis",
+       "x": "Wenn Eltern über das Kind hinweg sprechen, freundlich umlenken: 'Mich interessiert, was [Name] dazu sagt.'"
+      },
+      {
+       "t": "hinweis",
+       "x": "Vertrauliche Themen (Mobbingverdacht, familiäre Belastungen) gehören in ein Gespräch ohne Kind. Bitte Eltern vorab informieren."
+      }
+     ]
+    },
+    {
+     "id": "3.48",
+     "titel": "Schwierige Gespräche führen",
+     "typ": "Leitfaden",
+     "zweck": "Roter Faden für Gespräche mit Konfliktpotenzial.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Bevor das Gespräch beginnt"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Ziel klären: Was soll am Ende anders sein?",
+        "Fakten sammeln (Beispiele, Daten, Zeugen).",
+        "Eigenen Anteil prüfen: Was habe ich beigetragen?",
+        "Unterstützung einplanen (Schulleitung, Beratungslehrkraft).",
+        "Neutralen Raum und genug Zeit wählen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Aufbau"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Positiver Einstieg und Dank für das Kommen.",
+        "Anliegen in einem Satz benennen.",
+        "Beobachtungen schildern, ohne zu urteilen.",
+        "Sichtweise der Eltern erfragen, wirklich zuhören.",
+        "Gemeinsames Interesse formulieren (das Wohl des Kindes).",
+        "Lösungsideen sammeln, dann auswählen.",
+        "Verbindlichkeit: wer, was, bis wann, nächster Termin."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formulierungen"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich möchte mit Ihnen über [Thema] sprechen, weil mir wichtig ist, dass [Name] sich gut entwickeln kann. Ich habe Folgendes beobachtet: [____]. Wie nehmen Sie das wahr?"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich höre, dass Sie damit nicht einverstanden sind. Mir ist wichtig, dass wir eine Lösung finden, die für [Name] funktioniert. Welche Möglichkeiten sehen Sie?"
+      },
+      {
+       "t": "h",
+       "x": "Wenn Vorwürfe kommen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Nicht verteidigen: 'Ich verstehe, dass Sie das ärgert.'",
+        "Fakten ruhig wiederholen.",
+        "Auf das Ziel zurücklenken: 'Wir wollen beide, dass es [Name] gut geht.'",
+        "Falls nötig Pause oder Folgetermin vorschlagen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sie müssen nicht im Gespräch alles lösen. Ein Folgetermin ist kein Scheitern."
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Verdacht auf Kindeswohlgefährdung gelten besondere Verfahren (Schulleitung, Jugendamt). Landesrecht prüfen."
+      }
+     ]
+    },
+    {
+     "id": "3.49",
+     "titel": "Nachteilsausgleich und Förderplan",
+     "typ": "Leitfaden",
+     "zweck": "Gespräch über Unterstützungsangebote, Förderpläne und Nachteilsausgleich.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Begriffe"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Begriff",
+        "Bedeutung",
+        "Hinweis"
+       ],
+       "zeilen": [
+        [
+         "Nachteilsausgleich",
+         "Ausgleich behinderungsbedingter Nachteile (z. B. mehr Zeit, andere Darbietungsform)",
+         "Anforderungen bleiben gleich"
+        ],
+        [
+         "Notenschutz",
+         "Abweichung von Bewertungsgrundsätzen (z. B. Rechtschreibung nicht bewertet)",
+         "Landesregelung beachten; Hinweis im Zeugnis je nach Land"
+        ],
+        [
+         "Förderplan",
+         "Schriftliche Planung von Zielen, Maßnahmen und Verantwortlichen",
+         "Wird regelmäßig überprüft"
+        ],
+        [
+         "Sonderpädagogischer Förderbedarf",
+         "Festgestellt durch Verfahren des Landes",
+         "Nur durch zuständige Stellen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ablauf des Gesprächs"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Beobachtungen zusammentragen (konkret, ohne Diagnose).",
+        "Eltern fragen, welche Unterstützung sie bereits erlebt haben.",
+        "Möglichkeiten erläutern: Beratung, Gutachten, Förderkurse, Schulpsychologie.",
+        "Gemeinsam Förderziele wählen.",
+        "Verantwortlichkeiten und Überprüfungstermin festhalten."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Förderplan: Muster"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Förderbereich",
+        "Ziel",
+        "Maßnahme",
+        "Wer",
+        "Bis wann"
+       ],
+       "zeilen": [
+        [
+         "____",
+         "____",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "____",
+         "____",
+         "____",
+         "____",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Familie [Nachname], zur Unterstützung von [Name] schlage ich einen Förderplan vor. Wir legen gemeinsam fest, welche Ziele wir uns setzen und welche Hilfen es gibt. Der Plan wird nach [Zeitraum] überprüft. Gern erkläre ich Ihnen im Gespräch, welche Möglichkeiten es in unserem Land gibt."
+      },
+      {
+       "t": "hinweis",
+       "x": "Landesregelungen zu Nachteilsausgleich und Notenschutz unterscheiden sich stark. Bitte aktuelle Regelung beim zuständigen Ministerium bzw. der Schulaufsicht prüfen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Keine Diagnosen aussprechen, keine Tests ersetzen. Verweisen Sie auf Fachstellen (Schulpsychologische Beratung, Kinder- und Jugendärzte, Sozialpädiatrische Zentren)."
+      }
+     ]
+    },
+    {
+     "id": "3.50",
+     "titel": "Leistungsabfall ansprechen",
+     "typ": "Leitfaden",
+     "zweck": "Gesprächsführung bei plötzlichem oder schleichendem Leistungsabfall.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Mögliche Ursachen (Hypothesen, keine Urteile)"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schulische Ursachen: Lücken, Methodenwechsel, Überforderung, Unterforderung.",
+        "Soziale Ursachen: Konflikte, Ausgrenzung, Freundeskreis.",
+        "Persönliche Ursachen: Müdigkeit, Gesundheit, Pubertät, Motivation.",
+        "Familiäre Veränderungen: Trennung, Umzug, Krankheit, Verlust.",
+        "Mediale Ursachen: Spiele, Handy, Schlafmangel."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsaufbau"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Beobachtung mit Daten: 'In den letzten sechs Wochen sind die Noten von 2 auf 4 gefallen.'",
+        "Offene Frage: 'Was beobachten Sie zu Hause?'",
+        "Kind fragen, wie es sich selbst erklärt.",
+        "Gemeinsam Hypothesen sammeln, nicht festlegen.",
+        "Maßnahmen: kurzfristig (Gespräche, Nachhilfe-Anbieter der Schule), mittelfristig (Förderplan)."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Mir ist aufgefallen, dass [Name] seit etwa [Zeitraum] deutlich weniger Punkte erreicht als vorher, obwohl [er/sie] die Inhalte eigentlich verstehen kann. Ich mache mir Sorgen und würde gern verstehen, was dahintersteckt. Haben Sie in letzter Zeit etwas bemerkt?"
+      },
+      {
+       "t": "h",
+       "x": "Mögliche Schritte"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Hypothese",
+        "Nächster Schritt"
+       ],
+       "zeilen": [
+        [
+         "Lerntechnik",
+         "Lernstrategien trainieren, Lernplaner"
+        ],
+        [
+         "Motivation",
+         "Interessen verknüpfen, kleine Ziele"
+        ],
+        [
+         "Soziales",
+         "Gespräch mit Schulsozialarbeit"
+        ],
+        [
+         "Belastung zu Hause",
+         "Beratungsangebote nennen, ohne zu drängen"
+        ],
+        [
+         "Gesundheit",
+         "Rücksprache mit Kinderarzt empfehlen"
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nie auf familiäre Gründe schließen, bevor die Familie sie selbst anspricht."
+      },
+      {
+       "t": "hinweis",
+       "x": "Notieren Sie Beobachtungen schon vor dem Gespräch, damit nicht Ihre Eindrücke, sondern Fakten zählen."
+      }
+     ]
+    },
+    {
+     "id": "3.51",
+     "titel": "Verhaltensauffälligkeiten besprechen",
+     "typ": "Leitfaden",
+     "zweck": "Gespräche über störendes oder grenzüberschreitendes Verhalten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Grundregeln"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Verhalten beschreiben, nicht das Kind bewerten.",
+        "Konkrete Situationen nennen (Ort, Zeit, Auslöser).",
+        "Beobachtungen aus verschiedenen Situationen sammeln.",
+        "Ressourcen betonen: Wann klappt es?",
+        "Eltern als Partner einbinden."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Strukturierte Beobachtung"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Auslöser (A)",
+        "Verhalten (B)",
+        "Folge (C)"
+       ],
+       "zeilen": [
+        [
+         "Aufgabe zu schwer",
+         "Ruft in die Klasse",
+         "Aufmerksamkeit"
+        ],
+        [
+         "Pause",
+         "Streit um Spiele",
+         "Lehrkraft schreitet ein"
+        ],
+        [
+         "____",
+         "____",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbausteine"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich beobachte, dass [Name] in Gruppenarbeiten häufig die Aufgaben der anderen unterbricht. Das führt dazu, dass die Gruppe nicht weiterkommt. Ich möchte [Name] helfen, andere Wege zu finden. Wie erleben Sie das zu Hause?"
+      },
+      {
+       "t": "baustein",
+       "x": "Wir haben mit [Name] vereinbart, dass er/sie bei Wut eine Auszeit nimmt. In den letzten zwei Wochen hat das dreimal funktioniert. Das möchte ich gern würdigen."
+      },
+      {
+       "t": "h",
+       "x": "Maßnahmen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Verhaltensverträge mit positiven Zielen",
+        "Tokenpläne oder Wochenkarten (kurz, konkret)",
+        "Soziales Training in Kleingruppen",
+        "Rücksprache mit Schulsozialarbeit/Beratungsfachkräften",
+        "Bei Bedarf Information über Beratungsstellen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Erwähnen Sie niemals Diagnosen wie ADHS oder Autismus, wenn sie nicht von den Eltern selbst zur Sprache kommen. Verweisen Sie stattdessen auf Beratungsstellen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Maßnahmen im Schulrecht (Ordnungsmaßnahmen) sind eigene Verfahren und gehören nicht in ein Lernentwicklungsgespräch."
+      }
+     ]
+    },
+    {
+     "id": "3.52",
+     "titel": "Eltern mit Migrationshintergrund und Dolmetschung",
+     "typ": "Leitfaden",
+     "zweck": "Sprachsensible Gespräche und der Einsatz von Dolmetschenden.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Haltung"
+      },
+      {
+       "t": "p",
+       "x": "Mehrsprachigkeit ist eine Ressource. Sprachbarrieren sind kein Zeichen mangelnden Interesses. Viele Familien kennen das deutsche Schulsystem noch nicht; geben Sie Orientierung, ohne zu belehren."
+      },
+      {
+       "t": "h",
+       "x": "Praktische Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Einfache Sprache: kurze Sätze, keine Redewendungen, Fachwörter erklären.",
+        "Visualisieren: Skizzen, Piktogramme, Beispiele zeigen.",
+        "Wichtiges schriftlich in einfacher Sprache oder übersetzt mitgeben.",
+        "Rückfragen anbieten: 'Habe ich das verständlich erklärt?'",
+        "Kulturelle Unterschiede im Schulverständnis respektvoll thematisieren."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Dolmetschende"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Option",
+        "Vorteil",
+        "Achtung"
+       ],
+       "zeilen": [
+        [
+         "Professionelle Dolmetschende (Landesprogramme, Dolmetscherpool)",
+         "Neutral, korrekt",
+         "Frühzeitig buchen; Datenschutz"
+        ],
+        [
+         "Sprachmittlerinnen und Sprachmittler der Schule",
+         "Vertraut mit Schulalltag",
+         "Schweigepflicht klären"
+        ],
+        [
+         "Kind als Dolmetscher",
+         "Schnell verfügbar",
+         "Nicht empfehlenswert: überfordert das Kind und verzerrt Inhalte"
+        ],
+        [
+         "Verwandte oder Bekannte",
+         "Vertrauensperson",
+         "Nur wenn Eltern das ausdrücklich wünschen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ablauf mit Dolmetschung"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Vor dem Gespräch: Ziel und Fachbegriffe kurz mit der Dolmetschperson klären.",
+        "In kurzen Sinnabschnitten sprechen und zur Familie blicken.",
+        "Doppelte Zeit einplanen.",
+        "Am Ende die Vereinbarungen laut zusammenfassen lassen.",
+        "Schriftliche Zusammenfassung mitgeben."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Willkommen. Ich spreche in kurzen Abschnitten, damit die Übersetzung gut möglich ist. Bitte unterbrechen Sie mich jederzeit, wenn etwas unklar ist. Wir haben genug Zeit."
+      },
+      {
+       "t": "hinweis",
+       "x": "Fragen Sie nie 'Haben Sie alles verstanden?', sondern 'Was nehmen Sie aus unserem Gespräch mit?'"
+      },
+      {
+       "t": "hinweis",
+       "x": "Landes- und kommunale Dolmetscherdienste sind unterschiedlich organisiert. Bitte bei Schulträger/Schulamt nach dem aktuellen Angebot fragen."
+      }
+     ]
+    },
+    {
+     "id": "3.53",
+     "titel": "Lese-Rechtschreib-Schwäche und Rechenschwäche",
+     "typ": "Leitfaden",
+     "zweck": "Gespräch über Teilleistungsstörungen und Fördermöglichkeiten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Frühe Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Lesen: stockend, Raten, Auslassungen, Verwechslung ähnlicher Buchstaben.",
+        "Schreiben: starke Fehlerstreuung, auch bei geübten Wörtern, Buchstabendreher.",
+        "Rechnen: Zählen statt Rechnen, Verwechseln von Stellen, Probleme mit Zahlenvorstellung.",
+        "Folgen: Vermeiden, Bauchschmerzen, Rückzug, Verhaltensauffälligkeiten."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsziele"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Beobachtungen konkret schildern (Beispiele aus Heften).",
+        "Entlastung vermitteln: 'Das hat nichts mit Intelligenz zu tun.'",
+        "Wege der Abklärung erläutern (Schulpsychologie, Beratung, Fachärzte, Therapeuten).",
+        "Schulische Förderung planen (Förderkurse, differenzierte Aufgaben).",
+        "Nachteilsausgleich/Notenschutz nach Landesregelung ansprechen."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Mir ist aufgefallen, dass [Name] beim Lesen häufig Wörter errät und beim Schreiben ähnliche Fehler wiederholt. Das ist nicht ungewöhnlich, braucht aber gezielte Förderung. Ich schlage vor, dass wir die Schulpsychologie um eine Einschätzung bitten und parallel zu Hause täglich fünf Minuten Lesen im Duett üben."
+      },
+      {
+       "t": "h",
+       "x": "Förderideen für zu Hause"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Vorlesen und gemeinsames Lesen im Wechsel",
+        "Schreiben nach Lust: Einkaufszettel, Tagebuch",
+        "Rechnen im Alltag: Einkauf, Kochen, Spiele mit Würfeln",
+        "Kurze, tägliche Übung statt langer Einheiten",
+        "Erfolge sichtbar machen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Keine Diagnose durch die Lehrkraft. Vorsichtige Wortwahl: 'Ich beobachte Hinweise, die wir fachlich abklären lassen können.'"
+      },
+      {
+       "t": "hinweis",
+       "x": "Regelungen zu Nachteilsausgleich und Notenschutz bei LRS und Rechenschwäche sind je Land verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "3.54",
+     "titel": "Hochbegabung und besondere Begabungen",
+     "typ": "Leitfaden",
+     "zweck": "Gespräche über Unterforderung, Begabungen und Förderung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Beobachtungen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schnelle Auffassungsgabe, großes Vorwissen, vielfältige Interessen.",
+        "Langeweile, Verweigerung oder stilles Zurückziehen bei Unterforderung.",
+        "Perfektionismus, Angst vor Fehlern.",
+        "Außenseiterrolle trotz guter Leistung.",
+        "Intensive Fragen und eigene Ideen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsziele"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Würdigen, was sichtbar ist, ohne Etikett.",
+        "Mögliche Förderangebote vorstellen (Enrichment, Akzeleration, Wettbewerbe, Zusatzkurse).",
+        "Soziale Einbindung nicht vergessen.",
+        "Beratungswege nennen (Schulpsychologie, Begabungsförderung des Landes)."
+       ]
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Förderform",
+        "Beispiel"
+       ],
+       "zeilen": [
+        [
+         "Enrichment",
+         "Zusatzaufgaben, Projekte, Experten-Arbeit"
+        ],
+        [
+         "Akzeleration",
+         "Frühere Einschulung, Überspringen (nach Landesregelung)"
+        ],
+        [
+         "Kurse und AGs",
+         "Mathematik-Wettbewerbe, Forschergruppen"
+        ],
+        [
+         "Mentoring",
+         "Kontakt zu außerschulischen Partnern"
+        ]
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "[Name] fällt durch schnelle Auffassung und viele Ideen auf. Ich möchte, dass [er/sie] im Unterricht genug Herausforderung bekommt, und überlege Zusatzaufgaben. Wir sollten auch darauf achten, dass [Name] gut in die Klasse eingebunden bleibt. Wie erleben Sie das?"
+      },
+      {
+       "t": "hinweis",
+       "x": "Das Wort 'hochbegabt' nicht ohne Diagnose verwenden. Sprechen Sie von 'besonderen Stärken' und 'Potenzial'."
+      },
+      {
+       "t": "hinweis",
+       "x": "Akzeleration und Testverfahren sind landesrechtlich geregelt. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "3.55",
+     "titel": "Schulangst und Schulverweigerung",
+     "typ": "Leitfaden",
+     "zweck": "Gespräche bei Ängsten, Bauchschmerzen und Schulvermeidung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Warnzeichen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Häufige Krankmeldungen ohne klare Ursache, besonders montags.",
+        "Bauchschmerzen, Kopfweh, Schlafstörungen vor der Schule.",
+        "Tränen am Morgen, Klammern an Eltern, Trennungsangst.",
+        "Rückzug, Angst vor Tests, Vermeidung bestimmter Fächer.",
+        "Veränderte Stimmung oder Konflikte mit Mitschülern."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsführung"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Sorge mit den Eltern teilen, keine Schuld zuweisen.",
+        "Gemeinsam Ursachen vermuten: Leistung, Mobbing, Trennung, Gesundheit.",
+        "Kind getrennt anhören, wenn möglich.",
+        "Schulische Entlastung planen (Ritual am Morgen, Ansprechperson, abgestufte Teilnahme).",
+        "Beratung hinzuziehen (Schulpsychologie, Beratungslehrkraft, Kinder- und Jugendarzt)."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Mir ist aufgefallen, dass [Name] in den letzten Wochen häufig fehlt und morgens sehr angespannt wirkt. Ich mache mir Sorgen und möchte gemeinsam überlegen, wie wir [Name] unterstützen können. Wie erleben Sie die Morgen zu Hause?"
+      },
+      {
+       "t": "h",
+       "x": "Mögliche Schritte"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Kurzfristig",
+        "Mittelfristig"
+       ],
+       "zeilen": [
+        [
+         "Begrüßungsritual, feste Ansprechperson",
+         "Gespräche mit Schulsozialarbeit"
+        ],
+        [
+         "Teilnahme in kleinen Schritten",
+         "Abklärung durch Fachstellen"
+        ],
+        [
+         "Rückzugsort im Schulhaus",
+         "Reintegrationsplan"
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Zwang verschärft Schulangst. Kontakt halten, Erfolge sichtbar machen, Fachstellen einbinden."
+      },
+      {
+       "t": "hinweis",
+       "x": "Schulpflicht und Verfahren bei dauerhaftem Fernbleiben sind je Bundesland geregelt. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "3.56",
+     "titel": "Mediennutzung ansprechen",
+     "typ": "Leitfaden",
+     "zweck": "Gespräch über Bildschirmzeit, Handy, Spiele und soziale Netzwerke.",
+     "stufe": "Kl. 3–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ausgangspunkt"
+      },
+      {
+       "t": "p",
+       "x": "Mediennutzung betrifft Schlaf, Konzentration, soziale Beziehungen und Lernen. Sprechen Sie nicht über Verbote, sondern über Regeln, Ziele und Vorbilder."
+      },
+      {
+       "t": "h",
+       "x": "Fragen an Kind und Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie viel Zeit am Tag verbringt das Kind vor dem Bildschirm?",
+        "Wozu nutzt es Handy und Spiele hauptsächlich (Kontakt, Unterhaltung, Lernen)?",
+        "Gibt es medienfreie Zeiten und Orte?",
+        "Wie schläft das Kind? Wo liegt das Handy nachts?",
+        "Wer begleitet bei Chats und Spielen?"
+       ]
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Alter",
+        "Orientierung",
+        "Hinweis"
+       ],
+       "zeilen": [
+        [
+         "Kl. 1–4",
+         "Kurze, begleitete Nutzung",
+         "Geräte nicht ins Schlafzimmer"
+        ],
+        [
+         "Kl. 5–6",
+         "Klare Zeiten, Absprachen",
+         "Altersfreigaben beachten"
+        ],
+        [
+         "Kl. 7–10",
+         "Eigenverantwortung stärken",
+         "Medienvertrag, Gespräche über Netzwerke"
+        ]
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Mir fällt auf, dass [Name] morgens oft müde ist und sich schlecht konzentrieren kann. Das kann mit Schlaf zu tun haben. Wie sind bei Ihnen die Regeln für Handy und Spiele am Abend? Hilft es, gemeinsam Medienzeiten zu vereinbaren?"
+      },
+      {
+       "t": "h",
+       "x": "Medienvertrag in Stichworten"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Handyfreie Zonen: Essenstisch, Schlafzimmer",
+        "Feste Zeiten pro Tag",
+        "Keine Weitergabe von Fotos ohne Einverständnis",
+        "Ansprechperson bei Problemen",
+        "Regelmäßige Überprüfung"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Vorbild wirkt: Fragen Sie auch nach der Mediennutzung der Erwachsenen im Haushalt."
+      },
+      {
+       "t": "hinweis",
+       "x": "Beratungsangebote bieten u. a. die Landesmedienanstalten und Medienpädagogik-Einrichtungen der Länder. Bitte aktuelle Angebote vor Ort prüfen."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

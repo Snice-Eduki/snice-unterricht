@@ -1,0 +1,1971 @@
+{
+ "band": 2,
+ "titel": "Band 2: Der erste Schultag in Klasse 1",
+ "untertitel": "Vorbereitung, Einschulungsfeier, erste Stunde und erste Wochen",
+ "einleitung": "Dieser Band hilft Ihnen, den Schulanfang ruhig, freundlich und gut organisiert zu gestalten. Er enthält Zeitpläne, Checklisten, Briefe in Sie- und Du-Form, Ideen für Feier und erste Stunde sowie Bausteine für besondere Situationen. Passen Sie die Module an die Gegebenheiten Ihrer Schule an.",
+ "abschnitte": [
+  {
+   "id": "A",
+   "titel": "Vorbereitung",
+   "module": [
+    {
+     "id": "2.01",
+     "titel": "Zeitplan: Die Wochen vor dem ersten Schultag",
+     "typ": "Checkliste",
+     "zweck": "Aufgaben von acht Wochen vor Schulbeginn bis zum Vortag.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der erste Schultag gelingt, wenn früh geplant wird. Die Liste ordnet die Aufgaben nach Wochen. Passen Sie sie an die Vorgaben Ihrer Schule an."
+      },
+      {
+       "t": "h",
+       "x": "8 bis 6 Wochen vorher"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Klassenlisten von der Schulleitung erhalten",
+        "Termin der Einschulungsfeier klären",
+        "Raum, Helfer und Paten anfragen",
+        "Ablauf mit Schulleitung und Elternvertretung abstimmen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "5 bis 3 Wochen vorher"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Elterninfo-Brief versenden",
+        "Namensschilder und Garderobenzeichen vorbereiten",
+        "Klassenzimmer gestalten",
+        "Sitzordnung planen",
+        "Materialliste für Eltern bereitstellen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "2 Wochen bis 1 Tag vorher"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Rückmeldungen auswerten (Allergien, Besonderheiten)",
+        "Begrüßungsgeschenk und Urkunden vorbereiten",
+        "Ablaufplan an Helfer verteilen",
+        "Technik prüfen (Musik, Mikrofon)",
+        "Eigene Rede üben"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Notieren Sie schon im Frühjahr, welche Kinder besondere Betreuung brauchen (Kita-Übergabe, Gespräche mit Eltern), damit Sie am Tag selbst sicher auftreten."
+      }
+     ]
+    },
+    {
+     "id": "2.02",
+     "titel": "Checkliste Klassenzimmer vorbereiten",
+     "typ": "Checkliste",
+     "zweck": "Raum, Garderobe, Tische und Materialien für ein freundliches Ankommen.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Das Klassenzimmer ist der erste Eindruck der Schule. Es soll hell, ordentlich und einladend sein, nicht überladen."
+      },
+      {
+       "t": "h",
+       "x": "Raum"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Tische und Stühle in passender Höhe",
+        "Sitzplätze mit Namensschild",
+        "Garderobenhaken mit Namen und Symbol",
+        "Fächer/Schubladen beschriftet",
+        "Tafel mit Willkommensgruß",
+        "Leseecke und Spielbereich vorbereitet"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Materialien"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Vorrat an Stiften, Papier, Heften",
+        "Arbeitsblätter für die erste Stunde",
+        "Willkommensgeschenk (z. B. kleines Heft oder Buntstift)",
+        "Notfallkontakte und Gesundheitsangaben griffbereit"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sicherheit und Ordnung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Fluchtwege frei",
+        "Erste-Hilfe-Material bekannt",
+        "Toiletten- und Wege-Plan für Kinder vorbereitet"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Weniger ist mehr: ein klarer Raum, ein freundlicher Spruch an der Tafel und ein festes Willkommensritual wirken stärker als aufwendige Dekoration."
+      }
+     ]
+    },
+    {
+     "id": "2.03",
+     "titel": "Namensschilder und Garderobenzeichen",
+     "typ": "Vorlage",
+     "zweck": "Wiedererkennbare Zeichen für Tisch, Garderobe und Fach.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Kinder, die noch nicht lesen können, orientieren sich an Bildern. Ein festes Symbol für jedes Kind erleichtert den Schulstart."
+      },
+      {
+       "t": "h",
+       "x": "Vorgehen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Für jedes Kind ein Symbol wählen (Tier, Pflanze, Form), nicht doppelt vergeben.",
+        "Namensschild mit Vorname, Symbol und Foto-freiem Design gestalten.",
+        "Tisch, Garderobe, Fach und Heft einheitlich kennzeichnen.",
+        "Namensschild auf Tisch und Brust (Klebeschild am Einschulungstag)."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Beschriftung"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Vorname des Kindes",
+        "Symbol",
+        "Platznummer"
+       ]
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schrift in Druckschrift oder Grundschrift der Schule.",
+        "Gut lesbare Größe, mindestens 14 mm Schrifthöhe.",
+        "Nicht den vollen Nachnamen auf öffentlich sichtbare Schilder drucken."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Aus Datenschutzgründen kein Foto des Kindes auf Namensschildern. Das Symbol reicht."
+      }
+     ]
+    },
+    {
+     "id": "2.04",
+     "titel": "Sitzordnung für den ersten Tag",
+     "typ": "Übersicht",
+     "zweck": "Gründe und Beispiele für eine überlegte Sitzordnung.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Sitzordnung am ersten Tag entscheidet mit über das Ankommen. Sie sollte Sicherheit geben und Bewegung zulassen."
+      },
+      {
+       "t": "h",
+       "x": "Kriterien"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kinder aus derselben Kita zusammen oder bewusst gemischt, nach Absprache mit der Kita.",
+        "Kinder mit Hör- oder Sehbedarf in Tafelnähe.",
+        "Unruhige Kinder nahe der Lehrkraft, aber nicht isoliert.",
+        "Mädchen und Jungen mischen.",
+        "Linkshänder am linken Platz außen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Formen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Form",
+        "Vorteil",
+        "Einsatz"
+       ],
+       "zeilen": [
+        [
+         "Gruppentische (4–6)",
+         "Förderung von Zusammenarbeit",
+         "Standard im Anfangsunterricht"
+        ],
+        [
+         "Hufeisen",
+         "Gute Sicht, Gesprächsrunden",
+         "Für Morgenkreis"
+        ],
+        [
+         "Reihen",
+         "Ruhige Arbeit",
+         "Test- und Übungsphasen"
+        ],
+        [
+         "Kreis",
+         "Gleichwertigkeit, Kennenlernen",
+         "Erste Stunde"
+        ]
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Hinweis an Eltern: \"Die Sitzordnung ist zunächst eine Anfangsordnung. Nach den ersten Wochen schauen wir, ob sie passt, und verändern sie, wenn nötig.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Beobachten Sie in der ersten Woche, wer mit wem arbeitet. Danach lässt sich die Sitzordnung mit Wissen anpassen."
+      }
+     ]
+    },
+    {
+     "id": "2.05",
+     "titel": "Elterninfo-Brief zum Schulanfang",
+     "typ": "Brief",
+     "zweck": "Der wichtigste Brief vor dem ersten Schultag.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Brief informiert über Termin, Ablauf, Mitbringsel und Erreichbarkeit. Er soll beruhigen und Neugier wecken."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nherzlich willkommen an unserer Schule. Ihr Kind kommt in meine Klasse [Klasse]. Ich freue mich auf Ihr Kind und auf die Zusammenarbeit mit Ihnen.\n\nDie Einschulung findet am [Datum] um [Uhrzeit] Uhr statt. Die Feier dauert etwa [Dauer]. Danach besuchen die Kinder mit mir für etwa 45 Minuten das Klassenzimmer, während Sie bei Kaffee und Kuchen betreut werden.\n\nBitte bringen Sie mit: [Schultüte/Ranzen], [Hausschuhe], [Gesundheitsunterlagen].\n\nBitte teilen Sie mir bis [Datum] Besonderheiten mit (Allergien, Medikamente, Ängste). Sie erreichen mich unter [Kontakt].\n\nMit freundlichen Grüßen\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nherzlich willkommen an unserer Schule. Euer Kind kommt in meine Klasse [Klasse]. Ich freue mich auf Euer Kind und auf die Zusammenarbeit mit Euch.\n\nDie Einschulung findet am [Datum] um [Uhrzeit] Uhr statt. Die Feier dauert etwa [Dauer]. Danach besuchen die Kinder mit mir für etwa 45 Minuten das Klassenzimmer, während Ihr bei Kaffee und Kuchen betreut werdet.\n\nBitte bringt mit: [Schultüte/Ranzen], [Hausschuhe], [Gesundheitsunterlagen].\n\nBitte teilt mir bis [Datum] Besonderheiten mit (Allergien, Medikamente, Ängste). Ihr erreicht mich unter [Kontakt].\n\nHerzliche Grüße\n[Name], Klassenlehrer"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin und Ort richtig",
+        "Ansprechpartner genannt",
+        "Rückmeldefrist",
+        "Hinweis auf Betreuung für Geschwister"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Fügen Sie ein Blatt mit Fragen zu Gesundheit, Abholberechtigten und Notfallkontakten bei."
+      }
+     ]
+    },
+    {
+     "id": "2.06",
+     "titel": "Materialliste für Eltern",
+     "typ": "Checkliste",
+     "zweck": "Was Kinder in der ersten Woche tatsächlich brauchen.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eine kurze, klare Liste vermeidet Frust und unnötige Ausgaben. Stimmen Sie sie mit der Schulleitung und der Schulordnung ab. Weisen Sie Eltern auf Unterstützungsmöglichkeiten bei Anschaffungen hin."
+      },
+      {
+       "t": "h",
+       "x": "Grundausstattung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Schulranzen, leicht und passend",
+        "Federmäppchen mit Bleistiften, Buntstiften, Radiergummi, Spitzer",
+        "Schere und Klebestift",
+        "Hausschuhe oder Stoppersocken",
+        "Turnbeutel mit Sportkleidung",
+        "Brotdose und Trinkflasche"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Für die Schule bereitzustellen"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Heft/Hefte und Mappen nach Liste",
+        "Malkittel oder altes T-Shirt",
+        "Taschentücher",
+        "Wechselkleidung im Beutel"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Beschriften"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Alle Gegenstände mit Name oder Symbol kennzeichnen.",
+        "Nichts Unnötiges mitgeben: Spielzeug und Elektronik bleiben zu Hause."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Verweisen Sie auf Möglichkeiten der Unterstützung (Schulfonds, Bildungs- und Teilhabeleistungen), wenn Familien die Anschaffung nicht leisten können. Bleiben Sie diskret."
+      }
+     ]
+    },
+    {
+     "id": "2.07",
+     "titel": "Kennenlernen vor dem Schulstart",
+     "typ": "Textbaustein",
+     "zweck": "Ein Besuchsnachmittag oder Brief an die Kinder vor der Einschulung.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Ein erster Kontakt vor dem Schulstart nimmt Kindern Ängste. Das kann ein kurzer Besuchsnachmittag, ein Brief oder ein Videogruß sein."
+      },
+      {
+       "t": "h",
+       "x": "Idee: Besuchsnachmittag"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Kinder und Eltern im Klassenzimmer begrüßen.",
+        "Gemeinsam Namen sagen und Namensschilder aufhängen.",
+        "Spiel: Wer bin ich? (Fingerspiel, Rate-Lied).",
+        "Rundgang zu Toilette, Pausenhof, Eingang.",
+        "Kurzes Elterngespräch bei Tee."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Brief an das Kind"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe/r [Vorname],\n\nich bin [Name], dein Klassenlehrer. In wenigen Wochen kommst du in die Schule, und ich freue mich schon sehr auf dich. In unserer Klasse gibt es viele Kinder, die du kennenlernen wirst. Wir singen, malen, rechnen und lesen zusammen.\n\nDein Tisch hat schon ein Namensschild mit einem [Symbol]. Bis bald!\n\nDein Lehrer\n[Name]"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ein Foto des Klassenzimmers ohne Kinder beilegen.",
+        "Telefonnummer der Schule für Fragen nennen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Besonders ängstliche Kinder profitieren von einem Einzelbesuch mit Elternteil vor dem ersten Tag."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "titel": "Einschulungsfeier",
+   "module": [
+    {
+     "id": "2.08",
+     "titel": "Ablaufplan Einschulungsfeier",
+     "typ": "Tabelle",
+     "zweck": "Beispielhafter Ablauf mit Zeiten und Zuständigkeiten.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eine Einschulungsfeier dauert idealerweise 45 bis 60 Minuten. Kinder und Eltern sind aufgeregt, daher gilt: kurz, klar, herzlich."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Zeit",
+        "Programmpunkt",
+        "Verantwortlich"
+       ],
+       "zeilen": [
+        [
+         "0:00",
+         "Einlass, Platzsuche, Musik",
+         "Hausmeister / Helfer"
+        ],
+        [
+         "0:10",
+         "Begrüßung durch Schulleitung",
+         "Schulleitung"
+        ],
+        [
+         "0:15",
+         "Lied oder Aufführung der Paten",
+         "Klasse 4"
+        ],
+        [
+         "0:25",
+         "Rede der Klassenlehrkraft, Vorstellung der Klasse",
+         "Klassenleitung"
+        ],
+        [
+         "0:35",
+         "Aufruf der Kinder, Übergabe Willkommensgeschenk",
+         "Klassenleitung"
+        ],
+        [
+         "0:45",
+         "Kinder gehen in die Klasse, Eltern ins Café",
+         "Paten / Elternvertretung"
+        ],
+        [
+         "1:30",
+         "Abholung, Verabschiedung",
+         "Klassenleitung"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Planung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Mikrofon und Musikanlage geprüft",
+        "Platzplan für Familien",
+        "Fotografieregeln mitgeteilt",
+        "Wetterplan B (Aula statt Hof)",
+        "Erste-Hilfe-Beauftragte benannt"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Hinweise für den Ablauf"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kinder zügig zum Platz führen, Wartezeiten kurz halten.",
+        "Großeltern und Geschwister einplanen.",
+        "Barrierefreie Sitzplätze vorsehen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Planen Sie Puffer von 10 Minuten ein. Der Ablauf verschiebt sich fast immer."
+      }
+     ]
+    },
+    {
+     "id": "2.09",
+     "titel": "Begrüßungsrede: Bausteine",
+     "typ": "Textbaustein",
+     "zweck": "Kurze Redeteile für Klassenlehrkraft oder Schulleitung.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eine gute Rede ist kurz (3 bis 5 Minuten), persönlich und kindgerecht. Sprechen Sie Kinder und Eltern direkt an."
+      },
+      {
+       "t": "h",
+       "x": "Anrede"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Schulanfängerinnen und Schulanfänger, liebe Eltern, Großeltern und Gäste,\n\nherzlich willkommen an unserer Schule!"
+      },
+      {
+       "t": "h",
+       "x": "Bausteine für das Kind"
+      },
+      {
+       "t": "baustein",
+       "x": "Heute beginnt für euch ein neuer Abschnitt. Ihr habt schon viel gelernt: laufen, sprechen, singen, malen. Jetzt lernt ihr lesen, schreiben und rechnen. Das ist spannend, und manchmal ein bisschen anstrengend. Das ist normal. Ihr seid nicht allein. Hier sind viele Menschen, die euch helfen."
+      },
+      {
+       "t": "h",
+       "x": "Baustein für Eltern"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern, Sie haben Ihr Kind bis hierher begleitet. Heute geben Sie ein Stück Verantwortung an uns weiter. Wir nehmen das ernst. Wir werden Ihr Kind mit Geduld und Freude begleiten. Gerne arbeiten wir mit Ihnen zusammen, Sie kennen Ihr Kind am besten."
+      },
+      {
+       "t": "h",
+       "x": "Schluss"
+      },
+      {
+       "t": "baustein",
+       "x": "Nun begrüße ich euch ganz herzlich in unserer Klasse. Wir freuen uns auf euch. Lasst uns zusammen anfangen!"
+      },
+      {
+       "t": "hinweis",
+       "x": "Sprechen Sie frei, mit Pausen. Fassen Sie sich kurz, die Kinder warten auf die Klasse."
+      }
+     ]
+    },
+    {
+     "id": "2.10",
+     "titel": "Lieder, Spiele und Aufführungen ohne Urheberrechtsprobleme",
+     "typ": "Übersicht",
+     "zweck": "Sichere Ideen für Programm und Gestaltung.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Für schulische Feiern gelten Urheberrechtsregeln. Gemeinfreie Lieder und selbst gestaltete Beiträge sind unbedenklich. Bei Unsicherheit klärt die Schulleitung die GEMA-/Lizenzfragen des Schulträgers."
+      },
+      {
+       "t": "h",
+       "x": "Gemeinfreie Lieder (Volkslieder)"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Alle meine Entchen",
+        "Hänschen klein",
+        "Backe, backe Kuchen",
+        "Kommt ein Vogel geflogen",
+        "Der Mond ist aufgegangen",
+        "Ein Männlein steht im Walde"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Eigene Beiträge"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eigener Klassen-Rap oder Sprechgesang zu Namen",
+        "Tänze nach gemeinfreier Musik",
+        "Mitmach-Lieder mit selbst gedichtetem Text",
+        "Bewegungslied mit Körperinstrumenten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Spiele für den Rahmen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Namenskreis mit Ball",
+        "Luftballon-Begrüßung",
+        "Staffel: Schultüte tragen",
+        "Gemeinsames Bild der Klasse"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Prüfen Sie, ob Ihr Schulträger einen Rahmenvertrag mit Verwertungsgesellschaften hat. Lizenzfreie Musik gibt es auch von Anbietern mit freier Lizenz; Lizenzbedingungen immer beachten."
+      },
+      {
+       "t": "hinweis",
+       "x": "Nutzen Sie keine Hits aus Charts ohne Lizenz."
+      }
+     ]
+    },
+    {
+     "id": "2.11",
+     "titel": "Patenklasse 4: Aufgaben und Rollen",
+     "typ": "Leitfaden",
+     "zweck": "Wie Viertklässler die Schulanfänger gut begleiten.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Patenschaften stärken beide Seiten: Die Älteren übernehmen Verantwortung, die Kleinen finden schneller Anschluss."
+      },
+      {
+       "t": "h",
+       "x": "Aufgaben der Paten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kinder am Eingang abholen und zum Platz führen",
+        "Hand halten bei Ankunft",
+        "Auf dem Pausenhof begleiten",
+        "Tür- und Toilettenwege zeigen",
+        "Beim Klassenzimmerbesuch Vorlesen oder Spielen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung der Paten"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Rollenverständnis klären: Helfen, nicht bestimmen.",
+        "Kurz üben: Wie begrüße ich ein Kind?",
+        "Verhaltensregeln: freundlich, geduldig, keine Geheimnisse.",
+        "Namensschild für Paten."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Briefing für Paten: \"Eure Aufgabe ist es, dass sich die Kleinen sicher fühlen. Seid freundlich und geduldig. Wenn etwas passiert, holt sofort eine Lehrkraft. Ihr müsst nichts allein regeln.\""
+      },
+      {
+       "t": "h",
+       "x": "Fortführung"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Patentreffen alle zwei Wochen",
+        "Gemeinsames Lesen",
+        "Pausenspiele"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Paten sind Kinder: Planen Sie Ablösung und Pausen ein."
+      }
+     ]
+    },
+    {
+     "id": "2.12",
+     "titel": "Organisationscheckliste Einschulungstag",
+     "typ": "Checkliste",
+     "zweck": "Detailliste für den Tag selbst.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Am Tag selbst hilft eine Checkliste, ruhig zu bleiben. Verteilen Sie Zuständigkeiten auf mehrere Personen."
+      },
+      {
+       "t": "h",
+       "x": "Morgens"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Raum aufschließen, Technik prüfen",
+        "Wegweiser und Plakate aufhängen",
+        "Namensschilder auslegen",
+        "Getränke und Snacks für Elterncafé",
+        "Helferbesprechung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Während der Feier"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Anwesenheit abgleichen",
+        "Fotografieregeln beachten",
+        "Erste-Hilfe-Beauftragte erreichbar",
+        "Wasserspender oder Ersatzkleidung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Nach der Feier"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Kinder an Abholberechtigte übergeben",
+        "Kontakte abfragen",
+        "Aufräumen",
+        "Schulleitung Rückmeldung geben"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Notieren Sie sich Namen von Kindern, die stark aufgeregt wirkten, und rufen Sie am Abend kurz die Eltern an."
+      }
+     ]
+    },
+    {
+     "id": "2.13",
+     "titel": "Willkommensbrief an die Kinder",
+     "typ": "Brief",
+     "zweck": "Kindgerechter Brief, den jedes Kind am ersten Tag bekommt.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Brief kann vorgelesen werden und bleibt als Erinnerung. Schreiben Sie einfach und warm."
+      },
+      {
+       "t": "h",
+       "x": "Text"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe/r [Vorname],\n\nherzlich willkommen in der Schule! Ich bin [Name], dein Lehrer. Ich freue mich sehr, dass du da bist.\n\nIn unserer Klasse lernen wir viele Dinge: Buchstaben, Zahlen, Lieder und Spiele. Du darfst Fragen stellen, Fehler machen und Neues ausprobieren. Dafür sind wir da.\n\nWenn du etwas nicht weißt, frag mich oder ein anderes Kind. Wir helfen einander.\n\nDein Platz hat ein Bild: [Symbol].\n\nBis gleich!\nDein Lehrer\n[Name]"
+      },
+      {
+       "t": "h",
+       "x": "Gestaltung"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Große Schrift (Druckschrift oder Grundschrift).",
+        "Ein Bild oder Symbol als Anker.",
+        "Frei von Fotos der Kinder."
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Platz für eine Zeichnung des Kindes: Mein erster Schultag"
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Kindern, die kaum Deutsch sprechen, mit Bildern und Piktogrammen ergänzen."
+      }
+     ]
+    },
+    {
+     "id": "2.14",
+     "titel": "Urkunde und Erinnerungsstück",
+     "typ": "Vorlage",
+     "zweck": "Text für eine Einschulungsurkunde.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Urkunde würdigt den Schulbeginn. Sie sollte schlicht, wertschätzend und ohne Leistungsbewertung sein."
+      },
+      {
+       "t": "h",
+       "x": "Urkundentext"
+      },
+      {
+       "t": "baustein",
+       "x": "Urkunde zum Schulanfang\n\n[Vorname] ist ab heute Schulkind der Klasse [Klasse].\n\nWir freuen uns auf dein Lernen, deine Fragen und dein Lachen.\n\nSchule: [Name]\nOrt, Datum: [____]\n\nKlassenlehrer: [Name]\nSchulleitung: [Name]"
+      },
+      {
+       "t": "h",
+       "x": "Ergänzungsideen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Handabdruck des Kindes",
+        "Foto der Klasse (nur mit Einwilligung)",
+        "Kleiner Glücksbringer"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Vorname",
+        "Klasse",
+        "Datum"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Verteilen Sie die Urkunden am Ende der ersten Stunde, wenn die Kinder ruhiger sind."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "titel": "Erste Unterrichtsstunde und Elternbetreuung",
+   "module": [
+    {
+     "id": "2.15",
+     "titel": "Minutenplan: Die erste Unterrichtsstunde",
+     "typ": "Tabelle",
+     "zweck": "Detaillierter Ablauf der ersten 45 Minuten.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die erste Stunde braucht Ruhe, Struktur und Bewegung. Kinder können sich anfangs nur kurz konzentrieren; wechseln Sie alle 10 Minuten die Aktivität."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Minuten",
+        "Aktivität",
+        "Material"
+       ],
+       "zeilen": [
+        [
+         "0–5",
+         "Begrüßung, Platz finden, Namensschild",
+         "Namensschilder"
+        ],
+        [
+         "5–12",
+         "Kreis: Wer bin ich? Namenssspiel mit Ball",
+         "Ball"
+        ],
+        [
+         "12–20",
+         "Ritual: Begrüßungslied, Klingel erklären",
+         "Klangschale"
+        ],
+        [
+         "20–28",
+         "Rundgang: Garderobe, Toilette, Tür",
+         "-"
+        ],
+        [
+         "28–36",
+         "Malen: Mein Platz, mein Symbol",
+         "Papier, Stifte"
+        ],
+        [
+         "36–42",
+         "Geschenk und Urkunde",
+         "Urkunde"
+        ],
+        [
+         "42–45",
+         "Verabschiedung, Abholung",
+         "-"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Hinweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kurze Sätze, klare Anweisungen, Wiederholung.",
+        "Visuelle Hilfen (Piktogramme).",
+        "Mit Humor und Ruhe."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Ansage am Anfang: \"Willkommen in unserer Klasse. Heute lernen wir uns kennen. Wir sitzen im Kreis. Wer etwas braucht, hebt die Hand.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Haben Sie Reserveideen (Lied, Bewegungsspiel), falls die Zeit schneller vergeht als geplant."
+      }
+     ]
+    },
+    {
+     "id": "2.16",
+     "titel": "Kennenlernspiele",
+     "typ": "Übersicht",
+     "zweck": "Spiele für Kinder, die sich noch nicht kennen.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Kennenlernspiele schaffen Gemeinschaft und bauen Hemmungen ab. Keines dauert länger als zehn Minuten."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Spiel",
+        "Ablauf",
+        "Material"
+       ],
+       "zeilen": [
+        [
+         "Namensball",
+         "Ball zuwerfen, eigenen Namen sagen",
+         "Ball"
+        ],
+        [
+         "Namen-Bewegung",
+         "Name mit Klatschen/Hüpfen verbinden",
+         "-"
+        ],
+        [
+         "Zeigen und Nennen",
+         "Lieblingsfarbe, -tier zeigen",
+         "Bildkarten"
+        ],
+        [
+         "Platz wechseln",
+         "Wer ... hat, wechselt den Platz",
+         "Stühle"
+        ],
+        [
+         "Gruppenbild",
+         "Gemeinsam ein Bild malen",
+         "Papier, Stifte"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Regeln"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Niemand muss etwas sagen, wenn er nicht möchte.",
+        "Namen mehrfach wiederholen.",
+        "Lehrkraft macht mit."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Beobachten Sie, wer sich zurückhält. Sprechen Sie diese Kinder später einzeln freundlich an."
+      }
+     ]
+    },
+    {
+     "id": "2.17",
+     "titel": "Rituale für die ersten Tage",
+     "typ": "Übersicht",
+     "zweck": "Feste Rituale geben Sicherheit.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Rituale strukturieren den Tag und senken Angst. Wählen Sie wenige, aber verlässliche Rituale."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Zeitpunkt",
+        "Ritual",
+        "Zweck"
+       ],
+       "zeilen": [
+        [
+         "Ankommen",
+         "Begrüßung mit Handschlag oder Gruß",
+         "Persönlicher Kontakt"
+        ],
+        [
+         "Morgenkreis",
+         "Lied, Wetter, Wochentag",
+         "Orientierung"
+        ],
+        [
+         "Unterricht",
+         "Klangschale als Stille-Signal",
+         "Aufmerksamkeit"
+        ],
+        [
+         "Pause",
+         "Schlangenreihe zum Hof",
+         "Ordnung"
+        ],
+        [
+         "Abschluss",
+         "Gemeinsames Lied, Verabschiedung",
+         "Positiver Ausklang"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Einführung"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ritual einfach erklären.",
+        "Vormachen und mitmachen.",
+        "Täglich wiederholen.",
+        "Nach einer Woche mit den Kindern auswerten."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wiederholung schlägt Neuheit: Ändern Sie Rituale in den ersten Wochen nicht."
+      }
+     ]
+    },
+    {
+     "id": "2.18",
+     "titel": "Schulhausrundgang",
+     "typ": "Leitfaden",
+     "zweck": "Orientierung im Gebäude in der ersten Woche.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Kinder müssen Toiletten, Ausgänge, Pausenhof und Sekretariat kennen. Gehen Sie den Weg in zwei Etappen."
+      },
+      {
+       "t": "h",
+       "x": "Stationen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Klassenzimmer, Garderobe, Toiletten",
+        "Treppenhaus, Ausgang, Pausenhof",
+        "Sekretariat, Lehrerzimmer (Anlaufstellen)",
+        "Mensa/Turnhalle",
+        "Bibliothek"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sicherheit"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Gehregel, Treppen rechts, Handlauf nutzen.",
+        "Notfall: Wen frage ich?",
+        "Grenzen des Schulhofs zeigen."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Einladung an Kinder: \"Wir machen einen Entdeckungsgang. Du bekommst einen Spurenzettel, auf dem du die Orte abhakst, wenn du sie gefunden hast.\""
+      },
+      {
+       "t": "check",
+       "x": [
+        "Wegebild/Plan für jedes Kind",
+        "Pausenaufsicht informiert",
+        "Schulhausmeister vorgestellt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wiederholen Sie den Rundgang nach einer Woche als Rate-Spiel. So festigt sich das Wissen."
+      }
+     ]
+    },
+    {
+     "id": "2.19",
+     "titel": "Regeln spielerisch einführen",
+     "typ": "Leitfaden",
+     "zweck": "Klassenregeln mit Kindern erarbeiten.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Regeln wirken besser, wenn Kinder sie mitentwickeln. In Klasse 1 genügen drei bis fünf einfache Regeln, mit Bildern."
+      },
+      {
+       "t": "h",
+       "x": "Mögliche Regeln"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wir hören zu.",
+        "Wir sprechen leise.",
+        "Wir helfen einander.",
+        "Wir gehen im Haus.",
+        "Wir halten Ordnung."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Methoden"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Szenen vorspielen (richtig/falsch).",
+        "Kinder zeigen mit Daumen, ob Regel passt.",
+        "Regeln als Bild mit Symbol aufhängen.",
+        "Regelkarte für Kinder zum Mitnehmen."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Zur Einführung: \"Was brauchen wir, damit sich alle wohlfühlen? Wenn alle durcheinanderreden, was passiert dann? Was könnte helfen?\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Positive Formulierung: \"Wir sprechen leise\" statt \"Nicht schreien\". Erinnern Sie freundlich und konsequent."
+      }
+     ]
+    },
+    {
+     "id": "2.20",
+     "titel": "Elternbetreuung während der ersten Stunde",
+     "typ": "Leitfaden",
+     "zweck": "Programm für Eltern, während die Kinder im Klassenzimmer sind.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eltern sind aufgeregt. Ein gut organisiertes Elterncafé entspannt und schafft den ersten Kontakt untereinander."
+      },
+      {
+       "t": "h",
+       "x": "Ablauf"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Elternvertretung oder Helfer begrüßen im Café.",
+        "Kurze Information durch Schulleitung: Ablauf, Abholung, Kontakte.",
+        "Schulsozialarbeit stellt sich vor.",
+        "Schulverein und Förderverein stellen sich vor.",
+        "Austausch bei Kaffee."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Material"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Getränke, einfaches Gebäck",
+        "Infoflyer (Schulalltag, Ansprechpartner)",
+        "Formular für Notfalldaten",
+        "Liste für Elternmitarbeit"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Begrüßung im Café: \"Herzlich willkommen. Während Ihre Kinder die erste Stunde erleben, laden wir Sie zu einem Getränk ein. Nutzen Sie die Zeit zum Kennenlernen und stellen Sie uns jede Frage.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Kinder, die sich schwer lösen, nicht zwingen. Ein Elternteil darf kurz bleiben und dann gehen, mit klarer Abholzeit."
+      }
+     ]
+    },
+    {
+     "id": "2.21",
+     "titel": "Verabschiedung und Abholung",
+     "typ": "Checkliste",
+     "zweck": "Sichere und freundliche Übergabe am Ende des ersten Tages.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Übergabe am ersten Tag ist heikel: Viele Kinder sind müde oder aufgeregt, Eltern wollen Informationen. Klare Abläufe geben Sicherheit."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Abholberechtigte Personen mit Liste abgleichen",
+        "Kinder nur an Berechtigte übergeben",
+        "Abholort und -zeit klar kommuniziert",
+        "Mappe mit Infos und Urkunde mitgeben",
+        "Namensliste für Busfahrer/Betreuung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Kurzes Abschlussritual"
+      },
+      {
+       "t": "baustein",
+       "x": "\"Wir singen jetzt zum Abschied. Danach packt ihr eure Sachen und geht zu euren Eltern. Morgen sehen wir uns wieder.\""
+      },
+      {
+       "t": "h",
+       "x": "Gespräch mit Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kurzer Gruß, positive Rückmeldung.",
+        "Besonderheiten für ein Telefonat am Abend notieren.",
+        "Keine Einzelgespräche auf dem Flur."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Rufen Sie bei sehr ängstlichen Kindern am Nachmittag kurz an. Das stärkt das Vertrauen der Eltern."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "titel": "Erste Wochen",
+   "module": [
+    {
+     "id": "2.22",
+     "titel": "Plan für die erste Schulwoche",
+     "typ": "Tabelle",
+     "zweck": "Wochenplan mit Zielen und Aktivitäten für die ersten fünf Tage.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die erste Woche legt das Fundament für Routinen. Planen Sie kurze Einheiten, viel Bewegung und regelmäßige Rituale."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Tag",
+        "Schwerpunkt",
+        "Aktivitäten"
+       ],
+       "zeilen": [
+        [
+         "Tag 1",
+         "Ankommen",
+         "Kennenlernen, Schulhausrundgang, erste Rituale"
+        ],
+        [
+         "Tag 2",
+         "Orientierung",
+         "Klassenregeln, Stundenplan mit Symbolen, Pausenordnung"
+        ],
+        [
+         "Tag 3",
+         "Lernen",
+         "Erste Buchstaben/Zahlen im Spiel, Stifthaltung"
+        ],
+        [
+         "Tag 4",
+         "Gemeinschaft",
+         "Gruppenarbeit, Lied, Bewegungsspiel"
+        ],
+        [
+         "Tag 5",
+         "Rückblick",
+         "Klassenfoto (mit Einwilligung), Wochenrückblick, Elternpost"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ziele der Woche"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Jedes Kind kennt Namen, Platz, Toilettenweg.",
+        "Zentrale Rituale sind eingeführt.",
+        "Alle Kinder haben mindestens einmal gesprochen.",
+        "Erste Beobachtungen für den Förderbedarf notiert."
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Stundenplan als Bildleiste",
+        "Wochenbrief an Eltern vorbereitet",
+        "Mittagessen/Betreuung geklärt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Schreiben Sie täglich zwei Beobachtungen pro Kind in Stichworten auf. Das hilft später bei Gesprächen."
+      }
+     ]
+    },
+    {
+     "id": "2.23",
+     "titel": "Elterninfo in den ersten Wochen",
+     "typ": "Leitfaden",
+     "zweck": "Kurzer Elternabend oder Info-Nachmittag nach dem Schulstart.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Nach etwa vier Wochen bietet sich ein Elternabend an. Eltern haben erste Erfahrungen und Fragen. Ziel: Vertrauen, Klarheit, Wahl der Elternvertretung."
+      },
+      {
+       "t": "h",
+       "x": "Ablauf"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Minuten",
+        "Inhalt"
+       ],
+       "zeilen": [
+        [
+         "10",
+         "Begrüßung, Rückblick auf die ersten Wochen"
+        ],
+        [
+         "20",
+         "Schulalltag, Rituale, Lernen"
+        ],
+        [
+         "15",
+         "Hausaufgaben, Üben, Lesen zu Hause"
+        ],
+        [
+         "10",
+         "Pause"
+        ],
+        [
+         "20",
+         "Elternvertretung, Termine"
+        ],
+        [
+         "15",
+         "Fragen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Tipps"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kleine Fotos oder Arbeiten der Kinder als Einstieg (ohne Namen).",
+        "Eltern kurz in die Rolle der Kinder versetzen (Mini-Unterricht).",
+        "Fragen sammeln, ggf. vorab per Zettel."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Einstieg: \"Die ersten Wochen sind vorbei. Ich habe Ihre Kinder als neugierig, lebhaft und offen erlebt. Heute möchte ich Ihnen zeigen, was wir gemacht haben und wie Sie zu Hause unterstützen können.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Siehe Band-1-Module zu Elternabend Klasse 1, Wahlablauf und Protokoll."
+      }
+     ]
+    },
+    {
+     "id": "2.24",
+     "titel": "Mitteilungsheft einführen",
+     "typ": "Leitfaden",
+     "zweck": "Kommunikation zwischen Schule und Eltern strukturieren.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Das Mitteilungsheft ist in Klasse 1 der wichtigste Kommunikationsweg. Klare Regeln vermeiden Missverständnisse."
+      },
+      {
+       "t": "h",
+       "x": "Regeln"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Eltern schauen täglich hinein und unterschreiben wöchentlich oder bei Mitteilungen.",
+        "Kurze, sachliche Einträge.",
+        "Dringende Anliegen per Telefon, nicht nur schriftlich.",
+        "Kinder lernen, es selbst zur Lehrkraft zu bringen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Beispieleinträge"
+      },
+      {
+       "t": "baustein",
+       "x": "Mitteilung an Eltern: \"Morgen schreiben wir kein Diktat, aber bitte üben Sie die Buchstaben A, E, I mit [Name].\"\n\nMitteilung der Eltern: \"[Name] war heute müde und kam bis 8 Uhr nicht aus dem Bett. Bitte nachsichtig sein.\""
+      },
+      {
+       "t": "h",
+       "x": "Datenschutz"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Nur das Nötigste schreiben.",
+        "Keine sensiblen Daten über Dritte.",
+        "Elternunterschrift als Kenntnisnahme."
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Datum",
+        "Mitteilung an die Lehrkraft",
+        "Unterschrift Eltern"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine feste Seite für Fragen der Eltern erleichtert den Dialog."
+      }
+     ]
+    },
+    {
+     "id": "2.25",
+     "titel": "Sicherer Schulweg",
+     "typ": "Checkliste",
+     "zweck": "Tipps für Eltern und Lehrkraft zum Schulweg.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Schulweg ist ein wichtiger Lernort. Üben Sie ihn gemeinsam, und beziehen Sie die Kinder in die Planung ein. Verbindliche Vorgaben zu Schulwegplänen, Elterntaxis und Schulbus regeln Land und Kommune."
+      },
+      {
+       "t": "h",
+       "x": "Für Eltern"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Weg mehrmals gemeinsam gehen und üben",
+        "Sichere Querungen und Haltepunkte zeigen",
+        "Helle, reflektierende Kleidung",
+        "Kein Elterntaxi direkt vor dem Schultor (Haltezone nutzen)",
+        "Zeitpuffer einplanen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Für die Lehrkraft"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Schulwegplan der Gemeinde einholen oder erstellen",
+        "Lotsen oder Schülerlotsen koordinieren",
+        "Verhalten im Bus besprechen",
+        "Verkehrserziehung in den Unterricht einbauen"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Elternhinweis: \"Bitte üben Sie den Schulweg mit Ihrem Kind. Erlauben Sie ihm, ihn später allein zu gehen, wenn es die Regeln sicher beherrscht. Elterntaxis gefährden andere Kinder. Nutzen Sie bitte die Haltezone am [Ort].\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Regionale Vorgaben und Unterstützung (Verkehrswacht, Polizei, Schulwegplan) bei der Gemeinde erfragen."
+      }
+     ]
+    },
+    {
+     "id": "2.26",
+     "titel": "Gesundheit im Schulanfang",
+     "typ": "Checkliste",
+     "zweck": "Gesundheitsinformationen, Impf- und Krankheitsfragen, Allergien.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Zum Schulstart sind Gesundheitsfragen zentral. Beachten Sie Datenschutz und die Vorgaben der Schule und des Gesundheitsamts."
+      },
+      {
+       "t": "h",
+       "x": "Vor dem ersten Tag"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Allergien, Unverträglichkeiten, Medikamente abfragen",
+        "Notfallkontakte erheben",
+        "Gesundheitsunterlagen laut Landesvorgabe (z. B. Schuleingangsuntersuchung) prüfen",
+        "Hinweis auf Ärztliche Atteste nach Schulordnung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Im Schulalltag"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Notfallplan im Klassenzimmer",
+        "Erste-Hilfe-Beauftragte bekannt",
+        "Meldewege bei ansteckenden Krankheiten",
+        "Hygieneregeln mit Kindern üben"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Hinweis an Eltern: \"Wenn Ihr Kind krank ist, melden Sie es bitte bis 8 Uhr im Sekretariat ab. Bei Fieber, Erbrechen oder ansteckenden Krankheiten bleibt es zu Hause. Medikamente gebe ich nur nach schriftlicher Absprache mit der Schulleitung.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Verweisen Sie bei medizinischen Fragen an Ärzte. Lehrkräfte stellen keine Diagnosen."
+      }
+     ]
+    },
+    {
+     "id": "2.27",
+     "titel": "Elternbrief nach der ersten Woche",
+     "typ": "Brief",
+     "zweck": "Kurzbericht und Dank an die Eltern.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Ein kurzer Brief nach der ersten Woche beruhigt Eltern, bündelt Informationen und schafft Vertrauen."
+      },
+      {
+       "t": "h",
+       "x": "Sie-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\ndie erste Schulwoche liegt hinter uns. Ihre Kinder haben sich großartig eingelebt: Sie kennen sich mit Namen, haben die Wege im Haus gelernt und freuen sich auf Neues.\n\nWas wir gemacht haben: [Stichworte]. Bitte fragen Sie Ihr Kind nach [Lied/Spiel].\n\nNächste Woche beginnen wir mit [Thema]. Bitte denken Sie an [Material].\n\nBei Fragen erreichen Sie mich unter [Kontakt].\n\nHerzliche Grüße\n[Name]"
+      },
+      {
+       "t": "h",
+       "x": "Du-Form"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\ndie erste Schulwoche liegt hinter uns. Eure Kinder haben sich großartig eingelebt: Sie kennen sich mit Namen, haben die Wege im Haus gelernt und freuen sich auf Neues.\n\nWas wir gemacht haben: [Stichworte]. Fragt Euer Kind gern nach [Lied/Spiel].\n\nNächste Woche beginnen wir mit [Thema]. Bitte denkt an [Material].\n\nBei Fragen erreicht Ihr mich unter [Kontakt].\n\nHerzliche Grüße\n[Name]"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kein Vergleich einzelner Kinder.",
+        "Dank an die Eltern."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Positive Berichte stärken die Beziehung. Besprechen Sie Schwierigkeiten lieber im Telefonat."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "titel": "Besondere Situationen, Gesundheit und Reflexion",
+   "module": [
+    {
+     "id": "2.28",
+     "titel": "Trennungsangst begleiten",
+     "typ": "Leitfaden",
+     "zweck": "Umgang mit Kindern, die sich schwer von Eltern lösen.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Trennungsangst ist am Schulanfang häufig und normal. Mit Geduld, klaren Ritualen und der Zusammenarbeit mit den Eltern legt sie sich meist in wenigen Tagen."
+      },
+      {
+       "t": "h",
+       "x": "Was hilft"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kurzer, klarer Abschied: Winken, Ritual, gehen.",
+        "Übergangsobjekt (Kuscheltier, Foto) erlauben.",
+        "Bezugsperson in der Klasse (Pate, Lehrkraft).",
+        "Einführung eines Abschiedsrituals.",
+        "Eltern nicht heimlich verschwinden lassen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gespräch mit den Eltern"
+      },
+      {
+       "t": "baustein",
+       "x": "\"Viele Kinder haben am Anfang Schwierigkeiten mit dem Abschied. Das ist normal. Bitte verabschieden Sie sich kurz und zuversichtlich, ohne lange zu verhandeln. Ich kümmere mich um Ihr Kind. Wenn es nicht besser wird, rufe ich Sie an.\""
+      },
+      {
+       "t": "h",
+       "x": "Plan"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Tag 1–3: Elternteil bleibt in der Nähe.",
+        "Tag 4–7: Eltern verabschieden sich an der Tür.",
+        "Danach regelmäßige Rückmeldung."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei anhaltenden Ängsten Rücksprache mit Schulsozialarbeit, Beratungslehrkraft und Eltern halten. Eine ärztliche Abklärung kann nötig sein."
+      }
+     ]
+    },
+    {
+     "id": "2.29",
+     "titel": "Kinder mit wenig Deutsch begrüßen (DaZ)",
+     "typ": "Leitfaden",
+     "zweck": "Willkommen für Kinder ohne oder mit geringen Deutschkenntnissen.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Kinder, die neu in Deutschland sind, brauchen Sicherheit, Beziehung und Sprachvorbilder. Der Schulstart gelingt mit einfacher Sprache, Bildern und Geduld."
+      },
+      {
+       "t": "h",
+       "x": "Im Klassenzimmer"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Bildkarten für Alltagswörter (Toilette, Trinken, Hilfe).",
+        "Sprachpaten oder Partnerkind.",
+        "Gesten und Mimik bewusst nutzen.",
+        "Muttersprache wertschätzen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Mit den Eltern"
+      },
+      {
+       "t": "baustein",
+       "x": "Einladung: \"Herzlich willkommen. Wenn Sie Hilfe bei der Verständigung brauchen, organisieren wir eine Sprachmittlung. Bitte bringen Sie, wenn möglich, jemanden mit, der übersetzen kann. Fragen sind jederzeit willkommen.\""
+      },
+      {
+       "t": "h",
+       "x": "Materialien"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Zweisprachige Willkommenskarte",
+        "Piktogramme für den Schulalltag",
+        "Elterninfo in einfacher Sprache",
+        "Ansprechpartner für Sprachförderung der Schule"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Fördermöglichkeiten (Vorkurs, Sprachförderklasse, DaZ-Unterricht) sind je Land verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "2.30",
+     "titel": "Kinder mit Förderbedarf willkommen heißen",
+     "typ": "Leitfaden",
+     "zweck": "Gemeinsamer Schulstart mit Kindern mit Förder- oder Unterstützungsbedarf.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Für Kinder mit Förderbedarf ist ein gut vorbereiteter Start besonders wichtig. Sprechen Sie früh mit Eltern, Kita und ggf. Sonderpädagogen."
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Informationen der Eltern und Kita einholen",
+        "Gespräch mit Förderschullehrkraft/Beratungsdienst",
+        "Absprache zu Raum, Hilfsmitteln und Begleitung",
+        "Team informieren (mit Einwilligung)",
+        "Rückzugsort im Klassenzimmer planen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Am Einschulungstag"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kleine Gruppe, ruhige Umgebung.",
+        "Bekannte Bezugsperson, Zeitplan als Bild.",
+        "Frühe Elternrückmeldung."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Gesprächseinstieg mit Eltern: \"Sie kennen Ihr Kind am besten. Was braucht es, damit es gut ankommt? Was hat in der Kita geholfen? Ich möchte Ihr Kind gut begleiten.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Rechtsgrundlagen (sonderpädagogischer Förderbedarf, Inklusion, Nachteilsausgleich) regelt das Land. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "2.31",
+     "titel": "Allergien, Medikamente und Notfälle",
+     "typ": "Checkliste",
+     "zweck": "Sichere Handhabung bei gesundheitlichen Besonderheiten.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Bei Allergien, Diabetes, Asthma oder Epilepsie muss das Team vorbereitet sein. Klare Absprachen mit Eltern und Schulleitung sind Pflicht."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Schriftliche Auskunft der Eltern",
+        "Ärztlicher Notfallplan, wenn nötig",
+        "Notfallmedikamente: Lagerung und Zuständigkeit geklärt",
+        "Kollegium und Betreuungskräfte informiert",
+        "Schulleitung eingebunden"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Kommunikation"
+      },
+      {
+       "t": "baustein",
+       "x": "\"Bitte teilen Sie mir alle gesundheitlichen Besonderheiten Ihres Kindes schriftlich mit. Ich behandle die Angaben vertraulich und informiere nur Personen, die sie zur Betreuung benötigen.\""
+      },
+      {
+       "t": "h",
+       "x": "Notfallübersicht"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Besonderheit",
+        "Notfallmaßnahme",
+        "Kontakt Eltern",
+        "Hausarzt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Rechtliche Regelungen zur Medikamentengabe in der Schule sind je Land verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "2.32",
+     "titel": "Schulranzen und Material im Alltag",
+     "typ": "Leitfaden",
+     "zweck": "Organisation von Ranzen, Hefte, Federmäppchen.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Ordnung im Ranzen spart Zeit und Nerven. Üben Sie in den ersten Wochen mit den Kindern, ihr Material zu verwalten."
+      },
+      {
+       "t": "h",
+       "x": "Übungen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ranzen auspacken und einräumen lassen.",
+        "Mappenfächer erklären.",
+        "Hausaufgabenheft und Mitteilungsheft finden.",
+        "Stifte spitzen, Federmäppchen kontrollieren."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gewicht"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Richtwert: Ranzen maximal etwa 10 bis 12 Prozent des Körpergewichts.",
+        "Schwere Bücher in der Schule lassen, wenn möglich.",
+        "Auf gut sitzende Gurte achten."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Elternhinweis: \"Bitte kontrollieren Sie die Federmappe einmal wöchentlich und ergänzen Sie fehlende Stifte. Lassen Sie Ihr Kind den Ranzen selbst packen und überprüfen Sie ihn nur kurz.\""
+      },
+      {
+       "t": "hinweis",
+       "x": "Ein Ranzenführerschein oder Ordnungs-Rallye macht das Üben zum Spiel."
+      }
+     ]
+    },
+    {
+     "id": "2.33",
+     "titel": "Frühstück und Pause",
+     "typ": "Leitfaden",
+     "zweck": "Gesundes Frühstück, Trinken und Pausenregeln.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eine ruhige Frühstückspause und ein gesunder Snack fördern Konzentration. Regeln helfen, Streit zu vermeiden."
+      },
+      {
+       "t": "h",
+       "x": "Empfehlungen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Vollkornbrot, Obst, Gemüse, Wasser.",
+        "Keine Süßigkeiten und Energydrinks.",
+        "Frühstückszeit im Klassenzimmer mit festen Regeln.",
+        "Müll trennen, Brotdose mitbringen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Regeln"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Hände waschen vor dem Essen.",
+        "Essen teilen nur nach Absprache (Allergien).",
+        "Leise essen, sitzen bleiben."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Elternhinweis: \"Bitte geben Sie Ihrem Kind ein gesundes Frühstück und etwas zu trinken mit. Wasser ist ideal. Wir achten auf Allergien. Teilen von Essen findet nur nach Absprache statt.\""
+      },
+      {
+       "t": "check",
+       "x": [
+        "Pausenordnung besprochen",
+        "Müllregeln",
+        "Aufsicht geklärt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Fördern Sie das gemeinsame Frühstück, das stärkt die Klassengemeinschaft."
+      }
+     ]
+    },
+    {
+     "id": "2.34",
+     "titel": "Beobachtungsbogen Schulanfang",
+     "typ": "Tabelle",
+     "zweck": "Notizen zu Ankommen, Sozialverhalten und Lernstart.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Bogen hilft, in den ersten Wochen systematisch zu beobachten. Er dient als Grundlage für Gespräche und Fördermaßnahmen. Notizen sind vertraulich zu behandeln."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Zeitraum",
+        "Beobachter"
+       ]
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Findet sich im Klassenraum zurecht.",
+        "Löst sich von Bezugspersonen.",
+        "Kommt mit anderen Kindern in Kontakt.",
+        "Hält sich an Regeln und Rituale.",
+        "Hört in der Gruppe zu.",
+        "Benutzt Stift und Schere altersgerecht.",
+        "Drückt Bedürfnisse sprachlich aus."
+       ],
+       "stufen": [
+        "sicher",
+        "meistens",
+        "manchmal",
+        "noch nicht"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Stärken, besondere Interessen"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Unterstützungsbedarf, nächste Schritte"
+      },
+      {
+       "t": "hinweis",
+       "x": "Beobachtungen beschreiben, nicht bewerten. Datenschutz beachten: Bogen nicht offen liegen lassen."
+      }
+     ]
+    },
+    {
+     "id": "2.35",
+     "titel": "Rückblick und Reflexion der Lehrkraft",
+     "typ": "Fragebogen",
+     "zweck": "Eigene Auswertung des Schulstarts.",
+     "stufe": "Kl. 1",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Nach der ersten Woche lohnt sich eine kurze Reflexion. Sie sichert Erfahrung für das nächste Mal und zeigt, wo Sie nachsteuern müssen."
+      },
+      {
+       "t": "h",
+       "x": "Fragen"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was ist gut gelungen?"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was war schwierig, was würde ich anders machen?"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Welche Kinder brauchen besondere Aufmerksamkeit?"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Welche Rückmeldung der Eltern war besonders hilfreich?"
+      },
+      {
+       "t": "h",
+       "x": "Selbsteinschätzung"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Organisation des Tages",
+        "Atmosphäre für Kinder",
+        "Kontakt zu Eltern",
+        "Zusammenarbeit im Team",
+        "Eigene Gelassenheit"
+       ],
+       "stufen": [
+        "gut gelungen",
+        "teilweise",
+        "verbesserbar"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Notieren Sie drei Dinge, die Sie im nächsten Jahr gleich machen, und drei, die Sie ändern."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

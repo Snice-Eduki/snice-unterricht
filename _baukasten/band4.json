@@ -1,0 +1,3334 @@
+{
+ "band": 4,
+ "titel": "Band 4: Übertritt nach Klasse 4 – Beratung, Gespräche, Elternabend",
+ "untertitel": "Verfahren in allen 16 Bundesländern, Gesprächsleitfäden, Elternabend, Briefe und Entscheidungshilfen (Stand November 2026)",
+ "einleitung": "Dieser Band begleitet Sie durch das Übertrittsjahr: vom Überblick über die Verfahren der 16 Länder über Beratungsgespräche und Elternabend bis zu Briefen, Fragebögen und der Übergabe an die weiterführende Schule. Beginnen Sie mit dem Steckbrief Ihres Landes in Abschnitt H, passen Sie dann Zeitplan und Briefe an die örtlichen Termine an. Alle Rechtsangaben sind mit Quellen versehen und müssen vor dem Einsatz beim zuständigen Ministerium geprüft werden. Berlin und Brandenburg haben eine sechsjährige Grundschule.",
+ "abschnitte": [
+  {
+   "id": "A",
+   "titel": "Grundlagen, Zeitplan und Überblick",
+   "module": [
+    {
+     "id": "4.01",
+     "titel": "Übertritt in Deutschland: der Überblick",
+     "typ": "Übersicht",
+     "zweck": "Schnell einordnen, wie unterschiedlich die 16 Länder den Wechsel nach der Grundschule regeln.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Übertritt ist Ländersache. Es gibt keine bundesweit einheitliche Regel. Drei Grundmodelle lassen sich unterscheiden: (1) Der Elternwille entscheidet, die Empfehlung berät nur. (2) Die Empfehlung oder ein Notenschnitt ist Voraussetzung für das Gymnasium, ohne sie gibt es einen Probeunterricht oder ein Aufnahmeverfahren. (3) Längeres gemeinsames Lernen: Die Grundschule dauert bis Klasse 6 (Berlin, Brandenburg) oder es gibt eine gemeinsame Orientierungsstufe."
+      },
+      {
+       "t": "h",
+       "x": "Grobe Einordnung (Stand November 2026, ohne Gewähr)"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Modell",
+        "Länder (Tendenz)",
+        "Was Eltern wissen müssen"
+       ],
+       "zeilen": [
+        [
+         "Elternwille entscheidet",
+         "u. a. BW, HB, HH, HE, NI, NW, RP, SL, SH, ST, MV",
+         "Empfehlung und Beratung sind Pflichtangebot, die Entscheidung liegt bei den Eltern"
+        ],
+        [
+         "Empfehlung oder Notenschnitt wirkt verbindlich",
+         "BY, SN, TH (Gymnasium); BE, BB nach Klasse 6",
+         "Ohne Schnitt bzw. Empfehlung ist ein Probeunterricht oder Aufnahmeverfahren nötig"
+        ],
+        [
+         "Grundschule bis Klasse 6",
+         "BE, BB",
+         "Übergang erst nach Klasse 6, dann Anmeldung an Oberschule oder Gymnasium"
+        ],
+        [
+         "Gemeinsame Orientierungsstufe",
+         "u. a. NI, MV (je nach Schulart)",
+         "Die endgültige Laufbahn zeigt sich oft erst nach Klasse 6"
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Einordnung ist eine Orientierung. Einzelne Länder haben ihre Regeln zuletzt geändert oder planen Änderungen (zum Beispiel Baden-Württemberg zur Vorlage der Grundschulempfehlung). Maßgeblich sind die Steckbriefe in Abschnitt H und das jeweilige Ministerium."
+      },
+      {
+       "t": "h",
+       "x": "So nutzen Sie diesen Band"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Land-Steckbrief lesen (Abschnitt H) und mit dem aktuellen Schreiben Ihres Schulamts abgleichen.",
+        "Zeitplan (Modul 4.03) an die Fristen Ihres Landes anpassen.",
+        "Elternabend (Abschnitt C) und Beratungsgespräche (Abschnitt B) vorbereiten.",
+        "Briefe (Abschnitt E) mit den örtlichen Terminen füllen."
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Übersicht Übergang: Deutscher Bildungsserver, https://www.bildungsserver.de (Stichwort Übergang zur weiterführenden Schule), Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.02",
+     "titel": "Begriffe rund um den Übertritt",
+     "typ": "Übersicht",
+     "zweck": "Einheitliche Sprache für Lehrkräfte und Eltern: wichtige Begriffe kurz erklärt.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Länder verwenden verschiedene Wörter für ähnliche Dinge. Diese Liste hilft, im Elterngespräch nicht aneinander vorbeizureden."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Begriff",
+        "Bedeutung (allgemein)",
+        "Wo üblich"
+       ],
+       "zeilen": [
+        [
+         "Grundschulempfehlung",
+         "Fachliche Empfehlung der Grundschule für eine Schulart",
+         "mehrere Länder"
+        ],
+        [
+         "Bildungsempfehlung",
+         "Name der Empfehlung in Sachsen",
+         "SN"
+        ],
+        [
+         "Übertrittszeugnis",
+         "Zeugnis mit Notenschnitt und Eignungsaussage",
+         "BY"
+        ],
+        [
+         "Förderprognose",
+         "Prognose am Ende von Klasse 6 mit Notensumme",
+         "BE"
+        ],
+        [
+         "Probeunterricht",
+         "Prüfung zur Feststellung der Eignung",
+         "BY, BE, BB u. a."
+        ],
+        [
+         "Orientierungsstufe",
+         "Klassen 5/6 mit offener Laufbahnentscheidung",
+         "NI, MV u. a."
+        ],
+        [
+         "Elternwille",
+         "Eltern wählen die Schulart selbst",
+         "viele Länder"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Weitere Begriffe"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Anmeldewoche: Zeitraum, in dem Kinder an der weiterführenden Schule angemeldet werden.",
+        "Aufnahmekapazität: Zahl der freien Plätze, begrenzt die Wahlfreiheit bei Überanmeldung.",
+        "Schulsprengel oder Einzugsgebiet: zuständige Schule nach Wohnort (nicht überall relevant).",
+        "Durchlässigkeit: Möglichkeit, später die Schulart zu wechseln.",
+        "Beratungslehrkraft: Fachkraft für Laufbahnberatung an der Schule."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Verwenden Sie im Elterngespräch den Begriff Ihres Landes, auch wenn Eltern aus anderen Ländern zugezogen sind, und erklären Sie ihn kurz."
+      },
+      {
+       "t": "quelle",
+       "x": "Begriffe nach den Schulgesetzen der Länder; Sammlung: Deutscher Bildungsserver, https://www.bildungsserver.de, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.03",
+     "titel": "Zeitplan Übertrittsjahr",
+     "typ": "Tabelle",
+     "zweck": "Ein Jahresplan für Lehrkraft und Klasse von September bis zur Anmeldung.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Plan ist eine Vorlage. Die Fristen unterscheiden sich je nach Land deutlich, einige Termine liegen schon im Dezember, andere erst im Mai. Tragen Sie die verbindlichen Termine Ihres Landes in die letzte Spalte ein."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Zeitraum",
+        "Aufgabe der Lehrkraft",
+        "Eltern und Kinder",
+        "Ihr Termin"
+       ],
+       "zeilen": [
+        [
+         "September",
+         "Übertrittsplan erstellen, Termine mit der Schulleitung klären",
+         "Information im Elternbrief",
+         "____"
+        ],
+        [
+         "Oktober",
+         "Elternabend Übertritt",
+         "Teilnahme, Fragen sammeln",
+         "____"
+        ],
+        [
+         "November",
+         "Lernstand und Arbeitsverhalten systematisch beobachten",
+         "Elternfragebogen ausfüllen",
+         "____"
+        ],
+        [
+         "Dezember bis Januar",
+         "Beratungsgespräche beginnen",
+         "Gesprächstermin wählen",
+         "____"
+        ],
+        [
+         "Januar bis Februar",
+         "Halbjahresinformation bzw. Halbjahreszeugnis, Empfehlung vorbereiten",
+         "Tag der offenen Tür besuchen",
+         "____"
+        ],
+        [
+         "Februar bis Mai",
+         "Empfehlung bzw. Übertrittszeugnis ausstellen, Unterlagen",
+         "Schule wählen, anmelden",
+         "____"
+        ],
+        [
+         "Mai bis Juli",
+         "Probeunterricht-Info, Übergabebögen, Kennenlerntag",
+         "Zusage abwarten",
+         "____"
+        ],
+        [
+         "Juli",
+         "Abschied, Zeugnis, Übergabe",
+         "Schulplatz bestätigen",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Beginnen Sie die Beobachtung früh. Wer erst im Januar anfängt, dokumentiert nur noch einen Schnappschuss."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termine aus dem aktuellen Schreiben des Schulamts übernommen",
+        "Schulleitung informiert",
+        "Elternabend im Terminplan der Schule eingetragen",
+        "Beratungsgespräche in Zeitfenstern organisiert",
+        "Anmeldetermine der weiterführenden Schulen eingeholt"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Fristen Ihres Landes: Kultusministerium bzw. Schulamt, siehe Steckbriefe in Abschnitt H. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.04",
+     "titel": "Mythen und Fakten zum Übertritt",
+     "typ": "Übersicht",
+     "zweck": "Verbreitete Annahmen sachlich einordnen, ohne Eltern zu belehren.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Rund um den Übertritt kursieren viele Annahmen. Sie erzeugen Druck. Mit sachlichen Antworten nehmen Sie Druck heraus."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Mythos",
+        "Fakt"
+       ],
+       "zeilen": [
+        [
+         "Die Schulart entscheidet über den ganzen Lebensweg.",
+         "Alle Länder haben Wege zum Wechsel und zu höheren Abschlüssen, auch beruflich (Durchlässigkeit)."
+        ],
+        [
+         "Nur das Gymnasium führt zum Abitur.",
+         "Das Abitur ist auch über Gesamt- und Gemeinschaftsschulen und berufliche Gymnasien möglich."
+        ],
+        [
+         "Die Note im Übertrittsfach ist das Einzige, was zählt.",
+         "Lern- und Arbeitsverhalten, Selbstständigkeit und Motivation sind für den Erfolg ebenso wichtig."
+        ],
+        [
+         "Ein Kind mit Zweifel soll es einfach probieren.",
+         "Probieren ist möglich, braucht aber einen Plan und Unterstützung. Ehrliche Beratung ist die bessere Grundlage."
+        ],
+        [
+         "Nachhilfe sichert den Platz.",
+         "Nachhilfe ersetzt kein eigenständiges Lernen. Wichtiger sind Routinen, Lesen und Übung zu Hause."
+        ],
+        [
+         "Die Lehrkraft entscheidet allein.",
+         "Je nach Land entscheiden die Eltern, oder die Empfehlung bildet eine Voraussetzung. Die Lehrkraft berät fachlich."
+        ],
+        [
+         "Eine falsche Wahl ist nicht korrigierbar.",
+         "Ein Schulartwechsel ist in der Regel möglich, besonders in den ersten Jahren."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sagen Sie nie, ein Kind sei nicht gymnasial geeignet. Beschreiben Sie, was das Kind braucht, um bestimmte Anforderungen zu bewältigen."
+      },
+      {
+       "t": "baustein",
+       "x": "Viele Eltern fragen mich, ob eine Fehlentscheidung bei der Schulwahl das ganze Leben prägt. Das ist nicht so. Fast jeder Abschluss ist heute auf mehreren Wegen erreichbar. Wichtig ist, dass Ihr Kind eine Schule besucht, an der es mit Freude und mit Erfolgserlebnissen lernen kann."
+      },
+      {
+       "t": "quelle",
+       "x": "Durchlässigkeit der Bildungswege: KMK, https://www.kmk.org (Bildungswege im deutschen Schulsystem), Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.05",
+     "titel": "Recht und Datenschutz beim Übertritt",
+     "typ": "Checkliste",
+     "zweck": "Rechtssicher beraten, dokumentieren und Unterlagen weitergeben.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Beratungsgespräche und Übergabeinformationen berühren personenbezogene Daten. Die Länder regeln Datenschutz in Schul- und Datenschutzgesetzen. Die folgende Liste ist eine praktische Hilfe, keine Rechtsberatung."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Beratungsgespräche nur mit den Sorgeberechtigten führen; bei getrennten Eltern Absprache klären",
+        "Notizen nur im Rahmen der schulischen Aufgaben anfertigen",
+        "Gesprächsprotokolle sicher aufbewahren (Schulakte, abschließbar)",
+        "Weitergabe von Informationen an die weiterführende Schule nur im rechtlich vorgesehenen Umfang",
+        "Bei Nachteilsausgleich und Förderbedarf das Einverständnis der Eltern beachten",
+        "Notenschnitte nie öffentlich in der Klasse vergleichen",
+        "Keine Gesprächsdaten über unsichere Kanäle versenden"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Wer darf was erfahren?"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Sorgeberechtigte erhalten Auskunft über Leistungsstand und Empfehlung.",
+        "Das Kind darf altersgerecht beteiligt werden.",
+        "Mitschüler und andere Eltern erhalten keine Einzelauskunft.",
+        "Die aufnehmende Schule erhält Unterlagen nach landesrechtlicher Regelung."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wenn Sie unsicher sind, fragen Sie Schulleitung oder die Datenschutzbeauftragte der Schule, bevor Sie Informationen weitergeben."
+      },
+      {
+       "t": "quelle",
+       "x": "Datenschutz an Schulen: Schulgesetz und Datenschutzbeauftragte des jeweiligen Landes, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.06",
+     "titel": "Berlin und Brandenburg: Grundschule bis Klasse 6",
+     "typ": "Leitfaden",
+     "zweck": "Den Sonderfall der sechsjährigen Grundschule bewusst gestalten.",
+     "stufe": "Kl. 4–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Berlin und Brandenburg dauert die Grundschule sechs Jahre. Der Wechsel zur weiterführenden Schule steht deshalb erst nach Klasse 6 an. Klasse 4 ist kein Übertrittsjahr, wohl aber ein Beratungsjahr: Eltern interessieren sich oft früh, und es gibt Sonderangebote ab Klasse 5."
+      },
+      {
+       "t": "h",
+       "x": "Was in Klasse 4 sinnvoll ist"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Information der Eltern über das spätere Verfahren (Förderprognose, Bildungsgangempfehlung).",
+        "Frühe Beobachtung von Lern- und Arbeitsverhalten.",
+        "Hinweis auf besondere Angebote ab Klasse 5 mit eigenem Auswahlverfahren (zum Beispiel Schnelllerner- oder Begabungsklassen, grundständige Gymnasien, Musik- und Sportprofile) und deren Fristen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Was in Klasse 5 und 6 gilt"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Land",
+        "Entscheidend",
+        "Zeitpunkt"
+       ],
+       "zeilen": [
+        [
+         "Berlin",
+         "Förderprognose aus den Noten in Deutsch, Mathematik, 1. Fremdsprache; Probeunterricht bei mittleren Werten",
+         "Anmeldung im Frühjahr der Klasse 6"
+        ],
+        [
+         "Brandenburg",
+         "Bildungsgangempfehlung; Notendurchschnitt aus Deutsch, Mathematik, Englisch; bei Nichterreichen Probeunterricht",
+         "Halbjahr Klasse 6, Anmeldung im Winter und Frühjahr"
+        ]
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, bei uns beginnt die Entscheidung für die weiterführende Schule erst am Ende von Klasse 6. Trotzdem lohnt sich ein Blick auf die Lernentwicklung Ihres Kindes schon jetzt. Wir zeigen Ihnen in Klasse 5 und 6, wo Ihr Kind steht und wie es sich entwickelt. Zu besonderen Angeboten ab Klasse 5 informieren wir Sie auf dem Elternabend."
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Regeln in Berlin wurden zuletzt verändert (Notensumme aus sechs Noten, Probeunterricht im Bereich mittlerer Werte). Prüfen Sie die aktuelle Fassung bei der Senatsverwaltung."
+      },
+      {
+       "t": "quelle",
+       "x": "Berlin: https://www.berlin.de/sen/bildung/schule/bildungswege/uebergang-weiterfuehrende-schule/ ; Brandenburg: https://mbjs.brandenburg.de (Übergang Jahrgangsstufe 6), Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "titel": "Beratungsgespräche",
+   "module": [
+    {
+     "id": "4.07",
+     "titel": "Beratungsgespräch Übertritt: Leitfaden",
+     "typ": "Leitfaden",
+     "zweck": "Ein strukturiertes Gespräch von 25 bis 30 Minuten, das Eltern ernst nimmt.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Das Beratungsgespräch ist der Kern des Übertritts. Eltern wollen Klarheit, haben aber oft Sorgen. Ihre Aufgabe ist es, fachlich ehrlich und zugleich zugewandt zu sein."
+      },
+      {
+       "t": "h",
+       "x": "Phasen"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Ankommen (3 Min.): Begrüßung, Ziel und Zeitrahmen nennen.",
+        "Sicht der Eltern (5 Min.): Was ist Ihnen für Ihr Kind wichtig? Welche Schule haben Sie im Blick?",
+        "Sicht der Lehrkraft (8 Min.): Stärken zuerst, dann Entwicklungsfelder, belegt durch Beobachtungen.",
+        "Einordnung (5 Min.): Passung zu den Anforderungen der Schularten, ohne zu etikettieren.",
+        "Vereinbarung (5 Min.): Empfehlung, nächste Schritte, Fristen, Termin Nachgespräch.",
+        "Abschluss (2 Min.): Zusammenfassen, Dank, Protokoll ankündigen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Noten und Beobachtungsbogen bereit",
+        "Unterlagen des Kindes (Arbeiten, Hefte) griffbereit",
+        "Informationsblatt zum Verfahren des Landes",
+        "Ruhiger Raum, Schild an der Tür, keine Störung",
+        "Gesprächsbogen (Modul 4.09) vorbereitet"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wer zuerst sagt, was gut läuft, bekommt später mehr Offenheit für Kritik. Beginnen Sie nie mit der Note."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Konkrete Beispiele statt Etiketten (nicht: faul, sondern: beginnt Aufgaben spät und braucht Erinnerungen).",
+        "Offene Fragen stellen: Wie erleben Sie das Lernen zu Hause?",
+        "Stille aushalten, Eltern Raum geben.",
+        "Verfahren und Fristen schriftlich mitgeben."
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Rechtsrahmen der Beratung: Schulgesetz und Übergangsverordnung des jeweiligen Landes, siehe Abschnitt H. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.08",
+     "titel": "Formulierungen für das Beratungsgespräch",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Sätze für heikle Momente im Gespräch.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Bausteine sind neutral gehalten und lassen sich an Ihr Land und die Situation anpassen. Sie stehen in der Sie-Form; für Du-Schulen sind sie leicht abzuwandeln."
+      },
+      {
+       "t": "h",
+       "x": "Einstieg"
+      },
+      {
+       "t": "baustein",
+       "x": "Schön, dass Sie sich Zeit genommen haben. Ich möchte heute mit Ihnen darüber sprechen, wie [Name] lernt und welche Schule dazu passen könnte. Wir haben etwa eine halbe Stunde. Am Ende fassen wir zusammen, was wir vereinbaren."
+      },
+      {
+       "t": "h",
+       "x": "Stärken benennen"
+      },
+      {
+       "t": "baustein",
+       "x": "[Name] arbeitet im Unterricht aufmerksam mit und kann Zusammenhänge gut erklären. Besonders beeindruckt hat mich, wie [Name] bei der Aufgabe zu ____ vorgegangen ist."
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich sehe, dass [Name] bei längeren Aufgaben noch Unterstützung braucht, um dranzubleiben. Das ist in diesem Alter ganz normal. Für den Übergang wäre es hilfreich, wenn wir daran gemeinsam arbeiten."
+      },
+      {
+       "t": "h",
+       "x": "Empfehlung erklären"
+      },
+      {
+       "t": "baustein",
+       "x": "Aus meiner Sicht würde [Name] an der [Schulart] gut ankommen, weil ____. Für das Gymnasium sehe ich im Moment noch Lücken bei ____. Das schließt den Weg nicht aus, er braucht aber mehr Zeit und Unterstützung."
+      },
+      {
+       "t": "h",
+       "x": "Wenn Eltern widersprechen"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich höre, dass Sie eine andere Einschätzung haben. Das nehme ich ernst. Lassen Sie uns gemeinsam anschauen, welche Unterstützung nötig wäre und woran Sie nach einem Halbjahr erkennen würden, dass die Schulwahl passt."
+      },
+      {
+       "t": "h",
+       "x": "Abschluss"
+      },
+      {
+       "t": "baustein",
+       "x": "Ich fasse zusammen: Wir haben vereinbart ____. Sie entscheiden bis ____. Wenn weitere Fragen auftauchen, melden Sie sich gern. Ich schicke Ihnen das Protokoll."
+      },
+      {
+       "t": "hinweis",
+       "x": "Vermeiden Sie Sätze wie Ihr Kind ist nicht geeignet oder Das schafft er nie. Beschreiben Sie Beobachtung, Wirkung und Handlungsoption."
+      },
+      {
+       "t": "quelle",
+       "x": "Gesprächsführung: Grundsätze lösungsorientierter Beratung, allgemeine Fachliteratur, Stand November 2026."
+      }
+     ]
+    },
+    {
+     "id": "4.09",
+     "titel": "Gesprächsbogen Beratung Übertritt",
+     "typ": "Vorlage",
+     "zweck": "Ausfüllbogen für das Beratungsgespräch.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Gesprächsteilnehmer",
+        "Dauer"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sicht der Eltern"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Wünsche und Sorgen der Eltern, gewünschte Schulart"
+      },
+      {
+       "t": "h",
+       "x": "Sicht der Lehrkraft"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Stärken des Kindes"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Entwicklungsfelder"
+      },
+      {
+       "t": "h",
+       "x": "Einschätzung"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Lernverhalten",
+        "Arbeitsverhalten",
+        "Selbstständigkeit",
+        "Sozialverhalten",
+        "Belastbarkeit"
+       ],
+       "stufen": [
+        "sehr sicher",
+        "überwiegend",
+        "teilweise",
+        "noch nicht"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Empfehlung, nächste Schritte, Fristen"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Nächster Termin",
+        "Unterschrift Lehrkraft",
+        "Unterschrift Erziehungsberechtigte"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Der Bogen ist ein Arbeitspapier. Er ersetzt nicht das amtliche Schreiben, das Ihr Land vorsieht."
+      }
+     ]
+    },
+    {
+     "id": "4.10",
+     "titel": "Abweichender Elternwunsch",
+     "typ": "Leitfaden",
+     "zweck": "Respektvoll mit Eltern umgehen, deren Wunsch von der Empfehlung abweicht.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Ein Wunsch, der von der fachlichen Einschätzung abweicht, ist kein Konflikt, sondern ein Gesprächsanlass. In vielen Ländern entscheiden die Eltern, in anderen entscheidet die Empfehlung oder ein Probeunterricht. Klären Sie zuerst die Rechtslage in Ihrem Land."
+      },
+      {
+       "t": "h",
+       "x": "Schritte"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Anliegen hören, Gründe erfragen (Ehrgeiz, Freundeskreis, Abschlussziel, Ängste).",
+        "Die eigenen Beobachtungen konkret schildern.",
+        "Folgen und Risiken ehrlich benennen, ebenso die Chancen.",
+        "Alternativen aufzeigen (anderer Weg zum Abschluss, Wechsel später möglich).",
+        "Unterstützung vereinbaren (Förderung, Lernplan, Probeunterricht).",
+        "Die Entscheidung respektieren, wenn sie Elternrecht ist."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Ich verstehe, dass Sie Ihrem Kind alle Möglichkeiten offenhalten möchten. Das ist ein gutes Ziel. Ich möchte Ihnen zeigen, wo ich Herausforderungen sehe, damit Sie bewusst entscheiden können. Wenn Sie sich für [Schulart] entscheiden, schlage ich vor, dass wir ____ vereinbaren."
+      },
+      {
+       "t": "hinweis",
+       "x": "Halten Sie fest, dass die Beratung stattgefunden hat und was gesagt wurde, zum Beispiel in einem kurzen Protokoll."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Rechtslage des Landes geklärt",
+        "Beratung dokumentiert",
+        "Alternative Wege genannt",
+        "Nachgespräch nach dem ersten Schulhalbjahr angeboten"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Rechtsgrundlagen siehe Steckbrief Ihres Landes in Abschnitt H. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.11",
+     "titel": "Gespräch mit dem Kind über die neue Schule",
+     "typ": "Leitfaden",
+     "zweck": "Das Kind altersgerecht beteiligen, ohne Druck zu erzeugen.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Zehnjährige erleben den Wechsel als Abschied und Aufbruch zugleich. Sie nehmen Druck sehr deutlich wahr. Ein kurzes Gespräch gibt ihnen eine Stimme."
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsimpulse"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Worauf freust du dich an einer neuen Schule?",
+        "Was macht dir ein bisschen Sorge?",
+        "Was möchtest du unbedingt behalten (Freunde, Hobby, Weg)?",
+        "Wer oder was hilft dir, wenn etwas schwierig ist?"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht fragen: Willst du aufs Gymnasium? Das Kind trägt dann die Verantwortung für die Entscheidung."
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich freue mich auf die neue Schule.",
+        "Ich habe Angst vor schlechten Noten.",
+        "Ich weiß, wen ich fragen kann.",
+        "Ich kann mir den Schulweg vorstellen."
+       ],
+       "stufen": [
+        "ja",
+        "eher ja",
+        "eher nein",
+        "nein"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Du hast in den vergangenen Jahren viel gelernt. Auf der neuen Schule wird einiges anders, aber du bist gut vorbereitet. Wenn du Fragen hast, kannst du immer zu mir kommen, auch noch nach den Sommerferien."
+      },
+      {
+       "t": "quelle",
+       "x": "Entwicklungspsychologische Grundlagen: allgemeine Fachliteratur, Stand November 2026."
+      }
+     ]
+    },
+    {
+     "id": "4.12",
+     "titel": "Protokollvorlage Beratungsgespräch",
+     "typ": "Vorlage",
+     "zweck": "Dokumentation, die rechtssicher und knapp ist.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "felder",
+       "x": [
+        "Datum",
+        "Name des Kindes",
+        "Klasse",
+        "Anwesende",
+        "Beginn und Ende",
+        "Protokollführung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Inhalt des Gesprächs"
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Stärken und Beobachtungen (Stichworte)"
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Besprochene Schulartoptionen"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Einschätzung der Eltern, gewählte Schulart"
+      },
+      {
+       "t": "h",
+       "x": "Vereinbarungen"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Empfehlung erläutert",
+        "Verfahren und Fristen ausgehändigt",
+        "Probeunterricht oder Aufnahmeverfahren erklärt (falls relevant)",
+        "Weiterführende Beratung angeboten (Schulamt, Beratungsstelle)"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Nächste Schritte und Termine"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Unterschrift Lehrkraft",
+        "Unterschrift Eltern (Kenntnisnahme)"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Eltern bestätigen mit der Unterschrift nur die Kenntnis, nicht zwingend die Inhalte. Das sollte auf dem Bogen stehen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "titel": "Elternabend Übertritt",
+   "module": [
+    {
+     "id": "4.13",
+     "titel": "Elternabend Übertritt: Ablauf",
+     "typ": "Leitfaden",
+     "zweck": "Ein 60- bis 75-minütiger Elternabend mit klarer Dramaturgie.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Elternabend zum Übertritt sollte im Herbst stattfinden, damit Eltern sich in Ruhe informieren können. Bitten Sie bei Bedarf die Schulleitung oder eine Beratungslehrkraft um Unterstützung."
+      },
+      {
+       "t": "h",
+       "x": "Ablaufplan"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Zeit",
+        "Programmpunkt",
+        "Wer"
+       ],
+       "zeilen": [
+        [
+         "0–5 Min.",
+         "Begrüßung, Ziel und Ablauf",
+         "Lehrkraft"
+        ],
+        [
+         "5–25 Min.",
+         "Verfahren des Landes, Schularten, Fristen",
+         "Lehrkraft oder Schulleitung"
+        ],
+        [
+         "25–40 Min.",
+         "Orientierung: Wie erkenne ich die passende Schule?",
+         "Lehrkraft"
+        ],
+        [
+         "40–55 Min.",
+         "Fragen und Antworten, Erfahrungen austauschen",
+         "alle"
+        ],
+        [
+         "55–70 Min.",
+         "Beratungstermine, Unterlagen, Verabschiedung",
+         "Lehrkraft"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Vorbereitung"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Raum und Technik geprüft",
+        "Handout mit Fristen kopiert",
+        "Beratungstermine in einer Liste",
+        "Namensschilder, Anwesenheitsliste",
+        "Fragen im Vorfeld gesammelt (Zettel, Briefkasten)"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Haltung"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Sachlich und beruhigend, keine Panik erzeugen.",
+        "Keine Einzelfälle besprechen, nur allgemeine Kriterien.",
+        "Zeit für Fragen einplanen, Einzelfälle auf den Gesprächstermin verweisen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bereiten Sie zwei bis drei kurze Beispiele aus früheren Jahrgängen vor (anonym), die zeigen, dass verschiedene Wege zum Ziel führen."
+      },
+      {
+       "t": "quelle",
+       "x": "Verfahren und Fristen siehe Steckbrief Ihres Landes (Abschnitt H). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.14",
+     "titel": "Ansprache-Baustein für den Elternabend",
+     "typ": "Textbaustein",
+     "zweck": "Eine fertige Rede für die Begrüßung und die Kernbotschaften.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "baustein",
+       "x": "Guten Abend und herzlich willkommen. Ich freue mich, dass so viele von Ihnen gekommen sind. Heute geht es um eine Frage, die Sie bewegt: Welche Schule passt zu meinem Kind?\n\nIch möchte Ihnen zeigen, wie das Verfahren in unserem Land abläuft, welche Schularten es gibt und woran Sie erkennen können, was Ihr Kind braucht. Ich beantworte Ihre Fragen, soweit ich kann. Zu einzelnen Kindern spreche ich heute Abend nicht. Dafür gibt es die Beratungsgespräche."
+      },
+      {
+       "t": "baustein",
+       "x": "Drei Dinge sind mir wichtig. Erstens: Es gibt nicht die eine richtige Schule, sondern die, an der Ihr Kind sich entwickeln kann. Zweitens: Noten sind ein wichtiger Hinweis, aber nicht alles. Auch Lernverhalten, Neugier und Selbstständigkeit zählen. Drittens: Kein Weg ist endgültig. Es gibt Wechselmöglichkeiten und viele Abschlüsse."
+      },
+      {
+       "t": "baustein",
+       "x": "Zum Schluss bitte ich Sie: Sprechen Sie mit Ihrem Kind, nicht über sein Kind hinweg. Zeigen Sie ihm, dass Sie ihm vertrauen. Und melden Sie sich bei mir, wenn Sie unsicher sind. Wir entscheiden das gemeinsam."
+      },
+      {
+       "t": "h",
+       "x": "Anpassen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Nennen Sie das konkrete Verfahren Ihres Landes (siehe Abschnitt H).",
+        "Streichen Sie, was im Land nicht gilt.",
+        "Ergänzen Sie ein persönliches Beispiel."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Üben Sie die Begrüßung laut. Die ersten drei Sätze bestimmen die Stimmung des Abends."
+      },
+      {
+       "t": "quelle",
+       "x": "Siehe Steckbrief Ihres Landes in Abschnitt H. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.15",
+     "titel": "Präsentationstext Folie für Folie",
+     "typ": "Textbaustein",
+     "zweck": "Sprechtexte für eine zwölfteilige Präsentation, die Sie selbst gestalten.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Folien gestalten Sie selbst. Der Text je Folie ist zugleich Sprechtext und Gerüst für den Foliensatz."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Folie",
+        "Titel",
+        "Kernaussage"
+       ],
+       "zeilen": [
+        [
+         "1",
+         "Willkommen",
+         "Ziel des Abends, Ablauf, Fragenspeicher"
+        ],
+        [
+         "2",
+         "Warum jetzt?",
+         "Der Übertritt dauert mehrere Monate, die Beratung beginnt früh"
+        ],
+        [
+         "3",
+         "Verfahren in unserem Land",
+         "Empfehlung oder Zeugnis, Beratung, Anmeldung (aus dem Steckbrief)"
+        ],
+        [
+         "4",
+         "Die Schularten",
+         "Kurzprofil jeder Schulart und Abschlüsse"
+        ],
+        [
+         "5",
+         "Abschlüsse und Wege",
+         "Mehrere Wege zum Abitur, Wechselmöglichkeiten"
+        ],
+        [
+         "6",
+         "Woran erkenne ich Eignung?",
+         "Lernverhalten, Arbeitsverhalten, Selbstständigkeit"
+        ],
+        [
+         "7",
+         "Rolle der Noten",
+         "Notenschnitt als Hinweis, nicht als Urteil"
+        ],
+        [
+         "8",
+         "Rolle der Eltern",
+         "Unterstützen, nicht übernehmen"
+        ],
+        [
+         "9",
+         "Fristen und Termine",
+         "Datum der Beratung, Anmeldung, Probeunterricht"
+        ],
+        [
+         "10",
+         "Wenn es schwierig wird",
+         "Beratung, Nachteilsausgleich, Förderung"
+        ],
+        [
+         "11",
+         "Übergang gestalten",
+         "Kennenlerntag, Übergabe, Schulstart"
+        ],
+        [
+         "12",
+         "Ihre Fragen",
+         "Fragenspeicher, Kontakte"
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nutzen Sie je Folie höchstens fünf Zeilen. Die Eltern sollen zuhören, nicht lesen."
+      },
+      {
+       "t": "baustein",
+       "x": "Folie 6, Sprechtext: Wie erkennen wir, ob eine Schulart passt? Wir schauen nicht nur auf Noten. Wir beobachten, ob ein Kind selbstständig arbeiten kann, ob es auch bei Rückschlägen dranbleibt und wie es Aufgaben plant. Diese Fähigkeiten sind an jeder weiterführenden Schule wichtig."
+      },
+      {
+       "t": "baustein",
+       "x": "Folie 8, Sprechtext: Sie müssen Ihrem Kind nicht den Stoff erklären. Sie helfen am meisten, wenn Sie einen festen Lernplatz schaffen, nach dem Tag fragen, zum Lesen anregen und Ruhe ausstrahlen, auch wenn die Entscheidung näher rückt."
+      },
+      {
+       "t": "quelle",
+       "x": "Inhalte nach den Steckbriefen der Länder (Abschnitt H). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.16",
+     "titel": "Zehn typische Elternfragen mit Antworten",
+     "typ": "Übersicht",
+     "zweck": "Antworten auf Fragen, die auf jedem Elternabend gestellt werden.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Antworten sind bewusst allgemein. Ergänzen Sie die Regeln Ihres Landes."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort in Kürze"
+       ],
+       "zeilen": [
+        [
+         "Entscheidet die Lehrkraft?",
+         "Das hängt vom Land ab, siehe Steckbrief. Die Lehrkraft berät immer."
+        ],
+        [
+         "Was zählt für die Empfehlung?",
+         "Je nach Land Noten bestimmter Fächer, Lern- und Arbeitsverhalten, Gesamteindruck."
+        ],
+        [
+         "Können wir gegen die Empfehlung entscheiden?",
+         "In vielen Ländern ja, in anderen nur mit Probeunterricht oder Beratung."
+        ],
+        [
+         "Wann ist der letzte Anmeldetermin?",
+         "Siehe Zeitplan und Steckbrief Ihres Landes."
+        ],
+        [
+         "Kann mein Kind wechseln, wenn es nicht passt?",
+         "Meist ja, die Regeln hängen vom Land ab."
+        ],
+        [
+         "Wie bereite ich mein Kind vor?",
+         "Routinen, Lesen, Gespräche, nicht Dauerdrill."
+        ],
+        [
+         "Was ist mit Nachhilfe?",
+         "Nur gezielt bei konkretem Bedarf, nach Rücksprache."
+        ],
+        [
+         "Zählt die Betreuung am Nachmittag?",
+         "Sie ist für die Schulwahl wichtig, nicht für die Eignung."
+        ],
+        [
+         "Mein Kind will bei seinem Freund bleiben.",
+         "Freunde sind wichtig, aber nicht allein ausschlaggebend. Gespräch führen."
+        ],
+        [
+         "Was geschieht bei Überanmeldung?",
+         "Es gelten die Aufnahmekriterien der Schule, Auskunft beim Schulamt."
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Haltung bei Fragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Zuerst die Sorge hinter der Frage hören.",
+        "Kurz antworten, auf das Gespräch verweisen.",
+        "Keine Versprechen über Ergebnisse machen."
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Antworten mit Landesregeln abgeglichen",
+        "Fragenspeicher am Ende geklärt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten Sie ehrlich, wenn Sie etwas nicht wissen: Ich kläre das und melde mich bis ____."
+      },
+      {
+       "t": "quelle",
+       "x": "Siehe Steckbriefe der Länder in Abschnitt H. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.17",
+     "titel": "Einladung zum Elternabend Übertritt",
+     "typ": "Brief",
+     "zweck": "Fertiger Brief mit Terminplatz in Sie- und Du-Form.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern und Erziehungsberechtigte,\n\nim kommenden Schuljahr wechselt Ihr Kind an eine weiterführende Schule. Dazu laden wir Sie herzlich ein zum\n\nElternabend Übertritt\nam ____ um ____ Uhr im Raum ____.\n\nSie erfahren, wie das Verfahren in unserem Land abläuft, welche Schularten es gibt, welche Fristen gelten und wie wir Sie in den kommenden Monaten begleiten. Es bleibt Zeit für Ihre Fragen.\n\nBitte teilen Sie uns bis ____ mit, ob Sie teilnehmen können, und notieren Sie gern vorab Fragen.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form: Liebe Eltern, ich lade Euch herzlich ein zum Elternabend Übertritt am ____ um ____ Uhr im Raum ____. Wir sprechen über das Verfahren, die Schularten, die Fristen und darüber, wie wir Euch und Euer Kind begleiten. Bitte gebt bis ____ kurz Bescheid und bringt gern Fragen mit. Viele Grüße, [Name]"
+      },
+      {
+       "t": "h",
+       "x": "Rückmeldeabschnitt"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Teilnahme (ja oder nein)",
+        "Anzahl der Personen",
+        "Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Legen Sie dem Brief eine Liste mit Wunschfenstern für die Beratungsgespräche bei."
+      },
+      {
+       "t": "quelle",
+       "x": "Hinweise zum Verfahren: Steckbrief Ihres Landes (Abschnitt H). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "titel": "Entscheidungshilfen und Fragebögen",
+   "module": [
+    {
+     "id": "4.18",
+     "titel": "Beobachtungsbogen Lern- und Arbeitsverhalten",
+     "typ": "Fragebogen",
+     "zweck": "Systematisch beobachten, bevor die Beratung beginnt.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Bogen unterstützt Sie, Ihre Einschätzung an Beispielen festzumachen. Füllen Sie ihn im Herbst und im Winter aus und vergleichen Sie."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Beobachtungszeitraum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Lernverhalten"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Zeigt Neugier und stellt weiterführende Fragen",
+        "Erfasst neue Inhalte zügig",
+        "Überträgt Gelerntes auf neue Aufgaben",
+        "Liest Texte sinnentnehmend",
+        "Rechnet auch Sachaufgaben sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Arbeitsverhalten"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Arbeitet ausdauernd und konzentriert",
+        "Beginnt Aufgaben selbstständig",
+        "Plant Arbeitsschritte",
+        "Hält Material in Ordnung",
+        "Erledigt Hausaufgaben zuverlässig"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Selbstständigkeit und Belastbarkeit"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Holt sich Hilfe, wenn nötig",
+        "Geht mit Rückschlägen konstruktiv um",
+        "Kann sich selbst Ziele setzen",
+        "Arbeitet auch im Team verlässlich"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Konkrete Beispiele und Beobachtungen"
+      },
+      {
+       "t": "hinweis",
+       "x": "Ein Kreuz ohne Beispiel ist im Gespräch wenig wert. Notieren Sie zu jeder Spalte mindestens eine Situation."
+      }
+     ]
+    },
+    {
+     "id": "4.19",
+     "titel": "Kriterienraster für die Lehrkraft",
+     "typ": "Tabelle",
+     "zweck": "Übersicht der Kriterien, die in die Beratung einfließen können.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Länder gewichten unterschiedlich. In manchen Ländern zählen allein die Noten bestimmter Fächer, in anderen auch Lern- und Arbeitsverhalten. Das Raster hilft, das Gesamtbild zu ordnen. Maßgeblich bleiben die gesetzlichen Vorgaben."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Kriterium",
+        "Fragen",
+        "Beobachtung (Stichwort)"
+       ],
+       "zeilen": [
+        [
+         "Fachliche Leistung",
+         "Wie sicher sind Deutsch, Mathematik, Sachunterricht?",
+         "____"
+        ],
+        [
+         "Lernverhalten",
+         "Wie schnell lernt das Kind Neues?",
+         "____"
+        ],
+        [
+         "Arbeitsverhalten",
+         "Wie plant und hält es durch?",
+         "____"
+        ],
+        [
+         "Selbstständigkeit",
+         "Wie viel Anleitung braucht es?",
+         "____"
+        ],
+        [
+         "Belastbarkeit",
+         "Wie geht es mit Stress und Rückschlägen um?",
+         "____"
+        ],
+        [
+         "Sozialverhalten",
+         "Wie arbeitet es mit anderen zusammen?",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mindestens drei Beispiele pro Kriterium sammeln.",
+        "Entwicklung über die Zeit beschreiben (im Herbst, im Winter).",
+        "Bei unterschiedlichen Eindrücken im Kollegium absprechen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Das Raster dient der Beratung. Es ersetzt nicht Noten und Zeugnisse, die nach Landesrecht gelten."
+      },
+      {
+       "t": "quelle",
+       "x": "Rechtliche Gewichtung der Kriterien: Steckbrief Ihres Landes (Abschnitt H). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.20",
+     "titel": "Entscheidungsmatrix für Eltern",
+     "typ": "Vorlage",
+     "zweck": "Eltern bewerten Schulen nach eigenen Kriterien.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Die Matrix hilft Eltern, mehrere Schulen systematisch zu vergleichen. Jede Spalte bekommt Punkte von 1 (schwach) bis 5 (sehr gut). Wichtig ist, dass zuerst die Kriterien nach Wichtigkeit gewichtet werden."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Kriterium",
+        "Wichtigkeit 1–3",
+        "Schule A",
+        "Schule B",
+        "Schule C"
+       ],
+       "zeilen": [
+        [
+         "Passt zum Lerntempo des Kindes",
+         "____",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Schulweg und Verkehr",
+         "____",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Ganztag und Betreuung",
+         "____",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Sprachenfolge",
+         "____",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Schulklima, Atmosphäre beim Besuch",
+         "____",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Freunde und Bezugspersonen",
+         "____",
+         "____",
+         "____",
+         "____"
+        ],
+        [
+         "Abschlussmöglichkeiten",
+         "____",
+         "____",
+         "____",
+         "____"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Auswertung"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Wichtigkeit mit dem Punktwert multiplizieren.",
+        "Summen je Schule bilden.",
+        "Ergebnis nicht als Urteil, sondern als Gesprächsgrundlage nutzen."
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Was fällt auf? Was sagt das Bauchgefühl?"
+      },
+      {
+       "t": "hinweis",
+       "x": "Wer die Matrix nutzt, soll sein Kind einbeziehen. Seine Eindrücke vom Schulbesuch zählen."
+      }
+     ]
+    },
+    {
+     "id": "4.21",
+     "titel": "Elternfragebogen vor der Beratung",
+     "typ": "Fragebogen",
+     "zweck": "Eltern denken vor dem Gespräch nach und bringen ihre Sicht mit.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Bogen kann zu Hause ausgefüllt und zum Gespräch mitgebracht werden. Er ist freiwillig und wird vertraulich behandelt. Anrede in Sie-Form; für Du-Schulen bitte anpassen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Datum",
+        "Ausgefüllt von"
+       ]
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Mein Kind geht gern zur Schule",
+        "Mein Kind erledigt Hausaufgaben weitgehend selbstständig",
+        "Mein Kind liest zu Hause von sich aus",
+        "Mein Kind kann mit Misserfolgen umgehen",
+        "Mein Kind hat Freunde in der Klasse"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Offene Fragen"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Was läuft besonders gut?"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Was macht Ihnen Sorgen?"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Welche Schulart haben Sie im Blick, und warum?"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Welche Fragen sollen wir im Gespräch klären?"
+      },
+      {
+       "t": "hinweis",
+       "x": "Bewerten Sie die Antworten nie als Test. Sie sind ein Zeichen, wie Eltern ihr Kind erleben."
+      }
+     ]
+    },
+    {
+     "id": "4.22",
+     "titel": "Fragebogen für Kinder: Meine neue Schule",
+     "typ": "Fragebogen",
+     "zweck": "Kinder sammeln Gedanken und Wünsche zum Wechsel.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Das Blatt ist als kleines Gespräch gedacht. Die Kinder können zeichnen oder schreiben."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name",
+        "Datum"
+       ]
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich freue mich auf neue Fächer",
+        "Ich mache mir Sorgen, dass ich keinen Freund finde",
+        "Ich weiß, wie ich zur neuen Schule komme",
+        "Ich fühle mich gut vorbereitet"
+       ],
+       "stufen": [
+        "stimmt",
+        "stimmt ein bisschen",
+        "stimmt eher nicht",
+        "stimmt nicht"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das wünsche ich mir von meiner neuen Schule:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Davor habe ich noch Angst:"
+      },
+      {
+       "t": "linien",
+       "n": 2,
+       "x": "Das möchte ich meinen Eltern sagen:"
+      },
+      {
+       "t": "hinweis",
+       "x": "Lesen Sie die Antworten ernst, aber werten Sie nicht aus. Bieten Sie bei auffälligen Antworten ein Einzelgespräch an."
+      }
+     ]
+    },
+    {
+     "id": "4.23",
+     "titel": "Checkliste für Eltern: Der Weg bis zur Anmeldung",
+     "typ": "Checkliste",
+     "zweck": "Eltern behalten den Überblick über Schritte und Fristen.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "check",
+       "x": [
+        "Informationsabend der Grundschule besucht",
+        "Beratungsgespräch geführt",
+        "Empfehlung oder Zeugnis erhalten",
+        "Tage der offenen Tür besucht",
+        "Mit dem Kind über die Wünsche gesprochen",
+        "Schulweg angesehen",
+        "Betreuungsangebote geprüft",
+        "Anmeldefrist notiert",
+        "Unterlagen kopiert",
+        "Anmeldung abgegeben",
+        "Rückmeldung der Schule abgewartet",
+        "Plan B überlegt (zweite Wahl, Wechselmöglichkeit)"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Wichtige Unterlagen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Geburtsurkunde oder Familienbuch",
+        "Aktuelles Zeugnis bzw. Empfehlung",
+        "Impfnachweis nach Landesvorgabe",
+        "Sorgerechtsnachweis, falls nötig"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Unterlagen und Fristen unterscheiden sich je nach Land und Schule. Verlassen Sie sich auf das Schreiben der aufnehmenden Schule."
+      },
+      {
+       "t": "quelle",
+       "x": "Steckbrief Ihres Landes (Abschnitt H) und Anmeldeschreiben der weiterführenden Schule. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "titel": "Briefe und Formulare",
+   "module": [
+    {
+     "id": "4.24",
+     "titel": "Brief: Beratungsgespräche ankündigen",
+     "typ": "Brief",
+     "zweck": "Termine und Hinweise für die Beratungsgespräche.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den kommenden Wochen führe ich mit allen Eltern ein Beratungsgespräch zum Übertritt Ihres Kindes. Das Gespräch dauert etwa 30 Minuten. Wir sprechen über Stärken, Lernentwicklung und passende Schularten. Ihre Sicht ist uns wichtig.\n\nBitte tragen Sie sich bis ____ in die Terminliste ein oder geben Sie den Abschnitt unten zurück. Wenn Sie einen Dolmetscher oder eine Begleitperson wünschen, geben Sie das bitte an.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form: Liebe Eltern, in den nächsten Wochen spreche ich mit allen Eltern über den Übertritt. Wir nehmen uns etwa 30 Minuten. Bitte tragt Euch bis ____ in die Terminliste ein oder gebt den Abschnitt zurück. Wenn Ihr eine Begleitperson oder einen Dolmetscher braucht, gebt es kurz an. Viele Grüße, [Name]"
+      },
+      {
+       "t": "h",
+       "x": "Terminabschnitt"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Wunschtermin 1",
+        "Wunschtermin 2",
+        "Begleitperson oder Dolmetscher (ja oder nein)"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bieten Sie mindestens eine Abendoption oder einen Telefontermin an."
+      },
+      {
+       "t": "quelle",
+       "x": "Terminrahmen: Steckbrief Ihres Landes (Abschnitt H). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.25",
+     "titel": "Brief: Rückmeldung nach der Beratung",
+     "typ": "Brief",
+     "zweck": "Das Gespräch schriftlich zusammenfassen.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Frau / sehr geehrter Herr ____,\n\nvielen Dank für das offene Gespräch am ____. Ich fasse zusammen: [Name] zeigt Stärken bei ____ und entwickelt sich weiter bei ____. Ich habe Ihnen die Schulart ____ empfohlen, weil ____.\n\nAls nächste Schritte haben wir vereinbart: ____. Die Anmeldefrist endet am ____. Bei Fragen erreichen Sie mich unter ____.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form: Liebe Eltern von [Name], danke für das offene Gespräch am ____. Kurz zusammengefasst: [Name] ist stark bei ____ und entwickelt sich bei ____. Ich empfehle ____, weil ____. Nächste Schritte: ____. Anmeldeschluss ist ____. Meldet Euch gern, wenn Ihr Fragen habt. Viele Grüße, [Name]"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Datum und Inhalt mit dem Protokoll abgeglichen",
+        "Empfehlung sachlich begründet",
+        "Verfahren und Fristen genannt",
+        "Hinweis auf weitere Beratungsstellen ergänzt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Schreiben Sie nur, was auch im Gespräch gesagt wurde. Überraschungen im Brief wirken wie ein Urteil."
+      },
+      {
+       "t": "quelle",
+       "x": "Siehe Steckbrief Ihres Landes (Abschnitt H). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.26",
+     "titel": "Brief: Probeunterricht und Aufnahmeverfahren",
+     "typ": "Brief",
+     "zweck": "Eltern über Probeunterricht oder Aufnahmeverfahren informieren, wo es ihn gibt.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Probeunterricht, Eignungsprüfung oder Aufnahmeverfahren gibt es in einzelnen Ländern (zum Beispiel Bayern, Berlin, Brandenburg, Sachsen, Thüringen) und je nach Schulart. Nutzen Sie den Baustein nur, wenn das Verfahren in Ihrem Land gilt."
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nIhr Kind kann die Voraussetzung für die gewünschte Schulart durch einen Probeunterricht nachweisen. Er findet am ____ in der Schule ____ statt. Die Anmeldung läuft bis ____. Geprüft werden ____. Bitte bringen Sie Ihr Kind pünktlich und mit Schreibmaterial.\n\nSie können Ihr Kind vorbereiten, indem Sie ____. Wir empfehlen kein intensives Training, sondern Ruhe und ausreichend Schlaf.\n\nBei Fragen wenden Sie sich an ____.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "h",
+       "x": "Tipps für Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Prüfungsablauf mit dem Kind besprechen.",
+        "Kein Druck, kein Stoff nacharbeiten kurz davor.",
+        "Ausreichend Frühstück, Wasser, Puffer für den Weg."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Voraussetzungen und Termine des Probeunterrichts sind in den Ländern unterschiedlich geregelt. Nennen Sie in jedem Fall die Rechtsgrundlage Ihres Landes."
+      },
+      {
+       "t": "quelle",
+       "x": "Probeunterricht: Schulordnung des Landes, siehe Steckbrief Abschnitt H. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.27",
+     "titel": "Brief: Erinnerung an die Anmeldefrist",
+     "typ": "Brief",
+     "zweck": "Eltern rechtzeitig an Fristen erinnern.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nwir möchten Sie erinnern: Die Anmeldung an der weiterführenden Schule ist vom ____ bis ____ möglich. Bitte denken Sie an die Unterlagen: ____. Wenn Sie eine Schule außerhalb Ihres Einzugsbereichs wählen, prüfen Sie die dort geltenden Aufnahmekriterien.\n\nWenn Sie sich noch unsicher sind, bieten wir Ihnen gern ein kurzes Gespräch an. Rufen Sie uns an oder schreiben Sie.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Zusammen mit dem Brief die Liste der Tage der offenen Tür verteilen.",
+        "Fristen im Elternkalender der Klasse markieren.",
+        "Bei Familien mit Sprachbarriere mündlich erinnern."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Fristversäumnisse sind der häufigste vermeidbare Fehler. Eine zweite Erinnerung ist ein Service."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Brief versendet",
+        "Frist im Klassenkalender",
+        "Familien mit Beratungsbedarf nachgefragt"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Siehe Steckbrief Ihres Landes (Abschnitt H). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "titel": "Besondere Situationen",
+   "module": [
+    {
+     "id": "4.28",
+     "titel": "Nachteilsausgleich und Übertritt",
+     "typ": "Leitfaden",
+     "zweck": "Sonderregelungen beim Übertritt für Kinder mit Beeinträchtigung.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Kinder mit Beeinträchtigungen, Lese-Rechtschreib-Störung oder Förderbedarf können Anspruch auf Nachteilsausgleich haben. Er gilt auch bei Prüfungen und bei Verfahren zum Übertritt. Die Voraussetzungen regeln die Länder unterschiedlich."
+      },
+      {
+       "t": "h",
+       "x": "Was zu klären ist"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Liegt ein Nachteilsausgleich oder Förderplan vor?",
+        "Gilt er im Übertrittsverfahren und im Probeunterricht?",
+        "Welche Unterlagen braucht die aufnehmende Schule?",
+        "Haben die Eltern der Weitergabe zugestimmt?",
+        "Welche Förderung setzt sich in der weiterführenden Schule fort?"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, [Name] hat in der Grundschule einen Nachteilsausgleich erhalten, zum Beispiel ____. Damit er an der neuen Schule fortgeführt werden kann, ist es wichtig, die weiterführende Schule rechtzeitig zu informieren. Mit Ihrem Einverständnis gebe ich die nötigen Unterlagen weiter."
+      },
+      {
+       "t": "hinweis",
+       "x": "Beraten Sie nicht nach Diagnose, sondern nach Bedürfnissen. Fragen Sie die aufnehmende Schule nach ihren Möglichkeiten."
+      },
+      {
+       "t": "quelle",
+       "x": "Nachteilsausgleich: Erlasse und Verordnungen der Länder; Überblick: https://www.bildungsserver.de, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.29",
+     "titel": "Kinder mit Deutsch als Zweitsprache",
+     "typ": "Leitfaden",
+     "zweck": "Familien mit anderer Erstsprache beim Übertritt gut begleiten.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Eltern aus anderen Ländern kennen das Schulsystem oft nicht. Sie vermuten manchmal, die Schulart entscheide über die ganze Zukunft. Klare Information und, wenn möglich, Unterstützung durch Dolmetscher bauen Barrieren ab."
+      },
+      {
+       "t": "h",
+       "x": "Empfehlungen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Elternbriefe einfach schreiben, kurze Sätze, Übersetzungshilfen nutzen.",
+        "Bei Bedarf Sprachmittler oder Dolmetscher für das Gespräch.",
+        "Fristen und Schritte als Bildfolge darstellen.",
+        "Die Mehrsprachigkeit als Stärke benennen.",
+        "Auf Unterstützungsangebote der Kommune hinweisen."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Wir freuen uns, wenn Sie gemeinsam mit uns den besten Weg für Ihr Kind finden. In unserem Schulsystem gibt es mehrere Wege zu den gleichen Abschlüssen. Wenn Sie nicht sicher sind, was die Briefe bedeuten, fragen Sie uns. Wir erklären es gern und, wenn nötig, mit einer Dolmetscherin."
+      },
+      {
+       "t": "hinweis",
+       "x": "Beurteilen Sie die Sprachkompetenz in der Zweitsprache getrennt von der fachlichen Eignung. Ein Kind kann gute Mathematikleistungen haben, auch wenn die Sprache noch wächst."
+      },
+      {
+       "t": "quelle",
+       "x": "Informationen für Zugewanderte: Kultusministerien der Länder bzw. Integrationsbeauftragte, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.30",
+     "titel": "Durchlässigkeit und Wechsel später",
+     "typ": "Übersicht",
+     "zweck": "Wege zum Wechsel zwischen Schularten erklären.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Alle Länder sehen vor, dass Schülerinnen und Schüler bei Eignung die Schulart wechseln können. Die Regeln dafür sind unterschiedlich: oft nach Klasse 5 oder 6, nach dem Halbjahreszeugnis oder mit Eignungsprüfung."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Richtung",
+        "Typische Voraussetzungen",
+        "Hinweis"
+       ],
+       "zeilen": [
+        [
+         "nach oben (zum Beispiel zur Realschule, zum Gymnasium)",
+         "Notenschnitt, Empfehlung, ggf. Probeunterricht",
+         "Fristen beachten"
+        ],
+        [
+         "nach unten",
+         "Beschluss der Klassenkonferenz oder Elternantrag",
+         "oft nach Beratung"
+        ],
+        [
+         "Abschluss später",
+         "Weg über berufliche Schulen, Abendschulen",
+         "Mittlerer Schulabschluss, Fachhochschulreife, Abitur"
+        ]
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Auch wenn Ihr Kind jetzt einen anderen Weg geht als erwartet, ist das kein Endpunkt. Viele Jugendliche erreichen das Abitur oder die Fachhochschulreife über andere Wege. Wir zeigen Ihnen gern, wie das in unserem Land funktioniert."
+      },
+      {
+       "t": "hinweis",
+       "x": "Nennen Sie konkrete Wege Ihres Landes, nicht nur das Prinzip."
+      },
+      {
+       "t": "quelle",
+       "x": "Durchlässigkeit: KMK, https://www.kmk.org, und Schulgesetz des Landes, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.31",
+     "titel": "Förderbedarf, Inklusion und besondere Begabung",
+     "typ": "Leitfaden",
+     "zweck": "Besondere Wege beim Übertritt: inklusive Beschulung, Förderschule, Begabtenförderung.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Je nach Land bestehen unterschiedliche Strukturen: inklusive Beschulung an Regelschulen, Förderzentren, Förderschulen oder besondere Angebote für besonders begabte Kinder. Die Entscheidung trifft in der Regel das zuständige Schulamt oder die Schulaufsicht gemeinsam mit den Eltern."
+      },
+      {
+       "t": "h",
+       "x": "Fragen im Gespräch"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Schule kann den Förderbedarf am besten erfüllen?",
+        "Welche Unterstützung (Schulbegleitung, Förderlehrkraft) steht zu?",
+        "Wie wird der Wechsel vorbereitet?",
+        "Wer ist Ansprechpartner an der neuen Schule?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Besondere Begabung"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Beratung durch Schulpsychologie bei Verdacht.",
+        "Angebote prüfen: Überspringen, Begabtenklassen, Mentoring.",
+        "Soziale Entwicklung im Blick behalten."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Sagen Sie nie Ihr Kind ist hochbegabt, wenn keine Diagnostik vorliegt. Beschreiben Sie, was Sie sehen."
+      },
+      {
+       "t": "quelle",
+       "x": "Inklusion und Förderschulen: Sonderpädagogik-Verordnungen der Länder; Überblick: https://www.bildungsserver.de, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.32",
+     "titel": "Typische Fehler vermeiden",
+     "typ": "Checkliste",
+     "zweck": "Häufige Stolperfallen im Übertrittsverfahren.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "check",
+       "x": [
+        "Zu spät mit der Beratung beginnen",
+        "Nur Noten besprechen, nicht das Gesamtbild",
+        "Eltern mit Fachbegriffen überfordern",
+        "Etiketten statt Beobachtungen nutzen",
+        "Fristen nicht schriftlich mitgeben",
+        "Empfehlung mündlich anders darstellen als schriftlich",
+        "Auf Elternwünsche gereizt reagieren",
+        "Datenschutz im Flur verletzen",
+        "Kinder vor der Klasse vergleichen",
+        "Wechselwege verschweigen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Besser so"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Früh beginnen, gut dokumentieren, ehrlich und wertschätzend beraten.",
+        "Alle Termine schriftlich mitgeben.",
+        "Rückfragen annehmen und zeitnah beantworten."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wenn ein Gespräch eskaliert, beenden Sie es ruhig und bieten einen zweiten Termin mit Schulleitung an."
+      },
+      {
+       "t": "baustein",
+       "x": "Ich merke, dass das Thema Sie sehr bewegt. Ich möchte, dass wir in Ruhe darüber sprechen. Lassen Sie uns einen zweiten Termin vereinbaren, bei dem auch die Schulleitung dabei ist."
+      }
+     ]
+    },
+    {
+     "id": "4.33",
+     "titel": "Umgang mit Druck und Ängsten",
+     "typ": "Leitfaden",
+     "zweck": "Eltern und Kinder in der Phase der Entscheidung entlasten.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Übertritt löst Ängste aus: Eltern fürchten falsche Entscheidungen, Kinder fürchten Zurückweisung. Ihre Ruhe ist die beste Hilfe."
+      },
+      {
+       "t": "h",
+       "x": "Für Kinder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Sprechen Sie offen über Ängste im Klassenkreis.",
+        "Gestalten Sie Rituale des Abschieds.",
+        "Betonen Sie: Wer lernt, ist wertvoll, unabhängig von der Schulart."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Für Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Nach Sorgen fragen, nicht beschwichtigen.",
+        "Auf Beratungsangebote verweisen (Schulpsychologie, Erziehungsberatung).",
+        "Familien vernetzen (Elternstammtisch)."
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Ich weiß, wie viel Druck in dieser Zeit entsteht. Bitte denken Sie daran: Ihr Kind spürt Ihre Anspannung. Sagen Sie ihm: Wir finden eine Schule, in der du dich wohlfühlst und lernen kannst."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Klassengespräch über Gefühle durchgeführt",
+        "Beratungsstellen genannt",
+        "Entspannungsübung eingeführt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei starker Belastung eines Kindes (Schlafprobleme, Bauchschmerzen) empfehlen Sie ein Gespräch mit Schulpsychologie oder Kinderarzt."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "G",
+   "titel": "Den Übergang gestalten",
+   "module": [
+    {
+     "id": "4.34",
+     "titel": "Kennenlerntag und Besuch der neuen Schule",
+     "typ": "Leitfaden",
+     "zweck": "Einen Besuchstag vorbereiten, der Ängste mindert.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Viele weiterführende Schulen bieten im Frühsommer einen Kennenlerntag oder Schnuppertag an. Ein enger Kontakt mit den Lehrkräften der aufnehmenden Schule erleichtert den Wechsel."
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Termin mit der weiterführenden Schule abstimmen.",
+        "Eltern informieren, Einverständnis einholen.",
+        "Fragen der Kinder vorher sammeln.",
+        "Besuch begleiten oder Patenschüler organisieren.",
+        "Nachbesprechung in der Klasse (Eindrücke, Offene Fragen)."
+       ]
+      },
+      {
+       "t": "check",
+       "x": [
+        "Termin vereinbart",
+        "Elternbrief verschickt",
+        "Busfahrt oder Schulweg geklärt",
+        "Fragensammlung erstellt",
+        "Nachbesprechung geplant"
+       ]
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Ich habe jemanden Neues kennengelernt",
+        "Ich weiß, wo ich Hilfe bekomme",
+        "Ich fand den Besuch gut"
+       ],
+       "stufen": [
+        "ja",
+        "eher ja",
+        "eher nein",
+        "nein"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht jedes Kind besucht die gleiche Schule. Gestalten Sie die Nachbesprechung so, dass jedes Kind seine Eindrücke teilen kann."
+      },
+      {
+       "t": "quelle",
+       "x": "Übergangsgestaltung: Schulgesetz und Übergangsverordnung des Landes, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.35",
+     "titel": "Übergabebogen an die weiterführende Schule",
+     "typ": "Vorlage",
+     "zweck": "Informationen weitergeben, soweit rechtlich vorgesehen und mit Einverständnis.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Je nach Land gibt es einen vorgesehenen Übergabebogen oder ein Übergabegespräch. Nutzen Sie den folgenden Bogen, wenn Ihr Land keinen eigenen Vordruck vorsieht, und nur mit dem Einverständnis der Eltern."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Geburtsdatum",
+        "Bisherige Klassenlehrkraft",
+        "Datum"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Lernen und Arbeiten"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Stärken"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Förderbedarf und bisherige Unterstützung"
+      },
+      {
+       "t": "h",
+       "x": "Soziales"
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Verhalten in der Gruppe, Freundschaften"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Arbeitet selbstständig",
+        "Hält Absprachen ein",
+        "Geht mit Konflikten konstruktiv um"
+       ],
+       "stufen": [
+        "sicher",
+        "überwiegend",
+        "teilweise",
+        "noch nicht"
+       ]
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Einverständnis der Eltern liegt vor (ja oder nein)",
+        "Unterschrift Lehrkraft",
+        "Unterschrift Eltern"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nur Informationen weitergeben, die für den Schulstart nötig sind. Keine Diagnosen ohne Einverständnis."
+      },
+      {
+       "t": "quelle",
+       "x": "Übergabe von Schülerdaten: Schul- und Datenschutzvorschriften des Landes, Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.36",
+     "titel": "Abschied von der Grundschule",
+     "typ": "Leitfaden",
+     "zweck": "Eine kleine Abschiedskultur für Klasse 4.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Der Abschied bleibt oft in Erinnerung. Ein einfaches Ritual ist wertvoller als ein großes Fest."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Erinnerungsbuch mit Seiten für jedes Kind",
+        "Brief an mein zukünftiges Ich",
+        "Abschiedsrunde im Klassenkreis",
+        "Wegbegleiter-Karten von Mitschülern",
+        "Gemeinsames Foto der Klasse (mit Einverständnis)"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Kinder, vier Jahre lang habt ihr hier gelernt, gelacht und gestritten. Ihr habt viel geschafft. Nehmt mit, was ihr gelernt habt: Fragen zu stellen, Hilfe zu holen und anderen zu helfen. Ich wünsche euch einen guten Start an der neuen Schule."
+      },
+      {
+       "t": "check",
+       "x": [
+        "Abschiedsrunde terminiert",
+        "Erinnerungsbuch vorbereitet",
+        "Eltern informiert",
+        "Zeugnisse bereit"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Beziehen Sie Kinder ein, die an eine andere Schule gehen als die Mehrheit. Ihnen fällt der Abschied oft besonders schwer."
+      }
+     ]
+    },
+    {
+     "id": "4.37",
+     "titel": "Nachbereitung und Reflexion für die Lehrkraft",
+     "typ": "Checkliste",
+     "zweck": "Das Übertrittsjahr auswerten und für den nächsten Jahrgang lernen.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "check",
+       "x": [
+        "Rückmeldungen der Eltern gesammelt",
+        "Eigene Beratungsgespräche reflektiert",
+        "Zeitplan und Briefe überarbeitet",
+        "Offene Fragen an Schulleitung weitergegeben",
+        "Rückmeldung der weiterführenden Schule (nach Möglichkeit) eingeholt",
+        "Unterlagen datenschutzkonform abgelegt"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Reflexionsfragen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Was hat gut funktioniert?",
+        "Welche Eltern hätte ich früher erreichen sollen?",
+        "Welche Formulierungen haben geholfen?",
+        "Was würde ich beim nächsten Mal anders machen?"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Meine Erkenntnisse und Vorsätze"
+      },
+      {
+       "t": "hinweis",
+       "x": "Eine kurze Auswertung mit den Kolleginnen und Kollegen der Parallelklassen spart im nächsten Jahr viel Zeit."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "titel": "Steckbriefe der 16 Bundesländer",
+   "module": [
+    {
+     "id": "4.38",
+     "titel": "Steckbrief Baden-Württemberg",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Baden-Württemberg auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Baden-Württemberg arbeitet mit der Grundschulempfehlung, die die Grundschule auf Grundlage der Halbjahresinformation der Klasse 4 und eines Beratungsgesprächs erstellt. Die Rechtslage zur Verbindlichkeit ist in Bewegung; die Landesregierung hat die verbindliche Vorlage der Empfehlung bei der weiterführenden Schule vorgeschlagen."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratungsgespräch zwischen Grundschule und Eltern, Grundschulempfehlung nach Halbjahresinformation Klasse 4; ergänzend Kompetenzmessung Kompass 4 (Institut für Bildungsanalysen)."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nach geltendem Recht entscheiden die Eltern (seit 2012). Die verbindliche Vorlagepflicht der Empfehlung war 2026 in Vorbereitung; den Stand bitte beim Kultusministerium prüfen."
+        ],
+        [
+         "Fristen und Termine",
+         "Beratungsgespräche im Winterhalbjahr; Anmeldung an der weiterführenden Schule im Frühjahr (meist März und April). Genaue Termine veröffentlicht das Ministerium jährlich."
+        ],
+        [
+         "Schularten",
+         "Werkrealschule bzw. Hauptschule, Realschule, Gemeinschaftsschule, Gymnasium (G9-Rückkehr stufenweise ab 2025/26), berufliche Schulen später."
+        ],
+        [
+         "Besonderheiten",
+         "Weicht die Schulwahl der Eltern von der Empfehlung ab, kann die aufnehmende Schule ein Beratungsgespräch anbieten. Gemeinschaftsschulen arbeiten mit Niveaustufen."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Baden-Württemberg klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Baden-Württemberg gilt für den Wechsel nach der Grundschule: Die Grundschule gibt eine Empfehlung, die Anmeldung erfolgt im Frühjahr, die Regeln zur Verbindlichkeit werden derzeit überarbeitet. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://km-bw.de (Grundschule, Übergang auf weiterführende Schulen) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.39",
+     "titel": "Steckbrief Bayern",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Bayern auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Bayern hat das strengste Zugangsmodell: Der Notendurchschnitt im Übertrittszeugnis entscheidet, welche Schulart ohne weitere Prüfung offensteht. Der Probeunterricht eröffnet einen zweiten Weg."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Übertrittszeugnis Anfang Mai der Klasse 4 mit Notendurchschnitt aus Deutsch, Mathematik und Heimat- und Sachunterricht; ab Dezember Beratungsgespräche und Informationsabende; Einschreibung an der gewünschten Schule im Mai."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Der Notendurchschnitt ist maßgeblich: Gymnasium ohne Probeunterricht bei einem Durchschnitt von 2,33 oder besser, Realschule bei 2,66 oder besser (Angaben nach der Schulordnung, bitte aktuell prüfen). Mittelschule steht allen offen."
+        ],
+        [
+         "Fristen und Termine",
+         "Beratungstermine ab Dezember; Übertrittszeugnis in der ersten Maiwoche; Einschreibung und Probeunterricht im Mai (2026 laut Schulen etwa Mitte bis Ende Mai); Nachholtermine nach den Sommerferien."
+        ],
+        [
+         "Schularten",
+         "Mittelschule (Mittlerer Schulabschluss M-Zug), Realschule, Gymnasium (G9), Wirtschaftsschule, berufliche Schulen."
+        ],
+        [
+         "Besonderheiten",
+         "Probeunterricht (Deutsch, Mathematik) für Kinder, die den Schnitt nicht erreichen; erweiterte Übertrittsphase in Klasse 5/6, Brückenangebote, Wechsel in den ersten beiden Jahren erleichtert."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Bayern klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Bayern gilt für den Wechsel nach der Grundschule: Ein Notendurchschnitt im Übertrittszeugnis entscheidet, welche Schulart ohne Probeunterricht möglich ist; wer den Schnitt nicht erreicht, kann den Probeunterricht besuchen. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.km.bayern.de und https://www.gesetze-bayern.de (Bayerische Schulordnung für Grundschulen, Verordnung zum Übertritt) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.40",
+     "titel": "Steckbrief Berlin",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Berlin auf einen Blick.",
+     "stufe": "Kl. 4–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Berlin dauert die Grundschule bis Klasse 6. Der Wechsel zur Integrierten Sekundarschule, Gemeinschaftsschule oder zum Gymnasium steht erst nach Klasse 6 an. Klasse 4 ist das Beratungsjahr. Die Berliner Regeln wurden zuletzt verschärft."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Förderprognose der Grundschule auf Grundlage der Noten in Deutsch, Mathematik und erster Fremdsprache; Anmeldung an der Wunschschule im Frühjahr der Klasse 6; Probeunterricht für das Gymnasium bei Werten im Mittelbereich."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Teilweise: Bei einer Notensumme bis zu einem festgelegten Wert (nach Angaben der Senatsverwaltung rechnerisch etwa Durchschnitt 2,3) wird das Gymnasium empfohlen; zwischen etwa 2,3 und 2,7 ist die Eignung durch einen Probeunterricht nachzuweisen. Bitte aktuelle Verordnung prüfen."
+        ],
+        [
+         "Fristen und Termine",
+         "Förderprognose mit dem Halbjahreszeugnis Klasse 6; Anmeldung für den Probeunterricht Anfang Februar, Probeunterricht Mitte bis Ende Februar, Anmeldung an der Schule im März (für 2027 inoffiziell genannt, bitte Senatsseite prüfen)."
+        ],
+        [
+         "Schularten",
+         "Integrierte Sekundarschule, Gemeinschaftsschule, Gymnasium; Schulen mit besonderen Profilen (Musik, Sport, Schnelllerner ab Klasse 5 an einigen Gymnasien)."
+        ],
+        [
+         "Besonderheiten",
+         "Grundschule bis Klasse 6. Besondere Angebote ab Klasse 5 mit eigenem Auswahlverfahren. Das Ergebnis der Prognose steht schriftlich auf dem Anmeldebogen."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Berlin klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Berlin gilt für den Wechsel nach der Grundschule: Die Grundschule dauert bis Klasse 6, der Wechsel ist erst danach; schon in Klasse 4 und 5 beraten wir Sie zu besonderen Angeboten. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.berlin.de/sen/bildung/schule/bildungswege/uebergang-weiterfuehrende-schule/ ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.41",
+     "titel": "Steckbrief Brandenburg",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Brandenburg auf einen Blick.",
+     "stufe": "Kl. 4–6",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Brandenburg dauert die Grundschule bis Klasse 6. Die Bildungsgangempfehlung wird im Halbjahr der Klasse 6 ausgesprochen. In Klasse 4 beraten Sie vor allem zu frühen Angeboten (Leistungs- und Begabungsklassen ab Klasse 5)."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Bildungsgangempfehlung im Halbjahreszeugnis der Klasse 6; Anmeldung an der weiterführenden Schule im Winter und Frühjahr; Probeunterricht, wenn der Schnitt für das Gymnasium nicht erreicht wird."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Teilweise: Für das Gymnasium wird nach Angaben des Landes ein Notendurchschnitt von mindestens 2,3 (Deutsch und Mathematik dreifach, Englisch zweifach gewichtet) verlangt; sonst Eignungsprüfung. Bitte aktuelle Verordnung prüfen."
+        ],
+        [
+         "Fristen und Termine",
+         "Beratung ab Klasse 5/6; Halbjahreszeugnis Klasse 6 im Winter; Anmeldung im Januar bis Februar (örtlich verschieden, Schulamt fragen)."
+        ],
+        [
+         "Schularten",
+         "Oberschule, Gesamtschule, Gymnasium, Förderschulen, berufliche Schulen später; Sonderformen wie Leistungs- und Begabungsklassen ab Klasse 5."
+        ],
+        [
+         "Besonderheiten",
+         "Grundschule bis Klasse 6; Eignungsprüfung (Probeunterricht) wird von den Staatlichen Schulämtern organisiert."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Brandenburg klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Brandenburg gilt für den Wechsel nach der Grundschule: Bei uns dauert die Grundschule bis Klasse 6. Die Empfehlung gibt es im Halbjahr der Klasse 6; Beratung und Information beginnen schon früher. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://mbjs.brandenburg.de (Übergang in die Sekundarstufe I, Jahrgangsstufe 6) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.42",
+     "titel": "Steckbrief Bremen",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Bremen auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Bremen kennt eine vierjährige Grundschule und danach die Wahl zwischen Oberschule und Gymnasium. Die Entscheidung liegt bei den Eltern, die Grundschule berät."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratungsgespräch mit Übergangsempfehlung der Grundschule im Wintersemester der Klasse 4; Anmeldung an der gewünschten Schule im Frühjahr."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nach der Rechtslage entscheiden die Eltern; die Empfehlung berät (Elternwille)."
+        ],
+        [
+         "Fristen und Termine",
+         "Fristen gibt die Senatorin für Kinder und Bildung jährlich bekannt, in der Regel im Winter bis Frühjahr. Bitte aktuelle Termine abfragen."
+        ],
+        [
+         "Schularten",
+         "Oberschule (mit Abitur nach neun Jahren), Gymnasium, Förderzentren; Schulen im Land Bremen und Bremerhaven."
+        ],
+        [
+         "Besonderheiten",
+         "Bei Überanmeldung gelten Aufnahmekriterien (zum Beispiel Wohnortnähe, Geschwister). Bremerhaven hat eigene Regeln."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Bremen klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Bremen gilt für den Wechsel nach der Grundschule: Sie entscheiden gemeinsam mit uns; die Grundschule gibt eine Übergangsempfehlung, die Anmeldung erfolgt im Frühjahr. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.bildung.bremen.de (Übergang in die Sekundarstufe I) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.43",
+     "titel": "Steckbrief Hamburg",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Hamburg auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Hamburg wählen Eltern nach dem Beratungsgespräch zwischen Gymnasium und Stadtteilschule. Die Schullaufbahnempfehlung wird von der Grundschule ausgesprochen und ist nicht bindend."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratungsgespräch mit Schullaufbahnempfehlung; Anmeldung an der gewünschten weiterführenden Schule im Winter und Frühjahr; zentrales Anmeldeverfahren."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nein. Die Empfehlung ist nicht bindend; Eltern können ihr Kind an der anderen Schulform anmelden."
+        ],
+        [
+         "Fristen und Termine",
+         "Anmeldefristen für Klasse 5 gibt die Behörde für Schule, Familie und Berufsbildung jährlich gesondert bekannt, üblicherweise Anfang des Jahres."
+        ],
+        [
+         "Schularten",
+         "Stadtteilschule (Abitur nach 13 Jahren), Gymnasium (Abitur nach 12 Jahren), Förderschulen und Regionale Bildungs- und Beratungszentren."
+        ],
+        [
+         "Besonderheiten",
+         "Wechsel zur Stadtteilschule unter bestimmten Voraussetzungen möglich; Kinder aus anderen Ländern nur nach Gastschulabkommen bei freien Plätzen."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Hamburg klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Hamburg gilt für den Wechsel nach der Grundschule: In Hamburg beraten wir Sie, die Entscheidung liegt bei Ihnen. Die Anmeldefristen gibt die Behörde jährlich bekannt. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.hamburg.de/bsfb/ (Anmeldung Klasse 5) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.44",
+     "titel": "Steckbrief Hessen",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Hessen auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Hessen wählen die Eltern den Bildungsgang. Die Grundschule gibt eine Schulformempfehlung und führt Beratungsgespräche. Die Schulleitung leitet den Elternwunsch an die gewählte Schule weiter."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratung und Schulformempfehlung im ersten Halbjahr der Klasse 4; Elternentscheidung, Anmeldung über die Grundschule; Information über die aufnehmende Schule im Frühsommer."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nein. Die Wahl des Bildungsgangs ist Sache der Eltern (Hessisches Schulgesetz)."
+        ],
+        [
+         "Fristen und Termine",
+         "Nach örtlichen Elternbriefen: Entscheidung bis etwa Anfang März, Anmeldung in den Wochen danach; Information zur Aufnahme im Juni. Termine variieren je Schulamtsbezirk."
+        ],
+        [
+         "Schularten",
+         "Hauptschule, Realschule, Gymnasium, Förderstufe, kooperative und integrierte Gesamtschule; Mittelstufenschule."
+        ],
+        [
+         "Besonderheiten",
+         "Regionale Angebote unterschiedlich; Kombination mehrerer Bildungsgänge an Gesamtschulen; Gymnasium mit neun Jahren (G9)."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Hessen klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Hessen gilt für den Wechsel nach der Grundschule: Sie wählen den Bildungsgang, wir beraten Sie, die Anmeldung läuft über die Grundschule. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://kultus.hessen.de/Schulsystem/Schulformen-und-Bildungsgaenge/Grundschule/Uebergang-von-4-nach-5 ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.45",
+     "titel": "Steckbrief Mecklenburg-Vorpommern",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Mecklenburg-Vorpommern auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Mecklenburg-Vorpommern hat ein zweigliedriges Schulsystem mit Regionaler Schule und Gymnasium sowie Gesamtschulen. Die Klassenstufen 5 und 6 sind nach den Angaben des Landes als gemeinsame Orientierungsstufe angelegt, die Durchlässigkeit zwischen den Schularten ist ein zentrales Ziel."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratung durch die Grundschule im vierten Schuljahr, Empfehlung der Grundschule, Anmeldung durch die Eltern an der weiterführenden Schule."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nach den verfügbaren Angaben entscheiden die Eltern; die Empfehlung ist nicht bindend. Bitte beim Bildungsministerium prüfen."
+        ],
+        [
+         "Fristen und Termine",
+         "Anmeldung meist im Frühjahr (genaue Termine nicht belegt, bitte Schulamt oder weiterführende Schule fragen)."
+        ],
+        [
+         "Schularten",
+         "Regionale Schule, Gymnasium, Kooperative und Integrierte Gesamtschule, Förderschulen, berufliche Schulen."
+        ],
+        [
+         "Besonderheiten",
+         "Orientierungsstufe in Klasse 5 und 6; nach Klasse 6 kann über die Schullaufbahn erneut entschieden werden."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Mecklenburg-Vorpommern klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Mecklenburg-Vorpommern gilt für den Wechsel nach der Grundschule: In Mecklenburg-Vorpommern beraten wir Sie in Klasse 4; Sie melden Ihr Kind an. Die Klassen 5 und 6 sind eine gemeinsame Orientierungsphase. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.regierung-mv.de/Landesregierung/bm/Schule/Schulorganisation/Schulsystem-im-Ueberblick/ ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.46",
+     "titel": "Steckbrief Niedersachsen",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Niedersachsen auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Niedersachsen entscheiden die Eltern. Die Grundschule gibt auf Grundlage des Halbjahreszeugnisses der Klasse 4 eine Empfehlung für die Schulform und berät die Eltern. Die Klassen 5 und 6 bilden eine Orientierungsstufe, die schulformbezogen oder schulformunabhängig organisiert ist."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Information und Beratung in den Klassen 3 und 4, Empfehlung rund fünf Wochen vor Ende des vierten Schuljahrgangs, Anmeldung durch die Eltern an der gewählten Schule; Informationsschreiben und Beratungsprotokoll des Kultusministeriums."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nein. Das Kultusministerium spricht vom freien Elternwillen."
+        ],
+        [
+         "Fristen und Termine",
+         "Beratung im ersten Halbjahr der Klasse 4; Anmeldung in den Wochen nach dem Halbjahreszeugnis (Februar bis März); Termine bei der aufnehmenden Schule erfragen."
+        ],
+        [
+         "Schularten",
+         "Hauptschule, Realschule, Oberschule, Gymnasium (Abitur nach 13 Jahren), Integrierte und Kooperative Gesamtschule, Förderschulen."
+        ],
+        [
+         "Besonderheiten",
+         "Orientierungsstufe ohne Zurückstellung der Laufbahn bis Klasse 6; Protokoll zur Beratung beim Übergang auf Landesvorlage verfügbar."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Niedersachsen klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Niedersachsen gilt für den Wechsel nach der Grundschule: In Niedersachsen entscheiden Sie als Eltern; die Grundschule gibt eine Empfehlung und berät Sie, bevor Sie anmelden. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.mk.niedersachsen.de (Übergang von der Grundschule auf eine weiterführende Schule) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.47",
+     "titel": "Steckbrief Nordrhein-Westfalen",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Nordrhein-Westfalen auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Nordrhein-Westfalen gibt die Grundschule im Halbjahr der Klasse 4 eine Empfehlung für die Schulform und führt Beratungsgespräche. Die Eltern entscheiden bei der Anmeldung."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratungsgespräche im Herbst bis Winter; Grundschulempfehlung mit dem Halbjahreszeugnis; Anmeldung an der weiterführenden Schule meist Ende Februar bis März (Anmeldewoche)."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nein. Die Eltern entscheiden; die Empfehlung ist Orientierung (zu Details siehe das Portal des Schulministeriums)."
+        ],
+        [
+         "Fristen und Termine",
+         "Anmeldung in der Regel in den Wochen nach dem Halbjahreszeugnis; die Termine legen die Kommunen fest. Bei Überanmeldung gibt es Aufnahmekriterien und Losverfahren."
+        ],
+        [
+         "Schularten",
+         "Hauptschule, Realschule, Sekundarschule, Gesamtschule, Gymnasium (G9), Verbundschulen, Förderschulen."
+        ],
+        [
+         "Besonderheiten",
+         "Bei Überanmeldung entscheiden Schulleitung und Aufnahmekriterien; Fragen zu Aufnahmekapazitäten beim Schulamt."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Nordrhein-Westfalen klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Nordrhein-Westfalen gilt für den Wechsel nach der Grundschule: Wir geben eine Empfehlung, die Sie in die Entscheidung einbeziehen; die Anmeldung findet in der Anmeldewoche statt. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.schulministerium.nrw/grundschulempfehlung-und-uebergang-die-weiterfuehrenden-schulen ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.48",
+     "titel": "Steckbrief Rheinland-Pfalz",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Rheinland-Pfalz auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Rheinland-Pfalz erhalten Viertklässler mit dem Halbjahreszeugnis eine Empfehlung für die weiterführende Schule, abgestimmt in der Klassenkonferenz. Die Eltern entscheiden."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratungsgespräche im Winterhalbjahr; Empfehlung mit dem Halbjahreszeugnis; Anmeldung nach dem Halbjahreszeugnis an der gewählten Schule."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nein, die Empfehlung ist nicht bindend (Elternwille)."
+        ],
+        [
+         "Fristen und Termine",
+         "Anmeldung nach dem Halbjahreszeugnis; konkrete Termine gibt das Ministerium bzw. die Schule bekannt (Februar bis März üblich)."
+        ],
+        [
+         "Schularten",
+         "Realschule plus, Integrierte Gesamtschule, Gymnasium, Förderschulen, berufliche Schulen."
+        ],
+        [
+         "Besonderheiten",
+         "Wechsel von der Realschule plus zum Gymnasium nach den Klassen 7 bis 9 setzt die Empfehlung der Klassenkonferenz der Realschule plus voraus; hohe Durchlässigkeit."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Rheinland-Pfalz klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Rheinland-Pfalz gilt für den Wechsel nach der Grundschule: Die Grundschule gibt eine Empfehlung; Sie entscheiden und melden Ihr Kind nach dem Halbjahreszeugnis an. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://bildung.rlp.de (Schulsystem in Rheinland-Pfalz) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.49",
+     "titel": "Steckbrief Saarland",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Saarland auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "Im Saarland besteht nach der Grundschule die Wahl zwischen Gemeinschaftsschule und Gymnasium. Die Grundschule berät zur Schullaufbahn."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratung und Empfehlung der Grundschule im Halbjahr der Klasse 4; Anmeldung an der weiterführenden Schule im Frühjahr."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nach den verfügbaren Angaben entscheiden die Eltern; zum aktuellen Recht bitte das Bildungsministerium prüfen."
+        ],
+        [
+         "Fristen und Termine",
+         "Termine jährlich durch das Ministerium für Bildung und Kultur; in der Regel Winter bis Frühjahr."
+        ],
+        [
+         "Schularten",
+         "Gemeinschaftsschule, Gymnasium, Förderschulen, berufliche Schulen."
+        ],
+        [
+         "Besonderheiten",
+         "Zweigliedriges System; Gemeinschaftsschulen führen zu allen Abschlüssen; Abitur nach neun Jahren am Gymnasium (G9)."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Saarland klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Saarland gilt für den Wechsel nach der Grundschule: Sie entscheiden zwischen Gemeinschaftsschule und Gymnasium; die Grundschule gibt eine Empfehlung und berät Sie. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.saarland.de/mbk (Übergang in die weiterführenden Schulen) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.50",
+     "titel": "Steckbrief Sachsen",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Sachsen auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Sachsen hängt der Zugang zum Gymnasium von der Bildungsempfehlung ab. Sie wird zu Beginn des zweiten Schulhalbjahres der Klasse 4 ausgestellt. Wer keine Gymnasialempfehlung hat, kann nach Beratung ein Aufnahmeverfahren durchlaufen."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Bildungsempfehlung der Klassenkonferenz im Halbjahr 4; Anmeldung an der Oberschule oder am Gymnasium in den ersten Monaten des Jahres; Original der Bildungsempfehlung wird vorgelegt."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Teilweise: Die Gymnasialempfehlung hängt an einem Notendurchschnitt (nach früheren Angaben 2,0 in Deutsch, Mathematik, Sachunterricht, bitte aktuell prüfen). Ohne Empfehlung gibt es einen Weg über Beratung und Aufnahmeverfahren."
+        ],
+        [
+         "Fristen und Termine",
+         "Bildungsempfehlung Anfang Februar (2026: 6. Februar); Anmeldung bis Ende Februar; zweite Anmelderunde im Sommer an einigen Gymnasien."
+        ],
+        [
+         "Schularten",
+         "Oberschule, Gymnasium, Förderschulen, berufliche Schulen."
+        ],
+        [
+         "Besonderheiten",
+         "Zur Anmeldung zählen die Bildungsempfehlung, die aktuelle Halbjahresinformation Klasse 4 und das Jahreszeugnis Klasse 3. Zweite Anmelderunde möglich."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Sachsen klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Sachsen gilt für den Wechsel nach der Grundschule: In Sachsen ist die Bildungsempfehlung wichtig für den Gymnasiumsbesuch; sie wird im Februar der Klasse 4 ausgegeben, danach melden Sie Ihr Kind an. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.schule.sachsen.de (Bildungsempfehlung) und https://www.revosax.sachsen.de (VwV Bildungsempfehlung) ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.51",
+     "titel": "Steckbrief Sachsen-Anhalt",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Sachsen-Anhalt auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Sachsen-Anhalt gibt die Grundschule in Klasse 4 eine Schullaufbahnempfehlung. Die Eltern haben das Wahlrecht der Schulform. Die Anmeldung läuft über die Grundschule. Das Land hat Änderungen am Verfahren diskutiert; den aktuellen Stand bitte prüfen."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratung, Schullaufbahnempfehlung auf Basis des Halbjahreszeugnisses der Klasse 4; Anmeldebogen mit Empfehlung wird bis zu einem Termin an die Grundschule zurückgegeben."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nein, die Empfehlung ist unverbindlich; für das Gymnasium bestehen Regeln zur Eignungsfeststellung nach Erlass."
+        ],
+        [
+         "Fristen und Termine",
+         "Fristen setzt das Landesschulamt bzw. die Grundschule; typischerweise Winter bis Frühjahr."
+        ],
+        [
+         "Schularten",
+         "Sekundarschule, Gemeinschaftsschule, Gesamtschule, Gymnasium, Förderschulen; nicht jede Region hat alle Schularten."
+        ],
+        [
+         "Besonderheiten",
+         "Eltern wählen die Schulform, nicht die konkrete Schule; Schulwegverkehr und Einzugsbereiche beachten. Plan zur Neuregelung des Übergangs wurde öffentlich diskutiert."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Sachsen-Anhalt klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Sachsen-Anhalt gilt für den Wechsel nach der Grundschule: Sie wählen die Schulform; die Grundschule gibt eine Empfehlung, die Rückgabe des Anmeldebogens erfolgt bis zum festgelegten Termin. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://mb.sachsen-anhalt.de (Aufnahme an weiterführenden Schulen) und https://mk.sachsen-anhalt.de ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.52",
+     "titel": "Steckbrief Schleswig-Holstein",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Schleswig-Holstein auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Schleswig-Holstein regelt ein Erlass die Anmeldung an der weiterführenden Schule (Aktualisierung vom August 2026 auf dem Landesportal). Die Grundschule gibt eine Empfehlung und berät die Eltern."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Beratungsgespräch, Schulartempfehlung, Anmeldung an der Gemeinschaftsschule oder dem Gymnasium nach dem aktuellen Erlass zur Schulanmeldung."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Nein. Die Eltern entscheiden; die Empfehlung ist beratend (bitte Erlass prüfen)."
+        ],
+        [
+         "Fristen und Termine",
+         "Anmeldung im Winter bis Frühjahr; Termine bitte dem aktuellen Erlass vom 7. August 2026 bzw. dem Schreiben der Schule entnehmen."
+        ],
+        [
+         "Schularten",
+         "Gemeinschaftsschule, Gymnasium (Abitur nach neun Jahren), Förderzentren, berufliche Schulen."
+        ],
+        [
+         "Besonderheiten",
+         "Gemeinschaftsschulen führen zu allen Abschlüssen, teilweise mit Oberstufe; Aufnahmekriterien bei Überanmeldung."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Schleswig-Holstein klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Schleswig-Holstein gilt für den Wechsel nach der Grundschule: Bitte melden Sie Ihr Kind nach dem aktuellen Erlass rechtzeitig an; wir beraten Sie dazu gern. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://www.schleswig-holstein.de/DE/fachinhalte/S/schulsystem/anmeldung_weiterfuehrende_schule ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "4.53",
+     "titel": "Steckbrief Thüringen",
+     "typ": "Übersicht",
+     "zweck": "Verfahren, Verbindlichkeit der Empfehlung, Fristen und Schularten für Thüringen auf einen Blick.",
+     "stufe": "Kl. 4",
+     "bloecke": [
+      {
+       "t": "p",
+       "x": "In Thüringen gibt es eine Gymnasialempfehlung, die auf dem Notendurchschnitt beruht. Wer sie nicht hat, kann über ein Aufnahmeverfahren oder den Weg über Regelschule und Gemeinschaftsschule zum Gymnasium kommen."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Aspekt",
+        "Regelung (Stand November 2026)"
+       ],
+       "zeilen": [
+        [
+         "Verfahren",
+         "Gymnasialempfehlung mit dem Halbjahreszeugnis der Klasse 4 (Notenbasis Deutsch, Mathematik, Sachunterricht); Anmeldung an der gewünschten Schule im Frühjahr; Aufnahmeverfahren geregelt in der Schulordnung."
+        ],
+        [
+         "Empfehlung verbindlich?",
+         "Teilweise: Für das Gymnasium gilt ein Notendurchschnitt als Eignungsvoraussetzung (in einem Hinweis zu § 125 ThürSchulO wird 2,5 genannt, bitte aktuell prüfen)."
+        ],
+        [
+         "Fristen und Termine",
+         "Information im Herbst und Winter; Halbjahreszeugnis im Winter; Anmeldung an den Gymnasien meist Januar bis Februar (jährlich vom Land bzw. Schulamt veröffentlicht)."
+        ],
+        [
+         "Schularten",
+         "Regelschule, Gemeinschaftsschule, Gymnasium, Gesamtschule, Förderschulen."
+        ],
+        [
+         "Besonderheiten",
+         "Übertritt vom Gymnasium zur Regelschule und umgekehrt in den Klassen 5 und 6 einfacher; Gemeinschaftsschule mit Wechselmöglichkeiten."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Dieser Steckbrief fasst das Verfahren zusammen und ersetzt keine Rechtsauskunft. Notenwerte und Termine ändern sich; maßgeblich sind das aktuelle Schreiben des Ministeriums bzw. Schulamts und die Verordnungen. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Das sollten Sie als Lehrkraft in Thüringen klären"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Aktuelle Termine für das laufende Schuljahr beim Schulamt oder Ministerium eingeholt",
+        "Eigenes Merkblatt für Eltern mit den Terminen erstellt",
+        "Beratungsgespräche nach dem Muster in Abschnitt B geplant",
+        "Unterlagenliste für die Anmeldung (Original, Kopien) bereitgestellt",
+        "Kontakt zu den aufnehmenden Schulen geklärt"
+       ]
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, in Thüringen gilt für den Wechsel nach der Grundschule: In Thüringen ist der Notendurchschnitt für das Gymnasium wichtig; wir erklären Ihnen die Schritte und beraten Sie zum besten Weg. Genaue Termine und Unterlagen erhalten Sie von uns schriftlich. Bitte sprechen Sie uns an, wenn Sie Fragen haben oder unsicher sind. Wir beraten Sie gern."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: https://bildung.thueringen.de (Schulwahl und Übergang) und § 125 ThürSchulO ; ergänzend Deutscher Bildungsserver, https://www.bildungsserver.de/uebergang-zur-weiterfuehrenden-schule-12373-de.html . Stand November 2026. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

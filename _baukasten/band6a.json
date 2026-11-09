@@ -1,0 +1,4202 @@
+{
+ "band": "6a",
+ "titel": "Band 6a: Fächer-Steckbriefe A: Grundschule, Deutsch, Mathematik, Naturwissenschaften, Gesellschaft",
+ "untertitel": "Je Fach Steckbrief, Elternabend-Baustein, Wahlabend-Baustein und Gesprächsformulierungen",
+ "einleitung": "Dieser Band enthält für zwölf Fächer kopierfertige Bausteine für Elternabend, Infoabend und Lernentwicklungsgespräch. Wählen Sie das Fach, kürzen Sie den Text auf Ihre Schulart und ergänzen Sie Angaben Ihrer Schule. Länderspezifische Bezeichnungen sind genannt; bitte aktuelle Regelungen beim zuständigen Ministerium prüfen.",
+ "abschnitte": [
+  {
+   "id": "A",
+   "titel": "Deutsch",
+   "module": [
+    {
+     "id": "6a.01",
+     "titel": "Steckbrief Deutsch",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Das Fach Deutsch bildet die Grundlage für alles weitere Lernen. Die Kinder und Jugendlichen lernen, verständlich zu sprechen, genau zuzuhören, sicher zu lesen, überlegt zu schreiben und über Sprache nachzudenken. Die KMK-Bildungsstandards für den Primarbereich und die Sekundarstufe I nennen diese Kompetenzbereiche."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Deutsch (in allen Ländern gleich benannt; Teilbereiche je nach Land Sprechen und Zuhören, Lesen, Schreiben, Sprache untersuchen)."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Erstlesen und Erstschreiben, Buchstaben und Laute, Rechtschreibgrundlagen, Wortarten, einfache Texte schreiben, Lesen von Kinderliteratur"
+        ],
+        [
+         "Kl. 5–6",
+         "Erzählen und Beschreiben, Wortarten und Satzglieder, Kinder- und Jugendbuch, Rechtschreibstrategien, Informationen entnehmen"
+        ],
+        [
+         "Kl. 7–8",
+         "Erörtern und Berichten, Gedichte und Balladen, Zeichensetzung, Sachtexte, Medien und Werbung"
+        ],
+        [
+         "Kl. 9–10",
+         "Argumentieren, Interpretieren, Erörterung, Ganzschriften und Drama, Bewerbung, Prüfungsvorbereitung"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Schriftliche Arbeiten (Diktat, Aufsatz, Textanalyse), mündliche Beiträge, Vorträge, Lesetagebuch, Portfolio. Die Gewichtung regelt das jeweilige Land."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Sicheres Lesen und Schreiben ist Voraussetzung für nahezu jede Ausbildung",
+        "Bewerbung, Bericht und E-Mail verlangen Formulierungssicherheit",
+        "Gesprächs- und Präsentationsfähigkeit zählt in Büro, Pflege, Handel und Handwerk"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.02",
+     "titel": "Elternabend-Baustein Deutsch",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Das Fach Deutsch bildet die Grundlage für alles weitere Lernen. Die Kinder und Jugendlichen lernen, verständlich zu sprechen, genau zuzuhören, sicher zu lesen, überlegt zu schreiben und über Sprache nachzudenken. Die KMK-Bildungsstandards für den Primarbereich und die Sekundarstufe I nennen diese Kompetenzbereiche."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Grundschule: Erstlesen und Erstschreiben, Buchstaben und Laute, Rechtschreibgrundlagen, Wortarten, einfache Texte schreiben, Lesen von Kinderliteratur",
+        "Kl. 5–6: Erzählen und Beschreiben, Wortarten und Satzglieder, Kinder- und Jugendbuch, Rechtschreibstrategien, Informationen entnehmen",
+        "Kl. 7–8: Erörtern und Berichten, Gedichte und Balladen, Zeichensetzung, Sachtexte, Medien und Werbung",
+        "Kl. 9–10: Argumentieren, Interpretieren, Erörterung, Ganzschriften und Drama, Bewerbung, Prüfungsvorbereitung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Täglich 10 bis 15 Minuten gemeinsam lesen oder vorlesen lassen",
+        "Über Gelesenes sprechen: Was ist passiert? Was denkst du dazu?",
+        "Einkaufszettel, Postkarten und Tagebuch als echte Schreibanlässe nutzen",
+        "Bei Rechtschreibung wenige Wörter regelmäßig üben statt viele auf einmal",
+        "Bibliothek besuchen und Bücher frei wählen lassen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Deutsch lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Täglich 10 bis 15 Minuten gemeinsam lesen oder vorlesen lassen\n- Über Gelesenes sprechen: Was ist passiert? Was denkst du dazu?\n- Einkaufszettel, Postkarten und Tagebuch als echte Schreibanlässe nutzen\n- Bei Rechtschreibung wenige Wörter regelmäßig üben statt viele auf einmal\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Deutsch lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Täglich 10 bis 15 Minuten gemeinsam lesen oder vorlesen lassen\n- Über Gelesenes sprechen: Was ist passiert? Was denkst du dazu?\n- Einkaufszettel, Postkarten und Tagebuch als echte Schreibanlässe nutzen\n- Bei Rechtschreibung wenige Wörter regelmäßig üben statt viele auf einmal\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Mein Kind liest ungern. Was tun?",
+         "Interessengeleitet auswählen (Comic, Sachbuch, Hörbuch mit Textbuch), kurze Lesezeiten, selbst als Vorbild lesen."
+        ],
+        [
+         "Wie viel Rechtschreibung ist normal?",
+         "Fehler gehören zum Lernen. Wichtig ist, dass Strategien (Verlängern, Ableiten, Merken) genutzt werden."
+        ],
+        [
+         "Soll ich Diktate üben?",
+         "Ja, kurz und mit Rückmeldung zu den Fehlerschwerpunkten, nicht ganze Texte abschreiben lassen."
+        ],
+        [
+         "Was ist bei Verdacht auf Lese-Rechtschreib-Schwäche?",
+         "Frühzeitig mit der Lehrkraft sprechen; Diagnostik und Fördermaßnahmen sind in den Ländern geregelt."
+        ],
+        [
+         "Wie viel Medienzeit ist beim Lesen ok?",
+         "Hörbücher und digitale Lesetexte können helfen; Bildschirmzeiten sollten dennoch begrenzt bleiben."
+        ],
+        [
+         "Warum schreibt mein Kind so wenig?",
+         "Oft fehlt Schreibsicherheit. Kleine, bedeutsame Schreibanlässe und Lob für Inhalte helfen mehr als Fehlerkorrektur."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.03",
+     "titel": "Wahl- und Infoabend-Baustein Deutsch",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Im Fach Deutsch gibt es in den meisten Ländern keine Wahl, wohl aber Vertiefungsangebote: Lese-Förderkurse, Schreibwerkstatt, Theater-AG, Schülerzeitung und in Kl. 9–10 Vorbereitungskurse auf den Übergang in die gymnasiale Oberstufe oder die Berufsausbildung."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Kurse oder AGs rund um Sprache gibt es an unserer Schule?",
+        "Welche Voraussetzungen (Note, Empfehlung) gelten?",
+        "Wie wirkt sich die Teilnahme auf Zeugnis und Stundenplan aus?",
+        "Wie bereitet das Angebot auf Oberstufe oder Ausbildung vor?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Deutsch an. Im Fach Deutsch gibt es in den meisten Ländern keine Wahl, wohl aber Vertiefungsangebote: Lese-Förderkurse, Schreibwerkstatt, Theater-AG, Schülerzeitung und in Kl. 9–10 Vorbereitungskurse auf den Übergang in die gymnasiale Oberstufe oder die Berufsausbildung.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Deutsch an. Im Fach Deutsch gibt es in den meisten Ländern keine Wahl, wohl aber Vertiefungsangebote: Lese-Förderkurse, Schreibwerkstatt, Theater-AG, Schülerzeitung und in Kl. 9–10 Vorbereitungskurse auf den Übergang in die gymnasiale Oberstufe oder die Berufsausbildung.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.04",
+     "titel": "Gesprächsbaustein Lernentwicklung Deutsch",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind liest flüssig und mit gutem Textverständnis.",
+        "Das Kind erzählt anschaulich und mit passendem Wortschatz.",
+        "Das Kind bringt sich mit eigenen Gedanken in Gespräche ein.",
+        "Das Kind schreibt Texte mit klarem Aufbau.",
+        "Das Kind wendet Rechtschreibstrategien zunehmend sicher an.",
+        "Das Kind präsentiert Ergebnisse verständlich und frei.",
+        "Das Kind erschließt Sachtexte selbstständig.",
+        "Das Kind zeigt Freude an Büchern und Geschichten."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind braucht noch Sicherheit beim flüssigen Lesen.",
+        "Das Kind sollte Texte vor der Abgabe auf Aufbau und Rechtschreibung prüfen.",
+        "Das Kind kann den Wortschatz weiter ausbauen.",
+        "Das Kind beteiligt sich im Unterrichtsgespräch noch zurückhaltend.",
+        "Das Kind benötigt Unterstützung beim Gliedern längerer Texte.",
+        "Das Kind macht häufiger Fehler bei Groß- und Kleinschreibung.",
+        "Das Kind sollte Arbeitsaufträge genauer lesen.",
+        "Das Kind kann die Satzzeichen noch sicherer setzen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Täglich kurz laut lesen und nacherzählen lassen",
+        "Eigenes Fehlerheft mit fünf Lernwörtern führen",
+        "Texte planen: erst Stichwörter, dann Sätze",
+        "Wörterbuch oder Rechtschreibhilfe gezielt einsetzen",
+        "Zu Gelesenem ein kurzes Lesetagebuch schreiben"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Deutsch sehe ich folgende Stärken: Ihr Kind liest flüssig und mit gutem Textverständnis; es erzählt anschaulich und mit passendem Wortschatz; es bringt sich mit eigenen Gedanken in Gespräche ein. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Täglich kurz laut lesen und nacherzählen lassen und Eigenes Fehlerheft mit fünf Lernwörtern führen. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Deutsch motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Deutsch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "titel": "Mathematik",
+   "module": [
+    {
+     "id": "6a.05",
+     "titel": "Steckbrief Mathematik",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Mathematik schult logisches Denken, Problemlösen und den sicheren Umgang mit Zahlen, Formen und Daten. Die KMK-Bildungsstandards beschreiben allgemeine mathematische Kompetenzen (Argumentieren, Problemlösen, Modellieren, Darstellen, Kommunizieren) und inhaltliche Leitideen wie Zahl, Raum und Form, Muster und Strukturen, Größen und Messen sowie Daten und Zufall."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Mathematik (in allen Ländern gleich benannt)."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Zahlbegriff bis 100 und 1000, Grundrechenarten, Einmaleins, Geometrie, Größen, Sachaufgaben"
+        ],
+        [
+         "Kl. 5–6",
+         "Natürliche Zahlen, Brüche und Dezimalzahlen, Flächen und Volumen, Symmetrie, Prozentrechnung"
+        ],
+        [
+         "Kl. 7–8",
+         "Terme und Gleichungen, Proportionalität, Prozent und Zins, Dreiecke und Kreise, Statistik"
+        ],
+        [
+         "Kl. 9–10",
+         "Funktionen, Satz des Pythagoras, Trigonometrie, Wahrscheinlichkeit, Potenzen, Körper"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Klassenarbeiten, Tests, Kopfrechnen, mündliche Mitarbeit, Heft- und Mappenführung, Projekte."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Technische, kaufmännische und handwerkliche Berufe nutzen Rechnen täglich",
+        "Einstellungstests prüfen Grundrechnen und Dreisatz",
+        "Datenverständnis ist in Medizin, Verwaltung und IT gefragt"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.06",
+     "titel": "Elternabend-Baustein Mathematik",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Mathematik schult logisches Denken, Problemlösen und den sicheren Umgang mit Zahlen, Formen und Daten. Die KMK-Bildungsstandards beschreiben allgemeine mathematische Kompetenzen (Argumentieren, Problemlösen, Modellieren, Darstellen, Kommunizieren) und inhaltliche Leitideen wie Zahl, Raum und Form, Muster und Strukturen, Größen und Messen sowie Daten und Zufall."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Grundschule: Zahlbegriff bis 100 und 1000, Grundrechenarten, Einmaleins, Geometrie, Größen, Sachaufgaben",
+        "Kl. 5–6: Natürliche Zahlen, Brüche und Dezimalzahlen, Flächen und Volumen, Symmetrie, Prozentrechnung",
+        "Kl. 7–8: Terme und Gleichungen, Proportionalität, Prozent und Zins, Dreiecke und Kreise, Statistik",
+        "Kl. 9–10: Funktionen, Satz des Pythagoras, Trigonometrie, Wahrscheinlichkeit, Potenzen, Körper"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Alltagsrechnen einbinden: Einkauf, Kochen, Fahrpläne",
+        "Das kleine Einmaleins spielerisch festigen",
+        "Nach dem Lösungsweg fragen statt nur nach dem Ergebnis",
+        "Bei Frust kurze Pausen und kleine Erfolgserlebnisse ermöglichen",
+        "Mathe-Spiele (Würfel, Karten, Rätsel) zu Hause anbieten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Mathematik lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Alltagsrechnen einbinden: Einkauf, Kochen, Fahrpläne\n- Das kleine Einmaleins spielerisch festigen\n- Nach dem Lösungsweg fragen statt nur nach dem Ergebnis\n- Bei Frust kurze Pausen und kleine Erfolgserlebnisse ermöglichen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Mathematik lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Alltagsrechnen einbinden: Einkauf, Kochen, Fahrpläne\n- Das kleine Einmaleins spielerisch festigen\n- Nach dem Lösungsweg fragen statt nur nach dem Ergebnis\n- Bei Frust kurze Pausen und kleine Erfolgserlebnisse ermöglichen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Wie viel soll mein Kind täglich üben?",
+         "Wenige Minuten regelmäßig bringen mehr als lange Einheiten vor der Arbeit."
+        ],
+        [
+         "Mein Kind rechnet im Kopf langsam.",
+         "Grundaufgaben (Plus, Minus, Einmaleins) automatisieren, mit kurzen Spielen und Zeitfenstern."
+        ],
+        [
+         "Darf der Taschenrechner genutzt werden?",
+         "Ab wann und wofür, regelt der Lehrplan; in der Grundschule und früher Sekundarstufe meist nicht."
+        ],
+        [
+         "Warum sind Textaufgaben so schwer?",
+         "Lesen und Rechnen greifen ineinander: Skizze, Unterstreichen, Fragesatz formulieren."
+        ],
+        [
+         "Was bei Rechenschwäche?",
+         "Frühzeitig mit der Lehrkraft sprechen; Diagnostik und Förderung sind landesrechtlich geregelt."
+        ],
+        [
+         "Wie erkenne ich Fortschritt?",
+         "Fragen Sie nach Strategien, nicht nur Ergebnissen: Kann das Kind erklären, wie es gerechnet hat?"
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.07",
+     "titel": "Wahl- und Infoabend-Baustein Mathematik",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Mathematik ist Pflichtfach. Wählbar sind je nach Land Vertiefungs- und Profilangebote: Mathe-Förderkurse, Wettbewerbe, Wahlpflichtangebote in Kl. 9–10, Kurse zur Vorbereitung auf die Oberstufe (Leistungs- oder Grundkurs)."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Vertiefungs- oder Förderkurse gibt es?",
+        "Welcher Anspruch gilt in Grund- und Leistungskursen der Oberstufe?",
+        "Wie hängt die Wahl mit Profil oder Berufswunsch zusammen?",
+        "Wo kann ich Wettbewerbe wie die Mathematik-Olympiade erfahren?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Mathematik an. Mathematik ist Pflichtfach. Wählbar sind je nach Land Vertiefungs- und Profilangebote: Mathe-Förderkurse, Wettbewerbe, Wahlpflichtangebote in Kl. 9–10, Kurse zur Vorbereitung auf die Oberstufe (Leistungs- oder Grundkurs).\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Mathematik an. Mathematik ist Pflichtfach. Wählbar sind je nach Land Vertiefungs- und Profilangebote: Mathe-Förderkurse, Wettbewerbe, Wahlpflichtangebote in Kl. 9–10, Kurse zur Vorbereitung auf die Oberstufe (Leistungs- oder Grundkurs).\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.08",
+     "titel": "Gesprächsbaustein Lernentwicklung Mathematik",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind rechnet sicher und mit Freude.",
+        "Das Kind erkennt mathematische Muster schnell.",
+        "Das Kind löst Aufgaben auch auf eigenen Wegen.",
+        "Das Kind beschreibt Rechenwege nachvollziehbar.",
+        "Das Kind arbeitet sauber und übersichtlich.",
+        "Das Kind überträgt Gelerntes auf neue Aufgaben.",
+        "Das Kind zeichnet und konstruiert genau.",
+        "Das Kind hilft Mitschülern beim Verstehen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind braucht noch Sicherheit im Einmaleins.",
+        "Das Kind verliert bei Textaufgaben leicht den Überblick.",
+        "Das Kind sollte Ergebnisse häufiger überprüfen.",
+        "Das Kind arbeitet bei Rechenwegen noch ungenau.",
+        "Das Kind zeigt wenig Ausdauer bei längeren Aufgaben.",
+        "Das Kind benötigt Hilfe beim Umgang mit Brüchen.",
+        "Das Kind sollte Rechenschritte schriftlich festhalten.",
+        "Das Kind traut sich im Unterricht noch wenig zu."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Täglich fünf Minuten Kopfrechnen",
+        "Textaufgaben mit Skizze und Frage umformulieren",
+        "Lernkarten für Einmaleins oder Formeln",
+        "Rechenwege laut erklären lassen",
+        "Fehler gemeinsam analysieren und Ähnliches üben"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Mathematik sehe ich folgende Stärken: Ihr Kind rechnet sicher und mit Freude; es erkennt mathematische Muster schnell; es löst Aufgaben auch auf eigenen Wegen. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Täglich fünf Minuten Kopfrechnen und Textaufgaben mit Skizze und Frage umformulieren. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Mathematik motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Mathematik"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "titel": "Sachunterricht (Heimat- und Sachunterricht)",
+   "module": [
+    {
+     "id": "6a.09",
+     "titel": "Steckbrief Sachunterricht (Heimat- und Sachunterricht)",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 1–4",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Der Sachunterricht erschließt Kindern ihre Lebenswelt. Er verbindet naturwissenschaftliche, technische, geografische, historische und gesellschaftliche Perspektiven. Orientierung bieten der Perspektivrahmen der Gesellschaft für Didaktik des Sachunterrichts (GDSU) und die Lehrpläne der Länder; die KMK setzt für die Grundschule vor allem für Deutsch und Mathematik Bildungsstandards."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Sachunterricht; in Bayern Heimat- und Sachunterricht (HSU), in Baden-Württemberg Sachunterricht, in Hessen und Rheinland-Pfalz Sachunterricht, in Berlin und Brandenburg Sachunterricht."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Natur und Umwelt, Tiere und Pflanzen, Körper und Gesundheit, Zeit und Geschichte, Raum und Orientierung, Verkehrserziehung, Technik, Medien, Demokratie im Klassenrat"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Mündliche Beiträge, Projekte, Versuche und Beobachtungen, Lernzielkontrollen, Plakate und Präsentationen, Mappen."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Neugier und Beobachten sind Basis für naturwissenschaftliche und soziale Berufe",
+        "Orientierung in Raum und Zeit ist Grundlage für Verkehr und Alltag",
+        "Erste Einblicke in Berufe und Technik wecken Interessen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.10",
+     "titel": "Elternabend-Baustein Sachunterricht (Heimat- und Sachunterricht)",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 1–4",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Der Sachunterricht erschließt Kindern ihre Lebenswelt. Er verbindet naturwissenschaftliche, technische, geografische, historische und gesellschaftliche Perspektiven. Orientierung bieten der Perspektivrahmen der Gesellschaft für Didaktik des Sachunterrichts (GDSU) und die Lehrpläne der Länder; die KMK setzt für die Grundschule vor allem für Deutsch und Mathematik Bildungsstandards."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Grundschule: Natur und Umwelt, Tiere und Pflanzen, Körper und Gesundheit, Zeit und Geschichte, Raum und Orientierung, Verkehrserziehung, Technik, Medien, Demokratie im Klassenrat"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Spaziergänge zum Beobachten von Natur und Wetter nutzen",
+        "Fragen des Kindes ernst nehmen und gemeinsam nachschlagen",
+        "Den Schulweg gemeinsam üben und besprechen",
+        "Einfache Experimente in der Küche ausprobieren",
+        "Museen, Wald, Bauernhof oder Werkstätten besuchen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Sachunterricht (Heimat- und Sachunterricht) lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Spaziergänge zum Beobachten von Natur und Wetter nutzen\n- Fragen des Kindes ernst nehmen und gemeinsam nachschlagen\n- Den Schulweg gemeinsam üben und besprechen\n- Einfache Experimente in der Küche ausprobieren\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Sachunterricht (Heimat- und Sachunterricht) lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Spaziergänge zum Beobachten von Natur und Wetter nutzen\n- Fragen des Kindes ernst nehmen und gemeinsam nachschlagen\n- Den Schulweg gemeinsam üben und besprechen\n- Einfache Experimente in der Küche ausprobieren\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Gibt es im Sachunterricht Noten?",
+         "Das regeln die Länder: Manche geben Noten ab Kl. 3, andere Lernstandsberichte."
+        ],
+        [
+         "Wie kann ich helfen, ohne zu belehren?",
+         "Fragen stellen, gemeinsam recherchieren, Neugier bewahren."
+        ],
+        [
+         "Wie wichtig ist die Verkehrserziehung?",
+         "Sehr wichtig. Üben Sie den Schulweg und sprechen Sie über Gefahren."
+        ],
+        [
+         "Muss mein Kind Referate halten?",
+         "Kleine Kurzvorträge sind üblich. Üben zu Hause mit Karteikarten hilft."
+        ],
+        [
+         "Was lernt mein Kind zu Medien?",
+         "Sicherer Umgang mit digitalen Medien, Quellen und persönlichen Daten."
+        ],
+        [
+         "Wie unterstütze ich bei Experimenten?",
+         "Erlauben Sie Ausprobieren zu Hause, achten Sie auf Sicherheit, sprechen Sie über Beobachtungen."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.11",
+     "titel": "Gesprächsbaustein Lernentwicklung Sachunterricht (Heimat- und Sachunterricht)",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 1–4",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind beobachtet Natur und Umwelt genau.",
+        "Das Kind stellt interessierte Fragen.",
+        "Das Kind führt Versuche sorgfältig durch.",
+        "Das Kind hält Ergebnisse nachvollziehbar fest.",
+        "Das Kind arbeitet gut in der Gruppe.",
+        "Das Kind übernimmt Verantwortung im Klassenrat.",
+        "Das Kind orientiert sich sicher im Raum.",
+        "Das Kind trägt Wissen anschaulich vor."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind sollte Beobachtungen genauer beschreiben.",
+        "Das Kind braucht Hilfe beim Planen eines Versuchs.",
+        "Das Kind kann Fachbegriffe noch sicherer verwenden.",
+        "Das Kind hört bei Gruppenarbeit nicht immer zu.",
+        "Das Kind sollte Vorträge deutlicher gliedern.",
+        "Das Kind benötigt Anleitung bei Recherchen.",
+        "Das Kind hält Material nicht immer in Ordnung.",
+        "Das Kind bringt sich selten mit eigenen Fragen ein."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Wöchentlich ein Thema im Alltag beobachten",
+        "Kurzvorträge zu Hause üben",
+        "Kinderlexika und Sachbücher anbieten",
+        "Beobachtungen in einem Forschertagebuch notieren",
+        "Ausflüge mit Fragekarten gestalten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Sachunterricht (Heimat- und Sachunterricht) sehe ich folgende Stärken: Ihr Kind beobachtet Natur und Umwelt genau; es stellt interessierte Fragen; es führt Versuche sorgfältig durch. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Wöchentlich ein Thema im Alltag beobachten und Kurzvorträge zu Hause üben. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Sachunterricht (Heimat- und Sachunterricht) motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Sachunterricht (Heimat- und Sachunterricht)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "titel": "Biologie",
+   "module": [
+    {
+     "id": "6a.12",
+     "titel": "Steckbrief Biologie",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Biologie vermittelt Wissen über Lebewesen, Ökosysteme und den menschlichen Körper. Die KMK-Bildungsstandards für den mittleren Schulabschluss nennen die Kompetenzbereiche Fachwissen, Erkenntnisgewinnung, Kommunikation und Bewertung."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Biologie; in einigen Ländern Teil von Naturwissenschaften (Kl. 5–6) oder Natur und Technik."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Pflanzen und Tiere, Wirbeltiere, Körperbau, Ernährung, Sinne, Lebensräume"
+        ],
+        [
+         "Kl. 7–8",
+         "Zelle, Ökosysteme, Stoffwechsel, Sexualerziehung, Gesundheit, Mikroorganismen"
+        ],
+        [
+         "Kl. 9–10",
+         "Genetik, Evolution, Nervensystem, Immunsystem, Ökologie, Nachhaltigkeit"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Klassenarbeiten, Tests, Protokolle, Referate, Mappen, Mitarbeit, Praktikum."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Medizin, Pflege, Biotechnologie, Landwirtschaft",
+        "Umwelt- und Naturschutz, Laborberufe",
+        "Ernährung und Gesundheit"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.13",
+     "titel": "Elternabend-Baustein Biologie",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Biologie vermittelt Wissen über Lebewesen, Ökosysteme und den menschlichen Körper. Die KMK-Bildungsstandards für den mittleren Schulabschluss nennen die Kompetenzbereiche Fachwissen, Erkenntnisgewinnung, Kommunikation und Bewertung."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 5–6: Pflanzen und Tiere, Wirbeltiere, Körperbau, Ernährung, Sinne, Lebensräume",
+        "Kl. 7–8: Zelle, Ökosysteme, Stoffwechsel, Sexualerziehung, Gesundheit, Mikroorganismen",
+        "Kl. 9–10: Genetik, Evolution, Nervensystem, Immunsystem, Ökologie, Nachhaltigkeit"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Gemeinsam Natur beobachten, Pflanzen anbauen",
+        "Dokumentationen und Sachbücher auswählen",
+        "Fachbegriffe mit Lernkarten üben",
+        "Fragen zu Gesundheit offen besprechen",
+        "Zoo, Botanischen Garten oder Naturkundemuseum besuchen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Biologie lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Gemeinsam Natur beobachten, Pflanzen anbauen\n- Dokumentationen und Sachbücher auswählen\n- Fachbegriffe mit Lernkarten üben\n- Fragen zu Gesundheit offen besprechen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Biologie lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Gemeinsam Natur beobachten, Pflanzen anbauen\n- Dokumentationen und Sachbücher auswählen\n- Fachbegriffe mit Lernkarten üben\n- Fragen zu Gesundheit offen besprechen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Warum so viele Fachbegriffe?",
+         "Präzise Sprache ist Teil der Naturwissenschaften; Karteikarten und Skizzen helfen."
+        ],
+        [
+         "Wie wird die Sexualerziehung gestaltet?",
+         "Sie folgt Lehrplänen und Schulgesetzen; Eltern werden vorab informiert."
+        ],
+        [
+         "Wird im Unterricht seziert?",
+         "Regelungen sind Ländersache; meist werden Modelle, Videos oder Organe vom Fachhandel genutzt."
+        ],
+        [
+         "Wie wichtig sind Protokolle?",
+         "Sie zeigen sauberes Beobachten und Schließen; Aufbau: Frage, Vermutung, Durchführung, Beobachtung, Ergebnis."
+        ],
+        [
+         "Mein Kind lernt nur auswendig.",
+         "Skizzen, Zusammenhänge, Eigenerklärungen und Kreuzworträtsel verbessern das Verstehen."
+        ],
+        [
+         "Gibt es Exkursionen?",
+         "Viele Schulen nutzen Lerngänge; Kosten und Einverständnis werden vorab geklärt."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.14",
+     "titel": "Wahl- und Infoabend-Baustein Biologie",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Biologie ist Pflichtfach. Wahlmöglichkeiten bestehen je nach Land als Profilfach, Wahlpflichtfach (zum Beispiel Natur und Gesundheit), Schulgarten-AG, Schulsanitätsdienst oder als Leistungskurs in der Oberstufe."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Vertiefungsangebote gibt es?",
+        "Welche Anforderungen stellt der Leistungskurs Biologie?",
+        "Welche Berufsfelder knüpfen an?",
+        "Wie viel Laborarbeit ist enthalten?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Biologie an. Biologie ist Pflichtfach. Wahlmöglichkeiten bestehen je nach Land als Profilfach, Wahlpflichtfach (zum Beispiel Natur und Gesundheit), Schulgarten-AG, Schulsanitätsdienst oder als Leistungskurs in der Oberstufe.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Biologie an. Biologie ist Pflichtfach. Wahlmöglichkeiten bestehen je nach Land als Profilfach, Wahlpflichtfach (zum Beispiel Natur und Gesundheit), Schulgarten-AG, Schulsanitätsdienst oder als Leistungskurs in der Oberstufe.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.15",
+     "titel": "Gesprächsbaustein Lernentwicklung Biologie",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind beobachtet genau und beschreibt sachlich.",
+        "Das Kind führt Experimente sorgfältig durch.",
+        "Das Kind kennt Fachbegriffe sicher.",
+        "Das Kind stellt Zusammenhänge in Systemen her.",
+        "Das Kind skizziert Beobachtungen genau.",
+        "Das Kind bewertet Umweltfragen differenziert.",
+        "Das Kind arbeitet im Team verlässlich.",
+        "Das Kind zeigt Interesse an Lebewesen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind lernt Fachbegriffe noch nicht sicher.",
+        "Das Kind sollte Protokolle vollständiger führen.",
+        "Das Kind verwechselt Beobachtung und Deutung.",
+        "Das Kind braucht Hilfe beim Lesen von Diagrammen.",
+        "Das Kind arbeitet bei Versuchen noch ungenau.",
+        "Das Kind behält Zusammenhänge schwer.",
+        "Das Kind sollte Hefteinträge ordentlicher führen.",
+        "Das Kind bringt sich mündlich selten ein."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Fachbegriffe mit Lernkarten üben",
+        "Skizzen beschriften lassen",
+        "Dokumentationen gemeinsam ansehen",
+        "Versuchsprotokoll mit Schema schreiben",
+        "Zusammenhänge als Mindmap darstellen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Biologie sehe ich folgende Stärken: Ihr Kind beobachtet genau und beschreibt sachlich; es führt Experimente sorgfältig durch; es kennt Fachbegriffe sicher. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Fachbegriffe mit Lernkarten üben und Skizzen beschriften lassen. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Biologie motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Biologie"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "titel": "Chemie",
+   "module": [
+    {
+     "id": "6a.16",
+     "titel": "Steckbrief Chemie",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Chemie erklärt Stoffe, ihre Eigenschaften und Veränderungen. Die KMK-Bildungsstandards für den mittleren Schulabschluss beschreiben die Kompetenzbereiche Fachwissen, Erkenntnisgewinnung, Kommunikation und Bewertung. Sicherheitsbewusstes Experimentieren ist zentral."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Chemie; in einigen Ländern ab Kl. 7 oder 8, davor Naturwissenschaften."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 7–8",
+         "Stoffe und Eigenschaften, Gemische und Trennverfahren, chemische Reaktion, Luft und Wasser, Atombau"
+        ],
+        [
+         "Kl. 9–10",
+         "Periodensystem, Bindungen, Säuren und Laugen, Redoxreaktionen, organische Chemie, Energie"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Klassenarbeiten, Tests, Protokolle, Experimente, mündliche Mitarbeit, Referate."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Chemielaborant, Pharmakant, Chemikant",
+        "Lebensmitteltechnik, Medizin, Umwelttechnik",
+        "Handwerk (Maler, Lackierer) mit Stoffkenntnissen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.17",
+     "titel": "Elternabend-Baustein Chemie",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Chemie erklärt Stoffe, ihre Eigenschaften und Veränderungen. Die KMK-Bildungsstandards für den mittleren Schulabschluss beschreiben die Kompetenzbereiche Fachwissen, Erkenntnisgewinnung, Kommunikation und Bewertung. Sicherheitsbewusstes Experimentieren ist zentral."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 7–8: Stoffe und Eigenschaften, Gemische und Trennverfahren, chemische Reaktion, Luft und Wasser, Atombau",
+        "Kl. 9–10: Periodensystem, Bindungen, Säuren und Laugen, Redoxreaktionen, organische Chemie, Energie"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Alltagschemie entdecken: Kochen, Putzmittel, Rost",
+        "Auf Sicherheit achten, kein Experimentieren ohne Anleitung",
+        "Formeln und Symbole mit Karten üben",
+        "Dokumentationen zu Stoffen ansehen",
+        "Gemeinsam Etiketten lesen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Chemie lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Alltagschemie entdecken: Kochen, Putzmittel, Rost\n- Auf Sicherheit achten, kein Experimentieren ohne Anleitung\n- Formeln und Symbole mit Karten üben\n- Dokumentationen zu Stoffen ansehen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Chemie lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Alltagschemie entdecken: Kochen, Putzmittel, Rost\n- Auf Sicherheit achten, kein Experimentieren ohne Anleitung\n- Formeln und Symbole mit Karten üben\n- Dokumentationen zu Stoffen ansehen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Ist Experimentieren gefährlich?",
+         "Mit Schutzbrille und Regeln nicht. Die Klasse wird vorab unterwiesen."
+        ],
+        [
+         "Warum die vielen Symbole?",
+         "Chemie nutzt internationale Fachsprache. Regelmäßiges Üben hilft."
+        ],
+        [
+         "Wann beginnt Chemie?",
+         "Das ist Ländersache; meist Kl. 7 oder 8, vorher im Fach Naturwissenschaften."
+        ],
+        [
+         "Wie wichtig ist Mathe?",
+         "Grundrechnen und Dreisatz sind hilfreich, vor allem bei Mengenberechnungen."
+        ],
+        [
+         "Mein Kind versteht Reaktionsgleichungen nicht.",
+         "Erst Wortgleichungen, dann Symbole; Modelle zeichnen."
+        ],
+        [
+         "Dürfen Kinder zu Hause Stoffe mischen?",
+         "Nur Haushaltsmittel mit Aufsicht, nie Reiniger mischen."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.18",
+     "titel": "Wahl- und Infoabend-Baustein Chemie",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Chemie ist je nach Land Pflichtfach oder Teil eines Verbunds. Wählbar sind Wahlpflichtangebote wie Natur und Technik, Chemie-AG, Profilfächer sowie Grund- und Leistungskurs in der Oberstufe."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Sicherheits- und Laborausstattung ist vorhanden?",
+        "Welche Vorkenntnisse in Mathematik sind nötig?",
+        "Welche Berufsfelder schließen sich an?",
+        "Wie ist der Aufbau von Grund- und Leistungskurs?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Chemie an. Chemie ist je nach Land Pflichtfach oder Teil eines Verbunds. Wählbar sind Wahlpflichtangebote wie Natur und Technik, Chemie-AG, Profilfächer sowie Grund- und Leistungskurs in der Oberstufe.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Chemie an. Chemie ist je nach Land Pflichtfach oder Teil eines Verbunds. Wählbar sind Wahlpflichtangebote wie Natur und Technik, Chemie-AG, Profilfächer sowie Grund- und Leistungskurs in der Oberstufe.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.19",
+     "titel": "Gesprächsbaustein Lernentwicklung Chemie",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind experimentiert sorgfältig und sicher.",
+        "Das Kind hält sich an Sicherheitsregeln.",
+        "Das Kind beschreibt Beobachtungen genau.",
+        "Das Kind kann Formeln sicher anwenden.",
+        "Das Kind erklärt Reaktionen verständlich.",
+        "Das Kind arbeitet im Team verlässlich.",
+        "Das Kind protokolliert vollständig.",
+        "Das Kind zeigt Neugier für Stoffe."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind muss Sicherheitsregeln konsequenter beachten.",
+        "Das Kind verwechselt Beobachtung und Erklärung.",
+        "Das Kind benötigt Hilfe bei Formeln und Symbolen.",
+        "Das Kind arbeitet beim Experimentieren zu hastig.",
+        "Das Kind sollte Protokolle gründlicher führen.",
+        "Das Kind hat Schwierigkeiten mit Modellvorstellungen.",
+        "Das Kind bringt Material nicht immer mit.",
+        "Das Kind sollte Rechenaufgaben sicherer lösen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Symbole und Formeln mit Karten üben",
+        "Wortgleichungen vor Formelgleichungen",
+        "Experimente zu Hause nur gemeinsam und sicher",
+        "Protokoll in festen Schritten schreiben",
+        "Alltagsbeispiele für Reaktionen sammeln"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Chemie sehe ich folgende Stärken: Ihr Kind experimentiert sorgfältig und sicher; es hält sich an Sicherheitsregeln; es beschreibt Beobachtungen genau. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Symbole und Formeln mit Karten üben und Wortgleichungen vor Formelgleichungen. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Chemie motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Chemie"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "titel": "Physik",
+   "module": [
+    {
+     "id": "6a.20",
+     "titel": "Steckbrief Physik",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Physik erforscht Naturerscheinungen mit Beobachtung, Experiment und Mathematik. Die KMK-Bildungsstandards nennen Fachwissen, Erkenntnisgewinnung, Kommunikation und Bewertung. Ziel ist, Phänomene zu erklären und Technik zu verstehen."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Physik; in einigen Ländern Teil von Naturwissenschaften oder Natur und Technik."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Licht und Schatten, Schall, Wärme, Magnetismus, einfache Stromkreise"
+        ],
+        [
+         "Kl. 7–8",
+         "Mechanik, Kraft, Druck, Optik, Elektrizität, Energie"
+        ],
+        [
+         "Kl. 9–10",
+         "Elektrische Energie, Bewegungen, Atom- und Kernphysik, Strahlung, erneuerbare Energien"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Klassenarbeiten, Tests, Protokolle, Versuche, mündliche Mitarbeit, Referate."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mechatronik, Elektronik, Energietechnik",
+        "Handwerk (Elektro, Kfz, Sanitär)",
+        "Ingenieurwesen und Forschung"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.21",
+     "titel": "Elternabend-Baustein Physik",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Physik erforscht Naturerscheinungen mit Beobachtung, Experiment und Mathematik. Die KMK-Bildungsstandards nennen Fachwissen, Erkenntnisgewinnung, Kommunikation und Bewertung. Ziel ist, Phänomene zu erklären und Technik zu verstehen."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 5–6: Licht und Schatten, Schall, Wärme, Magnetismus, einfache Stromkreise",
+        "Kl. 7–8: Mechanik, Kraft, Druck, Optik, Elektrizität, Energie",
+        "Kl. 9–10: Elektrische Energie, Bewegungen, Atom- und Kernphysik, Strahlung, erneuerbare Energien"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Alltagsphänomene beschreiben und erklären",
+        "Mit einfachen Bausätzen experimentieren",
+        "Größen und Einheiten sicher üben",
+        "Diagramme gemeinsam lesen",
+        "Technikmuseen und Science-Center besuchen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Physik lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Alltagsphänomene beschreiben und erklären\n- Mit einfachen Bausätzen experimentieren\n- Größen und Einheiten sicher üben\n- Diagramme gemeinsam lesen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Physik lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Alltagsphänomene beschreiben und erklären\n- Mit einfachen Bausätzen experimentieren\n- Größen und Einheiten sicher üben\n- Diagramme gemeinsam lesen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Wie viel Mathe steckt drin?",
+         "Dreisatz, Umstellen von Formeln und Diagramme sind wichtig."
+        ],
+        [
+         "Warum so viele Formeln?",
+         "Sie ordnen Zusammenhänge; Verstehen vor Auswendiglernen."
+        ],
+        [
+         "Was tun bei Frust?",
+         "Aufgaben in kleine Schritte zerlegen und Skizzen anfertigen."
+        ],
+        [
+         "Sind Experimente verpflichtend?",
+         "Ja, sie gehören zum Unterricht; Schutzregeln werden unterwiesen."
+        ],
+        [
+         "Wie lernt man Einheiten?",
+         "Alltagsbeispiele wählen (Meter, Sekunde, Kilogramm, Watt) und Umrechnungen üben."
+        ],
+        [
+         "Gibt es Förderung?",
+         "Viele Schulen bieten Förder- oder Wahlangebote, zum Beispiel Technik-AG."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.22",
+     "titel": "Wahl- und Infoabend-Baustein Physik",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Physik ist Pflichtfach. Wählbar sind je nach Land Wahlpflichtangebote (Technik, Natur und Technik), Robotik-AG, Profil MINT sowie Grund- oder Leistungskurs in der Oberstufe."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche MINT-Angebote gibt es?",
+        "Welche Mathematikkenntnisse braucht der Leistungskurs?",
+        "Wie wird experimentiert?",
+        "Welche Studien- und Ausbildungswege folgen?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Physik an. Physik ist Pflichtfach. Wählbar sind je nach Land Wahlpflichtangebote (Technik, Natur und Technik), Robotik-AG, Profil MINT sowie Grund- oder Leistungskurs in der Oberstufe.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Physik an. Physik ist Pflichtfach. Wählbar sind je nach Land Wahlpflichtangebote (Technik, Natur und Technik), Robotik-AG, Profil MINT sowie Grund- oder Leistungskurs in der Oberstufe.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.23",
+     "titel": "Gesprächsbaustein Lernentwicklung Physik",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind stellt kluge Fragen zu Phänomenen.",
+        "Das Kind experimentiert genau.",
+        "Das Kind liest Diagramme sicher.",
+        "Das Kind wendet Formeln richtig an.",
+        "Das Kind erklärt Zusammenhänge verständlich.",
+        "Das Kind arbeitet im Team zuverlässig.",
+        "Das Kind beachtet Einheiten.",
+        "Das Kind zeigt technisches Interesse."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind rechnet Einheiten noch ungenau um.",
+        "Das Kind stellt Formeln nicht sicher um.",
+        "Das Kind verwechselt Beobachtung und Erklärung.",
+        "Das Kind protokolliert Versuche unvollständig.",
+        "Das Kind benötigt Hilfe beim Zeichnen von Diagrammen.",
+        "Das Kind behält Fachbegriffe schwer.",
+        "Das Kind sollte Aufgaben vor dem Rechnen skizzieren.",
+        "Das Kind arbeitet bei Versuchen zu schnell."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Formelsammlung selbst anlegen",
+        "Einheiten immer mitschreiben",
+        "Alltagsphänomene erklären lassen",
+        "Skizze zu jeder Aufgabe",
+        "Versuchsprotokoll nach Schema üben"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Physik sehe ich folgende Stärken: Ihr Kind stellt kluge Fragen zu Phänomenen; es experimentiert genau; es liest Diagramme sicher. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Formelsammlung selbst anlegen und Einheiten immer mitschreiben. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Physik motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Physik"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "G",
+   "titel": "Naturwissenschaften / Natur und Technik / NwT",
+   "module": [
+    {
+     "id": "6a.24",
+     "titel": "Steckbrief Naturwissenschaften / Natur und Technik / NwT",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Diese Fächer verbinden Biologie, Chemie und Physik und führen schrittweise an naturwissenschaftliches Denken heran. Orientierung bieten die KMK-Bildungsstandards für Biologie, Chemie und Physik und die jeweiligen Landeslehrpläne."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Naturwissenschaften (zum Beispiel Berlin, Brandenburg, Hessen, Schleswig-Holstein), Natur und Technik (zum Beispiel Baden-Württemberg, Bayern), NwT Naturwissenschaft und Technik (Profilfach Baden-Württemberg); Bezeichnungen und Stundentafeln bitte beim Land prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Beobachten und Messen, Stoffe, Wasser, Luft, Pflanzen und Tiere, Energie im Alltag"
+        ],
+        [
+         "Kl. 7–8",
+         "Experimentieren, Gemische, Strom, Körper, Technik, Umwelt"
+        ],
+        [
+         "Kl. 9–10",
+         "Projekte, Energie, Materialien, Konstruktionen, Daten auswerten (je nach Profil mit Technik und Informatik)"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Mitarbeit, Protokolle, Versuche, Projekte, Präsentationen, Tests."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "MINT-Berufe, Handwerk, Labor",
+        "Technikberufe, Umweltberufe",
+        "Studium im technischen Bereich"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.25",
+     "titel": "Elternabend-Baustein Naturwissenschaften / Natur und Technik / NwT",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Diese Fächer verbinden Biologie, Chemie und Physik und führen schrittweise an naturwissenschaftliches Denken heran. Orientierung bieten die KMK-Bildungsstandards für Biologie, Chemie und Physik und die jeweiligen Landeslehrpläne."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 5–6: Beobachten und Messen, Stoffe, Wasser, Luft, Pflanzen und Tiere, Energie im Alltag",
+        "Kl. 7–8: Experimentieren, Gemische, Strom, Körper, Technik, Umwelt",
+        "Kl. 9–10: Projekte, Energie, Materialien, Konstruktionen, Daten auswerten (je nach Profil mit Technik und Informatik)"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Alltagsphänomene gemeinsam erklären",
+        "Kleine Konstruktionsprojekte zu Hause",
+        "Experimentierkästen mit Sicherheitsregeln",
+        "Projektarbeit unterstützen",
+        "Wissenschaftssendungen gemeinsam anschauen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Naturwissenschaften / Natur und Technik / NwT lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Alltagsphänomene gemeinsam erklären\n- Kleine Konstruktionsprojekte zu Hause\n- Experimentierkästen mit Sicherheitsregeln\n- Projektarbeit unterstützen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Naturwissenschaften / Natur und Technik / NwT lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Alltagsphänomene gemeinsam erklären\n- Kleine Konstruktionsprojekte zu Hause\n- Experimentierkästen mit Sicherheitsregeln\n- Projektarbeit unterstützen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Wie unterscheidet sich das Fach von Bio, Chemie und Physik?",
+         "Es verbindet die Bereiche in Themen wie Wasser oder Energie."
+        ],
+        [
+         "Gibt es Noten?",
+         "Ja, Bewertung nach Mitarbeit, Protokollen und Tests."
+        ],
+        [
+         "Wann lohnt sich das Profilfach?",
+         "Bei Interesse an Technik und Experimentieren."
+        ],
+        [
+         "Welche Fähigkeiten sind wichtig?",
+         "Neugier, genaues Arbeiten, Teamarbeit."
+        ],
+        [
+         "Wie viel Zeit kostet es?",
+         "Projekte brauchen Zeit; die Lehrkraft informiert über Termine."
+        ],
+        [
+         "Gibt es Wettbewerbe?",
+         "Ja, zum Beispiel Jugend forscht und Robotik-Wettbewerbe."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.26",
+     "titel": "Wahl- und Infoabend-Baustein Naturwissenschaften / Natur und Technik / NwT",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Naturwissenschaftliche Verbundfächer werden häufig als Profil- oder Wahlpflichtfach (zum Beispiel NwT in Baden-Württemberg) gewählt. Die Wahl erfolgt meist in Kl. 7 oder 8 für zwei bis drei Jahre."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Inhalte hat das Profil an unserer Schule?",
+        "Welche Voraussetzungen gelten?",
+        "Wie ist das Verhältnis zu Biologie, Chemie, Physik?",
+        "Was kann nach Kl. 10 folgen?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Naturwissenschaften / Natur und Technik / NwT an. Naturwissenschaftliche Verbundfächer werden häufig als Profil- oder Wahlpflichtfach (zum Beispiel NwT in Baden-Württemberg) gewählt. Die Wahl erfolgt meist in Kl. 7 oder 8 für zwei bis drei Jahre.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Naturwissenschaften / Natur und Technik / NwT an. Naturwissenschaftliche Verbundfächer werden häufig als Profil- oder Wahlpflichtfach (zum Beispiel NwT in Baden-Württemberg) gewählt. Die Wahl erfolgt meist in Kl. 7 oder 8 für zwei bis drei Jahre.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.27",
+     "titel": "Gesprächsbaustein Lernentwicklung Naturwissenschaften / Natur und Technik / NwT",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind experimentiert mit Neugier.",
+        "Das Kind arbeitet planvoll und sauber.",
+        "Das Kind verbindet Wissen aus mehreren Fächern.",
+        "Das Kind dokumentiert verständlich.",
+        "Das Kind arbeitet im Team.",
+        "Das Kind entwickelt eigene Ideen.",
+        "Das Kind achtet auf Sicherheit.",
+        "Das Kind präsentiert Ergebnisse überzeugend."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind plant Versuche noch zu ungenau.",
+        "Das Kind sollte Aufgabenteile besser verteilen.",
+        "Das Kind braucht Hilfe beim Protokollieren.",
+        "Das Kind verliert beim Projekt den roten Faden.",
+        "Das Kind setzt Sicherheitsregeln nicht immer um.",
+        "Das Kind sollte Fachbegriffe sicherer nutzen.",
+        "Das Kind hält Zeitpläne schwer ein.",
+        "Das Kind benötigt Unterstützung beim Auswerten."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Projekte in Arbeitsschritte gliedern",
+        "Forschertagebuch führen",
+        "Versuche vorab durchdenken",
+        "Zeitplan für Projekte erstellen",
+        "Ergebnisse vor der Familie präsentieren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Naturwissenschaften / Natur und Technik / NwT sehe ich folgende Stärken: Ihr Kind experimentiert mit Neugier; es arbeitet planvoll und sauber; es verbindet Wissen aus mehreren Fächern. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Projekte in Arbeitsschritte gliedern und Forschertagebuch führen. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Naturwissenschaften / Natur und Technik / NwT motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Naturwissenschaften / Natur und Technik / NwT"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "titel": "Geschichte",
+   "module": [
+    {
+     "id": "6a.28",
+     "titel": "Steckbrief Geschichte",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Geschichte schafft Orientierung in der Zeit. Jugendliche lernen, Quellen zu untersuchen, Zusammenhänge zu erkennen und Urteile zu begründen. Grundlage sind die Lehrpläne der Länder und die Empfehlungen der KMK zur historisch-politischen Bildung."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Geschichte (in manchen Ländern Teil von Gesellschaftslehre oder Gesellschaftswissenschaften)."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Vor- und Frühgeschichte, Ägypten, Griechen und Römer, Mittelalter"
+        ],
+        [
+         "Kl. 7–8",
+         "Mittelalter, Reformation, Neuzeit, Aufklärung, Revolutionen, Industrialisierung"
+        ],
+        [
+         "Kl. 9–10",
+         "Weltkriege, Weimarer Republik, Nationalsozialismus, geteiltes Deutschland, Europa"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Klassenarbeiten, Tests, Quellenanalysen, Referate, mündliche Mitarbeit, Projekte."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Journalismus, Lehramt, Museum, Archiv",
+        "Verwaltung, Politik, Recht",
+        "Tourismus und Kultur"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.29",
+     "titel": "Elternabend-Baustein Geschichte",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Geschichte schafft Orientierung in der Zeit. Jugendliche lernen, Quellen zu untersuchen, Zusammenhänge zu erkennen und Urteile zu begründen. Grundlage sind die Lehrpläne der Länder und die Empfehlungen der KMK zur historisch-politischen Bildung."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 5–6: Vor- und Frühgeschichte, Ägypten, Griechen und Römer, Mittelalter",
+        "Kl. 7–8: Mittelalter, Reformation, Neuzeit, Aufklärung, Revolutionen, Industrialisierung",
+        "Kl. 9–10: Weltkriege, Weimarer Republik, Nationalsozialismus, geteiltes Deutschland, Europa"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Über Familiengeschichte sprechen",
+        "Museen und Gedenkstätten besuchen",
+        "Zeitleisten anlegen",
+        "Historische Romane und Dokumentationen auswählen",
+        "Quellen kritisch lesen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Geschichte lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Über Familiengeschichte sprechen\n- Museen und Gedenkstätten besuchen\n- Zeitleisten anlegen\n- Historische Romane und Dokumentationen auswählen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Geschichte lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Über Familiengeschichte sprechen\n- Museen und Gedenkstätten besuchen\n- Zeitleisten anlegen\n- Historische Romane und Dokumentationen auswählen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Muss man viele Jahreszahlen lernen?",
+         "Wenige Schlüsseldaten genügen; Zusammenhänge zählen."
+        ],
+        [
+         "Wie wird der Nationalsozialismus behandelt?",
+         "Altersgerecht und mit Quellen, gemäß Lehrplan; Gedenkstättenfahrten sind üblich."
+        ],
+        [
+         "Wie helfe ich bei Quellen?",
+         "Fragen: Wer schreibt? Wann? Wozu? Wie glaubwürdig?"
+        ],
+        [
+         "Mein Kind hält Geschichte für langweilig.",
+         "Persönlichkeiten, Alltagsgeschichte und Filme wecken Interesse."
+        ],
+        [
+         "Wie bereite ich Arbeiten vor?",
+         "Zeitleiste, Begriffskarten, Fragen zu Ursachen und Folgen."
+        ],
+        [
+         "Welche Fahrten gibt es?",
+         "Je nach Schule Exkursionen zu Museen und Gedenkorten."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.30",
+     "titel": "Wahl- und Infoabend-Baustein Geschichte",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Geschichte ist Pflichtfach. Wählbar sind je nach Land Wahlpflichtangebote, Geschichts-AGs, bilinguale Zweige, Leistungskurs in der Oberstufe oder Projekte zur Erinnerungskultur."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Wahlangebote gibt es?",
+        "Wie ist der Aufbau in der Oberstufe?",
+        "Welche Exkursionen sind geplant?",
+        "Welche Berufe knüpfen an?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Geschichte an. Geschichte ist Pflichtfach. Wählbar sind je nach Land Wahlpflichtangebote, Geschichts-AGs, bilinguale Zweige, Leistungskurs in der Oberstufe oder Projekte zur Erinnerungskultur.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Geschichte an. Geschichte ist Pflichtfach. Wählbar sind je nach Land Wahlpflichtangebote, Geschichts-AGs, bilinguale Zweige, Leistungskurs in der Oberstufe oder Projekte zur Erinnerungskultur.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.31",
+     "titel": "Gesprächsbaustein Lernentwicklung Geschichte",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind ordnet Ereignisse sicher zeitlich ein.",
+        "Das Kind analysiert Quellen genau.",
+        "Das Kind urteilt begründet.",
+        "Das Kind stellt Zusammenhänge dar.",
+        "Das Kind liest Texte aufmerksam.",
+        "Das Kind trägt Referate anschaulich vor.",
+        "Das Kind diskutiert sachlich.",
+        "Das Kind zeigt Interesse an Hintergründen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind verwechselt Ursachen und Folgen.",
+        "Das Kind sollte Quellen kritischer prüfen.",
+        "Das Kind benötigt Hilfe beim Merken von Daten.",
+        "Das Kind gliedert Aufsätze noch unklar.",
+        "Das Kind bringt sich mündlich wenig ein.",
+        "Das Kind sollte Fachbegriffe genauer nutzen.",
+        "Das Kind benötigt Unterstützung bei Karten.",
+        "Das Kind urteilt ohne Begründung."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Zeitleiste im Zimmer aufhängen",
+        "Quellenfragen als Raster nutzen",
+        "Dokumentationen mit Fragen sehen",
+        "Begriffskarten schreiben",
+        "Ursachen-Folgen-Schemata zeichnen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Geschichte sehe ich folgende Stärken: Ihr Kind ordnet Ereignisse sicher zeitlich ein; es analysiert Quellen genau; es urteilt begründet. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Zeitleiste im Zimmer aufhängen und Quellenfragen als Raster nutzen. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Geschichte motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Geschichte"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I",
+   "titel": "Geographie / Erdkunde",
+   "module": [
+    {
+     "id": "6a.32",
+     "titel": "Steckbrief Geographie / Erdkunde",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Geographie untersucht das Zusammenspiel von Natur und Gesellschaft im Raum. Die Bildungsstandards der Deutschen Gesellschaft für Geographie (DGfG) für den mittleren Schulabschluss ordnen Fachwissen, Räumliche Orientierung, Erkenntnisgewinnung, Kommunikation, Beurteilung und Handlung."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Geographie (zum Beispiel Bayern, Baden-Württemberg, Sachsen), Erdkunde (zum Beispiel Niedersachsen, Nordrhein-Westfalen), in manchen Ländern Teil von Gesellschaftslehre."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Orientierung mit Karte und Atlas, Deutschland, Europa, Klima, Landwirtschaft"
+        ],
+        [
+         "Kl. 7–8",
+         "Kontinente, Klimazonen, Entwicklung, Städte, Rohstoffe"
+        ],
+        [
+         "Kl. 9–10",
+         "Globalisierung, Migration, Nachhaltigkeit, Naturrisiken, Raumplanung"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Klassenarbeiten, Tests, Kartenarbeit, Referate, Projekte, Mitarbeit."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Logistik, Tourismus, Stadtplanung",
+        "Umweltberufe, Vermessung",
+        "Verwaltung und Politik"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.33",
+     "titel": "Elternabend-Baustein Geographie / Erdkunde",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Geographie untersucht das Zusammenspiel von Natur und Gesellschaft im Raum. Die Bildungsstandards der Deutschen Gesellschaft für Geographie (DGfG) für den mittleren Schulabschluss ordnen Fachwissen, Räumliche Orientierung, Erkenntnisgewinnung, Kommunikation, Beurteilung und Handlung."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 5–6: Orientierung mit Karte und Atlas, Deutschland, Europa, Klima, Landwirtschaft",
+        "Kl. 7–8: Kontinente, Klimazonen, Entwicklung, Städte, Rohstoffe",
+        "Kl. 9–10: Globalisierung, Migration, Nachhaltigkeit, Naturrisiken, Raumplanung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Atlas und digitale Karten gemeinsam nutzen",
+        "Reisen und Ausflüge planen lassen",
+        "Nachrichten aus aller Welt besprechen",
+        "Wetter beobachten",
+        "Lernspiele zu Ländern und Hauptstädten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Geographie / Erdkunde lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Atlas und digitale Karten gemeinsam nutzen\n- Reisen und Ausflüge planen lassen\n- Nachrichten aus aller Welt besprechen\n- Wetter beobachten\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Geographie / Erdkunde lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Atlas und digitale Karten gemeinsam nutzen\n- Reisen und Ausflüge planen lassen\n- Nachrichten aus aller Welt besprechen\n- Wetter beobachten\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Muss man Hauptstädte lernen?",
+         "Eine Grundorientierung ist wichtig; Zusammenhänge zählen mehr."
+        ],
+        [
+         "Wie hilft man beim Kartenlesen?",
+         "Legende, Maßstab, Himmelsrichtung gemeinsam üben."
+        ],
+        [
+         "Wie wird Klimawandel behandelt?",
+         "Sachlich, mit Daten und Handlungsoptionen."
+        ],
+        [
+         "Welche Medien sind erlaubt?",
+         "Atlas, digitale Karten und geprüfte Quellen."
+        ],
+        [
+         "Gibt es Exkursionen?",
+         "Viele Schulen planen Lerngänge in die Umgebung."
+        ],
+        [
+         "Wie bereite ich Referate vor?",
+         "Gliederung, Kartenskizze, Quellenangabe."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.34",
+     "titel": "Wahl- und Infoabend-Baustein Geographie / Erdkunde",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Geographie ist Pflichtfach oder Teil von Gesellschaftslehre. Wählbar sind je nach Land Wahlpflichtangebote, Projekte zu Umwelt und Nachhaltigkeit sowie Grund- und Leistungskurse in der Oberstufe."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Projekte oder AGs gibt es?",
+        "Welche Exkursionen gehören dazu?",
+        "Wie sieht der Leistungskurs aus?",
+        "Welche Berufsfelder passen?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Geographie / Erdkunde an. Geographie ist Pflichtfach oder Teil von Gesellschaftslehre. Wählbar sind je nach Land Wahlpflichtangebote, Projekte zu Umwelt und Nachhaltigkeit sowie Grund- und Leistungskurse in der Oberstufe.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Geographie / Erdkunde an. Geographie ist Pflichtfach oder Teil von Gesellschaftslehre. Wählbar sind je nach Land Wahlpflichtangebote, Projekte zu Umwelt und Nachhaltigkeit sowie Grund- und Leistungskurse in der Oberstufe.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.35",
+     "titel": "Gesprächsbaustein Lernentwicklung Geographie / Erdkunde",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind orientiert sich sicher mit Karten.",
+        "Das Kind beschreibt Räume genau.",
+        "Das Kind erkennt Zusammenhänge.",
+        "Das Kind wertet Diagramme aus.",
+        "Das Kind bildet begründete Urteile.",
+        "Das Kind arbeitet im Team.",
+        "Das Kind trägt Wissen anschaulich vor.",
+        "Das Kind zeigt Interesse an der Welt."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind liest Karten noch unsicher.",
+        "Das Kind verwechselt Klimazonen.",
+        "Das Kind benötigt Hilfe beim Auswerten von Diagrammen.",
+        "Das Kind gliedert Referate unklar.",
+        "Das Kind behält Fachbegriffe schwer.",
+        "Das Kind sollte den Atlas gezielter nutzen.",
+        "Das Kind nimmt selten am Unterrichtsgespräch teil.",
+        "Das Kind benötigt Hilfe bei Maßstäben."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Karte im Zimmer aufhängen",
+        "Wetter und Nachrichten verorten",
+        "Atlasaufgaben als Spiel",
+        "Fachbegriffe kartieren",
+        "Reisepläne als Übung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Geographie / Erdkunde sehe ich folgende Stärken: Ihr Kind orientiert sich sicher mit Karten; es beschreibt Räume genau; es erkennt Zusammenhänge. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Karte im Zimmer aufhängen und Wetter und Nachrichten verorten. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Geographie / Erdkunde motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Geographie / Erdkunde"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "J",
+   "titel": "Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB",
+   "module": [
+    {
+     "id": "6a.36",
+     "titel": "Steckbrief Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Politische Bildung stärkt die Fähigkeit, Demokratie zu verstehen und mitzugestalten. Grundlage sind der Beutelsbacher Konsens (Überwältigungsverbot, Kontroversität, Schülerorientierung) und die Lehrpläne der Länder."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Politik (zum Beispiel Niedersachsen, Nordrhein-Westfalen), Politik und Wirtschaft (Hessen), Gemeinschaftskunde (Baden-Württemberg, Sachsen), Sozialkunde (Bayern, Thüringen), Gesellschaftslehre (GL, mehrere Länder), Wirtschaft-Arbeit-Technik und weitere Verbünde; Bezeichnungen bitte beim Land prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Zusammenleben, Regeln, Familie, Schule, Gemeinde"
+        ],
+        [
+         "Kl. 7–8",
+         "Demokratie, Grundrechte, Jugend und Medien, Gemeinde, Wahlen"
+        ],
+        [
+         "Kl. 9–10",
+         "Staatsaufbau, Europa, Parteien, Recht, internationale Politik, Wirtschaft"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Klassenarbeiten, Referate, Diskussionen, Planspiele, Projekte, mündliche Mitarbeit."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Verwaltung, Polizei, Justiz",
+        "Journalismus, Politik, Verbände",
+        "Soziale Berufe"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.37",
+     "titel": "Elternabend-Baustein Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Politische Bildung stärkt die Fähigkeit, Demokratie zu verstehen und mitzugestalten. Grundlage sind der Beutelsbacher Konsens (Überwältigungsverbot, Kontroversität, Schülerorientierung) und die Lehrpläne der Länder."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 5–6: Zusammenleben, Regeln, Familie, Schule, Gemeinde",
+        "Kl. 7–8: Demokratie, Grundrechte, Jugend und Medien, Gemeinde, Wahlen",
+        "Kl. 9–10: Staatsaufbau, Europa, Parteien, Recht, internationale Politik, Wirtschaft"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Nachrichten gemeinsam anschauen und einordnen",
+        "Meinungen offen und respektvoll besprechen",
+        "Gemeinderat oder Landtag besuchen",
+        "Wahlen erklären",
+        "Quellen prüfen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Nachrichten gemeinsam anschauen und einordnen\n- Meinungen offen und respektvoll besprechen\n- Gemeinderat oder Landtag besuchen\n- Wahlen erklären\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Nachrichten gemeinsam anschauen und einordnen\n- Meinungen offen und respektvoll besprechen\n- Gemeinderat oder Landtag besuchen\n- Wahlen erklären\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Wird im Unterricht Parteipolitik gemacht?",
+         "Nein. Der Beutelsbacher Konsens verpflichtet zu Ausgewogenheit."
+        ],
+        [
+         "Wie gehe ich mit Streitthemen um?",
+         "Positionen sachlich darstellen, Argumente trennen."
+        ],
+        [
+         "Warum Planspiele?",
+         "Sie lassen Entscheidungsprozesse erleben."
+        ],
+        [
+         "Wie bereite ich Arbeiten vor?",
+         "Begriffe, Staatsaufbau, aktuelle Beispiele."
+        ],
+        [
+         "Welche Rolle haben Medien?",
+         "Quellenkritik und Desinformation sind Inhalt."
+        ],
+        [
+         "Gibt es Fahrten?",
+         "Teils Landtagsbesuche; Information durch die Schule."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.38",
+     "titel": "Wahl- und Infoabend-Baustein Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Je nach Land ist das Fach Pflicht. Wählbar sind Wahlpflichtangebote, SV-Arbeit, Schülerzeitung, Debattierclubs sowie Grund- und Leistungskurse der Oberstufe."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Angebote gibt es zur Mitbestimmung?",
+        "Wie sieht der Oberstufenkurs aus?",
+        "Welche Projekte werden angeboten?",
+        "Welche Berufe schließen an?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB an. Je nach Land ist das Fach Pflicht. Wählbar sind Wahlpflichtangebote, SV-Arbeit, Schülerzeitung, Debattierclubs sowie Grund- und Leistungskurse der Oberstufe.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB an. Je nach Land ist das Fach Pflicht. Wählbar sind Wahlpflichtangebote, SV-Arbeit, Schülerzeitung, Debattierclubs sowie Grund- und Leistungskurse der Oberstufe.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.39",
+     "titel": "Gesprächsbaustein Lernentwicklung Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind diskutiert sachlich.",
+        "Das Kind bildet begründete Meinungen.",
+        "Das Kind kennt politische Strukturen.",
+        "Das Kind zeigt Interesse an aktuellen Themen.",
+        "Das Kind hört anderen aufmerksam zu.",
+        "Das Kind arbeitet bei Planspielen engagiert.",
+        "Das Kind prüft Quellen kritisch.",
+        "Das Kind übernimmt Verantwortung."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind trennt Tatsachen und Meinungen noch unsicher.",
+        "Das Kind bringt sich selten ein.",
+        "Das Kind benötigt Hilfe beim Strukturieren von Argumenten.",
+        "Das Kind kennt Fachbegriffe noch nicht sicher.",
+        "Das Kind verfolgt aktuelle Themen wenig.",
+        "Das Kind sollte Quellen kritischer prüfen.",
+        "Das Kind lässt andere Meinungen nicht immer gelten.",
+        "Das Kind gliedert Erörterungen unklar."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Täglich kurze Nachrichten",
+        "Pro-Contra-Tabellen anlegen",
+        "Diskussionen mit Regeln üben",
+        "Fachbegriffe sammeln",
+        "Planspiele zu Hause nachstellen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB sehe ich folgende Stärken: Ihr Kind diskutiert sachlich; es bildet begründete Meinungen; es kennt politische Strukturen. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Täglich kurze Nachrichten und Pro-Contra-Tabellen anlegen. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Politik / Gemeinschaftskunde / Sozialkunde / GL / WiB"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "K",
+   "titel": "Wirtschaft / Arbeit-Wirtschaft-Technik",
+   "module": [
+    {
+     "id": "6a.40",
+     "titel": "Steckbrief Wirtschaft / Arbeit-Wirtschaft-Technik",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Ökonomische Bildung vermittelt Wissen über Haushalt, Konsum, Arbeit, Betrieb und Berufswahl. Orientierung bieten die Lehrpläne der Länder und die KMK-Empfehlungen zur Beruflichen Orientierung an Schulen."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Wirtschaft und Beruf (WiB, Bayern), Arbeit-Wirtschaft-Technik (AWT), Wirtschaft-Arbeit-Technik (WAT), Wirtschaft, Arbeitslehre; Bezeichnungen je nach Land und Schulart, bitte beim Land prüfen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Haushalt, Konsum, Taschengeld, Ernährung, Technik"
+        ],
+        [
+         "Kl. 7–8",
+         "Verbraucherverhalten, Berufe, Betriebe, Arbeitsplatz, Praktikum"
+        ],
+        [
+         "Kl. 9–10",
+         "Berufswahl, Bewerbung, Ausbildung, Wirtschaftskreislauf, Steuern, Versicherungen, Unternehmen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Mappe, Projekte, Praktikumsbericht, Bewerbungsunterlagen, Tests, Referate."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kaufmännische Berufe, Handwerk",
+        "Selbstständigkeit",
+        "Bank, Versicherung, Handel"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.41",
+     "titel": "Elternabend-Baustein Wirtschaft / Arbeit-Wirtschaft-Technik",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Ökonomische Bildung vermittelt Wissen über Haushalt, Konsum, Arbeit, Betrieb und Berufswahl. Orientierung bieten die Lehrpläne der Länder und die KMK-Empfehlungen zur Beruflichen Orientierung an Schulen."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kl. 5–6: Haushalt, Konsum, Taschengeld, Ernährung, Technik",
+        "Kl. 7–8: Verbraucherverhalten, Berufe, Betriebe, Arbeitsplatz, Praktikum",
+        "Kl. 9–10: Berufswahl, Bewerbung, Ausbildung, Wirtschaftskreislauf, Steuern, Versicherungen, Unternehmen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Taschengeld und Budget besprechen",
+        "Berufe im Familien- und Bekanntenkreis vorstellen",
+        "Bei Bewerbungen unterstützen",
+        "Praktikum gemeinsam planen",
+        "Verträge und Preise vergleichen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Wirtschaft / Arbeit-Wirtschaft-Technik lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Taschengeld und Budget besprechen\n- Berufe im Familien- und Bekanntenkreis vorstellen\n- Bei Bewerbungen unterstützen\n- Praktikum gemeinsam planen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Wirtschaft / Arbeit-Wirtschaft-Technik lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Taschengeld und Budget besprechen\n- Berufe im Familien- und Bekanntenkreis vorstellen\n- Bei Bewerbungen unterstützen\n- Praktikum gemeinsam planen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Wie läuft das Praktikum?",
+         "Die Schule organisiert oder berät; Betriebe sind zu suchen."
+        ],
+        [
+         "Wer hilft bei Bewerbungen?",
+         "Fachlehrkraft und Agentur für Arbeit."
+        ],
+        [
+         "Lernt mein Kind Finanzen?",
+         "Grundlagen wie Budget, Vertrag, Schulden."
+        ],
+        [
+         "Welche Berufsorientierung gibt es?",
+         "Berufsinformationstage, Betriebserkundungen, Beratung."
+        ],
+        [
+         "Wie wird bewertet?",
+         "Mappe, Mitarbeit, Projekte."
+        ],
+        [
+         "Kann das Fach Pflicht sein?",
+         "Das regeln die Länder."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.42",
+     "titel": "Wahl- und Infoabend-Baustein Wirtschaft / Arbeit-Wirtschaft-Technik",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Wirtschaft wird je nach Land als Pflichtfach, Wahlpflichtfach oder Schwerpunkt (zum Beispiel Wirtschaftszweig an Realschulen) angeboten. Die Wahl erfolgt meist in Kl. 7 oder 8."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Wirtschaftsprofile gibt es?",
+        "Wie wird das Praktikum eingebunden?",
+        "Welche Abschlüsse sind möglich?",
+        "Wie hängt das Fach mit dem Berufswunsch zusammen?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Wirtschaft / Arbeit-Wirtschaft-Technik an. Wirtschaft wird je nach Land als Pflichtfach, Wahlpflichtfach oder Schwerpunkt (zum Beispiel Wirtschaftszweig an Realschulen) angeboten. Die Wahl erfolgt meist in Kl. 7 oder 8.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Wirtschaft / Arbeit-Wirtschaft-Technik an. Wirtschaft wird je nach Land als Pflichtfach, Wahlpflichtfach oder Schwerpunkt (zum Beispiel Wirtschaftszweig an Realschulen) angeboten. Die Wahl erfolgt meist in Kl. 7 oder 8.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.43",
+     "titel": "Gesprächsbaustein Lernentwicklung Wirtschaft / Arbeit-Wirtschaft-Technik",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind denkt wirtschaftlich.",
+        "Das Kind geht verantwortungsvoll mit Geld um.",
+        "Das Kind arbeitet im Projekt zuverlässig.",
+        "Das Kind erstellt Bewerbungsunterlagen sorgfältig.",
+        "Das Kind präsentiert sicher.",
+        "Das Kind kennt seine Berufswünsche.",
+        "Das Kind stellt kluge Fragen im Betrieb.",
+        "Das Kind zeigt Eigeninitiative."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind sollte Berufsfelder genauer erkunden.",
+        "Das Kind benötigt Hilfe bei Bewerbungsschreiben.",
+        "Das Kind hält Fristen nicht immer ein.",
+        "Das Kind sollte Preise stärker vergleichen.",
+        "Das Kind bringt Material unvollständig mit.",
+        "Das Kind zeigt noch wenig Eigeninitiative.",
+        "Das Kind sollte Fachbegriffe sicherer nutzen.",
+        "Das Kind gliedert Berichte unklar."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Berufe im Umfeld vorstellen",
+        "Haushaltsbuch führen",
+        "Bewerbungstraining zu Hause",
+        "Fristenkalender anlegen",
+        "Interviews mit Fachleuten führen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Wirtschaft / Arbeit-Wirtschaft-Technik sehe ich folgende Stärken: Ihr Kind denkt wirtschaftlich; es geht verantwortungsvoll mit Geld um; es arbeitet im Projekt zuverlässig. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Berufe im Umfeld vorstellen und Haushaltsbuch führen. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Wirtschaft / Arbeit-Wirtschaft-Technik motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Wirtschaft / Arbeit-Wirtschaft-Technik"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "titel": "Informatik / Medienbildung",
+   "module": [
+    {
+     "id": "6a.44",
+     "titel": "Steckbrief Informatik / Medienbildung",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen, Leistungsnachweise und Berufsbezug des Fachs für Elternabend und Infoblatt.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Informatik und Medienbildung vermitteln die Funktionsweise digitaler Systeme, Algorithmen und den sicheren Umgang mit Medien. Orientierung gibt die KMK-Strategie Bildung in der digitalen Welt mit Kompetenzbereichen wie Suchen, Kommunizieren, Produzieren, Schützen, Problemlösen und Analysieren."
+      },
+      {
+       "t": "p",
+       "x": "Bezeichnung in den Ländern: Informatik (zum Beispiel Bayern, Baden-Württemberg, Berlin, Hessen), Medienbildung, Informatik und Medien, Digitale Grundbildung; je nach Land Pflicht, Wahlpflicht oder integriert."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen (typisch, je nach Land)"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Erste Medienerfahrungen, Programmieren spielerisch, sichere Nutzung"
+        ],
+        [
+         "Kl. 5–6",
+         "Textverarbeitung, Recherche, Datenschutz, einfache Programmierung"
+        ],
+        [
+         "Kl. 7–8",
+         "Algorithmen, Tabellenkalkulation, Netzwerke, Datenbanken, Mediengestaltung"
+        ],
+        [
+         "Kl. 9–10",
+         "Programmiersprachen, Daten, KI-Grundlagen, Informationssicherheit, Projekte"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "p",
+       "x": "Praktische Aufgaben, Projekte, Tests, Dokumentation, Mitarbeit."
+      },
+      {
+       "t": "h",
+       "x": "Berufsbezug"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Fachinformatiker, Mediengestaltung",
+        "Büro und Verwaltung",
+        "Alle Branchen mit digitalen Prozessen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Reihenfolge, Stundenzahl und Themen weichen je nach Land und Schulart ab. Nutzen Sie den Steckbrief als Orientierung und ergänzen Sie die Angaben Ihrer Schule."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Schule",
+        "Fachlehrkraft",
+        "Unterrichtsstunden pro Woche in Klasse ____",
+        "Besondere Angebote an unserer Schule"
+       ]
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.45",
+     "titel": "Elternabend-Baustein Informatik / Medienbildung",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertiger Baustein für den Elternabend: Was lernt das Kind, wie helfen Eltern, typische Fragen mit Antworten.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Was lernt Ihr Kind?"
+      },
+      {
+       "t": "p",
+       "x": "Informatik und Medienbildung vermitteln die Funktionsweise digitaler Systeme, Algorithmen und den sicheren Umgang mit Medien. Orientierung gibt die KMK-Strategie Bildung in der digitalen Welt mit Kompetenzbereichen wie Suchen, Kommunizieren, Produzieren, Schützen, Problemlösen und Analysieren."
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Grundschule: Erste Medienerfahrungen, Programmieren spielerisch, sichere Nutzung",
+        "Kl. 5–6: Textverarbeitung, Recherche, Datenschutz, einfache Programmierung",
+        "Kl. 7–8: Algorithmen, Tabellenkalkulation, Netzwerke, Datenbanken, Mediengestaltung",
+        "Kl. 9–10: Programmiersprachen, Daten, KI-Grundlagen, Informationssicherheit, Projekte"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Gemeinsam Medienregeln vereinbaren",
+        "Programmierspiele und Projekte ausprobieren",
+        "Datenschutz und Passwörter besprechen",
+        "Quellen im Internet prüfen",
+        "Bildschirmzeiten festlegen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nheute möchte ich euch zeigen, was euer Kind im Fach Informatik / Medienbildung lernt und wie ihr es zu Hause unterstützen könnt. Dafür müsst ihr keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen euch diese Punkte:\n- Gemeinsam Medienregeln vereinbaren\n- Programmierspiele und Projekte ausprobieren\n- Datenschutz und Passwörter besprechen\n- Quellen im Internet prüfen\n\nWenn ihr Fragen habt oder euch etwas auffällt, sprecht mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nich möchte Ihnen heute zeigen, was Ihr Kind im Fach Informatik / Medienbildung lernt und wie Sie es zu Hause unterstützen können. Dafür müssen Sie keine Experten sein. Wichtig sind Interesse, Ruhe und regelmäßige kleine Übungsmomente.\n\nKonkret helfen Ihnen diese Punkte:\n- Gemeinsam Medienregeln vereinbaren\n- Programmierspiele und Projekte ausprobieren\n- Datenschutz und Passwörter besprechen\n- Quellen im Internet prüfen\n\nWenn Sie Fragen haben oder Ihnen etwas auffällt, sprechen Sie mich bitte frühzeitig an. Gemeinsam finden wir eine Lösung."
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Frage",
+        "Antwort"
+       ],
+       "zeilen": [
+        [
+         "Wie viel Bildschirmzeit ist gut?",
+         "Orientierung: altersgerechte Zeiten und Absprachen."
+        ],
+        [
+         "Brauche ich ein eigenes Gerät?",
+         "Das regelt die Schule; häufig stehen Geräte bereit."
+        ],
+        [
+         "Wie wird Datenschutz vermittelt?",
+         "Mit Passwörtern, persönlichen Daten, Einwilligung."
+        ],
+        [
+         "Was ist mit KI-Werkzeugen?",
+         "Chancen und Risiken werden thematisiert; Regeln der Schule gelten."
+        ],
+        [
+         "Wie bereite ich Arbeiten vor?",
+         "Praktische Übungen und Begriffe."
+        ],
+        [
+         "Gibt es Mobbing im Netz?",
+         "Thema im Unterricht; Ansprechpersonen kennen."
+        ]
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Antworten bitte an Landesregelungen und Schulprogramm anpassen. Bei Rechtsfragen (Noten, Förderung, Nachteilsausgleich) auf die aktuelle Regelung des Landes verweisen."
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Eigene Ergänzungen und Fragen aus der Elternschaft"
+      }
+     ]
+    },
+    {
+     "id": "6a.46",
+     "titel": "Wahl- und Infoabend-Baustein Informatik / Medienbildung",
+     "typ": "Checkliste",
+     "zweck": "Baustein für Infoabend und Beratung, wenn das Fach gewählt, vertieft oder als Profil belegt werden kann.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es?"
+      },
+      {
+       "t": "p",
+       "x": "Informatik wird je nach Land als Pflicht-, Wahlpflicht- oder Profilfach angeboten. Die Wahl liegt meist in Kl. 6 bis 8; in der Oberstufe sind Grund- oder Leistungskurs möglich."
+      },
+      {
+       "t": "h",
+       "x": "Fragen für den Infoabend"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Welche Hard- und Software gibt es?",
+        "Welche Vorkenntnisse sind nötig?",
+        "Wie verbindet sich das Fach mit Mathe?",
+        "Welche Berufsfelder schließen an?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Checkliste für Eltern und Kind"
+      },
+      {
+       "t": "check",
+       "x": [
+        "Interessen und Stärken des Kindes besprechen",
+        "Aktuelle Note und Lernverhalten im Fach einschätzen",
+        "Berufswunsch oder Oberstufenziel mitdenken",
+        "Wahlfristen und Formulare der Schule notieren",
+        "Beratungsgespräch mit der Fachlehrkraft vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sehr geehrte Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Informatik / Medienbildung an. Informatik wird je nach Land als Pflicht-, Wahlpflicht- oder Profilfach angeboten. Die Wahl liegt meist in Kl. 6 bis 8; in der Oberstufe sind Grund- oder Leistungskurs möglich.\n\nBitte sprechen Sie mit Ihren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "h",
+       "x": "Elterninfo (Du-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin den nächsten Wochen steht die Wahl rund um das Fach Informatik / Medienbildung an. Informatik wird je nach Land als Pflicht-, Wahlpflicht- oder Profilfach angeboten. Die Wahl liegt meist in Kl. 6 bis 8; in der Oberstufe sind Grund- oder Leistungskurs möglich.\n\nBitte sprecht mit euren Kindern über Interessen, Stärken und Berufswünsche. Fragen beantworte ich gern beim Infoabend."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Gewünschte Wahl",
+        "Zweitwunsch",
+        "Datum, Unterschrift"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlmöglichkeiten, Fristen und Voraussetzungen sind je nach Land und Schulart verschieden. Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html, Stand November 2026. Konkrete Lehrpläne und Stundentafeln regelt jedes Land selbst; bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6a.47",
+     "titel": "Gesprächsbaustein Lernentwicklung Informatik / Medienbildung",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen und Fördertipps für das Lernentwicklungsgespräch und die Zeugnisbemerkung im Fach.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Stärken"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind geht sicher mit Medien um.",
+        "Das Kind denkt logisch.",
+        "Das Kind programmiert Aufgaben selbstständig.",
+        "Das Kind achtet auf Datenschutz.",
+        "Das Kind arbeitet im Team.",
+        "Das Kind dokumentiert sauber.",
+        "Das Kind löst Probleme kreativ.",
+        "Das Kind hilft anderen beim Verstehen."
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Acht Formulierungen für Entwicklungsfelder"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Das Kind muss Regeln im Netz besser beachten.",
+        "Das Kind benötigt Hilfe beim Strukturieren von Programmen.",
+        "Das Kind testet Ergebnisse zu wenig.",
+        "Das Kind nutzt Geräte zu unkonzentriert.",
+        "Das Kind dokumentiert unvollständig.",
+        "Das Kind sollte Quellen kritischer prüfen.",
+        "Das Kind benötigt Anleitung bei Tabellen.",
+        "Das Kind hat Passwort und Material nicht immer dabei."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Entwicklungsfelder immer mit einem konkreten nächsten Schritt verbinden und mit einer Stärke einleiten. So bleibt das Gespräch ressourcenorientiert."
+      },
+      {
+       "t": "h",
+       "x": "Fünf Fördertipps für zu Hause"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Medienvertrag zu Hause",
+        "Kleine Programmierprojekte",
+        "Passwortregeln besprechen",
+        "Quellen gemeinsam prüfen",
+        "Zeitlimits vereinbaren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Gesprächsbaustein (Sie-Form)"
+      },
+      {
+       "t": "baustein",
+       "x": "Im Fach Informatik / Medienbildung sehe ich folgende Stärken: Ihr Kind geht sicher mit Medien um; es denkt logisch; es programmiert Aufgaben selbstständig. Das möchte ich ausdrücklich würdigen.\n\nAls nächste Schritte schlage ich vor: Medienvertrag zu Hause und Kleine Programmierprojekte. Wie sehen Sie das?"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Kind arbeitet im Fach Informatik / Medienbildung motiviert mit",
+        "Das Kind erledigt Aufgaben im Fach zuverlässig",
+        "Das Kind fühlt sich im Fach sicher"
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 4,
+       "x": "Vereinbarung und nächster Schritt im Fach Informatik / Medienbildung"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

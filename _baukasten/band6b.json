@@ -1,0 +1,4349 @@
+{
+ "band": "6b",
+ "titel": "Band 6b: Fächer-Steckbriefe B",
+ "untertitel": "Sprachen, Künste, Sport, Werte, Technik, Wahl- und Wahlpflichtfächer",
+ "einleitung": "Dieser Band enthält je Fach einen Steckbrief, einen Elternabend-Baustein mit Du- und Sie-Form, wo sinnvoll einen Wahlbaustein und einen Gesprächsbaustein für Lernentwicklungsgespräche. Kopieren Sie die Bausteine und passen Sie Einsetzfelder in eckigen Klammern an. Alle Länderangaben sind Orientierung mit Quelle; bitte vor Gebrauch mit dem schulinternen Curriculum und dem Ministerium abgleichen.",
+ "abschnitte": [
+  {
+   "id": "A",
+   "titel": "Sprachen",
+   "module": [
+    {
+     "id": "6b.01",
+     "titel": "Steckbrief Englisch Grundschule",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Englisch in der Grundschule für Elternabend und Beratung.",
+     "stufe": "Kl. 3–4",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Die Kinder begegnen der Fremdsprache spielerisch und mündlich. Sie verstehen einfache Anweisungen, sprechen in kurzen Sätzen, singen und lernen erste Wörter in Bild und Schrift kennen. Das Fach weckt Freude an Sprachen und Offenheit für andere Kulturen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Kl. 1–2 (wo angeboten)",
+         "Begegnung mit Sprache, Lieder, Reime, Rituale"
+        ],
+        [
+         "Kl. 3",
+         "Begrüßen, Zahlen, Farben, Familie, Schule, erste Wörter lesen"
+        ],
+        [
+         "Kl. 4",
+         "Kurze Dialoge, Hobbys, Essen, Tagesablauf, kleine Texte"
+        ],
+        [
+         "Übergang Kl. 5",
+         "Anknüpfung an Wortschatz und Hörverstehen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mündliche Beteiligung und Dialoge",
+        "Hörverstehen mit Bildern",
+        "Kleine Lernkontrollen zum Wortschatz",
+        "Beobachtung im Unterricht, in vielen Ländern ohne Noten in Kl. 3"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Fremdsprachenkenntnisse sind später in vielen Berufen gefragt. In der Grundschule geht es zuerst um Mut zum Sprechen, nicht um Grammatik."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.02",
+     "titel": "Elternabend-Baustein Englisch Grundschule",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Englisch in der Grundschule.",
+     "stufe": "Kl. 3–4",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Englisch in der Grundschule"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Englisch in der Grundschule lernen die Kinder in diesem Schuljahr Folgendes: Die Kinder begegnen der Fremdsprache spielerisch und mündlich. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Englisch in der Grundschule arbeiten wir in diesem Schuljahr an Folgendem: Die Kinder begegnen der Fremdsprache spielerisch und mündlich. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Lieder und Reime gemeinsam hören und mitsingen",
+        "Wörter spielerisch im Alltag einbauen, etwa Zahlen beim Treppensteigen",
+        "Kindern zuhören, wenn sie vorführen, was sie können",
+        "Fehler nicht ständig verbessern, sondern Mut machen",
+        "Kurze, regelmäßige Übung statt langer Lernblöcke"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Muss mein Kind schon schreiben können? – Nein, zunächst steht Hören und Sprechen im Vordergrund.",
+        "Wird das Fach benotet? – Das regelt das Land. Teils gibt es in Klasse 3 nur Rückmeldungen, in Klasse 4 oft Noten.",
+        "Was, wenn wir selbst kaum Englisch sprechen? – Das ist kein Problem. Hörmaterial und Lieder aus dem Unterricht reichen als Begleitung.",
+        "Wie viel Üben ist nötig? – Zehn Minuten an einigen Tagen genügen.",
+        "Verwirrt Englisch das Deutschlernen? – Nein. Mehrsprachigkeit unterstützt die Sprachentwicklung.",
+        "Was passiert beim Wechsel zur weiterführenden Schule? – Dort wird an den Grundlagen angeknüpft; manche Schulen starten mit einem Wiederholungsblock."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.03",
+     "titel": "Gesprächsbaustein Englisch Grundschule",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Englisch in der Grundschule.",
+     "stufe": "Kl. 3–4",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Spricht mutig und mit Freude Englisch",
+        "Versteht einfache Anweisungen sicher",
+        "Singt Lieder aktiv mit",
+        "Hat einen guten Grundwortschatz zu den Themenfeldern",
+        "Beteiligt sich lebhaft an Rollenspielen",
+        "Spricht verständlich und mit guter Aussprache",
+        "Merkt sich neue Wörter schnell",
+        "Hilft anderen beim Verstehen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Traut sich noch zurückhaltend, in der Gruppe zu sprechen",
+        "Kann den Wortschatz noch nicht sicher abrufen",
+        "Verwechselt noch ähnlich klingende Wörter",
+        "Braucht noch Unterstützung beim Hörverstehen",
+        "Hört bei längeren Texten noch schnell ab",
+        "Spricht noch sehr leise",
+        "Schreibt Wörter noch nach Gehör",
+        "Wiederholt neue Wörter noch zu selten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Wortkarten mit Bildern anlegen und gemeinsam sortieren",
+        "Kurze Hörgeschichten täglich anhören",
+        "Alltagsgegenstände zu Hause englisch benennen",
+        "Mit Handpuppe oder Stofftier Dialoge spielen",
+        "Neue Wörter mit Bewegung verbinden"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Englisch in der Grundschule"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.04",
+     "titel": "Steckbrief Englisch (Sekundarstufe)",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Englisch (Sekundarstufe) für Elternabend und Beratung.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Die Schülerinnen und Schüler entwickeln kommunikative Kompetenz in Hören, Lesen, Sprechen, Schreiben und Sprachmittlung. Sie erweitern Wortschatz und Grammatik, lernen interkulturell zu handeln und nutzen Medien zur Informationsbeschaffung. Orientierung bieten die Bildungsstandards der KMK, die sich am Gemeinsamen europäischen Referenzrahmen orientieren."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Alltag, Familie, Freizeit, Schule, einfache Texte, Aussprache"
+        ],
+        [
+         "Kl. 7–8",
+         "Vergangenheit und Zukunft, Reisen, Medien, Jugend, längere Texte"
+        ],
+        [
+         "Kl. 9–10",
+         "Argumentieren, Berichte, Literatur, Berufswelt, Prüfungsformate"
+        ],
+        [
+         "Abschlussnähe",
+         "Hörverstehen, Leseverstehen, Schreiben, Sprachmittlung, mündliche Prüfung"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Klassenarbeiten mit Hören, Lesen, Schreiben",
+        "Wortschatz- und Grammatiktests",
+        "Mündliche Noten: Beteiligung, Präsentation, Gespräch",
+        "Je nach Land Vokabeltests, Lernzielkontrollen, mündliche Prüfungen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Englisch ist Arbeitssprache in Wirtschaft, Technik, Wissenschaft und Tourismus. Gute Kenntnisse erleichtern Ausbildung, Studium und Auslandsaufenthalte."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.05",
+     "titel": "Elternabend-Baustein Englisch (Sekundarstufe)",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Englisch (Sekundarstufe).",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Englisch (Sekundarstufe)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Englisch (Sekundarstufe) lernen die Kinder in diesem Schuljahr Folgendes: Die Schülerinnen und Schüler entwickeln kommunikative Kompetenz in Hören, Lesen, Sprechen, Schreiben und Sprachmittlung. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Englisch (Sekundarstufe) arbeiten wir in diesem Schuljahr an Folgendem: Die Schülerinnen und Schüler entwickeln kommunikative Kompetenz in Hören, Lesen, Sprechen, Schreiben und Sprachmittlung. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Regelmäßig kurze Zeit für Vokabeln einplanen, möglichst verteilt",
+        "Englische Serien, Hörbücher oder Musik mit Untertiteln nutzen",
+        "Zu Hause kurze englische Sätze zum Tagesablauf üben",
+        "Fehler als Lernchance sehen, nicht als Makel",
+        "Interesse an Inhalten zeigen, auch ohne selbst Englisch zu können"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie lerne ich Vokabeln richtig? – In kleinen Portionen, mit Karteikasten oder App, in Sätzen und mehrfach verteilt.",
+        "Warum zählen mündliche Noten so viel? – Weil Sprechen ein Kernziel ist; in vielen Ländern zählen sie etwa gleich viel wie schriftliche.",
+        "Was tun bei Grammatikproblemen? – Gezielt eine Regel pro Woche üben, Beispielsätze selbst bilden.",
+        "Ist Nachhilfe nötig? – Meist nicht. Zuerst Förder- und Sprechstundenangebote der Schule nutzen.",
+        "Ab wann kommt eine zweite Fremdsprache? – Das hängt von Land und Schulart ab; siehe Wahlbaustein.",
+        "Wie hilft Auslandsaufenthalt? – Er motiviert, ist aber nicht notwendig; Brieffreundschaften oder digitale Austausche sind eine Alternative."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.06",
+     "titel": "Wahl- und Infobaustein Englisch (Sekundarstufe)",
+     "typ": "Textbaustein",
+     "zweck": "Informationsbaustein zur Wahl der zweiten Fremdsprache nach Englisch.",
+     "stufe": "Kl. 5–8",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es bei der Wahl?"
+      },
+      {
+       "t": "p",
+       "x": "Nach Englisch als erster Fremdsprache folgt je nach Land und Schulart eine zweite Fremdsprache, etwa Französisch, Spanisch oder Latein, als Pflicht-, Wahlpflicht- oder Wahlfach. Beginn und Verbindlichkeit sind landesspezifisch und werden in der jeweiligen Schulordnung geregelt."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Infoabend"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, mit der zweiten Fremdsprache beginnt eine neue Lernphase. Entscheidend sind nicht Modetrends, sondern Interesse, Arbeitsweise und die Schulform. Ich stelle Ihnen heute die Angebote vor und gebe Ihnen eine Entscheidungshilfe mit. Sie dürfen jederzeit nachfragen, ob und wann ein späterer Wechsel möglich ist."
+      },
+      {
+       "t": "h",
+       "x": "Entscheidungshilfe für Kind und Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Interessiert sich mein Kind für Land, Sprache und Kultur?",
+        "Wie sicher ist Englisch, wie ist die Lerndisziplin?",
+        "Welche Fremdsprache wird an der weiterführenden Schule oder Oberstufe fortgeführt?",
+        "Ist ein Wechsel später möglich und wie?",
+        "Gibt es Austausch, Zertifikate oder Sprachdiplome?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Schriftliche Rückmeldung"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Gewählte Variante",
+        "Unterschrift der Erziehungsberechtigten"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlfristen, Mindestgruppengrößen und Bindungsdauer legt das Land bzw. die Schule fest; im Elternbrief exakt angeben."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.07",
+     "titel": "Gesprächsbaustein Englisch (Sekundarstufe)",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Englisch (Sekundarstufe).",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Versteht englische Hörtexte zunehmend sicher",
+        "Liest altersgemäße Texte flüssig",
+        "Bildet korrekte, vielfältige Sätze",
+        "Hat einen großen aktiven Wortschatz",
+        "Beteiligt sich regelmäßig und verständlich mündlich",
+        "Gliedert Texte klar und logisch",
+        "Setzt Grammatik sicher in freiem Schreiben ein",
+        "Übernimmt gern Präsentationen auf Englisch"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Braucht noch Sicherheit bei Zeitformen",
+        "Wiederholt den Wortschatz bisher unregelmäßig",
+        "Schreibt Texte noch sehr kurz",
+        "Spricht in freien Gesprächen noch zögerlich",
+        "Verwechselt Rechtschreibung ähnlicher Wörter",
+        "Überträgt deutsche Satzstellung noch häufig",
+        "Nutzt Hilfsmittel noch nicht gezielt",
+        "Versteht schnelle Sprecher noch nicht sicher"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Vokabelplan: dreimal zehn Minuten pro Woche",
+        "Englische Texte mit Lesetagebuch",
+        "Kurze Sprachaufnahmen zum Selbstcheck",
+        "Fehlerkartei mit eigenen Korrekturen",
+        "Lerntandem mit einem Mitschüler"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Englisch (Sekundarstufe)"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.08",
+     "titel": "Steckbrief Französisch",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Französisch für Elternabend und Beratung.",
+     "stufe": "Kl. 6–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Die Schülerinnen und Schüler erwerben kommunikative Kompetenz in Französisch mit Schwerpunkt Hören, Sprechen und Verstehen im Alltag. Sie lernen Aussprache und Schreibung, die sich stark unterscheiden, und gewinnen interkulturelle Einblicke in Frankreich und die Frankophonie."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Beginn (Kl. 5/6/7)",
+         "Aussprache, Begrüßung, Familie, Schule, Zahlen"
+        ],
+        [
+         "Folgejahre",
+         "Verbformen, passé composé, Wegbeschreibung, Einkaufen, Verabredungen"
+        ],
+        [
+         "Kl. 9–10",
+         "Meinungen äußern, Briefe, Medien, Austausch, DELF-nahe Aufgaben"
+        ],
+        [
+         "Austausch",
+         "Partnerschulen, Brieffreundschaften, Begegnungen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Klassenarbeiten in Teilbereichen",
+        "Vokabel- und Grammatiktests",
+        "Mündliche Noten und Dialoge",
+        "Je nach Schule Sprachdiplom DELF als Zusatz"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Französisch ist Amtssprache in vielen Ländern und wichtiger Wirtschaftspartner in Europa. Es bietet Chancen im Handel, Tourismus, Verwaltung und in der Zusammenarbeit mit Frankreich."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.09",
+     "titel": "Elternabend-Baustein Französisch",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Französisch.",
+     "stufe": "Kl. 6–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Französisch"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Französisch lernen die Kinder in diesem Schuljahr Folgendes: Die Schülerinnen und Schüler erwerben kommunikative Kompetenz in Französisch mit Schwerpunkt Hören, Sprechen und Verstehen im Alltag. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Französisch arbeiten wir in diesem Schuljahr an Folgendem: Die Schülerinnen und Schüler erwerben kommunikative Kompetenz in Französisch mit Schwerpunkt Hören, Sprechen und Verstehen im Alltag. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Regelmäßig laut sprechen lassen, die Aussprache zählt",
+        "Kurze französische Videos und Lieder gemeinsam ansehen",
+        "Vokabeln mit Bildern und Artikeln lernen",
+        "Verben zunächst in kleinen Gruppen üben",
+        "Austausch- und Begegnungsangebote der Schule nutzen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ist Französisch schwerer als Englisch? – Die Schreibung ist unregelmäßiger, dafür helfen Verwandtschaften zum Deutschen und Englischen.",
+        "Wie viele Vokabeln pro Woche? – Etwa 10 bis 15 neue Wörter, regelmäßig wiederholt.",
+        "Lohnt sich Französisch trotz Englisch? – Ja, für Verständigung in Europa und den Wechsel zu weiteren romanischen Sprachen.",
+        "Was bringt ein Sprachdiplom? – Es dokumentiert Fähigkeiten, ist aber freiwillig.",
+        "Kann mein Kind abwählen? – Das regeln Land und Schule; siehe Wahlbaustein.",
+        "Wie hilft man bei der Aussprache? – Mit Hörmaterial, Nachsprechübungen und Sprachaufnahmen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.10",
+     "titel": "Wahl- und Infobaustein Französisch",
+     "typ": "Textbaustein",
+     "zweck": "Infobaustein Französisch als zweite oder dritte Fremdsprache.",
+     "stufe": "Kl. 5–8",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es bei der Wahl?"
+      },
+      {
+       "t": "p",
+       "x": "Französisch ist je nach Land als zweite Fremdsprache, Wahlpflichtfach oder spät beginnende Fremdsprache wählbar. Manche Länder bieten bilinguale Zweige oder Grenzregion-Projekte an."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Infoabend"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, Französisch ist eine Sprache der Nachbarschaft und der Kultur. Wer gern spricht, hört und Neues entdeckt, ist hier gut aufgehoben. Die Anforderungen steigen mit der Verbenvielfalt; dafür gibt es klare Regeln und viel Unterstützung."
+      },
+      {
+       "t": "h",
+       "x": "Entscheidungshilfe für Kind und Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Interesse an Land, Kultur und Austausch",
+        "Freude am Sprechen und an Aussprache",
+        "Zeitliche Belastung durch Vokabeln und Grammatik",
+        "Fortführung in Sek II oder Ausbildung",
+        "Hilfsangebote der Schule"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Schriftliche Rückmeldung"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Gewählte Variante",
+        "Unterschrift der Erziehungsberechtigten"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlfristen, Mindestgruppengrößen und Bindungsdauer legt das Land bzw. die Schule fest; im Elternbrief exakt angeben."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.11",
+     "titel": "Gesprächsbaustein Französisch",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Französisch.",
+     "stufe": "Kl. 6–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Hat eine ausgezeichnete Aussprache",
+        "Versteht Hörtexte schon sicher",
+        "Verwendet neue Vokabeln aktiv",
+        "Bildet korrekte Verbformen",
+        "Liest kurze Texte mit Interesse",
+        "Zeigt Freude am Sprechen",
+        "Arbeitet sorgfältig an der Schreibung",
+        "Bringt kulturelles Interesse mit"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Braucht noch Sicherheit bei Verbendungen",
+        "Verwechselt Schreibung und Aussprache",
+        "Lernt Vokabeln noch unregelmäßig",
+        "Traut sich zu selten zu sprechen",
+        "Artikel und Genus sind noch unsicher",
+        "Hörtexte werden noch lückenhaft verstanden",
+        "Nutzt das Wörterbuch noch ungezielt",
+        "Wiederholt Grammatik zu selten"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Karteikasten mit Artikel und Beispielsatz",
+        "Mit Hörspielen Hörverstehen trainieren",
+        "Verben als kleine Lieder oder Reime merken",
+        "Dialoge in Partnerarbeit üben",
+        "Wöchentlich eine französische Kurzgeschichte lesen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Französisch"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.12",
+     "titel": "Steckbrief Spanisch",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Spanisch für Elternabend und Beratung.",
+     "stufe": "Kl. 6–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Die Lernenden erwerben Grundlagen im Hören, Sprechen, Lesen, Schreiben und Sprachmitteln. Spanisch gilt als regelmäßig und gut lesbar. Im Mittelpunkt stehen Alltag, Lebenswelten in Spanien und Lateinamerika sowie interkulturelles Verstehen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Beginn",
+         "Begrüßung, Familie, Zahlen, Schule, Aussprache"
+        ],
+        [
+         "Folgejahre",
+         "Gewohnheiten, Einkaufen, Reisen, Vergangenheit, Verabredungen"
+        ],
+        [
+         "Kl. 9–10",
+         "Meinungen, Alltagstexte, Medien, Kultur in Lateinamerika"
+        ],
+        [
+         "Austausch",
+         "Partnerschulen, Projekte, digitale Begegnungen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Klassenarbeiten",
+        "Vokabel- und Grammatiktests",
+        "Mündliche Beteiligung und Präsentationen",
+        "Sprachdiplom DELE als freiwillige Zusatzoption"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Spanisch ist Weltsprache mit vielen Sprechern. Chancen bestehen im Tourismus, Handel, Medien und in internationalen Unternehmen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.13",
+     "titel": "Elternabend-Baustein Spanisch",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Spanisch.",
+     "stufe": "Kl. 6–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Spanisch"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Spanisch lernen die Kinder in diesem Schuljahr Folgendes: Die Lernenden erwerben Grundlagen im Hören, Sprechen, Lesen, Schreiben und Sprachmitteln. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Spanisch arbeiten wir in diesem Schuljahr an Folgendem: Die Lernenden erwerben Grundlagen im Hören, Sprechen, Lesen, Schreiben und Sprachmitteln. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Spanische Musik und Serien mit Untertiteln nutzen",
+        "Kleine Alltagsdialoge zu Hause üben",
+        "Vokabeln thematisch ordnen",
+        "Regelmäßigkeit vor Intensität",
+        "Interesse an Kultur zeigen, etwa durch Essen und Feste"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ist Spanisch leichter? – Die Aussprache ist regelmäßiger, die Verben sind aber vielfältig.",
+        "Wozu ist es nützlich? – Für Reisen, Beruf und weitere romanische Sprachen.",
+        "Wie lange wird es angeboten? – Das hängt von der Schule ab; Fortführung in der Oberstufe ist nicht überall garantiert.",
+        "Wann werden Noten gegeben? – Wie in anderen Fremdsprachen, schriftlich und mündlich.",
+        "Kann man spät einsteigen? – Teilweise in Kl. 8–11; Bedingungen erfragen.",
+        "Was hilft beim Lernen? – Hören, Sprechen, Wiederholen in kleinen Einheiten."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.14",
+     "titel": "Wahl- und Infobaustein Spanisch",
+     "typ": "Textbaustein",
+     "zweck": "Infobaustein Spanisch als Wahlpflicht- oder Wahlfach.",
+     "stufe": "Kl. 6–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es bei der Wahl?"
+      },
+      {
+       "t": "p",
+       "x": "Spanisch wird je nach Schule als Fremdsprache, Wahlpflichtfach oder AG angeboten. Beginn und Fortführung in der Oberstufe unterscheiden sich stark zwischen den Ländern."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Infoabend"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, Spanisch gilt als lebendige Weltsprache. Gleichzeitig verlangt es regelmäßiges Üben der Verben. Ich erkläre heute, wie das Fach organisiert ist, was Ihr Kind lernt und was Sie für die Entscheidung bedenken sollten."
+      },
+      {
+       "t": "h",
+       "x": "Entscheidungshilfe für Kind und Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie hoch ist die Motivation und Ausdauer?",
+        "Wird Spanisch in der Oberstufe weitergeführt?",
+        "Welche Rolle spielen die Noten für den Abschluss?",
+        "Gibt es Austausch oder Zertifikate?",
+        "Welche Alternativen gibt es?"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Schriftliche Rückmeldung"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Gewählte Variante",
+        "Unterschrift der Erziehungsberechtigten"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlfristen, Mindestgruppengrößen und Bindungsdauer legt das Land bzw. die Schule fest; im Elternbrief exakt angeben."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.15",
+     "titel": "Gesprächsbaustein Spanisch",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Spanisch.",
+     "stufe": "Kl. 6–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Spricht flüssig und mit guter Betonung",
+        "Baut Vokabular schnell auf",
+        "Setzt Verbformen sicher ein",
+        "Versteht Alltagsgespräche",
+        "Zeigt kulturelle Neugier",
+        "Schreibt kurze Texte korrekt",
+        "Arbeitet im Dialog partnerschaftlich",
+        "Behält Wortschatz langfristig"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Braucht Sicherheit bei unregelmäßigen Verben",
+        "Verwechselt ser und estar noch",
+        "Betont Wörter noch unsicher",
+        "Spricht noch selten frei",
+        "Rechtschreibung mit Akzenten üben",
+        "Lernt Wortschatz noch unplanmäßig",
+        "Hörverstehen bei schnellen Sprechern",
+        "Setzt Grammatik im Schreiben noch selten um"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Verben mit Karten in Gruppen trainieren",
+        "Gelenkte Hörübungen täglich",
+        "Mini-Dialoge mit Rollentausch",
+        "Schreiben nach Bildvorlagen",
+        "Spanische Lieder verschriftlichen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Spanisch"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.16",
+     "titel": "Steckbrief Latein",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Latein für Elternabend und Beratung.",
+     "stufe": "Kl. 5–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Latein ist eine Sprache mit Schwerpunkt auf Übersetzen, Grammatik und Kulturgeschichte. Die Lernenden erschließen Texte, trainieren logisches Denken und Sprachbewusstsein und verstehen Wurzeln europäischer Sprachen. Es wird kaum gesprochen, sondern gelesen und analysiert."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Spracherwerbsphase",
+         "Wortschatz, Deklination, Konjugation, Satzbau"
+        ],
+        [
+         "Lektürephase",
+         "Originaltexte, Mythos, Geschichte, Philosophie"
+        ],
+        [
+         "Kulturkunde",
+         "Römisches Leben, Politik, Religion, Architektur"
+        ],
+        [
+         "Abschlussnähe",
+         "Übersetzung und Interpretation, Latinum in manchen Ländern"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Klassenarbeiten mit Übersetzung",
+        "Vokabel- und Formentests",
+        "Mündliche Mitarbeit",
+        "Teilweise Latinum oder Zertifikate als Abschlussnachweis"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Latein bietet Grundlagen für Medizin, Jura, Sprachen und Geisteswissenschaften. Es schult Genauigkeit, Mustererkennung und Argumentation."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.17",
+     "titel": "Elternabend-Baustein Latein",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Latein.",
+     "stufe": "Kl. 5–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Latein"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Latein lernen die Kinder in diesem Schuljahr Folgendes: Latein ist eine Sprache mit Schwerpunkt auf Übersetzen, Grammatik und Kulturgeschichte. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Latein arbeiten wir in diesem Schuljahr an Folgendem: Latein ist eine Sprache mit Schwerpunkt auf Übersetzen, Grammatik und Kulturgeschichte. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Vokabeln regelmäßig und mit Beispielsätzen lernen",
+        "Formen in Tabellen üben",
+        "Wortverwandtschaften im Alltag entdecken",
+        "Übersetzungsschritte nach festem Schema nutzen",
+        "Kulturinteresse durch Museumsbesuche fördern"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ist Latein sehr schwer? – Es verlangt Genauigkeit, ist aber gut strukturiert.",
+        "Wird gesprochen? – Wenig; der Fokus liegt auf Lesen und Übersetzen.",
+        "Bringt es für das Studium etwas? – Je nach Studienfach wird das Latinum gefordert; Bedingungen prüfen.",
+        "Wie viele Vokabeln? – Anfangs 10 bis 15 pro Woche, später mehr.",
+        "Was, wenn es nicht passt? – Ein Wechsel ist je nach Schule möglich.",
+        "Hilft Latein bei anderen Sprachen? – Ja, besonders bei romanischen Sprachen und Fachbegriffen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.18",
+     "titel": "Wahl- und Infobaustein Latein",
+     "typ": "Textbaustein",
+     "zweck": "Infobaustein zur Wahl von Latein als Fremdsprache.",
+     "stufe": "Kl. 5–8",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Worum geht es bei der Wahl?"
+      },
+      {
+       "t": "p",
+       "x": "Latein wird je nach Land und Schulart als erste, zweite oder spät beginnende Fremdsprache angeboten, vor allem am Gymnasium. Ob ein Latinum anerkannt wird, regeln die Hochschulen und Länder."
+      },
+      {
+       "t": "h",
+       "x": "Ansprache für den Infoabend"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern, Latein ist eine Sprache der Logik. Wer gern genau arbeitet und Rätsel mag, wird hier gefordert und gefördert. Wichtig ist eine klare Information über die Dauer des Fachs und den Abschluss."
+      },
+      {
+       "t": "h",
+       "x": "Entscheidungshilfe für Kind und Eltern"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Arbeitsweise genau und ausdauernd?",
+        "Interesse an Geschichte und Mythen?",
+        "Zielstudium mit Latinumsbedarf?",
+        "Konkurrenz zu modernen Fremdsprachen",
+        "Möglichkeit des späteren Wechsels"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Schriftliche Rückmeldung"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Gewählte Variante",
+        "Unterschrift der Erziehungsberechtigten"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Wahlfristen, Mindestgruppengrößen und Bindungsdauer legt das Land bzw. die Schule fest; im Elternbrief exakt angeben."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.19",
+     "titel": "Gesprächsbaustein Latein",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Latein.",
+     "stufe": "Kl. 5–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Übersetzt sorgfältig und logisch",
+        "Erkennt grammatische Strukturen sicher",
+        "Beherrscht den Wortschatz zuverlässig",
+        "Interessiert sich für antike Kultur",
+        "Arbeitet präzise",
+        "Erklärt Formen verständlich",
+        "Nutzt Hilfsmittel gezielt",
+        "Denkt strukturiert"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Braucht Sicherheit in der Formenlehre",
+        "Wiederholt Vokabeln zu selten",
+        "Übersetzt noch wörtlich",
+        "Erkennt Satzstrukturen noch unsicher",
+        "Konzentration bei längeren Texten",
+        "Arbeitet unregelmäßig an Hausaufgaben",
+        "Nutzt das Wörterbuch noch ungezielt",
+        "Mündliche Mitarbeit ausbaubar"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Vokabelheft mit Wortfamilien",
+        "Formen auf Karten üben",
+        "Übersetzungsschema schriftlich festhalten",
+        "Texte laut lesen",
+        "Wöchentlich eine kurze Übersetzung wiederholen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Latein"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.20",
+     "titel": "Steckbrief Italienisch",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Italienisch für Elternabend und Beratung.",
+     "stufe": "Kl. 8–10 und Oberstufe (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Italienisch wird als dritte oder späte Fremdsprache oder als Wahlfach angeboten. Die Lernenden erwerben Grundlagen im Sprechen und Verstehen, lernen einfache Alltagssituationen und die Kultur Italiens kennen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Anfangsphase",
+         "Begrüßen, Zahlen, Essen, Familie"
+        ],
+        [
+         "Fortführung",
+         "Alltag, Reisen, Wegbeschreibung, Vergangenheit"
+        ],
+        [
+         "Vertiefung",
+         "Texte, Musik, Film, Landeskunde"
+        ],
+        [
+         "Zusatz",
+         "Austausch, Zertifikat als freiwillige Option"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Klassenarbeiten",
+        "Tests",
+        "Mündliche Mitarbeit",
+        "Projekt oder Präsentation"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Italienisch eröffnet Chancen in Tourismus, Gastronomie, Kunst, Design und Handel mit Italien."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.21",
+     "titel": "Elternabend-Baustein Italienisch",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Italienisch.",
+     "stufe": "Kl. 8–10 und Oberstufe (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Italienisch"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Italienisch lernen die Kinder in diesem Schuljahr Folgendes: Italienisch wird als dritte oder späte Fremdsprache oder als Wahlfach angeboten. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Italienisch arbeiten wir in diesem Schuljahr an Folgendem: Italienisch wird als dritte oder späte Fremdsprache oder als Wahlfach angeboten. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Italienische Lieder und Filme nutzen",
+        "Kurze Dialoge zu Hause üben",
+        "Wortschatz thematisch ordnen",
+        "Neugier auf Kultur und Küche fördern",
+        "Regelmäßige, kleine Übungszeiten einplanen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ist Italienisch nur ein Hobby? – Es ist ein vollwertiges Fach mit Noten, aber meist freiwillig.",
+        "Für wen ist es geeignet? – Für Kinder mit Freude an Sprache und Sprechen.",
+        "Wird es in der Oberstufe fortgeführt? – Das hängt von der Schule ab.",
+        "Zählt es für den Abschluss? – Teils ja, Regelungen prüfen.",
+        "Gibt es zusätzliche Belastung? – Rechnen Sie mit zusätzlichem Üben.",
+        "Wie fördert man zu Hause? – Mit Hörmaterial und Alltagsritualen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.22",
+     "titel": "Gesprächsbaustein Italienisch",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Italienisch.",
+     "stufe": "Kl. 8–10 und Oberstufe (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Sprechfreudig und aufgeschlossen",
+        "Gute Aussprache",
+        "Sicheres Hörverstehen",
+        "Zuverlässiger Wortschatz",
+        "Gute Textarbeit",
+        "Interkulturell neugierig",
+        "Aktive Mitarbeit",
+        "Sorgfältiges Schriftbild"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Verben noch unsicher",
+        "Verwechselt ähnliche Wörter mit Spanisch",
+        "Spricht noch zurückhaltend",
+        "Wortschatz unregelmäßig",
+        "Hörverstehen erweitern",
+        "Schreiben knapp",
+        "Hausaufgaben unregelmäßig",
+        "Grammatikanwendung ausbaufähig"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Karteikarten",
+        "Hörsequenzen täglich",
+        "Kleine Rollenspiele",
+        "Mini-Tagebuch auf Italienisch",
+        "Lieder übersetzen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Italienisch"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.23",
+     "titel": "Steckbrief Herkunftssprachen (z. B. Russisch, Türkisch)",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Herkunftssprachen (z. B. Russisch, Türkisch) für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Herkunftssprachenunterricht fördert Mehrsprachigkeit, stärkt die Identität und unterstützt das Lernen weiterer Sprachen. Je nach Land wird Russisch, Türkisch, Polnisch oder Arabisch als Wahlfach, Ergänzungsunterricht oder AG angeboten. Träger sind Schule, Konsulat oder freie Träger."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Unterstufe",
+         "Alphabet, Hören, Sprechen, Lesen, Kinderlieder"
+        ],
+        [
+         "Mittelstufe",
+         "Texte, Rechtschreibung, Grammatik, Landeskunde"
+        ],
+        [
+         "Oberstufe",
+         "Literatur, Argumentation, Zertifikate"
+        ],
+        [
+         "Rahmen",
+         "Schule, Konsulat, Kooperationen"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mündliche Beiträge",
+        "Texte und Diktate",
+        "Projektarbeit",
+        "Teilnahmebescheinigung oder Note, je nach Träger"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Mehrsprachigkeit ist ein Vorteil bei Beruf, Studium und internationalen Kontakten. Zertifikate können Bewerbungen stärken."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.24",
+     "titel": "Elternabend-Baustein Herkunftssprachen (z. B. Russisch, Türkisch)",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Herkunftssprachen (z. B. Russisch, Türkisch).",
+     "stufe": "Kl. 1–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Herkunftssprachen (z. B. Russisch, Türkisch)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Herkunftssprachen (z. B. Russisch, Türkisch) lernen die Kinder in diesem Schuljahr Folgendes: Herkunftssprachenunterricht fördert Mehrsprachigkeit, stärkt die Identität und unterstützt das Lernen weiterer Sprachen. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Herkunftssprachen (z. B. Russisch, Türkisch) arbeiten wir in diesem Schuljahr an Folgendem: Herkunftssprachenunterricht fördert Mehrsprachigkeit, stärkt die Identität und unterstützt das Lernen weiterer Sprachen. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Herkunftssprache zu Hause aktiv sprechen und vorlesen",
+        "Bücher und Medien in der Sprache anbieten",
+        "Kontakte zu Familie und Verwandten pflegen",
+        "Schule über Kenntnisse informieren",
+        "Stolz auf Mehrsprachigkeit zeigen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schadet es dem Deutschlernen? – Nein, die Forschung zeigt Vorteile.",
+        "Wird die Note gezählt? – Das hängt vom Land ab.",
+        "Wer zahlt? – Meist kostenfrei, teils durch Träger; im Land erfragen.",
+        "Wann findet der Unterricht statt? – Oft nachmittags.",
+        "Wie melde ich mich an? – Über Schulleitung oder Träger.",
+        "Gibt es Abschlüsse? – Zertifikate sind möglich; Informationen vor Ort einholen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.25",
+     "titel": "Gesprächsbaustein Herkunftssprachen (z. B. Russisch, Türkisch)",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Herkunftssprachen (z. B. Russisch, Türkisch).",
+     "stufe": "Kl. 1–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Spricht die Herkunftssprache sicher",
+        "Liest und schreibt zunehmend sicher",
+        "Zeigt Stolz auf Sprache und Herkunft",
+        "Hilft als Sprachmittler",
+        "Zeigt gutes Hörverstehen",
+        "Bildet Brücken zwischen Sprachen",
+        "Arbeitet motiviert mit",
+        "Erweitert den aktiven Wortschatz"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schrift und Rechtschreibung festigen",
+        "Wortschatz in Fachbereichen erweitern",
+        "Texte länger gestalten",
+        "Regelmäßige Teilnahme sichern",
+        "Grammatik gezielt üben",
+        "Lesen in der Sprache fördern",
+        "Sprechen vor der Klasse üben",
+        "Verbindung zum Deutschunterricht stärken"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Vorlesen und gemeinsames Lesen",
+        "Briefe an Verwandte schreiben",
+        "Zweisprachige Bücher nutzen",
+        "Familienprojekte in beiden Sprachen",
+        "Medien in der Herkunftssprache begleiten"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Herkunftssprachen (z. B. Russisch, Türkisch)"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "titel": "Künste und Sport",
+   "module": [
+    {
+     "id": "6b.26",
+     "titel": "Steckbrief Kunst",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Kunst für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Die Kinder und Jugendlichen entwickeln gestalterische Ausdrucksfähigkeit, lernen Materialien und Techniken kennen und betrachten Bilder und Kunstwerke. Sie erfahren Kreativität, Wahrnehmung und Bildkompetenz als Teil der kulturellen Bildung."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Zeichnen, Malen, Drucken, Formen, Farbenlehre, Bildbetrachtung"
+        ],
+        [
+         "Kl. 5–6",
+         "Zeichentechniken, Collage, Perspektive, Farbe, Plastik"
+        ],
+        [
+         "Kl. 7–8",
+         "Porträt, Raum, Grafik, Design, Medien, Kunstgeschichte"
+        ],
+        [
+         "Kl. 9–10",
+         "Bildanalyse, Projekte, Gestaltungsprozess, Mappe"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Praktische Arbeiten und Mappen",
+        "Skizzen und Entwürfe",
+        "Schriftliche Bildbetrachtung oder Test",
+        "Mitarbeit und Präsentation"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Gestalterische Fähigkeiten sind gefragt in Design, Architektur, Handwerk, Medien, Werbung und Pädagogik. Auch Genauigkeit und Ideenreichtum werden geschult."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.27",
+     "titel": "Elternabend-Baustein Kunst",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Kunst.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Kunst"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Kunst lernen die Kinder in diesem Schuljahr Folgendes: Die Kinder und Jugendlichen entwickeln gestalterische Ausdrucksfähigkeit, lernen Materialien und Techniken kennen und betrachten Bilder und Kunstwerke. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Kunst arbeiten wir in diesem Schuljahr an Folgendem: Die Kinder und Jugendlichen entwickeln gestalterische Ausdrucksfähigkeit, lernen Materialien und Techniken kennen und betrachten Bilder und Kunstwerke. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Zu Hause Material bereithalten und Raum für Kreatives lassen",
+        "Museen, Ausstellungen und Spaziergänge mit Skizzenbuch",
+        "Nicht bewerten, sondern fragen: Was hast Du dir gedacht?",
+        "Fertige Arbeiten wertschätzen und aufhängen",
+        "Materialbitten der Lehrkraft rechtzeitig erfüllen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wird nach Talent benotet? – Nein, bewertet werden Prozess, Technik, Idee und Sorgfalt.",
+        "Welches Material wird benötigt? – Die Liste kommt zu Schuljahresbeginn; Schulmaterial ergänzt.",
+        "Was tun bei Unlust? – Mit eigener Themenwahl motivieren.",
+        "Wie wichtig ist die Note? – Für Zeugnis und Übertritt gleichberechtigt zu anderen Fächern.",
+        "Gibt es Kunstfahrten? – Manche Schulen bieten Exkursionen an.",
+        "Wie unterstütze ich bei Mappen? – Ordnung und Termine im Blick behalten."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.28",
+     "titel": "Gesprächsbaustein Kunst",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Kunst.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Hat viele eigene Ideen",
+        "Arbeitet sorgfältig und ausdauernd",
+        "Beherrscht Techniken sicher",
+        "Beschreibt Bilder differenziert",
+        "Experimentiert mutig mit Material",
+        "Gestaltet Farben bewusst",
+        "Präsentiert eigene Arbeiten sicher",
+        "Hilft anderen bei Gestaltungsfragen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Verlässt sich noch auf Vorlagen",
+        "Arbeit noch hastig",
+        "Braucht Unterstützung bei Perspektive",
+        "Mappe noch unvollständig",
+        "Bildbeschreibung ausbaufähig",
+        "Arbeitet mit Material noch unaufgeräumt",
+        "Traut sich wenig an neue Techniken",
+        "Wenig Rückmeldung an andere"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Skizzenbuch täglich führen",
+        "Ein Motiv in mehreren Techniken gestalten",
+        "Museumsbesuch mit Beobachtungsauftrag",
+        "Material gemeinsam vorbereiten",
+        "Eigene Ausstellung zu Hause"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Kunst"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.29",
+     "titel": "Steckbrief Musik",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Musik für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Musikunterricht fördert Singen, Musizieren, Hören und Verstehen von Musik. Die Lernenden entdecken Rhythmus, Melodie, Instrumente, Notation und Musikgeschichte und gestalten eigene Beiträge."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Singen, Rhythmen, Bewegung, Instrumente, Hören"
+        ],
+        [
+         "Kl. 5–6",
+         "Notenlesen, Instrumentenkunde, Liedgestaltung, Orchester"
+        ],
+        [
+         "Kl. 7–8",
+         "Popmusik, Musikgeschichte, Band, digitale Musik"
+        ],
+        [
+         "Kl. 9–10",
+         "Analyse, Projekte, Komposition, Musik und Medien"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Praktisches Musizieren",
+        "Mitarbeit und Vorspiel",
+        "Hörproben und Tests",
+        "Gruppenprojekte"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Musik fördert Konzentration, Teamfähigkeit und Kreativität. Berufswege reichen von Musikpädagogik über Medien bis zur Veranstaltungstechnik."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.30",
+     "titel": "Elternabend-Baustein Musik",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Musik.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Musik"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Musik lernen die Kinder in diesem Schuljahr Folgendes: Musikunterricht fördert Singen, Musizieren, Hören und Verstehen von Musik. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Musik arbeiten wir in diesem Schuljahr an Folgendem: Musikunterricht fördert Singen, Musizieren, Hören und Verstehen von Musik. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Gemeinsam singen und Musik hören",
+        "Instrumentalunterricht ermöglichen, ohne Zwang",
+        "Auftritte des Kindes besuchen",
+        "Offene Neugier für verschiedene Stile zeigen",
+        "Üben als kurzes Ritual etablieren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Muss mein Kind ein Instrument spielen? – Nein, aber Instrumentalerfahrung hilft.",
+        "Wird Singen benotet? – Mitwirkung wird bewertet, nicht die Stimmqualität.",
+        "Was ist, wenn mein Kind unmusikalisch ist? – Jedes Kind kann musikalisch gefördert werden.",
+        "Gibt es Chor und Orchester? – Viele Schulen bieten Ensembles als AG an.",
+        "Wie wichtig ist Theorie? – Ein Teil des Unterrichts; Praxis überwiegt.",
+        "Hilft Musik bei anderen Fächern? – Sie stärkt Konzentration und Gedächtnis."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.31",
+     "titel": "Gesprächsbaustein Musik",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Musik.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Singt sicher und mit Freude",
+        "Hält den Rhythmus zuverlässig",
+        "Hört aufmerksam und beschreibt Musik treffend",
+        "Spielt ein Instrument gut im Ensemble",
+        "Liest Noten zunehmend sicher",
+        "Bringt eigene Ideen ein",
+        "Gestaltet Projekte kreativ",
+        "Unterstützt die Gruppe"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Braucht Sicherheit im Notenlesen",
+        "Zeigt wenig Mut zum Vorspielen",
+        "Rhythmus unregelmäßig",
+        "Hört noch wenig differenziert",
+        "Mitarbeit zurückhaltend",
+        "Übt wenig zwischen den Stunden",
+        "Konzentration bei Hörbeispielen",
+        "Musiktheorie festigen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Täglich fünf Minuten klatschen und singen",
+        "Notenspiele und Kartenspiele",
+        "Vorspielen vor der Familie",
+        "Konzerte besuchen",
+        "Einfache Begleitinstrumente ausprobieren"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Musik"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.32",
+     "titel": "Steckbrief Sport",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Sport für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Sportunterricht fördert Bewegung, Fitness, Fairness und Teamgeist. Die Lernenden verbessern Koordination, Ausdauer, Kraft und Beweglichkeit und lernen Sportarten, Spiele, Schwimmen und Sicherheitsregeln kennen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Laufen, Springen, Werfen, Turnen, Spiele, Schwimmen"
+        ],
+        [
+         "Kl. 5–6",
+         "Leichtathletik, Gerätturnen, Mannschaftsspiele"
+        ],
+        [
+         "Kl. 7–8",
+         "Ausdauer, Fitness, Rückschlagspiele, Tanz, Rettung"
+        ],
+        [
+         "Kl. 9–10",
+         "Training, Gesundheit, Sportarten wählen, Wettkampf"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Praktische Leistungsüberprüfung",
+        "Sportmotorische Tests",
+        "Beobachtung von Teamverhalten und Fairness",
+        "Theorie in höheren Stufen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Bewegung stärkt Gesundheit und Konzentration. Berufe in Gesundheit, Pädagogik, Polizei, Feuerwehr, Bundeswehr oder Fitness setzen Fitness voraus."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.33",
+     "titel": "Elternabend-Baustein Sport",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Sport.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Sport"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Sport lernen die Kinder in diesem Schuljahr Folgendes: Sportunterricht fördert Bewegung, Fitness, Fairness und Teamgeist. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Sport arbeiten wir in diesem Schuljahr an Folgendem: Sportunterricht fördert Bewegung, Fitness, Fairness und Teamgeist. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Gemeinsam Bewegung im Alltag, etwa Radfahren und Spaziergänge",
+        "Ausstattung bereitstellen, Sportzeug regelmäßig prüfen",
+        "Verein oder Gruppe empfehlen",
+        "Nicht an Leistung messen, sondern Fortschritte loben",
+        "Bei Attest oder Befreiung rechtzeitig informieren"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Muss mein Kind schwimmen können? – Schwimmunterricht ist in vielen Ländern in der Grundschule vorgesehen; Regelungen vor Ort erfragen.",
+        "Wie wird benotet? – Nach Leistung, Einsatz, Fairness und Regelkenntnis.",
+        "Was tun bei Krankheit? – Mit ärztlichem Attest befreien lassen; Rücksprache mit der Schule.",
+        "Wie bei Unlust? – Mit Wahlmöglichkeiten und Erfolgserlebnissen motivieren.",
+        "Dürfen Schmuck und Uhren? – Aus Sicherheitsgründen nein.",
+        "Gibt es Wettbewerbe? – Viele Schulen nehmen an Jugend trainiert für Olympia teil."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.34",
+     "titel": "Gesprächsbaustein Sport",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Sport.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Bewegt sich gewandt und koordiniert",
+        "Zeigt Ausdauer und Einsatzfreude",
+        "Spielt fair und teamorientiert",
+        "Kennt Regeln und setzt sie um",
+        "Unterstützt andere",
+        "Übernimmt Verantwortung",
+        "Kann Techniken sicher ausführen",
+        "Motiviert Mitschüler"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Braucht Mut bei Geräten",
+        "Ausdauer ausbaufähig",
+        "Teamverhalten stärken",
+        "Regeln konsequenter beachten",
+        "Sportzeug vollständig mitbringen",
+        "Technik gezielt üben",
+        "Frustrationstoleranz",
+        "Bewegung im Alltag vergrößern"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Tägliche Bewegungszeit planen",
+        "Kleine Zielmarken wie 10 Seilsprünge steigern",
+        "Verein probieren",
+        "Gemeinsam schwimmen gehen",
+        "Dehnroutinen am Abend"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Sport"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "titel": "Religion, Ethik und Werte",
+   "module": [
+    {
+     "id": "6b.35",
+     "titel": "Steckbrief Religion (evangelisch und katholisch)",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Religion (evangelisch und katholisch) für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Der Religionsunterricht ist ordentliches Lehrfach nach Art. 7 Abs. 3 Grundgesetz und wird in Verantwortung von Staat und Religionsgemeinschaften erteilt. Die Lernenden setzen sich mit Fragen nach Sinn, Glauben, Werten und Zusammenleben auseinander. Die Teilnahme richtet sich nach Konfession und Landesrecht."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Feste im Jahreslauf, biblische Geschichten, Gott, Gemeinschaft"
+        ],
+        [
+         "Kl. 5–6",
+         "Bibel, Kirche, Judentum, Islam, Gewissen"
+        ],
+        [
+         "Kl. 7–8",
+         "Glaube und Zweifel, Ethik, Weltreligionen, Gerechtigkeit"
+        ],
+        [
+         "Kl. 9–10",
+         "Verantwortung, Zukunft, Menschenwürde, Tod und Hoffnung"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mitarbeit",
+        "Gespräche und Reflexion",
+        "Hefteinträge",
+        "Schriftliche Lernkontrollen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Religion bietet Orientierung bei Werten, Gewissen und Zusammenleben. Auch für soziale, pädagogische und kirchliche Berufe von Bedeutung."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Grundgesetz Art. 7 Abs. 3, https://www.gesetze-im-internet.de/gg/art_7.html ; Lehrpläne der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.36",
+     "titel": "Elternabend-Baustein Religion (evangelisch und katholisch)",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Religion (evangelisch und katholisch).",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Religion (evangelisch und katholisch)"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Religion (evangelisch und katholisch) lernen die Kinder in diesem Schuljahr Folgendes: Der Religionsunterricht ist ordentliches Lehrfach nach Art. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Religion (evangelisch und katholisch) arbeiten wir in diesem Schuljahr an Folgendem: Der Religionsunterricht ist ordentliches Lehrfach nach Art. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Offen über Fragen nach Sinn und Werten sprechen",
+        "Glaubenspraxis der Familie vorstellen, ohne Zwang",
+        "Besuch von Kirchen, Festen und Gemeinden ermöglichen",
+        "Neugier auf andere Religionen respektieren",
+        "Wertschätzung für Vielfalt vermitteln"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Muss mein Kind teilnehmen? – Die Regeln ergeben sich aus Landesrecht; Abmeldung oder Alternativfach sind meist möglich.",
+        "Ist das Fach Mission? – Nein, es informiert und lädt zum Nachdenken ein.",
+        "Was passiert bei Konfessionslosen? – Sie besuchen in der Regel Ethik oder ein Wertefach.",
+        "Werden Noten vergeben? – Ja, wie in anderen Fächern.",
+        "Gibt es Gottesdienste? – Schulgottesdienste sind meist freiwillig.",
+        "Wer unterrichtet? – Lehrkräfte mit kirchlicher Bevollmächtigung."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.37",
+     "titel": "Gesprächsbaustein Religion (evangelisch und katholisch)",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Religion (evangelisch und katholisch).",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Fragt nachdenklich und interessiert",
+        "Äußert eigene Gedanken respektvoll",
+        "Kennt biblische Geschichten und Feste",
+        "Versteht andere Religionen zunehmend",
+        "Hört zu und lässt andere ausreden",
+        "Reflektiert Werte",
+        "Gestaltet Beiträge einfühlsam",
+        "Bringt eigene Erfahrungen ein"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mitarbeit stärker einbringen",
+        "Begriffe sicherer anwenden",
+        "Gesprächsregeln beachten",
+        "Texte genauer lesen",
+        "Hefteinträge vervollständigen",
+        "Offenheit gegenüber Anderen",
+        "Eigene Position begründen",
+        "Lerninhalte wiederholen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Gespräche über Werte am Abendbrot",
+        "Gemeinsam Feste im Jahreskreis bewusst erleben",
+        "Kinderbibel oder Sachbuch lesen",
+        "Besuch religiöser Orte",
+        "Fragen sammeln und gemeinsam suchen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Religion (evangelisch und katholisch)"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.38",
+     "titel": "Steckbrief Ethik, Philosophie, Werte und Normen, LER",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Ethik, Philosophie, Werte und Normen, LER für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Das Fach ersetzt oder ergänzt den Religionsunterricht und behandelt Fragen nach Werten, Moral, Zusammenleben, Verantwortung und Weltanschauungen. Die Bezeichnung ist je nach Land verschieden, zum Beispiel Ethik, Werte und Normen, Philosophie oder LER (Lebensgestaltung-Ethik-Religionskunde, Brandenburg)."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Gefühle, Regeln, Freundschaft, Konflikte, Vielfalt"
+        ],
+        [
+         "Kl. 5–6",
+         "Gerechtigkeit, Zusammenleben, Umwelt, Weltbilder"
+        ],
+        [
+         "Kl. 7–8",
+         "Freiheit, Medien, Religionen, Verantwortung"
+        ],
+        [
+         "Kl. 9–10",
+         "Philosophie, Politik, Menschenrechte, Zukunft"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mündliche Mitarbeit und Diskussion",
+        "Schriftliche Reflexionen",
+        "Projektarbeit",
+        "Test oder Klassenarbeit"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Das Fach stärkt Urteilsfähigkeit, Empathie und Argumentation, wichtig in Beruf und Gesellschaft."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.39",
+     "titel": "Elternabend-Baustein Ethik, Philosophie, Werte und Normen, LER",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Ethik, Philosophie, Werte und Normen, LER.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Ethik, Philosophie, Werte und Normen, LER"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Ethik, Philosophie, Werte und Normen, LER lernen die Kinder in diesem Schuljahr Folgendes: Das Fach ersetzt oder ergänzt den Religionsunterricht und behandelt Fragen nach Werten, Moral, Zusammenleben, Verantwortung und Weltanschauungen. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Ethik, Philosophie, Werte und Normen, LER arbeiten wir in diesem Schuljahr an Folgendem: Das Fach ersetzt oder ergänzt den Religionsunterricht und behandelt Fragen nach Werten, Moral, Zusammenleben, Verantwortung und Weltanschauungen. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Diskussionen zu Hause zulassen und zuhören",
+        "Medien kritisch gemeinsam betrachten",
+        "Ehrenamt und Hilfsbereitschaft fördern",
+        "Unterschiedliche Meinungen respektieren",
+        "Kind in Entscheidungen einbeziehen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wer besucht das Fach? – Wer nicht am Religionsunterricht teilnimmt, je nach Land verpflichtend.",
+        "Ist das ein Ersatzfach? – Gleichwertiges Fach mit eigenem Lehrplan.",
+        "Werden Werte vorgegeben? – Das Fach arbeitet mit offenen, begründeten Positionen.",
+        "Wie viel Schreiben? – Es überwiegt das Gespräch.",
+        "Was ist LER? – Ein gemeinsames Fach in Brandenburg.",
+        "Kann man wechseln? – Regelungen je nach Land und Alter."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.40",
+     "titel": "Gesprächsbaustein Ethik, Philosophie, Werte und Normen, LER",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Ethik, Philosophie, Werte und Normen, LER.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Argumentiert klar und respektvoll",
+        "Zeigt Einfühlungsvermögen",
+        "Denkt kritisch",
+        "Hört genau zu",
+        "Entwickelt eigene Positionen",
+        "Verknüpft Beispiele mit Begriffen",
+        "Beteiligt sich rege",
+        "Erklärt Zusammenhänge verständlich"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Beteiligung ausbauen",
+        "Argumente genauer begründen",
+        "Unterschiedliche Sichtweisen prüfen",
+        "Begriffe sicherer nutzen",
+        "Texte vertieft lesen",
+        "Konfliktgespräche konstruktiv führen",
+        "Sich auf Gegenpositionen einlassen",
+        "Hefteinträge ordentlich"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Dilemma-Geschichten diskutieren",
+        "Zeitungsartikel gemeinsam lesen",
+        "Ehrenamt ausprobieren",
+        "Philosophische Kinderbücher",
+        "Eigene Meinung kurz schriftlich begründen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Ethik, Philosophie, Werte und Normen, LER"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "titel": "Technik, Hauswirtschaft und Darstellendes Spiel",
+   "module": [
+    {
+     "id": "6b.41",
+     "titel": "Steckbrief Textiles Gestalten, Werken, Technik",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Textiles Gestalten, Werken, Technik für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Die Lernenden planen, gestalten und fertigen Produkte aus Textil, Holz, Metall oder Papier. Sie lernen Werkzeuge sicher zu nutzen, Arbeitsschritte zu planen, Materialien zu verstehen und technische Zusammenhänge zu erkennen."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Grundschule",
+         "Nähen, Sticken, Falten, Schneiden, einfache Konstruktionen"
+        ],
+        [
+         "Kl. 5–6",
+         "Holzarbeit, Textilverarbeitung, Technische Zeichnung"
+        ],
+        [
+         "Kl. 7–8",
+         "Mechanik, Energie, Elektrik, Fertigung"
+        ],
+        [
+         "Kl. 9–10",
+         "Projekt, Konstruktion, Berufsorientierung, Steuerung"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Praktische Werkstücke",
+        "Planungsunterlagen und Skizzen",
+        "Sicherheitsunterweisung",
+        "Dokumentation und Test"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Handwerkliche und technische Kompetenzen sind Grundlage für Handwerk, Industrie und Ingenieurwesen."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.42",
+     "titel": "Elternabend-Baustein Textiles Gestalten, Werken, Technik",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Textiles Gestalten, Werken, Technik.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Textiles Gestalten, Werken, Technik"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Textiles Gestalten, Werken, Technik lernen die Kinder in diesem Schuljahr Folgendes: Die Lernenden planen, gestalten und fertigen Produkte aus Textil, Holz, Metall oder Papier. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Textiles Gestalten, Werken, Technik arbeiten wir in diesem Schuljahr an Folgendem: Die Lernenden planen, gestalten und fertigen Produkte aus Textil, Holz, Metall oder Papier. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Werkstücke zu Hause anschauen und würdigen",
+        "Gemeinsam bauen und reparieren",
+        "Alltagstechnik erklären",
+        "Werkzeug sicher handhaben lernen",
+        "Materialien rechtzeitig bereitstellen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Ist das Fach gefährlich? – Sicherheit hat Vorrang; Unterweisung und Aufsicht sind Pflicht.",
+        "Welche Materialien sind nötig? – Eine Liste kommt vor Projektbeginn.",
+        "Wie wird bewertet? – Planung, Ausführung, Ergebnis, Sicherheit.",
+        "Wird nur gebastelt? – Nein, es werden technische Prinzipien erarbeitet.",
+        "Hilft das bei Ausbildung? – Ja, Praktika und Betriebe schätzen Fertigkeiten.",
+        "Was ist, wenn das Kind linkshändig ist? – Werkzeug und Anleitung anpassen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.43",
+     "titel": "Gesprächsbaustein Textiles Gestalten, Werken, Technik",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Textiles Gestalten, Werken, Technik.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Arbeitet sorgfältig und ausdauernd",
+        "Plant Arbeitsschritte selbstständig",
+        "Geht sicher mit Werkzeug um",
+        "Zeigt handwerkliches Geschick",
+        "Löst Probleme kreativ",
+        "Hält Ordnung am Arbeitsplatz",
+        "Dokumentiert Arbeiten gut",
+        "Unterstützt andere"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Planung vor dem Arbeiten",
+        "Sicherheitsregeln konsequenter beachten",
+        "Genauigkeit beim Messen",
+        "Geduld bei Fehlern",
+        "Werkstück termingerecht beenden",
+        "Materialverbrauch beachten",
+        "Skizzen sauber ausführen",
+        "Ordnung nach Arbeitsende"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Kleine Reparaturen gemeinsam durchführen",
+        "Bauanleitungen lesen",
+        "Skizzenblock für Ideen",
+        "Werkstattbesuch",
+        "Alltagsgeräte erklären"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Textiles Gestalten, Werken, Technik"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.44",
+     "titel": "Steckbrief Hauswirtschaft, Ernährung, Haushalt",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Hauswirtschaft, Ernährung, Haushalt für Elternabend und Beratung.",
+     "stufe": "Kl. 5–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Das Fach vermittelt Wissen über Ernährung, Einkauf, Zubereitung, Hygiene, Verbraucherrechte und Haushaltsführung. Praktische Kochstunden verbinden Gesundheit, Nachhaltigkeit und Alltagskompetenz. Fachbezeichnungen wie AES, Alltagskultur oder Haushalt und Ernährung sind landesspezifisch."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Kl. 5–6",
+         "Grundlagen Ernährung, Hygiene, einfache Gerichte"
+        ],
+        [
+         "Kl. 7–8",
+         "Planung, Einkauf, Nachhaltigkeit, Nährstoffe"
+        ],
+        [
+         "Kl. 9–10",
+         "Haushalt, Budget, Gesundheit, Berufsfelder"
+        ],
+        [
+         "Zusatz",
+         "Projekte, Schulküche, Feste"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Praktische Leistungen",
+        "Rezepte und Dokumentation",
+        "Tests",
+        "Mitarbeit"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Hauswirtschaftliche Kompetenzen helfen im Alltag und führen zu Berufen in Gastronomie, Pflege, Ernährung und Hauswirtschaft."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.45",
+     "titel": "Elternabend-Baustein Hauswirtschaft, Ernährung, Haushalt",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Hauswirtschaft, Ernährung, Haushalt.",
+     "stufe": "Kl. 5–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Hauswirtschaft, Ernährung, Haushalt"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Hauswirtschaft, Ernährung, Haushalt lernen die Kinder in diesem Schuljahr Folgendes: Das Fach vermittelt Wissen über Ernährung, Einkauf, Zubereitung, Hygiene, Verbraucherrechte und Haushaltsführung. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Hauswirtschaft, Ernährung, Haushalt arbeiten wir in diesem Schuljahr an Folgendem: Das Fach vermittelt Wissen über Ernährung, Einkauf, Zubereitung, Hygiene, Verbraucherrechte und Haushaltsführung. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Gemeinsam kochen und einkaufen",
+        "Zutaten benennen lassen",
+        "Hygienegewohnheiten festigen",
+        "Auf Allergien und Unverträglichkeiten hinweisen",
+        "Zutaten für Kochtage pünktlich mitgeben"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wer zahlt die Lebensmittel? – Ein Beitrag oder Material wird vorab angekündigt.",
+        "Was bei Allergien? – Die Schule rechtzeitig informieren.",
+        "Was bei religiösen Speisevorschriften? – Rücksicht ist selbstverständlich.",
+        "Wie wird bewertet? – Praxis, Teamarbeit, Hygiene, Theorie.",
+        "Müssen Kinder alles probieren? – Probieren wird ermutigt, nicht erzwungen.",
+        "Ist die Schulküche sicher? – Ja, mit Unterweisung und Aufsicht."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.46",
+     "titel": "Gesprächsbaustein Hauswirtschaft, Ernährung, Haushalt",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Hauswirtschaft, Ernährung, Haushalt.",
+     "stufe": "Kl. 5–10 (je nach Land)",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Arbeitet hygienisch und selbstständig",
+        "Plant und organisiert Abläufe gut",
+        "Hat gute Kochfertigkeiten",
+        "Kennt Nährstoffe",
+        "Arbeitet im Team zuverlässig",
+        "Zeigt Verantwortung",
+        "Räumt sorgfältig auf",
+        "Probiert Neues aus"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Hygiene konsequenter",
+        "Zeitplan beachten",
+        "Messen und Wiegen",
+        "Mengen planen",
+        "Schneidetechniken",
+        "Ordnung am Arbeitsplatz",
+        "Rezeptlesen",
+        "Teamabsprachen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Wöchentlich ein Gericht zusammen kochen",
+        "Rezeptordner anlegen",
+        "Einkauf mit Liste",
+        "Küchenhygiene besprechen",
+        "Gesunde Alternativen entdecken"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Hauswirtschaft, Ernährung, Haushalt"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.47",
+     "titel": "Steckbrief Darstellendes Spiel und Theater",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Darstellendes Spiel und Theater für Elternabend und Beratung.",
+     "stufe": "Kl. 5–10 und AG",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Darstellendes Spiel fördert Ausdruck, Sprechen, Körpersprache, Teamarbeit und Kreativität. Die Lernenden erarbeiten Szenen, entwickeln Figuren, planen Aufführungen und reflektieren Wirkung. In einigen Ländern ist es Wahlpflicht- oder Oberstufenfach."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Anfangsphase",
+         "Warm-ups, Improvisation, Gruppenspiele"
+        ],
+        [
+         "Mittelstufe",
+         "Szenenarbeit, Figuren, Stimme, Raum"
+        ],
+        [
+         "Aufführung",
+         "Probenplanung, Technik, Kostüm, Bühnenbild"
+        ],
+        [
+         "Reflexion",
+         "Feedback, Dokumentation, Kritik"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Mitarbeit in Proben",
+        "Aufführung",
+        "Reflexionsbogen",
+        "Projektdokumentation"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Auftreten, Teamfähigkeit und Selbstvertrauen sind in vielen Berufen gefragt, von Medien über Pädagogik bis Verkauf."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quellen: Kultusministerkonferenz, Bildungsstandards, https://www.kmk.org/themen/qualitaetssicherung-in-schulen/bildungsstandards.html ; Lehrplandatenbank der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.48",
+     "titel": "Elternabend-Baustein Darstellendes Spiel und Theater",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Darstellendes Spiel und Theater.",
+     "stufe": "Kl. 5–10 und AG",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Darstellendes Spiel und Theater"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Darstellendes Spiel und Theater lernen die Kinder in diesem Schuljahr Folgendes: Darstellendes Spiel fördert Ausdruck, Sprechen, Körpersprache, Teamarbeit und Kreativität. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Darstellendes Spiel und Theater arbeiten wir in diesem Schuljahr an Folgendem: Darstellendes Spiel fördert Ausdruck, Sprechen, Körpersprache, Teamarbeit und Kreativität. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Aufführungen besuchen und Lob aussprechen",
+        "Auswendig lernen unterstützen",
+        "Auftritte als Familienprojekt feiern",
+        "Zurückhaltung ernst nehmen",
+        "Proben organisatorisch ermöglichen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Muss mein Kind auftreten? – Es gibt auch Aufgaben hinter der Bühne.",
+        "Wie wird bewertet? – Engagement, Probenarbeit, Gruppenleistung.",
+        "Wie viel Zeit ist nötig? – Zusatzproben können vor Aufführungen anfallen.",
+        "Ist das Fach ein Hobby? – Es hat eigenes Curriculum.",
+        "Gibt es Kosten? – Kostüme und Technik werden meist von der Schule gestellt.",
+        "Wird gefilmt? – Nur mit Einverständnis."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.49",
+     "titel": "Gesprächsbaustein Darstellendes Spiel und Theater",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Darstellendes Spiel und Theater.",
+     "stufe": "Kl. 5–10 und AG",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Tritt selbstbewusst auf",
+        "Bringt kreative Ideen ein",
+        "Arbeitet im Team zuverlässig",
+        "Spricht deutlich und ausdrucksvoll",
+        "Geht respektvoll mit Feedback um",
+        "Entwickelt Figuren glaubhaft",
+        "Übernimmt Verantwortung",
+        "Nutzt Körpersprache bewusst"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Auswendig lernen früher",
+        "Lautstärke und Deutlichkeit",
+        "Probenpünktlichkeit",
+        "Sich auf Gruppe einlassen",
+        "Mut zum Ausprobieren",
+        "Feedback annehmen",
+        "Raumwahrnehmung",
+        "Konzentration im Spiel"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Texte laut vor dem Spiegel sprechen",
+        "Familienrollenspiele",
+        "Aufführungen anschauen und besprechen",
+        "Atem- und Sprechübungen",
+        "Kleine Szenen vorspielen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Darstellendes Spiel und Theater"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "titel": "Berufsorientierung, DaZ und Förderschule",
+   "module": [
+    {
+     "id": "6b.50",
+     "titel": "Steckbrief Berufsorientierung und Praxisklassen",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Berufsorientierung und Praxisklassen für Elternabend und Beratung.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Berufsorientierung begleitet die Jugendlichen von Kl. 7 bis 10: Stärken erkennen, Berufsfelder kennenlernen, Praktika absolvieren und Bewerbungen vorbereiten. Praxisklassen oder Praxisgruppen verbinden Unterricht mit hohen Praxisanteilen im Betrieb für Jugendliche, die einen Abschluss anstreben. Die Ausgestaltung ist landesspezifisch."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Kl. 7",
+         "Potenzialanalyse, Interessen, Berufsfelder erkunden"
+        ],
+        [
+         "Kl. 8",
+         "Betriebserkundung, Praktikum, Berufswahlpass"
+        ],
+        [
+         "Kl. 9",
+         "Bewerbung, Vorstellungsgespräch, Beratung"
+        ],
+        [
+         "Kl. 10",
+         "Ausbildungsplatzsuche, Übergang, weiterführende Schule"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Praktikumsbericht und Mappe",
+        "Bewerbungsunterlagen",
+        "Rückmeldung des Betriebs",
+        "Reflexion und Präsentation"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Frühe Praxis erleichtert den Übergang in Ausbildung oder Weiterbildung. Betriebe schätzen Zuverlässigkeit, Teamfähigkeit und Engagement."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Bundesagentur für Arbeit, Berufsorientierung für Schülerinnen und Schüler, https://www.arbeitsagentur.de/ ; Strategie Berufsorientierung der KMK, https://www.kmk.org/ ; Lehrpläne der Länder, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.51",
+     "titel": "Elternabend-Baustein Berufsorientierung und Praxisklassen",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Berufsorientierung und Praxisklassen.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Berufsorientierung und Praxisklassen"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Berufsorientierung und Praxisklassen lernen die Kinder in diesem Schuljahr Folgendes: Berufsorientierung begleitet die Jugendlichen von Kl. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Berufsorientierung und Praxisklassen arbeiten wir in diesem Schuljahr an Folgendem: Berufsorientierung begleitet die Jugendlichen von Kl. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Gespräche über Stärken, Wünsche und Berufe",
+        "Kontakte zu Betrieben im Umfeld vermitteln",
+        "Praktikum organisatorisch unterstützen",
+        "Bewerbungsunterlagen gemeinsam durchsehen",
+        "Beratung der Agentur für Arbeit nutzen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wann beginnt die Berufsorientierung? – Meist ab Kl. 7 oder 8, je nach Land und Schulart.",
+        "Was ist ein Berufswahlpass? – Ein Ordner, der Erfahrungen und Ergebnisse sammelt; Name und Form sind landesabhängig.",
+        "Wer unterstützt bei Bewerbungen? – Schule, Agentur für Arbeit und Betriebe.",
+        "Was sind Praxisklassen? – Besondere Klassen mit hohem Praxisanteil; Aufnahmebedingungen vor Ort erfragen.",
+        "Wie lang dauert das Praktikum? – In der Regel ein bis drei Wochen.",
+        "Was, wenn das Kind keine Ahnung hat? – Das ist normal; Potenzialanalyse und Gespräche helfen."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.52",
+     "titel": "Gesprächsbaustein Berufsorientierung und Praxisklassen",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Berufsorientierung und Praxisklassen.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Kennt Stärken und Interessen",
+        "Tritt im Betrieb zuverlässig auf",
+        "Dokumentiert sorgfältig",
+        "Fragt interessiert nach",
+        "Bewirbt sich selbstständig",
+        "Hat realistische Berufsvorstellungen",
+        "Reflektiert Erfahrungen",
+        "Zeigt Eigeninitiative"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Zielklarheit ausbauen",
+        "Bewerbungsunterlagen verbessern",
+        "Pünktlichkeit im Betrieb",
+        "Selbstständige Recherche",
+        "Gesprächssituationen üben",
+        "Termine einhalten",
+        "Mehrere Alternativen prüfen",
+        "Austausch mit Beratung nutzen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Berufe im Umfeld kennenlernen",
+        "Ferienjobs oder Tagespraktika",
+        "Berufsinformationsveranstaltungen",
+        "Bewerbungsgespräch zu Hause üben",
+        "Berufsdatenbanken gemeinsam durchsehen"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Berufsorientierung und Praxisklassen"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.53",
+     "titel": "Steckbrief DaZ, Deutsch als Zweitsprache",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach DaZ, Deutsch als Zweitsprache für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Deutsch als Zweitsprache unterstützt Kinder und Jugendliche, deren Familiensprache nicht Deutsch ist, beim Erwerb der Bildungssprache. Förderung erfolgt in Vorklassen, Willkommensklassen, Sprachfördergruppen oder integriert im Fachunterricht. Organisation und Bezeichnung sind landesspezifisch."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Anfangsphase",
+         "Alltagssprache, Schrift, Hören und Sprechen"
+        ],
+        [
+         "Aufbau",
+         "Satzbau, Wortschatz, Lesen, Fachbegriffe"
+        ],
+        [
+         "Übergang",
+         "Fachsprache, Textarbeit, Teilnahme am Regelunterricht"
+        ],
+        [
+         "Begleitung",
+         "Sprachstandserhebung, Förderpläne, Elterngespräche"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Sprachstandserhebungen",
+        "Beobachtungsbögen",
+        "Arbeitsproben",
+        "Zeugnisse oft mit Hinweis zur Sprachförderung"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Gute Deutschkenntnisse sind Schlüssel für Ausbildung, Beruf und gesellschaftliche Teilhabe. Mehrsprachigkeit bleibt ein Gewinn."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: KMK, Zuwanderung und Bildung, https://www.kmk.org/ ; Deutscher Bildungsserver, Deutsch als Zweitsprache, https://www.bildungsserver.de/ (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.54",
+     "titel": "Elternabend-Baustein DaZ, Deutsch als Zweitsprache",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach DaZ, Deutsch als Zweitsprache.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach DaZ, Deutsch als Zweitsprache"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach DaZ, Deutsch als Zweitsprache lernen die Kinder in diesem Schuljahr Folgendes: Deutsch als Zweitsprache unterstützt Kinder und Jugendliche, deren Familiensprache nicht Deutsch ist, beim Erwerb der Bildungssprache. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach DaZ, Deutsch als Zweitsprache arbeiten wir in diesem Schuljahr an Folgendem: Deutsch als Zweitsprache unterstützt Kinder und Jugendliche, deren Familiensprache nicht Deutsch ist, beim Erwerb der Bildungssprache. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Zu Hause die Familiensprache pflegen und Deutsch im Alltag anbieten",
+        "Vorlesen und Bibliotheksbesuche",
+        "Schulpost regelmäßig mit Hilfe lesen",
+        "Kontakt zur Schule halten, Dolmetscher nutzen",
+        "Außerschulische Angebote wie Sprachcafés prüfen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie lange dauert der Erwerb? – Alltagssprache etwa 1 bis 2 Jahre, Bildungssprache oft deutlich länger.",
+        "Darf mein Kind Familiensprache sprechen? – Ja, das fördert die Sprachentwicklung.",
+        "Wann wechselt mein Kind in die Regelklasse? – Das entscheidet die Schule anhand der Sprachstände.",
+        "Wie wirkt sich DaZ auf Noten aus? – Je nach Land gibt es Schonfristen oder Nachteilsausgleiche; vor Ort erfragen.",
+        "Gibt es Dolmetscher? – Viele Schulen vermitteln diese für Gespräche.",
+        "Was kann ich tun? – Regelmäßig Kontakt mit Deutsch und Mut zum Sprechen fördern."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.55",
+     "titel": "Gesprächsbaustein DaZ, Deutsch als Zweitsprache",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach DaZ, Deutsch als Zweitsprache.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Macht große Fortschritte im Deutschen",
+        "Spricht mutig und häufig",
+        "Liest zunehmend flüssig",
+        "Erweitert den Wortschatz schnell",
+        "Bringt Sprachwissen aus der Herkunftssprache ein",
+        "Nimmt aktiv am Unterricht teil",
+        "Versteht Arbeitsanweisungen",
+        "Schreibt zunehmend korrekt"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Artikel und Fälle üben",
+        "Fachwortschatz erweitern",
+        "Satzbau festigen",
+        "Mehr sprechen wagen",
+        "Lesemenge steigern",
+        "Hörverstehen im Klassenverband",
+        "Rechtschreibung stabilisieren",
+        "Schriftliche Texte planen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Täglich 15 Minuten vorlesen oder lesen",
+        "Wortkarten mit Bild und Artikel",
+        "Gespräche über den Schultag",
+        "Kontakt zu deutschsprachigen Gleichaltrigen",
+        "Sprachlernspiele und Hörspiele"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach DaZ, Deutsch als Zweitsprache"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    },
+    {
+     "id": "6b.56",
+     "titel": "Steckbrief Förderschule: Lernbereiche im Überblick",
+     "typ": "Übersicht",
+     "zweck": "Kompakter Überblick über Ziele, Themen und Leistungsnachweise im Fach Förderschule: Lernbereiche im Überblick für Elternabend und Beratung.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ziele des Fachs"
+      },
+      {
+       "t": "p",
+       "x": "Förderschulen und Förderzentren unterstützen Kinder mit sonderpädagogischem Förderbedarf. Wichtige Förderschwerpunkte sind Lernen, geistige Entwicklung sowie emotionale und soziale Entwicklung; es gibt weitere Schwerpunkte. Inklusion an allgemeinen Schulen und Förderschulen bestehen nebeneinander, die Verteilung ist landesspezifisch. Der Begriff Förderschwerpunkt ersetzt die Bezeichnung Behinderungsart."
+      },
+      {
+       "t": "h",
+       "x": "Kernthemen nach Stufen"
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Stufe",
+        "Kernthemen"
+       ],
+       "zeilen": [
+        [
+         "Förderschwerpunkt Lernen",
+         "Lernziele nach Grundschul- oder Hauptschullehrplan, kleinere Schritte, Anschauung"
+        ],
+        [
+         "Geistige Entwicklung",
+         "Lebenspraktische Bildung, Kommunikation, Selbstständigkeit, Arbeitswelt"
+        ],
+        [
+         "Emotionale und soziale Entwicklung",
+         "Beziehungsarbeit, Verhaltenssteuerung, Konfliktbearbeitung"
+        ],
+        [
+         "Übergänge",
+         "Berufsorientierung, Werkstufe, Ausbildung, Inklusion"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Leistungsnachweise"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Lernentwicklungsberichte",
+        "Förderpläne mit Zielen",
+        "Kompetenzraster",
+        "Zeugnisse mit Noten oder Verbalbeurteilung, je nach Land"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Bezug zu Beruf und Alltag"
+      },
+      {
+       "t": "p",
+       "x": "Ziel sind größtmögliche Selbstständigkeit und Teilhabe in Alltag und Arbeit. Abschlüsse reichen je nach Land vom Förderschulabschluss bis zum Hauptschulabschluss."
+      },
+      {
+       "t": "hinweis",
+       "x": "Stundentafel, Fachbezeichnung und Leistungsnachweise unterscheiden sich je nach Bundesland und Schulart. Vor dem Einsatz mit dem schulinternen Curriculum abgleichen."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: KMK, Empfehlungen zur sonderpädagogischen Förderung, https://www.kmk.org/ ; Landesportale der Kultusministerien (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.57",
+     "titel": "Elternabend-Baustein Förderschule: Lernbereiche im Überblick",
+     "typ": "Textbaustein",
+     "zweck": "Kopierfertige Ansprache und Antworten auf typische Elternfragen zum Fach Förderschule: Lernbereiche im Überblick.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Ansprache für den Elternabend: Fach Förderschule: Lernbereiche im Überblick"
+      },
+      {
+       "t": "baustein",
+       "x": "Sie-Form:\n\nLiebe Eltern, im Fach Förderschule: Lernbereiche im Überblick lernen die Kinder in diesem Schuljahr Folgendes: Förderschulen und Förderzentren unterstützen Kinder mit sonderpädagogischem Förderbedarf. Ich möchte Ihnen kurz zeigen, woran wir arbeiten und wie Sie Ihr Kind zu Hause unterstützen können, ohne Druck aufzubauen.\n\nWichtig ist mir: Fragen Sie jederzeit nach, wenn Ihnen etwas unklar ist. Sie erreichen mich über [Kontaktweg]."
+      },
+      {
+       "t": "baustein",
+       "x": "Du-Form (für Schulen mit duzender Elternansprache):\n\nLiebe Eltern, im Fach Förderschule: Lernbereiche im Überblick arbeiten wir in diesem Schuljahr an Folgendem: Förderschulen und Förderzentren unterstützen Kinder mit sonderpädagogischem Förderbedarf. Ich zeige Euch kurz, woran wir arbeiten und wie Ihr Euer Kind zu Hause unterstützen könnt, ohne Druck aufzubauen.\n\nFragt jederzeit nach, wenn etwas unklar ist. Ihr erreicht mich über [Kontaktweg]."
+      },
+      {
+       "t": "h",
+       "x": "So können Eltern helfen"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Förderplan gemeinsam besprechen",
+        "Alltagsfähigkeiten stärken",
+        "Routinen klar und kurz halten",
+        "Kind loben und kleine Fortschritte feiern",
+        "Beratung durch Förderzentren und Beratungsstellen nutzen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Sechs typische Elternfragen mit Antworten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Wie kommt mein Kind an eine Förderschule? – Über ein Verfahren zur Feststellung des sonderpädagogischen Förderbedarfs; Ablauf je Land.",
+        "Welche Abschlüsse sind möglich? – Je nach Förderschwerpunkt und Land; vor Ort erfragen.",
+        "Ist ein Wechsel an die Regelschule möglich? – Oft ja, bei entsprechender Entwicklung.",
+        "Was ist inklusive Beschulung? – Unterricht an allgemeiner Schule mit sonderpädagogischer Unterstützung.",
+        "Wer trägt die Kosten für Schulweg? – Regelungen je Land und Träger.",
+        "Welche Rechte haben Eltern? – Beratungs- und Mitwirkungsrechte laut Landesrecht."
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Nicht alle Fragen vorab beantworten: Zwei bis drei auf einer Folie zeigen und Raum für eigene Fragen lassen."
+      }
+     ]
+    },
+    {
+     "id": "6b.58",
+     "titel": "Gesprächsbaustein Förderschule: Lernbereiche im Überblick",
+     "typ": "Textbaustein",
+     "zweck": "Formulierungen für Lernentwicklungsgespräche im Fach Förderschule: Lernbereiche im Überblick.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Stärken formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Macht gute Fortschritte",
+        "Arbeitet motiviert mit Hilfen",
+        "Übernimmt Verantwortung",
+        "Zeigt wachsende Selbstständigkeit",
+        "Kommuniziert zunehmend klar",
+        "Hält Regeln ein",
+        "Unterstützt andere",
+        "Zeigt Freude am Lernen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Entwicklungsfelder positiv formulieren"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Aufmerksamkeit längere Zeit halten",
+        "Selbstständiger arbeiten",
+        "Frustration regulieren",
+        "Aufgaben strukturieren",
+        "Konflikte ruhig lösen",
+        "Lernschritte wiederholen",
+        "Hilfen aktiv anfordern",
+        "Alltagsroutinen festigen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Fördertipps für zu Hause und im Unterricht"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Kleine Ziele mit Belohnung vereinbaren",
+        "Visualisierte Tagespläne",
+        "Gemeinsame Alltagsaufgaben übernehmen",
+        "Rückmeldung täglich kurz geben",
+        "Kontakt zum Förderzentrum halten"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Immer mit einer Stärke beginnen, höchstens zwei Entwicklungsfelder wählen und eine konkrete Vereinbarung mit Termin treffen."
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Vereinbartes Ziel im Fach Förderschule: Lernbereiche im Überblick"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Notizen zum Gespräch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "titel": "Wahlpflichtbereiche und AG-Ideen",
+   "module": [
+    {
+     "id": "6b.59",
+     "titel": "Wahlpflichtfächergruppen Realschule (Beispiel Bayern)",
+     "typ": "Übersicht",
+     "zweck": "Überblick und Gesprächshilfe, wie Wahlpflichtfächergruppen an der Realschule aufgebaut sind.",
+     "stufe": "Kl. 6–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Überblick"
+      },
+      {
+       "t": "p",
+       "x": "In Bayern wählen Schülerinnen und Schüler an der Realschule ab Jahrgangsstufe 7 eine Wahlpflichtfächergruppe. Die Gruppe prägt die Fächer in den Jahrgangsstufen 7 bis 10 und beeinflusst spätere Ausbildungswege. Die genauen Bezeichnungen und Zusammensetzungen legt das Ministerium fest."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Bereich",
+        "Schwerpunkt",
+        "Beispiele"
+       ],
+       "zeilen": [
+        [
+         "Gruppe I",
+         "Mathematisch-naturwissenschaftlich-technisch",
+         "Mathematik, Physik, Technik"
+        ],
+        [
+         "Gruppe II",
+         "Wirtschaft und Verwaltung",
+         "Betriebswirtschaft, Rechnungswesen"
+        ],
+        [
+         "Gruppe III",
+         "Sprachlich oder künstlerisch",
+         "Französisch, Kunst, Sozialwesen"
+        ],
+        [
+         "Hinweis",
+         "Wahl meist ab Kl. 7",
+         "Gruppen unterscheiden sich von Land zu Land"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Worauf Sie im Gespräch achten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Interesse und Stärken des Kindes",
+        "Bedeutung der Gruppe für Abschluss und Anschluss",
+        "Möglichkeiten zum Wechsel und die Fristen",
+        "Anmeldeverfahren und Unterlagen",
+        "Austausch mit Lehrkräften und Beratung"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bezeichnungen und Regeln wechseln von Land zu Land; die Angaben sind Orientierung, nicht Rechtsauskunft."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Bayerisches Staatsministerium für Unterricht und Kultus, Realschule, https://www.km.bayern.de/ (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.60",
+     "titel": "Wahlpflichtbereich II in Nordrhein-Westfalen",
+     "typ": "Übersicht",
+     "zweck": "Überblick über die Differenzierung ab Klasse 7 in der Sekundarstufe I.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Überblick"
+      },
+      {
+       "t": "p",
+       "x": "In Nordrhein-Westfalen gibt es an Gesamtschulen, Realschulen und Sekundarschulen einen Wahlpflichtbereich II, in dem Schülerinnen und Schüler ab Klasse 7 Schwerpunkte setzen. Angebote und Bezeichnungen variieren zwischen Schulformen und Schulen."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Bereich",
+        "Inhalt",
+        "Hinweis"
+       ],
+       "zeilen": [
+        [
+         "Wahlpflichtbereich II",
+         "Zusätzliches Fach oder Fächergruppe",
+         "Wahl nach Neigung"
+        ],
+        [
+         "Schwerpunkte",
+         "Fremdsprache, Naturwissenschaft, Gesellschaft, Technik, Kunst",
+         "Schulintern"
+        ],
+        [
+         "Dauer",
+         "Meist Kl. 7 bis 10",
+         "Wechsel nur begrenzt"
+        ],
+        [
+         "Bewertung",
+         "Hauptfach",
+         "Wie andere Fächer"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Worauf Sie im Gespräch achten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Schulinternes Angebot rechtzeitig vorstellen",
+        "Beratung zu Neigung und Leistung",
+        "Anrechnung für Abschluss und Zulassung zur Oberstufe",
+        "Fristen und Einwahlverfahren",
+        "Wechselmöglichkeit"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bezeichnungen und Regeln wechseln von Land zu Land; die Angaben sind Orientierung, nicht Rechtsauskunft."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Ministerium für Schule und Bildung NRW, https://www.schulministerium.nrw/ (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.61",
+     "titel": "Profilfächer und Wahlpflichtfächer in Baden-Württemberg",
+     "typ": "Übersicht",
+     "zweck": "Überblick über Profilfächer am Gymnasium und Wahlpflichtfächer an Realschulen.",
+     "stufe": "Kl. 7–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Überblick"
+      },
+      {
+       "t": "p",
+       "x": "In Baden-Württemberg unterscheiden sich Profilfächer am Gymnasium und Wahlpflichtfächer an der Realschule. Die Wahl prägt Stundentafel und Interessen, hat aber bei Wechsel und Abschluss unterschiedliche Folgen. Die Schule informiert über das aktuelle Angebot."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "Schulart",
+        "Fach",
+        "Hinweis"
+       ],
+       "zeilen": [
+        [
+         "Gymnasium",
+         "Profilfächer, z. B. Naturwissenschaft und Technik, Sport, Informatik-Mathematik-Physik",
+         "Wahl in Kl. 8 oder 9"
+        ],
+        [
+         "Gymnasium",
+         "Sprachprofile, z. B. Französisch, Latein, Spanisch",
+         "Als Profil oder Fremdsprache"
+        ],
+        [
+         "Realschule",
+         "Technik, Französisch, Alltagskultur-Ernährung-Soziales",
+         "Wahl in Kl. 7"
+        ],
+        [
+         "Gemeinschaftsschule",
+         "Wahlfach bzw. Profil",
+         "Schulintern"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Worauf Sie im Gespräch achten"
+      },
+      {
+       "t": "ul",
+       "x": [
+        "Interesse und Berufswünsche abgleichen",
+        "Regeln zu Wechsel und Anrechnung",
+        "Aufnahmebedingungen und Mindestgrößen",
+        "Zeitplan der Wahl",
+        "Beratungsangebote"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bezeichnungen und Regeln wechseln von Land zu Land; die Angaben sind Orientierung, nicht Rechtsauskunft."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Ministerium für Kultus, Jugend und Sport Baden-Württemberg, https://km-bw.de/ (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.62",
+     "titel": "AG- und Wahlfächer-Ideen: Schach, Schulgarten, Robotik, Chor",
+     "typ": "Übersicht",
+     "zweck": "Ideensammlung für Arbeitsgemeinschaften mit Zielen, Aufwand und Elterninfo.",
+     "stufe": "Kl. 1–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Überblick"
+      },
+      {
+       "t": "p",
+       "x": "Arbeitsgemeinschaften ergänzen den Unterricht, fördern Interessen und stärken die Schulgemeinschaft. Die Teilnahme ist freiwillig; Anmeldung, Kosten und Versicherungsschutz sind in der Regel durch die Schule geregelt."
+      },
+      {
+       "t": "tabelle",
+       "kopf": [
+        "AG",
+        "Zielgruppe",
+        "Ziele",
+        "Material"
+       ],
+       "zeilen": [
+        [
+         "Schach",
+         "Kl. 3–10",
+         "Strategie, Geduld, Turniere",
+         "Bretter, Uhren"
+        ],
+        [
+         "Schulgarten",
+         "Kl. 1–8",
+         "Natur erleben, Verantwortung",
+         "Beete, Werkzeug"
+        ],
+        [
+         "Robotik",
+         "Kl. 5–10",
+         "Technik, Programmieren",
+         "Bausätze, Rechner"
+        ],
+        [
+         "Chor",
+         "Kl. 1–10",
+         "Stimme, Gemeinschaft, Auftritte",
+         "Noten, Klavier"
+        ],
+        [
+         "Schülerzeitung",
+         "Kl. 5–10",
+         "Schreiben, Recherche, Layout",
+         "Rechner, Software"
+        ],
+        [
+         "Schulsanitätsdienst",
+         "Kl. 7–10",
+         "Erste Hilfe, Verantwortung",
+         "Ausstattung, Ausbildung"
+        ],
+        [
+         "Streitschlichter",
+         "Kl. 5–10",
+         "Konfliktlösung, Mediation",
+         "Ausbildung, Raum"
+        ]
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Ablauf der Einrichtung"
+      },
+      {
+       "t": "ol",
+       "x": [
+        "Idee und Leitung klären",
+        "Raum, Zeit und Versicherung sichern",
+        "Elterninformation versenden",
+        "Anmeldungen sammeln",
+        "Start mit Kennenlernen und Regeln",
+        "Abschlusspräsentation planen"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Elternbrief zur AG"
+      },
+      {
+       "t": "baustein",
+       "x": "Liebe Eltern,\n\nin diesem Schuljahr bieten wir die Arbeitsgemeinschaft [Name der AG] an. Sie findet [Wochentag] von [Uhrzeit] bis [Uhrzeit] in [Raum] statt und richtet sich an die Klassen [Stufen]. Die Teilnahme ist freiwillig und für das Schuljahr verbindlich. Bitte melden Sie Ihr Kind bis [Datum] mit dem Abschnitt unten an.\n\nMit freundlichen Grüßen\n[Name der Lehrkraft]"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "AG",
+        "Datum",
+        "Unterschrift der Erziehungsberechtigten"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Bei Fahrten, Wettbewerben oder Fotos eigenes Einverständnis einholen. Versicherungsschutz der Schule vorab klären."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    },
+    {
+     "id": "6b.63",
+     "titel": "Fächerwahl-Entscheidungshilfe für Kind und Eltern",
+     "typ": "Fragebogen",
+     "zweck": "Fragebogen zur strukturierten Entscheidung für ein Wahl- oder Wahlpflichtfach.",
+     "stufe": "Kl. 5–10",
+     "bloecke": [
+      {
+       "t": "h",
+       "x": "Für das Kind"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Fach interessiert mich.",
+        "Ich habe schon Erfahrungen damit.",
+        "Ich arbeite gern praktisch.",
+        "Ich übe gern regelmäßig.",
+        "Ich möchte im Fach später weiterlernen."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "h",
+       "x": "Für die Eltern"
+      },
+      {
+       "t": "skala",
+       "x": [
+        "Das Fach passt zu den Stärken meines Kindes.",
+        "Ich kenne Anforderungen und Termine.",
+        "Wir können Zeit zum Üben einplanen.",
+        "Ich habe Alternativen besprochen."
+       ],
+       "stufen": [
+        "trifft zu",
+        "trifft eher zu",
+        "trifft eher nicht zu",
+        "trifft nicht zu"
+       ]
+      },
+      {
+       "t": "linien",
+       "n": 3,
+       "x": "Gründe für die Entscheidung"
+      },
+      {
+       "t": "felder",
+       "x": [
+        "Name des Kindes",
+        "Klasse",
+        "Datum",
+        "Erste Wahl",
+        "Zweite Wahl"
+       ]
+      },
+      {
+       "t": "hinweis",
+       "x": "Die Entscheidung ist eine Momentaufnahme. Informieren Sie sich über Wechselmöglichkeiten."
+      },
+      {
+       "t": "quelle",
+       "x": "Offizielle Quelle: Lehrpläne und Fachanforderungen der Länder, Lehrplandatenbank Deutscher Bildungsserver, https://www.bildungsserver.de/lehrplaene-1604-de.html (Stand November 2026). Bitte aktuelle Regelung beim zuständigen Ministerium prüfen."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

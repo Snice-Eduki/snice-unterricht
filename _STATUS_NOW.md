@@ -113,3 +113,7 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 07.11. 17:54 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', 'build.py']' timed out after 2400 seconds (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 08.11. 04:33 Homepage-Tageslauf: BLOG_PRUEFEN 3 – Entwuerfe in Marketing\blog\_queue pruefen/freigeben (_blog_takt.py) (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 08.11. 14:01 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 09.11. 02:16 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
