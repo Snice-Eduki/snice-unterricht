@@ -520,7 +520,7 @@
 "es/animales-y-naturaleza.html",
 "animales-y-naturaleza"
 ],
-"es/arte-y-cultura-grado-1-primaria.html": [
+"es/arte-y-cultura-grado-2-primaria.html": [
 "es/arte-y-cultura.html",
 "arte-y-cultura"
 ],
@@ -536,9 +536,9 @@
 "es/ciencias-y-salud.html",
 "ciencias-y-salud"
 ],
-"es/cultura-general-grado-1-primaria.html": [
-"es/cultura-general-grado-1.html",
-"cultura-general-grado-1"
+"es/cultura-general-grado-2-primaria.html": [
+"es/cultura-general.html",
+"cultura-general"
 ],
 "es/cultura-general-grado-3-primaria.html": [
 "es/cultura-general-grado-3.html",
@@ -571,6 +571,10 @@
 "es/lengua-grado-6-primaria.html": [
 "es/lengua.html",
 "lengua"
+],
+"es/matematicas-grado-2-primaria.html": [
+"es/matematicas.html",
+"matematicas"
 ],
 "es/matematicas-grado-7.html": [
 "es/matematicas.html",
@@ -5900,7 +5904,7 @@
 ]
 },
 "it": {
-"it/animali-e-natura-classe-ii-primaria.html": [
+"it/animali-e-natura-classe-i-primaria.html": [
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
@@ -5913,6 +5917,10 @@
 "animali-e-natura"
 ],
 "it/cultura-generale-classe-3.html": [
+"it/cultura-generale.html",
+"cultura-generale"
+],
+"it/cultura-generale-classe-i-primaria.html": [
 "it/cultura-generale.html",
 "cultura-generale"
 ],
@@ -5932,11 +5940,19 @@
 "it/geografia.html",
 "geografia"
 ],
+"it/musica-classe-i-primaria.html": [
+"it/musica.html",
+"musica"
+],
 "it/musica-classe-iii-primaria.html": [
 "it/musica.html",
 "musica"
 ],
 "it/p/2096123-antonio-vivaldi.html": [
+"it/risorse.html",
+"Tutti i materiali"
+],
+"it/p/2096788-rosa-parks.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
@@ -5955,6 +5971,10 @@
 "it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-fra.html": [
 "it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-con.html",
 "Laboratorio di carte: Gli animali domestici – carte immagine e parola con frasi modello (GRATIS)"
+],
+"it/storia-e-societa-classe-i-primaria.html": [
+"it/storia-e-societa.html",
+"storia-e-societa"
 ],
 "it/storia-e-societa-classe-iii-primaria.html": [
 "it/storia-e-societa.html",
