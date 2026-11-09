@@ -548,6 +548,25 @@ def line_of(m):
     return "sonst"
 
 
+_FREE_TITLE_RE = re.compile(r"(?:[–\-]\s*(?:kostenlos|gratis)|\((?:gratis|kostenlos)\)|GRATIS-)", re.I)
+_KL_RANGE_RE = re.compile(r"Klasse\s+(\d{1,2})\s*[–\-]\s*(\d{1,2})")
+
+
+def _norm_free_grades(m):
+    """09.11.: Titel ist fuehrend. 'kostenlos/GRATIS' im Titel -> Preis 0 (eduki liefert teils Standardpreis);
+    'Klasse a-b' im Titel -> Klassenliste a..b (eduki erlaubt nur 2 Stufen), Schulart bei 1-10 'Alle Schularten'."""
+    t = m.get("title", "")
+    if _FREE_TITLE_RE.search(t) and not str(m.get("is_free")) in ("True", "true", "1"):
+        m["is_free"] = True; m["price"] = 0
+    r = _KL_RANGE_RE.search(t)
+    if r:
+        a, b = int(r.group(1)), int(r.group(2))
+        if 1 <= a < b <= 10:
+            m["grades"] = [f"{n}. Klasse" for n in range(a, b + 1)]
+            if a <= 4 and b >= 5:
+                m["school_types"] = ["Alle Schularten"] if (a, b) == (1, 10) else ["Grundschule", "Sek I Mittlere Schulform"]
+
+
 def load_katalog():
     """Aktive Materialien, bereinigt (12.09.): Junk-Titel raus, Titel-Dubletten -> nur neueste ID,
     EN-Materialien markiert (m['en']) und Produktlinie (m['line'])."""
@@ -573,6 +592,8 @@ def load_katalog():
         for _k in ("title", "desc", "desc_short"):
             if m.get(_k) and "&" in m[_k]:
                 m[_k] = html.unescape(m[_k])
+    for m in kat:
+        _norm_free_grades(m)
     best = {}
     for m in kat:
         k = re.sub(r"\s+", " ", m["title"].strip().lower())
@@ -2050,7 +2071,7 @@ def is_free(m):
 
 def price_label(m):
     if is_free(m):
-        return "0,00 €"   # 20.10.: neutraler Preis statt Gratis-Werbung
+        return "Kostenlos"   # 09.11.: kein Preis bei Gratis-Material
     try:
         p = float(m.get("price") or 0)
     except Exception:

@@ -912,7 +912,7 @@ def eduki_item(m, lang):
     if lang == "es":   # 02.11.: eduki-ES-Stufen "5. PRIM"/"1. ESO" -> Landesschreibweise, kurze Slugs
         gl = [re.sub(r"^(\d+)\.\s*PRIM$", r"\1.º de primaria", re.sub(r"^(\d+)\.\s*ESO$", r"\1.º de ESO", g.strip())) for g in gl]
     try:
-        pnum = 0.0 if m.get("is_free") else float(m.get("price") or 0)
+        pnum = 0.0 if (m.get("is_free") or re.search(r"[–\-]\s*(?:gratuit|gratis|gratuito)|\((?:GRATIS|GRATUIT|GRATUITO)\)", title, re.I)) else float(m.get("price") or 0)
     except Exception:
         pnum = None
     fam = "ws" if re.search(r"fiche|scheda|ficha|texte à trous|spazi vuoti|texto con huecos", title, re.I) else "other"
