@@ -794,6 +794,12 @@ def fk_slug(fach, n):
 _FK_CACHE = None
 
 
+def _lp(fn, *a):
+    """10.11.: Lehrplan-Themenseiten (lehrplan_seiten.py) - Verlinkung aus Hubs, Startseite und Material-Detailseiten."""
+    import lehrplan_seiten
+    return getattr(lehrplan_seiten, fn)(*a)
+
+
 def fk_kombis():
     """{(Fach, Klasse): [Materialien]} für alle Kombinationen mit genug Material – von Fach-, Klassen-
     und Kombiseiten gemeinsam genutzt, damit alle dieselbe Verlinkung zeigen."""
@@ -815,9 +821,9 @@ def fk_kombis():
 def fk_links_fuer_fach(f):
     ks = sorted(n for (ff, n) in fk_kombis() if ff == f)
     if not ks:
-        return ""
+        return _lp("links_fach", f)
     lk = " · ".join(f'<a href="{fk_slug(f, n)}.html">Klasse {n}</a>' for n in ks)
-    return f'<p class="more"><strong>Direkt zur Jahrgangsstufe:</strong> {lk}</p>'
+    return f'<p class="more"><strong>Direkt zur Jahrgangsstufe:</strong> {lk}</p>' + _lp("links_fach", f)
 
 
 def fk_links_fuer_klasse(n):
@@ -848,6 +854,7 @@ def render_fachklasse_pages():
         links = (f'<p class="more"><a href="{fach_slug(f)}.html">Alle Materialien {html.escape(f)}</a> · '
                  f'<a href="klasse-{n}.html">Alle Fächer Klasse {n}</a>'
                  + (" · " + " · ".join(nachbarn) if nachbarn else "") + "</p>")
+        links += _lp("links_fk", f, n)
         rest = ""
         if gesamt > FK_MAX_CARDS:
             rest = (f'<p class="more">Hier sind die {FK_MAX_CARDS} neuesten von {nfmt(gesamt)} Materialien. '
@@ -1674,6 +1681,7 @@ def render_index(posts=None):
             "differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte. Grundschule bis Klasse 10.")
     out = head(title, desc, SITE + "/", "", extra_ld=[site_ld, org_ld, faq_ld], title_raw=True)
     out += hero_html(mats)
+    out += _lp("home_block")   # 10.11.: Lehrplanthemen oben auf der Startseite
     out += f"""
 
 <section class="section tiles">
@@ -2054,7 +2062,7 @@ def build_foot_cols():
     a_links = (' · '.join(f'<a href="{href}">{name}</a>' for name, href, _ in LINE_META.values())
                + (' · <a href="berufsschule.html">Berufsschule</a>' if len(lernpakete()) >= BS_MIN_HUB else "")
                + (' · <a href="lernvideos.html">Lernvideos</a>' if sum(1 for e in lernpakete() if e["yt_id"]) >= LV_MIN_HUB else "")
-               + ' · <a href="neu.html">Neu erschienen</a> · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a>')
+               + ' · <a href="lehrplan-themen.html">Lehrplanthemen</a> · <a href="neu.html">Neu erschienen</a> · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a>')
     return (f'<div class="fcols"><div><h4>Nach Fach</h4><p>{f_links}</p></div>'
             f'<div><h4>Nach Klasse</h4><p>{k_links}</p></div>'
             f'<div><h4>Materialarten</h4><p>{a_links}</p></div></div>')
@@ -2261,7 +2269,7 @@ def render_material_page(m, related):
 <div class="buy"><span class="price">{price}</span><a class="btn" href="{eduki}" target="_blank" rel="noopener">Material auf eduki ansehen</a></div>
 <div class="desc">{desc_paras(desc)}</div>
 <div class="facts">{facts}</div>
-<p class="meta">Passende Übersichten: <a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a>{(" · " + kl_links) if kl_links else ""} · <a href="../{line_href}">{html.escape(line_name)}</a></p>
+<p class="meta">Passende Übersichten: <a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a>{(" · " + kl_links) if kl_links else ""} · <a href="../{line_href}">{html.escape(line_name)}</a>{_lp("mat_links", m)}</p>
 </div>
 </div>
 {"<h2>Ähnliche Materialien</h2><div class='grid'>" + rel_html + "</div>" if related else ""}
@@ -2354,6 +2362,7 @@ def main():
     import sys, i18n_build   # 27.10.: Sprachversionen /en/ /es/ /fr/ /it/
     n_i18n = i18n_build.prepare(sys.modules[__name__])
     register_material_pages()
+    import lehrplan_seiten; lehrplan_seiten.prepare(globals())   # 10.11.: Lehrplan-Themenseiten (Zuordnung vor allen Hubs)
     posts = load_posts()
     for p in posts:
         render_post(p)
@@ -2371,6 +2380,7 @@ def main():
     n_bs, n_lv = render_berufsschule_lernvideos()   # SEO 02.11.: Berufsschule/Lernvideos (erst ab Mindestmenge)
     import baukasten_seiten; baukasten_seiten.render(globals())   # 09.11.: Gratis-Baukasten
     import escape_seiten; escape_seiten.render(globals())   # 09.11.: Escape-Room Winter gratis
+    lehrplan_seiten.render(globals())   # 10.11.: Lehrplan-Themenseiten + Uebersicht
     n_matpages = render_material_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>

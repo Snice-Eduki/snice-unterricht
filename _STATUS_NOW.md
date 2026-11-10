@@ -125,3 +125,5 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 09.11. 08:27 Homepage-Tageslauf: i18n-Check fehlgeschlagen -> kein Push: ', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../reading-comprehension-worksheets.html', 'https://snice-unterricht.eu/en/winter-escape-room-english-year-6.html -> ../bundles.html' (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 09.11. 20:35 Homepage-Tageslauf: Pages nach 45 Min nicht live (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 10.11. 01:37 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', 'build.py']' timed out after 2400 seconds (Log `Skripte\_homepage_daily.log`)

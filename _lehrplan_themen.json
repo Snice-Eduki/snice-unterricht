@@ -1,0 +1,2488 @@
+[
+ {
+  "slug": "wasserkreislauf",
+  "thema": "Wasserkreislauf",
+  "fach": "Sachunterricht",
+  "klassen": [
+   3,
+   5
+  ],
+  "include": "(?<![a-zäöüß])(wasserkreislauf|niederschlag|verdunst|kondensation|regenwasser|wolkenbildung)",
+  "exclude": "",
+  "einordnung": "Warum regnet es, und wohin verschwindet die Pfütze? Der Wasserkreislauf verbindet Alltagsbeobachtungen mit einem naturwissenschaftlichen Modell und gehört in der Grundschule zu den Standardthemen des Sachunterrichts, in der Sekundarstufe wird er in Erdkunde und Biologie wieder aufgegriffen.",
+  "begriffe": [
+   "Verdunstung",
+   "Kondensation",
+   "Niederschlag",
+   "Grundwasser",
+   "Quelle und Mündung",
+   "Aggregatzustände"
+  ],
+  "lernziel": "Die Kinder beschreiben den Kreislauf in eigenen Worten und ordnen Fachbegriffe den richtigen Stationen zu.",
+  "tipp": "Ein Glas mit Folie und warmem Wasser im Fenster zeigt Kondensation in zehn Minuten; danach fällt das Beschriften der Kreislaufgrafik deutlich leichter."
+ },
+ {
+  "slug": "wasser-und-gewaesser",
+  "thema": "Wasser, Seen und Flüsse",
+  "fach": "Sachunterricht",
+  "klassen": [
+   2,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(wasser\\b|grundwasser|trinkwasser|teich|bach$|flussdelta|gewässer|see$|seen$|abwasser|kläranlage|wasserversorgung|moor)",
+  "exclude": "wasserkreislauf|wasserstoff|wasserfall|moorleiche|klappbuch",
+  "einordnung": "Gewässer begegnen Kindern am Schulweg, im Garten und im Urlaub. Der Unterricht arbeitet meist vom Bach über den Fluss zum Meer, fragt nach sauberem Trinkwasser und nach dem Schutz von Feuchtgebieten.",
+  "begriffe": [
+   "Quelle",
+   "Fluss und Mündung",
+   "See und Teich",
+   "Trinkwasser",
+   "Kläranlage",
+   "Moor"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler unterscheiden stehende und fließende Gewässer und erklären, wie Wasser aufbereitet wird.",
+  "tipp": "Eine kleine Gewässerprobe vom Schulteich unter der Lupe verbindet Theorie und Beobachtung, bevor Steckbriefe geschrieben werden."
+ },
+ {
+  "slug": "wetter",
+  "thema": "Wetter und Wettererscheinungen",
+  "fach": "Sachunterricht",
+  "klassen": [
+   2,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(wetter|gewitter|blitz|donner|regenbogen|sturm|hagel|nebel|wolken|orkan|hurrikan|tornado|dürre|hitzewelle|tau$)",
+  "exclude": "stoff|dürrenmatt|sturm und drang|sturmvogel|daz-|friedrich",
+  "einordnung": "Wetterbeobachtung ist ein Klassiker, weil sie täglich neue Daten liefert. Ab der Grundschule werden Wolkenformen, Temperatur und Niederschlag erfasst, später kommen Luftdruck, Fronten und Extremwetter hinzu.",
+  "begriffe": [
+   "Wolkenarten",
+   "Temperatur messen",
+   "Niederschlag",
+   "Gewitter",
+   "Wettervorhersage",
+   "Regenbogen"
+  ],
+  "lernziel": "Die Kinder lesen einfache Wetterdaten, erklären Gewitter und Regenbogen und führen ein Wetterprotokoll.",
+  "tipp": "Ein Wetterprotokoll über zwei Wochen gibt eine echte Datenbasis, auf der Diagramme und Vergleiche aufbauen."
+ },
+ {
+  "slug": "klimawandel",
+  "thema": "Klimawandel und Klimaschutz",
+  "fach": "Erdkunde",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(klimawandel|klimaschutz|treibhaus|erderwärmung|fridays for future|co2|kohlenstoffdioxid|ozonloch|klimakonferenz)",
+  "exclude": "",
+  "einordnung": "Klimawandel zählt in Erdkunde, Biologie und Politik zu den Pflichtthemen der Sekundarstufe I und taucht zunehmend schon in der Grundschule als Umweltthema auf. Entscheidend ist die Trennung von Wetter, Klima und menschlichem Einfluss.",
+  "begriffe": [
+   "Treibhauseffekt",
+   "Kohlenstoffdioxid",
+   "Erderwärmung",
+   "Klimaschutz",
+   "Ozonloch",
+   "Klimakonferenzen"
+  ],
+  "lernziel": "Die Jugendlichen erklären den Treibhauseffekt, werten Daten aus und bewerten Maßnahmen zum Klimaschutz.",
+  "tipp": "Lassen Sie Diagramme zur Temperaturentwicklung erst beschreiben und dann deuten; so trennen Lernende Beobachtung und Interpretation."
+ },
+ {
+  "slug": "jahreszeiten",
+  "thema": "Jahreszeiten",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(frühling|sommer|herbst|winter|jahreszeit)",
+  "exclude": "rechenwelten|escape|materialpaket|englisch|english|lesewinter|lesewelten|lern-girlande|wörterspiel",
+  "einordnung": "Der Jahreslauf strukturiert das Schuljahr: Natur, Feste und Wetter verändern sich, und mit ihnen die Themen im Sachunterricht, im Deutschunterricht und im Kunstunterricht. Kinder lernen Reihenfolgen, Merkmale und Monate kennen.",
+  "begriffe": [
+   "Frühling",
+   "Sommer",
+   "Herbst",
+   "Winter",
+   "Monate",
+   "Naturveränderungen"
+  ],
+  "lernziel": "Die Kinder ordnen Beobachtungen den Jahreszeiten zu und beschreiben Veränderungen in Pflanzen- und Tierwelt.",
+  "tipp": "Ein Jahreszeitenbaum im Klassenraum, der alle paar Wochen neu gestaltet wird, macht den Wandel dauerhaft sichtbar."
+ },
+ {
+  "slug": "pflanzen-und-keimung",
+  "thema": "Pflanzen, Samen und Blüte",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   5
+  ],
+  "include": "(?<![a-zäöüß])(samen|keimung|pflanze|pflanzen|blüte|sonnenblume|löwenzahn|frühblüher|sojabohne|weihnachtsstern|christrose|blume|blumen|nadelbaum|laubbaum|farne?\\b|pilze?\\b|moos|gras\\b)",
+  "exclude": "",
+  "einordnung": "Vom Samenkorn bis zur Blüte: Pflanzen lassen sich im Klassenzimmer beobachten und eignen sich für erste Versuche mit Protokoll. Der Lehrplan verbindet Pflanzenkunde mit Jahreszeiten, Ernährung und Naturschutz.",
+  "begriffe": [
+   "Samen",
+   "Keimung",
+   "Wurzel und Spross",
+   "Blüte",
+   "Frühblüher",
+   "Laub- und Nadelbäume"
+  ],
+  "lernziel": "Die Kinder benennen Pflanzenteile, erklären Bedingungen der Keimung und führen einen Versuch mit Beobachtungsbogen durch.",
+  "tipp": "Bohnen im Glas mit feuchtem Küchenpapier keimen in einer Woche und liefern Material für ein Wachstumstagebuch."
+ },
+ {
+  "slug": "obst-und-gemuese",
+  "thema": "Obst, Gemüse und Ernte",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(obst|gemüse|apfel|äpfel|kartoffel|tomate|karotte|möhre|erdbeere|erdbeeren|zitrone|orange|birne|kirsche|banane|weintraube|kürbis|zwiebel|salat|paprika|gurke)",
+  "exclude": "rollenspiel|rechenmosaik|halloween|zitronenfalter|stand\b",
+  "einordnung": "Obst und Gemüse verbinden Sachunterricht, Ernährungsbildung und Sprache. Kinder sortieren nach Wachstumsort, Erntezeit und Verwendung und lernen, woher Lebensmittel kommen.",
+  "begriffe": [
+   "Obstsorten",
+   "Gemüsearten",
+   "Erntezeit",
+   "Vitamine",
+   "Anbau",
+   "Regional und saisonal"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler benennen heimisches Obst und Gemüse und ordnen es der passenden Jahreszeit zu.",
+  "tipp": "Eine Verkostung mit geschlossenen Augen macht Geschmack zum Gesprächsanlass und füllt den Wortschatz ganz nebenbei."
+ },
+ {
+  "slug": "haustiere",
+  "thema": "Haustiere",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(haustier|hund|hunde|katze|katzen|meerschwein|kaninchen|hamster|wellensittich|goldfisch|pferd|pony)",
+  "exclude": "hundertwasser|flusspferd|fakten",
+  "einordnung": "Haustiere sind für viele Kinder der erste Zugang zur Tierkunde. Der Unterricht geht von eigenen Erfahrungen aus und fragt nach Bedürfnissen, Pflege und Verantwortung.",
+  "begriffe": [
+   "Hund und Katze",
+   "Kleintiere",
+   "Futter und Pflege",
+   "Lebensraum im Haus",
+   "Verantwortung",
+   "Steckbrief"
+  ],
+  "lernziel": "Die Kinder erklären, was ein Tier zum Leben braucht, und schreiben einen Steckbrief.",
+  "tipp": "Ein Besuch mit einem ruhigen Haustier, abgesprochen mit der Schulleitung und den Eltern, ersetzt ganze Stunden Theorie."
+ },
+ {
+  "slug": "bauernhof",
+  "thema": "Bauernhof und Nutztiere",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(bauernhof|nutztier|kuh$|kühe|schwein|schweine|huhn|hühner|henne|schaf|schafe|ziege|ziegen|esel|landwirtschaft|bauer\\b|gans$)",
+  "exclude": "shaun|blinde|meerschwein|kaninchen und|bundes",
+  "einordnung": "Der Bauernhof zeigt, woher Milch, Eier und Fleisch kommen. Er gehört zu den klassischen Themen der ersten beiden Schuljahre und bereitet das Verständnis von Landwirtschaft und Tierhaltung vor.",
+  "begriffe": [
+   "Nutztiere",
+   "Stall und Weide",
+   "Milch und Eier",
+   "Ernte",
+   "Landwirt",
+   "Tierjunge"
+  ],
+  "lernziel": "Die Kinder ordnen Tiere und ihre Produkte zu und beschreiben einen Arbeitstag auf dem Hof.",
+  "tipp": "Stallgeräusche vom Band als Rätselstart wecken sofort Aufmerksamkeit und lassen sich gut mit Tierlauten verbinden."
+ },
+ {
+  "slug": "wald-und-waldtiere",
+  "thema": "Wald und Waldtiere",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   5
+  ],
+  "include": "(?<![a-zäöüß])(wald\\b|waldtier|tiere des waldes|baum\\b|bäume|eiche|buche|kiefer|fichte|tanne|birke|linde|ahorn|erle|förster|laubwald|nadelwald|regenwald)",
+  "exclude": "teutoburger|waldbrände|klanggeschichte|waldsee|waldbröl|baumstamm|schloss",
+  "einordnung": "Der Wald ist ein Lebensraum mit Schichten: Boden, Kraut, Strauch und Krone. Kinder lernen heimische Bäume und Tiere kennen und erfahren, warum der Wald Erholungsraum, Klimaschützer und Wirtschaftsgut zugleich ist.",
+  "begriffe": [
+   "Laub- und Nadelbäume",
+   "Waldschichten",
+   "Waldtiere",
+   "Förster",
+   "Blattformen",
+   "Jahresringe"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler bestimmen Bäume anhand von Blättern und beschreiben Tiere im Lebensraum Wald.",
+  "tipp": "Ein Blattherbarium aus dem Schulumfeld ist in einer Woche angelegt und taugt als Bestimmungshilfe für das ganze Jahr."
+ },
+ {
+  "slug": "igel-und-winterschlaf",
+  "thema": "Igel und Winterschlaf",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(igel|winterschlaf|winterruhe|überwinterung|siebenschläfer|murmeltier)",
+  "exclude": "lf \\d|medizinische",
+  "einordnung": "Wie überleben Tiere die kalte Jahreszeit? Der Igel ist das bekannteste Beispiel und führt zu Winterschlaf, Winterruhe und Winterstarre. Das Thema passt in den Herbst und in den Winter der Klassen 1 bis 4.",
+  "begriffe": [
+   "Winterschlaf",
+   "Winterruhe",
+   "Fettreserve",
+   "Laubnest",
+   "Nahrung im Herbst",
+   "Igelhilfe"
+  ],
+  "lernziel": "Die Kinder erklären, warum der Igel schläft, und unterscheiden Winterschlaf von Winterruhe.",
+  "tipp": "Das Nest-Bauen mit echtem Laub und Zweigen im Schulgarten macht Igelhilfe konkret."
+ },
+ {
+  "slug": "voegel",
+  "thema": "Vögel und Vogelzug",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(vögel|vogel|zugvogel|storch|störche|amsel|spatz|meise|meisen|schwalbe|schwalben|specht|kuckuck|eule|eulen|falke|falken|adler|rotkehlchen|star$|kranich|möwe|möwen|pinguin|papagei|kolibri|strauß|geier|schwan|schwäne|gänse)",
+  "exclude": "vogelhochzeit|dodo|sturmvogel|vogelei",
+  "einordnung": "Vögel lassen sich fast überall beobachten. Der Unterricht verbindet Artenkenntnis, Körperbau und Verhalten, vom Futterhaus im Winter bis zu Zugvögeln im Herbst.",
+  "begriffe": [
+   "Federn und Flügel",
+   "Schnabelformen",
+   "Zugvögel",
+   "Nestbau",
+   "Standvögel",
+   "Vogelstimmen"
+  ],
+  "lernziel": "Die Kinder erkennen heimische Vögel und erklären, warum manche ziehen und andere bleiben.",
+  "tipp": "Fünf Minuten am Fenster mit einem einfachen Strichlistenbogen liefern ausreichend Daten für ein Klassenprotokoll."
+ },
+ {
+  "slug": "insekten",
+  "thema": "Insekten und Bienen",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(insekt|biene|bienen|honig|ameise|ameisen|schmetterling|schmetterlinge|marienkäfer|käfer|wespe|hummel|hummeln|libelle|libellen|grashüpfer|heuschrecke|mücke|fliege|spinne|spinnen|raupe)",
+  "exclude": "",
+  "einordnung": "Insekten sind artenreich und für Kinder gut greifbar. Der Lehrplan nutzt sie für Körperbau mit sechs Beinen, Entwicklung bis zum Schmetterling und die Bedeutung der Bienen für Bestäubung und Honig.",
+  "begriffe": [
+   "Körperbau",
+   "Metamorphose",
+   "Bestäubung",
+   "Bienenvolk",
+   "Ameisenstaat",
+   "Spinnentiere im Vergleich"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler unterscheiden Insekten von Spinnentieren und beschreiben die Entwicklung eines Schmetterlings.",
+  "tipp": "Mit Becherlupen lässt sich in der Schulhofwiese in zwanzig Minuten ein kleines Artenprotokoll anlegen."
+ },
+ {
+  "slug": "dinosaurier",
+  "thema": "Dinosaurier und Urzeit",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   5
+  ],
+  "include": "(?<![a-zäöüß])(dinosaur|saurier|urzeit|mammut|fossil|versteinerung|trilobit|ammonit)",
+  "exclude": "",
+  "einordnung": "Dinosaurier wecken Neugier und führen schnell zu Fossilien, Erdzeitaltern und der Frage, wie Forscher etwas über Lebewesen wissen können, die es nicht mehr gibt. Als Lesemotiv funktioniert das Thema in allen Grundschuljahren.",
+  "begriffe": [
+   "Fossilien",
+   "Fleisch- und Pflanzenfresser",
+   "Erdzeitalter",
+   "Aussterben",
+   "Urzeit",
+   "Paläontologie"
+  ],
+  "lernziel": "Die Kinder ordnen Dinosaurier nach Ernährung und Größe und erklären, wie Fossilien entstehen.",
+  "tipp": "Ein Gipsabdruck in einer Schale mit Sand zeigt, wie ein Fossil entstehen kann, und kostet kaum Vorbereitung."
+ },
+ {
+  "slug": "sonnensystem",
+  "thema": "Sonnensystem und Planeten",
+  "fach": "Sachunterricht",
+  "klassen": [
+   3,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(sonnensystem|sonnenystem|planet|planeten|mond$|der mond|merkur|venus|mars$|jupiter|saturn$|uranus|neptun|sonne$|weltall|galaxie|milchstraße|raumfahrt|komet|asteroid|astronaut)",
+  "exclude": "saturnalien|winter|steckbriefe länder|ministerin|ministerium|sprechstunde",
+  "einordnung": "Sonne, Planeten und Monde liefern Zahlen, die Staunen auslösen. Der Unterricht beginnt in der Grundschule mit Reihenfolge und Merkmalen und vertieft später Entfernungen, Umlaufzeiten und die Erforschung durch Raumsonden.",
+  "begriffe": [
+   "Sonne",
+   "Planeten",
+   "Erde und Mond",
+   "Umlaufbahn",
+   "Gesteins- und Gasplaneten",
+   "Raumfahrt"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler nennen die Planeten in der richtigen Reihenfolge und beschreiben Besonderheiten einzelner Himmelskörper.",
+  "tipp": "Ein maßstäbliches Sonnensystem auf dem Schulflur macht Entfernungen spürbar, die sich Zahlen entziehen."
+ },
+ {
+  "slug": "verkehr",
+  "thema": "Verkehr und Schulweg",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(verkehr|schulweg|fahrrad|ampel|verkehrszeichen|verkehrsmittel|zebrastreifen|radfahr|helm|straßenbahn|eisenbahn|bahn$)",
+  "exclude": "bundesminister|pampelmuse|zahlungsverkehr|dynamo|pumpe|helmut",
+  "einordnung": "Verkehrserziehung ist in allen Ländern fester Bestandteil der Grundschule. Kinder lernen Verkehrszeichen, sichere Schulwege und das Verhalten als Fußgänger oder Radfahrer; später treten Mobilität und Umwelt hinzu.",
+  "begriffe": [
+   "Verkehrszeichen",
+   "Ampel",
+   "Zebrastreifen",
+   "Fahrrad",
+   "Schulweg",
+   "Verkehrsmittel"
+  ],
+  "lernziel": "Die Kinder erklären Verkehrsregeln, erkennen Gefahrenstellen und planen einen sicheren Schulweg.",
+  "tipp": "Ein Rundgang um die Schule mit Fotoauftrag zu Verkehrszeichen bringt echte Beispiele in den Unterricht."
+ },
+ {
+  "slug": "strom",
+  "thema": "Strom und Stromkreis",
+  "fach": "Physik",
+  "klassen": [
+   3,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(stromkreis|strom$|elektrizität|elektrisch|glühlampe|batterie|blitzableiter|schalter|reihenschaltung|parallelschaltung|leiter|isolator|generator|transformator|solarzelle)",
+  "exclude": "lf |lernfeld|elektroniker",
+  "einordnung": "Elektrizität wird in der Grundschule über den einfachen Stromkreis eingeführt und in der Physik der Sekundarstufe zu Spannung, Stromstärke und Widerstand ausgebaut. Sicherheit im Umgang mit Strom gehört von Beginn an dazu.",
+  "begriffe": [
+   "Stromkreis",
+   "Leiter und Isolator",
+   "Batterie",
+   "Glühlampe",
+   "Schalter",
+   "Reihen- und Parallelschaltung"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler bauen einen Stromkreis auf und erklären, warum eine Lampe leuchtet oder nicht.",
+  "tipp": "Mit Flachbatterie, Lämpchen und Kabel lässt sich in Gruppen vieles ausprobieren, bevor Begriffe eingeführt werden."
+ },
+ {
+  "slug": "magnetismus",
+  "thema": "Magnetismus",
+  "fach": "Physik",
+  "klassen": [
+   3,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(magnet)",
+  "exclude": "",
+  "einordnung": "Magnete faszinieren, weil sie ohne Berührung wirken. Das Thema ist ein Einstieg in naturwissenschaftliches Arbeiten: vermuten, ausprobieren, Ergebnisse festhalten.",
+  "begriffe": [
+   "Magnetpole",
+   "Anziehung und Abstoßung",
+   "magnetische Stoffe",
+   "Magnetfeld",
+   "Kompass",
+   "Erdmagnetfeld"
+  ],
+  "lernziel": "Die Kinder sortieren Gegenstände nach magnetisch und nicht magnetisch und beschreiben das Verhalten der Pole.",
+  "tipp": "Eisenspäne unter einem Blatt Papier zeigen das Feld; ein kleiner Kompass macht daraus den Bezug zur Erde."
+ },
+ {
+  "slug": "luft",
+  "thema": "Luft und Atmosphäre",
+  "fach": "Sachunterricht",
+  "klassen": [
+   2,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(luft$|luftdruck|luftlabor|atmosphäre|luftschiff|luftverschmutzung|ozon)",
+  "exclude": "waffe",
+  "einordnung": "Luft ist unsichtbar und doch nachweisbar. Versuche mit Spritzen, Ballons und Gläsern führen zu Luftdruck und Sauerstoff, in höheren Klassen zur Atmosphäre und zur Luftqualität.",
+  "begriffe": [
+   "Luftdruck",
+   "Sauerstoff",
+   "Atmosphäre",
+   "Wind",
+   "Luftverschmutzung",
+   "Ozonschicht"
+  ],
+  "lernziel": "Die Kinder weisen mit Versuchen nach, dass Luft Raum einnimmt, und beschreiben die Schichten der Atmosphäre.",
+  "tipp": "Ein umgedrehtes Glas im Wasserbecken, in dem ein Taschentuch trocken bleibt, ist ein einfacher Beweis für Luft."
+ },
+ {
+  "slug": "koerper-und-skelett",
+  "thema": "Körper, Skelett und Muskeln",
+  "fach": "Biologie",
+  "klassen": [
+   2,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(skelett|knochen|muskel|muskeln|gelenk|wirbelsäule|schädel|körperteil|bewegungsapparat)",
+  "exclude": "geometrisch",
+  "einordnung": "Der menschliche Körper gehört in Sachunterricht und Biologie zu den Dauerthemen. Zuerst werden Körperteile, Knochen und Muskeln benannt, später folgen Gelenke, Bewegungsapparat und Körperpflege.",
+  "begriffe": [
+   "Skelett",
+   "Knochen",
+   "Muskeln",
+   "Gelenke",
+   "Wirbelsäule",
+   "Schädel"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler benennen wichtige Knochen und erklären, wie Muskeln Bewegung bewirken.",
+  "tipp": "Ein Skelettmodell auf Papier, das die Kinder selbst zusammenstecken, speichert die Namen besser als eine Tafelskizze."
+ },
+ {
+  "slug": "sinnesorgane",
+  "thema": "Sinnesorgane",
+  "fach": "Biologie",
+  "klassen": [
+   2,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(sinnesorgan|sinne$|auge$|das auge|ohr$|das ohr|nase$|zunge|haut$|geruchssinn|geschmack|gehör|tastsinn|sehen$)",
+  "exclude": "arzt|griechenland|steckbrief europa|recht im alltag|sprechstunde",
+  "einordnung": "Sehen, Hören, Riechen, Schmecken, Tasten: Die Sinne sind ein Einstieg in die Körperkunde und gleichzeitig Anlass für viele Experimente. Ab Klasse 5 geht es um den Aufbau von Auge und Ohr.",
+  "begriffe": [
+   "Auge",
+   "Ohr",
+   "Nase",
+   "Zunge",
+   "Haut",
+   "Sinneszellen"
+  ],
+  "lernziel": "Die Kinder ordnen Sinnesorgane Wahrnehmungen zu und beschreiben den Weg eines Reizes.",
+  "tipp": "Ein Fühlkasten oder eine Riechprobe mit verbundenen Augen macht den Sinn erlebbar, bevor er benannt wird."
+ },
+ {
+  "slug": "gesunde-ernaehrung",
+  "thema": "Gesunde Ernährung",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(ernährung|vitamin|zucker|eiweiß|kohlenhydrate|fett$|frühstück|lebensmittel|ernährungspyramide|ballaststoff|getränk)",
+  "exclude": "bundesminister|fabrik|ramadan|medizinische",
+  "einordnung": "Ernährungsbildung ist in allen Ländern Teil der Gesundheitserziehung. Die Kinder lernen Lebensmittelgruppen, Nährstoffe und Trinkgewohnheiten kennen und prüfen, wie ein ausgewogenes Frühstück aussieht.",
+  "begriffe": [
+   "Ernährungspyramide",
+   "Vitamine",
+   "Eiweiß",
+   "Kohlenhydrate",
+   "Zucker",
+   "Ballaststoffe"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler ordnen Lebensmittel den Gruppen zu und stellen einen ausgewogenen Tagesplan zusammen.",
+  "tipp": "Der Zuckergehalt von Getränken lässt sich mit Würfelzucker anschaulich vergleichen und führt zu ehrlichen Gesprächen."
+ },
+ {
+  "slug": "zaehne",
+  "thema": "Zähne und Zahngesundheit",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   5
+  ],
+  "include": "(?<![a-zäöüß])(zähne|zahn$|der zahn|milchzähne|zahnpflege|zahnpasta|karies)",
+  "exclude": "löwenzahn|zahnrad|ausbildungsberuf|zahnmedizinische",
+  "einordnung": "Zahnpflege ist ein Klassiker der Gesundheitserziehung in den ersten Schuljahren. Die Kinder lernen Zahnarten, den Zahnwechsel und die richtige Putztechnik kennen.",
+  "begriffe": [
+   "Milchzähne",
+   "bleibende Zähne",
+   "Zahnaufbau",
+   "Karies",
+   "Zahnbürste",
+   "Zahnarzt"
+  ],
+  "lernziel": "Die Kinder erklären, wie Karies entsteht, und putzen nach einer festen Technik.",
+  "tipp": "Färbetabletten machen Beläge sichtbar und sind für Kinder ein überzeugender Anlass zum Nachputzen."
+ },
+ {
+  "slug": "berufe",
+  "thema": "Berufe und Berufswahl",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(berufe|beruf$|berufswahl|berufsorientierung|ausbildung$|handwerk|steckbrief ausbildungsberuf|berufe-steckbrief|praktikum|arbeitsschutz)",
+  "exclude": "lf \\d",
+  "einordnung": "Berufe begegnen Kindern früh, die Berufsorientierung beginnt aber erst in der Sekundarstufe. Das Material reicht von einfachen Berufebildern bis zu Steckbriefen von Ausbildungsberufen und Fragen des Arbeitsschutzes.",
+  "begriffe": [
+   "Berufsbilder",
+   "Ausbildung",
+   "Handwerk",
+   "Praktikum",
+   "Arbeitsschutz",
+   "Tätigkeiten"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Tätigkeiten und Anforderungen ausgewählter Berufe und vergleichen sie mit eigenen Interessen.",
+  "tipp": "Ein Interview mit einem Elternteil oder Handwerker aus dem Ort liefert glaubwürdige Antworten und echte Kontakte."
+ },
+ {
+  "slug": "geld",
+  "thema": "Geld und Konsum",
+  "fach": "Sachunterricht",
+  "klassen": [
+   2,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(geld$|taschengeld|konsum|sparen|wirtschaftskreislauf|schulden|ratenkauf|schuldenfalle|zahlungsverkehr|einkaufen|werbung|girokonto|bank$|inflation|preis)",
+  "exclude": "bundesminister|festtagsmenü|rollenspiel",
+  "einordnung": "Der Umgang mit Geld gehört zur Verbraucherbildung. Kinder lernen Taschengeld und Preise kennen, Jugendliche Konsum, Werbung, Schulden und Zahlungsmittel.",
+  "begriffe": [
+   "Taschengeld",
+   "Preisvergleich",
+   "Sparen",
+   "Werbung",
+   "Schulden",
+   "Inflation"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler planen ein Budget und erkennen Werbetricks.",
+  "tipp": "Ein Haushaltsbuch über zwei Wochen mit gespielten Einnahmen schafft einen praktischen Zugang."
+ },
+ {
+  "slug": "medien",
+  "thema": "Medien und Internet",
+  "fach": "Sachunterricht",
+  "klassen": [
+   3,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(medien|internet|smartphone|handy|computerspiel|soziale netz|cybermobbing|datenschutz|nachricht|fake news|suchmaschine|passwort|ki$|künstliche intelligenz)",
+  "exclude": "prüfziffer|binärzahlen",
+  "einordnung": "Medienbildung zieht sich durch alle Fächer. Es geht um sicheren Umgang mit dem Smartphone, um Datenschutz, soziale Netzwerke und die Bewertung von Quellen bis hin zu künstlicher Intelligenz.",
+  "begriffe": [
+   "Smartphone",
+   "soziale Medien",
+   "Datenschutz",
+   "Suchmaschinen",
+   "Nachrichten prüfen",
+   "künstliche Intelligenz"
+  ],
+  "lernziel": "Die Jugendlichen prüfen Quellen, schützen persönliche Daten und erkennen Falschmeldungen.",
+  "tipp": "Ein gemeinsamer Faktencheck zu einer viralen Meldung zeigt Prüfwege besser als jede Regelliste."
+ },
+ {
+  "slug": "kinderrechte",
+  "thema": "Kinderrechte und Menschenrechte",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(kinderrecht|menschenrecht|mein recht im alltag)",
+  "exclude": "",
+  "einordnung": "Kinderrechte stehen in der UN-Kinderrechtskonvention und werden in Sachunterricht, Ethik und Politik behandelt. Kinder erfahren, dass sie Rechte auf Schutz, Förderung und Beteiligung haben.",
+  "begriffe": [
+   "Recht auf Bildung",
+   "Recht auf Spiel",
+   "Schutz vor Gewalt",
+   "Mitbestimmung",
+   "Menschenrechte",
+   "UN-Konvention"
+  ],
+  "lernziel": "Die Kinder nennen wichtige Kinderrechte und übertragen sie auf Alltagssituationen.",
+  "tipp": "Ein Klassenparlament, in dem echte Entscheidungen fallen, macht Mitbestimmung unmittelbar erfahrbar."
+ },
+ {
+  "slug": "gefuehle",
+  "thema": "Gefühle und Freundschaft",
+  "fach": "Ethik & Werte und Normen",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(gefühl|freundschaft|streit|mobbing|respekt|toleranz|konflikt|angst$|wut$|freude|mut$|vertrauen|selbstwert|fair)",
+  "exclude": "musik und gefühle|ukraine|zuhause|tag der|sprechstunde|schreibwerkstatt",
+  "einordnung": "Soziales Lernen steht in Grundschule und Sekundarstufe in Ethik, Religion und im Klassenrat auf dem Plan. Die Kinder lernen, Gefühle zu benennen, Streit fair zu lösen und Freundschaft zu gestalten.",
+  "begriffe": [
+   "Gefühle benennen",
+   "Streit schlichten",
+   "Freundschaft",
+   "Respekt",
+   "Mobbing",
+   "Toleranz"
+  ],
+  "lernziel": "Die Kinder erkennen eigene und fremde Gefühle und finden faire Wege aus Konflikten.",
+  "tipp": "Ein fester Gefühlskreis zu Wochenbeginn macht das Sprechen über Gefühle zur selbstverständlichen Routine."
+ },
+ {
+  "slug": "schule-und-klassengemeinschaft",
+  "thema": "Schulanfang und Klassengemeinschaft",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(schulanfang|erster schultag|schultag|klassenregel|klassengemeinschaft|klassentier|klassenzimmer|schulanfang|einschulung|gruppenschilder|feriengrüße|stundenplan|weiterführende schule|schule$)",
+  "exclude": "ausmal",
+  "einordnung": "Der Schulanfang prägt das Klima eines ganzen Jahres. Rituale, Regeln und Klassengemeinschaft werden in den ersten Wochen aufgebaut und später immer wieder gepflegt.",
+  "begriffe": [
+   "Klassenregeln",
+   "Stundenplan",
+   "Schulanfang",
+   "Klassentier",
+   "Gruppenzugehörigkeit",
+   "Übergang"
+  ],
+  "lernziel": "Die Kinder kennen Regeln und Rituale und fühlen sich in der Gruppe sicher.",
+  "tipp": "Ein gemeinsam erarbeiteter Regelkatalog, den alle unterschreiben, wird deutlich besser eingehalten als vorgegebene Regeln."
+ },
+ {
+  "slug": "bundeslaender",
+  "thema": "Bundesländer und Landeshauptstädte",
+  "fach": "Erdkunde",
+  "klassen": [
+   3,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(bundesland|bundesländer|landeshauptstadt|regierungsbezirk)",
+  "exclude": "",
+  "einordnung": "Deutschland besteht aus 16 Bundesländern mit eigenen Hauptstädten. Die Grundschule beginnt mit dem eigenen Land, in Klasse 5 und 6 folgt der Überblick über ganz Deutschland.",
+  "begriffe": [
+   "16 Bundesländer",
+   "Landeshauptstädte",
+   "Stadtstaaten",
+   "Regierungsbezirke",
+   "Nachbarländer",
+   "Karte Deutschlands"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler ordnen Länder und Hauptstädte auf der Karte zu und beschreiben Besonderheiten.",
+  "tipp": "Ein Kartenpuzzle der Bundesländer, das in Gruppen gelegt wird, trainiert die Lage mit Spaß."
+ },
+ {
+  "slug": "laender-europas",
+  "thema": "Länder Europas",
+  "fach": "Erdkunde",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(steckbrief europa|steckbriefe europa|europa$|europarat|europäisch|ländersteckbrief)",
+  "exclude": "fußball|kulturhaupt|domino",
+  "einordnung": "Europa ist Thema in Erdkunde und Politik. Die Lernenden lernen Staaten, Hauptstädte, Sprachen und Besonderheiten kennen und verstehen Europa als gemeinsamen Raum.",
+  "begriffe": [
+   "Staaten Europas",
+   "Hauptstädte",
+   "Sprachen",
+   "Nachbarländer",
+   "Steckbriefe",
+   "Europarat"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler ordnen Staaten auf der Karte zu und stellen ein Land mit Steckbrief vor.",
+  "tipp": "Eine Länderausstellung, bei der jede Gruppe ein Land vorstellt, ersetzt trockene Abfragen durch Austausch."
+ },
+ {
+  "slug": "kontinente-und-ozeane",
+  "thema": "Kontinente und Ozeane",
+  "fach": "Erdkunde",
+  "klassen": [
+   2,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(kontinent|ozean|weltmeer|ozeanien|afrika|asien|amerika|australien|antarktis|arktis|atlantik|pazifik|nordpol|südpol)",
+  "exclude": "horn von|lateinisch",
+  "einordnung": "Die Orientierung auf dem Globus gehört zu den Grundlagen der Erdkunde. Schon in der Grundschule lernen Kinder sieben Kontinente und die Ozeane kennen, später kommen Klimazonen und Staaten dazu.",
+  "begriffe": [
+   "sieben Kontinente",
+   "Ozeane",
+   "Äquator",
+   "Nord- und Südpol",
+   "Tierwelt der Kontinente",
+   "Globus"
+  ],
+  "lernziel": "Die Kinder benennen Kontinente und Ozeane und ordnen ihnen typische Tiere und Länder zu.",
+  "tipp": "Ein Globus oder eine Wandkarte in Reichweite, die ständig genutzt wird, verankert das Weltbild nachhaltig."
+ },
+ {
+  "slug": "karte-und-orientierung",
+  "thema": "Karte und Orientierung",
+  "fach": "Erdkunde",
+  "klassen": [
+   3,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(himmelsrichtung|kompass|maßstab|kartenarbeit|stadtplan|globus|längengrad|breitengrad|orientierung|atlas)",
+  "exclude": "menü|legende und",
+  "einordnung": "Kartenkompetenz ist eine Basis der Erdkunde und beginnt in der Grundschule mit Himmelsrichtungen und Plänen. Später kommen Maßstab, Legenden und der Umgang mit Atlanten dazu.",
+  "begriffe": [
+   "Himmelsrichtungen",
+   "Kompass",
+   "Maßstab",
+   "Legende",
+   "Atlas",
+   "Stadtplan"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler lesen Karten und finden Orte mit Hilfe von Himmelsrichtungen und Maßstab.",
+  "tipp": "Eine Schatzsuche im Schulgelände mit Kompass und selbst gezeichnetem Plan verbindet beides."
+ },
+ {
+  "slug": "steinzeit",
+  "thema": "Steinzeit",
+  "fach": "Geschichte",
+  "klassen": [
+   3,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(steinzeit|altsteinzeit|jungsteinzeit|höhlenmalerei|jäger und sammler|eiszeit|ötzi|mann aus dem eis|urmensch|faustkeil)",
+  "exclude": "",
+  "einordnung": "Die Steinzeit ist der klassische Einstieg in Geschichte. Kinder entdecken Lebensweise, Werkzeuge und Höhlenmalerei und lernen, wie man aus Funden Rückschlüsse zieht.",
+  "begriffe": [
+   "Altsteinzeit",
+   "Jungsteinzeit",
+   "Jäger und Sammler",
+   "Höhlenmalerei",
+   "Faustkeil",
+   "Sesshaftigkeit"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben den Wandel von Jägern und Sammlern zu Ackerbauern.",
+  "tipp": "Höhlenmalerei mit Kreide und Kohle auf braunem Packpapier ist ein verlässlicher Einstieg, der in Erinnerung bleibt."
+ },
+ {
+  "slug": "aegypten",
+  "thema": "Das alte Ägypten",
+  "fach": "Geschichte",
+  "klassen": [
+   4,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(ägypten|pharao|pharaos|pyramiden|hieroglyph|tutanchamun|nil$|mumie)",
+  "exclude": "pyramide$|ernährungs|geometrisch|akrobatik",
+  "einordnung": "Das Alte Ägypten gehört in Klasse 5 und 6 zu den frühen Hochkulturen. Die Lernenden erfahren, wie Nil, Herrschaft und Glaube das Zusammenleben prägten.",
+  "begriffe": [
+   "Pharao",
+   "Pyramiden",
+   "Hieroglyphen",
+   "Mumien",
+   "Nil",
+   "Götterwelt"
+  ],
+  "lernziel": "Die Lernenden erklären die Bedeutung des Nils und der Pharaonen für den ägyptischen Staat.",
+  "tipp": "Eigene Namen in Hieroglyphen als Kartusche gestaltet motiviert und führt zur Frage, wie Schrift funktioniert."
+ },
+ {
+  "slug": "griechenland-antike",
+  "thema": "Antikes Griechenland",
+  "fach": "Geschichte",
+  "klassen": [
+   5,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(griechische götter|olymp|antike|athen$|sparta|zeus|ancient greece|philosoph|olympische spiele|demokratie in athen|poseidon|apollo|athene|hera|ares|hestia|aphrodite|demeter|artemis|hermes|hades|dionysos|hephaistos)",
+  "exclude": "zinsen|vasen",
+  "einordnung": "Die griechische Antike steht am Beginn vieler Geschichtslehrpläne in der Sekundarstufe I. Im Fokus stehen Stadtstaaten, Götterwelt, Olympische Spiele und die Anfänge der Demokratie.",
+  "begriffe": [
+   "Polis",
+   "Götter des Olymp",
+   "Olympische Spiele",
+   "Demokratie in Athen",
+   "Sparta",
+   "Philosophie"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler vergleichen Athen und Sparta und erklären die Anfänge der Demokratie.",
+  "tipp": "Ein Götter-Quartett, das die Klasse selbst gestaltet, festigt Namen und Zuständigkeiten."
+ },
+ {
+  "slug": "roemer",
+  "thema": "Römisches Reich",
+  "fach": "Geschichte",
+  "klassen": [
+   5,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(römer|römisch|römerstadt|limes|gladiator|caesar|augustus|kolosseum|römische götter|saturnalien)",
+  "exclude": "chrom|brom|golfstrom|zahlen|heiliges",
+  "einordnung": "Das Römische Reich ist ein fester Bestandteil des Geschichtsunterrichts in Klasse 5 bis 7. Es geht um Stadt und Alltag, Heer, Recht und Ausbreitung bis zum Limes in Germanien.",
+  "begriffe": [
+   "Republik und Kaiserzeit",
+   "Gladiatoren",
+   "Limes",
+   "Römische Götter",
+   "Stadtleben",
+   "Kolosseum"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben römischen Alltag und erklären, wie Rom sein Reich sicherte.",
+  "tipp": "Ein Besuch im nächsten Römermuseum oder an einem Limesabschnitt ersetzt zwei Stunden Frontalunterricht."
+ },
+ {
+  "slug": "mittelalter",
+  "thema": "Mittelalter, Ritter und Burgen",
+  "fach": "Geschichte",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(mittelalter|ritter|burg$|burgen|ritterburg|kloster|pest$|lehnswesen|stadtmauer|zünfte|handwerk und|kreuzzug|karl der große|hanse)",
+  "exclude": "landkreis|burgenland|steckbrief",
+  "einordnung": "Das Mittelalter bietet viele Anknüpfungspunkte: Ritter und Burgen, Dörfer und Städte, Kloster und Kirche. In der Sekundarstufe I steht die Ständegesellschaft im Mittelpunkt.",
+  "begriffe": [
+   "Ständeordnung",
+   "Ritter",
+   "Burg",
+   "Kloster",
+   "Stadt und Zünfte",
+   "Pest"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben die Ständegesellschaft und vergleichen Leben in Burg, Dorf und Stadt.",
+  "tipp": "Eine Ständepyramide, die die Klasse selbst befüllt, zeigt Machtverhältnisse in einem Blick."
+ },
+ {
+  "slug": "reformation",
+  "thema": "Reformation und Buchdruck",
+  "fach": "Geschichte",
+  "klassen": [
+   7,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(reformation|martin luther$|buchdruck|gutenberg|ablass|bauernkrieg|dreißigjähriger krieg)",
+  "exclude": "king",
+  "einordnung": "Reformation und Buchdruck markieren den Übergang zur Neuzeit. Die Lernenden verstehen, wie Luthers Thesen und der Druck die Gesellschaft veränderten.",
+  "begriffe": [
+   "Martin Luther",
+   "Ablasshandel",
+   "Buchdruck",
+   "Gutenberg",
+   "Bauernkrieg",
+   "Dreißigjähriger Krieg"
+  ],
+  "lernziel": "Die Lernenden erklären, warum die Reformation große Wirkung entfaltete.",
+  "tipp": "Ein Flugblatt aus dem 16. Jahrhundert als Quelle schult den Umgang mit historischen Texten."
+ },
+ {
+  "slug": "franzoesische-revolution",
+  "thema": "Französische Revolution und Aufklärung",
+  "fach": "Geschichte",
+  "klassen": [
+   8,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(französische revolution|aufklärung|napoleon|absolutismus|märzrevolution|revolution 1848|menschen- und bürgerrechte)",
+  "exclude": "welttag|tag zur|internationaler",
+  "einordnung": "Aufklärung und Revolution gehören zum Kern des Geschichtsunterrichts in Klasse 8 und 9. Es geht um Ideen wie Gewaltenteilung und Menschenrechte und um deren Folgen.",
+  "begriffe": [
+   "Aufklärung",
+   "Absolutismus",
+   "Menschenrechte",
+   "Napoleon",
+   "Märzrevolution",
+   "Gewaltenteilung"
+  ],
+  "lernziel": "Die Jugendlichen erklären Ursachen und Folgen der Revolution und deren Ideen.",
+  "tipp": "Ein Rollenspiel mit den drei Ständen vor der Revolution macht Konfliktlinien deutlich."
+ },
+ {
+  "slug": "industrialisierung",
+  "thema": "Industrialisierung",
+  "fach": "Geschichte",
+  "klassen": [
+   8,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(industrialisierung|industrielle revolution|dampfmaschine|arbeiterbewegung|soziale frage|kaiserreich|bismarck|imperialismus)",
+  "exclude": "",
+  "einordnung": "Die Industrialisierung veränderte Arbeit, Städte und Familie. Im Unterricht stehen Erfindungen, Fabrikarbeit und die soziale Frage im Vordergrund, dazu das Kaiserreich.",
+  "begriffe": [
+   "Dampfmaschine",
+   "Fabrikarbeit",
+   "soziale Frage",
+   "Arbeiterbewegung",
+   "Bismarck",
+   "Imperialismus"
+  ],
+  "lernziel": "Die Jugendlichen beschreiben Folgen der Industrialisierung für Menschen und Umwelt.",
+  "tipp": "Ein Lebenslauf einer Arbeiterfamilie als Fallbeispiel macht Statistiken menschlich."
+ },
+ {
+  "slug": "weimarer-republik",
+  "thema": "Weimarer Republik",
+  "fach": "Geschichte",
+  "klassen": [
+   9,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(weimarer republik|novemberrevolution|hitlerputsch|weltwirtschaftskrise)",
+  "exclude": "",
+  "einordnung": "Die Weimarer Republik wird in Klasse 9 und 10 behandelt. Die Lernenden verstehen, wie Demokratie entstand und warum sie scheiterte.",
+  "begriffe": [
+   "Novemberrevolution",
+   "Verfassung von 1919",
+   "Inflation",
+   "Weltwirtschaftskrise",
+   "Hitlerputsch",
+   "Parteien"
+  ],
+  "lernziel": "Die Jugendlichen erklären Stärken und Schwächen der ersten deutschen Demokratie.",
+  "tipp": "Eine Plakatanalyse zu Wahlplakaten von 1932 zeigt Mittel der politischen Propaganda."
+ },
+ {
+  "slug": "ns-zeit",
+  "thema": "Nationalsozialismus und Holocaust",
+  "fach": "Geschichte",
+  "klassen": [
+   9,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(nationalsozialismus|holocaust|drittes reich|widerstand gegen|auschwitz|judenverfolgung|hitler)",
+  "exclude": "tag des",
+  "einordnung": "Nationalsozialismus und Holocaust sind verpflichtende Themen der Geschichtsbildung in Klasse 9 und 10. Es geht um Herrschaftssicherung, Verfolgung, Widerstand und Erinnerungskultur.",
+  "begriffe": [
+   "Machtübernahme",
+   "Propaganda",
+   "Verfolgung",
+   "Holocaust",
+   "Widerstand",
+   "Erinnerungskultur"
+  ],
+  "lernziel": "Die Jugendlichen beschreiben Ursachen, Ablauf und Folgen und reflektieren den Umgang mit Erinnerung.",
+  "tipp": "Zeitzeugenberichte und Gedenkstättenbesuche sind unersetzlich; Material bereitet sie nur vor und nach."
+ },
+ {
+  "slug": "weltkriege",
+  "thema": "Erster und Zweiter Weltkrieg",
+  "fach": "Geschichte",
+  "klassen": [
+   9,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(weltkrieg|kriegsende|versailles)",
+  "exclude": "",
+  "einordnung": "Die beiden Weltkriege prägen das 20. Jahrhundert. Der Unterricht arbeitet Ursachen, Verlauf und Folgen heraus und fragt, wie Europa danach geordnet wurde.",
+  "begriffe": [
+   "Erster Weltkrieg",
+   "Versailler Vertrag",
+   "Zweiter Weltkrieg",
+   "Kriegsende",
+   "Zeitzeugen",
+   "Folgen"
+  ],
+  "lernziel": "Die Jugendlichen erklären Ursachen und Folgen beider Kriege und vergleichen Quellen.",
+  "tipp": "Feldpostbriefe als Quellen berühren und eignen sich gut für Textarbeit."
+ },
+ {
+  "slug": "deutsche-teilung",
+  "thema": "Deutsche Teilung und Wiedervereinigung",
+  "fach": "Geschichte",
+  "klassen": [
+   9,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(ddr$|mauerfall|berliner mauer|wiedervereinigung|kalter krieg|innerdeutsche)",
+  "exclude": "",
+  "einordnung": "Teilung und Wiedervereinigung Deutschlands sind Teil des Geschichtsunterrichts der Klassen 9 und 10. Es geht um Kalten Krieg, Alltag in der DDR und den Weg zum Mauerfall.",
+  "begriffe": [
+   "Kalter Krieg",
+   "DDR",
+   "Berliner Mauer",
+   "Mauerfall",
+   "Wiedervereinigung",
+   "innerdeutsche Grenze"
+  ],
+  "lernziel": "Die Jugendlichen erklären, wie es zur Teilung kam und wie sie überwunden wurde.",
+  "tipp": "Ein Gespräch mit Zeitzeugen aus dem Umfeld macht Geschichte lebendig, wenn gut vorbereitet."
+ },
+ {
+  "slug": "demokratie",
+  "thema": "Demokratie und politische Beteiligung",
+  "fach": "Politik/Sozialkunde",
+  "klassen": [
+   3,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(demokratie|wahlen und|wahlrecht|wahl$|gewaltenteilung|volksentscheid|bürgerinitiative|meinungsfreiheit|pressefreiheit|parlament|bundestag$|landtag$|kommunalpolitik|bürgermeister|gemeinderat)",
+  "exclude": "freie demokratische|sozialdemokratische|christlich|partei",
+  "einordnung": "Demokratie lernen beginnt im Klassenrat und reicht bis zu Bundestag und Gewaltenteilung. Politische Bildung gehört in der Sekundarstufe zu den Pflichtbereichen, in der Grundschule gibt es erste Bausteine.",
+  "begriffe": [
+   "Wahlen",
+   "Gewaltenteilung",
+   "Parlament",
+   "Meinungsfreiheit",
+   "Bürgermeister",
+   "Volksentscheid"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erklären, wie Entscheidungen in einer Demokratie zustande kommen.",
+  "tipp": "Eine Probewahl zu einer Schulfrage mit Wahlzettel und Urne macht das Verfahren greifbar."
+ },
+ {
+  "slug": "bundestagswahl",
+  "thema": "Bundestagswahl und Parteien",
+  "fach": "Politik/Sozialkunde",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(bundestagswahl|landtagswahl|wahlprogramm|partei$|steckbrief (alternative|bündnis|christlich|die linke|freie|sozialdemokratische|die grünen|bsw)|zweitstimme|erststimme|präsidentschaftswahl|sozialdemokratische|freie demokratische)",
+  "exclude": "schweiz|österreich",
+  "einordnung": "Wahlen und Parteien sind Kern der politischen Bildung. Die Lernenden lernen das Wahlsystem kennen, vergleichen Programme und üben, Informationen kritisch zu prüfen.",
+  "begriffe": [
+   "Erststimme und Zweitstimme",
+   "Parteien",
+   "Wahlprogramme",
+   "Fünf-Prozent-Hürde",
+   "Landtagswahl",
+   "Wahlbeteiligung"
+  ],
+  "lernziel": "Die Jugendlichen erklären das Wahlverfahren und vergleichen Parteiprogramme sachlich.",
+  "tipp": "Ein Parteien-Steckbrief nach festem Raster hält die Darstellung neutral und vergleichbar."
+ },
+ {
+  "slug": "bundesregierung",
+  "thema": "Bundespräsident, Kanzler und Regierung",
+  "fach": "Politik/Sozialkunde",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(bundespräsident|bundeskanzler|bundesrat|bundesregierung|bundesverfassungsgericht|bundeswehr|steckbriefe bundes)",
+  "exclude": "^bundesminister",
+  "einordnung": "Wer regiert Deutschland, wer kontrolliert wen? Staatsorgane wie Bundespräsident, Kanzler, Bundesrat und Gericht werden in Politik und Sozialkunde ab Klasse 7 systematisch behandelt.",
+  "begriffe": [
+   "Bundespräsident",
+   "Bundeskanzler",
+   "Bundesrat",
+   "Bundesverfassungsgericht",
+   "Ministerien",
+   "Bundeswehr"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler ordnen Aufgaben der Verfassungsorgane zu.",
+  "tipp": "Ein Schaubild der Staatsorgane, das die Klasse selbst entwickelt, wird besser verstanden als ein vorgegebenes."
+ },
+ {
+  "slug": "europaeische-union",
+  "thema": "Europäische Union",
+  "fach": "Politik/Sozialkunde",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(europäische union|eu$|brexit|schengen|europäische kommission|europaparlament|euro$)",
+  "exclude": "domino",
+  "einordnung": "Die Europäische Union betrifft den Alltag: Euro, offene Grenzen, gemeinsame Regeln. Der Unterricht erklärt Aufbau, Entstehung und Streitpunkte.",
+  "begriffe": [
+   "Institutionen",
+   "Binnenmarkt",
+   "Euro",
+   "Schengen",
+   "Brexit",
+   "Erweiterung"
+  ],
+  "lernziel": "Die Jugendlichen erklären Institutionen der EU und diskutieren Vor- und Nachteile.",
+  "tipp": "Ein Rollenspiel als EU-Gipfel zeigt, wie Kompromisse entstehen."
+ },
+ {
+  "slug": "grundgesetz",
+  "thema": "Grundgesetz und Grundrechte",
+  "fach": "Politik/Sozialkunde",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(grundgesetz|grundrecht|verfassung|rechtsstaat|haus der grundrechte)",
+  "exclude": "",
+  "einordnung": "Das Grundgesetz ist Rechtsgrundlage der Bundesrepublik. In der Politik- und Sozialkunde lernen Jugendliche Grundrechte, Rechtsstaat und deren Grenzen kennen.",
+  "begriffe": [
+   "Grundrechte",
+   "Menschenwürde",
+   "Rechtsstaat",
+   "Verfassungsorgane",
+   "Meinungsfreiheit",
+   "Gleichheit"
+  ],
+  "lernziel": "Die Jugendlichen erklären zentrale Grundrechte und prüfen Fälle des Alltags.",
+  "tipp": "Eigene Fallbeispiele aus dem Schulalltag, an denen Grundrechte abgewogen werden, schaffen Praxisbezug."
+ },
+ {
+  "slug": "weltreligionen",
+  "thema": "Weltreligionen",
+  "fach": "Religion",
+  "klassen": [
+   4,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(islam|christentum|judentum|hinduismus|buddhismus|weltreligion|religionen|ramadan|moschee|synagoge|kirche$|goldene regel|beten|sikh|verschleierung|zuckerfest)",
+  "exclude": "sprechstunde",
+  "einordnung": "Religionen kennenlernen heißt, Vorurteile abbauen. Im Religions- und Ethikunterricht werden Christentum, Islam, Judentum, Hinduismus und Buddhismus sachlich vorgestellt und verglichen.",
+  "begriffe": [
+   "Christentum",
+   "Islam",
+   "Judentum",
+   "Hinduismus",
+   "Buddhismus",
+   "Goldene Regel"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben zentrale Merkmale mehrerer Religionen und finden Gemeinsamkeiten.",
+  "tipp": "Der Besuch eines Gotteshauses mit vorbereiteten Fragen ist oft prägender als jede Unterrichtsstunde."
+ },
+ {
+  "slug": "bibel",
+  "thema": "Bibel und christliche Feste",
+  "fach": "Religion",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(bibel|ostergeschichte|karwoche|weihnachtsgeschichte|pfingsten|jesus|nikolaus von myra|heilige|sankt martin|st\\. martin|martinsfeuer|reformationstag|allerheiligen|erntedank|advent)",
+  "exclude": "christlich-|christlich demo|steckbrief christlich|kunstepoche|heiliges römisches|paketstation|materialpaket winter",
+  "einordnung": "Biblische Geschichten und christliche Feste sind Standard im Religionsunterricht der Grundschule. Sie erklären Bräuche im Jahreslauf und Quellen unserer Kultur.",
+  "begriffe": [
+   "Bibel",
+   "Weihnachtsgeschichte",
+   "Ostergeschichte",
+   "Pfingsten",
+   "Heilige",
+   "Erntedank"
+  ],
+  "lernziel": "Die Kinder erzählen zentrale Geschichten und erklären, warum Feste gefeiert werden.",
+  "tipp": "Eine Bibel in Kinderbuchform zum Anschauen lädt zum Blättern ein, auch wenn nicht alle Kinder Bezug haben."
+ },
+ {
+  "slug": "ostern",
+  "thema": "Ostern und Frühling",
+  "fach": "Religion",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(ostern|osterhase|osterei|ostereier|osterbräuche|osterbrauch|karfreitag|osterfest|ostermarkt)",
+  "exclude": "",
+  "einordnung": "Ostern verbindet christliche Tradition, Frühling und Bräuche. Im Unterricht begegnen Kinder der Ostergeschichte genauso wie Osterhase, Ostereiern und regionalen Bräuchen.",
+  "begriffe": [
+   "Karwoche",
+   "Osterfeuer",
+   "Ostereier",
+   "Osterhase",
+   "Frühlingsbeginn",
+   "Osterbräuche"
+  ],
+  "lernziel": "Die Kinder erzählen die Ostergeschichte und beschreiben Bräuche rund ums Fest.",
+  "tipp": "Eier mit Naturfarben färben lässt sich mit Zwiebelschalen und Rotkohl in jeder Klasse umsetzen."
+ },
+ {
+  "slug": "weihnachten",
+  "thema": "Weihnachten und Advent",
+  "fach": "Religion",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(weihnacht|advent|krippe|nikolaus|plätzchen|lebkuchen|bratapfel|wichtel|santa lucia|lichterfest)",
+  "exclude": "escape|rechenmosaik|englisch|english",
+  "einordnung": "Die Adventszeit bringt Rituale, Geschichten und Traditionen in den Unterricht. Der Bezug reicht von der Weihnachtsgeschichte bis zu Bräuchen anderer Länder.",
+  "begriffe": [
+   "Advent",
+   "Nikolaus",
+   "Krippe",
+   "Plätzchen backen",
+   "Weihnachtsbräuche",
+   "Lichterfeste"
+  ],
+  "lernziel": "Die Kinder erzählen die Weihnachtsgeschichte und vergleichen Bräuche in verschiedenen Ländern.",
+  "tipp": "Ein Adventskalender mit täglichen Aufgaben strukturiert die Wochen vor den Ferien und entlastet die Planung."
+ },
+ {
+  "slug": "halloween",
+  "thema": "Halloween",
+  "fach": "Sachunterricht",
+  "klassen": [
+   2,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(halloween|gespenst|kürbis|monster|hexe|spuk)",
+  "exclude": "hexenschuss",
+  "einordnung": "Halloween ist ein Anlass für kreatives Schreiben, Basteln und Englischunterricht. Der Brauch kommt aus dem keltisch-irischen Raum und ist inzwischen auch in Deutschland verbreitet.",
+  "begriffe": [
+   "Kürbis",
+   "Gespenster",
+   "Verkleiden",
+   "Süßes oder Saures",
+   "irische Herkunft",
+   "Grusel-Wortschatz"
+  ],
+  "lernziel": "Die Kinder erklären Herkunft und Brauch und gestalten eigene Texte und Bilder.",
+  "tipp": "Ein Schreibanlass wie Die Nacht im Spukhaus liefert in einer Stunde erstaunlich viele fantasievolle Texte."
+ },
+ {
+  "slug": "karneval",
+  "thema": "Karneval und Fasching",
+  "fach": "Sachunterricht",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(karneval|fasching|fastnacht|faschings|verkleiden|aschermittwoch|fastenzeit|masken)",
+  "exclude": "tiere",
+  "einordnung": "Karneval, Fasching und Fastnacht sind regionale Bräuche, die Kunst, Musik und Sachunterricht verbinden. Kinder lernen Herkunft, Masken und Fastenzeit kennen.",
+  "begriffe": [
+   "Verkleidung",
+   "Masken",
+   "Aschermittwoch",
+   "Fastenzeit",
+   "Narren",
+   "Umzüge"
+  ],
+  "lernziel": "Die Kinder beschreiben Bräuche im Fasching und gestalten Masken.",
+  "tipp": "Eine Maskenparade in der Klasse als Abschluss motiviert und lässt sich in einer Stunde vorbereiten."
+ },
+ {
+  "slug": "maerchen",
+  "thema": "Märchen",
+  "fach": "Deutsch",
+  "klassen": [
+   1,
+   5
+  ],
+  "include": "(?<![a-zäöüß])(märchen|aschenputtel|schneewittchen|rotkäppchen|dornröschen|hänsel|frau holle|rumpelstilzchen|froschkönig|brüder grimm|sterntaler|bremer stadtmusikanten|schneewittchen)",
+  "exclude": "",
+  "einordnung": "Märchen sind ein fester Bestandteil des Deutschunterrichts der Klassen 1 bis 4. Sie liefern einfache Handlungsmuster, wiederkehrende Figuren und typische Formeln, an denen Kinder Erzählstrukturen entdecken.",
+  "begriffe": [
+   "Märchenfiguren",
+   "Märchenanfang und -schluss",
+   "gut und böse",
+   "Zauber",
+   "Brüder Grimm",
+   "Handlungsablauf"
+  ],
+  "lernziel": "Die Kinder erkennen typische Märchenmerkmale und erzählen ein Märchen in eigenen Worten nach.",
+  "tipp": "Ein eigenes Märchen nach einem Merkzettel mit fünf Märchenmerkmalen schreiben zu lassen, bündelt das Gelernte."
+ },
+ {
+  "slug": "gedichte",
+  "thema": "Gedichte und Balladen",
+  "fach": "Deutsch",
+  "klassen": [
+   3,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(gedicht|ballade|balladen|elfchen|lyrik|reim|herbstgedichte|haiku|gedichtanalyse)",
+  "exclude": "katastrophe|ostern",
+  "einordnung": "Gedichte schulen Sprachgefühl, Rhythmus und Ausdruck. Von Reimen und Elfchen in der Grundschule führt der Weg zu Balladen und Gedichtanalyse in der Sekundarstufe.",
+  "begriffe": [
+   "Reim",
+   "Strophe und Vers",
+   "Elfchen",
+   "Ballade",
+   "Sprachbilder",
+   "Gedichtanalyse"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler tragen Gedichte vor, erkennen Reimschemata und deuten Sprachbilder.",
+  "tipp": "Ein Gedicht gemeinsam im Chor sprechen, bevor es analysiert wird, schafft Zugang und nimmt Hemmungen."
+ },
+ {
+  "slug": "rechtschreibung",
+  "thema": "Rechtschreibung und Diktate",
+  "fach": "Deutsch",
+  "klassen": [
+   1,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(rechtschreib|laufdiktat|diktat$|diktate|adjektive-rechtschreibung|adjektve rechtschreibung|vorsilben|groß- und kleinschreibung|dehnung|schärfung|doppelkonsonant|s-laute|das oder dass)",
+  "exclude": "diktator",
+  "einordnung": "Rechtschreibung bleibt eine Daueraufgabe vom ersten bis zum zehnten Schuljahr. Der Unterricht arbeitet mit Regeln, Merkwörtern und Strategien wie Ableiten, Verlängern und Nachschlagen.",
+  "begriffe": [
+   "Groß- und Kleinschreibung",
+   "Dehnung und Schärfung",
+   "das oder dass",
+   "Vorsilben",
+   "Laufdiktat",
+   "Wörterbucharbeit"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler wenden Rechtschreibstrategien an und überprüfen eigene Texte.",
+  "tipp": "Ein Laufdiktat als Partnerübung bringt Bewegung ins Üben und trainiert genaues Abschreiben."
+ },
+ {
+  "slug": "wortarten",
+  "thema": "Wortarten",
+  "fach": "Deutsch",
+  "klassen": [
+   2,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(wortart|adjektiv|adjektive|nomen|substantiv|pronomen|adverb|präposition|konjunktion|artikel$|verb$|verben|numerale|steigern)",
+  "exclude": "artikelübersicht",
+  "einordnung": "Wortarten sind Grundlage der Grammatik. Ab der Grundschule werden Nomen, Verben und Adjektive unterschieden, später kommen Pronomen, Präpositionen und Adverbien hinzu.",
+  "begriffe": [
+   "Nomen",
+   "Verben",
+   "Adjektive",
+   "Pronomen",
+   "Präpositionen",
+   "Adverbien"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler bestimmen Wortarten in Sätzen und nutzen sie beim Schreiben.",
+  "tipp": "Farbige Markierungen pro Wortart in einem Lesetext machen die Strukturen sichtbar."
+ },
+ {
+  "slug": "satzglieder",
+  "thema": "Satzglieder und Satzbau",
+  "fach": "Deutsch",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(satzglied|prädikat|subjekt|objekt|satzbau|nebensatz|hauptsatz|satzarten|satzreihe|satzgefüge|satzklammer|satzwerkstatt|satzzeichen|kommasetzung|wörtliche rede)",
+  "exclude": "objekte und klassen",
+  "einordnung": "Satzbau und Zeichensetzung gehören ab Klasse 4 zum Deutschunterricht. Die Lernenden erkennen Subjekt, Prädikat und Objekte, bilden Haupt- und Nebensätze und setzen Kommas.",
+  "begriffe": [
+   "Prädikat",
+   "Subjekt",
+   "Objekt",
+   "Hauptsatz und Nebensatz",
+   "wörtliche Rede",
+   "Kommaregeln"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler bestimmen Satzglieder mit der Umstellprobe und setzen Satzzeichen.",
+  "tipp": "Ein Satz auf Papierstreifen, den die Kinder umlegen, macht die Umstellprobe haptisch."
+ },
+ {
+  "slug": "vorgangsbeschreibung",
+  "thema": "Vorgangsbeschreibung",
+  "fach": "Deutsch",
+  "klassen": [
+   5,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(vorgangsbeschreibung|schreibwerkstatt)",
+  "exclude": "",
+  "einordnung": "Vorgänge genau beschreiben ist eine zentrale Textform der Klassen 3 bis 6. Die Schülerinnen und Schüler lernen, Schritte in richtiger Reihenfolge, im Präsens und mit treffenden Verben aufzuschreiben.",
+  "begriffe": [
+   "Schrittfolge",
+   "Zeitwörter im Präsens",
+   "Fachbegriffe",
+   "Materialliste",
+   "Reihenfolgewörter",
+   "Anleitung"
+  ],
+  "lernziel": "Die Kinder beschreiben einen Ablauf so genau, dass andere ihn nachmachen können.",
+  "tipp": "Ein Test mit einem Partner, der nur nach der Beschreibung bastelt, zeigt sofort, wo Schritte fehlen."
+ },
+ {
+  "slug": "textzusammenfassung",
+  "thema": "Inhaltsangabe und Textarten",
+  "fach": "Deutsch",
+  "klassen": [
+   6,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(inhaltsangabe|zusammenfassung|kurzgeschichte|textsorte|sachtext|textanalyse|erzählung|bildgeschichte|comic|leserbrief|zeitungsbericht|reportage|interview|protokoll|e-mail|brief$)",
+  "exclude": "",
+  "einordnung": "Textarten erkennen und Inhalte wiedergeben sind Kernkompetenzen im Deutschunterricht der Sekundarstufe. Dazu zählen Kurzgeschichte, Bericht, Brief und Zusammenfassung.",
+  "begriffe": [
+   "Kurzgeschichte",
+   "Inhaltsangabe",
+   "Erzählung",
+   "Bildgeschichte",
+   "Brief und E-Mail",
+   "Textsorten"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler unterscheiden Textarten und fassen Inhalte knapp zusammen.",
+  "tipp": "Eine Kurzgeschichte in fünf Sätzen zu erzählen schult das Wesentliche besser als lange Aufsätze."
+ },
+ {
+  "slug": "bewerbung",
+  "thema": "Bewerbung und Praktikum",
+  "fach": "Deutsch",
+  "klassen": [
+   8,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(bewerbung|lebenslauf|anschreiben|vorstellungsgespräch|einstellungstest|berufswahl|ein praktikum|praktikumsbericht)",
+  "exclude": "",
+  "einordnung": "Bewerbung und Berufswahl bereiten auf den Übergang in Ausbildung vor. Typische Bausteine sind Lebenslauf, Anschreiben, Einstellungstest und Vorstellungsgespräch.",
+  "begriffe": [
+   "Lebenslauf",
+   "Anschreiben",
+   "Deckblatt",
+   "Einstellungstest",
+   "Vorstellungsgespräch",
+   "Praktikum"
+  ],
+  "lernziel": "Die Jugendlichen erstellen vollständige Bewerbungsunterlagen und üben ein Gespräch.",
+  "tipp": "Ein Probegespräch mit Beobachtern und Feedbackbogen ist die wirksamste Übung."
+ },
+ {
+  "slug": "lesen",
+  "thema": "Lesen und Leseverstehen",
+  "fach": "Deutsch",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(lies und male|leseverstehen|leseförderung|lesetraining|vorlesen|lesefitness|lese-fitness|lesespaziergang|leserallye|leseprojekt|lesewelten|lesewinter)",
+  "exclude": "probetest|vera|escape|rechenwelten",
+  "einordnung": "Lesen steht im Zentrum der Grundschule. Neben Lesetechnik zählen Verstehen, Lesemotivation und Leseflüssigkeit; gute Förderung verbindet Texte mit Aufgaben und kleinen Erfolgserlebnissen.",
+  "begriffe": [
+   "Lesetechnik",
+   "Leseverstehen",
+   "Textfragen",
+   "Lösungswort",
+   "Vorlesen",
+   "Lesefluss"
+  ],
+  "lernziel": "Die Kinder lesen zunehmend flüssig, beantworten Fragen zum Text und begründen ihre Antworten.",
+  "tipp": "Täglich zehn Minuten Lesezeit mit Lesetagebuch wirken stärker als ein langer Lesetag pro Woche."
+ },
+ {
+  "slug": "buchstaben-und-schrift",
+  "thema": "Buchstaben, Alphabet und Schrift",
+  "fach": "Deutsch",
+  "klassen": [
+   1,
+   2
+  ],
+  "include": "(?<![a-zäöüß])(alphabet|buchstabe|buchstaben|anlaut|abc|schreibschrift|druckschrift|schrift$|lateinisches|kyrillisches|griechisches|silbenbögen)",
+  "exclude": "suchsel|suchspiel|ukraine|tschechien|osterbräuche|vorsilben|leseförderung",
+  "einordnung": "Der Schriftspracherwerb beginnt in Klasse 1 mit Buchstaben und Lauten. Alphabet, Druckschrift und Schreibschrift werden schrittweise eingeführt; auch andere Schriftsysteme können Neugier wecken.",
+  "begriffe": [
+   "Alphabet",
+   "Anlaute",
+   "Druckschrift",
+   "Schreibschrift",
+   "Silben",
+   "andere Schriften"
+  ],
+  "lernziel": "Die Kinder schreiben Buchstaben lesbar und ordnen Wörter nach Anlauten.",
+  "tipp": "Buchstaben in Sand oder Rasierschaum nachspuren verbindet Motorik und Merkfähigkeit."
+ },
+ {
+  "slug": "kurzgeschichte-und-roman",
+  "thema": "Literatur: Kurzgeschichte, Roman und Jugendbuch",
+  "fach": "Deutsch",
+  "klassen": [
+   7,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(kurzgeschichte|novelle|roman$|jugendbuch|kinderbuch|ganzschrift|lektüre|sturm und drang|weimarer klassik|romantik$|aufklärung|expressionismus|literaturepoche|autor)",
+  "exclude": "romanik|romandie|kaufleute|kunst|rätoromanische|aufklärung –|welttag",
+  "einordnung": "Literatur im Deutschunterricht der Sekundarstufe umfasst Kurzgeschichte, Roman und Epochen. Die Lernenden analysieren Figuren, Aufbau und Sprache und ordnen Texte in ihre Zeit ein.",
+  "begriffe": [
+   "Kurzgeschichte",
+   "Roman",
+   "Epochen",
+   "Romantik",
+   "Aufklärung",
+   "Figurencharakteristik"
+  ],
+  "lernziel": "Die Jugendlichen analysieren literarische Texte und ordnen sie einer Epoche zu.",
+  "tipp": "Ein Epochen-Steckbrief nach festem Raster hilft, Merkmale zu vergleichen."
+ },
+ {
+  "slug": "einmaleins",
+  "thema": "Das kleine Einmaleins",
+  "fach": "Mathematik",
+  "klassen": [
+   2,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(einmaleins|multiplikation|malnehmen|bilder-einmaleins|windmühlen)",
+  "exclude": "rollenspiel|backstube|bratapfel",
+  "einordnung": "Das kleine Einmaleins ist Grundlage des Rechnens ab Klasse 2. Kinder sollen Aufgaben automatisieren und Zusammenhänge zwischen Multiplikation und Division erkennen.",
+  "begriffe": [
+   "Reihen",
+   "Tauschaufgaben",
+   "Verdopplungen",
+   "Kernaufgaben",
+   "Division als Umkehrung",
+   "Malkreuz"
+  ],
+  "lernziel": "Die Kinder lösen Einmaleinsaufgaben sicher und nutzen Beziehungen zwischen Aufgaben.",
+  "tipp": "Täglich fünf Minuten gemischtes Üben bringen mehr als eine lange Einheit pro Woche."
+ },
+ {
+  "slug": "zahlenraum",
+  "thema": "Zahlenraum und Stellenwerte",
+  "fach": "Mathematik",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(zahlenraum|zahlenstrahl|stellenwert|zehner|hunderter|tausender|million|zahlen$|ziffer|zählen|römische zahlen|binärzahlen|zahlenfunken)",
+  "exclude": "rollenspiel|prüfziffer|winterfütterung|rechenmosaik|lesewinter",
+  "einordnung": "Der Zahlenraum wächst in Klasse 1 bis 4 von 10 bis zur Million. Stellenwerte, Zahlenstrahl und Zählen in Schritten tragen das Verständnis von Zahlen.",
+  "begriffe": [
+   "Zahlenstrahl",
+   "Stellenwerttafel",
+   "Zehner und Hunderter",
+   "Tausender",
+   "Million",
+   "römische Zahlen"
+  ],
+  "lernziel": "Die Kinder lesen, schreiben und ordnen Zahlen und erklären Stellenwerte.",
+  "tipp": "Arbeitsmaterial wie Mehrsystemblöcke macht den Stellenwert sichtbar, bevor abstrakt gerechnet wird."
+ },
+ {
+  "slug": "addition-subtraktion",
+  "thema": "Addition und Subtraktion",
+  "fach": "Mathematik",
+  "klassen": [
+   1,
+   4
+  ],
+  "include": "(?<![a-zäöüß])(addition|subtraktion|addieren|subtrahieren|zahlenmauer|plus und minus|rechenmosaik|übungsaufgaben)",
+  "exclude": "igel – gratis|english|englisch",
+  "einordnung": "Addition und Subtraktion sind die ersten Rechenoperationen. Strategien wie Zerlegen, Nutzen von Nachbaraufgaben und schriftliche Verfahren bauen aufeinander auf.",
+  "begriffe": [
+   "Plus und Minus",
+   "Zahlenmauern",
+   "Zehnerübergang",
+   "Ergänzen",
+   "schriftliches Rechnen",
+   "Rechengeschichten"
+  ],
+  "lernziel": "Die Kinder rechnen sicher im Zahlenraum und erklären ihre Strategie.",
+  "tipp": "Rechengeschichten aus dem Alltag verknüpfen Rechnung und Sachbezug."
+ },
+ {
+  "slug": "geometrie",
+  "thema": "Geometrie: Körper, Flächen und Formen",
+  "fach": "Mathematik",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(geometrische körper|würfel|quader|zylinder|prisma|kegel|kugel|dreieck|viereck|rechteck|quadrat|symmetrie|flächeninhalt|umfang|geometrische formen|winkel|pyramide$)",
+  "exclude": "rollenspiel|akrobatik|girlande|steckbrief|malspur|grüne kugel|ernährung",
+  "einordnung": "Geometrie reicht von Formen im Kindergartenalter bis zu Körpern, Flächen und Winkeln. In der Grundschule steht Anschauung im Vordergrund, später folgen Berechnungen.",
+  "begriffe": [
+   "Dreieck und Viereck",
+   "Würfel und Quader",
+   "Symmetrie",
+   "Umfang",
+   "Flächeninhalt",
+   "Winkel"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler benennen Körper und Flächen und berechnen einfache Größen.",
+  "tipp": "Körper aus Knete und Zahnstochern bauen ist der schnellste Weg zu Ecken, Kanten und Flächen."
+ },
+ {
+  "slug": "brueche-und-dezimalzahlen",
+  "thema": "Brüche und Dezimalzahlen",
+  "fach": "Mathematik",
+  "klassen": [
+   5,
+   7
+  ],
+  "include": "(?<![a-zäöüß])(bruch|brüche|bruchrechnung|dezimalzahl|kommazahl|prozent|dreisatz|zinsrechnung|zinsen)",
+  "exclude": "bruchköbel|rollenspiel|erntefest|ostermarkt|kinderpunsch",
+  "einordnung": "Brüche, Dezimalzahlen und Prozente bilden in Klasse 5 bis 7 das Herzstück der Mathematik. Sie hängen eng zusammen und werden im Alltag ständig gebraucht.",
+  "begriffe": [
+   "Bruchteile",
+   "Kürzen und Erweitern",
+   "Dezimalzahlen",
+   "Prozentrechnung",
+   "Dreisatz",
+   "Zinsen"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler rechnen mit Brüchen und Dezimalzahlen und wechseln zwischen den Darstellungen.",
+  "tipp": "Eine Pizza oder Schokolade als Modell für Bruchteile bleibt anschaulich und ist schnell vorbereitet."
+ },
+ {
+  "slug": "terme-und-funktionen",
+  "thema": "Terme, Gleichungen und Funktionen",
+  "fach": "Mathematik",
+  "klassen": [
+   6,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(gleichung|gleichungen|terme|funktionen|binomische|gleichungssysteme|quadratische|lineare)",
+  "exclude": "reaktionsgleichung|lf |lager",
+  "einordnung": "Algebra beginnt mit Termen und Gleichungen und führt zu Funktionen. Die Lernenden stellen Zusammenhänge dar, lösen Gleichungen und modellieren Situationen.",
+  "begriffe": [
+   "Terme",
+   "Gleichungen",
+   "lineare Funktionen",
+   "Gleichungssysteme",
+   "quadratische Funktionen",
+   "binomische Formeln"
+  ],
+  "lernziel": "Die Jugendlichen lösen Gleichungen und deuten Funktionsgraphen.",
+  "tipp": "Wertetabellen und Graphen parallel zeichnen zu lassen verbindet Algebra und Anschauung."
+ },
+ {
+  "slug": "groessen",
+  "thema": "Größen, Einheiten und Uhrzeit",
+  "fach": "Mathematik",
+  "klassen": [
+   2,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(größen|einheit|uhrzeit|uhr$|längen|gewichte|hohlmaße|zeitspanne|zoll|kilometer|thermometer|messen)",
+  "exclude": "rollenspiel|erntefest|lf |lernbarometer|winter-lesewelten|recht im alltag|naturwerkstatt|sicher lesen|messen, steuern",
+  "einordnung": "Größen messen, vergleichen und umrechnen ist ein Dauerthema ab Klasse 2. Länge, Gewicht, Zeit und Hohlmaße begegnen den Kindern ständig im Alltag.",
+  "begriffe": [
+   "Längen",
+   "Gewichte",
+   "Uhrzeit",
+   "Zeitspannen",
+   "Temperatur",
+   "Umrechnen"
+  ],
+  "lernziel": "Die Kinder messen mit geeigneten Geräten, wählen passende Einheiten und rechnen um.",
+  "tipp": "Eine Messrallye durch das Schulhaus mit selbst gewählten Geräten verankert Einheiten im Gedächtnis."
+ },
+ {
+  "slug": "daten-und-diagramme",
+  "thema": "Daten, Diagramme und Wahrscheinlichkeit",
+  "fach": "Mathematik",
+  "klassen": [
+   3,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(diagramm|wahrscheinlichkeit|statistik|mittelwert|daten sammeln|umfrage|tabelle|glücksrad|datendetektive|zufall)",
+  "exclude": "rollenspiel|winter-umfrage|einmaleins|lf |tabellenkalkulation|tombola|edv|krimi",
+  "einordnung": "Daten erfassen, darstellen und deuten ist ein fester Bereich des Mathematikunterrichts. Die Lernenden arbeiten mit Strichlisten, Diagrammen, Mittelwert und Wahrscheinlichkeit.",
+  "begriffe": [
+   "Strichliste",
+   "Diagramm",
+   "Mittelwert",
+   "Wahrscheinlichkeit",
+   "Umfrage",
+   "Zufallsexperiment"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler lesen Diagramme, führen kleine Erhebungen durch und schätzen Chancen ein.",
+  "tipp": "Eine Umfrage in der eigenen Klasse liefert Daten, die jeden interessieren, und führt direkt zum Diagramm."
+ },
+ {
+  "slug": "fluesse-und-meere",
+  "thema": "Rhein, Donau und die großen Flüsse",
+  "fach": "Erdkunde",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "^(der |die |das )?(rhein|donau|elbe|main|neckar|mosel|weser|oder|isar|inn|ruhr|spree|nil|amazonas|mississippi|nordsee|ostsee|bodensee|schwarzes meer|rotes meer|mittelmeer|kaspisches meer)\\b",
+  "exclude": "kreis|am |bei ",
+  "einordnung": "Flüsse und Meere gliedern Landschaften und Verkehrswege. Die Erdkunde lernt den Verlauf wichtiger Flüsse, ihre Nutzung und ihre Bedeutung als Lebensraum und Grenze.",
+  "begriffe": [
+   "Rhein",
+   "Donau",
+   "Elbe",
+   "Nordsee",
+   "Ostsee",
+   "Mittelmeer"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Verlauf und Bedeutung wichtiger Gewässer.",
+  "tipp": "Eine Flusskarte, in die Städte und Nebenflüsse eingetragen werden, schafft Orientierung."
+ },
+ {
+  "slug": "gebirge",
+  "thema": "Alpen und Gebirge",
+  "fach": "Erdkunde",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(alpen|zugspitze|erzgebirge|schwarzwald$|der schwarzwald|bayerischer wald|harz$|der harz|mount everest|himalaya|anden|rocky mountains|gebirge|berg$|vogesen|jura$|pyrenäen|karpaten|mittelgebirge)",
+  "exclude": "kreis|am |im |andrea",
+  "einordnung": "Gebirge prägen Landschaft, Klima und Wirtschaft. Der Unterricht behandelt Entstehung, Höhenstufen und Nutzung, von den Mittelgebirgen bis zu Alpen und Himalaya.",
+  "begriffe": [
+   "Alpen",
+   "Mittelgebirge",
+   "Höhenstufen",
+   "Zugspitze",
+   "Himalaya",
+   "Gebirgsentstehung"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Gebirge und erklären Unterschiede zu Mittelgebirgen.",
+  "tipp": "Ein Geländemodell aus Salzteig verdeutlicht Höhenlinien und Täler."
+ },
+ {
+  "slug": "erdbeben-und-vulkane",
+  "thema": "Erdbeben und Vulkane",
+  "fach": "Erdkunde",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(erdbeben|vulkan$|vulkane|vulkanausbruch|plattentektonik|tsunami|erdkruste|erdaufbau|erdkern)",
+  "exclude": "eifel",
+  "einordnung": "Erdbeben und Vulkane gehören zur Physischen Geographie. Die Plattentektonik erklärt, warum sich Katastrophen an bestimmten Linien häufen.",
+  "begriffe": [
+   "Erdaufbau",
+   "Plattentektonik",
+   "Vulkanausbruch",
+   "Erdbeben",
+   "Tsunami",
+   "Magma"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erklären die Entstehung von Erdbeben und Vulkanen.",
+  "tipp": "Ein Vulkan-Experiment mit Natron und Essig weckt Interesse, bevor die Theorie folgt."
+ },
+ {
+  "slug": "klimazonen",
+  "thema": "Klimazonen und Lebensräume der Erde",
+  "fach": "Erdkunde",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(klimazone|vegetationszone|tropische regenwald|der tropische|savanne|tundra|wüste|polar|taiga|steppe|trockenwüste|dschungel)",
+  "exclude": "lesespaziergang|sternbilder|polarlichter|polarstern",
+  "einordnung": "Klimazonen und Vegetation zeigen, warum Pflanzen und Menschen unterschiedlich leben. Der Unterricht vergleicht Tropen, Subtropen, gemäßigte Zonen und Polargebiete.",
+  "begriffe": [
+   "Tropischer Regenwald",
+   "Savanne",
+   "Wüste",
+   "Tundra",
+   "Taiga",
+   "Polargebiete"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler ordnen Landschaften den Klimazonen zu und beschreiben Anpassungen.",
+  "tipp": "Klimadiagramme lesen lernen die Kinder am besten mit drei bekannten Orten im Vergleich."
+ },
+ {
+  "slug": "landwirtschaft",
+  "thema": "Landwirtschaft und Ernte",
+  "fach": "Erdkunde",
+  "klassen": [
+   4,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(landwirtschaft|ernte$|getreide|weizen|roggen|mais$|reis$|kartoffel$|die kartoffel|ackerbau|viehzucht|ökolandbau|bio-landwirtschaft|bauernhof)",
+  "exclude": "puffer|rekorde|brüche|bundes",
+  "einordnung": "Landwirtschaft ist Grundlage der Ernährung und Thema der Erdkunde. Ackerbau und Viehzucht, Ernte und Verarbeitung werden vom Hof bis zum Handel verfolgt.",
+  "begriffe": [
+   "Ackerbau",
+   "Getreide",
+   "Viehzucht",
+   "Ernte",
+   "Ökolandbau",
+   "Hof und Handel"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben den Weg eines Lebensmittels vom Feld in den Laden.",
+  "tipp": "Eine Betriebserkundung bei einem Landwirt der Umgebung gibt Antworten aus erster Hand."
+ },
+ {
+  "slug": "energie-und-umwelt",
+  "thema": "Energie, Rohstoffe und Umwelt",
+  "fach": "Erdkunde",
+  "klassen": [
+   4,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(energie|erneuerbar|windkraft|solar|sonnenenergie|recycling|müll|umweltschutz|nachhaltig|rohstoff|kernkraft|kohle|erdöl|erdgas|plastik|wasserkraft)",
+  "exclude": "sport|profile|tiere|architektur|energie – ernährung|müller|solar system|sistema",
+  "einordnung": "Energie, Rohstoffe und Umweltschutz verbinden Erdkunde, Physik und Politik. Die Lernenden vergleichen Energieformen und bewerten Folgen.",
+  "begriffe": [
+   "Erneuerbare Energie",
+   "Kohle und Erdöl",
+   "Windkraft",
+   "Solarenergie",
+   "Recycling",
+   "Umweltschutz"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler vergleichen Energiequellen und begründen Handlungsmöglichkeiten.",
+  "tipp": "Ein Energie-Check im Schulgebäude liefert eigene Daten, die zur Diskussion anregen."
+ },
+ {
+  "slug": "laender-der-erde",
+  "thema": "Länder der Erde",
+  "fach": "Erdkunde",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(österreich|schweiz|frankreich|italien|spanien|china|indien|usa$|vereinigte staaten|russland|türkei|brasilien|japan|ägypten$|australien|kanada|mexiko|polen|niederlande|ukraine|tschechien|island$|irland|england|großbritannien|vereinigtes königreich)",
+  "exclude": "partei|steckbrief europa|lesespaziergang|bundesland|neujahr|suchsel|kreis|präsidentschaft|die mitte|grüne|mittelland|elisabeth|inseln",
+  "einordnung": "Länderkunde zeigt Vielfalt: Lage, Klima, Kultur und Wirtschaft einzelner Staaten werden in Steckbriefen erarbeitet. Das Thema trainiert Recherche und Präsentation.",
+  "begriffe": [
+   "Lage und Hauptstadt",
+   "Sprache",
+   "Klima",
+   "Wirtschaft",
+   "Kultur",
+   "Steckbrief"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler stellen ein Land mit festem Raster vor.",
+  "tipp": "Ein Länderquiz zum Abschluss festigt Lage und Fakten spielerisch."
+ },
+ {
+  "slug": "heimat-und-region",
+  "thema": "Heimat, Region und Bundesländer-Vergleich",
+  "fach": "Erdkunde",
+  "klassen": [
+   3,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(heimat|region$|regionen|metropolregion|ruhrgebiet|bodenseeregion|norddeutsche tiefland|alpenvorland|mittelgebirge|marsch|watt$|wattenmeer|nationalpark)",
+  "exclude": "james",
+  "einordnung": "Die Heimatregion ist Ausgangspunkt der Erdkunde in der Grundschule. Von dort aus werden Landschaften, Nationalparks und Wirtschaftsräume Deutschlands erschlossen.",
+  "begriffe": [
+   "Heimatort",
+   "Landschaften",
+   "Nationalpark",
+   "Wattenmeer",
+   "Ruhrgebiet",
+   "Region"
+  ],
+  "lernziel": "Die Kinder beschreiben ihre Region und vergleichen sie mit anderen Landschaften.",
+  "tipp": "Eine Ortserkundung mit Skizze und Fotos macht das Nahe zum Unterrichtsgegenstand."
+ },
+ {
+  "slug": "saeugetiere",
+  "thema": "Säugetiere",
+  "fach": "Biologie",
+  "klassen": [
+   3,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(säugetier|elefant|wolf$|wölfe|bär$|bären|fuchs|füchse|hirsch|reh$|wildschwein|löwe|löwen|tiger|giraffe|nashorn|delfin|delfine|wal$|wale|fledermaus|fledermäuse|dachs|marder|luchs|waschbär|yak|zebra|gorilla|affe$|affen|eichhörnchen|biber$|hase$|hasen|panda|känguru|koala|eisbär|robbe|seehund|otter|maulwurf|igel$|kamel|lama|nilpferd|flusspferd|leopard|gepard|hyäne|wildkatze|steinbock|gämse|elch|rentier)",
+  "exclude": "artikelübersicht|biberach|wolfram|klassentier|feriengrüße|gruppenschilder|ministerin|bundes|rechenmosaik",
+  "einordnung": "Säugetiere sind die Tiergruppe, die Kinder am besten kennen. Der Lehrplan nutzt sie, um Merkmale wie Fell, Lebendgeburt und Säugen zu klären und Lebensräume zu vergleichen.",
+  "begriffe": [
+   "Merkmale",
+   "Fell und Haut",
+   "Lebensraum",
+   "Nahrung",
+   "Fortpflanzung",
+   "Anpassung"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler nennen Merkmale und erstellen Steckbriefe einzelner Arten.",
+  "tipp": "Ein Tiersteckbrief mit gleicher Gliederung für alle macht Vergleiche einfach."
+ },
+ {
+  "slug": "reptilien-und-amphibien",
+  "thema": "Reptilien und Amphibien",
+  "fach": "Biologie",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(reptil|reptilien|amphibie|amphibien|frosch|frösche|kröte|kröten|molch|salamander|schlange|schlangen|eidechse|eidechsen|krokodil|krokodile|schildkröte|schildkröten|gecko|geckos|chamäleon|kaulquappe)",
+  "exclude": "satzwerkstatt|schlangensätze|feuer",
+  "einordnung": "Reptilien und Amphibien zeigen, wie Anpassung an Land und Wasser aussieht. Der Unterricht vergleicht Haut, Atmung und Entwicklung, vom Frosch bis zur Schlange.",
+  "begriffe": [
+   "Kaltblütigkeit",
+   "Metamorphose",
+   "Haut",
+   "Eiablage",
+   "Winterstarre",
+   "Schuppen"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler unterscheiden Reptilien und Amphibien und beschreiben deren Entwicklung.",
+  "tipp": "Froschlaich in der Schulwanne zu beobachten ist, falls erlaubt, unvergesslich; alternativ helfen Bildreihen."
+ },
+ {
+  "slug": "fische-und-meerestiere",
+  "thema": "Fische und Meerestiere",
+  "fach": "Biologie",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(fisch$|fische|hai$|haie|lachs|lachse|forelle|krake|qualle|quallen|seepferdchen|meerestier|korallen|korallenriff|karpfen|aal$|thunfisch|hering|delfin|krebs|muschel|seestern)",
+  "exclude": "fischer|kaspisch|schwarzes|japanisches",
+  "einordnung": "Fische und Meerestiere sind Lebewesen im Wasser. Kinder lernen Körperbau, Atmung durch Kiemen und die Vielfalt der Meeresbewohner kennen.",
+  "begriffe": [
+   "Kiemen",
+   "Flossen",
+   "Schuppen",
+   "Korallenriff",
+   "Haie",
+   "Lachs"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Anpassungen an das Leben im Wasser.",
+  "tipp": "Ein Besuch im Aquarium oder eine Fotoreportage aus einem Riff liefert Bilder für das Thema."
+ },
+ {
+  "slug": "zelle-und-mikroskop",
+  "thema": "Zelle, Mikroskop und Bakterien",
+  "fach": "Biologie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(zelle$|die zelle|zellkern|mikroskop|bakterie|bakterien|virus|viren|zellatmung|organell|antibiotika|impfung|infektion)",
+  "exclude": "tabellenkalkulation|clausthal",
+  "einordnung": "Mikroskopieren ist ein Wendepunkt der Biologie: Lebewesen bestehen aus Zellen. Die Lernenden lernen Aufbau, Bakterien und Viren kennen.",
+  "begriffe": [
+   "Zellkern",
+   "Zellmembran",
+   "Mikroskop",
+   "Bakterien",
+   "Viren",
+   "Impfung"
+  ],
+  "lernziel": "Die Jugendlichen mikroskopieren und beschreiben Zellen und deren Bestandteile.",
+  "tipp": "Zwiebelhaut unter dem Mikroskop ist der einfachste Einstieg in die Zellbiologie."
+ },
+ {
+  "slug": "fotosynthese",
+  "thema": "Fotosynthese",
+  "fach": "Biologie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(fotosynthese|photosynthese|chlorophyll|stoffwechsel|blattaufbau|spaltöffnung)",
+  "exclude": "",
+  "einordnung": "Fotosynthese ist die Grundlage fast allen Lebens. Die Lernenden erklären, wie Pflanzen Licht in Zucker umwandeln, und bringen Stoffwechsel und Ökologie zusammen.",
+  "begriffe": [
+   "Chlorophyll",
+   "Licht",
+   "Kohlenstoffdioxid",
+   "Sauerstoff",
+   "Traubenzucker",
+   "Blattaufbau"
+  ],
+  "lernziel": "Die Jugendlichen beschreiben den Vorgang als Gleichung und erklären seine Bedeutung.",
+  "tipp": "Ein Versuch mit Wasserpest und aufsteigenden Gasblasen zeigt die Reaktion sichtbar."
+ },
+ {
+  "slug": "herz-und-kreislauf",
+  "thema": "Herz und Blutkreislauf",
+  "fach": "Biologie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(das herz|blut$|das blut|blutkreislauf|blutgruppe|puls|blutdruck|herzinfarkt|rote blutkörperchen)",
+  "exclude": "herzogenaurach|herzberg|herzog|herzogtum|herzegowina|löwenherz|bundespräsident|wirtschaftskreislauf|wasserkreislauf",
+  "einordnung": "Herz und Blutkreislauf sichern die Versorgung des Körpers. Der Unterricht erklärt Aufbau, Blutgefäße, Puls und die Wirkung von Sport.",
+  "begriffe": [
+   "Herzkammern",
+   "Blutgefäße",
+   "Blutkreislauf",
+   "Puls",
+   "Blutdruck",
+   "Blutgruppen"
+  ],
+  "lernziel": "Die Jugendlichen beschreiben den Weg des Blutes und messen den Puls.",
+  "tipp": "Pulsmessung vor und nach Bewegung liefert eigene Daten und führt zum Thema."
+ },
+ {
+  "slug": "atmung-und-verdauung",
+  "thema": "Atmung, Verdauung und Organe",
+  "fach": "Biologie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(atmung|lunge|verdauung|magen|darm$|leber|niere|nieren|organe|zellatmung|bauchspeicheldrüse|galle|speiseröhre)",
+  "exclude": "darmstadt|nibelungen|landkreis",
+  "einordnung": "Atmung, Verdauung und Ausscheidung zählen zu den Organsystemen, die in Klasse 5 bis 8 behandelt werden. Die Lernenden verfolgen den Weg von Luft und Nahrung durch den Körper.",
+  "begriffe": [
+   "Lunge",
+   "Atmung",
+   "Magen",
+   "Darm",
+   "Leber",
+   "Niere"
+  ],
+  "lernziel": "Die Jugendlichen erklären Aufbau und Funktion der wichtigsten Organe.",
+  "tipp": "Ein Torso-Modell oder eine Körperumrisszeichnung in Lebensgröße verortet die Organe."
+ },
+ {
+  "slug": "genetik-und-evolution",
+  "thema": "Genetik und Evolution",
+  "fach": "Biologie",
+  "klassen": [
+   8,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(genetik|vererbung|dna|gen$|gene$|evolution|darwin|mendel|chromosom|erbgut|klonen|gentechnik|stammesgeschichte)",
+  "exclude": "mendelevium|revolution",
+  "einordnung": "Genetik und Evolution erklären Vielfalt und Verwandtschaft. In Klasse 8 bis 10 geht es um Vererbung, DNA und die Entwicklung der Arten.",
+  "begriffe": [
+   "DNA",
+   "Gene",
+   "Vererbung",
+   "Mendel",
+   "Evolution",
+   "Darwin"
+  ],
+  "lernziel": "Die Jugendlichen erklären Vererbungsregeln und Mechanismen der Evolution.",
+  "tipp": "Eine Kreuzungstabelle zu einfachen Merkmalen macht Wahrscheinlichkeiten nachvollziehbar."
+ },
+ {
+  "slug": "pubertaet",
+  "thema": "Pubertät, Sexualität und Aufklärung",
+  "fach": "Biologie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(pubertät|sexualität|sexualkunde|schwangerschaft|fortpflanzung|geschlechtsorgane|hormone|menstruation|verhütung|homosexualität|geschlechtsverkehr)",
+  "exclude": "abbruch",
+  "einordnung": "Pubertät und Sexualaufklärung werden in der Biologie ab Klasse 5 behandelt, behutsam und im Rahmen der Elterninformation. Es geht um Veränderungen, Fortpflanzung und Verantwortung.",
+  "begriffe": [
+   "Körperveränderungen",
+   "Hormone",
+   "Menstruation",
+   "Fortpflanzung",
+   "Schwangerschaft",
+   "Verhütung"
+  ],
+  "lernziel": "Die Jugendlichen kennen Veränderungen der Pubertät und gehen respektvoll miteinander um.",
+  "tipp": "Eine anonyme Fragebox erlaubt Fragen, die sich keiner laut zu stellen traut."
+ },
+ {
+  "slug": "sucht-und-drogen",
+  "thema": "Sucht, Drogen und Prävention",
+  "fach": "Biologie",
+  "klassen": [
+   7,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(droge|drogen|sucht|alkohol|nikotin|rauchen|cannabis|medikament|magersucht|ess-störung|essstörung|koffein|energy)",
+  "exclude": "lesespaziergang|tiere im winter",
+  "einordnung": "Suchtprävention gehört in den Biologie- und Gesundheitsunterricht der Sekundarstufe I. Behandelt werden Wirkung und Risiken von Alkohol, Nikotin und anderen Substanzen sowie Wege der Hilfe.",
+  "begriffe": [
+   "Alkohol",
+   "Nikotin",
+   "Cannabis",
+   "Abhängigkeit",
+   "Medikamente",
+   "Hilfsangebote"
+  ],
+  "lernziel": "Die Jugendlichen kennen Risiken und wissen, wo sie Hilfe finden.",
+  "tipp": "Eine Beratungsstelle als Gast vermittelt Hilfsangebote glaubwürdiger als jedes Arbeitsblatt."
+ },
+ {
+  "slug": "oekosysteme",
+  "thema": "Ökosysteme und Nahrungsnetze",
+  "fach": "Biologie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(ökosystem|nahrungskette|nahrungsnetz|biotop|artenvielfalt|artensterben|lebensraum|lebensgemeinschaft|naturschutz|nationalpark|ökologie|biodiversität)",
+  "exclude": "",
+  "einordnung": "Ökosysteme verbinden Pflanzen, Tiere und Umwelt. Nahrungsketten, Biotope und Artenvielfalt zeigen, wie fein das Gleichgewicht ist und wie Eingriffe wirken.",
+  "begriffe": [
+   "Biotop",
+   "Nahrungskette",
+   "Nahrungsnetz",
+   "Artenvielfalt",
+   "Nationalpark",
+   "Naturschutz"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Beziehungen in einem Lebensraum.",
+  "tipp": "Eine Nahrungskette als Legespiel mit Tierkarten macht Abhängigkeiten sichtbar."
+ },
+ {
+  "slug": "licht-und-optik",
+  "thema": "Licht und Optik",
+  "fach": "Physik",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(licht$|das licht|optik|linse|spiegel|schatten|reflexion|lichtbrechung|spiegelkabinett|lupe|regenbogen|farbe|farben|lichtquelle|lichterkette)",
+  "exclude": "santa lucia|winterblues|lichtenfels|lernbarometer|sprechblasen|stimmung",
+  "einordnung": "Licht und Optik sind zentrale Themen der Physik. Schatten, Spiegelung, Linsen und Farben werden experimentell erforscht.",
+  "begriffe": [
+   "Lichtquellen",
+   "Schatten",
+   "Reflexion",
+   "Lichtbrechung",
+   "Linsen",
+   "Farben"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erklären Schatten und Spiegelbild und beschreiben Linsen.",
+  "tipp": "Taschenlampen, Spiegel und Lupen reichen für ein Stationenlernen mit vielen Aha-Effekten."
+ },
+ {
+  "slug": "schall-und-akustik",
+  "thema": "Schall und Akustik",
+  "fach": "Physik",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(schall$|der schall|akustik|lärm|ton$|töne|geräusche|hörwerkstatt|gehör|lautstärke|echo|ultraschall)",
+  "exclude": "schallenberg|schallplatte",
+  "einordnung": "Schall wird in Sachunterricht und Physik erforscht. Die Lernenden verstehen Töne als Schwingungen und beschäftigen sich mit Lärm und Gehör.",
+  "begriffe": [
+   "Schwingung",
+   "Tonhöhe",
+   "Lautstärke",
+   "Echo",
+   "Lärm",
+   "Gehör"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erklären Schall als Schwingung und schützen ihr Gehör.",
+  "tipp": "Ein Lineal an der Tischkante zeigt Tonhöhen verblüffend deutlich."
+ },
+ {
+  "slug": "kraefte-und-bewegung",
+  "thema": "Kräfte und Bewegung",
+  "fach": "Physik",
+  "klassen": [
+   6,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(kraft$|kräfte|geschwindigkeit|reibung|schwerkraft|gravitation|hebel|newton|beschleunigung|flaschenzug|druck$|auftrieb|schiefe ebene|gleichgewicht)",
+  "exclude": "werkstatt|bewegung dem körper|kraftwerk|krankenpfleger|3d-druck",
+  "einordnung": "Kräfte und Bewegung leiten zur klassischen Mechanik: Geschwindigkeit, Reibung, Schwerkraft und einfache Maschinen wie Hebel und Flaschenzug.",
+  "begriffe": [
+   "Kraft",
+   "Geschwindigkeit",
+   "Reibung",
+   "Hebel",
+   "Flaschenzug",
+   "Gravitation"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Kräfte, berechnen Geschwindigkeiten und nutzen einfache Maschinen.",
+  "tipp": "Messungen mit Federkraftmesser und Rampe liefern Zahlen, die sich zu Gesetzmäßigkeiten ordnen."
+ },
+ {
+  "slug": "waerme-und-energie",
+  "thema": "Wärme und Energieformen",
+  "fach": "Physik",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(wärme|temperatur|thermometer|thermoskanne|energie$|energieerhaltung|kraftwerk|kernkraftwerk|wärmedämmung|aggregatzustände|handwärmer)",
+  "exclude": "ernährung|sport|profile|sonnenenergie",
+  "einordnung": "Wärme, Temperatur und Energie sind Grundbegriffe der Physik. Die Lernenden unterscheiden beides und erforschen Wärmedämmung, Kraftwerke und Aggregatzustände.",
+  "begriffe": [
+   "Temperatur",
+   "Wärmeleitung",
+   "Wärmedämmung",
+   "Energieformen",
+   "Kraftwerk",
+   "Aggregatzustände"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erklären Wärmetransport und vergleichen Energieformen.",
+  "tipp": "Ein Dämmversuch mit warmem Wasser in verschieden isolierten Bechern zeigt Unterschiede deutlich."
+ },
+ {
+  "slug": "stoffe-und-aggregatzustaende",
+  "thema": "Stoffe und Aggregatzustände",
+  "fach": "Chemie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(aggregatzustand|aggregatzustände|stoffgemisch|stoffgemische|trennverfahren|löslichkeit|lösung|schmelzen|verdampfen|kristall|filtrieren|destillation|stoffeigenschaften|reinstoff|diffusion)",
+  "exclude": "mindmap|lf |ce |probe|ostern|werkstück|logicals",
+  "einordnung": "Stoffe und ihre Eigenschaften bilden den Einstieg in die Chemie. Fest, flüssig, gasförmig, Lösen und Trennen sind Alltagsvorgänge, die sich erklären lassen.",
+  "begriffe": [
+   "Aggregatzustände",
+   "Stoffgemische",
+   "Trennverfahren",
+   "Destillation",
+   "Löslichkeit",
+   "Kristalle"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Stoffeigenschaften und trennen Gemische.",
+  "tipp": "Salzwasser eindampfen ist ein einfacher Versuch mit sichtbarem Ergebnis."
+ },
+ {
+  "slug": "saeuren-und-basen",
+  "thema": "Säuren, Laugen und Salze",
+  "fach": "Chemie",
+  "klassen": [
+   8,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(säure|säuren|lauge|laugen|ph-wert|neutralisation|salz$|das salz|salzstock|indikator|streusalz)",
+  "exclude": "salzburg|salzwedel|salzdetfurth|salzungen|salzteig|ostereier|altmark",
+  "einordnung": "Säuren, Laugen und Salze sind Grundlagen der Chemie ab Klasse 8. Die Lernenden prüfen mit Indikatoren, erklären den pH-Wert und die Neutralisation.",
+  "begriffe": [
+   "pH-Wert",
+   "Indikator",
+   "Säuren",
+   "Laugen",
+   "Neutralisation",
+   "Salze"
+  ],
+  "lernziel": "Die Jugendlichen testen Stoffe mit Indikatoren und erklären Neutralisation.",
+  "tipp": "Rotkohlsaft als Indikator ist harmlos, preiswert und eindrucksvoll."
+ },
+ {
+  "slug": "atome-und-periodensystem",
+  "thema": "Atome, Elemente und Periodensystem",
+  "fach": "Chemie",
+  "klassen": [
+   8,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(atom|atome|periodensystem|chemisches element|elemente|atombau|ionen|ionenbindung|molekül|reaktionsgleichung|metalle|edelgase|halogene|metall$)",
+  "exclude": "escape|lf |lesespaziergang|holzverbindungen|goldene regel|barcodes|vereinte|klassenarbeitstrainer",
+  "einordnung": "Atombau und Periodensystem ordnen die Welt der Elemente. In Klasse 8 bis 10 erarbeiten die Lernenden Atommodelle, Bindungen und Reaktionsgleichungen.",
+  "begriffe": [
+   "Atombau",
+   "Periodensystem",
+   "Ionen",
+   "Moleküle",
+   "Metalle",
+   "Reaktionsgleichung"
+  ],
+  "lernziel": "Die Jugendlichen nutzen das Periodensystem und stellen Reaktionsgleichungen auf.",
+  "tipp": "Ein Lernspiel mit Elementkarten trainiert Symbole und Eigenschaften."
+ },
+ {
+  "slug": "verbrennung-und-sauerstoff",
+  "thema": "Verbrennung, Feuer und Sauerstoff",
+  "fach": "Chemie",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(verbrennung|feuer$|das feuer|sauerstoff|oxidation|feuerlöscher|kaminofen|brandschutz|feuerzeug|feuerstein|kohlenstoff|wasserstoff)",
+  "exclude": "salamander|martinsfeuer|feuerwache",
+  "einordnung": "Verbrennung ist die erste chemische Reaktion, die viele Lernende bewusst erleben. Feuer braucht Brennstoff, Sauerstoff und Zündtemperatur, daraus folgen Brandschutz und Löschen.",
+  "begriffe": [
+   "Verbrennung",
+   "Sauerstoff",
+   "Oxidation",
+   "Feuerdreieck",
+   "Löschen",
+   "Brandschutz"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erklären die Voraussetzungen von Verbrennung und leiten Löschverfahren ab.",
+  "tipp": "Eine Kerze unter dem Glas, die erlischt, zeigt die Rolle des Sauerstoffs auf einfache Weise."
+ },
+ {
+  "slug": "komponisten",
+  "thema": "Komponisten und Musikgeschichte",
+  "fach": "Musik",
+  "klassen": [
+   3,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(mozart|beethoven|bach$|johann sebastian|haydn|schubert|brahms|wagner|händel|komponist|komponisten|musikgeschichte|clara schumann|vivaldi|chopin|tschaikowsky|orchester|oper$|weihnachtsoratorium)",
+  "exclude": "bergisch|ach$|ach |bach am",
+  "einordnung": "Musikgeschichte lernt man über Persönlichkeiten. Mozart, Beethoven, Bach und andere stehen für Epochen, Gattungen und Biografien.",
+  "begriffe": [
+   "Barock",
+   "Klassik",
+   "Romantik",
+   "Mozart",
+   "Beethoven",
+   "Oper"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler ordnen Komponisten Epochen zu und hören Beispiele.",
+  "tipp": "Fünf Minuten Hörbeispiel zum Einstieg wirken stärker als jede Biografie."
+ },
+ {
+  "slug": "instrumente-und-musik",
+  "thema": "Instrumente, Rhythmus und Musik hören",
+  "fach": "Musik",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(instrument|geige|klavier|gitarre|trompete|schlagzeug|flöte|panflöte|blaskapelle|dirigieren|musikrichtung|popmusik|klanggeschichte|karneval der tiere|musik$|chor|rhythmus|notenlehre|noten$|lied$)",
+  "exclude": "musik und gefühle|werbung",
+  "einordnung": "Musik erleben und verstehen: Instrumente kennenlernen, Rhythmus spielen, Musikrichtungen unterscheiden und Klanggeschichten erfinden. Der Musikunterricht der Grundschule arbeitet handlungsorientiert.",
+  "begriffe": [
+   "Instrumentenfamilien",
+   "Rhythmus",
+   "Noten",
+   "Klanggeschichte",
+   "Chor",
+   "Musikrichtungen"
+  ],
+  "lernziel": "Die Kinder erkennen Instrumente am Klang und musizieren gemeinsam.",
+  "tipp": "Ein Instrumenten-Hörrätsel mit Klangbeispielen macht zehn Minuten Konzentration zum Spiel."
+ },
+ {
+  "slug": "kuenstler",
+  "thema": "Künstlerinnen und Künstler",
+  "fach": "Kunst",
+  "klassen": [
+   3,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(picasso|van gogh|monet|paul klee|klee|kandinsky|dali|warhol|klimt|renoir|rembrandt|rubens|dürer|michelangelo|da vinci|leonardo|hundertwasser|cézanne|turner|munch|frida kahlo|marc|macke|miro|matisse|manet|degas|goya|raffael|botticelli|vermeer|caspar david friedrich|künstler steckbrief|künstlername)",
+  "exclude": "malerbetrieb|landschaftsmalerei",
+  "einordnung": "Künstlerinnen und Künstler vorstellen heißt, Bildsprache verstehen. Der Kunstunterricht nutzt Werke von Klee, Monet, van Gogh und anderen, um Stil und Technik zu entdecken und selbst auszuprobieren.",
+  "begriffe": [
+   "Biografie",
+   "Werkbeispiele",
+   "Stilmerkmale",
+   "Maltechnik",
+   "Farbwirkung",
+   "Nachgestalten"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler beschreiben Werke und gestalten im Stil des Künstlers.",
+  "tipp": "Ein Bild erst in Ruhe beschreiben lassen und dann nachmalen verbindet Wahrnehmen und Gestalten."
+ },
+ {
+  "slug": "kunstepochen",
+  "thema": "Kunstepochen und Stile",
+  "fach": "Kunst",
+  "klassen": [
+   5,
+   10
+  ],
+  "include": "(?<![a-zäöüß])(kunstepoche|renaissance|romantik|barock|impressionis|expressionis|pop art|surrealis|kubismus|jugendstil|bauhaus|gotik|romanik|realismus|klassizismus|moderne|abstrakt)",
+  "exclude": "literatur|komponisten",
+  "einordnung": "Kunstepochen zeigen den Wandel von Sehen und Gestalten. Von Gotik und Renaissance bis zu Pop-Art und Bauhaus lernen die Schülerinnen und Schüler Merkmale und Vertreter kennen.",
+  "begriffe": [
+   "Gotik",
+   "Renaissance",
+   "Barock",
+   "Impressionismus",
+   "Expressionismus",
+   "Pop-Art"
+  ],
+  "lernziel": "Die Jugendlichen ordnen Werke Epochen zu und begründen ihre Zuordnung.",
+  "tipp": "Ein Epochen-Memory aus Bildern der Klasse trainiert Zuordnung und Merkmale."
+ },
+ {
+  "slug": "malen-und-zeichnen",
+  "thema": "Malen, Zeichnen und Drucken",
+  "fach": "Kunst",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(ausmalbild|ausmalbilder|ausmalen|malen|zeichnen|malspur|pixelbild|mandala|porträt|collage|aquarell|stillleben|perspektive|schraffur|linien|farbenlehre|technisches zeichnen|drucktechnik|linolschnitt)",
+  "exclude": "rechenmosaik|girlande|lies und male|salzteig|oster|wolken, wind",
+  "einordnung": "Malen und Zeichnen sind die Grundtechniken des Kunstunterrichts. Von Ausmalbildern über Mandalas bis zu Porträt und Stillleben entwickeln die Kinder Handgeschick und Bildsprache.",
+  "begriffe": [
+   "Linien",
+   "Formen",
+   "Farben mischen",
+   "Porträt",
+   "Stillleben",
+   "Collage"
+  ],
+  "lernziel": "Die Kinder gestalten Bilder mit unterschiedlichen Techniken und beschreiben ihre Wirkung.",
+  "tipp": "Eine Stunde freies Zeichnen zu einer Musik schafft Entspannung und überraschende Ergebnisse."
+ },
+ {
+  "slug": "basteln-und-werken",
+  "thema": "Basteln, Falten und Werken",
+  "fach": "Kunst",
+  "klassen": [
+   1,
+   6
+  ],
+  "include": "(?<![a-zäöüß])(basteln|bastel|werkstück|origami|falten|girlande|fröbelstern|papiersterne|salzteig|laternen|krippenbau|windlicht|3d-anhänger|schneiden|kleben|modellieren|werkstatt)",
+  "exclude": "krallengriff|rechenmosaik|vorgangsbeschreibung|schreibwerkstatt|englisch|english|hörwerkstatt|märchen|klappbuch|satzwerkstatt|laufdiktat|persönlichkeiten|sport",
+  "einordnung": "Basteln und Werken schulen Feinmotorik, Planung und Geduld. Papier, Karton, Salzteig und Naturmaterialien sind die Werkstoffe der Grundschule, oft mit saisonalem Bezug.",
+  "begriffe": [
+   "Falten",
+   "Schneiden",
+   "Kleben",
+   "Girlande",
+   "Origami",
+   "Salzteig"
+  ],
+  "lernziel": "Die Kinder folgen einer Bauanleitung und fertigen ein Werkstück an.",
+  "tipp": "Eine Probe-Vorlage vorab selbst gebastelt zeigt Stolpersteine und spart Zeit."
+ },
+ {
+  "slug": "daz-alltag",
+  "thema": "DaZ: Wortschatz für den Alltag",
+  "fach": "DaZ/DaF",
+  "klassen": [
+   1,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(daz-wortschatz|daz & leseförderung|daz|deutsch als zweitsprache|alltag|unterwegs|mein zuhause|essen und trinken|kleidung|körper und gesundheit|in der schule|einkaufen|arztbesuch|wohnung)",
+  "exclude": "algorithmen|esa |recht im alltag|lies und male|schlangensätze",
+  "einordnung": "Deutsch als Zweitsprache braucht Wortschatz für den Alltag: Familie, Wohnen, Kleidung, Essen, Körper. Bildgestützte Materialien erleichtern den Einstieg für neu zugewanderte Kinder.",
+  "begriffe": [
+   "Wortschatz",
+   "Bildkarten",
+   "Alltagssituationen",
+   "Artikel",
+   "Sätze bilden",
+   "Leseförderung"
+  ],
+  "lernziel": "Die Kinder verstehen und nutzen Alltagswortschatz in einfachen Sätzen.",
+  "tipp": "Bildkarten mit Wort und Artikel an Gegenständen im Raum schaffen Sprachanlässe den ganzen Tag."
+ },
+ {
+  "slug": "englisch-redewendungen",
+  "thema": "Englisch: Idioms, Tongue Twisters und Wortschatz",
+  "fach": "Englisch",
+  "klassen": [
+   5,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(english workshop|englisch-werkstatt|idioms|tongue|teasers|vocabulary|present perfect|simple past|i have, who has|all about me|don.t say it|reading|english-speaking)",
+  "exclude": "probetest|probeprüfung|escape|profile",
+  "einordnung": "Englisch in der Sekundarstufe verlangt mehr als Vokabeln: Redewendungen, Zungenbrecher, Zeitformen und Landeskunde machen Sprache lebendig.",
+  "begriffe": [
+   "Idioms",
+   "Tongue Twisters",
+   "Present Perfect",
+   "Simple Past",
+   "Vocabulary",
+   "English-speaking countries"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler verstehen und verwenden Redewendungen und Zeitformen.",
+  "tipp": "Ein Idiom pro Woche, das wörtlich gezeichnet wird, bleibt dauerhaft im Gedächtnis."
+ },
+ {
+  "slug": "sport",
+  "thema": "Sport, Spiele und Bewegung",
+  "fach": "Sport",
+  "klassen": [
+   1,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(sport|fußball|basketball|volleyball|turnen|bundesjugendspiele|paralympi|olympi|spiele aus aller welt|sportverein|fitness|leichtathletik|schwimmen|handball|tennis|yoga)",
+  "exclude": "materialpaket rechenwelten|schauspieler|mein recht|spielen und|ernährung",
+  "einordnung": "Sport und Bewegung gehören zum Schulalltag. Neben Regeln und Technik stehen Fairness, Gesundheit und große Sportereignisse im Fokus.",
+  "begriffe": [
+   "Mannschaftsspiele",
+   "Regeln",
+   "Bundesjugendspiele",
+   "Fitness",
+   "Fairness",
+   "Sportarten"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler kennen Regeln und gehen fair miteinander um.",
+  "tipp": "Eine Sportart in der Theorie vorzubereiten und dann zu spielen verbindet Wissen und Praxis."
+ },
+ {
+  "slug": "naturkatastrophen",
+  "thema": "Naturkatastrophen",
+  "fach": "Erdkunde",
+  "klassen": [
+   5,
+   9
+  ],
+  "include": "(?<![a-zäöüß])(naturkatastrophe|katastrophe|hochwasser|lawine|dürre|waldbrand|waldbrände|sturmflut|erdrutsch|überschwemmung|flut$|tsunami|erdbeben|vulkanausbruch)",
+  "exclude": "klassenarbeitstrainer|ballade",
+  "einordnung": "Naturkatastrophen verbinden Erdkunde und Sachunterricht. Hochwasser, Sturm, Erdbeben und Waldbrand werden nach Ursachen, Folgen und Vorsorge untersucht.",
+  "begriffe": [
+   "Hochwasser",
+   "Sturmflut",
+   "Lawine",
+   "Waldbrand",
+   "Tsunami",
+   "Vorsorge"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erklären Ursachen und beschreiben Schutzmaßnahmen.",
+  "tipp": "Ein Notfallplan für die eigene Familie macht Vorsorge konkret."
+ },
+ {
+  "slug": "planeten-und-sterne",
+  "thema": "Sterne, Sternbilder und Astronomie",
+  "fach": "Sachunterricht",
+  "klassen": [
+   4,
+   8
+  ],
+  "include": "(?<![a-zäöüß])(sternbild|sternbilder|sternbildsucher|sterne$|astronomie|polarstern|sternenhimmel|polarlicht|sonnenfinsternis|mondphasen|teleskop|sternschnuppe|kometen)",
+  "exclude": "",
+  "einordnung": "Der Sternenhimmel öffnet den Blick über den Alltag hinaus. Sternbilder, Polarstern und Mondphasen lassen sich ohne großes Gerät erkunden.",
+  "begriffe": [
+   "Sternbilder",
+   "Polarstern",
+   "Mondphasen",
+   "Teleskop",
+   "Polarlicht",
+   "Astronomie"
+  ],
+  "lernziel": "Die Schülerinnen und Schüler erkennen Sternbilder und beschreiben Mondphasen.",
+  "tipp": "Ein Mondtagebuch über einen Monat zeigt die Phasen ganz von selbst."
+ }
+]
