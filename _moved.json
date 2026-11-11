@@ -636,6 +636,10 @@
 "es/musica.html",
 "musica"
 ],
+"es/p/17899305-automovil.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/17899786-bamberg.html": [
 "es/recursos.html",
 "Todos los recursos"
@@ -700,7 +704,15 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
+"es/p/17913861-marmol.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/17914305-nordlingen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/17915815-ortoedro.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -725,6 +737,10 @@
 "Todos los recursos"
 ],
 "es/p/17921165-rothenburg-ob-der-tauber.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/17922497-tecnecio.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -760,9 +776,25 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
+"es/p/2088463-dardos.html": [
+"es/p/17904174-dardos.html",
+"Dardos – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2088884-comercio.html": [
+"es/p/17903016-comercio.html",
+"Comercio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2088908-alaska.html": [
+"es/p/17897739-alaska.html",
+"Alaska – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
 "es/p/2095178-gunther-uecker.html": [
 "es/p/18175379-gunther-uecker.html",
 "Günther Uecker – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095265-periodico.html": [
+"es/p/17915453-periodico.html",
+"Periódico – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2095292-tormenta-electrica.html": [
 "es/p/18178763-tormenta-electrica.html",
@@ -775,6 +807,10 @@
 "es/p/2095796-somalia.html": [
 "es/p/17922828-somalia.html",
 "Somalia – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095919-muerte.html": [
+"es/p/17913811-muerte.html",
+"Muerte – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2096367-vasco-da-gama.html": [
 "es/p/18183395-vasco-da-gama.html",
@@ -808,13 +844,25 @@
 "es/p/18175317-cancer.html",
 "Cáncer – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2099936-menstruacion.html": [
+"es/p/18147789-menstruacion.html",
+"Menstruación – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
 "es/p/2100114-squalius-cephalus.html": [
 "es/p/18177180-squalius-cephalus.html",
 "Squalius cephalus – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2101008-jura.html": [
+"es/p/18134427-jura.html",
+"Jura – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
 "es/p/2101211-spiel-des-jahres.html": [
 "es/p/18177150-spiel-des-jahres.html",
 "Spiel des Jahres – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2101242-psicologia.html": [
+"es/p/17917323-psicologia.html",
+"Psicología – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2101942-ventana.html": [
 "es/p/18183511-ventana.html",
@@ -823,6 +871,10 @@
 "es/p/2102316-poesia-lirica.html": [
 "es/p/18175451-poesia-lirica.html",
 "Poesía lírica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2104013-horno-de-microondas.html": [
+"es/p/18129967-horno-de-microondas.html",
+"Horno de microondas – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2366217-sodio.html": [
 "es/p/18177106-sodio.html",
@@ -984,33 +1036,9 @@
 "es/p/18175343-eco.html",
 "Eco – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2375730-marmol.html": [
-"es/p/17913861-marmol.html",
-"Mármol – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375739-ortoedro.html": [
-"es/p/17915815-ortoedro.html",
-"Ortoedro – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375749-tecnecio.html": [
-"es/p/17922497-tecnecio.html",
-"Tecnecio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375761-automovil.html": [
-"es/p/17899305-automovil.html",
-"Automóvil – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2376071-dardos.html": [
-"es/p/17904174-dardos.html",
-"Dardos – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
 "es/p/2376074-juglans.html": [
 "es/p/17912444-juglans.html",
 "Juglans – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2376077-jura.html": [
-"es/p/18134427-jura.html",
-"Jura – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2378962-gremio.html": [
 "es/p/18175366-gremio.html",
@@ -1068,37 +1096,9 @@
 "es/p/18170212-pensamiento.html",
 "Pensamiento – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
-"es/p/2392540-horno-de-microondas.html": [
-"es/p/18129967-horno-de-microondas.html",
-"Horno de microondas – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392544-psicologia.html": [
-"es/p/17917323-psicologia.html",
-"Psicología – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392578-alaska.html": [
-"es/p/17897739-alaska.html",
-"Alaska – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392591-comercio.html": [
-"es/p/17903016-comercio.html",
-"Comercio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
 "es/p/2392605-imperio-otomano.html": [
 "es/p/17910589-imperio-otomano.html",
 "Imperio otomano – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392612-menstruacion.html": [
-"es/p/18147789-menstruacion.html",
-"Menstruación – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392621-muerte.html": [
-"es/p/17913811-muerte.html",
-"Muerte – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392645-periodico.html": [
-"es/p/17915453-periodico.html",
-"Periódico – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2400833-taller-de-tarjetas-las-emociones-plus-tarjetas-de-pinza-frases-con-hue.html": [
 "es/recursos.html",
@@ -1139,10 +1139,6 @@
 "animaux-et-nature"
 ],
 "fr/arts-et-culture-niveau-6.html": [
-"fr/arts-et-culture.html",
-"arts-et-culture"
-],
-"fr/arts-et-culture-niveau-cm1.html": [
 "fr/arts-et-culture.html",
 "arts-et-culture"
 ],
@@ -1221,10 +1217,6 @@
 "fr/p/18103271-hibou-moyen-duc.html": [
 "fr/p/2100054-hibou-moyen-duc.html",
 "Hibou moyen-duc – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18103706-pomme-de-terre.html": [
-"fr/p/2360924-pomme-de-terre.html",
-"Pomme de terre – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18104227-pate-feuilletee.html": [
 "fr/p/2099868-pate-feuilletee.html",
@@ -1406,10 +1398,6 @@
 "fr/p/2099774-ananas.html",
 "Ananas – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18115014-anatomie.html": [
-"fr/p/2102212-anatomie.html",
-"Anatomie – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18115036-andorre.html": [
 "fr/p/2102553-andorre.html",
 "Andorre – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -1437,10 +1425,6 @@
 "fr/p/18115208-angleterre.html": [
 "fr/p/2358469-angleterre.html",
 "Angleterre – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18115296-abies.html": [
-"fr/p/2101210-abies.html",
-"Abies – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18115329-aborigenes-d-australie.html": [
 "fr/p/2082610-aborigenes-d-australie.html",
@@ -1534,10 +1518,6 @@
 "fr/p/2098332-arachide.html",
 "Arachide – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18116316-arbalete.html": [
-"fr/p/2082517-arbalete.html",
-"Arbalète – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18116373-arbre.html": [
 "fr/p/2101497-arbre.html",
 "Arbre – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -1553,10 +1533,6 @@
 "fr/p/18116600-arc-en-ciel.html": [
 "fr/p/2082587-arc-en-ciel.html",
 "Arc-en-ciel – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18116659-archimede.html": [
-"fr/p/2106870-archimede.html",
-"Archimède – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18116707-archeologie.html": [
 "fr/p/2358530-archeologie.html",
@@ -1681,10 +1657,6 @@
 "fr/p/18117924-acores.html": [
 "fr/p/2099583-acores.html",
 "Açores - Fiche - texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18117942-autisme.html": [
-"fr/p/2106858-autisme.html",
-"Autisme – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18117971-aerosol.html": [
 "fr/p/2359063-aerosol.html",
@@ -1934,10 +1906,6 @@
 "fr/p/2099294-bouche.html",
 "Bouche - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18120533-bouddha.html": [
-"fr/p/2106836-bouddha.html",
-"Bouddha – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18120631-bourgeon.html": [
 "fr/p/2101944-bourgeon.html",
 "Bourgeon – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -2102,10 +2070,6 @@
 "fr/p/2101085-camping.html",
 "Camping – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18122203-camera.html": [
-"fr/p/2359757-camera.html",
-"Caméra – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18122229-canal-de-panama.html": [
 "fr/p/2098469-canal-de-panama.html",
 "Canal de Panama – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -2115,8 +2079,8 @@
 "Canal de Suez - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122304-canberra.html": [
-"fr/p/2106283-canberra.html",
-"Canberra – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101507-canberra.html",
+"Canberra - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122334-cancer.html": [
 "fr/p/2101807-cancer.html",
@@ -2149,10 +2113,6 @@
 "fr/p/18122543-cap-vert.html": [
 "fr/p/2101399-cap-vert.html",
 "Cap-Vert – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18122578-capitale-europeenne-de-la-culture.html": [
-"fr/p/2359786-capitale-europeenne-de-la-culture.html",
-"Capitale européenne de la culture – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122604-caravane.html": [
 "fr/p/2106833-caravane.html",
@@ -2222,10 +2182,6 @@
 "fr/p/2098338-cathedrale-de-cologne.html",
 "Cathédrale de Cologne – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18126397-celtes.html": [
-"fr/p/2359846-celtes.html",
-"Celtes – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18126406-central-park.html": [
 "fr/p/2105494-central-park.html",
 "Central Park – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -2242,10 +2198,6 @@
 "fr/p/2098800-cercle.html",
 "Cercle – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18126451-cerf-volant.html": [
-"fr/p/2359877-cerf-volant.html",
-"Cerf-volant – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18126474-anciens-territoires-de-l-est-de-l-allemagne.html": [
 "fr/p/2082573-anciens-territoires-de-l-est-de-l-allemagne.html",
 "Anciens territoires de l'Est de l'Allemagne – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -2261,10 +2213,6 @@
 "fr/p/18126509-atmosphere.html": [
 "fr/p/2102220-atmosphere.html",
 "Atmosphère – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18126523-atoll.html": [
-"fr/p/2362034-atoll.html",
-"Atoll – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126539-auguste.html": [
 "fr/p/2101880-auguste.html",
@@ -2314,10 +2262,6 @@
 "fr/p/2099817-charlemagne.html",
 "Charlemagne – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18126739-charles-darwin.html": [
-"fr/p/2106871-charles-darwin.html",
-"Charles Darwin – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18126752-charles-lindbergh.html": [
 "fr/p/2099945-charles-lindbergh.html",
 "Charles Lindbergh – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -2363,8 +2307,8 @@
 "Toutes les ressources"
 ],
 "fr/p/18126949-chihuahua.html": [
-"fr/p/2099972-chihuahua.html",
-"Chihuahua - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105617-chihuahua.html",
+"Chihuahua – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126963-chili.html": [
 "fr/p/2100723-chili.html",
@@ -2395,8 +2339,8 @@
 "Chocolat – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127104-chouette-hulotte.html": [
-"fr/p/2101122-chouette-hulotte.html",
-"Chouette hulotte – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2392579-chouette-hulotte.html",
+"Chouette hulotte – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127124-christianisme.html": [
 "fr/p/2099987-christianisme.html",
@@ -2430,17 +2374,9 @@
 "fr/p/2359934-chateau-de-versailles.html",
 "Château de Versailles – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18127265-chomage.html": [
-"fr/p/2359960-chomage.html",
-"Chômage – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18127278-ciconiidae.html": [
 "fr/p/2102954-ciconiidae.html",
 "Ciconiidae – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18127292-cigarette.html": [
-"fr/p/2359967-cigarette.html",
-"Cigarette – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127301-cigogne-blanche.html": [
 "fr/p/2095158-cigogne-blanche.html",
@@ -2515,8 +2451,8 @@
 "Cocotier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127795-coiffeur.html": [
-"fr/p/2106843-coiffeur.html",
-"Coiffeur – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100468-coiffeur.html",
+"Coiffeur - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127814-cola.html": [
 "fr/p/2100760-cola.html",
@@ -2570,10 +2506,6 @@
 "fr/p/2105824-concombre.html",
 "Concombre – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18128339-confucius.html": [
-"fr/p/2360026-confucius.html",
-"Confucius – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18128399-confederation-germanique.html": [
 "fr/p/2106875-confederation-germanique.html",
 "Confédération germanique – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -2614,21 +2546,9 @@
 "fr/p/2101975-copenhague.html",
 "Copenhague – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18129047-copernicium.html": [
-"fr/p/2360044-copernicium.html",
-"Copernicium – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18129096-coqueluche.html": [
-"fr/p/2106214-coqueluche.html",
-"Coqueluche – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18129130-corail.html": [
 "fr/p/2100223-corail.html",
 "Corail – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18129171-cordillere-des-andes.html": [
-"fr/p/2100513-cordillere-des-andes.html",
-"Cordillère des Andes – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129205-corne.html": [
 "fr/p/2105726-corne.html",
@@ -2697,10 +2617,6 @@
 "fr/p/18129864-cracovie.html": [
 "fr/p/2100884-cracovie.html",
 "Cracovie – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18129905-crayon.html": [
-"fr/p/2360071-crayon.html",
-"Crayon – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129950-cricetus-cricetus.html": [
 "fr/p/2103272-cricetus-cricetus.html",
@@ -2827,8 +2743,8 @@
 "Danemark – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18131364-cygne.html": [
-"fr/p/2104413-cygne.html",
-"Cygne – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2096246-cygne.html",
+"Cygne - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18131403-cur.html": [
 "fr/p/2106594-cur.html",
@@ -2870,10 +2786,6 @@
 "fr/p/2101347-delphinidae.html",
 "Delphinidae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18131886-dendrobatidae.html": [
-"fr/p/2095531-dendrobatidae.html",
-"Dendrobatidae – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18131930-diabete.html": [
 "fr/p/2102078-diabete.html",
 "Diabète – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -2899,8 +2811,8 @@
 "Digestion – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18132280-digue.html": [
-"fr/p/2106194-digue.html",
-"Digue – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101345-digue.html",
+"Digue - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18132318-dindon-sauvage.html": [
 "fr/p/2095509-dindon-sauvage.html",
@@ -2954,21 +2866,9 @@
 "fr/p/2360159-don-quichotte.html",
 "Don Quichotte – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18132811-don-de-sang.html": [
-"fr/p/2360675-don-de-sang.html",
-"Don de sang – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18132839-dopage.html": [
 "fr/p/2360180-dopage.html",
 "Dopage – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18132866-dornbirn.html": [
-"fr/p/2106559-dornbirn.html",
-"Dornbirn – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18132900-dracula.html": [
-"fr/p/2102136-dracula.html",
-"Dracula – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18132930-drogue.html": [
 "fr/p/2360208-drogue.html",
@@ -2977,10 +2877,6 @@
 "fr/p/18133007-druide.html": [
 "fr/p/2105753-druide.html",
 "Druide – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18133033-dubai.html": [
-"fr/p/2360684-dubai.html",
-"Dubaï – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18133060-dublin.html": [
 "fr/p/2363152-dublin.html",
@@ -3085,10 +2981,6 @@
 "fr/p/18133976-engrais.html": [
 "fr/p/2105760-engrais.html",
 "Engrais – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18133996-enseignant.html": [
-"fr/p/2100137-enseignant.html",
-"Enseignant – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134020-entraineur.html": [
 "fr/p/2097387-entraineur.html",
@@ -3394,10 +3286,6 @@
 "fr/p/2102156-freres-montgolfier.html",
 "Frères Montgolfier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18135992-frederic-chopin.html": [
-"fr/p/2098561-frederic-chopin.html",
-"Frédéric Chopin – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18136016-frederic-ii.html": [
 "fr/p/2101717-frederic-ii.html",
 "Frédéric II – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -3445,14 +3333,6 @@
 "fr/p/18136343-gaz.html": [
 "fr/p/2106499-gaz.html",
 "Gaz – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18136373-gazelle.html": [
-"fr/p/2360847-gazelle.html",
-"Gazelle – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18136407-gdansk.html": [
-"fr/p/2360865-gdansk.html",
-"Gdańsk – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18136480-genre-grammatical.html": [
 "fr/p/2100871-genre-grammatical.html",
@@ -3578,10 +3458,6 @@
 "fr/p/2098147-grece.html",
 "Grèce – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18137772-greve-etudiante-pour-le-climat.html": [
-"fr/p/2360883-greve-etudiante-pour-le-climat.html",
-"Grève étudiante pour le climat – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18137812-guatemala.html": [
 "fr/p/2363195-guatemala.html",
 "Guatemala – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -3625,10 +3501,6 @@
 "fr/p/18138108-guillaume-le-conquerant.html": [
 "fr/p/2103849-guillaume-le-conquerant.html",
 "Guillaume le Conquérant – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18138185-guitare.html": [
-"fr/p/2106987-guitare.html",
-"Guitare – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18138310-gulf-stream.html": [
 "fr/p/2363222-gulf-stream.html",
@@ -3854,10 +3726,6 @@
 "fr/p/2368139-grenoble.html",
 "Grenoble – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18142492-bangladesh.html": [
-"fr/p/2106253-bangladesh.html",
-"Bangladesh – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18142494-saint-paul.html": [
 "fr/p/2375893-saint-paul.html",
 "Saint-Paul – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -3998,10 +3866,6 @@
 "fr/p/2095938-canton-d-uri.html",
 "Canton d'Uri - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18143609-capra.html": [
-"fr/p/2098869-capra.html",
-"Capra – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18143635-caraibes.html": [
 "fr/p/2102191-caraibes.html",
 "Caraïbes – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -4085,10 +3949,6 @@
 "fr/p/18144174-chisinau.html": [
 "fr/p/2369636-chisinau.html",
 "Chișinău – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18144191-cholera.html": [
-"fr/p/2100735-cholera.html",
-"Choléra – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18144212-christkindel.html": [
 "fr/p/2099997-christkindel.html",
@@ -4262,10 +4122,6 @@
 "fr/p/2369780-couvre-feu.html",
 "Couvre-feu – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18145401-cecite.html": [
-"fr/p/2106914-cecite.html",
-"Cécité – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18145426-cerumen.html": [
 "fr/p/2369803-cerumen.html",
 "Cérumen – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -4394,10 +4250,6 @@
 "fr/p/2098547-enns.html",
 "Enns – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18146326-espagnol.html": [
-"fr/p/2096157-espagnol.html",
-"Espagnol – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18146341-esprit.html": [
 "fr/p/2105585-esprit.html",
 "Esprit – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -4477,10 +4329,6 @@
 "fr/p/18146787-champigny-sur-marne.html": [
 "fr/p/2370741-champigny-sur-marne.html",
 "Champigny-sur-Marne – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18146807-empire-espagnol.html": [
-"fr/p/2096126-empire-espagnol.html",
-"Empire espagnol – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146822-fracturation-hydraulique.html": [
 "fr/p/2102119-fracturation-hydraulique.html",
@@ -4726,21 +4574,13 @@
 "fr/p/2370932-historien.html",
 "Historien – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18148216-hiver.html": [
-"fr/p/2360893-hiver.html",
-"Hiver – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18148233-hobby.html": [
-"fr/p/2095903-hobby.html",
-"Hobby – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18148248-hockey-sur-gazon.html": [
 "fr/p/2101937-hockey-sur-gazon.html",
 "Hockey sur gazon – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148262-hockey-sur-glace.html": [
-"fr/p/2106849-hockey-sur-glace.html",
-"Hockey sur glace – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100528-hockey-sur-glace.html",
+"Hockey sur glace - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148282-hollywood.html": [
 "fr/p/2106622-hollywood.html",
@@ -4950,10 +4790,6 @@
 "fr/p/2099269-judo.html",
 "Judo – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18153690-jugendstil.html": [
-"fr/p/2106883-jugendstil.html",
-"Jugendstil – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18153699-jupiter.html": [
 "fr/p/2100807-jupiter.html",
 "Jupiter – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5030,10 +4866,6 @@
 "fr/p/2363607-klagenfurt.html",
 "Klagenfurt – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18154339-koala.html": [
-"fr/p/2365257-koala.html",
-"Koala – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18154366-koweit.html": [
 "fr/p/2098256-koweit.html",
 "Koweït – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5041,10 +4873,6 @@
 "fr/p/18154397-kosice.html": [
 "fr/p/2098683-kosice.html",
 "Košice – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18154430-kremlin-de-moscou.html": [
-"fr/p/2104748-kremlin-de-moscou.html",
-"Kremlin de Moscou – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18154449-krypton.html": [
 "fr/p/2104048-krypton.html",
@@ -5182,10 +5010,6 @@
 "fr/p/2100019-cendrillon.html",
 "Cendrillon – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18155515-connaissance.html": [
-"fr/p/2104756-connaissance.html",
-"Connaissance – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18155551-conservatisme.html": [
 "fr/p/2374994-conservatisme.html",
 "Conservatisme – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5254,17 +5078,9 @@
 "fr/p/2096822-karl-may.html",
 "Karl May – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18156173-langues-rheto-romanes.html": [
-"fr/p/2098834-langues-rheto-romanes.html",
-"Langues rhéto-romanes – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18156199-lanthane.html": [
 "fr/p/2371004-lanthane.html",
 "Lanthane – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18156237-larinae.html": [
-"fr/p/2102068-larinae.html",
-"Larinae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156277-larix.html": [
 "fr/p/2098811-larix.html",
@@ -5350,10 +5166,6 @@
 "fr/p/2104720-les-verts.html",
 "Les Verts – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18156987-lesotho.html": [
-"fr/p/2106592-lesotho.html",
-"Lesotho – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18157019-lettonie.html": [
 "fr/p/2102108-lettonie.html",
 "Lettonie – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5399,8 +5211,8 @@
 "Liechtenstein – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18157326-lime.html": [
-"fr/p/2105794-lime.html",
-"Lime – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100309-lime.html",
+"Lime - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18157349-limes.html": [
 "fr/p/2100845-limes.html",
@@ -5554,10 +5366,6 @@
 "fr/p/2100160-leopard.html",
 "Léopard – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18158392-macareux-moine.html": [
-"fr/p/2106790-macareux-moine.html",
-"Macareux moine – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18158420-machine.html": [
 "fr/p/2104582-machine.html",
 "Machine – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5587,8 +5395,8 @@
 "Madrid – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158567-magie.html": [
-"fr/p/2106257-magie.html",
-"Magie – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101467-magie.html",
+"Magie - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158589-magnesium.html": [
 "fr/p/2104871-magnesium.html",
@@ -5631,8 +5439,8 @@
 "Malaisie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158830-maldives.html": [
-"fr/p/2106271-maldives.html",
-"Maldives – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101495-maldives.html",
+"Maldives - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158868-mali.html": [
 "fr/p/2106084-mali.html",
@@ -5746,10 +5554,6 @@
 "fr/p/2364051-martin-luther-king.html",
 "Martin Luther King – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18160208-martin-de-tours.html": [
-"fr/p/2106233-martin-de-tours.html",
-"Martin de Tours – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18160231-martyr.html": [
 "fr/p/2100261-martyr.html",
 "Martyr – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5786,10 +5590,6 @@
 "fr/p/2095087-matiere-premiere.html",
 "Matière première – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18160471-maurice.html": [
-"fr/p/2106241-maurice.html",
-"Maurice – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18160494-mauritanie.html": [
 "fr/p/2364066-mauritanie.html",
 "Mauritanie – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5802,10 +5602,6 @@
 "fr/p/2101795-maximilien-de-robespierre.html",
 "Maximilien de Robespierre – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
-"fr/p/18160550-mayas.html": [
-"fr/p/2364085-mayas.html",
-"Mayas – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
 "fr/p/18160573-mayonnaise.html": [
 "fr/p/2106262-mayonnaise.html",
 "Mayonnaise – Fiche : texte à trous, compréhension orale et mots mêlés"
@@ -5813,10 +5609,6 @@
 "fr/p/18160599-megaloceros.html": [
 "fr/p/2097099-megaloceros.html",
 "Megaloceros – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18160622-meitnerium.html": [
-"fr/p/2364088-meitnerium.html",
-"Meitnérium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18160644-melbourne.html": [
 "fr/p/2106092-melbourne.html",
@@ -5841,10 +5633,6 @@
 "fr/p/18160725-menuisier.html": [
 "fr/p/2364100-menuisier.html",
 "Menuisier – Fiche : texte à trous, compréhension orale et mots mêlés"
-],
-"fr/p/18160739-mer.html": [
-"fr/p/2100675-mer.html",
-"Mer – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18160755-mer-caspienne.html": [
 "fr/p/2371057-mer-caspienne.html",
@@ -5934,6 +5722,742 @@
 "fr/p/2403359-atelier-des-personnages-picasso.html",
 "Atelier des personnages : Picasso – Fiche à lire et à compléter, CE2–CM1 (gratuit)"
 ],
+"fr/p/2082517-arbalete.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095183-soja.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095337-victoria.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095500-optique.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095519-tornade.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095531-dendrobatidae.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095545-temps.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095627-eliomys-quercinus.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095734-naturalite.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095823-titanic.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095903-hobby.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2095922-agriculteur.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096126-empire-espagnol.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096157-espagnol.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096276-brake.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096842-vespinae.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096854-pendule.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096862-salzbourg.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096877-salzgitter.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2096892-zagreb.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2097120-zebre.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2097331-humulus.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2098561-frederic-chopin.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2098817-mike-pence.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2098834-langues-rheto-romanes.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2098869-capra.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2098900-propagande.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2098925-schonebeck.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2098950-herdecke.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2099023-pourcentage.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2099031-neunkirchen.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2099034-lohne.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2099194-neon.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2099483-herzberg-am-harz.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2100137-enseignant.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2100511-naturalisation.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2100513-cordillere-des-andes.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2100671-medecine.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2100675-mer.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2100735-cholera.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101042-zea-mays.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101210-abies.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101253-superstition.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101367-saison.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101386-fehmarn.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101424-carotte.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101588-humanisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101595-helmut-kohl.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101956-siphonaptera.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2101965-husky.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102068-larinae.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102094-moineau-domestique.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102136-dracula.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102212-anatomie.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102255-revolte-de-juillet.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102416-arrondissement-de-lorrach.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102590-sommeil.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102806-myriapoda.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2102904-planetarium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103065-odin.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103073-sachertorte.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103077-tic.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103085-spree.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103118-tambour.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103290-rhinoceros.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103580-strandkorb.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103762-renard-roux.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103776-winston-churchill.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103925-trouble-psychique.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103942-pouls.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103977-ellwangen.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2103992-freudenberg.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104179-gelnhausen.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104194-poneck.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104218-bad-worishofen.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104599-leonardo-dicaprio.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104748-kremlin-de-moscou.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104756-connaissance.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104831-poseidon.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104909-riedlingen.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2104970-rutherfordium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2105151-waldkirch.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2105196-duderstadt.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2105699-hallig.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2105794-lime.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106194-digue.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106198-simiiformes.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106203-saison.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106214-coqueluche.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106233-martin-de-tours.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106241-maurice.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106253-bangladesh.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106271-maldives.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106276-brandebourg-sur-la-havel.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106559-dornbirn.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106592-lesotho.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106687-rouille.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106778-echecs.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106782-ludenscheid.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106790-macareux-moine.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106791-lubeck.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106804-norvege.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106809-ethiopie.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106810-spremberg.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106812-husum.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106815-palladium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106816-meiningen.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106817-vellmar.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106818-nagold.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106829-wulfrath.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106830-rhenium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106834-siecle-des-lumieres.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106835-charles-iii.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106836-bouddha.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106850-anke-engelke.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106856-namibie.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106858-autisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106866-bowling.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106869-ours-brun.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106870-archimede.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106871-charles-darwin.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106872-cornelia-funke.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106876-ordre-teutonique.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106880-expression-faciale.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106883-jugendstil.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106885-arthropodes.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106893-strigiformes.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106911-lecture.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106914-cecite.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2106987-guitare.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2359757-camera.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2359786-capitale-europeenne-de-la-culture.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2359846-celtes.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2359877-cerf-volant.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2359960-chomage.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2359967-cigarette.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360026-confucius.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360044-copernicium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360071-crayon.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360675-don-de-sang.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360684-dubai.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360847-gazelle.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360865-gdansk.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360883-greve-etudiante-pour-le-climat.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360893-hiver.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360905-neige.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2360924-pomme-de-terre.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2362034-atoll.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364085-mayas.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364088-meitnerium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364189-minaret.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364212-monoculture.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364250-moscou.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364255-moteur-de-recherche.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364301-mythologie-grecque.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364311-medicament.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364504-paludisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364740-protection-hygienique.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364783-puits-a-eau.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364808-quarantaine.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364814-quartette.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364883-rois-mages.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2364974-scoutisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365046-seisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365050-taj-mahal.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365080-technetium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365118-theatre.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365145-tourisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365163-turquie.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365181-vernis-a-ongles.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365192-voie-lactee.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365194-veganisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365199-velo.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365246-iles-malouines.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365257-koala.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2365325-pere-noel.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2372437-phoenix-dactylifera.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2372484-poison.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2372658-petrole.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2372674-racisme.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2372704-radium.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2372742-carnivora.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2372779-rite-funeraire.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2373743-ukrainien.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
 "fr/p/2406639-atelier-d-anglais-all-about-me-je-me-presente-gratuit-ce2-cm1.html": [
 "fr/ressources.html",
 "Toutes les ressources"
@@ -5946,7 +6470,27 @@
 "fr/p/2412051-cartes-a-pinces-au-bord-de-la-mer-cartes-a-pinces-du-cp-au-cm1.html",
 "Cartes à pinces : Au bord de la mer – Cartes à pinces – du CP au CM1"
 ],
+"fr/p/2415717-cocotte-en-papier-pirates-cocottes-en-papier-du-cp-au-cm1.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
 "fr/p/2417025-mon-cahier-de-calcul-nombres-jusqu-a-20-cpce1.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2419675-cocotte-en-papier-contes-de-fees-cocottes-en-papier-du-cp-au-cm1.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2420073-jeux-de-mots-ne-le-dis-pas-l-espace-du-ce1-au-cm1.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2420452-jeux-de-mots-ne-le-dis-pas-dinosaures-du-ce1-au-cm1.html": [
+"fr/ressources.html",
+"Toutes les ressources"
+],
+"fr/p/2420726-cocotte-en-papier-sports-cocottes-en-papier-du-cp-au-cm1.html": [
 "fr/ressources.html",
 "Toutes les ressources"
 ],
@@ -6028,7 +6572,7 @@
 "it/risorse.html",
 "Tutti i materiali"
 ],
-"it/p/2362230-compact-disc.html": [
+"it/p/2366682-taiga.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
