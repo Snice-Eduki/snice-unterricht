@@ -43,6 +43,14 @@
 "material/2416158-wortspiele-sag-es-nicht-hobbys-klasse-2-4-1.html": [
 "materialien.html",
 "Materialien"
+],
+"material/2417347-mensch-natur-ethik-reihe-klasse-5-7-21-arbeitsblaetter-in-3-niveaus-fragekarten-klassenarbeit.html": [
+"materialien.html",
+"Materialien"
+],
+"material/2417356-raumgeometrie-koerper-und-formeln-tafelposter-kaertchen-und-uebungen-in-3-niveaus.html": [
+"materialien.html",
+"Materialien"
 ]
 },
 "en": {
@@ -544,6 +552,14 @@
 ]
 },
 "es": {
+"es/animales-y-naturaleza-grado-2-primaria.html": [
+"es/animales-y-naturaleza.html",
+"animales-y-naturaleza"
+],
+"es/animales-y-naturaleza-grado-3-primaria.html": [
+"es/animales-y-naturaleza-grado-3.html",
+"animales-y-naturaleza-grado-3"
+],
 "es/animales-y-naturaleza-grado-6-primaria.html": [
 "es/animales-y-naturaleza.html",
 "animales-y-naturaleza"
@@ -587,6 +603,10 @@
 "es/fichas-de-lectura-grado-4.html": [
 "es/fichas-de-lectura.html",
 "fichas-de-lectura"
+],
+"es/fiestas-y-tradiciones-grado-2-primaria.html": [
+"es/fiestas-y-tradiciones.html",
+"fiestas-y-tradiciones"
 ],
 "es/fiestas-y-tradiciones-grado-3-primaria.html": [
 "es/fiestas-y-tradiciones.html",
@@ -5956,7 +5976,7 @@
 ]
 },
 "it": {
-"it/animali-e-natura-classe-i-primaria.html": [
+"it/animali-e-natura-classe-ii-primaria.html": [
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
@@ -5964,15 +5984,11 @@
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
-"it/animali-e-natura-classe-v-primaria.html": [
+"it/animali-e-natura-classe-iv-primaria.html": [
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
 "it/cultura-generale-classe-3.html": [
-"it/cultura-generale.html",
-"cultura-generale"
-],
-"it/cultura-generale-classe-i-primaria.html": [
 "it/cultura-generale.html",
 "cultura-generale"
 ],
@@ -5984,23 +6000,35 @@
 "it/cultura-generale.html",
 "cultura-generale"
 ],
+"it/cultura-generale-classe-iv-primaria.html": [
+"it/cultura-generale.html",
+"cultura-generale"
+],
+"it/feste-e-tradizioni-classe-iii-primaria.html": [
+"it/feste-e-tradizioni.html",
+"feste-e-tradizioni"
+],
 "it/feste-e-tradizioni-classe-iv-primaria.html": [
 "it/feste-e-tradizioni.html",
 "feste-e-tradizioni"
 ],
-"it/geografia-classe-ii-primaria.html": [
+"it/geografia-classe-iii-primaria.html": [
 "it/geografia.html",
 "geografia"
-],
-"it/musica-classe-i-primaria.html": [
-"it/musica.html",
-"musica"
 ],
 "it/musica-classe-ii-primaria.html": [
 "it/musica.html",
 "musica"
 ],
+"it/musica-classe-iii-primaria.html": [
+"it/musica.html",
+"musica"
+],
 "it/p/2096123-antonio-vivaldi.html": [
+"it/risorse.html",
+"Tutti i materiali"
+],
+"it/p/2362230-compact-disc.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
@@ -6020,19 +6048,15 @@
 "it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-con.html",
 "Laboratorio di carte: Gli animali domestici – carte immagine e parola con frasi modello (GRATIS)"
 ],
-"it/scienze-e-salute-classe-i-primaria.html": [
+"it/scienze-e-salute-classe-iv-primaria.html": [
 "it/scienze-e-salute.html",
 "scienze-e-salute"
 ],
-"it/scienze-e-salute-classe-v-primaria.html": [
-"it/scienze-e-salute.html",
-"scienze-e-salute"
-],
-"it/storia-e-societa-classe-i-primaria.html": [
+"it/storia-e-societa-classe-ii-primaria.html": [
 "it/storia-e-societa.html",
 "storia-e-societa"
 ],
-"it/storia-e-societa-classe-ii-primaria.html": [
+"it/storia-e-societa-classe-iii-primaria.html": [
 "it/storia-e-societa.html",
 "storia-e-societa"
 ]
