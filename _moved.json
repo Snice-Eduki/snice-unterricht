@@ -51,6 +51,10 @@
 "material/2417356-raumgeometrie-koerper-und-formeln-tafelposter-kaertchen-und-uebungen-in-3-niveaus.html": [
 "materialien.html",
 "Materialien"
+],
+"material/2421775-experimentierkartei-sachunterricht-40-versuche-2.html": [
+"materialien.html",
+"Materialien"
 ]
 },
 "en": {
@@ -580,6 +584,10 @@
 "es/ciencias-y-salud.html",
 "ciencias-y-salud"
 ],
+"es/ciencias-y-salud-grado-9.html": [
+"es/ciencias-y-salud.html",
+"ciencias-y-salud"
+],
 "es/cultura-general-grado-2-primaria.html": [
 "es/cultura-general.html",
 "cultura-general"
@@ -635,10 +643,6 @@
 "es/musica-grado-6-primaria.html": [
 "es/musica.html",
 "musica"
-],
-"es/p/17899305-automovil.html": [
-"es/recursos.html",
-"Todos los recursos"
 ],
 "es/p/17899786-bamberg.html": [
 "es/recursos.html",
@@ -704,15 +708,7 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
-"es/p/17913861-marmol.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
 "es/p/17914305-nordlingen.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
-"es/p/17915815-ortoedro.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -737,10 +733,6 @@
 "Todos los recursos"
 ],
 "es/p/17921165-rothenburg-ob-der-tauber.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
-"es/p/17922497-tecnecio.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -776,13 +768,133 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
-"es/p/2088463-dardos.html": [
-"es/p/17904174-dardos.html",
-"Dardos – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+"es/p/2081849-bad-rappenau.html": [
+"es/recursos.html",
+"Todos los recursos"
 ],
-"es/p/2088908-alaska.html": [
-"es/p/17897739-alaska.html",
-"Alaska – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+"es/p/2081869-bad-worishofen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2087378-casa-blanca.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2087432-distrito-de-ammerland.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2087488-distrito-de-schleswig-flensburgo.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2087525-distrito-de-cloppenburg.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2087569-distrito-de-siegen-wittgenstein.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2087974-distrito-de-traunstein.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2087986-distrito-de-frisia.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088008-distrito-de-borde.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088044-endingen-am-kaiserstuhl.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088048-florsheim.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088054-eppelheim.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088061-distrito-de-tuttlingen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088066-distrito-de-ennepe-ruhr.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088072-distrito-de-borken.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088075-distrito-de-bad-durkheim.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088078-distrito-de-viersen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088082-distrito-de-dahme-bosque-del-spree.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088086-eppingen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088796-geisenfeld.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088809-bad-waldsee.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088823-distrito-de-cham.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088836-bergen-auf-rugen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088970-distrito-de-aurich.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088987-distrito-de-sajonia-central.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088995-eschwege.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2088999-eltville-am-rhein.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2089006-erwitte.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2089023-distrito-de-holstein-oriental.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2089027-distrito-de-plon.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2089032-distrito-de-zwickau.html": [
+"es/recursos.html",
+"Todos los recursos"
 ],
 "es/p/2095178-gunther-uecker.html": [
 "es/p/18175379-gunther-uecker.html",
@@ -796,9 +908,85 @@
 "es/p/17909776-henri-rousseau.html",
 "Henri Rousseau – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2095390-otto-waalkes.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095459-tyrannosaurus.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095532-jura-de-suabia.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095546-ellwangen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095554-leingarten.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095678-wurzen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095694-marbach-am-neckar.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095796-somalia.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095800-imperio-otomano.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095821-tupac-shakur.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2095832-distrito-de-hameln-pyrmont.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2096257-schneverdingen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/2096367-vasco-da-gama.html": [
 "es/p/18183395-vasco-da-gama.html",
 "Vasco da Gama – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2096515-thomas-muller.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2096527-rathaus.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2096583-distrito-de-rin-neuss.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2096648-plauen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2096679-rio-saale.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2096750-distrito-de-passau.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2096787-vanuatu.html": [
+"es/recursos.html",
+"Todos los recursos"
 ],
 "es/p/2096794-tuba.html": [
 "es/p/18178954-tuba.html",
@@ -812,6 +1000,18 @@
 "es/p/18225905-prunus-persica.html",
 "Prunus persica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2097497-neustrelitz.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2097512-mayen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2097524-zirndorf.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/2097569-tribunal-de-justicia.html": [
 "es/p/18178861-tribunal-de-justicia.html",
 "Tribunal de justicia – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
@@ -824,17 +1024,65 @@
 "es/p/18178581-tarjeta-postal.html",
 "Tarjeta postal – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2098593-isny-im-allgau.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2098598-wipperfurth.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2098601-monheim-am-rhein.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2098603-nieder-olm.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2098605-wulfrath.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2099000-frank-walter-steinmeier.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/2099451-cancer.html": [
 "es/p/18175317-cancer.html",
 "Cáncer – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2099880-erich-kastner.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2099975-distrito-de-starnberg.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2099988-langenhagen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2099994-rothenburg-ob-der-tauber.html": [
+"es/recursos.html",
+"Todos los recursos"
 ],
 "es/p/2100114-squalius-cephalus.html": [
 "es/p/18177180-squalius-cephalus.html",
 "Squalius cephalus – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2101008-jura.html": [
-"es/p/18134427-jura.html",
-"Jura – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+"es/p/2100133-el-flautista-de-hamelin.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2101115-the-weeknd.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2101149-helmut-schmidt.html": [
+"es/recursos.html",
+"Todos los recursos"
 ],
 "es/p/2101211-spiel-des-jahres.html": [
 "es/p/18177150-spiel-des-jahres.html",
@@ -847,6 +1095,70 @@
 "es/p/2102316-poesia-lirica.html": [
 "es/p/18175451-poesia-lirica.html",
 "Poesía lírica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2102591-apollo.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2103027-magdeburgo.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2103044-barcelona.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2103680-georg-baselitz.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104312-loningen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104394-boris-becker.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104676-hermannsdenkmal.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104867-geseke.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104873-kempen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104875-moosburg-an-der-isar.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104889-festival-de-la-cancion-de-eurovision.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104905-ribnitz-damgarten.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104941-sondershausen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104971-hildesheim.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2104997-isla-de-fehmarn.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/2105044-heilbronn.html": [
+"es/recursos.html",
+"Todos los recursos"
 ],
 "es/p/2366217-sodio.html": [
 "es/p/18177106-sodio.html",
@@ -1008,9 +1320,33 @@
 "es/p/18175343-eco.html",
 "Eco – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2375730-marmol.html": [
+"es/p/17913861-marmol.html",
+"Mármol – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2375739-ortoedro.html": [
+"es/p/17915815-ortoedro.html",
+"Ortoedro – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2375749-tecnecio.html": [
+"es/p/17922497-tecnecio.html",
+"Tecnecio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2375761-automovil.html": [
+"es/p/17899305-automovil.html",
+"Automóvil – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2376071-dardos.html": [
+"es/p/17904174-dardos.html",
+"Dardos – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
 "es/p/2376074-juglans.html": [
 "es/p/17912444-juglans.html",
 "Juglans – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2376077-jura.html": [
+"es/p/18134427-jura.html",
+"Jura – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2376080-somalia.html": [
 "es/p/17922828-somalia.html",
@@ -1080,9 +1416,17 @@
 "es/p/17917323-psicologia.html",
 "Psicología – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
+"es/p/2392578-alaska.html": [
+"es/p/17897739-alaska.html",
+"Alaska – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
 "es/p/2392591-comercio.html": [
 "es/p/17903016-comercio.html",
 "Comercio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392599-henri-rousseau.html": [
+"es/p/17909776-henri-rousseau.html",
+"Henri Rousseau – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2392605-imperio-otomano.html": [
 "es/p/17910589-imperio-otomano.html",
@@ -1311,8 +1655,8 @@
 "Agence spatiale européenne – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18113250-agriculteur.html": [
-"fr/p/2095922-agriculteur.html",
-"Agriculteur - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2103630-agriculteur.html",
+"Agriculteur – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18113587-agriculture.html": [
 "fr/p/2082603-agriculture.html",
@@ -2115,8 +2459,8 @@
 "Canal de Panama – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122270-canal-de-suez.html": [
-"fr/p/2100012-canal-de-suez.html",
-"Canal de Suez - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105632-canal-de-suez.html",
+"Canal de Suez – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122304-canberra.html": [
 "fr/p/2101507-canberra.html",
@@ -2147,8 +2491,8 @@
 "Canton du Tessin – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122509-caoutchouc-naturel.html": [
-"fr/p/2379465-caoutchouc-naturel.html",
-"Caoutchouc naturel – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101771-caoutchouc-naturel.html",
+"Caoutchouc naturel – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122543-cap-vert.html": [
 "fr/p/2101399-cap-vert.html",
@@ -2179,16 +2523,16 @@
 "Carl Friedrich Gauss – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122752-carl-von-linne.html": [
-"fr/p/2106291-carl-von-linne.html",
-"Carl von Linné – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101521-carl-von-linne.html",
+"Carl von Linné - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126214-carnaval.html": [
 "fr/p/2099562-carnaval.html",
 "Carnaval – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126231-carotte.html": [
-"fr/p/2392204-carotte.html",
-"Carotte – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101424-carotte.html",
+"Carotte – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126250-carpe-commune.html": [
 "fr/p/2099829-carpe-commune.html",
@@ -2355,8 +2699,8 @@
 "Chemin de fer – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126894-chevreuil-d-europe.html": [
-"fr/p/2103351-chevreuil-d-europe.html",
-"Chevreuil d'Europe – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2095751-chevreuil-d-europe.html",
+"Chevreuil d'Europe - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126912-chewing-gum.html": [
 "fr/p/2106481-chewing-gum.html",
@@ -2399,8 +2743,8 @@
 "Chocolat – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127104-chouette-hulotte.html": [
-"fr/p/2392579-chouette-hulotte.html",
-"Chouette hulotte – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101122-chouette-hulotte.html",
+"Chouette hulotte – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127124-christianisme.html": [
 "fr/p/2099987-christianisme.html",
@@ -2511,16 +2855,16 @@
 "Coche de plaisance – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127737-coco-chanel.html": [
-"fr/p/2106877-coco-chanel.html",
-"Coco Chanel – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100755-coco-chanel.html",
+"Coco Chanel - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127767-cocotier.html": [
 "fr/p/2359991-cocotier.html",
 "Cocotier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127795-coiffeur.html": [
-"fr/p/2100468-coiffeur.html",
-"Coiffeur - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106843-coiffeur.html",
+"Coiffeur – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127814-cola.html": [
 "fr/p/2100760-cola.html",
@@ -2643,8 +2987,8 @@
 "Corneille noire – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129310-cornouailles.html": [
-"fr/p/2105500-cornouailles.html",
-"Cornouailles – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099688-cornouailles.html",
+"Cornouailles - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129347-corruption.html": [
 "fr/p/2096429-corruption.html",
@@ -2687,8 +3031,8 @@
 "Courgette – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129751-courrier.html": [
-"fr/p/2099932-courrier.html",
-"Courrier - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105603-courrier.html",
+"Courrier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18129786-courrier-electronique.html": [
 "fr/p/2106632-courrier-electronique.html",
@@ -3051,8 +3395,8 @@
 "Elfe – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18133690-eliomys-quercinus.html": [
-"fr/p/2103237-eliomys-quercinus.html",
-"Eliomys quercinus – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2095627-eliomys-quercinus.html",
+"Eliomys quercinus - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18133726-ella-fitzgerald.html": [
 "fr/p/2102089-ella-fitzgerald.html",
@@ -3103,8 +3447,8 @@
 "Equus – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134071-equus-quagga-quagga.html": [
-"fr/p/2098620-equus-quagga-quagga.html",
-"Equus quagga quagga – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2379489-equus-quagga-quagga.html",
+"Equus quagga quagga – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134119-esperanto.html": [
 "fr/p/2098796-esperanto.html",
@@ -3123,8 +3467,8 @@
 "Eswatini – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134206-euro.html": [
-"fr/p/2098426-euro.html",
-"Euro - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104516-euro.html",
+"Euro – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134232-europe.html": [
 "fr/p/2104647-europe.html",
@@ -3135,8 +3479,8 @@
 "Everest – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134299-expression-faciale.html": [
-"fr/p/2106880-expression-faciale.html",
-"Expression faciale – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100775-expression-faciale.html",
+"Expression faciale - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134317-extremisme.html": [
 "fr/p/2363165-extremisme.html",
@@ -3275,8 +3619,8 @@
 "Nice – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135119-flechettes.html": [
-"fr/p/2105524-flechettes.html",
-"Fléchettes – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099738-flechettes.html",
+"Fléchettes - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135148-flute.html": [
 "fr/p/2102315-flute.html",
@@ -3367,8 +3711,8 @@
 "Français – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135771-frein.html": [
-"fr/p/2105489-frein.html",
-"Frein – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2380687-frein.html",
+"Frein – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18135822-frida-kahlo.html": [
 "fr/p/2106535-frida-kahlo.html",
@@ -3483,12 +3827,12 @@
 "Germanium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18136687-giacomo-puccini.html": [
-"fr/p/2103285-giacomo-puccini.html",
-"Giacomo Puccini – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2095680-giacomo-puccini.html",
+"Giacomo Puccini - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18136773-giuseppe-verdi.html": [
-"fr/p/2104449-giuseppe-verdi.html",
-"Giuseppe Verdi – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2096370-giuseppe-verdi.html",
+"Giuseppe Verdi - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18136816-glacier.html": [
 "fr/p/2104730-glacier.html",
@@ -3543,8 +3887,8 @@
 "Grand Tétras – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137416-grand-duc-de-luxembourg.html": [
-"fr/p/2105816-grand-duc-de-luxembourg.html",
-"Grand-duc de Luxembourg – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100337-grand-duc-de-luxembourg.html",
+"Grand-duc de Luxembourg - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137438-grande-roue.html": [
 "fr/p/2097108-grande-roue.html",
@@ -3575,8 +3919,8 @@
 "Grue – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137680-grue-cendree.html": [
-"fr/p/2105806-grue-cendree.html",
-"Grue cendrée – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100323-grue-cendree.html",
+"Grue cendrée - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137723-grece.html": [
 "fr/p/2098147-grece.html",
@@ -3723,8 +4067,8 @@
 "Handball – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18141325-handicap.html": [
-"fr/p/2101273-handicap.html",
-"Handicap - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106158-handicap.html",
+"Handicap – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18141356-hanoucca.html": [
 "fr/p/2106983-hanoucca.html",
@@ -3815,8 +4159,8 @@
 "Air – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18142209-alaudidae.html": [
-"fr/p/2106320-alaudidae.html",
-"Alaudidae – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101575-alaudidae.html",
+"Alaudidae - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18142231-allemand.html": [
 "fr/p/2082530-allemand.html",
@@ -3999,8 +4343,8 @@
 "Calcium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18143591-canton-d-uri.html": [
-"fr/p/2095938-canton-d-uri.html",
-"Canton d'Uri - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2103658-canton-d-uri.html",
+"Canton d'Uri – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18143609-capra.html": [
 "fr/p/2098869-capra.html",
@@ -4083,8 +4427,8 @@
 "Cheloniidae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18144148-cheval-de-troie.html": [
-"fr/p/2096111-cheval-de-troie.html",
-"Cheval de Troie – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2380678-cheval-de-troie.html",
+"Cheval de Troie – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18144174-chisinau.html": [
 "fr/p/2369636-chisinau.html",
@@ -4339,8 +4683,8 @@
 "Démocratie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145859-democratie-chretienne.html": [
-"fr/p/2105624-democratie-chretienne.html",
-"Démocratie chrétienne – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099985-democratie-chretienne.html",
+"Démocratie chrétienne - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145883-pau.html": [
 "fr/p/2370238-pau.html",
@@ -4999,8 +5343,8 @@
 "Kazakhstan – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18154012-keir-starmer.html": [
-"fr/p/2099795-keir-starmer.html",
-"Keir Starmer - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105552-keir-starmer.html",
+"Keir Starmer – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18154048-kika.html": [
 "fr/p/2363565-kika.html",
@@ -5127,8 +5471,8 @@
 "Lacertidae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18154999-lagos.html": [
-"fr/p/2101559-lagos.html",
-"Lagos - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106311-lagos.html",
+"Lagos – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18155019-lait.html": [
 "fr/p/2363717-lait.html",
@@ -5595,8 +5939,8 @@
 "Magie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158589-magnesium.html": [
-"fr/p/2104871-magnesium.html",
-"Magnésium – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2379170-magnesium.html",
+"Magnésium – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158609-mahomet.html": [
 "fr/p/2106421-mahomet.html",
@@ -5659,16 +6003,16 @@
 "Manchester – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159656-manchester-city-football-club.html": [
-"fr/p/2100929-manchester-city-football-club.html",
-"Manchester City Football Club - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106898-manchester-city-football-club.html",
+"Manchester City Football Club – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159680-manchester-united-football-club.html": [
 "fr/p/2364010-manchester-united-football-club.html",
 "Manchester United Football Club – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159705-mandarin-standard.html": [
-"fr/p/2105707-mandarin-standard.html",
-"Mandarin standard – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100129-mandarin-standard.html",
+"Mandarin standard - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159730-manganese.html": [
 "fr/p/2371029-manganese.html",
@@ -6091,8 +6435,8 @@
 "Sachertorte – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18192790-saison.html": [
-"fr/p/2106203-saison.html",
-"Saison – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101367-saison.html",
+"Saison - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18193248-rhenium.html": [
 "fr/p/2106830-rhenium.html",
