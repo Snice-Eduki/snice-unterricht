@@ -141,3 +141,5 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 12.11. 20:48 Homepage-Tageslauf: Katalog-Pull unplausibel (6725 aktiv statt ~8501) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 13.11. 02:48 Homepage-Tageslauf: Katalog-Pull unplausibel (6868 aktiv statt ~8506) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 13.11. 05:02 Homepage-Tageslauf: BLOG_PRUEFEN 6 – Entwuerfe in Marketing\blog\_queue pruefen/freigeben (_blog_takt.py) (Log `Skripte\_homepage_daily.log`)
