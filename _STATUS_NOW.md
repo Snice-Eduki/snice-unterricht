@@ -145,3 +145,28 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 13.11. 05:02 Homepage-Tageslauf: BLOG_PRUEFEN 6 – Entwuerfe in Marketing\blog\_queue pruefen/freigeben (_blog_takt.py) (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 13.11. 08:48 Homepage-Tageslauf: Katalog-Pull unplausibel (7116 aktiv statt ~8516) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 04:34 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 06:21 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 12:09 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 14:12 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 16:16 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 18:05 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 20:25 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', '_homepage_i18n_check.py', 'C:\\Claude-Arbeitsblätter\\snice-unterricht']' timed out after 1800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 14.11. 20:51 Homepage-Tageslauf: Katalog-Pull unplausibel (6406 aktiv statt ~8544) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 15.11. 02:56 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: Python314\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+      (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 15.11. 06:30 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', 'build.py']' timed out after 4800 seconds (Log `Skripte\_homepage_daily.log`)
