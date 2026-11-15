@@ -2141,9 +2141,31 @@ def is_free(m):
     return str(m.get("is_free")) in ("True", "true", "1")
 
 
+_AKTION = None
+def in_aktion(m):
+    """15.11. (Auftrag B): Material in laufender/naher Gratis- oder Rabatt-Aktion zeigt keinen festen Preis (Seite wird nur 1x taeglich
+    gebaut, der Preis wechselt auf eduki stundengenau). Quelle: Skripte/uebergabe/aktion_preise.json =
+    [{"id": "2398100", "seit": "2026-11-15T09:00", "bis": "2026-11-16T09:00"}, ...] (pflegt Fenster B).
+    Fenster: 36 h vor 'seit' bis 36 h nach 'bis'. Datei fehlt/defekt -> keine Wirkung."""
+    global _AKTION
+    if _AKTION is None:
+        _AKTION = {}
+        try:
+            now = datetime.datetime.now(); pad = datetime.timedelta(hours=36)
+            for e in json.load(open("C:/Skripte/uebergabe/aktion_preise.json", encoding="utf-8")):
+                try:
+                    if datetime.datetime.fromisoformat(e["seit"]) - pad <= now <= datetime.datetime.fromisoformat(e["bis"]) + pad:
+                        _AKTION[str(e["id"])] = 1
+                except Exception: pass
+        except Exception: pass
+    return str(m.get("id")) in _AKTION
+
+
 def price_label(m):
     if is_free(m):
         return "Kostenlos"   # 09.11.: kein Preis bei Gratis-Material
+    if in_aktion(m):
+        return "Aktionspreis – aktueller Preis auf eduki"
     try:
         p = float(m.get("price") or 0)
     except Exception:
