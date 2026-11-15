@@ -6,6 +6,7 @@ Je Sprache nur Material in DIESER Sprache; die anderen Sprachen stehen unter "Ot
 hreflang-Cluster (gleichwertige Seiten) + x-default (EN), Sitemap je Sprache mit xhtml:link,
 Sprachumschalter auf jeder Seite, automatische Sprachwahl NUR auf der deutschen Startseite (JS, keine Bots)."""
 import os, re, json, html, datetime, collections, glob
+import hub_texte as HT
 
 B = None            # build-Modul (in prepare() gesetzt)
 SITE = "https://snice-unterricht.eu"
@@ -1661,64 +1662,87 @@ def free_de_mats():
     return [m for m in B.katalog_de() if B.is_free(m)]
 
 
+def _free_reihenfolge(mats, k):
+    """Reihenfolge der Gratis-Liste: die ersten k reihum über die Fächer (damit die statischen Karten die Breite
+    zeigen), danach alles nach Fach und Klasse."""
+    by_f = collections.defaultdict(list)
+    for m in mats:
+        by_f[m.get("fach") or "Fachübergreifend"].append(m)
+    order = sorted(by_f.items(), key=lambda kv: (-len(kv[1]), kv[0]))
+    kl = lambda m: ((B.grade_nums(m.get("grades")) or [99])[0], -int(m["id"]))
+    for _, ms in order:
+        ms.sort(key=kl)
+    first, seen = [], set()
+    runde = 0
+    while len(first) < k and any(len(ms) > runde for _, ms in order):
+        for _, ms in order:
+            if len(ms) > runde and len(first) < k:
+                first.append(ms[runde]); seen.add(ms[runde]["id"])
+        runde += 1
+    rest = [m for _, ms in order for m in ms if m["id"] not in seen]
+    return first + rest
+
+
 def render_free_de():
-    """kostenlos.html: alle aktuell kostenlosen deutschen eduki-Materialien, gruppiert nach Fach, sortiert nach Klasse."""
+    """kostenlos.html: alle aktuell kostenlosen deutschen eduki-Materialien. 15.11.: nur die ersten
+    HUB_STATIC_MAX Karten statisch, der Rest per Finder aus kostenlos.json (Suche, Fach- und Klassen-Chips)."""
     mats = free_de_mats()
     if not mats:
         return 0
     slug = "kostenlos"; url = f"{SITE}/{slug}.html"
-    by_f = collections.defaultdict(list)
-    for m in mats:
-        by_f[m.get("fach") or "Fachübergreifend"].append(m)
-    kl_c = collections.Counter(n for m in mats for n in B.grade_nums(m.get("grades")))
-    chips = ('<div class="filters"><div class="row"><span class="flabel">Klasse</span><button class="chip on" data-kl="" type="button">Alle</button>'
-             + "".join(f'<button class="chip" data-kl="{n}" type="button">{n}. Kl.<span class="n">{kl_c[n]}</span></button>' for n in sorted(kl_c))
-             + "</div></div>") if len(kl_c) > 1 else ""
-    order = sorted(by_f.items(), key=lambda kv: -len(kv[1]))
-    nav = " · ".join(f'<a href="#{B.slugify(f)}">{html.escape(f)} ({len(v)})</a>' for f, v in order)
-    secs = ""
-    for f, ms in order:
-        ms = sorted(ms, key=lambda m: ((B.grade_nums(m.get("grades")) or [99])[0], -int(m["id"])))
-        secs += (f'<section class="fsec" id="{B.slugify(f)}"><h2 style="font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;margin:40px 0 16px">'
-                 f'Kostenloses Material {html.escape(f)}</h2><div class="grid">{"".join(B.cat_card_html(m) for m in ms)}</div></section>')
+    n = len(mats)
+    mats = _free_reihenfolge(mats, B.HUB_STATIC_MAX)
+    static = mats[:B.HUB_STATIC_MAX]
+    finder = n > len(static)
+    if finder:
+        open(os.path.join(B.OUT, "kostenlos.json"), "w", encoding="utf-8").write(
+            json.dumps([B.idx_entry(m) for m in mats], ensure_ascii=False))
+    kl_c = collections.Counter(k for m in mats for k in B.grade_nums(m.get("grades")))
     lines = collections.Counter(m.get("line") for m in mats)
-    extra = [f"{lines[k]} {w}" for k, w in (("lesespur", "Lesespurgeschichten"), ("lueckentext", "Lückentexte mit Hörverstehen"),
-                                             ("pt", "Prüfungstrainings"), ("basteln", "Bastelvorlagen"), ("rechenwelt", "Rechenwelten"),
-                                             ("lesespaziergang", "Lesespaziergänge")) if lines.get(k)]
+    teile = HT.lines_text(lines, fmt=B.nfmt)
     gs = sorted(kl_c)
-    if gs:
-        intro = (f"{len(mats)} Unterrichtsmaterialien gibt es auf eduki aktuell kostenlos – Arbeitsblätter zum Ausdrucken für "
-                 f"Klasse {gs[0]} bis {gs[-1]}" + (f", darunter {', '.join(extra)}" if extra else "") + ". "
-                 "Nach Fach gruppiert, innerhalb des Fachs nach Klasse sortiert. Die Liste aktualisiert sich täglich.")
-    else:
-        intro = f"{len(mats)} Unterrichtsmaterialien gibt es auf eduki aktuell kostenlos. Die Liste aktualisiert sich täglich."
+    t = HT.get(slug, n, B.nfmt)
     title = "Kostenloses Unterrichtsmaterial zum Ausdrucken"
-    desc = (f"{len(mats)} kostenlose Arbeitsblätter und Unterrichtsmaterialien zum Ausdrucken, nach Fach und Klasse sortiert – "
-            "für Grundschule und Sekundarstufe, täglich aktualisiert.")
-    lds = [B.breadcrumb_ld([("Start", SITE + "/"), ("Kostenlos", url)]), B.itemlist_ld("Kostenloses Unterrichtsmaterial", mats),
-           B.faq_ld_of(FREE_DE_FAQ)]
+    if t:
+        intro, desc, secs, faq = t["intro"], t["desc"], t["sections"], t["faq"]
+    else:
+        intro = (f"{B.pl_m(n)} gibt es auf eduki aktuell kostenlos – Arbeitsblätter zum Ausdrucken"
+                 + (f" für Klasse {gs[0]} bis {gs[-1]}" if gs else "")
+                 + (f", darunter {HT.aufzaehlung(teile)}" if teile else "")
+                 + ". Die Liste aktualisiert sich täglich.")
+        desc = (f"{B.nfmt(n)} kostenlose Arbeitsblätter und Unterrichtsmaterialien zum Ausdrucken, nach Fach und Klasse "
+                "sortiert – für Grundschule und Sekundarstufe, täglich aktualisiert.")
+        secs = [("Kostenlose Arbeitsblätter mit Lösungen", [
+            "Alle Materialien auf dieser Seite sind fertige PDFs zum Ausdrucken, die du ohne Vorbereitung im Unterricht einsetzen kannst."])]
+        faq = FREE_DE_FAQ
+    lds = [B.breadcrumb_ld([("Start", SITE + "/"), ("Kostenlos", url)]), B.itemlist_ld("Kostenloses Unterrichtsmaterial", static),
+           B.faq_ld_of(faq)]
     out = B.head(title, desc, url, mats[0].get("cover", ""), extra_ld=lds)
-    ed = B.editorial_block([("Kostenlose Arbeitsblätter mit Lösungen", [
-        "Alle Materialien auf dieser Seite sind fertige PDFs zum Ausdrucken, die du ohne Vorbereitung im Unterricht einsetzen kannst – "
-        "für die Grundschule genauso wie für die Sekundarstufe. Weitere Materialien findest du in der <a href=\"materialien.html\">Materialsuche</a>, "
-        "bei den <a href=\"lesespurgeschichten.html\">Lesespurgeschichten</a> oder nach Saison, z. B. <a href=\"herbst.html\">Herbst</a> "
-        "und <a href=\"advent-winter.html\">Advent &amp; Winter</a>."])], FREE_DE_FAQ)
+    ed = B.editorial_block(secs, faq)
+    grid_attr = ' data-src="kostenlos.json"' if finder else ""
+    more_btn = ('<p class="btnrow"><button class="btn ghost" id="more" type="button">Mehr anzeigen</button></p>'
+                if finder else "")
     out += f"""<section class="hero small">
 <nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a> › <span>Kostenlos</span></nav>
 <h1>Kostenloses Unterrichtsmaterial</h1>
 <p class="sub">{html.escape(intro)}</p>
-<p class="count">{nav}</p>
+{B.SEARCH_BOX}
+<p class="count"><span id="cnt">{B.pl_m(n)}</span> · Klick führt direkt zu eduki</p>
 </section>
-{chips}
+{B.chips_html(mats)}
 <main>
-{secs}
+<div class="grid" id="grid"{grid_attr}>
+{chr(10).join(B.cat_card_html(m) for m in static)}
+</div>
+{more_btn}
+<p class="noresults" id="nores">Keine Materialien gefunden – versuch einen anderen Suchbegriff oder Filter.</p>
 {ed}
 </main>
-{FREE_JS}
+{B.FINDER_JS if finder else B.INDEX_JS}
 """ + B.foot()
     open(os.path.join(B.OUT, slug + ".html"), "w", encoding="utf-8").write(out)
     B.EXTRA_URLS.append(url)
-    return len(mats)
+    return n
 
 
 def free_de_home():
@@ -1728,8 +1752,8 @@ def free_de_home():
         return ""
     ms = [m for m in B.sort_mats(mats) if m.get("cover")][:4] or B.sort_mats(mats)[:4]
     return (f'<section class="section">\n<div class="sec-head"><div><h2>Kostenloses Unterrichtsmaterial</h2>'
-            f'<p class="lead">{len(mats)} Materialien gibt es auf eduki aktuell kostenlos – nach Fach und Klasse sortiert.</p></div>\n'
-            f'<a class="more" href="kostenlos.html">Alle {len(mats)} ansehen →</a></div>\n'
+            f'<p class="lead">{B.pl_m(len(mats))} gibt es auf eduki aktuell kostenlos – nach Fach und Klasse sortiert.</p></div>\n'
+            f'<a class="more" href="kostenlos.html">{'Das Material' if len(mats) == 1 else 'Alle ' + str(len(mats))} ansehen →</a></div>\n'
             f'<div class="grid grid-home">{"".join(B.cat_card_html(m) for m in ms)}</div>\n</section>\n')
 
 

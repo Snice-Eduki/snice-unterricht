@@ -5,6 +5,7 @@ alles vanilla JS, progressiv: funktioniert auch ohne JS). Dazu 1012 SEO-Artikels
 Sitemap, robots.txt, RSS, Impressum, Ueber-mich. Cover per eduki-Hotlink. Aufruf: python build.py"""
 import datetime, os, re, json, glob, html, datetime, collections, hashlib
 import markdown as md
+import hub_texte
 
 SITE = "https://snice-unterricht.eu"   # 16.10.: https via Cloudflare-Proxy aktiv
 SITE_NAME = "Snice Unterricht"
@@ -685,17 +686,21 @@ def faq_ld_of(faq):
 
 
 def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_kl=True, links_html="",
-              itemlist_name=None, body_extra="", editorial="", faq=None, finder=False, sort=True, base_fach="", base_kl=""):
+              itemlist_name=None, body_extra="", editorial="", faq=None, finder=False, sort=True, base_fach="", base_kl="",
+              static_max=0):
     """SEO-Landingpage mit Suche + Filter-Chips + Karten-Grid (Direktlinks zu eduki)."""
     mats = sort_mats(mats) if sort else list(mats)
     url = f"{SITE}/{slug}.html"
     n = len(mats)
     # SEO 01.11.: klasse-6.html war 3,7 MB (alle Karten statisch); Googlebot liest nur die ersten 2 MB HTML.
     # Ab 400 Karten: erste 240 statisch, Rest per Finder-JS aus search-index.json (vorgefiltert auf Fach/Klasse).
+    # 15.11. Hub-Seiten: static_max > 0 -> nur so viele Karten statisch (Linkmenge je Seite), der Rest per Finder
+    # (Mehr anzeigen / Suche / Chips) aus search-index.json, vorgefiltert auf Fach/Klasse.
     base_attr = ""
-    if not finder and n > 400 and (base_fach or base_kl):
+    if not finder and (base_fach or base_kl) and (n > 400 or (static_max and n > static_max)):
         finder = True
         base_attr = f' data-bf="{html.escape(base_fach)}" data-bk="{base_kl}"'
+    first = static_max if (finder and static_max) else FINDER_FIRST
     lds = [breadcrumb_ld([("Start", SITE + "/")] + crumbs + [(h1, url)])]
     if itemlist_name:
         lds.append(itemlist_ld(itemlist_name, mats))
@@ -703,7 +708,7 @@ def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_k
         lds.append(faq_ld_of(faq))
     grid_attr = (' data-src="search-index.json"' + base_attr) if finder else ""
     more_btn = ('<p class="btnrow"><button class="btn ghost" id="more" type="button">Mehr anzeigen</button></p>'
-                if finder and n > FINDER_FIRST else "")
+                if finder and n > first else "")
     out = head(title, desc, url, mats[0].get("cover", "") if mats else "", extra_ld=lds)
     out += f"""<section class="hero small">
 <nav class="crumbs" aria-label="Navigationspfad"><a href="index.html">Start</a>{"".join(f' › <a href="{u.replace(SITE + "/", "")}">{html.escape(nm)}</a>' for nm, u in crumbs)} › <span>{html.escape(h1)}</span></nav>
@@ -717,7 +722,7 @@ def grid_page(slug, title, h1, desc, intro, mats, crumbs, with_fach=True, with_k
 <main>
 {body_extra}
 <div class="grid" id="grid"{grid_attr}>
-{chr(10).join(cat_card_html(m) for m in (mats[:FINDER_FIRST] if finder else mats))}
+{chr(10).join(cat_card_html(m) for m in (mats[:first] if finder else mats))}
 </div>
 {more_btn}
 <p class="noresults" id="nores">Keine Materialien gefunden – versuch einen anderen Suchbegriff oder Filter.</p>
@@ -739,19 +744,44 @@ def render_finder():
                   "durchsuchbar nach Thema, Fach und Klasse. Jeder Klick führt direkt zum Material auf eduki.",
                   "Such dein Thema oder filtere nach Fach und Klasse – alle Materialien sind sofort einsetzbar und enthalten Lösungen.",
                   mats, [], finder=True)
-    idx = [{"id": m["id"], "title": m["title"], "fach": m.get("fach", ""),
+    open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8").write(
+        json.dumps([idx_entry(m) for m in sort_mats(mats)], ensure_ascii=False))
+    return n
+
+
+def idx_entry(m):
+    """Eintrag für search-index.json und die Teil-Indizes der Hub-Seiten (gleiches Format für den Finder)."""
+    return {"id": m["id"], "title": m["title"], "fach": m.get("fach", ""),
             "kl": grade_nums(m.get("grades")), "cover": img_src(m),
             "meta": " · ".join(x for x in (m.get("fach", ""), klasse_label(m.get("grades"))) if x),
             "s": " ".join([m["title"], m.get("fach", ""), klasse_label(m.get("grades")),
                            (m.get("desc") or "")[:120]]).lower(),
             "url": (MAT_PAGES[m["id"]] if m["id"] in MAT_PAGES
-                    else f'{EDUKI_MAT}/{m["id"]}/{m.get("slug","")}')} for m in mats]
-    open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8").write(json.dumps(idx, ensure_ascii=False))
-    return n
+                    else f'{EDUKI_MAT}/{m["id"]}/{m.get("slug","")}')}
 
 
 def fach_slug(f):
     return "fach-" + slugify(f)
+
+
+HUB_STATIC_MAX = 30   # 15.11.: statische Materialkarten je Fach-/Klassen-/Saison-Hub, Rest per Finder (Linkmenge)
+
+
+def pl_m(n):
+    """'1 Material' / '24 Materialien'."""
+    return hub_texte.pl(n, "Material", "Materialien", nfmt)
+
+
+def _bsp_titel(v, k=4):
+    """Beispieltitel (Kerntitel vor dem ersten ' – ') für Rückfalltexte."""
+    r, seen = [], set()
+    for m in sort_mats(v):
+        t = re.split(r"\s[–-]\s", html.unescape(m["title"]))[0].strip()
+        if t and t.lower() not in seen:
+            seen.add(t.lower()); r.append(t)
+        if len(r) >= k:
+            break
+    return r
 
 
 def render_fach_pages(min_n=10):
@@ -763,21 +793,24 @@ def render_fach_pages(min_n=10):
     faecher = [(f, v) for f, v in by.items() if len(v) >= min_n]
     for f, v in faecher:
         lines = collections.Counter(m["line"] for m in v)
-        parts = []
-        def pl(n, one, many): return f"{n} {one if n == 1 else many}"
-        if lines.get("lesespur"): parts.append(pl(lines["lesespur"], "Lesespurgeschichte", "Lesespurgeschichten"))
-        if lines.get("pt"): parts.append(pl(lines["pt"], "Prüfungstraining", "Prüfungstrainings"))
-        if lines.get("lueckentext"): parts.append(pl(lines["lueckentext"], "Lückentext mit Hörverstehen", "Lückentexte mit Hörverstehen"))
-        what = ", ".join(parts) if parts else f"{len(v)} Materialien"
-        grid_page(fach_slug(f), f"Unterrichtsmaterial {f} – Arbeitsblätter mit Lösungen",
-                  f"Unterrichtsmaterial {f}",
-                  f"{what} für den {f}-Unterricht: sofort einsetzbar, differenziert, mit Musterlösungen – "
-                  "nach Klasse filterbar, lehrplanorientiert für alle Bundesländer und Schularten.",
-                  f"Fertige Materialien für {f}: {what}. Filtere nach Klasse oder such ein Thema – jedes Material ist "
-                  "kopierfertig und enthält Lösungen.",
+        slug = fach_slug(f)
+        teile = hub_texte.lines_text(lines, fmt=nfmt)
+        what = ", ".join(teile) if teile else pl_m(len(v))
+        t = hub_texte.get(slug, len(v), nfmt)
+        if t:
+            desc, intro, secs, faq = t["desc"], t["intro"], t["sections"], t["faq"]
+        else:
+            fb = hub_texte.fallback(f, hub_texte.fach_fuer(f), _bsp_titel(v), len(v), teile, nfmt)
+            desc = (f"{what} {hub_texte.fach_fuer(f)}: sofort einsetzbar, differenziert, mit Musterlösungen – "
+                    "nach Klasse filterbar, lehrplanorientiert für alle Bundesländer und Schularten.")
+            intro = (f"Fertige Materialien {hub_texte.fach_fuer(f)}: {what}. Filtere nach Klasse oder such ein Thema – "
+                     "jedes Material ist kopierfertig und enthält Lösungen.")
+            secs, faq = fb["sections"], None
+        grid_page(slug, f"Unterrichtsmaterial {f} – Arbeitsblätter mit Lösungen",
+                  f"Unterrichtsmaterial {f}", desc, intro,
                   v, [("Alle Materialien", SITE + "/materialien.html")], with_fach=False,
-                  links_html=fk_links_fuer_fach(f),
-                  itemlist_name=f"Unterrichtsmaterial {f}", base_fach=f)
+                  links_html=fk_links_fuer_fach(f), editorial=editorial_block(secs, faq), faq=faq,
+                  itemlist_name=f"Unterrichtsmaterial {f}", base_fach=f, static_max=HUB_STATIC_MAX)
     return sorted(faecher, key=lambda x: -len(x[1]))
 
 
@@ -847,7 +880,7 @@ def render_fachklasse_pages():
         if lines.get("lesespur"): parts.append(pl(lines["lesespur"], "Lesespurgeschichte", "Lesespurgeschichten"))
         if lines.get("pt"): parts.append(pl(lines["pt"], "Prüfungstraining", "Prüfungstrainings"))
         if lines.get("lueckentext"): parts.append(pl(lines["lueckentext"], "Lückentext mit Hörverstehen", "Lückentexte mit Hörverstehen"))
-        what = ", ".join(parts) if parts else f"{gesamt} Materialien"
+        what = ", ".join(parts) if parts else pl_m(gesamt)
         # interne Verlinkung: Nachbarklassen im selben Fach + Fachseite + Klassenseite
         nachbarn = [f'<a href="{fk_slug(f, k)}.html">Klasse {k}</a>' for k in range(1, 14)
                     if (f, k) in vorhanden and k != n]
@@ -882,15 +915,24 @@ def render_klasse_pages():
     for n in ks:
         v = by[n]
         stufe = "Grundschule" if n <= 4 else ("Sekundarstufe I" if n <= 10 else "Sekundarstufe II")
-        grid_page(f"klasse-{n}", f"Arbeitsblätter Klasse {n} – Unterrichtsmaterial mit Lösungen",
-                  f"Unterrichtsmaterial Klasse {n}",
-                  f"{nfmt(len(v))} Materialien für die {n}. Klasse ({stufe}): Arbeitsblätter, Lesespurgeschichten, "
-                  "Lückentexte mit Hörverstehen und Prüfungstraining – alle Fächer, mit Lösungen, sofort einsetzbar.",
-                  f"Alles für die {n}. Jahrgangsstufe ({stufe}), sprachlich und inhaltlich auf das Alter abgestimmt. "
-                  "Filtere nach Fach oder such dein Thema.",
+        slug = f"klasse-{n}"
+        lines = collections.Counter(m["line"] for m in v)
+        teile = hub_texte.lines_text(lines, fmt=nfmt)
+        t = hub_texte.get(slug, len(v), nfmt)
+        if t:
+            desc, intro, secs, faq = t["desc"], t["intro"], t["sections"], t["faq"]
+        else:
+            fb = hub_texte.fallback(f"Klasse {n}", f"für die {n}. Klasse", _bsp_titel(v), len(v), teile, nfmt)
+            desc = (f"{nfmt(len(v))} Materialien für die {n}. Klasse ({stufe}): Arbeitsblätter, Lesespurgeschichten, "
+                    "Lückentexte mit Hörverstehen und Prüfungstraining – alle Fächer, mit Lösungen, sofort einsetzbar.")
+            intro = (f"Alles für die {n}. Jahrgangsstufe ({stufe}), sprachlich und inhaltlich auf das Alter abgestimmt. "
+                     "Filtere nach Fach oder such dein Thema.")
+            secs, faq = fb["sections"], None
+        grid_page(slug, f"Arbeitsblätter Klasse {n} – Unterrichtsmaterial mit Lösungen",
+                  f"Unterrichtsmaterial Klasse {n}", desc, intro,
                   v, [("Alle Materialien", SITE + "/materialien.html")], with_kl=False,
-                  links_html=fk_links_fuer_klasse(n),
-                  itemlist_name=f"Unterrichtsmaterial Klasse {n}", base_kl=n)
+                  links_html=fk_links_fuer_klasse(n), editorial=editorial_block(secs, faq), faq=faq,
+                  itemlist_name=f"Unterrichtsmaterial Klasse {n}", base_kl=n, static_max=HUB_STATIC_MAX)
     return [(n, len(by[n])) for n in ks]
 
 
@@ -1071,7 +1113,7 @@ def render_pt_sub_pages(pt):
         v = by_kl[n]; fs = sorted({m.get("fach") for m in v if m.get("fach")})
         grid_page(f"pruefungstraining-klasse-{n}", f"Prüfungstraining Klasse {n} – Prüfungsvorbereitung mit Lösungen (PDF)",
                   f"Prüfungstraining Klasse {n}",
-                  f"{len(v)} Prüfungstrainings für Klasse {n}: Zusammenfassung, Übungsaufgaben in Prüfungsform und Musterlösungen – "
+                  f"{hub_texte.pl(len(v), 'Prüfungstraining', 'Prüfungstrainings')} für Klasse {n}: Zusammenfassung, Übungsaufgaben in Prüfungsform und Musterlösungen – "
                   f"{', '.join(fs[:6])}.",
                   f"Gezielte Prüfungsvorbereitung für die {n}. Klasse: Jedes Paket fasst ein Lehrplanthema kompakt zusammen, "
                   f"übt es mit Aufgaben im Stil von Schulaufgabe, Klassenarbeit und Abschlussprüfung und liefert die Lösungen mit. "
@@ -1083,7 +1125,7 @@ def render_pt_sub_pages(pt):
         beisp = ", ".join(re.split(r" – ", m["title"])[0] for m in sort_mats(v)[:4])
         grid_page(f"pruefungsvorbereitung-{slugify(f)}", f"Prüfungsvorbereitung {f} {kls} – Prüfungstraining mit Lösungen",
                   f"Prüfungsvorbereitung {f}",
-                  f"{len(v)} Prüfungstrainings {f} ({kls}): Zusammenfassung, Aufgaben in Prüfungsform, Musterlösungen – z. B. {beisp}.",
+                  f"{hub_texte.pl(len(v), 'Prüfungstraining', 'Prüfungstrainings')} {f} ({kls}): Zusammenfassung, Aufgaben in Prüfungsform, Musterlösungen – z. B. {beisp}.",
                   f"Alle Prüfungstrainings für {f} an einem Ort – {kls}. Themen u. a.: {beisp}. Jedes Paket ist kopierfertig "
                   "und enthält ausführliche Lösungen zur Selbstkontrolle.",
                   v, crumbs, with_fach=False, itemlist_name=f"Prüfungsvorbereitung {f}")
@@ -1169,7 +1211,7 @@ def render_berufsschule_lernvideos():
                               for (nr, tit), es in sorted(lfs.items(), key=lambda x: (len(x[0][0]), x[0][0])))
                 url = f"{SITE}/{sl}.html"; h1 = f"Berufsschule {b}: Lernfelder mit Unterrichtsmaterial"
                 out = head(f"{b} Berufsschule – Lernfeld-Material & Erklärvideos (PDF)",
-                           f"Unterrichtsmaterial für {b} nach Lernfeldern: {len(v)} Lernpakete mit Lernsituation, Arbeitsblättern, "
+                           f"Unterrichtsmaterial für {b} nach Lernfeldern: {hub_texte.pl(len(v), 'Lernpaket', 'Lernpakete')} mit Lernsituation, Arbeitsblättern, "
                            "Lösungen und Erklärvideo – handlungsorientiert für die Berufsschule.", url, "",
                            extra_ld=[breadcrumb_ld([("Start", SITE + "/"), ("Berufsschule", SITE + "/berufsschule.html"), (b, url)])])
                 out += (f'<main class="article-wrap"><nav class="crumbs"><a href="index.html">Start</a> › <a href="berufsschule.html">Berufsschule</a> › '
@@ -1756,7 +1798,7 @@ def is_lesespur(m):
     return "lesespur" in (m.get("title", "") + " " + m.get("desc", "")).lower()
 
 
-def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", faq=None, newest=False, crumbs=None):
+def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", faq=None, newest=False, crumbs=None, static_max=0):
     """Landingpage mit Karten-Grid (gleiche Karten wie der Finder, ohne JS-Filter).
     26.10.: newest=True -> neueste zuerst (Saisonseiten), crumbs=Name -> Breadcrumb Start > Name."""
     if newest:
@@ -1765,6 +1807,16 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", fa
         mats = sorted(mats, key=lambda x: (0 if x.get("cover") else 1, x.get("title", "")))
     url = f"{SITE}/{slug}.html"
     n = len(mats)
+    # 15.11.: static_max -> nur die ersten Karten statisch, Rest per Finder aus eigenem Teil-Index (<slug>.json)
+    finder = bool(static_max and n > static_max)
+    grid_attr, more_btn, gridmats = "", "", mats
+    if finder:
+        idxname = f"index-{slug}.json"
+        open(os.path.join(OUT, idxname), "w", encoding="utf-8").write(
+            json.dumps([idx_entry(m) for m in mats], ensure_ascii=False))
+        grid_attr = f' data-src="{idxname}"'
+        more_btn = '<p class="btnrow"><button class="btn ghost" id="more" type="button">Mehr anzeigen</button></p>'
+        gridmats = mats[:static_max]
     ld = [faq_ld_of(faq)] if faq else []
     crumb_nav = ""
     if slug.startswith("lesespurgeschichten-"):   # 16.10.: Breadcrumb (sichtbar + JSON-LD) im Build statt Nachpatch vom 16.09.
@@ -1781,14 +1833,16 @@ def _ls_page(slug, title, h1, desc, intro, mats, links_html="", editorial="", fa
     out += f"""<section class="hero small">
 {crumb_nav}<h1>{html.escape(h1)}</h1>
 <p class="sub">{html.escape(intro)}</p>
-<p class="count">{n} {('Lesespurgeschichte' if n == 1 else 'Lesespurgeschichten') if slug.startswith('lesespur') else ('Material' if n == 1 else 'Materialien')} · Klick führt direkt zu eduki</p>
+<p class="count"><span id="cnt">{nfmt(n)} {('Lesespurgeschichte' if n == 1 else 'Lesespurgeschichten') if slug.startswith('lesespur') else ('Material' if n == 1 else 'Materialien')}</span> · Klick führt direkt zu eduki</p>
 </section>
 {links_html}
-<main><div class="grid" id="grid">
-{chr(10).join(cat_card_html(m) for m in mats)}
+<main><div class="grid" id="grid"{grid_attr}>
+{chr(10).join(cat_card_html(m) for m in gridmats)}
 </div>
+{more_btn}
 {editorial}
 </main>
+{FINDER_JS if finder else ""}
 <script>[].forEach.call(document.querySelectorAll('.card'),function(c){{c.classList.add('in');}});</script>
 """ + foot()
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
@@ -1956,8 +2010,18 @@ def render_saison_pages():
                  '<a class="chip" href="bastelvorlagen.html">Bastelvorlagen</a>'
                  '<a class="chip" href="lesespurgeschichten.html">Alle Lesespurgeschichten</a>'
                  '<a class="chip" href="materialien.html">Alle Materialien</a></div></div>')
-        _ls_page(slug, s["title"], s["h1"], s["desc"], s["intro"], sel, links, newest=True,
-                 crumbs=SAISON_NAV[slug].replace("&amp;", "&"))
+        t = hub_texte.get(slug, len(sel), nfmt)
+        desc, intro, secs, faq = s["desc"], s["intro"], None, None
+        if t:
+            desc, intro, secs, faq = t["desc"], t["intro"], t["sections"], t["faq"]
+        else:
+            lines = collections.Counter(m["line"] for m in sel)
+            fb = hub_texte.fallback(s["h1"], "zu diesem Thema", _bsp_titel(sel), len(sel),
+                                    hub_texte.lines_text(lines, fmt=nfmt), nfmt)
+            secs = fb["sections"]
+        _ls_page(slug, s["title"], s["h1"], desc, intro, sel, links, newest=True,
+                 crumbs=SAISON_NAV[slug].replace("&amp;", "&"),
+                 editorial=editorial_block(secs, faq), faq=faq, static_max=HUB_STATIC_MAX)
     return n_total
 
 
@@ -1992,14 +2056,14 @@ def render_lesespur_pages():
     for f, v in by_fach.items():
         _ls_page(f"lesespurgeschichten-{slugify(f)}", f"Lesespurgeschichten {f}",
                  f"Lesespurgeschichten {f}",
-                 f"{len(v)} Lesespurgeschichten für das Fach {f}: differenziert in drei Niveaustufen, mit Lageplan, "
+                 f"{hub_texte.pl(len(v), 'Lesespurgeschichte', 'Lesespurgeschichten')} {hub_texte.fach_fuer(f)}: differenziert in drei Niveaustufen, mit Lageplan, "
                  "Hörverstehen und Lösungswort – lehrplanorientiert für alle Bundesländer und Schularten.",
-                 f"Lesespurgeschichten für den {f}-Unterricht. " + LS_INTRO, v, hub_link,
+                 f"Lesespurgeschichten {hub_texte.fach_fuer(f)}. " + LS_INTRO, v, hub_link,
                  editorial=ls_editorial(v, fach=f))
     for n, v in by_kl.items():
         _ls_page(f"lesespurgeschichten-klasse-{n}", f"Lesespurgeschichten Klasse {n}",
                  f"Lesespurgeschichten Klasse {n}",
-                 f"{len(v)} Lesespurgeschichten für die {n}. Klasse: drei Niveaustufen, Lageplan, Hörverstehen mit "
+                 f"{hub_texte.pl(len(v), 'Lesespurgeschichte', 'Lesespurgeschichten')} für die {n}. Klasse: drei Niveaustufen, Lageplan, Hörverstehen mit "
                  "QR-Code und Lösungswort – passend zu den Lehrplänen aller Bundesländer und Schularten.",
                  f"Lesespurgeschichten für die {n}. Jahrgangsstufe, sprachlich und inhaltlich auf das Alter abgestimmt. " + LS_INTRO,
                  v, hub_link, editorial=ls_editorial(v, klasse=n))
