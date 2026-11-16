@@ -170,3 +170,7 @@ FEHLER: {'privatadresse': 3}
       (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 15.11. 06:30 Homepage-Tageslauf: Command '['C:\\Python314\\python.exe', '-X', 'utf8', 'build.py']' timed out after 4800 seconds (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 16.11. 16:54 Homepage-Tageslauf: Katalog-Pull unplausibel (5971 aktiv statt ~8632) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 16.11. 19:08 Homepage-Tageslauf: Katalog-Pull unplausibel (6028 aktiv statt ~8632) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
