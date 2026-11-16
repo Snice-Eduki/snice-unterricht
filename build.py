@@ -2161,9 +2161,30 @@ def in_aktion(m):
     return str(m.get("id")) in _AKTION
 
 
+_GRATIS_BIS = None
+def gratis_bis(m):
+    """16.11. (Auftrag C): befristet gratis (Kulanz/Aktion). Quelle: C:/Skripte/uebergabe/gratis_bis.json =
+    [{"id": "2398100", "bis": "2026-11-17T09:00"}, ...]. Solange 'bis' in der Zukunft liegt, zeigt die Seite
+    'Kostenlos bis TT.MM., HH:MM Uhr' und Preis 0. Datei fehlt/defekt -> keine Wirkung."""
+    global _GRATIS_BIS
+    if _GRATIS_BIS is None:
+        _GRATIS_BIS = {}
+        try:
+            now = datetime.datetime.now()
+            for e in json.load(open("C:/Skripte/uebergabe/gratis_bis.json", encoding="utf-8")):
+                try:
+                    b = datetime.datetime.fromisoformat(e["bis"])
+                    if now < b: _GRATIS_BIS[str(e["id"])] = b
+                except Exception: pass
+        except Exception: pass
+    return _GRATIS_BIS.get(str(m.get("id")))
+
+
 def price_label(m):
     if is_free(m):
         return "Kostenlos"   # 09.11.: kein Preis bei Gratis-Material
+    if gratis_bis(m):
+        return "Kostenlos bis " + gratis_bis(m).strftime("%d.%m., %H:%M Uhr")
     if in_aktion(m):
         return "Aktionspreis – aktueller Preis auf eduki"
     try:
@@ -2316,7 +2337,7 @@ def render_material_page(m, related):
     line_name, line_href = LINE_META.get(m.get("line"), ("Unterrichtsmaterial", "materialien.html", ""))[:2]
     price = price_label(m)
     try:
-        pnum = 0 if is_free(m) else float(m.get("price") or 0)
+        pnum = 0 if (is_free(m) or gratis_bis(m)) else float(m.get("price") or 0)
     except Exception:
         pnum = 0
     product_ld = {"@context": "https://schema.org", "@type": ["Product", "LearningResource"], "name": title, "description": meta_desc,
