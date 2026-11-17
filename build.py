@@ -2512,6 +2512,7 @@ def main():
     import baukasten_seiten; baukasten_seiten.render(globals())   # 09.11.: Gratis-Baukasten
     import escape_seiten; escape_seiten.render(globals())   # 09.11.: Escape-Room Winter gratis
     lehrplan_seiten.render(globals())   # 10.11.: Lehrplan-Themenseiten + Uebersicht
+    import wissen_seiten; wissen_seiten.render(globals())   # 17.11.: Wissens-Seiten (Textquelle der Hoerblaetter)
     n_matpages = render_material_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>
