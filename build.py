@@ -305,11 +305,13 @@ def post_cta(p):
     """CTA eines Blogartikels: bevorzugt die interne Detailseite (interne Verlinkung, Nutzer bleibt auf der Seite),
     eduki als zweiter, kleinerer Link. Ohne Detailseite wie bisher direkt zu eduki."""
     eduki = p.get("eduki") or ""
-    m = _MAT_ID_RE.search(eduki)
+    m = _MAT_ID_RE.search(eduki) or _MAT_ID_RE.search(p.get("body_md") or "")   # 17.11.: Material-ID auch aus dem Fließtext
     mid = m.group(1) if m else None
     if mid and mid in MAT_PAGES:
         return (f'<a class="btn" href="../{MAT_PAGES[mid]}">Material ansehen →</a>'
-                f'<br><a class="more" href="{html.escape(eduki)}" rel="noopener">direkt auf eduki öffnen</a>')
+                f'<br><a class="more" href="{html.escape(eduki or f"{EDUKI_MAT}/{mid}/")}" rel="noopener">direkt auf eduki öffnen</a>')
+    if mid and not eduki:
+        eduki = f"{EDUKI_MAT}/{mid}/"
     return f'<a class="btn" href="{html.escape(eduki or SHOP)}" rel="noopener">Material auf eduki ansehen →</a>'
 
 def render_post(p):
@@ -318,8 +320,17 @@ def render_post(p):
     cover = (f'<img class="cover" src="{html.escape(p["cover"])}" alt="{html.escape(p["title"])}" loading="lazy">'
              if p["cover"] else "")
     meta_line = " · ".join(x for x in (p["fach"], p["klasse"]) if x)
-    rel = ""
-    if p["related"]:
+    rel = ""; rel_mat = ""
+    if PASSEND:   # 17.11. (Nutzerauftrag): echte, thematisch passende Materialkarten statt immer gleicher Artikelliste
+        pm = PASSEND.fuer_post(p, 12)
+        karten = "".join(cat_card_html(x, root="../") for x in pm[:6])
+        if karten:
+            rel_mat = f'<section class="passend"><h2>Passende Materialien</h2><div class="grid">{karten}</div></section>'
+        art = [POST_ZU_MAT[x["id"]] for x in pm if x["id"] in POST_ZU_MAT and POST_ZU_MAT[x["id"]] is not p][:4]
+        if art:
+            rel = ('<section class="related"><h2>Weitere Unterrichtsideen</h2><ul>' + "".join(
+                f'<li><a href="{q["slug"]}.html">{html.escape(q["title"])}</a></li>' for q in art) + "</ul></section>")
+    elif p["related"]:
         items = "".join(f'<li><a href="{q["slug"]}.html">{html.escape(q["title"])}</a></li>' for q in p["related"])
         rel = f'<section class="related"><h2>Passende Materialien</h2><ul>{items}</ul></section>'
     out = head(p["title"], p["desc"], url, p["cover"], "../", p["date"], True)
@@ -327,7 +338,7 @@ def render_post(p):
 {f'<p class="meta">{html.escape(meta_line)}</p>' if meta_line else ''}{cover}
 {body_html}
 <p class="cta">{post_cta(p)}</p>
-</article>{rel}</main>""" + foot("../")
+</article>{rel}</main>{rel_mat}""" + foot("../")
     open(os.path.join(POSTS_DIR, p["slug"] + ".html"), "w", encoding="utf-8").write(out)
     return url
 
@@ -364,6 +375,7 @@ def klasse_label(grades):
 
 
 MAT_PAGES = {}   # id -> "material/<id>-<slug>.html" (Detailseiten, 13.09.)
+PASSEND = None; POST_ZU_MAT = {}   # 17.11.: thematisch passendes Material (passend.py), Material-ID -> Blogartikel
 THUMB_DIR = os.path.join(OUT, "thumbs")   # 27.10.: WebP-Vorschauen (Skripte/_homepage_thumbs.py)
 _THUMBS = None
 
@@ -2362,7 +2374,9 @@ def render_material_page(m, related):
     cover = (f'<div class="mat-cover"><img src="{html.escape(m["cover"])}" alt="{html.escape(title)} – Vorschau" width="600" height="850"></div>'
              if m.get("cover") else "")
     rel_html = "".join(cat_card_html(r, root="../") for r in related)
-    facts = "".join(f"<div><b>{k}</b>{html.escape(v)}</div>" for k, v in
+    _pz = POST_ZU_MAT.get(m["id"])
+    idee_html = (f'<p class="meta"><a href="../posts/{_pz["slug"]}.html">Unterrichtsideen zu diesem Thema →</a></p>\n' if _pz else "")
+    facts ="".join(f"<div><b>{k}</b>{html.escape(v)}</div>" for k, v in
                     (("Fach", fach), ("Klasse", kl or "–"), ("Schulform", schul or "–"), ("Materialart", typen or line_name))
                     if v)
     body = f"""{MAT_CSS}
@@ -2379,7 +2393,7 @@ def render_material_page(m, related):
 <p class="meta">Passende Übersichten: <a href="../{fach_slug(fach)}.html">{html.escape(fach)}</a>{(" · " + kl_links) if kl_links else ""} · <a href="../{line_href}">{html.escape(line_name)}</a>{_lp("mat_links", m)}</p>
 </div>
 </div>
-{"<h2>Ähnliche Materialien</h2><div class='grid'>" + rel_html + "</div>" if related else ""}
+{idee_html}{"<h2>Ähnliche Materialien</h2><div class='grid'>" + rel_html + "</div>" if related else ""}
 </main>
 """
     page = head(seo_title_de(m, [n for n in nums if 1 <= n <= 13]), meta_desc, url, m.get("cover"), root="../",
@@ -2402,7 +2416,7 @@ def render_material_pages():
                     + (bool(nums & set(grade_nums(as_list(x.get("grades")))))) * 1
                     + (0.5 if x.get("cover") else 0))
         cands.sort(key=lambda x: (-score(x), -int(x["id"])))
-        render_material_page(m, cands[:8])
+        render_material_page(m, PASSEND.fuer_material(m) if PASSEND else cands[:8])
     # 16.10.: Detailseiten offline gegangener/umbenannter Materialien entfernen (generierte Artefakte)
     keep = {os.path.basename(mat_path(m)) for m in mats}
     import i18n_build as _I   # 02.11.: Weiterleitungs-Stub statt 404 (Ziel: Fachseite des inaktiven Materials, sonst materialien.html)
@@ -2471,6 +2485,16 @@ def main():
     register_material_pages()
     import lehrplan_seiten; lehrplan_seiten.prepare(globals())   # 10.11.: Lehrplan-Themenseiten (Zuordnung vor allen Hubs)
     posts = load_posts()
+    global PASSEND
+    try:   # 17.11. (Nutzerauftrag): thematisch passendes Material auf Blog- und Detailseiten
+        import passend
+        _zus = {}
+        for p in posts:
+            for mid in _MAT_ID_RE.findall((p.get("eduki") or "") + " " + p["body_md"])[:1]:
+                _zus[mid] = _zus.get(mid, "") + " " + p["body_md"]; POST_ZU_MAT.setdefault(mid, p)
+        PASSEND = passend.Passend([m for m in katalog_de() if m["id"] in MAT_PAGES], grade_nums, as_list, STOP, _zus)
+    except Exception as e:
+        PASSEND = None; print("WARNUNG passend.py:", repr(e), flush=True)
     for p in posts:
         render_post(p)
     nmat = render_finder()

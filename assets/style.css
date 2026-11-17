@@ -245,3 +245,7 @@ p.soon{color:var(--muted);text-align:left;margin:0}
 .mat-cover.small img{max-width:330px;margin:0 auto}
 .topnav .brand{flex:0 0 auto}
 .topnav .links{min-width:0;overflow-x:auto;scrollbar-width:none}.topnav .links::-webkit-scrollbar{display:none}
+
+/* 17.11.: passende Materialkarten unter Blogartikeln */
+.passend{max-width:1100px;margin:40px auto 0;padding:22px 20px 0;border-top:1px solid var(--line)}
+.passend h2{font-size:22px;margin:0 0 14px}
