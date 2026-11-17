@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 """17.11.2026: Wissens-Seiten (nur DE) = eigene Sachtexte zu Lehrplanthemen, die als Textquelle der
 Hoerverstehen-/Lueckentext-Blaetter dienen (Ersatz fuer die fruehere Klexikon-Verlinkung).
-Daten: _wissen_themen.json neben build.py, Liste aus
+Daten (nur lokal, per .gitignore NICHT im oeffentlichen Repo): _wissen_themen.json + _wissen_bilder/ neben build.py, Liste aus
   {"thema", "slug", "fach", "klassen", "text", "bild" (optional, Datei in assets/wissen/),
    "eduki" (optional, Material-URL), "audio" (optional, Hoerseiten-URL)}
-Ausgabe: wissen/<slug>.html + wissen/index.html. Aufruf aus build.py: render(globals()).
+18.11.2026 (Nutzer): Seiten duerfen NUR ueber den QR-Code erreichbar sein -> kryptische Adresse w/<hmac20>.html
+(Geheimnis aus Skripte, _audio_secret.py), noindex/nofollow, keine Uebersicht, keine Sitemap, kein interner Link, Bild ebenfalls kryptisch.
+Ausgabe: w/<id>.html. Adresse eines Themas: url_of(slug). Aufruf aus build.py: render(globals()).
 Einzelseite ohne Vollbau: python wissen_seiten.py <slug> [<slug> ...]  (oder --alle)"""
 import html, json, os, re, sys, collections
 
@@ -21,6 +23,30 @@ CSS = """<style>
 @media(max-width:700px){.ws .tl{columns:1}}</style>"""
 
 
+sys.path.insert(0, r"C:\Claude-Arbeitsblätter\Skripte")
+SITE_FEST = "https://snice-unterricht.eu"
+
+
+def wid(slug):
+    import _audio_secret as AS
+    return AS.hid("wissen", slug)
+
+
+def url_of(slug):
+    return f"{SITE_FEST}/w/{wid(slug)}.html"
+
+
+def _geheim(out):
+    """Kopf entschaerfen: nichts, was Suchmaschinen/Vorschauen einlaedt."""
+    out = re.sub(r'<link rel="canonical"[^>]*>', "", out)
+    out = re.sub(r'<meta (?:property="og:|name="twitter:)[^>]*>', "", out)
+    out = re.sub(r'<script type="application/ld\+json">.*?</script>', "", out, flags=re.S)
+    out, n = re.subn(r'<meta name="robots"[^>]*>', '<meta name="robots" content="noindex, nofollow, noarchive"><meta name="referrer" content="no-referrer">', out, count=1)
+    if n != 1 or "noindex" not in out or "canonical" in out or "og:" in out:
+        raise RuntimeError("Wissens-Seite: Kopf nicht entschaerft")
+    return out
+
+
 def laden():
     if not os.path.exists(DATA):
         return []
@@ -35,16 +61,23 @@ def absaetze(text, n=4):
 
 def seite(g, t):
     head, foot, SITE, bc = g["head"], g["foot"], g["SITE"], g["breadcrumb_ld"]
-    url = f"{SITE}/wissen/{t['slug']}.html"
+    w = wid(t["slug"]); url = f"{SITE}/w/{w}.html"
     kl = t.get("klassen", ""); fach = t.get("fach", "")
     desc = (f"{t['thema']} einfach erklärt: kurzer Sachtext für Klasse {kl}" if kl else f"{t['thema']} einfach erklärt: kurzer Sachtext für die Schule")
     desc += f" ({fach})." if fach else "."
     desc += " Passend zum Arbeitsblatt mit Lückentext, Hörverstehen und Suchsel."
-    cover = f"{SITE}/assets/wissen/{t['bild']}" if t.get("bild") else ""
-    ld = [bc([("Start", SITE + "/"), ("Wissen", SITE + "/wissen/"), (t["thema"], url)])]
+    cover = ""
+    bn = ""
+    if t.get("bild"):   # Bild unter kryptischem Namen ausliefern (Quelle bleibt ausserhalb des Web-Ordners in _wissen_bilder/)
+        import shutil
+        q = os.path.join(H, "_wissen_bilder", t["bild"]); bn = w + os.path.splitext(t["bild"])[1].lower()
+        os.makedirs(os.path.join(g["OUT"], "assets", "w"), exist_ok=True)
+        if not os.path.exists(q): raise RuntimeError("Bild fehlt: " + q)
+        shutil.copyfile(q, os.path.join(g["OUT"], "assets", "w", bn))
+    ld = []
     out = head(f"{t['thema']} einfach erklärt – Sachtext für Kinder", desc, url, cover, root="../", extra_ld=ld)
     chips = "".join(f"<span>{E(x)}</span>" for x in ([fach] if fach else []) + ([f"Klasse {kl}"] if kl else []))
-    bild = (f'<figure><img src="../assets/wissen/{E(t["bild"])}" alt="{E(t["thema"])}" loading="lazy"></figure>' if t.get("bild") else "")
+    bild = (f'<figure><img src="../assets/w/{E(bn)}" alt="{E(t["thema"])}" loading="lazy"></figure>' if bn else "")
     txt = "".join(f"<p>{E(a)}</p>" for a in absaetze(t["text"]))
     audio = (f'<div class="box"><strong>Hörtext</strong><p>Den Text zum Anhören gibt es hier: <a href="{E(t["audio"])}" rel="noopener">Hörtext öffnen</a></p></div>' if t.get("audio") else "")
     if t.get("eduki"):
@@ -53,32 +86,13 @@ def seite(g, t):
     else:
         mat = ('<div class="box"><strong>Arbeitsblatt zum Text</strong><p>Zu diesem Sachtext gibt es ein Arbeitsblatt mit Lückentext, Wortspeicher, '
                f'Hörverstehen und Suchsel, jeweils mit Lösung, im <a href="{E(g["SHOP"])}" rel="noopener">Snice-Shop auf eduki</a>.</p></div>')
-    out += (f'<main class="article-wrap ws">{CSS}<nav class="crumbs"><a href="../index.html">Start</a> › <a href="index.html">Wissen</a> › <span>{E(t["thema"])}</span></nav>'
+    out += (f'<main class="article-wrap ws">{CSS}'
             f'<h1>{E(t["thema"])}</h1><div class="chips">{chips}</div>{bild}<div class="txt">{txt}</div>{audio}{mat}'
             '<p class="src">Text: Snice Unterricht (eigener Text). Bild: KI-generiertes Symbolbild (eigene Erstellung).</p>'
-            '<p><a href="index.html">Alle Wissens-Texte</a> · <a href="../materialien.html">Alle Materialien</a></p></main>') + foot("../")
-    os.makedirs(os.path.join(g["OUT"], "wissen"), exist_ok=True)
-    open(os.path.join(g["OUT"], "wissen", t["slug"] + ".html"), "w", encoding="utf-8").write(out)
-    return url
-
-
-def uebersicht(g, themen):
-    head, foot, SITE, bc = g["head"], g["foot"], g["SITE"], g["breadcrumb_ld"]
-    url = f"{SITE}/wissen/"
-    by = collections.defaultdict(list)
-    for t in themen:
-        by[t.get("fach") or "Weitere Themen"].append(t)
-    out = head("Wissen: Sachtexte für Kinder zu Lehrplanthemen", "Kurze, leicht verständliche Sachtexte zu Themen aus den Lehrplänen, "
-               "jeweils passend zu einem Arbeitsblatt mit Lückentext, Hörverstehen und Suchsel.", url, "", root="../",
-               extra_ld=[bc([("Start", SITE + "/"), ("Wissen", url)])])
-    body = ""
-    for fach in sorted(by):
-        lis = "".join(f'<li><a href="{E(t["slug"])}.html">{E(t["thema"])}</a></li>' for t in sorted(by[fach], key=lambda x: x["thema"].lower()))
-        body += f'<h2>{E(fach)}</h2><ul class="tl">{lis}</ul>'
-    out += (f'<main class="article-wrap ws">{CSS}<nav class="crumbs"><a href="../index.html">Start</a> › <span>Wissen</span></nav>'
-            '<h1>Wissen: Sachtexte zu Lehrplanthemen</h1><p class="sub">Kurze Sachtexte für Kinder und Jugendliche. Zu jedem Text gibt es ein '
-            f'Arbeitsblatt mit Lückentext, Hörverstehen und Suchsel.</p>{body}</main>') + foot("../")
-    open(os.path.join(g["OUT"], "wissen", "index.html"), "w", encoding="utf-8").write(out)
+            '<p><a href="../materialien.html">Alle Materialien</a></p></main>') + foot("../")
+    out = _geheim(out)
+    os.makedirs(os.path.join(g["OUT"], "w"), exist_ok=True)
+    open(os.path.join(g["OUT"], "w", w + ".html"), "w", encoding="utf-8").write(out)
     return url
 
 
@@ -86,11 +100,7 @@ def render(g, nur=None):
     themen = laden()
     if not themen:
         return 0
-    os.makedirs(os.path.join(g["OUT"], "wissen"), exist_ok=True)
-    urls = [seite(g, t) for t in themen if not nur or t["slug"] in nur]
-    urls.append(uebersicht(g, themen))
-    if "EXTRA_URLS" in g and not nur:
-        g["EXTRA_URLS"].extend(urls)
+    urls = [seite(g, t) for t in themen if not nur or t["slug"] in nur]   # bewusst NICHT in EXTRA_URLS/Sitemap/IndexNow
     return len(urls)
 
 
