@@ -174,3 +174,5 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 16.11. 16:54 Homepage-Tageslauf: Katalog-Pull unplausibel (5971 aktiv statt ~8632) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 16.11. 19:08 Homepage-Tageslauf: Katalog-Pull unplausibel (6028 aktiv statt ~8632) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 16.11. 22:54 Homepage-Tageslauf: Katalog-Pull unplausibel (6040 aktiv statt ~8651) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
