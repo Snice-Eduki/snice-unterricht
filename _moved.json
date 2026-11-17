@@ -20,10 +20,6 @@
 "materialien.html",
 "Materialien"
 ],
-"material/2043781-annette-droste-huelshoff-lueckentext-mit-wortspeicher-und-suchsel-inkl-musterloesung.html": [
-"materialien.html",
-"Materialien"
-],
 "material/2044787-artischocke-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
 "materialien.html",
 "Materialien"
@@ -41,14 +37,6 @@
 "Materialien"
 ],
 "material/2045760-astana-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2048458-gemeinde-lueckentext-mit-wortspeicher-hoerverstehen-und-suchsel.html": [
-"materialien.html",
-"Materialien"
-],
-"material/2381005-daz-lesefoerderung-partner-diktat-streifen-6-wortfelder-3-niveaus-hoer-diktat-per-qr-code-1.html": [
 "materialien.html",
 "Materialien"
 ],
@@ -768,11 +756,11 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
-"es/p/17913861-marmol.html": [
+"es/p/17914305-nordlingen.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
-"es/p/17914305-nordlingen.html": [
+"es/p/17915815-ortoedro.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -797,10 +785,6 @@
 "Todos los recursos"
 ],
 "es/p/17921165-rothenburg-ob-der-tauber.html": [
-"es/recursos.html",
-"Todos los recursos"
-],
-"es/p/17922497-tecnecio.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -836,10 +820,6 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
-"es/p/2088884-comercio.html": [
-"es/p/17903016-comercio.html",
-"Comercio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
 "es/p/2088908-alaska.html": [
 "es/p/17897739-alaska.html",
 "Alaska – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
@@ -855,6 +835,10 @@
 "es/p/2095292-tormenta-electrica.html": [
 "es/p/18178763-tormenta-electrica.html",
 "Tormenta eléctrica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095800-imperio-otomano.html": [
+"es/p/17910589-imperio-otomano.html",
+"Imperio otomano – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2096367-vasco-da-gama.html": [
 "es/p/18183395-vasco-da-gama.html",
@@ -888,13 +872,13 @@
 "es/p/18175317-cancer.html",
 "Cáncer – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2099936-menstruacion.html": [
-"es/p/18147789-menstruacion.html",
-"Menstruación – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
 "es/p/2100114-squalius-cephalus.html": [
 "es/p/18177180-squalius-cephalus.html",
 "Squalius cephalus – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2101008-jura.html": [
+"es/p/18134427-jura.html",
+"Jura – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2101211-spiel-des-jahres.html": [
 "es/p/18177150-spiel-des-jahres.html",
@@ -907,14 +891,6 @@
 "es/p/2102316-poesia-lirica.html": [
 "es/p/18175451-poesia-lirica.html",
 "Poesía lírica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2104013-horno-de-microondas.html": [
-"es/p/18129967-horno-de-microondas.html",
-"Horno de microondas – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2105087-juglans.html": [
-"es/p/17912444-juglans.html",
-"Juglans – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2366217-sodio.html": [
 "es/p/18177106-sodio.html",
@@ -1076,9 +1052,13 @@
 "es/p/18175343-eco.html",
 "Eco – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2375739-ortoedro.html": [
-"es/p/17915815-ortoedro.html",
-"Ortoedro – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+"es/p/2375730-marmol.html": [
+"es/p/17913861-marmol.html",
+"Mármol – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2375749-tecnecio.html": [
+"es/p/17922497-tecnecio.html",
+"Tecnecio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2375761-automovil.html": [
 "es/p/17899305-automovil.html",
@@ -1088,9 +1068,9 @@
 "es/p/17904174-dardos.html",
 "Dardos – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
-"es/p/2376077-jura.html": [
-"es/p/18134427-jura.html",
-"Jura – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+"es/p/2376074-juglans.html": [
+"es/p/17912444-juglans.html",
+"Juglans – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2376080-somalia.html": [
 "es/p/17922828-somalia.html",
@@ -1152,17 +1132,25 @@
 "es/p/18170212-pensamiento.html",
 "Pensamiento – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
+"es/p/2392540-horno-de-microondas.html": [
+"es/p/18129967-horno-de-microondas.html",
+"Horno de microondas – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
 "es/p/2392544-psicologia.html": [
 "es/p/17917323-psicologia.html",
 "Psicología – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+],
+"es/p/2392591-comercio.html": [
+"es/p/17903016-comercio.html",
+"Comercio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2392599-henri-rousseau.html": [
 "es/p/17909776-henri-rousseau.html",
 "Henri Rousseau – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
-"es/p/2392605-imperio-otomano.html": [
-"es/p/17910589-imperio-otomano.html",
-"Imperio otomano – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
+"es/p/2392612-menstruacion.html": [
+"es/p/18147789-menstruacion.html",
+"Menstruación – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2392621-muerte.html": [
 "es/p/17913811-muerte.html",
@@ -1299,8 +1287,8 @@
 "histoire-et-societe"
 ],
 "fr/p/17974549-bowling.html": [
-"fr/p/2100668-bowling.html",
-"Bowling - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106866-bowling.html",
+"Bowling – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/17980062-castor.html": [
 "fr/p/2359815-castor.html",
@@ -1627,8 +1615,8 @@
 "Apôtre – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18116178-aquarium.html": [
-"fr/p/2100666-aquarium.html",
-"Aquarium - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106865-aquarium.html",
+"Aquarium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18116218-arabe.html": [
 "fr/p/2101052-arabe.html",
@@ -1783,8 +1771,8 @@
 "Aubergine – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18117924-acores.html": [
-"fr/p/2105447-acores.html",
-"Açores – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099583-acores.html",
+"Açores - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18117942-autisme.html": [
 "fr/p/2106858-autisme.html",
@@ -2215,12 +2203,12 @@
 "Canal de Panama – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122270-canal-de-suez.html": [
-"fr/p/2105632-canal-de-suez.html",
-"Canal de Suez – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100012-canal-de-suez.html",
+"Canal de Suez - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122304-canberra.html": [
-"fr/p/2106283-canberra.html",
-"Canberra – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101507-canberra.html",
+"Canberra - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122334-cancer.html": [
 "fr/p/2101807-cancer.html",
@@ -2247,8 +2235,8 @@
 "Canton du Tessin – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122509-caoutchouc-naturel.html": [
-"fr/p/2379465-caoutchouc-naturel.html",
-"Caoutchouc naturel – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101771-caoutchouc-naturel.html",
+"Caoutchouc naturel – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18122543-cap-vert.html": [
 "fr/p/2101399-cap-vert.html",
@@ -2455,8 +2443,8 @@
 "Chemin de fer – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126894-chevreuil-d-europe.html": [
-"fr/p/2095751-chevreuil-d-europe.html",
-"Chevreuil d'Europe - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2103351-chevreuil-d-europe.html",
+"Chevreuil d'Europe – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18126912-chewing-gum.html": [
 "fr/p/2106481-chewing-gum.html",
@@ -2499,8 +2487,8 @@
 "Chocolat – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127104-chouette-hulotte.html": [
-"fr/p/2101122-chouette-hulotte.html",
-"Chouette hulotte – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2392579-chouette-hulotte.html",
+"Chouette hulotte – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127124-christianisme.html": [
 "fr/p/2099987-christianisme.html",
@@ -2611,8 +2599,8 @@
 "Coche de plaisance – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127737-coco-chanel.html": [
-"fr/p/2100755-coco-chanel.html",
-"Coco Chanel - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106877-coco-chanel.html",
+"Coco Chanel – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18127767-cocotier.html": [
 "fr/p/2359991-cocotier.html",
@@ -2963,8 +2951,8 @@
 "Dasypodidae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18131748-degre-celsius.html": [
-"fr/p/2105597-degre-celsius.html",
-"Degré Celsius – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2099913-degre-celsius.html",
+"Degré Celsius - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18131793-delhi.html": [
 "fr/p/2360133-delhi.html",
@@ -3023,8 +3011,8 @@
 "Discothèque – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18132470-disque-blu-ray.html": [
-"fr/p/2100562-disque-blu-ray.html",
-"Disque Blu-ray - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106852-disque-blu-ray.html",
+"Disque Blu-ray – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18132508-disque-celeste-de-nebra.html": [
 "fr/p/2106542-disque-celeste-de-nebra.html",
@@ -3203,8 +3191,8 @@
 "Equus – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134071-equus-quagga-quagga.html": [
-"fr/p/2098620-equus-quagga-quagga.html",
-"Equus quagga quagga – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2379489-equus-quagga-quagga.html",
+"Equus quagga quagga – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134119-esperanto.html": [
 "fr/p/2392547-esperanto.html",
@@ -3223,8 +3211,8 @@
 "Eswatini – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134206-euro.html": [
-"fr/p/2098426-euro.html",
-"Euro - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104516-euro.html",
+"Euro – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18134232-europe.html": [
 "fr/p/2104647-europe.html",
@@ -3587,8 +3575,8 @@
 "Giacomo Puccini – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18136773-giuseppe-verdi.html": [
-"fr/p/2104449-giuseppe-verdi.html",
-"Giuseppe Verdi – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2096370-giuseppe-verdi.html",
+"Giuseppe Verdi - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18136816-glacier.html": [
 "fr/p/2104730-glacier.html",
@@ -3643,8 +3631,8 @@
 "Grand Tétras – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137416-grand-duc-de-luxembourg.html": [
-"fr/p/2105816-grand-duc-de-luxembourg.html",
-"Grand-duc de Luxembourg – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100337-grand-duc-de-luxembourg.html",
+"Grand-duc de Luxembourg - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18137438-grande-roue.html": [
 "fr/p/2097108-grande-roue.html",
@@ -3915,8 +3903,8 @@
 "Air – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18142209-alaudidae.html": [
-"fr/p/2106320-alaudidae.html",
-"Alaudidae – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101575-alaudidae.html",
+"Alaudidae - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18142231-allemand.html": [
 "fr/p/2082530-allemand.html",
@@ -4099,8 +4087,8 @@
 "Calcium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18143591-canton-d-uri.html": [
-"fr/p/2095938-canton-d-uri.html",
-"Canton d'Uri - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2103658-canton-d-uri.html",
+"Canton d'Uri – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18143609-capra.html": [
 "fr/p/2098869-capra.html",
@@ -4183,8 +4171,8 @@
 "Cheloniidae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18144148-cheval-de-troie.html": [
-"fr/p/2096111-cheval-de-troie.html",
-"Cheval de Troie – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2380678-cheval-de-troie.html",
+"Cheval de Troie – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18144174-chisinau.html": [
 "fr/p/2369636-chisinau.html",
@@ -4447,8 +4435,8 @@
 "Pau – Fiche de géographie : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145886-demeter.html": [
-"fr/p/2106176-demeter.html",
-"Déméter – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2101311-demeter.html",
+"Déméter - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18145933-effets-speciaux.html": [
 "fr/p/2369892-effets-speciaux.html",
@@ -4567,8 +4555,8 @@
 "Forestier – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146671-foret.html": [
-"fr/p/2100029-foret.html",
-"Forêt - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105650-foret.html",
+"Forêt – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18146681-foret-humide.html": [
 "fr/p/2105668-foret-humide.html",
@@ -4807,8 +4795,8 @@
 "Hiroshima – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148068-hirundinidae.html": [
-"fr/p/2104410-hirundinidae.html",
-"Hirundinidae – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2096230-hirundinidae.html",
+"Hirundinidae - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148117-henri-rousseau.html": [
 "fr/p/2095946-henri-rousseau.html",
@@ -4843,8 +4831,8 @@
 "Hockey sur gazon – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148262-hockey-sur-glace.html": [
-"fr/p/2106849-hockey-sur-glace.html",
-"Hockey sur glace – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2100528-hockey-sur-glace.html",
+"Hockey sur glace - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18148282-hollywood.html": [
 "fr/p/2106622-hollywood.html",
@@ -5227,8 +5215,8 @@
 "Lacertidae – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18154999-lagos.html": [
-"fr/p/2101559-lagos.html",
-"Lagos - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106311-lagos.html",
+"Lagos – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18155019-lait.html": [
 "fr/p/2363717-lait.html",
@@ -5447,8 +5435,8 @@
 "Les Trois Mousquetaires – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156942-joseph-beuys.html": [
-"fr/p/2098000-joseph-beuys.html",
-"Joseph Beuys – Fiche : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2096151-joseph-beuys.html",
+"Joseph Beuys - Fiche - texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18156960-les-verts.html": [
 "fr/p/2104720-les-verts.html",
@@ -5503,8 +5491,8 @@
 "Liechtenstein – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18157326-lime.html": [
-"fr/p/2100309-lime.html",
-"Lime - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2105794-lime.html",
+"Lime – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18157349-limes.html": [
 "fr/p/2100845-limes.html",
@@ -5691,12 +5679,12 @@
 "Madrid – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158567-magie.html": [
-"fr/p/2101467-magie.html",
-"Magie - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106257-magie.html",
+"Magie – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158589-magnesium.html": [
-"fr/p/2379170-magnesium.html",
-"Magnésium – Fiche CM1-CM2 : texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104871-magnesium.html",
+"Magnésium – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18158609-mahomet.html": [
 "fr/p/2106421-mahomet.html",
@@ -5759,8 +5747,8 @@
 "Manchester – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159656-manchester-city-football-club.html": [
-"fr/p/2100929-manchester-city-football-club.html",
-"Manchester City Football Club - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2106898-manchester-city-football-club.html",
+"Manchester City Football Club – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159680-manchester-united-football-club.html": [
 "fr/p/2364010-manchester-united-football-club.html",
@@ -5783,8 +5771,8 @@
 "Manioc – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159801-mannequinat.html": [
-"fr/p/2098524-mannequinat.html",
-"Mannequinat - Fiche - texte à trous, compréhension orale et mots mêlés"
+"fr/p/2104539-mannequinat.html",
+"Mannequinat – Fiche : texte à trous, compréhension orale et mots mêlés"
 ],
 "fr/p/18159827-manuscrit-de-voynich.html": [
 "fr/p/2105639-manuscrit-de-voynich.html",
@@ -6608,7 +6596,7 @@
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
-"it/animali-e-natura-classe-v-primaria.html": [
+"it/animali-e-natura-classe-iv-primaria.html": [
 "it/animali-e-natura.html",
 "animali-e-natura"
 ],
@@ -6644,19 +6632,15 @@
 "it/feste-e-tradizioni.html",
 "feste-e-tradizioni"
 ],
-"it/geografia-classe-ii-primaria.html": [
-"it/geografia.html",
-"geografia"
-],
 "it/geografia-classe-iii-primaria.html": [
 "it/geografia.html",
 "geografia"
 ],
-"it/matematica-classe-v-primaria.html": [
+"it/matematica-classe-iv-primaria.html": [
 "it/matematica.html",
 "matematica"
 ],
-"it/musica-classe-i-primaria.html": [
+"it/musica-classe-ii-primaria.html": [
 "it/musica.html",
 "musica"
 ],
@@ -6664,2715 +6648,7 @@
 "it/musica.html",
 "musica"
 ],
-"it/p/2080587-basso-elettrico-scheda-di-musica-testo-con-spazi-vuoti-comprensione-al.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080595-chitarra-elettrica-scheda-di-musica-testo-con-spazi-vuoti-comprensione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080606-mandolino-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-asco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080630-nyckelharpa-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-as.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080650-armonica-a-bocca-scheda-di-musica-testo-con-spazi-vuoti-comprensione-a.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080657-celesta-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascolt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080661-flauto-di-pan-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080679-vuvuzela-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascol.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080688-flicorno-soprano-scheda-di-musica-testo-con-spazi-vuoti-comprensione-a.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080733-nacchere-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascol.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080747-handpan-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascolt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080754-tom-tom-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascolt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080776-scacciapensieri-scheda-di-musica-testo-con-spazi-vuoti-comprensione-al.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080789-kazoo-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascolto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080812-washboard-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-asco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080823-tabla-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascolto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080824-darabouka-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-asco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2080862-theremin-scheda-di-musica-testo-con-spazi-vuoti-comprensione-all-ascol.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082463-acqua.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082489-aeroporto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082508-altipiano-svizzero.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082526-andrea-berg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082552-abies-alba.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082566-anno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2082617-anima.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087234-karl-may.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087273-digestione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087286-ingranaggio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087288-eritema-solare.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087325-maremoto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087399-golfo-persico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087410-linguaggio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087434-juglans.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087461-galleria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087475-estate.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087489-meleagris-gallopavo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087493-dendrobatidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087580-efelidi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087581-energia-idraulica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087594-fuso-orario.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087623-lemuriformes.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087646-guglielmo-tell.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087716-markkleeberg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087720-gelnhausen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087724-kronberg-im-taunus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087728-diepholz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087731-garching-bei-munchen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087765-isole-salomone.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087776-favola.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087781-mese.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087791-glucidi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087799-impero-spagnolo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087808-circondario-di-plon.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087812-gotthold-ephraim-lessing.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087819-joseph-beuys.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087867-circondario-di-mayen-coblenza.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087889-dubnio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087942-fidel-castro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2087973-graz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088032-geometria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088090-george-washington.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088095-elezioni-federali-in-germania-del-2021.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088111-helsinki.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088150-johannes-gutenberg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088151-macchina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088207-michael-ende.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088227-elvezi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088250-laus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088285-frankenthal.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088291-herdecke.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088300-circondario-di-meien.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088301-circondario-del-meclemburgo-nordoccidentale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088311-kerpen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088323-circondario-di-wurzburg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088352-kempen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088358-iridio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088365-hadamar.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088405-litio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088425-divorzio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088443-circondario-di-bad-kreuznach.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088449-circondario-di-cochem-zell.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088481-dippoldiswalde.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088506-contrabbando.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088545-ludinghausen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088564-mendelevio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088568-groenhain.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088573-manifesto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088584-circondario-dell-altenburger-land.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088608-ingelheim-am-rhein.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088612-landau-an-der-isar.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088665-circondario-di-neckar-odenwald.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088711-feuchtwangen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088822-heusenstamm.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088829-herzberg-am-harz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088855-giostra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088871-karate.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088904-inflazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088929-magonza.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088956-cornovaglia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2088971-impero-tedesco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089003-die-arzte.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089049-kassel.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089059-keir-starmer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089077-compleanno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089095-fattoria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089108-grado-celsius.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089120-francobollo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089127-ex-territori-orientali-della-germania.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089173-foresta-pluviale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089178-lingua-slovena.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089187-cupola.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089212-lingua-cinese-standard.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089222-docente.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089252-fagus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089295-gru.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089299-lingua-danese.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089314-emys-orbicularis.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089356-lingua-greca.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089368-hip-hop.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089381-ebraismo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089407-martin-lutero.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089415-karl-benz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089440-gibuti.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089447-innsbruck.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089449-madrid.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089500-genova.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089501-havel.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089503-legno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089510-corrente-del-golfo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089522-flauto-dolce.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089570-gps.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089572-johann-wolfgang-von-goethe.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089582-gekkonidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089590-kaiserslautern.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089597-marco-polo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089616-heilbronn.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089627-elicottero.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089633-ijsselmeer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089636-imperatore.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089681-fosforo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089696-ixodida.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089700-lutra-lutra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089710-dama-bianca.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089755-hippy.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089788-haldensleben.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089792-cygnus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089801-hoyerswerda.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089809-lasagne-al-forno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089815-lingua-francese.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089819-erfurt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089838-intelligenza-artificiale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089849-jules-verne.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089861-conflitto-russo-ucraino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089863-klaus-stortebeker.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089868-colonia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089891-lucerna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089903-interazione-gravitazionale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089907-heppenheim.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089931-linnich.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089937-golf.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089951-lugano.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089962-emsdetten.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089963-flerovio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089970-circondario-di-marburgo-biedenkopf.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089979-circondario-di-brisgovia-alta-foresta-nera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089983-lunedi-delle-rose.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089988-circondario-di-stade.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2089998-circondario-di-hildburghausen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090007-laichingen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090019-johanna-spyri.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090021-lago-di-costanza.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090029-lingua-tedesca.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090033-gibilterra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090040-firenze.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090047-jurij-gagarin.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090052-gazzella.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090055-intestino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090060-magia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090070-copenaghen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090075-elbsandsteingebirge.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2090081-futbol-club-barcelona.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095155-aar.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095160-organ.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095202-ruota-panoramica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095215-miniere-di-carbone-dello-zollverein.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095217-roma.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095229-planetario.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095241-arachnida.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095247-permafrost.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095256-rapina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095274-plauen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095284-peru.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095287-offenbach-am-main.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095381-rinascimento.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095400-ristorante.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095414-pietra-d-inciampo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095430-pforzheim.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095442-piper-nigrum.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095447-reliquia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095457-podiceps-cristatus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095501-ottawa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095542-rembrandt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095555-sahel.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095567-roy-lichtenstein.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095589-pinnipedia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095650-robot.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095656-ruggine.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095698-plutonio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095731-oscines.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095744-paul-klee.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095779-neustrelitz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095783-rietberg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095885-cappuccetto-rosso.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095896-panama.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095905-raffaello-sanzio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095916-parotite.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095959-paradiso.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095972-precipitazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2095988-polmone.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096019-paolo-di-tarso.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096034-propaganda.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096058-pattensen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096070-bismuto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096078-radio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096089-pannolino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096103-astato.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
 "it/p/2096123-antonio-vivaldi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096128-asta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096221-bmx.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096240-chiesa-cattolica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096249-barbanera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096252-bile.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096270-pasta-sfoglia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096274-brasilia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096347-nicaragua.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096416-agricoltura.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096431-piede.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096465-ragazzo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096467-milione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096476-busto-di-nefertiti.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096478-campionato-europeo-maschile-di-calcio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096489-museo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096510-paracadute.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096514-pattino-da-ghiaccio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096544-brassica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096558-alchimia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096584-pompei.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096606-monti-altaj.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096614-paleolitico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096644-organo-a-canne.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096694-odino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096706-poltergeist.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096728-sagrada-familia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096739-rio-de-janeiro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096745-preistoria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096769-lingue-sorabe.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096791-pentecoste.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096830-primato.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096866-breisach-am-rhein.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096871-paesi-bassi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096886-alfabeto-runico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096906-pterosauria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096948-rosti.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2096998-mito.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097011-capra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097041-pupazzo-di-neve.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097093-pop-art.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097103-cerio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097130-bad-mergentheim.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097141-bad-salzungen.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097169-mitologia-greca.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097205-bohrio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097242-oelde.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097273-rutherfordio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097294-parchim.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097304-musica-pop.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097351-potassio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097364-berillio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097396-pittura.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097428-autostrada.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097437-bretagna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097477-minoranza.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097511-chicago.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097547-poesia-lirica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097559-cetacea.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097566-poseidone.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097572-etica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097580-montagne-russe.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097587-bunker.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097599-professione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097621-popoli-della-polinesia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097674-saale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097723-big-bang.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097733-passaporto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097748-repubblica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097781-peloponneso.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097786-cavallo-di-troia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097789-punk.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097798-rottweiler.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097823-paleontologia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097826-rubezahl.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097862-natale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097893-balestra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097901-re-artu.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097915-chiese-riformate.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097930-nuova-inghilterra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097944-autovettura.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097953-porta-di-brandeburgo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2097976-pancake.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098034-razzo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098038-raclette.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098082-minsk.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098132-repubblica-centrafricana.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098144-montabaur.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098156-plettenberg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098165-monti-metalliferi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098174-moretto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098206-bad-durkheim.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098222-pronome.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098273-new-orleans.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098290-chiosco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098304-rhinocerotidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098364-plettenberg.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098436-monheim-am-rhein.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098459-apprendimento.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2098468-banca-centrale-europea.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2357316-aeroplano.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2358773-albrecht-durer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2358800-alessandro-magno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2358934-alpi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2358989-amleto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359091-andy-warhol.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359103-anestesia-generale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359155-angelo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359160-angkor-wat.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359286-antoine-griezmann.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359326-antoine-de-saint-exupery.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359342-apollo-11.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359372-apparato-circolatorio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359409-archeologia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359464-argon.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359487-arizona.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359532-arpa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359592-assolutismo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359621-atene.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359654-aurora-polare.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359670-austria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359759-azerbaigian.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359793-backgammon.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2359808-baghdad.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361080-barbados.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361264-bielorussia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361276-bikini.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361282-bilancia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361293-birmingham.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361329-borgogna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361340-bos-taurus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361346-bosforo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361356-boston.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361375-boxer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361381-brachycera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361423-brno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361444-browser.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361449-bruno-kreisky.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361451-bubalus-bubalis.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361455-buddha.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361464-bufonidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361497-cactaceae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361506-caffe.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361509-calamity-jane.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361518-cambiamento-climatico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361527-camerun.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361530-campeggio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361547-canton-ticino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361552-caraibi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361562-carl-friedrich-gauss.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361563-carl-orff.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361567-carlo-magno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361590-casino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361594-caspar-david-friedrich.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361615-cerniera-lampo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361616-cerume.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361619-cervidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361626-charles-lindbergh.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361628-charles-de-gaulle.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361629-chiesa-ortodossa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361634-chimica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361640-chirurgia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361645-chiusura-a-strappo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361669-cile.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2361679-civilta-minoica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362019-bassotto-tedesco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362040-blues.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362098-cleopatra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362106-clima-subtropicale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362136-cobalto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362163-codice-qr.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362222-commercio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362230-compact-disc.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362270-contratto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362294-corsica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362379-cristallo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362434-cuoco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362466-cyprinus-carpio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362493-dna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362522-dalai-lama.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362558-delphinidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362579-denaro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362589-deserto-del-gobi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362743-download.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362855-educazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362907-elio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362964-embrione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2362974-eritrea.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363050-fbi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363087-fast-food.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363105-fax.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363141-ferrovia-transiberiana.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363192-fiordo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363248-football-americano.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363355-franz-schubert.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363369-fratelli-montgolfier.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363375-fratelli-wright.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363402-frittelle-di-patate.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363430-fuoco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363438-gabon.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363468-galles.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363492-geocaching.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363507-gesu-storico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363516-geyser.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363547-giocattolo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363557-gioco-di-carte.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363568-giorno-festivo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363603-gladiatore.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363630-golden-gate-bridge.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363665-gorilla.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363727-grenada.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363795-hacker.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363843-hockey-su-prato.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363863-hydrochoerus-hydrochaeris.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363867-i-tre-moschettieri.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363875-ichthyosauria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2363923-imperialismo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364027-insecta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364048-internet.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364056-islam.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364082-istanbul.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364103-james-watt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364182-ketchup.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364229-konrad-adenauer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364320-lance-armstrong.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364331-larinae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364345-laser.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364386-lesotho.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364438-libro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364447-lingua-araba.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364452-lingua-bengali.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364468-lingua-ebraica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364483-lingua-hindi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364510-lingua-materna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364536-lingua-ungherese.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364623-madre-teresa-di-calcutta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364664-maiorca.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364728-mali.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364744-manchester-city-football-club.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364772-manihot-esculenta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364797-mappa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364803-mappa-di-vinland.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364832-marciapiede.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364896-marmota.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364909-mars.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364924-matita.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364941-medicina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364956-megaloceros.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364965-mekong.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364989-messaggio-in-bottiglia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2364992-messico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365036-michelangelo-buonarroti.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365044-miele.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365110-monociclo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365147-mosella.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365151-mostra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365161-mose.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365182-museo-del-louvre.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365214-nelson-mandela.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365278-notizia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365332-odonata.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365335-ondatra-zibethicus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365360-osso.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365390-paranco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365415-passer-domesticus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365426-patente-di-guida.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365482-pergamena.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365567-polaris.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365607-preghiera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365622-prigione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365638-principato-di-monaco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365658-prussia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365703-friedrich-durrenmatt.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365704-galassia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365716-gerusalemme.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365724-high-school.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365750-lingua-curda.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365758-mauritius.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365776-rame.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365835-rupicapra-rupicapra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365843-salmo-trutta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365850-salto-in-alto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365851-salto-in-lungo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365854-salute.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365868-samurai.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365896-santo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365916-savana.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365931-scarlattina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365934-schiena.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365942-sciroppo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365982-selce.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2365991-senegal.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366000-servizio-postale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366008-sessualita.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366013-seven-summits.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366087-siphonaptera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366122-siviglia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366133-skopje.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366180-sofia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366214-sole.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366227-soluzioni-al-cambiamento-climatico.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366290-sparta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366302-spazzacamino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366310-spiaggia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366329-spiel-des-jahres.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366336-spinacia-oleracea.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366423-stampa-3d.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366521-strandkorb.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366562-studente.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366597-sudan.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366606-sudan-del-sud.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366736-talpidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366739-tanzania.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366756-tastiera-elettronica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366793-teheran.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366847-telescopio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366861-temporale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2366912-terra-sottratta-al-mare.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367089-thomas-edison.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367129-tibet.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367186-titanic.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367221-tolosa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367245-torace.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367303-torta-sacher.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367427-trattore-agricolo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367521-triticum.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367647-palermo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367696-tromba.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367843-catania.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2367858-verona.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368153-modena.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368226-salerno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368272-trento.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368385-pescara.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368399-forli.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368427-terni.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368445-piacenza.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368495-ancona.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368519-cesena.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368609-moscovio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368731-seychelles.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368764-torre-di-londra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368794-trono.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368831-tundra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368896-unicef.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368903-ucraina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368927-uluru.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368961-uovo-di-pasqua.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2368982-ursidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369034-vaccinazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369193-venezia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369217-venezuela.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369259-vertebrata.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369326-vicino-oriente.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369395-villaggio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369527-vita-extraterrestre.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369566-volo-spaziale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369606-vulpes-vulpes.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369655-west.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369696-winston-churchill.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369768-novara.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2369949-accipitriformes.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370043-anatinae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370101-anno-bisestile.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370114-antenna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370186-brindisi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370218-antimonio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370315-avverbio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370345-bad.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370413-battesimo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370555-bulgaria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370563-calendario.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370812-caucciu.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370898-ciarlatano.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370926-cognome.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370938-colorado.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370968-cospirazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370977-cracovia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2370996-cultura.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2372629-istinto.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2372648-itterbio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2372707-kiefer.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2372930-lingua-ucraina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373078-asti.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373223-disco-di-nebra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373288-eco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373307-effetti-speciali.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373321-emoticon.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373366-erinaceidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373625-gambia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373680-gioco-di-societa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373714-giornalista.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373729-giorno-della-riforma.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373789-lingue-basso-tedesche.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373835-mar-caspio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373856-mar-del-giappone.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373957-mercante.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373974-messia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2373989-mestruazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374001-metabolismo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374041-mobbing.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374071-monte-bianco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374119-nichel.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374134-nobelio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374153-oasi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374168-olmio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374225-ornithorhynchus-anatinus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374252-pace.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374487-guardaboschi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374522-guinness-dei-primati.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374646-pensiero.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374781-posta-elettronica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374831-pristina.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374881-provenza.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374905-qatar.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2374971-razzismo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375027-religione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375121-gigante.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375227-samario.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375303-schiavismo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375426-selenio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375536-serbia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375548-showman.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375567-singhiozzo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375580-slavi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375590-slovacchia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375646-spagna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375685-stronzio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375743-sumeri.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375758-superstizione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375775-tabacco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375864-tantalio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375879-temperatura.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375892-testa.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375939-damasco.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375955-thailandia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2375995-torre-idrica.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2376011-travatura-reticolare.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2376043-tunisia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2376068-universita.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2376109-veleno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2376112-velo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2377682-bolzano.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379031-vescovo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379135-victoria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379151-vienna.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379182-quadrilatero.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379230-vladivostok.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379253-canton-vaud.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379332-xeno.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2379820-zinedine-zidane.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380001-zurigo.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
@@ -9380,255 +6656,7 @@
 "it/risorse.html",
 "Tutti i materiali"
 ],
-"it/p/2380098-lavatrice.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380109-odz.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380159-trichoptera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380186-vespinae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380196-theraphosidae.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380311-zea-mays.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380533-vendetta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380766-mosca.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380862-pan.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380884-babilonia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380886-batteria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2380912-citta-libera-dell-impero.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2382935-abbreviazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383112-attinio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383204-berkelio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383362-cittadino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383371-claudio-tolomeo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383429-commercio-equo-e-solidale.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383471-crauti.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383483-darmstadtio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383493-domatore.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383504-economia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383665-frazione.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2383771-gomma-per-cancellare.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2384578-vampiro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2384672-verbo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2384806-walhalla.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2388393-trapani.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2388593-organizzazione-mondiale-della-sanita.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2388734-raggi-x.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2388785-riciclaggio-di-denaro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2388915-san-valentino.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2388953-santa-sofia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389057-seaborgio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389088-seta.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389105-settimana.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389142-sigillo.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389197-sistema-di-scrittura.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389248-scheletro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389333-spazzolino-da-denti.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389526-tellurio.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389803-tubercolosi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389819-uadi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2389974-id-al-fitr.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2390099-betula.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2390243-manfredonia.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2392542-alleanza-del-centro.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2397895-laboratorio-di-sport-nuoto-e-regole-di-sicurezza-schede-di-compiti-in.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2397922-laboratorio-di-sport-tennistavolo-schede-di-compiti-in-3-livelli-minig.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2397934-laboratorio-di-sport-floorball-hockey-indoor-schede-di-compiti-in-3-li.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2397949-laboratorio-di-sport-danza-e-ginnastica-ritmica-schede-di-compiti-in-3.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2397959-laboratorio-di-sport-arrampicata-ed-equilibrio-schede-di-compiti-in-3.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2397974-laboratorio-di-sport-giochi-e-staffette-schede-di-compiti-in-3-livelli.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2398114-mostra-dei-continenti-africa-pannelli-e-schede-su-3-livelli.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2398120-mostra-dei-continenti-asia-pannelli-e-schede-su-3-livelli.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400207-la-storia-del-natale-a-domino-2-versioni-con-parole-chiave-e-frasi-cla.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400297-calendario-dell-avvento-della-classe-24-finestrelle-carte-idea-e-piano.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400321-rompicapo-d-inverno-6-sfide-sulla-neve-in-3-livelli-classi-34-primaria.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400456-pacchetto-mascotte-della-classe-leone-testo-su-3-livelli-incarichi-com.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400658-cartelli-di-gruppo-leone-mascotte-della-classe-e-carte-dei-ruoli-i-iv.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400709-cartelli-di-gruppo-gufo-mascotte-della-classe-e-carte-dei-ruoli-i-iv-p.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400720-cartoline-delle-vacanze-gufo-mascotte-della-classe-scrittura-su-3-live.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2400755-cartoline-delle-vacanze-volpe-mascotte-della-classe-scrittura-su-3-liv.html": [
+"it/p/2400149-calendario-dell-avvento-della-classe-24-finestrelle-carte-idea-e-piano.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
@@ -9640,425 +6668,17 @@
 "it/risorse.html",
 "Tutti i materiali"
 ],
-"it/p/2401377-laboratorio-di-carte-le-emozioni-plus-carte-con-mollette-frasi-da-comp.html": [
+"it/p/2401254-laboratorio-di-carte-le-emozioni-plus-carte-con-mollette-frasi-da-comp.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
-"it/p/2401391-laboratorio-di-carte-gli-animali-domestici-plus-carte-con-mollette-fra.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2402395-laboratorio-di-carte-le-emozioni-gioco-di-memoria-immagini-e-parole-gr.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-con.html": [
+"it/p/2401342-laboratorio-di-carte-gli-animali-domestici-plus-carte-con-mollette-fra.html": [
 "it/risorse.html",
 "Tutti i materiali"
 ],
 "it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-fra.html": [
 "it/p/2402402-laboratorio-di-carte-gli-animali-domestici-carte-immagine-e-parola-con.html",
 "Laboratorio di carte: Gli animali domestici – carte immagine e parola con frasi modello (GRATIS)"
-],
-"it/p/2402504-laboratorio-dei-personaggi-mozart.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2402581-laboratorio-dei-personaggi-helen-keller-pacchetto-plus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2402589-laboratorio-dei-personaggi-zeus-pacchetto-plus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2402639-laboratorio-dei-personaggi-helen-keller-scheda.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2403308-laboratorio-dei-personaggi-picasso-pacchetto-plus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2403489-laboratorio-delle-fiabe-cenerentola-pacchetto-plus-con-domino-leggi-e.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2403853-laboratorio-delle-fiabe-la-bella-addormentata-disegni-da-colorare-e-do.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2404826-officina-di-classe-fogli-di-scrittura-plus.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2405138-officina-di-classe-poster-motivazionali-per-la-classe-pacchetto-plus-c.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2405185-officina-di-classe-cartelloni-delle-regole-di-classe-gratis-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2405266-officina-di-classe-biglietti-di-lode-e-adesivi-premio-gratis-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2405652-officina-di-classe-calendario-dei-compleanni-con-attestato-e-corona-gr.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2405748-officina-di-classe-poster-motivazionali-per-la-classe-gratis-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2405800-laboratorio-di-inglese-all-about-me-mi-presento-pacchetto-plus-classi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2405875-giochi-di-parole-non-dirlo-la-scuola-e-l-aula-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2406004-giochi-di-parole-non-dirlo-autunno-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2406468-laboratorio-di-inglese-don-t-say-it-descrivi-la-parola-gratis-classi-3.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2406528-laboratorio-di-inglese-i-have-who-has-il-gioco-di-carte-a-catena-grati.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2406684-spazio-e-pianeti-da-colorare-e-costruire-sistema-solare-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2406808-apprendimento-sociale-sentimenti-conflitti-consiglio-di-classe-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2407982-giochi-di-parole-non-dirlo-la-fattoria-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2408087-io-ho-chi-ha-autunno-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2408317-spunti-per-parlare-la-scuola-e-l-aula-spunti-per-parlare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2408454-carte-immagine-e-parola-autunno-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2408629-io-ho-chi-ha-animali-domestici-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2408815-carte-immagine-e-parola-la-scuola-e-l-aula-carte-immagine-e-parola-cla.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2408922-officina-domino-domino-dei-numeri-fino-a-100-pacchetto-plus-classi-12.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2409131-giochi-d-inverno-io-ho-chi-ha-il-giro-di-natale-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2409689-leggere-colorare-e-incollare-al-mare-leggere-e-colorare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2409725-carte-immagine-e-parola-il-circo-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2409940-giochi-di-parole-non-dirlo-al-ristorante-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2410062-domino-autunno-giochi-di-immagini-e-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2410231-carte-immagine-e-parola-nel-giardino-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411130-gioco-a-pieghe-dinosauri-giochi-a-pieghe-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411253-io-ho-chi-ha-i-vestiti-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411310-memory-la-scuola-e-l-aula-giochi-di-immagini-e-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411460-carte-immagine-e-parola-la-fattoria-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411485-carte-con-le-mollette-al-mare-carte-con-le-mollette-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411515-cerca-le-parole-mestieri-cerca-le-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411586-io-ho-chi-ha-la-fattoria-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411744-spunti-per-parlare-al-mare-spunti-per-parlare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411788-leggere-colorare-e-incollare-il-circo-leggere-e-colorare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2411910-giochi-di-parole-non-dirlo-pasqua-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2412050-io-ho-chi-ha-pasqua-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2412058-domino-la-fattoria-giochi-di-immagini-e-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2412071-carte-con-le-mollette-pirati-carte-con-le-mollette-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2412245-io-ho-chi-ha-il-corpo-e-i-sensi-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2413063-leggere-colorare-e-incollare-animali-domestici-leggere-e-colorare-clas.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2414565-gioco-a-pieghe-pirati-giochi-a-pieghe-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2414636-cerca-le-parole-animali-domestici-cerca-le-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2414926-memory-pirati-giochi-di-immagini-e-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2414960-spunti-per-parlare-nel-giardino-spunti-per-parlare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2415039-carte-con-le-mollette-cavalieri-e-castelli-carte-con-le-mollette-class.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2415277-giochi-di-parole-non-dirlo-pirati-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2415424-memory-al-mare-giochi-di-immagini-e-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2415628-carte-immagine-e-parola-cucinare-e-cuocere-al-forno-carte-immagine-e-p.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2416210-carte-immagine-e-parola-i-vestiti-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2416958-giochi-di-parole-non-dirlo-i-vestiti-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2417001-memory-dinosauri-giochi-di-immagini-e-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2417141-carnevale-il-grande-murale-di-classe-30-riquadri-da-colorare-un-opera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2417538-cerca-le-parole-hobby-cerca-le-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2417577-halloween-il-grande-murale-di-classe-30-riquadri-da-colorare-un-opera.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2417597-vacanze-estive-il-grande-murale-di-classe-30-riquadri-da-colorare-un-o.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2417679-io-ho-chi-ha-sport-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2417863-il-mio-quaderno-di-calcolo-numeri-fino-a-1000-classe-3a.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418002-giochi-di-parole-non-dirlo-allo-zoo-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418091-memory-cavalieri-e-castelli-giochi-di-immagini-e-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418138-leggere-colorare-e-incollare-le-api-leggere-e-colorare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418197-carte-immagine-e-parola-il-corpo-e-i-sensi-carte-immagine-e-parola-cla.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418219-carte-con-le-mollette-il-circo-carte-con-le-mollette-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418366-giochi-di-parole-non-dirlo-la-famiglia-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418435-spunti-per-parlare-estate-spunti-per-parlare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2418697-giochi-di-parole-non-dirlo-veicoli-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419031-io-ho-chi-ha-il-meteo-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419087-spunti-per-parlare-i-vestiti-spunti-per-parlare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419108-leggere-colorare-e-incollare-primavera-leggere-e-colorare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419207-carte-con-le-mollette-il-corpo-e-i-sensi-carte-con-le-mollette-classi.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419396-io-ho-chi-ha-al-mare-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419422-io-ho-chi-ha-lo-spazio-giri-di-lettura-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419471-leggere-colorare-e-incollare-pasqua-leggere-e-colorare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419533-carte-immagine-e-parola-allo-zoo-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419583-carte-con-le-mollette-sport-carte-con-le-mollette-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2419811-carte-immagine-e-parola-la-famiglia-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2420009-spunti-per-parlare-animali-selvatici-spunti-per-parlare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2420302-giochi-di-parole-non-dirlo-cavalieri-e-castelli-classi-24.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2420512-carte-immagine-e-parola-il-meteo-carte-immagine-e-parola-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2420628-spunti-per-parlare-al-ristorante-spunti-per-parlare-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2420670-leggere-colorare-e-incollare-animali-selvatici-leggere-e-colorare-clas.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2422577-cerca-le-parole-estate-cerca-le-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2430132-cerca-le-parole-dinosauri-cerca-le-parole-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2441532-biglietti-e-etichette-regalo-di-natale-4-biglietti-8-etichette-e-perso.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2444331-maglione-a-dadi-tira-colora-stupisci-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2444413-biglietti-con-lecca-lecca-dolci-auguri-per-natale-e-per-le-vacanze-cla.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2444443-babbo-natale-segreto-in-classe-testo-regole-biglietti-e-scheda-persona.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2449369-carte-con-le-mollette-frutta-e-verdura-carte-con-le-mollette-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2450300-carte-con-le-mollette-cucinare-e-cuocere-al-forno-carte-con-le-mollett.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2450997-gioco-a-pieghe-estate-giochi-a-pieghe-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2451005-carte-con-le-mollette-primavera-carte-con-le-mollette-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2451076-gioco-a-pieghe-primavera-giochi-a-pieghe-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
-],
-"it/p/2451078-carte-con-le-mollette-pasqua-carte-con-le-mollette-classi-14.html": [
-"it/risorse.html",
-"Tutti i materiali"
 ],
 "it/scienze-e-salute-classe-ii-primaria.html": [
 "it/scienze-e-salute.html",
