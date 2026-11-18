@@ -29,7 +29,8 @@ I18N_SWITCH = lambda url, root: ""
 I18N_SITEMAP_ALT = lambda url: ""
 I18N_FREE_HOME = lambda: ""   # 27.10. Nutzer: Klarname NIE veröffentlichen
 EMAIL = "snice.lehrermarktplatz@gmail.com"
-KONTAKT_MAIL = "kontakt@snice-unterricht.eu"   # 18.11.: Cloudflare Email Routing -> Snice-Postfach
+KONTAKT_MAIL = "kontakt@snice-unterricht.eu"
+NEWSLETTER_MAIL = "newsletter@snice-unterricht.eu"   # 18.11.: Cloudflare Email Routing -> Snice-Postfach
 ANSCHRIFT = "c/o Autorenglück #26054<br>Albert-Einstein-Straße 47<br>02977 Hoyerswerda"
 
 STOP = set("und der die das ein eine einen im in für mit auf von zu den dem des als auch ist sind "
@@ -1784,6 +1785,8 @@ PAGE_DESC = {
     "ueber-mich": f"Über mich: Wer hinter {SITE_NAME} steht, wie meine Unterrichtsmaterialien entstehen und welche "
                   "Materiallinien es gibt – Lesespuren, Rechenwelten, Lesespaziergänge, Bastelvorlagen und mehr.",
     "kontakt": f"Kontakt zu {SITE_NAME}: Kontaktformular und E-Mail-Adresse für Fragen, Wünsche und Fehlerhinweise.",
+    "newsletter": f"Newsletter von {SITE_NAME}: etwa alle zwei Wochen Unterrichtsideen, Gratis-Material und neue Materialien für Lehrkräfte – jederzeit abbestellbar.",
+    "newsletter-bestaetigt": f"Newsletter-Anmeldung bei {SITE_NAME} bestätigt.",
     "datenschutz": f"Datenschutzerklärung von {SITE_NAME}: keine Cookies, kein Tracking, Hosting und eingebundene Vorschaubilder.",
     "404": "Diese Seite gibt es nicht (mehr). Zur Startseite und zur Materialsuche.",
 }
@@ -1791,7 +1794,7 @@ PAGE_DESC = {
 
 def render_page(slug, title, inner):
     out = (head(title, PAGE_DESC.get(slug, title), f"{SITE}/{slug}.html", "",
-                robots="noindex,follow" if slug == "404" else "index,follow,max-image-preview:large")
+                robots="noindex,follow" if slug in ("404", "newsletter-bestaetigt") else "index,follow,max-image-preview:large")
            + '<main class="article-wrap">' + inner + "</main>" + foot())
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
 
@@ -2106,6 +2109,7 @@ def write_meta(posts):
          f"<url><loc>{SITE}/impressum.html</loc></url>",
          f"<url><loc>{SITE}/ueber-mich.html</loc></url>",
          f"<url><loc>{SITE}/kontakt.html</loc></url>",
+         f"<url><loc>{SITE}/newsletter.html</loc></url>",
          f"<url><loc>{SITE}/datenschutz.html</loc></url>"]
     u += [f"<url><loc>{x}</loc>{I18N_SITEMAP_ALT(x)}<priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
@@ -2141,7 +2145,7 @@ def build_foot_cols():
     a_links = (' · '.join(f'<a href="{href}">{name}</a>' for name, href, _ in LINE_META.values())
                + (' · <a href="berufsschule.html">Berufsschule</a>' if len(lernpakete()) >= BS_MIN_HUB else "")
                + (' · <a href="lernvideos.html">Lernvideos</a>' if sum(1 for e in lernpakete() if e["yt_id"]) >= LV_MIN_HUB else "")
-               + ' · <a href="lehrplan-themen.html">Lehrplanthemen</a> · <a href="neu.html">Neu erschienen</a> · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a>')
+               + ' · <a href="lehrplan-themen.html">Lehrplanthemen</a> · <a href="neu.html">Neu erschienen</a> · <a href="herbst.html">Herbst</a> · <a href="advent-winter.html">Advent &amp; Winter</a> · <a href="english-worksheets.html">English</a> · <a href="blog.html">Blog</a> · <a href="newsletter.html">Newsletter</a> · <a href="kontakt.html">Kontakt</a>')
     return (f'<div class="fcols"><div><h4>Nach Fach</h4><p>{f_links}</p></div>'
             f'<div><h4>Nach Klasse</h4><p>{k_links}</p></div>'
             f'<div><h4>Materialarten</h4><p>{a_links}</p></div></div>')
@@ -2572,6 +2576,49 @@ def main():
 <script>(function(){{var s=new URLSearchParams(location.search).get("s"),m=document.getElementById("kmeld");if(!s||!m)return;
 m.hidden=false;m.className="kmeld "+(s==="ok"?"ok":"fehler");
 m.textContent=s==="ok"?"Danke! Deine Nachricht ist angekommen. Ich melde mich per E-Mail bei dir.":"Das hat leider nicht geklappt. Bitte prüfe E-Mail-Adresse, Nachricht und das Häkchen – oder schreib mir direkt per E-Mail.";}})();</script>""")
+    render_page("newsletter", "Newsletter", f"""<h1>Newsletter für Lehrkräfte</h1>
+<p class="sub">Etwa alle zwei Wochen eine kurze Mail: eine Idee für deinen Unterricht, Gratis-Material und Neues von Snice.</p>
+<style>
+.kform{{max-width:640px}}.kform label{{display:block;font-weight:700;margin:14px 0 4px}}
+.kform input[type=email],.kform select{{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}}
+.kform .hp{{position:absolute;left:-9999px}}
+.kform .ein{{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:16px}}.kform .ein input{{margin-top:5px}}
+.kmeld{{padding:12px 14px;border-radius:8px;font-weight:700;max-width:640px;box-sizing:border-box}}
+.kmeld.ok{{background:#e3f6e8;color:#14532d}}.kmeld.fehler{{background:#fde8e8;color:#7f1d1d}}
+</style>
+<p id="kmeld" class="kmeld" hidden></p>
+<ul>
+<li><strong>Kurz:</strong> in zwei Minuten gelesen, sofort im Unterricht einsetzbar.</li>
+<li><strong>Gratis-Material:</strong> regelmäßig ein vollständiges Material zum Herunterladen.</li>
+<li><strong>Zuerst informiert:</strong> neue Materialien und Aktionen, bevor sie woanders stehen.</li>
+</ul>
+<form class="kform" method="post" action="/api/newsletter" id="nlform">
+<label for="n-mail">E-Mail-Adresse</label>
+<input type="email" id="n-mail" name="email" maxlength="200" required autocomplete="email">
+<label for="n-stufe">Wo unterrichtest du? (freiwillig)</label>
+<select id="n-stufe" name="schulstufe">
+<option value="">– bitte wählen –</option>
+<option>Grundschule</option>
+<option>Sekundarstufe I</option>
+<option>Berufsschule</option>
+<option>Förderschule</option>
+<option>Sonstiges</option>
+</select>
+<div class="hp" aria-hidden="true"><label for="n-web">Bitte leer lassen</label><input type="text" id="n-web" name="website" tabindex="-1" autocomplete="off"></div>
+<label class="ein"><input type="checkbox" name="einwilligung" value="1" required>
+<span>Ja, ich möchte den Newsletter von {SITE_NAME} per E-Mail erhalten – mit Unterrichtsideen, Gratis-Material und Hinweisen auf neue Materialien und Angebote.
+Ich kann mich jederzeit über den Link in jeder Mail wieder abmelden. Näheres in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span></label>
+<p class="btnrow"><button class="btn" type="submit">Newsletter abonnieren</button></p>
+</form>
+<p><small>Nach dem Absenden bekommst du eine Mail mit einem Bestätigungslink. Erst nach deinem Klick darauf bist du angemeldet.</small></p>
+<script>(function(){{var s=new URLSearchParams(location.search).get("s"),m=document.getElementById("kmeld");if(!s||!m)return;
+m.hidden=false;m.className="kmeld "+(s==="ok"?"ok":"fehler");
+m.textContent=s==="ok"?"Fast geschafft! Ich habe dir eine Mail geschickt. Bitte klicke dort auf „Anmeldung bestätigen“ – schau auch im Spam-Ordner nach.":"Das hat leider nicht geklappt. Bitte prüfe die E-Mail-Adresse und das Häkchen und versuche es noch einmal.";
+if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})();</script>""")
+    render_page("newsletter-bestaetigt", "Anmeldung bestätigt", f"""<h1>Danke – du bist angemeldet!</h1>
+<p class="sub">Deine Newsletter-Anmeldung ist bestätigt. Die nächste Ausgabe kommt direkt in dein Postfach.</p>
+<p>Damit die Mails nicht im Spam landen, füge am besten <strong>{NEWSLETTER_MAIL}</strong> zu deinen Kontakten hinzu.</p>
+<p class="btnrow"><a class="btn" href="index.html">Zu den Materialien</a></p>""")
     render_page("ueber-mich", "Über mich", f"""<h1>Über mich</h1>
 <p class="sub">Lehrer aus Leidenschaft – mit Liebe zum Detail und motivierenden Materialien für den Unterricht.</p>
 
@@ -2657,6 +2704,17 @@ falls angegeben, deinen Namen) ausschließlich zur Bearbeitung deiner Anfrage (A
 Das Formular wird von <strong>Cloudflare</strong> (siehe oben) entgegengenommen und als E-Mail an mein Postfach weitergeleitet; eine Speicherung in einer
 Datenbank findet nicht statt. E-Mails an Adressen dieser Domain leitet Cloudflare (Email Routing) an mein Postfach bei Google (Google Ireland Ltd., Gmail) weiter.
 Das Formular setzt keine Cookies.</p>
+<h2>Newsletter</h2>
+<p>Wenn du dich auf der Seite <a href="newsletter.html">Newsletter</a> anmeldest, verarbeite ich deine E-Mail-Adresse und – falls du sie angibst – deine Schulstufe,
+um dir etwa alle zwei Wochen den Newsletter mit Unterrichtsideen, Gratis-Material und Hinweisen auf neue Materialien und Angebote zu schicken.
+Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Die Anmeldung erfolgt im Double-Opt-in-Verfahren: Du bekommst eine Mail mit einem
+Bestätigungslink und bist erst nach dem Klick darauf angemeldet. Zeitpunkt und IP-Adresse von Anmeldung und Bestätigung werden gespeichert, um die Einwilligung
+nachweisen zu können (Art. 6 Abs. 1 lit. f DSGVO).</p>
+<p>Den Versand übernimmt als Auftragsverarbeiter <strong>Brevo</strong> (Sendinblue GmbH, Köpenicker Straße 126, 10179 Berlin). Das Anmeldeformular liegt auf dieser Seite,
+wird von Cloudflare (siehe oben) entgegengenommen und direkt an Brevo übergeben; es setzt keine Cookies und lädt keine fremden Skripte. Brevo wertet aus,
+ob eine Mail geöffnet und welche Links angeklickt wurden, damit ich den Newsletter verbessern kann.</p>
+<p>Du kannst deine Einwilligung jederzeit widerrufen – über den Abmeldelink am Ende jeder Mail oder mit einer Nachricht an die oben genannte E-Mail-Adresse.
+Danach wird deine Adresse für den Versand gesperrt und nicht mehr angeschrieben. Ohne Bestätigung der Anmeldung wird deine Adresse nicht für den Versand genutzt.</p>
 <h2>Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO)
 sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Wende dich dazu an die oben genannte E-Mail-Adresse.</p>
