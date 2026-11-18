@@ -2606,6 +2606,8 @@ an einer datensparsamen Reichweitenmessung). Cloudflare ist nach dem EU-US Data 
 <h2>Keine Cookies, keine Werbung</h2>
 <p>Diese Website setzt keine Cookies, verwendet keine Werbedienste und bindet keine Schriftarten von Drittanbietern ein.
 Die Suche und die Filter laufen vollständig in deinem Browser; dabei werden keine Daten übertragen.</p>
+<h2>Notenrechner</h2>
+<p>Der <a href="noten.html">Notenrechner</a> arbeitet ausschließlich in Ihrem Browser. Titel, Klasse, Namen, Punkte und Noten, die Sie dort eintragen, werden nicht an uns oder an Dritte übertragen und nicht gespeichert, weder auf einem Server noch in Ihrem Browser (kein Cookie, kein lokaler Speicher). Eine technische Sperre der Seite (Content-Security-Policy) verhindert jede Datenübertragung aus dem Rechner und blockiert auch die Reichweitenmessung. Beim Schließen oder Neuladen der Seite sind alle Eingaben gelöscht. Beim Aufruf der Seite selbst fallen nur die oben unter „Hosting“ beschriebenen Zugriffsdaten an. Für das ausgedruckte oder als PDF gespeicherte Übersichtsblatt sind Sie selbst verantwortlich.</p>
 <h2>Externe Links und eingebundene Bilder</h2>
 <p>Die Vorschaubilder der Materialien werden direkt vom Marktplatz <strong>eduki</strong> (eduki GmbH, Berlin) geladen; dabei erhält eduki deine IP-Adresse.
 Über die Links „Material auf eduki" gelangst du auf eduki.com; dort gelten die
