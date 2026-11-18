@@ -22,14 +22,14 @@ BLOG = r"C:\Claude-Arbeitsblätter\Marketing\blog"
 META = r"C:\Claude-Arbeitsblätter\Marketing\daten\blog_html"
 OUT = os.environ.get("SNICE_OUT") or r"C:\Claude-Arbeitsblätter\snice-unterricht"   # 27.10.: Test-Build per SNICE_OUT
 POSTS_DIR = os.path.join(OUT, "posts")
-INHABER = "Snice – Matthias Ender"   # 18.11. Nutzer-Ja: Klarname nur im Impressum/Datenschutz (Pflicht § 5 DDG)
+INHABER = "Matthias Ender - Snice"   # 18.11. Nutzer-Ja: Klarname nur im Impressum/Datenschutz (Pflicht § 5 DDG)
 # 27.10.: Sprachversionen (i18n_build.py setzt diese Hooks in prepare())
 I18N_HEAD = lambda url: ""
 I18N_SWITCH = lambda url, root: ""
 I18N_SITEMAP_ALT = lambda url: ""
 I18N_FREE_HOME = lambda: ""   # 27.10. Nutzer: Klarname NIE veröffentlichen
 EMAIL = "snice.lehrermarktplatz@gmail.com"
-ANSCHRIFT = "c/o Autorenglück #26054<br>Albert-Einstein-Str. 47<br>02977 Hoyerswerda"
+ANSCHRIFT = "c/o Autorenglück #26054<br>Albert-Einstein-Straße 47<br>02977 Hoyerswerda"
 
 STOP = set("und der die das ein eine einen im in für mit auf von zu den dem des als auch ist sind "
            "auch homeschooling material arbeitsblatt arbeitsblätter unterricht klasse thema mehr "
