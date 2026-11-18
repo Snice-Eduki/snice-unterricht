@@ -50,7 +50,7 @@ CSS = """<style>
  .nr h1{font-size:16pt;margin:0 0 2mm}.nr h2{font-size:12pt;margin:4mm 0 1.5mm}.nr .karte{border:0;padding:0;margin:0}
  .nr input,.nr select{border:0!important;padding:0!important;background:transparent!important;color:#000!important;-webkit-appearance:none;appearance:none}
  .nr th,.nr td{border-color:#000;padding:1mm 1.6mm;color:#000}.nr table{break-inside:auto}.nr tr{break-inside:avoid}.nr .zwei{grid-template-columns:1fr 1fr;gap:5mm}
- .nr .falsch{background:transparent!important;color:transparent!important}.nr .np15 #liste td{height:4.6mm;padding-top:.2mm;padding-bottom:.2mm;font-size:9.5pt;line-height:1.1}.nr.np15 #liste input{height:4mm;font-size:9.5pt}.nr.np15 h2{margin:2mm 0 1mm}.nr input{outline:0!important}.nr #liste td,.nr #liste th{height:auto;padding:.9mm 1.6mm!important;line-height:1.15!important}.nr #liste input{min-height:0!important;height:4.2mm!important;line-height:1.1!important;margin:0!important;display:block}.nr.np15 #liste td{padding:.3mm 1.6mm!important}.nr #sk td,.nr #vert td,.nr #sk th,.nr #vert th{padding:.3mm 1.6mm}.nr .sk15 td,.nr .sk15 th{font-size:9pt;padding:0 1.6mm!important}.nr .fussdruck p{margin:3mm 0 0}.nr p{margin:1mm 0}
+ .nr .falsch{background:transparent!important;color:transparent!important}.nr .np15 #liste td{height:4.6mm;padding-top:.2mm;padding-bottom:.2mm;font-size:9.5pt;line-height:1.1}.nr.np15 #liste input{height:4mm;font-size:9.5pt}.nr.np15 h2{margin:2mm 0 1mm}.nr input{outline:0!important}.nr #liste td,.nr #liste th{height:auto;padding:.9mm 1.6mm!important;line-height:1.15!important}.nr #liste input{min-height:0!important;height:4.2mm!important;line-height:1.1!important;margin:0!important;display:block}.nr.np15 #liste td{padding:.3mm 1.6mm!important}.nr #sk td,.nr #vert td,.nr #sk th,.nr #vert th{padding:.3mm 1.6mm}.nr .sk15 td,.nr .sk15 th{font-size:9pt;padding:0 1.6mm!important}.nr .fussdruck p{margin:3mm 0 0}.nr.np15 #liste input{height:3.3mm!important;font-size:9pt!important}.nr.np15 #liste td,.nr.np15 #liste th{font-size:9pt;line-height:1.05!important;padding:.2mm 1.6mm!important}.nr.np15 .fussdruck p{margin:1.5mm 0 0}.nr p{margin:1mm 0}
  .nr .bal{background:#000;-webkit-print-color-adjust:exact;print-color-adjust:exact}.nr .stat{break-inside:avoid}}
 </style>"""
 JS = r"""<script>
@@ -146,7 +146,7 @@ def seite(g, s):
             '<div><label for="fach">Fach</label><input type="text" id="fach" maxlength="40" autocomplete="off"></div>'
             '<div><label for="datum">Datum</label><input type="date" id="datum"></div>'
             '<div><label for="max">Gesamtpunktzahl</label><input type="text" inputmode="decimal" id="max" value="30" autocomplete="off"></div>'
-            '<div><label for="anz">Anzahl der Schüler</label><input type="number" id="anz" min="1" max="60" value="25"></div>'
+            '<div><label for="anz">Anzahl der Schüler</label><input type="number" id="anz" min="1" max="60" value="35"></div>'
             '</div><p id="schnell" class="klein"></p><p><label style="font-weight:400"><input type="checkbox" id="halb" checked> halbe Punkte zulassen</label></p></div>'
             '<div class="zwei"><div class="karte"><h2 style="margin-top:0"><span class="nd">2. </span>Notenschlüssel</h2>' + fest +
             f'<table class="sk{" sk15" if c["skala"] == 15 else ""}" id="sk"></table><p id="skwarn" class="warn nd"></p></div>'
