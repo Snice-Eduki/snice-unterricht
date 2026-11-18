@@ -2422,8 +2422,29 @@ def render_material_pages():
     import i18n_build as _I   # 02.11.: Weiterleitungs-Stub statt 404 (Ziel: Fachseite des inaktiven Materials, sonst materialien.html)
     _I.moved_load()
     alle = {str(m.get("id")): m for m in load_katalog()}
-    for f in glob.glob(os.path.join(MAT_DIR, "*.html")):
-        if os.path.basename(f) in keep or _I.is_stub(f):
+    # 18.11.: Schutz gegen lueckenhaften Katalogabruf (14:08 wurden 229 Live-Seiten faelschlich zu Weiterleitungen, Kundenlinks liefen ins Leere):
+    # eine Seite wird erst stillgelegt, wenn sie in 3 Laeufen an 2 verschiedenen Tagen fehlt; fehlen in einem Lauf mehr als 25 neu, wird gar nichts stillgelegt (Alarm).
+    _fp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_retire_zaehler.json")
+    try: _fz = json.load(open(_fp, encoding="utf-8"))
+    except Exception: _fz = {}
+    _heute = datetime.date.today().isoformat()
+    _kand = [f for f in glob.glob(os.path.join(MAT_DIR, "*.html")) if os.path.basename(f) not in keep and not _I.is_stub(f)]
+    _kn = {os.path.basename(f) for f in _kand}
+    _fz = {k: v for k, v in _fz.items() if k in _kn}
+    _neu = [k for k in _kn if k not in _fz]
+    _sperre = len(_neu) > 25
+    if _sperre:
+        try: open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "Skripte", "ALARM.txt"), "a", encoding="utf-8").write(f"{_heute} HOMEPAGE-RETIRE-SPERRE: {len(_neu)} Detailseiten fehlen ploetzlich im Katalog - nichts stillgelegt, Katalogabruf pruefen"+chr(10))
+        except Exception: pass
+        print("RETIRE-SPERRE:", len(_neu), "Seiten fehlen neu im Katalog, nichts stillgelegt")
+    else:
+        for k in _kn:
+            e = _fz.setdefault(k, {"n": 0, "tage": []}); e["n"] += 1
+            if _heute not in e["tage"]: e["tage"].append(_heute)
+    json.dump(_fz, open(_fp, "w", encoding="utf-8"), ensure_ascii=False)
+    for f in _kand:
+        e = _fz.get(os.path.basename(f))
+        if _sperre or not e or e["n"] < 3 or len(e["tage"]) < 2:
             continue
         mid = os.path.basename(f).split("-", 1)[0]; m0 = alle.get(mid, {})
         tgt = f"{fach_slug(m0['fach'])}.html" if m0.get("fach") and os.path.exists(os.path.join(OUT, f"{fach_slug(m0['fach'])}.html")) else "materialien.html"
