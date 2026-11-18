@@ -29,6 +29,7 @@ I18N_SWITCH = lambda url, root: ""
 I18N_SITEMAP_ALT = lambda url: ""
 I18N_FREE_HOME = lambda: ""   # 27.10. Nutzer: Klarname NIE veröffentlichen
 EMAIL = "snice.lehrermarktplatz@gmail.com"
+KONTAKT_MAIL = "kontakt@snice-unterricht.eu"   # 18.11.: Cloudflare Email Routing -> Snice-Postfach
 ANSCHRIFT = "c/o Autorenglück #26054<br>Albert-Einstein-Straße 47<br>02977 Hoyerswerda"
 
 STOP = set("und der die das ein eine einen im in für mit auf von zu den dem des als auch ist sind "
@@ -1782,6 +1783,7 @@ PAGE_DESC = {
     "impressum": f"Impressum von {SITE_NAME}: Anbieterkennzeichnung und Kontakt.",
     "ueber-mich": f"Über mich: Wer hinter {SITE_NAME} steht, wie meine Unterrichtsmaterialien entstehen und welche "
                   "Materiallinien es gibt – Lesespuren, Rechenwelten, Lesespaziergänge, Bastelvorlagen und mehr.",
+    "kontakt": f"Kontakt zu {SITE_NAME}: Kontaktformular und E-Mail-Adresse für Fragen, Wünsche und Fehlerhinweise.",
     "datenschutz": f"Datenschutzerklärung von {SITE_NAME}: keine Cookies, kein Tracking, Hosting und eingebundene Vorschaubilder.",
     "404": "Diese Seite gibt es nicht (mehr). Zur Startseite und zur Materialsuche.",
 }
@@ -2103,6 +2105,7 @@ def write_meta(posts):
     u = [f"<url><loc>{SITE}/</loc>{I18N_SITEMAP_ALT(SITE + '/')}<priority>1.0</priority></url>",
          f"<url><loc>{SITE}/impressum.html</loc></url>",
          f"<url><loc>{SITE}/ueber-mich.html</loc></url>",
+         f"<url><loc>{SITE}/kontakt.html</loc></url>",
          f"<url><loc>{SITE}/datenschutz.html</loc></url>"]
     u += [f"<url><loc>{x}</loc>{I18N_SITEMAP_ALT(x)}<priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
@@ -2539,9 +2542,36 @@ def main():
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>
 <p>{INHABER}<br>{ANSCHRIFT}</p>
-<p><strong>Kontakt:</strong><br>E-Mail: {EMAIL}</p>
+<p><strong>Kontakt:</strong><br>E-Mail: <a href="mailto:{KONTAKT_MAIL}">{KONTAKT_MAIL}</a><br>Kontaktformular: <a href="kontakt.html">Nachricht schreiben</a></p>
 <p><strong>Verantwortlich für den Inhalt</strong> nach § 18 Abs. 2 MStV: {INHABER} (Anschrift wie oben).</p>
 <p>Dieser Blog verweist auf eigene Unterrichtsmaterialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a>.</p>""")
+    render_page("kontakt", "Kontakt", f"""<h1>Kontakt</h1>
+<p class="sub">Frage, Wunsch oder Fehler entdeckt? Schreib mir – ich antworte selbst.</p>
+<style>
+.kform{{max-width:640px}}.kform label{{display:block;font-weight:700;margin:14px 0 4px}}
+.kform input[type=text],.kform input[type=email],.kform textarea{{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}}
+.kform textarea{{min-height:170px}}.kform .hp{{position:absolute;left:-9999px}}
+.kform .ein{{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:16px}}.kform .ein input{{margin-top:5px}}
+.kmeld{{padding:12px 14px;border-radius:8px;font-weight:700;max-width:640px;box-sizing:border-box}}
+.kmeld.ok{{background:#e3f6e8;color:#14532d}}.kmeld.fehler{{background:#fde8e8;color:#7f1d1d}}
+</style>
+<p id="kmeld" class="kmeld" hidden></p>
+<form class="kform" method="post" action="/api/kontakt">
+<label for="k-name">Name (freiwillig)</label>
+<input type="text" id="k-name" name="name" maxlength="120" autocomplete="name">
+<label for="k-mail">E-Mail-Adresse</label>
+<input type="email" id="k-mail" name="email" maxlength="200" required autocomplete="email">
+<label for="k-text">Nachricht</label>
+<textarea id="k-text" name="nachricht" maxlength="5000" required></textarea>
+<div class="hp" aria-hidden="true"><label for="k-web">Bitte leer lassen</label><input type="text" id="k-web" name="website" tabindex="-1" autocomplete="off"></div>
+<label class="ein"><input type="checkbox" name="einwilligung" value="1" required>
+<span>Ich bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verarbeitet werden. Näheres in der <a href="datenschutz.html">Datenschutzerklärung</a>.</span></label>
+<p class="btnrow"><button class="btn" type="submit">Nachricht senden</button></p>
+</form>
+<p>Lieber per E-Mail? <a href="mailto:{KONTAKT_MAIL}">{KONTAKT_MAIL}</a></p>
+<script>(function(){{var s=new URLSearchParams(location.search).get("s"),m=document.getElementById("kmeld");if(!s||!m)return;
+m.hidden=false;m.className="kmeld "+(s==="ok"?"ok":"fehler");
+m.textContent=s==="ok"?"Danke! Deine Nachricht ist angekommen. Ich melde mich per E-Mail bei dir.":"Das hat leider nicht geklappt. Bitte prüfe E-Mail-Adresse, Nachricht und das Häkchen – oder schreib mir direkt per E-Mail.";}})();</script>""")
     render_page("ueber-mich", "Über mich", f"""<h1>Über mich</h1>
 <p class="sub">Lehrer aus Leidenschaft – mit Liebe zum Detail und motivierenden Materialien für den Unterricht.</p>
 
@@ -2582,13 +2612,13 @@ Aktionen und Einblicke in die Entstehung gibt es auf
 <a href="https://www.instagram.com/snice.eduki/" rel="noopener">Instagram</a> und
 <a href="https://www.pinterest.de/sniceeduki/" rel="noopener">Pinterest</a>. Englische Materialien findest du in meinem
 <a href="https://www.teacherspayteachers.com/store/snice" rel="noopener">Shop auf Teachers Pay Teachers</a>.</p>
-<p>Fragen, Wünsche oder ein Fehler entdeckt? Schreib mir an <a href="mailto:{EMAIL}">{EMAIL}</a> – ich
+<p>Fragen, Wünsche oder ein Fehler entdeckt? Schreib mir über das <a href="kontakt.html">Kontaktformular</a> oder an <a href="mailto:{KONTAKT_MAIL}">{KONTAKT_MAIL}</a> – ich
 antworte selbst und bessere Material auch nachträglich nach.</p>
 
 <p class="btnrow"><a class="btn" href="materialien.html">Alle Materialien durchsuchen</a>
 <a class="more" href="rechenwelten.html">Rechenwelten ansehen</a></p>""")
     render_page("datenschutz", "Datenschutzerklärung", f"""<h1>Datenschutzerklärung</h1>
-<p><strong>Verantwortlicher:</strong> {INHABER}, E-Mail: {EMAIL} (Anschrift siehe <a href="impressum.html">Impressum</a>).</p>
+<p><strong>Verantwortlicher:</strong> {INHABER}, E-Mail: {KONTAKT_MAIL} (Anschrift siehe <a href="impressum.html">Impressum</a>).</p>
 <h2>Hosting</h2>
 <p>Diese Website wird als statische Seite über <strong>GitHub Pages</strong> (GitHub, Inc., 88 Colin P. Kelly Jr. St, San Francisco, CA 94107, USA)
 ausgeliefert. Beim Aufruf verarbeitet GitHub technisch notwendige Verbindungsdaten (IP-Adresse, Zeitpunkt, aufgerufene Seite, Browser)
@@ -2607,7 +2637,7 @@ an einer datensparsamen Reichweitenmessung). Cloudflare ist nach dem EU-US Data 
 <p>Diese Website setzt keine Cookies, verwendet keine Werbedienste und bindet keine Schriftarten von Drittanbietern ein.
 Die Suche und die Filter laufen vollständig in deinem Browser; dabei werden keine Daten übertragen.</p>
 <h2>Notenrechner</h2>
-<p>Der <a href="noten.html">Notenrechner</a> arbeitet ausschließlich in Ihrem Browser. Titel, Klasse, Namen, Punkte und Noten, die Sie dort eintragen, werden nicht an uns oder an Dritte übertragen und nicht gespeichert, weder auf einem Server noch in Ihrem Browser (kein Cookie, kein lokaler Speicher). Eine technische Sperre der Seite (Content-Security-Policy) verhindert jede Datenübertragung aus dem Rechner und blockiert auch die Reichweitenmessung. Beim Schließen oder Neuladen der Seite sind alle Eingaben gelöscht. Beim Aufruf der Seite selbst fallen nur die oben unter „Hosting“ beschriebenen Zugriffsdaten an. Für das ausgedruckte oder als PDF gespeicherte Übersichtsblatt sind Sie selbst verantwortlich.</p>
+<p>Der <a href="noten.html">Notenrechner</a> arbeitet ausschließlich in deinem Browser. Titel, Klasse, Namen, Punkte und Noten, die du dort einträgst, werden nicht an mich oder an Dritte übertragen und nicht gespeichert, weder auf einem Server noch in deinem Browser (kein Cookie, kein lokaler Speicher). Eine technische Sperre der Seite (Content-Security-Policy) verhindert jede Datenübertragung aus dem Rechner und blockiert auch die Reichweitenmessung. Beim Schließen oder Neuladen der Seite sind alle Eingaben gelöscht. Beim Aufruf der Seite selbst fallen nur die oben unter „Hosting“ beschriebenen Zugriffsdaten an. Für das ausgedruckte oder als PDF gespeicherte Übersichtsblatt bist du selbst verantwortlich.</p>
 <h2>Externe Links und eingebundene Bilder</h2>
 <p>Die Vorschaubilder der Materialien werden direkt vom Marktplatz <strong>eduki</strong> (eduki GmbH, Berlin) geladen; dabei erhält eduki deine IP-Adresse.
 Über die Links „Material auf eduki" gelangst du auf eduki.com; dort gelten die
@@ -2621,13 +2651,16 @@ den Eintrag jederzeit über die Browser-Einstellungen löschen (§ 25 Abs. 2 Nr.
 <p>Die Vorschaubilder der englischen, spanischen, französischen und italienischen Seiten liefert diese Website selbst aus.
 Über die Schaltflächen „View on TpT“, „Ver en TpT“, „Voir sur TpT“ bzw. „Vedi su TpT“ gelangst du auf teacherspayteachers.com (Teachers Pay Teachers Inc., USA),
 über „Ver en eduki“, „Voir sur eduki“ bzw. „Vedi su eduki“ auf eduki.com; beide öffnen sich in einem neuen Tab. Dort gelten die Datenschutzhinweise des jeweiligen Marktplatzes.</p>
-<h2>Kontakt per E-Mail</h2>
-<p>Wenn du mir eine E-Mail schreibst, verarbeite ich deine Angaben ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO)
-und lösche sie, sobald sie nicht mehr benötigt werden.</p>
+<h2>Kontakt per E-Mail und Kontaktformular</h2>
+<p>Wenn du mir eine E-Mail schreibst oder das <a href="kontakt.html">Kontaktformular</a> nutzt, verarbeite ich deine Angaben (E-Mail-Adresse, Nachricht und,
+falls angegeben, deinen Namen) ausschließlich zur Bearbeitung deiner Anfrage (Art. 6 Abs. 1 lit. b bzw. f DSGVO) und lösche sie, sobald sie nicht mehr benötigt werden.
+Das Formular wird von <strong>Cloudflare</strong> (siehe oben) entgegengenommen und als E-Mail an mein Postfach weitergeleitet; eine Speicherung in einer
+Datenbank findet nicht statt. E-Mails an Adressen dieser Domain leitet Cloudflare (Email Routing) an mein Postfach bei Google (Google Ireland Ltd., Gmail) weiter.
+Das Formular setzt keine Cookies.</p>
 <h2>Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO)
 sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Wende dich dazu an die oben genannte E-Mail-Adresse.</p>
-<p><small>Stand: Oktober 2026</small></p>""")
+<p><small>Stand: November 2026</small></p>""")
     render_page("404", "Seite nicht gefunden", f"""<h1>Seite nicht gefunden</h1>
 <p>Diese Seite gibt es nicht (mehr). Vielleicht hilft dir die Suche auf der <a href="/index.html">Startseite</a> weiter –
 dort findest du alle Materialien nach Fach und Klasse.</p>
