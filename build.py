@@ -2667,8 +2667,8 @@ if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})()
 </form>
 <p><small>Deine Angaben speichere ich zu deiner Newsletter-Adresse, damit du künftig vor allem Hinweise bekommst, die zu deinen Fächern und Klassen passen. Näheres in der <a href="datenschutz.html">Datenschutzerklärung</a>. Ein Wunschmaterial je Abonnentin oder Abonnent.</small></p>
 <script>(function(){{var q=new URLSearchParams(location.search),s=q.get("s"),e=q.get("e"),m=document.getElementById("kmeld"),f=document.getElementById("gform");
-if(e)document.getElementById("g-mail").value=e;if(!s)return;var T={{ok:"Danke! Dein Wunschmaterial kommt innerhalb von 48 Stunden als PDF per E-Mail – schau auch im Spam-Ordner nach.",
-schon:"Für diese Adresse wurde schon ein Wunschmaterial angefordert. Es kommt per E-Mail – schau auch im Spam-Ordner nach.",
+if(e)document.getElementById("g-mail").value=e;if(!s)return;var T={{ok:"Danke! Du bekommst in wenigen Minuten (spätestens in 48 Stunden) eine E-Mail mit deinem persönlichen Download-Link – so hast du dein Wunschmaterial sofort einsatzbereit. Schau auch im Spam-Ordner nach.",
+schon:"Für diese Adresse wurde schon ein Wunschmaterial angefordert. Der Download-Link kommt per E-Mail – schau auch im Spam-Ordner nach.",
 unbekannt:"Diese Adresse ist noch nicht als Newsletter-Abonnent bestätigt. Bitte melde dich zuerst zum Newsletter an und klicke auf den Bestätigungslink in der Mail.",
 fehler:"Das hat leider nicht geklappt. Bitte gib Schulart, mindestens ein Fach, eine Klassenstufe und eine Materialart an – und eine gültige Materialnummer."}};
 m.hidden=false;m.className="kmeld "+(s==="ok"||s==="schon"?"ok":"fehler");m.textContent=T[s]||T.fehler;if(s==="ok"||s==="schon")f.hidden=true;
