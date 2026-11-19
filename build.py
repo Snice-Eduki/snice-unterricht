@@ -1788,6 +1788,7 @@ PAGE_DESC = {
     "newsletter": f"Newsletter von {SITE_NAME}: etwa alle zwei Wochen Unterrichtsideen, Gratis-Material und neue Materialien für Lehrkräfte – jederzeit abbestellbar.",
     "newsletter-bestaetigt": f"Newsletter-Anmeldung bei {SITE_NAME} bestätigt.",
     "gutschein-blitz": f"Gutschein-Aktion von {SITE_NAME}: Schnell sein lohnt sich.",
+    "geschenk": f"Willkommensgeschenk für Newsletter-Abonnenten von {SITE_NAME}.",
     "datenschutz": f"Datenschutzerklärung von {SITE_NAME}: keine Cookies, kein Tracking, Hosting und eingebundene Vorschaubilder.",
     "404": "Diese Seite gibt es nicht (mehr). Zur Startseite und zur Materialsuche.",
 }
@@ -1795,7 +1796,7 @@ PAGE_DESC = {
 
 def render_page(slug, title, inner):
     out = (head(title, PAGE_DESC.get(slug, title), f"{SITE}/{slug}.html", "",
-                robots="noindex,follow" if slug in ("404", "newsletter-bestaetigt", "gutschein-blitz") else "index,follow,max-image-preview:large")
+                robots="noindex,follow" if slug in ("404", "newsletter-bestaetigt", "gutschein-blitz", "geschenk") else "index,follow,max-image-preview:large")
            + '<main class="article-wrap">' + inner + "</main>" + foot())
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
 
@@ -2578,7 +2579,7 @@ def main():
 m.hidden=false;m.className="kmeld "+(s==="ok"?"ok":"fehler");
 m.textContent=s==="ok"?"Danke! Deine Nachricht ist angekommen. Ich melde mich per E-Mail bei dir.":"Das hat leider nicht geklappt. Bitte prüfe E-Mail-Adresse, Nachricht und das Häkchen – oder schreib mir direkt per E-Mail.";}})();</script>""")
     render_page("newsletter", "Newsletter", f"""<h1>Newsletter für Lehrkräfte</h1>
-<p class="sub">Etwa alle zwei Wochen eine kurze Mail: eine Idee für deinen Unterricht, Gratis-Material und Neues von Snice.</p>
+<p class="sub">Etwa alle zwei Wochen eine kurze Mail: eine Idee für deinen Unterricht, Gratis-Material und Gutscheine nur für Abonnenten. Zur Begrüßung: 50-%-Gutschein und ein Wunschmaterial geschenkt.</p>
 <style>
 .kform{{max-width:640px}}.kform label{{display:block;font-weight:700;margin:14px 0 4px}}
 .kform input[type=email],.kform select{{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}}
@@ -2591,6 +2592,8 @@ m.textContent=s==="ok"?"Danke! Deine Nachricht ist angekommen. Ich melde mich pe
 <ul>
 <li><strong>Kurz:</strong> in zwei Minuten gelesen, sofort im Unterricht einsetzbar.</li>
 <li><strong>Gratis-Material:</strong> regelmäßig ein vollständiges Material zum Herunterladen.</li>
+<li><strong>Willkommensgeschenk:</strong> Nach deiner Anmeldung bekommst du einen eigenen 50-%-Gutschein für meine Materialien bei eduki – und ein Material deiner Wahl gratis, wenn du mir verrätst, welche Fächer du unterrichtest.</li>
+<li><strong>Gutscheine nur für Abonnenten:</strong> immer wieder ein 50-%-Gutschein – jeweils für kurze Zeit.</li>
 <li><strong>Zuerst informiert:</strong> neue Materialien und Aktionen, bevor sie woanders stehen.</li>
 </ul>
 <form class="kform" method="post" action="/api/newsletter" id="nlform">
@@ -2628,9 +2631,39 @@ m.hidden=false;m.className="kmeld "+(s==="ok"?"ok":"fehler");
 m.textContent=s==="ok"?"Fast geschafft! Ich habe dir eine Mail geschickt. Bitte klicke dort auf „Anmeldung bestätigen“ – schau auch im Spam-Ordner nach.":"Das hat leider nicht geklappt. Bitte prüfe die E-Mail-Adresse und das Häkchen und versuche es noch einmal.";
 if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})();</script>""")
     render_page("newsletter-bestaetigt", "Anmeldung bestätigt", f"""<h1>Danke – du bist angemeldet!</h1>
-<p class="sub">Deine Newsletter-Anmeldung ist bestätigt. Die nächste Ausgabe kommt direkt in dein Postfach.</p>
+<p class="sub">Deine Newsletter-Anmeldung ist bestätigt. In wenigen Minuten bekommst du eine Mail mit deinem Willkommensgeschenk: deinem eigenen 50-%-Gutschein.</p>
+<p><strong>Dein zweites Geschenk:</strong> ein Material deiner Wahl gratis. Sag mir dafür kurz, was du unterrichtest.</p>
+<p class="btnrow"><a class="btn" href="geschenk.html">Wunschmaterial aussuchen</a></p>
 <p>Damit die Mails nicht im Spam landen, füge am besten <strong>{NEWSLETTER_MAIL}</strong> zu deinen Kontakten hinzu.</p>
 <p class="btnrow"><a class="btn" href="index.html">Zu den Materialien</a></p>""")
+    render_page("geschenk", "Dein Wunschmaterial", f"""<h1>Dein Wunschmaterial – geschenkt</h1>
+<p class="sub">Als Dankeschön für deine Newsletter-Anmeldung bekommst du ein Material deiner Wahl gratis. Sag mir dafür kurz, was du unterrichtest.</p>
+<style>.kform{{max-width:680px}}.kform>label,.kform legend{{display:block;font-weight:700;margin:18px 0 6px}}.kform fieldset{{border:0;padding:0;margin:0}}
+.kform input[type=email],.kform input[type=text]{{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}}
+.kform .hp{{position:absolute;left:-9999px}}.gw{{display:flex;flex-wrap:wrap;gap:8px}}.gw label{{font-weight:400;border:1px solid #b8c2cc;border-radius:999px;padding:7px 13px;cursor:pointer;margin:0}}
+.gw input{{margin-right:5px}}.kmeld{{padding:12px 14px;border-radius:8px;font-weight:700;max-width:680px;box-sizing:border-box}}
+.kmeld.ok{{background:#e3f6e8;color:#14532d}}.kmeld.fehler{{background:#fde8e8;color:#7f1d1d}}</style>
+<p id="kmeld" class="kmeld" hidden></p>
+<form class="kform" method="post" action="/api/geschenk" id="gform">
+<label for="g-mail">Deine E-Mail-Adresse (mit der du den Newsletter abonniert hast)</label>
+<input type="email" id="g-mail" name="email" maxlength="200" required autocomplete="email">
+<fieldset><legend>Welche Fächer unterrichtest du?</legend><div class="gw"><label><input type="checkbox" name="fach" value="Deutsch"> Deutsch</label><label><input type="checkbox" name="fach" value="Mathematik"> Mathematik</label><label><input type="checkbox" name="fach" value="Sachunterricht"> Sachunterricht</label><label><input type="checkbox" name="fach" value="Englisch"> Englisch</label><label><input type="checkbox" name="fach" value="DaZ"> DaZ</label><label><input type="checkbox" name="fach" value="Biologie"> Biologie</label><label><input type="checkbox" name="fach" value="Erdkunde"> Erdkunde</label><label><input type="checkbox" name="fach" value="Geschichte"> Geschichte</label><label><input type="checkbox" name="fach" value="Physik/Chemie"> Physik/Chemie</label><label><input type="checkbox" name="fach" value="Kunst"> Kunst</label><label><input type="checkbox" name="fach" value="Musik"> Musik</label><label><input type="checkbox" name="fach" value="Religion/Ethik"> Religion/Ethik</label><label><input type="checkbox" name="fach" value="Sport"> Sport</label><label><input type="checkbox" name="fach" value="Wirtschaft/Beruf"> Wirtschaft/Beruf</label><label><input type="checkbox" name="fach" value="Sonstiges"> Sonstiges</label></div></fieldset>
+<fieldset><legend>In welchen Klassen?</legend><div class="gw"><label><input type="checkbox" name="klasse" value="Vorschule"> Vorschule</label><label><input type="checkbox" name="klasse" value="Klasse 1-2"> Klasse 1–2</label><label><input type="checkbox" name="klasse" value="Klasse 3-4"> Klasse 3–4</label><label><input type="checkbox" name="klasse" value="Klasse 5-6"> Klasse 5–6</label><label><input type="checkbox" name="klasse" value="Klasse 7-8"> Klasse 7–8</label><label><input type="checkbox" name="klasse" value="Klasse 9-10"> Klasse 9–10</label><label><input type="checkbox" name="klasse" value="Berufsschule"> Berufsschule</label></div></fieldset>
+<fieldset><legend>Welches Material hilft dir am meisten?</legend><div class="gw"><label><input type="checkbox" name="art" value="Arbeitsblätter"> Arbeitsblätter</label><label><input type="checkbox" name="art" value="Lesetexte/Lesespuren"> Lesetexte/Lesespuren</label><label><input type="checkbox" name="art" value="Hörverstehen"> Hörverstehen</label><label><input type="checkbox" name="art" value="Escape-Rätsel"> Escape–Rätsel</label><label><input type="checkbox" name="art" value="Spiele"> Spiele</label><label><input type="checkbox" name="art" value="Basteln"> Basteln</label><label><input type="checkbox" name="art" value="Stationen/Werkstätten"> Stationen/Werkstätten</label><label><input type="checkbox" name="art" value="Leistungsnachweise"> Leistungsnachweise</label><label><input type="checkbox" name="art" value="Vertretungsstunden"> Vertretungsstunden</label><label><input type="checkbox" name="art" value="Saisonales"> Saisonales</label></div></fieldset>
+<label for="g-wunsch">Dein Wunschmaterial: Materialnummer oder eduki-Link</label>
+<input type="text" id="g-wunsch" name="wunsch" maxlength="300" required placeholder="z. B. 2380911">
+<p><small>Die Materialnummer ist die Zahl im Link des Materials bei eduki (eduki.com/de/material/<strong>2380911</strong>/…). Such dir dein Material <a href="https://eduki.com/de/shop/400839" target="_blank" rel="noopener">in meinem eduki-Shop</a> oder hier über die <a href="index.html">Materialsuche</a> aus. Wählbar ist jedes Einzelmaterial, keine Pakete.</small></p>
+<div class="hp" aria-hidden="true"><label for="g-web">Bitte leer lassen</label><input type="text" id="g-web" name="website" tabindex="-1" autocomplete="off"></div>
+<p class="btnrow"><button class="btn" type="submit">Wunschmaterial anfordern</button></p>
+</form>
+<p><small>Deine Angaben speichere ich zu deiner Newsletter-Adresse, damit du künftig vor allem Hinweise bekommst, die zu deinen Fächern und Klassen passen. Näheres in der <a href="datenschutz.html">Datenschutzerklärung</a>. Ein Wunschmaterial je Abonnentin oder Abonnent.</small></p>
+<script>(function(){{var q=new URLSearchParams(location.search),s=q.get("s"),e=q.get("e"),m=document.getElementById("kmeld"),f=document.getElementById("gform");
+if(e)document.getElementById("g-mail").value=e;if(!s)return;var T={{ok:"Danke! Dein Wunschmaterial kommt innerhalb von 48 Stunden als PDF per E-Mail – schau auch im Spam-Ordner nach.",
+schon:"Für diese Adresse wurde schon ein Wunschmaterial angefordert. Es kommt per E-Mail – schau auch im Spam-Ordner nach.",
+unbekannt:"Diese Adresse ist noch nicht als Newsletter-Abonnent bestätigt. Bitte melde dich zuerst zum Newsletter an und klicke auf den Bestätigungslink in der Mail.",
+fehler:"Das hat leider nicht geklappt. Bitte wähle mindestens ein Fach, eine Klassenstufe und eine Materialart aus und gib eine gültige Materialnummer an."}};
+m.hidden=false;m.className="kmeld "+(s==="ok"||s==="schon"?"ok":"fehler");m.textContent=T[s]||T.fehler;if(s==="ok"||s==="schon")f.hidden=true;
+if(s==="unbekannt"){{var a=document.createElement("a");a.href="newsletter.html";a.textContent=" Zur Newsletter-Anmeldung";m.appendChild(a);}}}})();</script>""")
     render_page("gutschein-blitz", "Gutschein: Schnell sein lohnt sich", f"""<h1>Schnell sein lohnt sich!</h1>
 <p class="sub">Dein Gutschein: 50&nbsp;% auf alle meine Materialien bei eduki – nur 25 Einlösungen.</p>
 <p style="text-align:center;font-size:2.2rem;font-weight:800;letter-spacing:.06em;border:3px dashed currentColor;border-radius:16px;padding:18px 10px;margin:22px 0">SNICE_5ZQPT4</p>
@@ -2740,6 +2773,10 @@ um dir etwa alle zwei Wochen den Newsletter mit Unterrichtsideen, Gratis-Materia
 Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Die Anmeldung erfolgt im Double-Opt-in-Verfahren: Du bekommst eine Mail mit einem
 Bestätigungslink und bist erst nach dem Klick darauf angemeldet. Zeitpunkt und IP-Adresse von Anmeldung und Bestätigung werden gespeichert, um die Einwilligung
 nachweisen zu können (Art. 6 Abs. 1 lit. f DSGVO).</p>
+<p>Nach der Bestätigung bekommst du als Willkommensgeschenk eine Mail mit einem persönlichen Gutscheincode; ich speichere, welcher Code deiner Adresse zugeordnet wurde.
+Wenn du auf der Seite <a href="geschenk.html">Wunschmaterial</a> freiwillig angibst, welche Fächer und Klassen du unterrichtest, welche Materialarten dich interessieren und
+welches Material du dir wünschst, speichere ich diese Angaben zu deiner Newsletter-Adresse. Ich nutze sie, um dir das Wunschmaterial per E-Mail zu schicken und um den Newsletter
+auf deine Fächer und Klassen abzustimmen (Art. 6 Abs. 1 lit. a DSGVO). Die Angaben werden mit deiner Abmeldung gelöscht; du kannst sie auch jederzeit löschen lassen.</p>
 <p>Den Versand übernimmt als Auftragsverarbeiter <strong>Brevo</strong> (Sendinblue GmbH, Köpenicker Straße 126, 10179 Berlin). Das Anmeldeformular liegt auf dieser Seite,
 wird von Cloudflare (siehe oben) entgegengenommen und direkt an Brevo übergeben; es setzt keine Cookies und lädt keine fremden Skripte. Brevo wertet aus,
 ob eine Mail geöffnet und welche Links angeklickt wurden, damit ich den Newsletter verbessern kann.</p>
