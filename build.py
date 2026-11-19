@@ -2611,7 +2611,18 @@ Ich kann mich jederzeit über den Link in jeder Mail wieder abmelden. Näheres i
 <p class="btnrow"><button class="btn" type="submit">Newsletter abonnieren</button></p>
 </form>
 <p><small>Nach dem Absenden bekommst du eine Mail mit einem Bestätigungslink. Erst nach deinem Klick darauf bist du angemeldet.</small></p>
-<script>(function(){{var s=new URLSearchParams(location.search).get("s"),m=document.getElementById("kmeld");if(!s||!m)return;
+<h2 id="abbestellen">Newsletter abbestellen</h2>
+<p>Du möchtest keine Mails mehr? Trag deine E-Mail-Adresse ein – du wirst sofort ausgetragen. Alternativ findest du in jeder Ausgabe unten einen Abmeldelink.</p>
+<p id="abmeld" class="kmeld" hidden></p>
+<form class="kform" method="post" action="/api/abmelden">
+<label for="a-mail">E-Mail-Adresse</label>
+<input type="email" id="a-mail" name="email" maxlength="200" required autocomplete="email">
+<div class="hp" aria-hidden="true"><label for="a-web">Bitte leer lassen</label><input type="text" id="a-web" name="website" tabindex="-1" autocomplete="off"></div>
+<p class="btnrow"><button class="btn" type="submit">Newsletter abbestellen</button></p>
+</form>
+<script>(function(){{var s=new URLSearchParams(location.search).get("s"),m=document.getElementById("kmeld"),a=document.getElementById("abmeld");if(!s||!m)return;
+if(s==="ab"||s==="abfehler"){{a.hidden=false;a.className="kmeld "+(s==="ab"?"ok":"fehler");
+a.textContent=s==="ab"?"Erledigt – du bekommst keinen Newsletter mehr. Danke, dass du dabei warst!":"Das hat leider nicht geklappt. Bitte prüfe die E-Mail-Adresse oder schreib mir über das Kontaktformular.";return;}}
 m.hidden=false;m.className="kmeld "+(s==="ok"?"ok":"fehler");
 m.textContent=s==="ok"?"Fast geschafft! Ich habe dir eine Mail geschickt. Bitte klicke dort auf „Anmeldung bestätigen“ – schau auch im Spam-Ordner nach.":"Das hat leider nicht geklappt. Bitte prüfe die E-Mail-Adresse und das Häkchen und versuche es noch einmal.";
 if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})();</script>""")
@@ -2713,7 +2724,7 @@ nachweisen zu können (Art. 6 Abs. 1 lit. f DSGVO).</p>
 <p>Den Versand übernimmt als Auftragsverarbeiter <strong>Brevo</strong> (Sendinblue GmbH, Köpenicker Straße 126, 10179 Berlin). Das Anmeldeformular liegt auf dieser Seite,
 wird von Cloudflare (siehe oben) entgegengenommen und direkt an Brevo übergeben; es setzt keine Cookies und lädt keine fremden Skripte. Brevo wertet aus,
 ob eine Mail geöffnet und welche Links angeklickt wurden, damit ich den Newsletter verbessern kann.</p>
-<p>Du kannst deine Einwilligung jederzeit widerrufen – über den Abmeldelink am Ende jeder Mail oder mit einer Nachricht an die oben genannte E-Mail-Adresse.
+<p>Du kannst deine Einwilligung jederzeit widerrufen – über den Abmeldelink am Ende jeder Mail, über das Formular <a href="newsletter.html#abbestellen">Newsletter abbestellen</a> oder mit einer Nachricht an die oben genannte E-Mail-Adresse.
 Danach wird deine Adresse für den Versand gesperrt und nicht mehr angeschrieben. Ohne Bestätigung der Anmeldung wird deine Adresse nicht für den Versand genutzt.</p>
 <h2>Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO)
