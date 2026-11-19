@@ -1787,6 +1787,7 @@ PAGE_DESC = {
     "kontakt": f"Kontakt zu {SITE_NAME}: Kontaktformular und E-Mail-Adresse für Fragen, Wünsche und Fehlerhinweise.",
     "newsletter": f"Newsletter von {SITE_NAME}: etwa alle zwei Wochen Unterrichtsideen, Gratis-Material und neue Materialien für Lehrkräfte – jederzeit abbestellbar.",
     "newsletter-bestaetigt": f"Newsletter-Anmeldung bei {SITE_NAME} bestätigt.",
+    "gutschein-blitz": f"Gutschein-Aktion von {SITE_NAME}: Schnell sein lohnt sich.",
     "datenschutz": f"Datenschutzerklärung von {SITE_NAME}: keine Cookies, kein Tracking, Hosting und eingebundene Vorschaubilder.",
     "404": "Diese Seite gibt es nicht (mehr). Zur Startseite und zur Materialsuche.",
 }
@@ -1794,7 +1795,7 @@ PAGE_DESC = {
 
 def render_page(slug, title, inner):
     out = (head(title, PAGE_DESC.get(slug, title), f"{SITE}/{slug}.html", "",
-                robots="noindex,follow" if slug in ("404", "newsletter-bestaetigt") else "index,follow,max-image-preview:large")
+                robots="noindex,follow" if slug in ("404", "newsletter-bestaetigt", "gutschein-blitz") else "index,follow,max-image-preview:large")
            + '<main class="article-wrap">' + inner + "</main>" + foot())
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
 
@@ -2630,6 +2631,24 @@ if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})()
 <p class="sub">Deine Newsletter-Anmeldung ist bestätigt. Die nächste Ausgabe kommt direkt in dein Postfach.</p>
 <p>Damit die Mails nicht im Spam landen, füge am besten <strong>{NEWSLETTER_MAIL}</strong> zu deinen Kontakten hinzu.</p>
 <p class="btnrow"><a class="btn" href="index.html">Zu den Materialien</a></p>""")
+    render_page("gutschein-blitz", "Gutschein: Schnell sein lohnt sich", f"""<h1>Schnell sein lohnt sich!</h1>
+<p class="sub">Dein Gutschein: 50&nbsp;% auf alle meine Materialien bei eduki – nur 25 Einlösungen.</p>
+<p style="text-align:center;font-size:2.2rem;font-weight:800;letter-spacing:.06em;border:3px dashed currentColor;border-radius:16px;padding:18px 10px;margin:22px 0">SNICE_5ZQPT4</p>
+<h2>So löst du ihn ein</h2>
+<ol>
+<li>Such dir bei eduki aus, was du brauchst – der Gutschein gilt für <strong>alle Materialien von Snice</strong>, auch für Pakete.</li>
+<li>Leg alles in den Warenkorb.</li>
+<li>Gib im Warenkorb den Code <strong>SNICE_5ZQPT4</strong> ein. Der Rabatt wird am Ende abgezogen.</li>
+</ol>
+<p class="btnrow"><a class="btn" href="https://eduki.com/de/shop/400839">Zu meinen Materialien bei eduki</a> <a class="btn" href="advent-winter.html">Ideen für Advent und Winter</a></p>
+<h2>Gut zu wissen</h2>
+<ul>
+<li>Der Gutschein lässt sich <strong>insgesamt 25-mal</strong> einlösen. Danach nimmt eduki ihn nicht mehr an – wer zuerst einlöst, bekommt den Rabatt.</li>
+<li>Gültig bis einschließlich <strong>Montag, 23. November 2026</strong>.</li>
+<li>Er gilt nur für Materialien von Snice, nicht für andere Autorinnen und Autoren.</li>
+</ul>
+<h2>Zu spät dran?</h2>
+<p>Im <a href="newsletter.html">Newsletter</a> erfährst du als Erste oder Erster von neuen Gutscheinen und bekommst regelmäßig ein fertiges Gratis-Material.</p>""")
     render_page("ueber-mich", "Über mich", f"""<h1>Über mich</h1>
 <p class="sub">Lehrer aus Leidenschaft – mit Liebe zum Detail und motivierenden Materialien für den Unterricht.</p>
 
