@@ -2582,7 +2582,7 @@ m.textContent=s==="ok"?"Danke! Deine Nachricht ist angekommen. Ich melde mich pe
 <p class="sub">Etwa alle zwei Wochen eine kurze Mail: eine Idee für deinen Unterricht, Gratis-Material und Gutscheine nur für Abonnenten. Zur Begrüßung: 50-%-Gutschein und ein Wunschmaterial geschenkt.</p>
 <style>
 .kform{{max-width:640px}}.kform label{{display:block;font-weight:700;margin:14px 0 4px}}
-.kform input[type=email],.kform select{{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}}
+.kform input[type=email],.kform input[type=text],.kform select{{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}}
 .kform .hp{{position:absolute;left:-9999px}}
 .kform .ein{{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:16px}}.kform .ein input{{margin-top:5px}}
 .kmeld{{padding:12px 14px;border-radius:8px;font-weight:700;max-width:640px;box-sizing:border-box}}
@@ -2599,6 +2599,8 @@ m.textContent=s==="ok"?"Danke! Deine Nachricht ist angekommen. Ich melde mich pe
 <form class="kform" method="post" action="/api/newsletter" id="nlform">
 <label for="n-mail">E-Mail-Adresse</label>
 <input type="email" id="n-mail" name="email" maxlength="200" required autocomplete="email">
+<label for="n-vn">Dein Vorname (freiwillig – dann kann ich dich persönlich ansprechen)</label>
+<input type="text" id="n-vn" name="vorname" maxlength="40" autocomplete="given-name">
 <label for="n-stufe">Wo unterrichtest du? (freiwillig)</label>
 <select id="n-stufe" name="schulstufe">
 <option value="">– bitte wählen –</option>
@@ -2647,6 +2649,8 @@ if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})()
 <form class="kform" method="post" action="/api/geschenk" id="gform">
 <label for="g-mail">Deine E-Mail-Adresse (mit der du den Newsletter abonniert hast)</label>
 <input type="email" id="g-mail" name="email" maxlength="200" required autocomplete="email">
+<label for="g-vn">Dein Vorname (freiwillig)</label>
+<input type="text" id="g-vn" name="vorname" maxlength="40" autocomplete="given-name">
 <fieldset><legend>Welche Fächer unterrichtest du?</legend><div class="gw"><label><input type="checkbox" name="fach" value="Deutsch"> Deutsch</label><label><input type="checkbox" name="fach" value="Mathematik"> Mathematik</label><label><input type="checkbox" name="fach" value="Sachunterricht"> Sachunterricht</label><label><input type="checkbox" name="fach" value="Englisch"> Englisch</label><label><input type="checkbox" name="fach" value="DaZ"> DaZ</label><label><input type="checkbox" name="fach" value="Biologie"> Biologie</label><label><input type="checkbox" name="fach" value="Erdkunde"> Erdkunde</label><label><input type="checkbox" name="fach" value="Geschichte"> Geschichte</label><label><input type="checkbox" name="fach" value="Physik/Chemie"> Physik/Chemie</label><label><input type="checkbox" name="fach" value="Kunst"> Kunst</label><label><input type="checkbox" name="fach" value="Musik"> Musik</label><label><input type="checkbox" name="fach" value="Religion/Ethik"> Religion/Ethik</label><label><input type="checkbox" name="fach" value="Sport"> Sport</label><label><input type="checkbox" name="fach" value="Wirtschaft/Beruf"> Wirtschaft/Beruf</label><label><input type="checkbox" name="fach" value="Sonstiges"> Sonstiges</label></div></fieldset>
 <fieldset><legend>In welchen Klassen?</legend><div class="gw"><label><input type="checkbox" name="klasse" value="Vorschule"> Vorschule</label><label><input type="checkbox" name="klasse" value="Klasse 1-2"> Klasse 1–2</label><label><input type="checkbox" name="klasse" value="Klasse 3-4"> Klasse 3–4</label><label><input type="checkbox" name="klasse" value="Klasse 5-6"> Klasse 5–6</label><label><input type="checkbox" name="klasse" value="Klasse 7-8"> Klasse 7–8</label><label><input type="checkbox" name="klasse" value="Klasse 9-10"> Klasse 9–10</label><label><input type="checkbox" name="klasse" value="Berufsschule"> Berufsschule</label></div></fieldset>
 <fieldset><legend>Welches Material hilft dir am meisten?</legend><div class="gw"><label><input type="checkbox" name="art" value="Arbeitsblätter"> Arbeitsblätter</label><label><input type="checkbox" name="art" value="Lesetexte/Lesespuren"> Lesetexte/Lesespuren</label><label><input type="checkbox" name="art" value="Hörverstehen"> Hörverstehen</label><label><input type="checkbox" name="art" value="Escape-Rätsel"> Escape–Rätsel</label><label><input type="checkbox" name="art" value="Spiele"> Spiele</label><label><input type="checkbox" name="art" value="Basteln"> Basteln</label><label><input type="checkbox" name="art" value="Stationen/Werkstätten"> Stationen/Werkstätten</label><label><input type="checkbox" name="art" value="Leistungsnachweise"> Leistungsnachweise</label><label><input type="checkbox" name="art" value="Vertretungsstunden"> Vertretungsstunden</label><label><input type="checkbox" name="art" value="Saisonales"> Saisonales</label></div></fieldset>
@@ -2768,7 +2772,7 @@ Das Formular wird von <strong>Cloudflare</strong> (siehe oben) entgegengenommen 
 Datenbank findet nicht statt. E-Mails an Adressen dieser Domain leitet Cloudflare (Email Routing) an mein Postfach bei Google (Google Ireland Ltd., Gmail) weiter.
 Das Formular setzt keine Cookies.</p>
 <h2>Newsletter</h2>
-<p>Wenn du dich auf der Seite <a href="newsletter.html">Newsletter</a> anmeldest, verarbeite ich deine E-Mail-Adresse und – falls du sie angibst – deine Schulstufe,
+<p>Wenn du dich auf der Seite <a href="newsletter.html">Newsletter</a> anmeldest, verarbeite ich deine E-Mail-Adresse und – falls du sie angibst – deinen Vornamen und deine Schulstufe,
 um dir etwa alle zwei Wochen den Newsletter mit Unterrichtsideen, Gratis-Material und Hinweisen auf neue Materialien und Angebote zu schicken.
 Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Die Anmeldung erfolgt im Double-Opt-in-Verfahren: Du bekommst eine Mail mit einem
 Bestätigungslink und bist erst nach dem Klick darauf angemeldet. Zeitpunkt und IP-Adresse von Anmeldung und Bestätigung werden gespeichert, um die Einwilligung

@@ -27,7 +27,7 @@
 <p class="sub">Etwa alle zwei Wochen eine kurze Mail: eine Idee für deinen Unterricht, Gratis-Material und Gutscheine nur für Abonnenten. Zur Begrüßung: 50-%-Gutschein und ein Wunschmaterial geschenkt.</p>
 <style>
 .kform{max-width:640px}.kform label{display:block;font-weight:700;margin:14px 0 4px}
-.kform input[type=email],.kform select{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}
+.kform input[type=email],.kform input[type=text],.kform select{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #b8c2cc;border-radius:8px;font:inherit;background:#fff;color:#111}
 .kform .hp{position:absolute;left:-9999px}
 .kform .ein{display:flex;gap:10px;align-items:flex-start;font-weight:400;margin-top:16px}.kform .ein input{margin-top:5px}
 .kmeld{padding:12px 14px;border-radius:8px;font-weight:700;max-width:640px;box-sizing:border-box}
@@ -44,6 +44,8 @@
 <form class="kform" method="post" action="/api/newsletter" id="nlform">
 <label for="n-mail">E-Mail-Adresse</label>
 <input type="email" id="n-mail" name="email" maxlength="200" required autocomplete="email">
+<label for="n-vn">Dein Vorname (freiwillig – dann kann ich dich persönlich ansprechen)</label>
+<input type="text" id="n-vn" name="vorname" maxlength="40" autocomplete="given-name">
 <label for="n-stufe">Wo unterrichtest du? (freiwillig)</label>
 <select id="n-stufe" name="schulstufe">
 <option value="">– bitte wählen –</option>
