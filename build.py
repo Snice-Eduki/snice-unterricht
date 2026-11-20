@@ -15,6 +15,7 @@ SHOP = "https://eduki.com/de/shop/400839"
 # Bing: Code aus Bing Webmaster Tools (Methode "Meta-Tag", nur der content-Wert) hier eintragen -> Meta-Tag auf allen Seiten
 # + BingSiteAuth.xml. Leer = nichts wird ausgegeben. Einfacher: in Bing "Import aus Google Search Console" (kein Code noetig).
 BING_VERIFY = ""
+PINTEREST_VERIFY = "9bd7169f8862b63b559b8b36ab1058f4"   # 20.11.2026 Pinterest-Webseiten-Bestaetigung
 SEO_REV = "|seo20261101"      # Template-Revision der Detailseiten: aendern -> lastmod aller Detailseiten einmalig = heute
 SEO_REV_DATE = "2026-11-02"   # Blog-Fix (Code-Zaun) live ab dem naechsten Lauf
 GOOGLE_VERIFY = ""   # optional zusaetzlich Meta-Methode (content-Wert)
@@ -242,6 +243,7 @@ def itemlist_ld(name, mats, limit=50):
 
 def VERIFY_META():
     return ((f'<meta name="msvalidate.01" content="{BING_VERIFY}">' if BING_VERIFY else "")
+            + (f'<meta name="p:domain_verify" content="{PINTEREST_VERIFY}">' if PINTEREST_VERIFY else "")
             + (f'<meta name="google-site-verification" content="{GOOGLE_VERIFY}">' if GOOGLE_VERIFY else ""))
 
 
