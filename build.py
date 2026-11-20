@@ -296,7 +296,8 @@ NAV_SCRIPT = """<script>
 (function(){var t=document.getElementById('topnav');if(!t)return;
 var on=function(){t.classList.toggle('scrolled',window.scrollY>8)};on();
 addEventListener('scroll',on,{passive:true});})();
-</script>"""
+</script>
+<script src="/assets/langmenu.js?v=1" defer></script>"""
 
 
 FOOT_COLS = ""   # wird in main() mit Fach-/Klassen-/Materialart-Links gefuellt (interne Verlinkung)
@@ -2684,6 +2685,7 @@ def main():
     lehrplan_seiten.render(globals())   # 10.11.: Lehrplan-Themenseiten + Uebersicht
     import wissen_seiten; wissen_seiten.render(globals())   # 17.11.: Wissens-Seiten (Textquelle der Hoerblaetter)
     import noten_seiten; noten_seiten.render(globals())   # 18.11.: Notenrechner fuer Lehrkraefte (nur Browser, keine Datenuebertragung)
+    import laender_seiten; laender_seiten.render(globals())   # 20.11.: Landessprachen-Seiten + Sprachmenue
     n_matpages = render_material_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>
