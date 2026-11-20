@@ -192,6 +192,7 @@ def topnav(root="", url=""):
             f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
             f'<nav class="links">'
             f'<a href="{root}materialien.html">Materialien</a>'
+            f'<a href="{root}materialpakete.html">Materialpakete</a>'
             f'<a href="{root}kostenlos.html">Kostenlos</a>'
             f'<a href="{root}lesespurgeschichten.html">Lesespurgeschichten</a>'
             f'<a href="{root}rechenwelten.html">Rechenwelten</a>'
@@ -868,17 +869,17 @@ def fk_kombis():
 def fk_links_fuer_fach(f):
     ks = sorted(n for (ff, n) in fk_kombis() if ff == f)
     if not ks:
-        return _lp("links_fach", f)
+        return pk_links_fuer_fach(f) + _lp("links_fach", f)
     lk = " · ".join(f'<a href="{fk_slug(f, n)}.html">Klasse {n}</a>' for n in ks)
-    return f'<p class="more"><strong>Direkt zur Jahrgangsstufe:</strong> {lk}</p>' + _lp("links_fach", f)
+    return f'<p class="more"><strong>Direkt zur Jahrgangsstufe:</strong> {lk}</p>' + pk_links_fuer_fach(f) + _lp("links_fach", f)
 
 
 def fk_links_fuer_klasse(n):
     fs = sorted(f for (f, nn) in fk_kombis() if nn == n)
     if not fs:
-        return ""
+        return pk_links_fuer_klasse(n)
     lk = " · ".join(f'<a href="{fk_slug(f, n)}.html">{html.escape(f)}</a>' for f in fs)
-    return f'<p class="more"><strong>Direkt zum Fach in Klasse {n}:</strong> {lk}</p>'
+    return f'<p class="more"><strong>Direkt zum Fach in Klasse {n}:</strong> {lk}</p>' + pk_links_fuer_klasse(n)
 
 def render_fachklasse_pages():
     """Fach × Klasse: die Kombination, nach der Lehrkräfte tatsächlich suchen."""
@@ -1204,6 +1205,126 @@ def _lp_card(e):
             f'<p class="card-meta">{html.escape(S.get("beruf_kurz") or S.get("beruf", ""))}{" · " + html.escape(lf) if lf else ""}'
             f'{" · " + html.escape(S.get("jahrgang", "")) if S.get("jahrgang") else ""}</p>'
             f'<p class="btnrow">{" ".join(links)}</p></article>')
+
+
+# ---------------------------------------------------------------- 19.11.2026: Materialpakete (Paketordner -> Uebersicht, Fach-/Klassenseiten)
+PK_ROOT = r"C:\Claude-Arbeitsblätter\Materialpakete"
+PK_MIN_SUB = 2
+_PK = None
+
+
+def paket_liste():
+    """Live-Materialpakete (eduki_meta.json mit eduki_id und status 'live'), als katalogartige Dicts. Deckblatt -> thumbs/<id>-<hash>.webp."""
+    global _PK, _THUMBS
+    if _PK is not None:
+        return _PK
+    _PK = []
+    try:
+        from PIL import Image
+    except Exception:
+        Image = None
+    os.makedirs(THUMB_DIR, exist_ok=True)
+    for mp in sorted(glob.glob(os.path.join(PK_ROOT, "*", "eduki_meta.json"))):
+        d = os.path.dirname(mp)
+        try:
+            em = json.load(open(mp, encoding="utf-8"))
+        except Exception:
+            continue
+        eid = str(em.get("eduki_id") or "")
+        if not eid or not str(em.get("status", "")).startswith("live"):
+            continue
+        dk = em.get("deckblatt") or {}
+        png = os.path.join(d, dk.get("png", "")) if isinstance(dk, dict) and dk.get("png") else ""
+        if not (png and os.path.isfile(png)):
+            continue
+        m = {"id": eid, "title": em.get("title", ""), "slug": slugify(em.get("title", ""))[:90], "cover": "paket:" + eid + ":" + str(int(os.path.getmtime(png))),
+             "desc": re.sub(r"<[^>]+>", " ", em.get("beschreibung_html", "")),
+             "fach": em.get("fach", ""), "grades": [f"{n}. Klasse" for n in re.findall(r"\d+", str(em.get("klasse", "")))][:3],
+             "price": em.get("preis_eur"), "line": "sonst", "active": True, "is_free": False, "school_types": [],
+             "types": ["Materialpaket"]}
+        th = os.path.join(THUMB_DIR, thumb_name(m))
+        if Image and not os.path.isfile(th):
+            try:
+                im = Image.open(png).convert("RGB")
+                im.thumbnail((400, 524))
+                im.save(th, "WEBP", quality=80)
+            except Exception as e:
+                print("WARNUNG Paket-Thumb", eid, repr(e), flush=True)
+        _PK.append(m)
+    _THUMBS = None
+    _PK.sort(key=lambda m: -int(m["id"]))
+    return _PK
+
+
+def pk_fach_slug(f):
+    return "materialpakete-" + slugify(f)
+
+
+def pk_klasse_slug(n):
+    return f"materialpakete-klasse-{n}"
+
+
+def pk_links_fuer_fach(f):
+    n = len([m for m in paket_liste() if m["fach"] == f])
+    if n < PK_MIN_SUB:
+        return ""
+    return f'<p class="more"><strong>Materialpakete zum halben Preis:</strong> <a href="{pk_fach_slug(f)}.html">{n} Pakete {html.escape(f)}</a></p>'
+
+
+def pk_links_fuer_klasse(k):
+    n = len([m for m in paket_liste() if k in grade_nums(m["grades"])])
+    if n < PK_MIN_SUB:
+        return ""
+    return f'<p class="more"><strong>Materialpakete zum halben Preis:</strong> <a href="{pk_klasse_slug(k)}.html">{n} Pakete Klasse {k}</a></p>'
+
+
+def render_materialpakete():
+    pk = paket_liste()
+    if not pk:
+        return 0
+    ps = [float(m["price"]) for m in pk if m.get("price")]
+    ab = f"{min(ps):.2f}".replace(".", ",") if ps else ""
+    sect = [("Was ist ein Materialpaket?",
+             "Ein Paket bündelt mehrere zusammengehörige Materialien zu einem Thema, einem Fach und einer Jahrgangsstufe. "
+             "Der Paketpreis beträgt die Hälfte der Summe aller Einzelpreise: Du sparst Geld und die Zeit, einzelne Blätter zusammenzusuchen."),
+            ("Passend zum Lehrplan",
+             "Jedes Paket nennt in der Beschreibung die Lernbereiche und Kompetenzen, die die enthaltenen Materialien abdecken. "
+             "Die Materialien sind lehrplanorientiert für alle Bundesländer und Schularten gestaltet."),
+            ("So kommst du zum Paket",
+             "Ein Klick auf das Deckblatt führt direkt zur Paketseite auf eduki. Dort siehst du alle enthaltenen Materialien und die ausführliche Beschreibung.")]
+
+    def seite(slug, title, h1, desc, intro, ms, crumbs, links=""):
+        grid_page(slug, title, h1, desc, intro, ms, crumbs,
+                  with_fach=len({m["fach"] for m in ms}) > 1, with_kl=len({n for m in ms for n in grade_nums(m["grades"])}) > 1,
+                  itemlist_name=h1, links_html=links, editorial=editorial_block(sect, None),
+                  static_max=HUB_STATIC_MAX if len(ms) > 60 else 0)
+
+    fk = collections.Counter(m["fach"] for m in pk if m["fach"])
+    kk = collections.Counter(n for m in pk for n in grade_nums(m["grades"]))
+    links = ""
+    if fk:
+        links += '<p class="more"><strong>Nach Fach:</strong> ' + " · ".join(
+            f'<a href="{pk_fach_slug(f)}.html">{html.escape(f)} ({c})</a>' for f, c in sorted(fk.items()) if c >= PK_MIN_SUB) + "</p>"
+    if kk:
+        links += '<p class="more"><strong>Nach Klasse:</strong> ' + " · ".join(
+            f'<a href="{pk_klasse_slug(k)}.html">Klasse {k} ({c})</a>' for k, c in sorted(kk.items()) if c >= PK_MIN_SUB) + "</p>"
+    seite("materialpakete", f"Materialpakete für Lehrkräfte – {len(pk)} Pakete zum halben Preis", "Materialpakete",
+          f"{len(pk)} Materialpakete für Klasse {min(kk) if kk else 1} bis {max(kk) if kk else 10}: zusammengehörige Materialien zu einem Thema, lehrplanorientiert, zum halben Preis der Einzelmaterialien{(' – ab ' + ab + ' €') if ab else ''}.",
+          "Zusammengehörige Materialien zu einem Thema, gebündelt für ein Fach und eine Jahrgangsstufe – zum halben Preis der Einzelmaterialien.",
+          pk, [], links)
+    for f, c in fk.items():
+        if c >= PK_MIN_SUB:
+            seite(pk_fach_slug(f), f"Materialpakete {f} – Pakete zum halben Preis", f"Materialpakete {f}",
+                  f"{c} Materialpakete {f}: zusammengehörige, lehrplanorientierte Materialien zum halben Preis der Einzelmaterialien.",
+                  f"Pakete mit mehreren zusammengehörigen Materialien {f}, nach Klasse filterbar.",
+                  [m for m in pk if m["fach"] == f], [("Materialpakete", SITE + "/materialpakete.html")])
+    for k, c in kk.items():
+        if c >= PK_MIN_SUB:
+            seite(pk_klasse_slug(k), f"Materialpakete Klasse {k} – Pakete zum halben Preis", f"Materialpakete Klasse {k}",
+                  f"{c} Materialpakete für Klasse {k}: zusammengehörige, lehrplanorientierte Materialien zum halben Preis der Einzelmaterialien.",
+                  f"Pakete für Klasse {k}, nach Fach filterbar.",
+                  [m for m in pk if k in grade_nums(m["grades"])], [("Materialpakete", SITE + "/materialpakete.html")])
+    return len(pk)
 
 
 def render_berufsschule_lernvideos():
@@ -2538,6 +2659,7 @@ def main():
     n_pt, n_lt, n_gratis, n_en = render_line_pages()
     nls = render_lesespur_pages()
     nsa = render_saison_pages()
+    n_pk = render_materialpakete()   # 19.11.: Materialpakete-Uebersicht + Fach-/Klassenseiten
     n_bs, n_lv = render_berufsschule_lernvideos()   # SEO 02.11.: Berufsschule/Lernvideos (erst ab Mindestmenge)
     import baukasten_seiten; baukasten_seiten.render(globals())   # 09.11.: Gratis-Baukasten
     import escape_seiten; escape_seiten.render(globals())   # 09.11.: Escape-Room Winter gratis
