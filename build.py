@@ -251,7 +251,7 @@ HTTPS_JS = ("<script>if(location.protocol==='http:'&&/(^|\\.)snice-unterricht\\.
             "location.replace('https://snice-unterricht.eu'+location.pathname+location.search+location.hash);</script>")
 
 
-def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=None, title_raw=False, robots="index,follow,max-image-preview:large"):
+def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=None, title_raw=False, robots="index,follow,max-image-preview:large", og_type=None):
     desc = html.escape(desc.replace("\n", " ").strip()); t = html.escape(title)
     og_img = cover or f"{SITE}/assets/logo.png"
     jsonld = {"@context": "https://schema.org", "@type": "BlogPosting" if article else "WebPage",
@@ -273,7 +273,7 @@ def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=No
 <link rel="canonical" href="{url}">
 {I18N_HEAD(url)}{VERIFY_META()}
 <meta name="robots" content="{robots}">
-<meta property="og:type" content="{'article' if article else 'website'}">
+<meta property="og:type" content="{og_type or ('article' if article else 'website')}">
 <meta property="og:title" content="{t}"><meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}"><meta property="og:image" content="{og_img}">
 <meta property="og:locale" content="de_DE">
@@ -2545,7 +2545,7 @@ def render_material_page(m, related):
 </main>
 """
     page = head(seo_title_de(m, [n for n in nums if 1 <= n <= 13]), meta_desc, url, m.get("cover"), root="../",
-                extra_ld=[product_ld, breadcrumb_ld(crumbs)], title_raw=True) + body + foot("../")
+                extra_ld=[product_ld, breadcrumb_ld(crumbs)], title_raw=True, og_type="article") + body + foot("../")
     open(os.path.join(MAT_DIR, os.path.basename(mat_path(m))), "w", encoding="utf-8").write(page)
 
 
