@@ -185,9 +185,22 @@ def saison_aktuell(heute=None):
 SAISON_NAV = {"herbst": "Herbst", "advent-winter": "Advent &amp; Winter", "st-martin": "St. Martin"}   # P2-STMARTIN
 
 
+NL_BAND_AUS = ("newsletter", "newsletter-bestaetigt", "impressum", "datenschutz", "geschenk", "gutschein-blitz", "ig", "404")
+
+
+def nl_band(root="", url=""):
+    """20.11.: Newsletter-Band oben auf allen deutschen Seiten (nicht auf Newsletter-/Rechtsseiten)."""
+    slug = (url or "").rstrip("/").rsplit("/", 1)[-1].replace(".html", "")
+    if slug in NL_BAND_AUS:
+        return ""
+    return (f'<aside class="nlband" aria-label="Newsletter für Lehrkräfte"><div class="in">'
+            f'<span><b>Newsletter für Lehrkräfte: 2 Geschenke zur Anmeldung</b> – dein 50-%-Gutschein + ein Wunschmaterial gratis</span>'
+            f'<a class="nlb-btn" href="{root}newsletter.html">Jetzt Geschenke sichern</a></div></aside>')
+
+
 def topnav(root="", url=""):
     saison = "".join(f'<a href="{root}{s}.html">{SAISON_NAV[s]}</a>' for s in saison_aktuell()[:1])
-    return (f'<header class="topnav" id="topnav">'
+    return (nl_band(root, url) + f'<header class="topnav" id="topnav">'
             f'<a class="brand" href="{root}index.html" aria-label="{SITE_NAME} – Startseite">'
             f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
             f'<nav class="links">'
@@ -297,6 +310,7 @@ def foot(root=""):
 <p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}kostenlos.html">Kostenloses Unterrichtsmaterial</a> · <a href="{root}baukasten.html">Baukasten für Lehrkräfte</a> · <a href="{root}noten.html">Notenrechner</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
 </footer>
 {NAV_SCRIPT}
+<script src="{root}assets/nl.js?v=2" defer></script>
 </body></html>"""
 
 
@@ -1902,6 +1916,7 @@ def render_index(posts=None):
 
 
 PAGE_DESC = {
+    "ig": "Willkommen von Instagram: Newsletter mit 50-%-Gutschein und Wunschmaterial gratis, dazu kostenloses Unterrichtsmaterial nach Fach und Klasse.",
     "impressum": f"Impressum von {SITE_NAME}: Anbieterkennzeichnung und Kontakt.",
     "ueber-mich": f"Über mich: Wer hinter {SITE_NAME} steht, wie meine Unterrichtsmaterialien entstehen und welche "
                   "Materiallinien es gibt – Lesespuren, Rechenwelten, Lesespaziergänge, Bastelvorlagen und mehr.",
@@ -1917,7 +1932,7 @@ PAGE_DESC = {
 
 def render_page(slug, title, inner):
     out = (head(title, PAGE_DESC.get(slug, title), f"{SITE}/{slug}.html", "",
-                robots="noindex,follow" if slug in ("404", "newsletter-bestaetigt", "gutschein-blitz", "geschenk") else "index,follow,max-image-preview:large")
+                robots="noindex,follow" if slug in ("404", "newsletter-bestaetigt", "gutschein-blitz", "geschenk", "ig") else "index,follow,max-image-preview:large")
            + '<main class="article-wrap">' + inner + "</main>" + foot())
     open(os.path.join(OUT, slug + ".html"), "w", encoding="utf-8").write(out)
 
@@ -2233,6 +2248,7 @@ def write_meta(posts):
          f"<url><loc>{SITE}/ueber-mich.html</loc></url>",
          f"<url><loc>{SITE}/kontakt.html</loc></url>",
          f"<url><loc>{SITE}/newsletter.html</loc></url>",
+         f"<url><loc>{SITE}/empfehlungen.html</loc></url>",
          f"<url><loc>{SITE}/datenschutz.html</loc></url>"]
     u += [f"<url><loc>{x}</loc>{I18N_SITEMAP_ALT(x)}<priority>0.8</priority></url>" for x in EXTRA_URLS]
     for p in posts:
@@ -2754,6 +2770,24 @@ a.textContent=s==="ab"?"Erledigt – du bekommst keinen Newsletter mehr. Danke, 
 m.hidden=false;m.className="kmeld "+(s==="ok"?"ok":"fehler");
 m.textContent=s==="ok"?"Fast geschafft! Ich habe dir eine Mail geschickt. Bitte klicke dort auf „Anmeldung bestätigen“ – schau auch im Spam-Ordner nach.":"Das hat leider nicht geklappt. Bitte prüfe die E-Mail-Adresse und das Häkchen und versuche es noch einmal.";
 if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})();</script>""")
+    render_page("ig", "Willkommen von Instagram", f"""<style>
+.igkarte{{background:#f6f1e4;border:2px solid #2f5d46;border-radius:18px;padding:22px 22px 18px;color:#2f5d46;margin:8px 0 26px}}
+.igkarte h1{{margin:0 0 6px;color:#2f5d46}}.igkarte .gs{{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}}
+.igkarte .g{{flex:1 1 220px;background:#2f5d46;color:#fff;border-radius:14px;padding:14px 16px}}.igkarte .g b{{display:block;font-size:19px;margin-bottom:2px}}
+.igkarte .btn{{background:#2f5d46;color:#fff}}.igwege .btn{{margin:0 6px 8px 0}}
+</style>
+<section class="igkarte"><h1>Schön, dass du da bist!</h1>
+<p>Melde dich zum Newsletter für Lehrkräfte an und spar dir ab jetzt Vorbereitungszeit: etwa alle zwei Wochen eine fertige Idee für deinen Unterricht. Als Dankeschön bekommst du sofort zwei Geschenke:</p>
+<div class="gs"><div class="g"><b>50-%-Gutschein</b>persönlich für dich, für meine Materialien bei eduki</div>
+<div class="g"><b>Wunschmaterial gratis</b>verrate mir deine Fächer und Klassen – du bekommst ein passendes Material geschenkt</div></div>
+<p class="btnrow"><a class="btn" href="newsletter.html">Jetzt Geschenke sichern</a></p>
+<p><small>Freiwillig und jederzeit abbestellbar. Alle Gratis-Materialien unten bekommst du auch ohne Anmeldung.</small></p></section>
+<section class="igwege"><h2>Gratis-Material zum Sofort-Ausdrucken</h2>
+<p>Fertige Materialien ohne Anmeldung: Werkstätten, Bildkarten, Lesespuren und mehr.</p>
+<p><a class="btn" href="kostenlos.html">Alle kostenlosen Materialien</a> <a class="btn ghost" href="lesespurgeschichten.html">Lesespurgeschichten</a> <a class="btn ghost" href="rechenwelten.html">Rechenwelten</a> <a class="btn ghost" href="neu.html">Neu erschienen</a></p>
+<h2>Material nach Fach</h2><p>{fl}<a class="btn ghost" href="materialien.html">Alle Fächer</a></p>
+<h2>Material nach Klasse</h2><p>{kl}</p>
+<p><small>Ich bin Snice, Lehrer und Autor dieser Materialien. Mehr über mich auf der Seite <a href="ueber-mich.html">Über mich</a>.</small></p></section>""")
     render_page("newsletter-bestaetigt", "Anmeldung bestätigt", f"""<h1>Danke – du bist angemeldet!</h1>
 <p class="sub">Deine Newsletter-Anmeldung ist bestätigt. In wenigen Minuten bekommst du eine Mail mit deinem Willkommensgeschenk: deinem eigenen 50-%-Gutschein.</p>
 <p><strong>Dein zweites Geschenk:</strong> ein Material deiner Wahl gratis. Sag mir dafür kurz, was du unterrichtest.</p>
@@ -2854,10 +2888,25 @@ Aktionen und Einblicke in die Entstehung gibt es auf
 <a href="https://www.pinterest.de/sniceeduki/" rel="noopener">Pinterest</a>. Englische Materialien findest du in meinem
 <a href="https://www.teacherspayteachers.com/store/snice" rel="noopener">Shop auf Teachers Pay Teachers</a>.</p>
 <p>Fragen, Wünsche oder ein Fehler entdeckt? Schreib mir über das <a href="kontakt.html">Kontaktformular</a> oder an <a href="mailto:{KONTAKT_MAIL}">{KONTAKT_MAIL}</a> – ich
-antworte selbst und bessere Material auch nachträglich nach.</p>
+antworte selbst und bessere Material auch nachträglich nach. Weitere Seiten und Blogs für Lehrkräfte empfehle ich auf der Seite <a href="empfehlungen.html">Empfehlungen</a>.</p>
 
 <p class="btnrow"><a class="btn" href="materialien.html">Alle Materialien durchsuchen</a>
 <a class="more" href="rechenwelten.html">Rechenwelten ansehen</a></p>""")
+    render_page("empfehlungen", "Empfehlungen: Seiten und Blogs für Lehrkräfte", f"""<h1>Empfehlungen: Seiten und Blogs für Lehrkräfte</h1>
+<p>Hier sammle ich Angebote, die ich Lehrkräften guten Gewissens weiterempfehle. Die Liste wächst nach und nach; jeder Eintrag ist von Hand ausgewählt und nicht bezahlt.</p>
+<h2>Kostenlose Angebote hier auf Snice Unterricht</h2>
+<ul>
+<li><a href="kostenlos.html"><strong>Kostenloses Unterrichtsmaterial zum Ausdrucken</strong></a> – Werkstätten, Bildkarten und Baukästen für Lehrkräfte.</li>
+<li><a href="noten"><strong>Notenrechner für Lehrkräfte</strong></a> – Prozent-Notenschlüssel, Notenliste und Durchschnitt, ohne Anmeldung.</li>
+</ul>
+<h2>Blogs und Portale für Lehrkräfte</h2>
+<ul>
+<li><a href="https://www.lehrcare.de/en/23-blogs-von-und-fuer-lehrkraefte/" rel="noopener">Lehrcare: 23 Blogs von und für Lehrkräfte</a> – eine kommentierte Übersicht lesenswerter Lehrerblogs.</li>
+<li><a href="https://www.lehrerfreund.de/newsletter" rel="noopener">Der Lehrerfreund</a> – monatlicher Newsletter und Blog für den Schulalltag.</li>
+<li><a href="https://www.bildungsserver.de/" rel="noopener">Deutscher Bildungsserver</a> – das zentrale Portal für Bildungsinformationen und Materialien.</li>
+<li><a href="https://wirlernenonline.de/" rel="noopener">WirLernenOnline</a> – freie Bildungsmaterialien, von Fachredaktionen geprüft.</li>
+</ul>
+<p>Du betreibst einen Blog oder ein Angebot für Lehrkräfte und möchtest dich austauschen? Schreib mir über das <a href="kontakt.html">Kontaktformular</a>.</p>""")
     render_page("datenschutz", "Datenschutzerklärung", f"""<h1>Datenschutzerklärung</h1>
 <p><strong>Verantwortlicher:</strong> {INHABER}, E-Mail: {KONTAKT_MAIL} (Anschrift siehe <a href="impressum.html">Impressum</a>).</p>
 <h2>Hosting</h2>
