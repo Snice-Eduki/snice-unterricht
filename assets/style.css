@@ -249,3 +249,20 @@ p.soon{color:var(--muted);text-align:left;margin:0}
 /* 17.11.: passende Materialkarten unter Blogartikeln */
 .passend{max-width:1100px;margin:40px auto 0;padding:22px 20px 0;border-top:1px solid var(--line)}
 .passend h2{font-size:22px;margin:0 0 14px}
+
+/* 20.11. Newsletter-Band + Einblendung */
+.nlband{background:#f6f1e4;border-bottom:1px solid #e2d9bd;color:#2f5d46;font-size:15px;line-height:1.35}
+.nlband .in{max-width:1100px;margin:0 auto;padding:9px 16px;display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;justify-content:center;text-align:center}
+.nlband b{font-weight:700}
+.nlband .nlb-btn{background:#2f5d46;color:#fff;text-decoration:none;font-weight:700;padding:6px 16px;border-radius:999px;white-space:nowrap}
+.nlband .nlb-btn:hover{background:#3a7d5a}
+.nlband .nlb-btn:focus-visible,.nlpop a:focus-visible,.nlpop button:focus-visible{outline:3px solid #f0b429;outline-offset:2px}
+@media(max-width:560px){.nlband{font-size:14px}.nlband .in{padding:8px 12px}}
+.nlpop{position:fixed;z-index:200;right:18px;bottom:18px;width:340px;max-width:calc(100vw - 36px);background:#f6f1e4;color:#2f5d46;border:2px solid #2f5d46;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.22);padding:16px 18px 14px;font-size:15px;line-height:1.4;box-sizing:border-box}
+.nlpop[hidden]{display:none}
+.nlpop h2{font-size:17px;margin:0 28px 6px 0;color:#2f5d46}
+.nlpop p{margin:0 0 10px}
+.nlpop .nlp-btn{display:inline-block;background:#2f5d46;color:#fff;text-decoration:none;font-weight:700;padding:8px 18px;border-radius:999px}
+.nlpop .nlp-x{position:absolute;top:6px;right:8px;width:34px;height:34px;border:0;background:none;font-size:24px;line-height:1;color:#2f5d46;cursor:pointer;border-radius:50%}
+.nlpop .nlp-no{display:block;margin-top:8px;font-size:12px;opacity:.8}
+@media(max-width:560px){.nlpop{left:10px;right:10px;bottom:10px;width:auto;max-width:none;padding:12px 14px 10px;font-size:14px}.nlpop h2{font-size:15px}.nlpop p.nlp-t{display:none}}

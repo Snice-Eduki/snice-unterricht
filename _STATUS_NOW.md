@@ -212,3 +212,23 @@ FEHLER: {'privatadresse': 3}
 - ⛔ 19.11. 20:56 Homepage-Tageslauf: Katalog-Pull unplausibel (7286 aktiv statt ~9606) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
 
 - ⛔ 19.11. 22:56 Homepage-Tageslauf: Katalog-Pull unplausibel (6427 aktiv statt ~9606) -> nicht uebernommen (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 20.11. 11:33 Homepage-Tageslauf: build.py fehlgeschlagen: cent call last):
+  File "C:\Claude-Arbeitsblätter\snice-unterricht\build.py", line 2986, in <module>
+    main()
+    ~~~~^^
+  File "C:\Claude-Arbeitsblätter\snice-unterricht\build.py", line 2788, in main
+    <h2>Material nach  (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 20.11. 11:38 Homepage-Tageslauf: build.py fehlgeschlagen: cent call last):
+  File "C:\Claude-Arbeitsblätter\snice-unterricht\build.py", line 2986, in <module>
+    main()
+    ~~~~^^
+  File "C:\Claude-Arbeitsblätter\snice-unterricht\build.py", line 2788, in main
+    <h2>Material nach  (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 20.11. 12:31 Homepage-Tageslauf: i18n-Check fehlgeschlagen -> kein Push: sitemap en: 5963 URLs, 225 Alternates
+sitemap es: 3992 URLs, 213 Alternates
+sitemap fr: 3806 URLs, 183 Alternates
+sitemap it: 3299 URLs, 155 Alternates
+Seiten 17445, interne Links 1489854, Ziele 26700, Weiterle (Log `Skripte\_homepage_daily.log`)

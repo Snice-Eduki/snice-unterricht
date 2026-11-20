@@ -2787,8 +2787,8 @@ if(s==="ok"){{var f=document.getElementById("nlform");if(f)f.hidden=true;}}}})()
 <section class="igwege"><h2>Gratis-Material zum Sofort-Ausdrucken</h2>
 <p>Fertige Materialien ohne Anmeldung: Werkstätten, Bildkarten, Lesespuren und mehr.</p>
 <p><a class="btn" href="kostenlos.html">Alle kostenlosen Materialien</a> <a class="btn ghost" href="lesespurgeschichten.html">Lesespurgeschichten</a> <a class="btn ghost" href="rechenwelten.html">Rechenwelten</a> <a class="btn ghost" href="neu.html">Neu erschienen</a></p>
-<h2>Material nach Fach</h2><p>{fl}<a class="btn ghost" href="materialien.html">Alle Fächer</a></p>
-<h2>Material nach Klasse</h2><p>{kl}</p>
+<h2>Material nach Fach</h2><p><a class="btn ghost" href="fach-deutsch.html">Deutsch</a> <a class="btn ghost" href="fach-mathematik.html">Mathe</a> <a class="btn ghost" href="fach-sachunterricht.html">Sachunterricht</a> <a class="btn ghost" href="fach-englisch.html">Englisch</a> <a class="btn ghost" href="fach-daz-daf.html">DaZ/DaF</a> <a class="btn ghost" href="fach-religion.html">Religion</a> <a class="btn ghost" href="fach-kunst.html">Kunst</a> <a class="btn ghost" href="fach-musik.html">Musik</a> <a class="btn ghost" href="materialien.html">Alle Fächer</a></p>
+<h2>Material nach Klasse</h2><p><a class="btn ghost" href="klasse-1.html">Klasse 1</a> <a class="btn ghost" href="klasse-2.html">Klasse 2</a> <a class="btn ghost" href="klasse-3.html">Klasse 3</a> <a class="btn ghost" href="klasse-4.html">Klasse 4</a> <a class="btn ghost" href="klasse-5.html">Klasse 5</a> <a class="btn ghost" href="klasse-6.html">Klasse 6</a> </p>
 <p><small>Ich bin Snice, Lehrer und Autor dieser Materialien. Mehr über mich auf der Seite <a href="ueber-mich.html">Über mich</a>.</small></p></section>""")
     render_page("newsletter-bestaetigt", "Anmeldung bestätigt", f"""<h1>Danke – du bist angemeldet!</h1>
 <p class="sub">Deine Newsletter-Anmeldung ist bestätigt. In wenigen Minuten bekommst du eine Mail mit deinem Willkommensgeschenk: deinem eigenen 50-%-Gutschein.</p>
@@ -2899,7 +2899,7 @@ antworte selbst und bessere Material auch nachträglich nach. Weitere Seiten und
 <h2>Kostenlose Angebote hier auf Snice Unterricht</h2>
 <ul>
 <li><a href="kostenlos.html"><strong>Kostenloses Unterrichtsmaterial zum Ausdrucken</strong></a> – Werkstätten, Bildkarten und Baukästen für Lehrkräfte.</li>
-<li><a href="noten"><strong>Notenrechner für Lehrkräfte</strong></a> – Prozent-Notenschlüssel, Notenliste und Durchschnitt, ohne Anmeldung.</li>
+<li><a href="noten.html"><strong>Notenrechner für Lehrkräfte</strong></a> – Prozent-Notenschlüssel, Notenliste und Durchschnitt, ohne Anmeldung.</li>
 </ul>
 <h2>Blogs und Portale für Lehrkräfte</h2>
 <ul>
