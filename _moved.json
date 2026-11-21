@@ -728,6 +728,10 @@
 "es/musica.html",
 "musica"
 ],
+"es/p/17899305-automovil.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/17899786-bamberg.html": [
 "es/recursos.html",
 "Todos los recursos"
@@ -792,7 +796,15 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
+"es/p/17913861-marmol.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
 "es/p/17914305-nordlingen.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/17915815-ortoedro.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -817,6 +829,10 @@
 "Todos los recursos"
 ],
 "es/p/17921165-rothenburg-ob-der-tauber.html": [
+"es/recursos.html",
+"Todos los recursos"
+],
+"es/p/17922497-tecnecio.html": [
 "es/recursos.html",
 "Todos los recursos"
 ],
@@ -852,9 +868,25 @@
 "es/recursos.html",
 "Todos los recursos"
 ],
+"es/p/2088463-dardos.html": [
+"es/p/17904174-dardos.html",
+"Dardos – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2088884-comercio.html": [
+"es/p/17903016-comercio.html",
+"Comercio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2088908-alaska.html": [
+"es/p/17897739-alaska.html",
+"Alaska – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
 "es/p/2095178-gunther-uecker.html": [
 "es/p/18175379-gunther-uecker.html",
 "Günther Uecker – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095265-periodico.html": [
+"es/p/17915453-periodico.html",
+"Periódico – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2095292-tormenta-electrica.html": [
 "es/p/18178763-tormenta-electrica.html",
@@ -863,6 +895,18 @@
 "es/p/2095312-henri-rousseau.html": [
 "es/p/17909776-henri-rousseau.html",
 "Henri Rousseau – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095796-somalia.html": [
+"es/p/17922828-somalia.html",
+"Somalia – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095800-imperio-otomano.html": [
+"es/p/17910589-imperio-otomano.html",
+"Imperio otomano – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2095919-muerte.html": [
+"es/p/17913811-muerte.html",
+"Muerte – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2096367-vasco-da-gama.html": [
 "es/p/18183395-vasco-da-gama.html",
@@ -896,13 +940,25 @@
 "es/p/18175317-cancer.html",
 "Cáncer – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2099936-menstruacion.html": [
+"es/p/18147789-menstruacion.html",
+"Menstruación – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
 "es/p/2100114-squalius-cephalus.html": [
 "es/p/18177180-squalius-cephalus.html",
 "Squalius cephalus – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
+"es/p/2101008-jura.html": [
+"es/p/18134427-jura.html",
+"Jura – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
 "es/p/2101211-spiel-des-jahres.html": [
 "es/p/18177150-spiel-des-jahres.html",
 "Spiel des Jahres – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2101242-psicologia.html": [
+"es/p/17917323-psicologia.html",
+"Psicología – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2101942-ventana.html": [
 "es/p/18183511-ventana.html",
@@ -911,6 +967,14 @@
 "es/p/2102316-poesia-lirica.html": [
 "es/p/18175451-poesia-lirica.html",
 "Poesía lírica – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2104013-horno-de-microondas.html": [
+"es/p/18129967-horno-de-microondas.html",
+"Horno de microondas – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
+],
+"es/p/2105087-juglans.html": [
+"es/p/17912444-juglans.html",
+"Juglans – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
 "es/p/2366217-sodio.html": [
 "es/p/18177106-sodio.html",
@@ -1076,38 +1140,6 @@
 "es/p/18175343-eco.html",
 "Eco – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
 ],
-"es/p/2375730-marmol.html": [
-"es/p/17913861-marmol.html",
-"Mármol – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375739-ortoedro.html": [
-"es/p/17915815-ortoedro.html",
-"Ortoedro – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375749-tecnecio.html": [
-"es/p/17922497-tecnecio.html",
-"Tecnecio – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2375761-automovil.html": [
-"es/p/17899305-automovil.html",
-"Automóvil – Ficha: texto con huecos, comprensión auditiva y sopa de letras"
-],
-"es/p/2376071-dardos.html": [
-"es/p/17904174-dardos.html",
-"Dardos – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2376074-juglans.html": [
-"es/p/17912444-juglans.html",
-"Juglans – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2376077-jura.html": [
-"es/p/18134427-jura.html",
-"Jura – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2376080-somalia.html": [
-"es/p/17922828-somalia.html",
-"Somalia – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
 "es/p/2378962-gremio.html": [
 "es/p/18175366-gremio.html",
 "Gremio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
@@ -1163,38 +1195,6 @@
 "es/p/2380103-pensamiento.html": [
 "es/p/18170212-pensamiento.html",
 "Pensamiento – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392540-horno-de-microondas.html": [
-"es/p/18129967-horno-de-microondas.html",
-"Horno de microondas – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392544-psicologia.html": [
-"es/p/17917323-psicologia.html",
-"Psicología – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392578-alaska.html": [
-"es/p/17897739-alaska.html",
-"Alaska – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392591-comercio.html": [
-"es/p/17903016-comercio.html",
-"Comercio – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392605-imperio-otomano.html": [
-"es/p/17910589-imperio-otomano.html",
-"Imperio otomano – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392612-menstruacion.html": [
-"es/p/18147789-menstruacion.html",
-"Menstruación – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392621-muerte.html": [
-"es/p/17913811-muerte.html",
-"Muerte – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
-],
-"es/p/2392645-periodico.html": [
-"es/p/17915453-periodico.html",
-"Periódico – Ficha de comprensión lectora primaria: texto con huecos y sopa de letras"
 ],
 "es/p/2397511-taller-de-deporte-atletismo-correr-saltar-y-lanzar-tarjetas-de-tareas.html": [
 "es/recursos.html",
