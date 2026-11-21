@@ -1,5 +1,33 @@
 {
  "welt": "no",
- "eduki": "https://eduki.com/no/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/no/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 181,
+ "materials": [
+  {
+   "title": "Undervisningsmateriell",
+   "url": "https://eduki.com/no/material/2473384"
+  },
+  {
+   "title": "Agriculture – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/no/material/2474344"
+  },
+  {
+   "title": "Anaerobic digestion – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/no/material/2474980"
+  },
+  {
+   "title": "Les, fargelegg og lim: Påske – Les og fargelegg – 1.–4. trinn",
+   "url": "https://eduki.com/no/material/2475942"
+  },
+  {
+   "title": "Arctic – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/no/material/2478217"
+  },
+  {
+   "title": "Australia – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/no/material/2479143"
+  }
+ ],
+ "ok": true
 }

@@ -1,5 +1,33 @@
 {
  "welt": "hu",
- "eduki": "https://eduki.com/hu/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/hu/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 141,
+ "materials": [
+  {
+   "title": "Tananyag",
+   "url": "https://eduki.com/hu/material/2473387"
+  },
+  {
+   "title": "Adder – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hu/material/2474392"
+  },
+  {
+   "title": "Alphorn Music worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hu/material/2475342"
+  },
+  {
+   "title": "Angling – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hu/material/2475388"
+  },
+  {
+   "title": "Olvasás, színezés és ragasztás: Az étteremben – Olvasás és színezés – 1–4. osztály",
+   "url": "https://eduki.com/hu/material/2477293"
+  },
+  {
+   "title": "Arachnid – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hu/material/2479531"
+  }
+ ],
+ "ok": true
 }

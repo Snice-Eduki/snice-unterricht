@@ -1,5 +1,33 @@
 {
  "welt": "ua",
- "eduki": "https://eduki.com/ua/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/ua/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 86,
+ "materials": [
+  {
+   "title": "Навчальний матеріал",
+   "url": "https://eduki.com/ua/material/2473393"
+  },
+  {
+   "title": "Acceleration – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/ua/material/2473752"
+  },
+  {
+   "title": "Africa – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/ua/material/2474031"
+  },
+  {
+   "title": "Alice's Adventures in Wonderland – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/ua/material/2474555"
+  },
+  {
+   "title": "Americas – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/ua/material/2476507"
+  },
+  {
+   "title": "Anglo-Saxons – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/ua/material/2476578"
+  }
+ ],
+ "ok": true
 }

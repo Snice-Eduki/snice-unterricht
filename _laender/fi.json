@@ -1,5 +1,33 @@
 {
  "welt": "fi",
- "eduki": "https://eduki.com/fi/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/fi/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 142,
+ "materials": [
+  {
+   "title": "Opetusmateriaali",
+   "url": "https://eduki.com/fi/material/2473385"
+  },
+  {
+   "title": "Adder – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/fi/material/2474352"
+  },
+  {
+   "title": "Alphorn Music worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/fi/material/2475042"
+  },
+  {
+   "title": "Angling – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/fi/material/2475182"
+  },
+  {
+   "title": "Lue, väritä ja liimaa: Ravintolassa – Lue ja väritä – Luokat 1–4",
+   "url": "https://eduki.com/fi/material/2476804"
+  },
+  {
+   "title": "Arachnid – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/fi/material/2479357"
+  }
+ ],
+ "ok": true
 }

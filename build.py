@@ -279,7 +279,6 @@ def head(title, desc, url, cover, root="", date=None, article=False, extra_ld=No
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="{SITE_NAME}"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme:light)">
-<meta name="theme-color" content="#000000" media="(prefers-color-scheme:dark)">
 <link rel="preconnect" href="https://eduki.com">
 <link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{SITE}/feed.xml">
 <link rel="icon" type="image/png" href="{root}assets/logo.png">
@@ -1818,6 +1817,7 @@ def hero_html(mats):
 <input name="q" type="search" placeholder="Thema suchen: z. B. St. Martin, Igel, Bruchrechnung …" autocomplete="off" aria-label="Materialien durchsuchen">
 </form>
 {hero_sale()}<p class="btnrow"><a class="btn" href="{cta_href}">{cta}</a><a class="btn ghost" href="materialien.html">Alle Materialien</a></p>
+<nav class="wege" aria-label="Schnell zum Ziel"><a class="w1" href="{cta_href}">{cta}</a><a href="kostenlos.html">Gratis-Material</a><a href="newsletter.html">Newsletter + Geschenke</a><a href="noten.html">Notenrechner</a><a href="materialien.html">Alle Materialien</a><a href="https://eduki.com/de/shop/400839" target="_blank" rel="noopener">eduki-Shop</a></nav>
 <ul class="trust"><li><b>{nfmt(n_all // 100 * 100)}+</b> Materialien</li><li><b>{nfmt(n_ls // 10 * 10)}+</b> Lesespurgeschichten</li><li><b>Lösungen</b> inklusive</li><li><b>Kl. 1–10</b> alle Fächer</li></ul>
 </div>
 <div class="collage">{imgs}</div>
@@ -2978,6 +2978,7 @@ dort findest du alle Materialien nach Fach und Klasse.</p>
     import escape_seiten; escape_seiten.render_i18n(globals())   # 09.11.: Escape-Room Winter Landesseiten
     I18N_FILES, _ = i18n_build.render()
     print("i18n:", n_i18n, i18n_build.STATS.get("render"))
+    print("Marktseiten hreflang:", laender_seiten.nachbessern(globals()))   # 21.11.: hreflang der Markt-Cluster in die Bestandsstartseiten
     write_feed(posts); write_meta(posts)
     print(f"OK: {len(posts)} Artikel, {nmat} DE-Materialien im Finder, {len(faecher)} Fach-Seiten, {len(klassen)} Klassen-Seiten, "
           f"PT {n_pt} / Lückentexte {n_lt} / Gratis {n_gratis} / EN {n_en}, {nls} Lesespuren, {nsa} Saison-Treffer, "

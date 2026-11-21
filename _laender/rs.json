@@ -1,5 +1,33 @@
 {
  "welt": "rs",
- "eduki": "https://eduki.com/rs/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/rs/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 102,
+ "materials": [
+  {
+   "title": "Наставни материјал",
+   "url": "https://eduki.com/rs/material/2473392"
+  },
+  {
+   "title": "Accordion – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/rs/material/2474016"
+  },
+  {
+   "title": "Airship – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/rs/material/2476342"
+  },
+  {
+   "title": "Amazon River – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/rs/material/2476392"
+  },
+  {
+   "title": "Andes – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/rs/material/2476446"
+  },
+  {
+   "title": "Читај, боји и лепи: Кување и печење – Читај и боји – 1–4. разред",
+   "url": "https://eduki.com/rs/material/2479840"
+  }
+ ],
+ "ok": true
 }

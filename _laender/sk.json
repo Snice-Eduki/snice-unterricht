@@ -1,5 +1,33 @@
 {
  "welt": "sk",
- "eduki": "https://eduki.com/sk/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/sk/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 124,
+ "materials": [
+  {
+   "title": "Učebný materiál",
+   "url": "https://eduki.com/sk/material/2473390"
+  },
+  {
+   "title": "Actor – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/sk/material/2474484"
+  },
+  {
+   "title": "Algeria – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/sk/material/2476049"
+  },
+  {
+   "title": "Anaerobic digestion – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/sk/material/2476107"
+  },
+  {
+   "title": "Čítanie, vyfarbovanie a lepenie: Jar – Čítanie a vyfarbovanie – 1.–4. ročník",
+   "url": "https://eduki.com/sk/material/2478386"
+  },
+  {
+   "title": "Čítanie, vyfarbovanie a lepenie: V zoo – Čítanie a vyfarbovanie – 1.–4. ročník",
+   "url": "https://eduki.com/sk/material/2478465"
+  }
+ ],
+ "ok": true
 }

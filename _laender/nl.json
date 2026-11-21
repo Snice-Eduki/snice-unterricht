@@ -1,5 +1,33 @@
 {
  "welt": "nl",
- "eduki": "https://eduki.com/nl/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/nl/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 154,
+ "materials": [
+  {
+   "title": "3D printing – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/nl/material/2473418"
+  },
+  {
+   "title": "Advertising – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/nl/material/2473488"
+  },
+  {
+   "title": "Allergic rhinitis – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/nl/material/2473643"
+  },
+  {
+   "title": "Amateur radio – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/nl/material/2473787"
+  },
+  {
+   "title": "Ant – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/nl/material/2474220"
+  },
+  {
+   "title": "Artemis – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/nl/material/2474585"
+  }
+ ],
+ "ok": true
 }

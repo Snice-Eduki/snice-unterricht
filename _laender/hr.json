@@ -1,5 +1,33 @@
 {
  "welt": "hr",
- "eduki": "https://eduki.com/hr/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/hr/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 141,
+ "materials": [
+  {
+   "title": "Nastavni materijal",
+   "url": "https://eduki.com/hr/material/2473389"
+  },
+  {
+   "title": "Adder – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hr/material/2474467"
+  },
+  {
+   "title": "Alphorn Music worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hr/material/2475786"
+  },
+  {
+   "title": "Angling – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hr/material/2476004"
+  },
+  {
+   "title": "Čitaj, oboji i zalijepi: U restoranu – Čitaj i oboji – 1.–4. razred",
+   "url": "https://eduki.com/hr/material/2478503"
+  },
+  {
+   "title": "Aral Sea – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/hr/material/2479843"
+  }
+ ],
+ "ok": true
 }

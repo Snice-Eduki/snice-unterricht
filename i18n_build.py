@@ -1229,7 +1229,6 @@ def head_i18n(lang, title, desc, url, key, depth, extra_ld=(), og_img="", robots
 <meta property="og:locale" content="{OG_LOCALE[lang]}"><meta property="og:site_name" content="Snice">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme:light)">
-<meta name="theme-color" content="#000000" media="(prefers-color-scheme:dark)">
 {""}
 <link rel="icon" type="image/png" href="{root}assets/logo.png">
 <link rel="apple-touch-icon" href="{root}assets/logo.png">

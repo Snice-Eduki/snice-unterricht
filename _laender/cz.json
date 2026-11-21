@@ -1,5 +1,33 @@
 {
  "welt": "cz",
- "eduki": "https://eduki.com/cz/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/cz/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 185,
+ "materials": [
+  {
+   "title": "Učební materiál",
+   "url": "https://eduki.com/cz/material/2473380"
+  },
+  {
+   "title": "Aesculus hippocastanum – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/cz/material/2474276"
+  },
+  {
+   "title": "Čtení, vybarvování a lepení: Počasí – Čtení a vybarvování – 1.–4. ročník",
+   "url": "https://eduki.com/cz/material/2474448"
+  },
+  {
+   "title": "Anaerobic digestion – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/cz/material/2474792"
+  },
+  {
+   "title": "Architecture – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/cz/material/2477606"
+  },
+  {
+   "title": "Aurochs – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/cz/material/2478394"
+  }
+ ],
+ "ok": true
 }

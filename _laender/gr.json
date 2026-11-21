@@ -1,5 +1,33 @@
 {
  "welt": "gr",
- "eduki": "https://eduki.com/gr/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/gr/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 160,
+ "materials": [
+  {
+   "title": "3D printing – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/gr/material/2473547"
+  },
+  {
+   "title": "Aesculus hippocastanum – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/gr/material/2473722"
+  },
+  {
+   "title": "American frontier – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/gr/material/2474447"
+  },
+  {
+   "title": "Antigua and Barbuda – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/gr/material/2475434"
+  },
+  {
+   "title": "Διάβασε, χρωμάτισε και κόλλησε: Κατοικίδια – Διάβασε και χρωμάτισε – 1η–4η τάξη",
+   "url": "https://eduki.com/gr/material/2477655"
+  },
+  {
+   "title": "Arts and crafts – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/gr/material/2479652"
+  }
+ ],
+ "ok": true
 }

@@ -1,5 +1,33 @@
 {
  "welt": "se",
- "eduki": "https://eduki.com/se/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/se/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 180,
+ "materials": [
+  {
+   "title": "Läromaterial",
+   "url": "https://eduki.com/se/material/2473381"
+  },
+  {
+   "title": "Aircraft pilot – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/se/material/2474304"
+  },
+  {
+   "title": "Airship – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/se/material/2474814"
+  },
+  {
+   "title": "Ancient Egypt – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/se/material/2474850"
+  },
+  {
+   "title": "Argentina – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/se/material/2477764"
+  },
+  {
+   "title": "Auto mechanic – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/se/material/2478570"
+  }
+ ],
+ "ok": true
 }

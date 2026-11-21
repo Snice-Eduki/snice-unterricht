@@ -1,5 +1,33 @@
 {
  "welt": "kr",
- "eduki": "https://eduki.com/kr/autor/400839/snice-1",
- "materials": []
+ "eduki": "https://eduki.com/kr/author/400839/snice-1",
+ "status_shop": 200,
+ "live_n": 59,
+ "materials": [
+  {
+   "title": "교재",
+   "url": "https://eduki.com/kr/material/2473395"
+  },
+  {
+   "title": "Aboriginal Australians – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/kr/material/2474055"
+  },
+  {
+   "title": "Acne – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/kr/material/2474065"
+  },
+  {
+   "title": "Aesculus hippocastanum – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/kr/material/2476778"
+  },
+  {
+   "title": "Albania – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/kr/material/2476810"
+  },
+  {
+   "title": "Allergy – Worksheet: cloze text, listening comprehension and word search - English",
+   "url": "https://eduki.com/kr/material/2476844"
+  }
+ ],
+ "ok": true
 }
