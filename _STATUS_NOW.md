@@ -238,3 +238,15 @@ Seiten 17445, interne Links 1489854, Ziele 26700, Weiterle (Log `Skripte\_homepa
     result = func(*args)
   File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
     raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 21.11. 22:56 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 22.11. 00:55 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
