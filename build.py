@@ -205,6 +205,7 @@ def topnav(root="", url=""):
             f'<a class="brand" href="{root}index.html" aria-label="{SITE_NAME} – Startseite">'
             f'<img src="{root}assets/logo-h.png" alt="{SITE_NAME}" width="303" height="97"></a>'
             f'<nav class="links">'
+            f'<a class="hl" href="{root}tagesaktuell.html">Gratis-News-Blätter</a>'
             f'<a href="{root}materialien.html">Materialien</a>'
             f'<a href="{root}materialpakete.html">Materialpakete</a>'
             f'<a href="{root}kostenlos.html">Kostenlos</a>'
@@ -309,7 +310,7 @@ def foot(root=""):
 <p>{TAGLINE}. Alle Materialien im <a href="{SHOP}" rel="noopener">Snice-Shop auf eduki</a> · English materials on <a href="https://www.teacherspayteachers.com/store/snice" rel="noopener">Teachers Pay Teachers</a>.</p>
 {cols}
 <p>Andere Sprachen: <a href="{root}en/" hreflang="en" lang="en">English</a> · <a href="{root}es/" hreflang="es" lang="es">Español</a> · <a href="{root}fr/" hreflang="fr" lang="fr">Français</a> · <a href="{root}it/" hreflang="it" lang="it">Italiano</a> · <a href="{root}material-in-anderen-sprachen.html">Übersicht</a></p>
-<p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}kostenlos.html">Kostenloses Unterrichtsmaterial</a> · <a href="{root}baukasten.html">Baukasten für Lehrkräfte</a> · <a href="{root}noten.html">Notenrechner</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
+<p><a href="{root}index.html">Startseite</a> · <a href="{root}materialien.html">Alle Materialien</a> · <a href="{root}kostenlos.html">Kostenloses Unterrichtsmaterial</a> · <a class="hl" href="{root}tagesaktuell.html">Gratis-News-Blätter</a> · <a href="{root}baukasten.html">Baukasten für Lehrkräfte</a> · <a href="{root}noten.html">Notenrechner</a> · <a href="{root}ueber-mich.html">Über mich</a> · <a href="{root}impressum.html">Impressum</a> · <a href="{root}datenschutz.html">Datenschutz</a></p>
 </footer>
 {NAV_SCRIPT}
 <script src="{root}assets/nl.js?v=2" defer></script>
@@ -1874,6 +1875,7 @@ def render_index(posts=None):
     desc = (f"Über {nfmt(n_all // 100 * 100)} fertige Arbeitsblätter, Lesespurgeschichten, Prüfungstrainings und Lückentexte mit Hörverstehen – "
             "differenziert, mit Lösungen, lehrplanorientiert. Von einer Lehrkraft für Lehrkräfte. Grundschule bis Klasse 10.")
     out = head(title, desc, SITE + "/", "", extra_ld=[site_ld, org_ld, faq_ld], title_raw=True)
+    import tagesaktuell_seite; out += tagesaktuell_seite.home_block()   # 23.11.: Gratis-News-Block ganz oben
     out += hero_html(mats)
     out += _lp("home_block")   # 10.11.: Lehrplanthemen oben auf der Startseite
     out += f"""

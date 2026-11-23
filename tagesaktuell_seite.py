@@ -7,7 +7,7 @@ import html, json, os, datetime
 H = os.path.dirname(os.path.abspath(__file__))
 WT = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 MON = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"]
-NAV_LABEL = "News-Arbeitsblätter"
+NAV_LABEL = "Gratis-News-Blätter"
 STUFEN = (("kl5-6", "Klasse 5–6"), ("kl7-10", "Klasse 7–10"))
 e = html.escape
 CSS = """<style>
@@ -32,13 +32,23 @@ CSS = """<style>
 .ta li{margin:.35rem 0}
 @media(max-width:640px){.ta .cards{grid-template-columns:1fr}}</style>"""
 HCSS = """<style>
-.tablock{max-width:1100px;margin:18px auto;padding:18px 20px;border-radius:18px;background:#1f5fa8;color:#fff;box-sizing:border-box}
-@media(max-width:1140px){.tablock{margin:14px 16px}}
-.tablock h2{margin:0 0 4px;font-size:1.35rem;color:#fff}.tablock .dt{margin:0 0 12px;opacity:.9}
-.tablock ol{margin:0 0 14px;padding-left:1.3rem}.tablock li{margin:.5rem 0;line-height:1.35}
-.tablock a{color:#fff}.tablock .t{font-weight:700}.tablock .pdfs{display:block;font-size:.9rem;opacity:.95}
-.tablock .pdfs a{display:inline-block;padding:6px 0;margin-right:14px}
-.tablock .alle{display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border-radius:999px;background:#fff;color:#1f5fa8;font-weight:800;text-decoration:none}
+.tablock{max-width:1100px;margin:14px auto;padding:20px;border-radius:20px;background:linear-gradient(135deg,#1f5fa8,#2f8f6b);color:#fff;box-sizing:border-box;box-shadow:0 6px 22px rgba(31,95,168,.28)}
+@media(max-width:1140px){.tablock{margin:12px 12px;padding:16px}}
+.tablock h2{margin:0 0 2px;font-size:1.6rem;line-height:1.2;color:#fff}.tablock .dt{margin:0 0 12px;opacity:.95;font-weight:600}
+.tablock .wb{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 14px}.tablock .wb div{display:flex;flex-wrap:wrap;gap:6px}
+.tablock .wb button{min-height:44px;padding:0 16px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;font-weight:700;font-size:.95rem;cursor:pointer}
+.tablock .wb button[aria-pressed=true]{background:#fff;color:#1f5fa8}
+.tablock .kach{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 16px}
+@media(max-width:700px){.tablock .kach{grid-template-columns:repeat(2,1fr);gap:10px}.tablock h2{font-size:1.35rem}}
+.tablock .k{background:#fff;color:#1b2a3a;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.tablock .k img{width:100%;height:110px;object-fit:cover;object-position:top;display:block;background:#e8f0fa}
+.tablock .k .kb{padding:8px 10px 10px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tablock .k .t{color:#1b2a3a;font-weight:700;font-size:.9rem;line-height:1.25;text-decoration:none}
+.tablock .k .d{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;min-height:44px;border-radius:10px;background:#1f5fa8;color:#fff;font-weight:700;text-decoration:none;font-size:.9rem}
+.tablock[data-k="kl5-6"] [data-k="kl7-10"],.tablock[data-k="kl7-10"] [data-k="kl5-6"],.tablock[data-f="farbig"] [data-f="sw"],.tablock[data-f="sw"] [data-f="farbig"]{display:none!important}
+.tablock .alle{display:inline-flex;align-items:center;min-height:44px;padding:0 24px;border-radius:999px;background:#ffd23f;color:#1b2a3a;font-weight:800;text-decoration:none}
+.topnav .links a.hl{background:#1f5fa8;color:#fff!important;border-radius:999px;padding:0 12px;font-weight:700}
+footer.site a.hl{font-weight:800;color:#1f5fa8}
 </style>"""
 
 
@@ -61,15 +71,24 @@ def _cid(t, th): return f'b{t["datum"]}-{th["id"]}'
 def home_block(root=""):
     tage = _tage()
     if not tage: return ""
-    t = tage[0]; li = ""
-    for th in t["themen"][:5]:
+    t = tage[0]; ks = ""
+    for th in t["themen"][:4]:
         if "stufen" in th:
-            pd = " ".join(f'<a href="{root}{e(th["stufen"][k]["farbig"]["pdf"])}" download>PDF {n}</a>' for k, n in STUFEN)
+            ln = "".join(f'<a class="d" data-k="{k}" data-f="{f}" href="{root}{e(th["stufen"][k][f]["pdf"])}" download>Arbeitsblatt (PDF)</a>' for k, _ in STUFEN for f in ("farbig", "sw"))
         else:
-            pd = f'<a href="{root}{e(th["pdf"])}" download>Arbeitsblatt (PDF)</a>'
-        li += f'<li><a class="t" href="{root}tagesaktuell.html#{_cid(t, th)}">{e(th["titel"])}</a><span class="pdfs">{pd}</span></li>'
-    return (HCSS + f'<section class="tablock" aria-label="Heute aktuell: News-Arbeitsblätter"><h2>Heute aktuell: kostenlose News-Arbeitsblätter</h2>'
-            f'<p class="dt">{_datum(t["datum"])}</p><ol>{li}</ol><a class="alle" href="{root}tagesaktuell.html">Alle ansehen</a></section>')
+            ln = f'<a class="d" href="{root}{e(th["pdf"])}" download>Arbeitsblatt (PDF)</a>'
+        ks += (f'<div class="k"><a href="{root}tagesaktuell.html#{_cid(t, th)}" tabindex="-1" aria-hidden="true"><img src="{root}{e(th["thumb"])}" alt="" loading="eager" width="212" height="110"></a>'
+               f'<div class="kb"><a class="t" href="{root}tagesaktuell.html#{_cid(t, th)}">{e(th["titel"])}</a>{ln}</div></div>')
+    wb = ""
+    if _hat_stufen(t):
+        wb = ('<div class="wb"><div role="group" aria-label="Klassenstufe"><button type="button" data-set="k" data-v="kl5-6" aria-pressed="true">Klasse 5–6</button><button type="button" data-set="k" data-v="kl7-10" aria-pressed="false">Klasse 7–10</button></div>'
+              '<div role="group" aria-label="Fassung"><button type="button" data-set="f" data-v="farbig" aria-pressed="true">Farbig</button><button type="button" data-set="f" data-v="sw" aria-pressed="false">Schwarz-weiß</button></div></div>'
+              '<script>(function(){var s=document.getElementById("tablock"),bs=s.querySelectorAll(".wb button");'
+              'function set(a,v){s.setAttribute("data-"+a,v);[].forEach.call(bs,function(b){if(b.dataset.set===a)b.setAttribute("aria-pressed",b.dataset.v===v?"true":"false")});try{localStorage.setItem("ta_"+a,v)}catch(x){}}'
+              '[].forEach.call(bs,function(b){b.addEventListener("click",function(){set(b.dataset.set,b.dataset.v)})});'
+              'try{["k","f"].forEach(function(a){var v=localStorage.getItem("ta_"+a);if(v&&v!=="alle")set(a,v)})}catch(x){}})();</script>')
+    return (HCSS + f'<section class="tablock" id="tablock" data-k="kl5-6" data-f="farbig" aria-label="Gratis: Arbeitsblätter zu den Nachrichten von heute"><h2>Gratis: Arbeitsblätter zu den Nachrichten von heute</h2>'
+            f'<p class="dt">{_datum(t["datum"])}</p>{wb}<div class="kach">{ks}</div><a class="alle" href="{root}tagesaktuell.html">Alle Nachrichten-Blätter</a></section>')
 
 
 def _stufen_html(th):
