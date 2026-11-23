@@ -2686,6 +2686,7 @@ def main():
     import wissen_seiten; wissen_seiten.render(globals())   # 17.11.: Wissens-Seiten (Textquelle der Hoerblaetter)
     import noten_seiten; noten_seiten.render(globals())   # 18.11.: Notenrechner fuer Lehrkraefte (nur Browser, keine Datenuebertragung)
     import laender_seiten; laender_seiten.render(globals())   # 20.11.: Landessprachen-Seiten + Sprachmenue
+    import tagesaktuell_seite; tagesaktuell_seite.render(globals())   # 23.11.: Tagesaktuell-Gratis-Arbeitsblaetter zum Nachrichten-Reel
     n_matpages = render_material_pages()
     render_page("impressum", "Impressum", f"""<h1>Impressum</h1>
 <p>Angaben gemäß § 5 DDG:</p>

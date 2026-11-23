@@ -1,0 +1,59 @@
+{
+ "tage": [
+  {
+   "datum": "2026-11-23",
+   "themen": [
+    {
+     "id": "o1",
+     "titel": "Weltklimakonferenz ohne Abschlusstext",
+     "fach": "Politik · Geographie · Umwelt",
+     "teaser": "Antalya, Türkei: Die Weltklimakonferenz endet ohne gemeinsamen Abschlusstext.",
+     "pdf": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_weltklimakonferenz-cop31.pdf",
+     "loesung": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_weltklimakonferenz-cop31_Loesung.pdf",
+     "thumb": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_weltklimakonferenz-cop31.jpg",
+     "foto": "Dosseman, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o2",
+     "titel": "Nachrichten verstehen: Meldung aus der Ukraine",
+     "fach": "Politik · Medienbildung · Geographie",
+     "teaser": "Nördlich von Kiew werden nach einem Angriff auf ein Wohnhaus vierzehn Menschen vermisst.",
+     "pdf": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_nachrichten-verstehen-kyjiw.pdf",
+     "loesung": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_nachrichten-verstehen-kyjiw_Loesung.pdf",
+     "thumb": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_nachrichten-verstehen-kyjiw.jpg",
+     "foto": "Daniel Kraft, CC BY-SA 3.0, Wikimedia Commons"
+    },
+    {
+     "id": "o3",
+     "titel": "Raumsonde erreicht den Merkur",
+     "fach": "Physik · Sachunterricht · Mathematik",
+     "teaser": "Darmstadt: Die Raumsonde der ESA ist nach acht Jahren Flug in die Umlaufbahn des Planeten Merkur eingetreten.",
+     "pdf": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_raumsonde-bepicolombo-merkur.pdf",
+     "loesung": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_raumsonde-bepicolombo-merkur_Loesung.pdf",
+     "thumb": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_raumsonde-bepicolombo-merkur.jpg",
+     "foto": "Reise Reise, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o4",
+     "titel": "Frachter liegt vor Frankreichs Küste auf Grund",
+     "fach": "Erdkunde · Umwelt · Mathematik",
+     "teaser": "An der französischen Atlantikküste liegt ein Frachter auf Grund.",
+     "pdf": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_frachter-miro-g-atlantikkueste.pdf",
+     "loesung": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_frachter-miro-g-atlantikkueste_Loesung.pdf",
+     "thumb": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_frachter-miro-g-atlantikkueste.jpg",
+     "foto": "Brina Blum, CC0, Wikimedia Commons"
+    },
+    {
+     "id": "o5",
+     "titel": "Tausende demonstrieren in Lissabon",
+     "fach": "Politik · Wirtschaft · Mathematik",
+     "teaser": "In Lissabon demonstrierten am Samstag tausende Menschen für höhere Löhne und gegen steigende Lebenshaltungskosten.",
+     "pdf": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_demonstration-lissabon-loehne.pdf",
+     "loesung": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_demonstration-lissabon-loehne_Loesung.pdf",
+     "thumb": "tagesaktuell/2026-11-23/Tagesaktuell_2026-11-23_demonstration-lissabon-loehne.jpg",
+     "foto": "Berthold Werner, CC BY-SA 4.0, Wikimedia Commons"
+    }
+   ]
+  }
+ ]
+}

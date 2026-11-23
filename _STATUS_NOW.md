@@ -256,3 +256,75 @@ Seiten 17445, interne Links 1489854, Ziele 26700, Weiterle (Log `Skripte\_homepa
     result = func(*args)
   File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
     raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 22.11. 14:56 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 22.11. 16:58 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 22.11. 18:54 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 22.11. 20:56 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 22.11. 22:54 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 23.11. 00:53 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 23.11. 02:53 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 23.11. 03:49 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 23.11. 04:54 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 23.11. 06:54 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 23.11. 08:54 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
+
+- ⛔ 23.11. 10:55 Homepage-Tageslauf: Katalog-Pull fehlgeschlagen: ~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, cod (Log `Skripte\_homepage_daily.log`)
