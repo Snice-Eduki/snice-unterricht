@@ -77,7 +77,8 @@ def seite(g, code, ordner, lang, name):
 
 def render(g):
     menu_js(g.get("OUT"))
-    urls = [seite(g, c, d, l, n) for c, d, l, n in NEU if c in aktiv()]
+    T = _json("_laender", "texte.json")   # 23.11.: ohne Text bleibt die vorhandene Seite unveraendert (nur Menue/hreflang/Sitemap)
+    urls = [seite(g, c, d, l, n) if c in T else f'{g["SITE"]}/{d}/' for c, d, l, n in NEU if c in aktiv()]
     if isinstance(g.get("EXTRA_URLS"), list):
         g["EXTRA_URLS"].extend(u for u in urls if u not in g["EXTRA_URLS"])
     return len(urls)
