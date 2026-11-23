@@ -32,6 +32,7 @@ CSS = """<style>
 .ta li{margin:.35rem 0}
 @media(max-width:640px){.ta .cards{grid-template-columns:1fr}}</style>"""
 HCSS = """<style>
+.tablock .ws{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0}.tablock .ws label{font-weight:600}.tablock .ws select{flex:1 1 260px;min-width:0;padding:12px;font-size:16px;border:1px solid var(--line);border-radius:10px;background:#fff;color:inherit}.tablock .ws button{padding:12px 20px;font-size:16px;font-weight:600;border:0;border-radius:10px;background:var(--accent);color:#fff;cursor:pointer}
 .tablock{max-width:1180px;margin:16px auto 0;padding:24px 26px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--accent);box-shadow:var(--shadow);box-sizing:border-box}
 @media(max-width:1224px){.tablock{margin:12px 14px 0;padding:18px 16px}}
 .tablock .eb{margin:0 0 6px;font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.04em;text-transform:uppercase}
@@ -79,26 +80,16 @@ def _cid(t, th): return f'b{t["datum"]}-{th["id"]}'
 
 
 def home_block(root=""):
+    """23.11.: Startseite zeigt die Gratis-News-Blaetter nur als Auswahlfeld (Thema waehlen -> Seite mit den Blaettern), keine Kacheln."""
     tage = _tage()
     if not tage: return ""
-    t = tage[0]; ks = ""
-    for th in t["themen"]:
-        if "stufen" in th:
-            ln = "".join(f'<a class="d" data-k="{k}" data-f="{f}" href="{root}{e(th["stufen"][k][f]["pdf"])}" download>Arbeitsblatt (PDF)</a>' for k, _ in STUFEN for f in ("farbig", "sw"))
-        else:
-            ln = f'<a class="d" href="{root}{e(th["pdf"])}" download>Arbeitsblatt (PDF)</a>'
-        ks += (f'<div class="k"><a href="{root}tagesaktuell.html#{_cid(t, th)}" tabindex="-1" aria-hidden="true"><img src="{root}{e(th["thumb"])}" alt="" loading="eager" width="212" height="110"></a>'
-               f'<div class="kb"><a class="t" href="{root}tagesaktuell.html#{_cid(t, th)}">{e(th["titel"])}</a>{ln}</div></div>')
-    wb = ""
-    if _hat_stufen(t):
-        wb = ('<div class="wb"><div role="group" aria-label="Klassenstufe"><button type="button" data-set="k" data-v="kl5-6" aria-pressed="true">Klasse 5–6</button><button type="button" data-set="k" data-v="kl7-10" aria-pressed="false">Klasse 7–10</button></div>'
-              '<div role="group" aria-label="Fassung"><button type="button" data-set="f" data-v="farbig" aria-pressed="true">Farbig</button><button type="button" data-set="f" data-v="sw" aria-pressed="false">Schwarz-weiß</button></div></div>'
-              '<script>(function(){var s=document.getElementById("tablock"),bs=s.querySelectorAll(".wb button");'
-              'function set(a,v){s.setAttribute("data-"+a,v);[].forEach.call(bs,function(b){if(b.dataset.set===a)b.setAttribute("aria-pressed",b.dataset.v===v?"true":"false")});try{localStorage.setItem("ta_"+a,v)}catch(x){}}'
-              '[].forEach.call(bs,function(b){b.addEventListener("click",function(){set(b.dataset.set,b.dataset.v)})});'
-              'try{["k","f"].forEach(function(a){var v=localStorage.getItem("ta_"+a);if(v&&v!=="alle")set(a,v)})}catch(x){}})();</script>')
-    return (HCSS + f'<section class="tablock" id="tablock" data-k="kl5-6" data-f="farbig" aria-label="Gratis: Arbeitsblätter zu den Nachrichten von heute"><p class="eb">Gratis · jeden Tag neu</p><h2>Gratis: Arbeitsblätter zu den Nachrichten von heute</h2>'
-            f'<p class="dt">{_datum(t["datum"])}</p>{wb}<div class="kach">{ks}</div><a class="alle" href="{root}tagesaktuell.html">Alle Nachrichten-Blätter</a></section>')
+    t = tage[0]
+    opts = "".join(f'<option value="{root}tagesaktuell.html#{_cid(t, th)}">{e(th["titel"])}</option>' for th in t["themen"])
+    return (HCSS + f'<section class="tablock" id="tablock" aria-label="Gratis: Arbeitsblätter zu den Nachrichten von heute"><p class="eb">Gratis · jeden Tag neu</p><h2>Gratis: Arbeitsblätter zu den Nachrichten von heute</h2>'
+            f'<p class="dt">{_datum(t["datum"])}</p>'
+            f'<form class="ws" onsubmit="var v=this.t.value;if(v)location.href=v;return false"><label for="ta_sel">Thema wählen</label>'
+            f'<select id="ta_sel" name="t">{opts}</select><button type="submit">Zum Arbeitsblatt</button></form>'
+            f'<a class="alle" href="{root}tagesaktuell.html">Alle Nachrichten-Blätter</a></section>')
 
 
 def schnell(root=""):
