@@ -33,7 +33,8 @@ def _json(*p):
 def aktiv():
     """Codes der neuen Maerkte mit Text + geprueftem Shop."""
     t = _json("_laender", "texte.json"); fr = set(_json("_laender", "freigabe.json").get("freigegeben", []))
-    return [c for c, *_ in NEU if c in fr and c in t and _json("_laender", c + ".json").get("ok")]
+    # 23.11.: Seiten liegen fertig im Repo (texte.json nicht mehr vorhanden) -> Menue zeigt alle Maerkte mit vorhandener Seite + geprueftem Shop
+    return [c for c, d, *_ in NEU if (c in fr or os.path.exists(os.path.join(H, d, "index.html"))) and _json("_laender", c + ".json").get("ok")]
 
 
 def menue_liste():

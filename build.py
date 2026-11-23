@@ -1877,32 +1877,8 @@ def render_index(posts=None):
     out = head(title, desc, SITE + "/", "", extra_ld=[site_ld, org_ld, faq_ld], title_raw=True)
     import tagesaktuell_seite; out += tagesaktuell_seite.home_block()   # 23.11.: Gratis-News-Block ganz oben
     out += hero_html(mats)
-    out += _lp("home_block")   # 10.11.: Lehrplanthemen oben auf der Startseite
+    import startseite_neu; out += startseite_neu.teile(fach_tiles, kl_chips, neu_html, _lp("home_block"))   # 23.11.: neue Struktur
     out += f"""
-
-<section class="section tiles">
-<div class="tile"><h3>Sofort einsetzbar</h3><p>PDF zum Ausdrucken, in Farbe und als Schwarz-Weiß-Kopiervorlage. Jedes Material mit Musterlösung – keine Vorbereitung nötig.</p></div>
-<div class="tile"><h3>Differenziert</h3><p>Drei Niveaustufen bei Lesespurgeschichten, Wortspeicher bei Lückentexten, Hörverstehen per QR-Code: Jedes Kind arbeitet auf seinem Niveau.</p></div>
-<div class="tile"><h3>Lehrplanorientiert</h3><p>Kernthemen aller Fächer, abgestimmt auf die Lehrpläne der Bundesländer und alle Schularten – ohne Klassenstufe auf dem Blatt.</p></div>
-</section>
-
-{saison_html}
-{neu_html}
-{I18N_FREE_HOME()}
-{reihen_html}
-{line_section("lesespur", by_line["lesespur"])}
-{line_section("pt", by_line["pt"])}
-{line_section("lueckentext", by_line["lueckentext"])}
-
-<section class="section">
-<div class="sec-head"><div><h2>Nach Fach</h2><p class="lead">Alle Materialien eines Fachs auf einer Seite – nach Klasse filterbar.</p></div></div>
-<div class="fachgrid">{fach_tiles}</div>
-</section>
-
-<section class="section">
-<div class="sec-head"><div><h2>Nach Klasse</h2><p class="lead">Sprachlich und inhaltlich auf die Jahrgangsstufe abgestimmt.</p></div></div>
-<div class="klassen">{kl_chips}</div>
-</section>
 
 {blog_html}
 <section class="section faq">
