@@ -297,6 +297,171 @@
      "foto": "Herokk, CC BY-SA 4.0, Wikimedia Commons"
     }
    ]
+  },
+  {
+   "datum": "2026-11-25",
+   "themen": [
+    {
+     "id": "o1",
+     "titel": "Der Bundestag berät den Haushalt",
+     "fach": "Politik · Wirtschaft · Mathematik",
+     "teaser": "Berlin, Deutschland: Der Bundestag berät in dieser Woche abschließend über den Haushalt für das kommende Jahr.",
+     "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_haushalt-2027-bundestag.jpg",
+     "foto": "HerrAdams, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o2",
+     "titel": "Bei Volkswagen wird um den Lohn verhandelt",
+     "fach": "Politik · Wirtschaft · Mathematik",
+     "teaser": "Emden, Deutschland: Bei Volkswagen haben gestern die Verhandlungen über die Löhne begonnen.",
+     "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_vw-tarifrunde-emden.jpg",
+     "foto": "Frisia Orientalis (Ausschnitt), CC BY-SA 3.0, Wikimedia Commons"
+    },
+    {
+     "id": "o3",
+     "titel": "Drei Raumfahrer fliegen zur Raumstation",
+     "fach": "Physik · Geographie · Politik",
+     "teaser": "Jiuquan, China: Zur chinesischen Raumstation sind heute früh drei Raumfahrer gestartet.",
+     "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_shenzhou-24-tiangong.jpg",
+     "foto": "China News Service, CC BY 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o4",
+     "titel": "Ein deutscher Film gewinnt einen Emmy",
+     "fach": "Deutsch · Medienbildung · Kunst",
+     "teaser": "New York, USA: Ein deutscher Dokumentarfilm hat einen internationalen Emmy gewonnen.",
+     "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_emmy-deutsche-doku.jpg",
+     "foto": "King of Hearts, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o5",
+     "titel": "Der fernste Quasar ist entdeckt",
+     "fach": "Physik · Astronomie · Deutsch",
+     "teaser": "Heidelberg, Deutschland: Ein Forschungsteam hat den bisher fernsten Quasar entdeckt.",
+     "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-25/Tagesaktuell_2026-11-25_rekord-quasar-euclid.jpg",
+     "foto": "European Space Agency, CC BY-SA 3.0 igo, Wikimedia Commons"
+    }
+   ]
   }
  ]
 }
