@@ -462,6 +462,171 @@
      "foto": "European Space Agency, CC BY-SA 3.0 igo, Wikimedia Commons"
     }
    ]
+  },
+  {
+   "datum": "2026-11-26",
+   "themen": [
+    {
+     "id": "o1",
+     "titel": "Die Wirtschaft wächst kaum",
+     "fach": "Wirtschaft · Politik · Mathematik",
+     "teaser": "Wiesbaden, Deutschland: Die deutsche Wirtschaft ist von Juli bis September weniger gewachsen als zuerst gemeldet.",
+     "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_bip-drittes-quartal-2026.jpg",
+     "foto": "Bärbel Miemietz, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o2",
+     "titel": "Die USA planen neue Zölle",
+     "fach": "Wirtschaft · Politik · Geografie",
+     "teaser": "Bern, Schweiz: Die USA wollen neue Zölle auf Waren aus der Schweiz erheben.",
+     "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_us-zoelle-schweiz.jpg",
+     "foto": "August Geyler, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o3",
+     "titel": "Spanien wählt ein neues Parlament",
+     "fach": "Politik · Geografie",
+     "teaser": "Madrid, Spanien: In Spanien wird am Sonntag vorzeitig ein neues Parlament gewählt.",
+     "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_wahl-spanien-2026.jpg",
+     "foto": "AMPERIO, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o4",
+     "titel": "Mehr Lohn für Näherinnen",
+     "fach": "Wirtschaft · Geografie · Mathematik",
+     "teaser": "Dhaka, Bangladesch: Wer in den Kleiderfabriken von Bangladesch arbeitet, bekommt künftig mehr Lohn.",
+     "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_mindestlohn-bangladesch.jpg",
+     "foto": "Tarunno, CC BY-SA 4.0, Wikimedia Commons"
+    },
+    {
+     "id": "o5",
+     "titel": "Südkorea erhöht den Leitzins",
+     "fach": "Wirtschaft · Politik · Mathematik",
+     "teaser": "Seoul, Südkorea: Die Zentralbank von Südkorea hat heute den Leitzins erhöht.",
+     "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_kl7-10_farbig.pdf",
+     "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_Loesung_kl7-10_farbig.pdf",
+     "stufen": {
+      "kl5-6": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_kl5-6_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_Loesung_kl5-6_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_kl5-6_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_Loesung_kl5-6_sw.pdf"
+       }
+      },
+      "kl7-10": {
+       "farbig": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_kl7-10_farbig.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_Loesung_kl7-10_farbig.pdf"
+       },
+       "sw": {
+        "pdf": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_kl7-10_sw.pdf",
+        "loesung": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea_Loesung_kl7-10_sw.pdf"
+       }
+      }
+     },
+     "thumb": "tagesaktuell/2026-11-26/Tagesaktuell_2026-11-26_leitzins-suedkorea.jpg",
+     "foto": "Jimmy McIntyre - Editor HDR One Magazine, CC BY-SA 2.0, Wikimedia Commons"
+    }
+   ]
   }
  ]
 }
